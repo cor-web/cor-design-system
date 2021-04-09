@@ -1,0 +1,62 @@
+:root {
+  --font-size: 1rem;
+  --font-size-l: 1.75rem;
+  --font-size-xl: 2.25rem;
+}
+
+/* elements */
+h1,
+h2,
+h3,
+h4 {
+  line-height:var(--line-height-small);
+  font-family:var(--font-plain);
+  font-weight:700;
+  hyphens:auto
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
+  font-size: var(--font-size);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+}
+
+
+/* utilities */
+.cor-h1 {
+  font-size: var(--font-size-xl) !important;
+}
+
+.cor-h2 {
+  font-size: var(--font-size-l) !important;
+}
+
+.cor-h3 {
+  font-size: var(--font-size) !important;
+}
+
+.cor-h4 {
+  font-size: var(--font-size-s) !important;
+}
+
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.font-size\:biggish {
+  font-size: var(--font-size-biggish) !important;
+}
+
+.font-size\:big {
+  font-size: var(--font-size-big) !important;
+}

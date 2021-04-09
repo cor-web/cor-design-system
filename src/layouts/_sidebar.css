@@ -1,0 +1,21 @@
+.cor-with-sidebar {
+  --content-min-width: 50%;
+  overflow: hidden;
+}
+
+.cor-with-sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--s1) / 2 * -1);
+}
+
+.cor-with-sidebar > * > * {
+  margin: calc(var(--s1) / 2);
+  flex-grow: 1;
+}
+
+.cor-with-sidebar > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(var(--content-min-width) - var(--s1));
+}

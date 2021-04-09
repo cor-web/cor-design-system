@@ -1,0 +1,1 @@
+import './components/bar-graph/bar-graph';

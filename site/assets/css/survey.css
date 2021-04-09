@@ -1,0 +1,6 @@
+@import url("../../../src/base.css");
+
+
+dt {
+  border: solid 1px var(--mycolor);
+}
