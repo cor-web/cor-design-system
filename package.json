@@ -24,6 +24,7 @@
     "rollup-plugin-postcss": "^4.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "remove": "^0.1.5"
   }
 }
