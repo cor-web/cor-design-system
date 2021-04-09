@@ -24,6 +24,7 @@
     "rollup-plugin-postcss": "^4.0.0"
   },
   "dependencies": {
+    "animateplus": "^2.1.1",
     "remove": "^0.1.5"
   }
 }
