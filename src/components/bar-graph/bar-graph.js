@@ -1,7 +1,7 @@
 import animate from "../../../node_modules/animateplus/animateplus.js";
 import template from "./template.js";
 
-class BarChart extends HTMLElement {
+class BarChart2 extends HTMLElement {
   constructor() {
     super();
 
@@ -33,4 +33,4 @@ class BarChart extends HTMLElement {
 
 }
 
-customElements.define("bar-chart", BarChart);
+customElements.define("bar-chart", BarChart2);

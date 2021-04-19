@@ -1,4 +1,5 @@
 .cor-with-sidebar {
+  --side-width: 20em;
   --content-min-width: 50%;
   overflow: hidden;
 }
@@ -11,6 +12,7 @@
 
 .cor-with-sidebar > * > * {
   margin: calc(var(--s1) / 2);
+  flex-basis: 20em;
   flex-grow: 1;
 }
 

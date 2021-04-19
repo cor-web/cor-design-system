@@ -1,5 +1,6 @@
-@import url("./_base.css");
+@import url("./base.css");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: red;
 }

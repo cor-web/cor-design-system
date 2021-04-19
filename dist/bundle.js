@@ -834,10 +834,12 @@
     return position;
   };
 
-  var template = function template(values) {
-    return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n      \n      ".concat(values.map(function (value, index) {
-      return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
-    }).join(''), "\n\n    </svg>");
+  var template = {
+    render: function render(values) {
+      return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect rx=\"1\" ry=\"1\" width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n      \n      ".concat(values.map(function (value, index) {
+        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " rx=\"1\" ry=\"1\" x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
+      }).join(''), "\n\n    </svg>\n    ");
+    }
   };
 
   var BarChart = /*#__PURE__*/function (_HTMLElement) {
@@ -860,7 +862,7 @@
         mode: 'open'
       });
 
-      _this.shadowRoot.innerHTML = template(_this.values);
+      _this.shadowRoot.innerHTML = template.render(_this.values);
       return _this;
     }
 
@@ -878,159 +880,6 @@
           transform: ["scalex(0)", "scalex(1)"],
           fill: ["#80f", "#fc0"]
         });
-        /*
-        [...this.shadowRoot.querySelectorAll('rect[animate]')].map(
-            rect => this.animate2(rect)
-        )*/
-      }
-    }, {
-      key: "animate2",
-      value: function animate2(element) {
-        var _this2 = this;
-
-        // https://gist.github.com/bendc/4d66878dce526da728997d1e4e39325f
-        // animation utils
-        // ==============
-        var trackTime = function trackTime(id) {
-          var _performance$getEntri = performance.getEntriesByName(id),
-              _performance$getEntri2 = _slicedToArray(_performance$getEntri, 1),
-              entry = _performance$getEntri2[0];
-
-          if (!entry) {
-            performance.mark(id);
-            return 0;
-          }
-
-          return performance.now() - entry.startTime;
-        };
-
-        var delay = function delay(callback, duration) {
-          var tick = function tick() {
-            return getProgress(time) < 1 ? requestAnimationFrame(tick) : callback();
-          };
-
-          var time = {
-            duration: duration,
-            id: requestAnimationFrame(tick)
-          };
-        };
-
-        var getProgress = function getProgress(_ref) {
-          var _ref$duration = _ref.duration,
-              duration = _ref$duration === void 0 ? 1000 : _ref$duration,
-              id = _ref.id;
-          var progress = duration ? Math.min(trackTime(id) / duration, 1) : 1;
-          if (progress == 1) performance.clearMarks(id);
-          return progress;
-        };
-
-        var getCurrentValue = function getCurrentValue(_ref2) {
-          var _ref2$from = _ref2.from,
-              from = _ref2$from === void 0 ? 0 : _ref2$from,
-              to = _ref2.to,
-              easing = _ref2.easing;
-          return from + (to - from) * easing;
-        }; // easing equations
-        // ================
-
-
-        var ease = {
-          in: {
-            cubic: function cubic(progress) {
-              return Math.pow(progress, 3);
-            },
-            quartic: function quartic(progress) {
-              return Math.pow(progress, 4);
-            },
-            quintic: function quintic(progress) {
-              return Math.pow(progress, 5);
-            },
-            exponential: function exponential(progress) {
-              return progress > 0 ? Math.pow(1024, progress - 1) : 0;
-            },
-            circular: function circular(progress) {
-              return 1 - Math.sqrt(1 - Math.pow(progress, 2));
-            },
-            elastic: function elastic(progress) {
-              if (progress == 0) return 0;
-              if (progress == 1) return 1;
-              return -Math.pow(2, 10 * (progress - 1)) * Math.sin((progress - 1.1) * 5 * Math.PI);
-            }
-          },
-          out: {
-            cubic: function cubic(progress) {
-              return Math.pow(--progress, 3) + 1;
-            },
-            quartic: function quartic(progress) {
-              return 1 - Math.pow(--progress, 4);
-            },
-            quintic: function quintic(progress) {
-              return Math.pow(--progress, 5) + 1;
-            },
-            exponential: function exponential(progress) {
-              return progress < 1 ? 1 - Math.pow(2, -10 * progress) : 1;
-            },
-            circular: function circular(progress) {
-              return Math.sqrt(1 - Math.pow(--progress, 2));
-            },
-            elastic: function elastic(progress) {
-              if (progress == 0) return 0;
-              if (progress == 1) return 1;
-              return Math.pow(2, -10 * progress) * Math.sin((progress - .1) * 5 * Math.PI) + 1;
-            }
-          },
-          inOut: {
-            cubic: function cubic(progress) {
-              return (progress *= 2) < 1 ? .5 * Math.pow(progress, 3) : .5 * ((progress -= 2) * Math.pow(progress, 2) + 2);
-            },
-            quartic: function quartic(progress) {
-              return (progress *= 2) < 1 ? .5 * Math.pow(progress, 4) : -.5 * ((progress -= 2) * Math.pow(progress, 3) - 2);
-            },
-            quintic: function quintic(progress) {
-              return (progress *= 2) < 1 ? .5 * Math.pow(progress, 5) : .5 * ((progress -= 2) * Math.pow(progress, 4) + 2);
-            },
-            exponential: function exponential(progress) {
-              if (progress == 0) return 0;
-              if (progress == 1) return 1;
-              return (progress *= 2) < 1 ? .5 * Math.pow(1024, progress - 1) : .5 * (-Math.pow(2, -10 * (progress - 1)) + 2);
-            },
-            circular: function circular(progress) {
-              return (progress *= 2) < 1 ? -.5 * (Math.sqrt(1 - Math.pow(progress, 2)) - 1) : .5 * (Math.sqrt(1 - (progress -= 2) * progress) + 1);
-            },
-            elastic: function elastic(progress) {
-              if (progress == 0) return 0;
-              if (progress == 1) return 1;
-              progress *= 2;
-              var sin = Math.sin((progress - 1.1) * 5 * Math.PI);
-              return progress < 1 ? -.5 * Math.pow(2, 10 * (progress - 1)) * sin : .5 * Math.pow(2, -10 * (progress - 1)) * sin + 1;
-            }
-          }
-        }; // animation example
-        // =================
-
-        var animate = function animate() {
-          var tick = function tick() {
-            var progress = getProgress(animation);
-            if (progress < 1) requestAnimationFrame(tick); // 1.Animation logic -----------------------------------------------------------
-
-            var easing = ease.out.elastic(progress);
-            var value = getCurrentValue({
-              from: 0,
-              to: _this2.getAttribute('value'),
-              easing: easing
-            });
-            element.setAttribute("width", value);
-          };
-
-          var animation = {
-            // 2. optionnaly specify a duration (defaults to 1s) ---------------------------
-            duration: 1200,
-            id: requestAnimationFrame(tick)
-          };
-        }; // 3. optionally set a timeout ----------------------------------------------------
-
-
-        delay(animate, 250);
       }
     }]);
 

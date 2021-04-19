@@ -1,7 +1,7 @@
 module.exports = config => {
 
   // Set directories to pass through to the dist folder
-  config.addPassthroughCopy('dist');
+  config.addPassthroughCopy('src');
 
   return {
     markdownTemplateEngine: 'njk',

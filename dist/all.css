@@ -1,6 +1,452 @@
-@import url("./settings/_settings.css");
+:root {
+  --measure: 60ch;
+
+  --font-plain:Helvetica Neue,Helvetica,Arial,sans-serif;
+  --font-special:Barlow Condensed,Helvetica,sans-serif;
+  --font-mono:Menlo,Courier,Courier New,Andale Mono,monospace;
+  --color-dark:#050505;
+  --color-darkish:#404040;
+  --color-lightish:#e6e6e6;
+  --color-light:#fafafa;
+  --color-mid:grey;
+  
+  --font-size-s: .75rem;
+  --font-size: 1rem;
+  --font-size-l: 1.75rem;
+  --font-size-xl: 2.25rem;
+
+
+  --heading-size-1: 32px;
+  --heading-size: 24px;
+  --heading-size-secondary: 19px;
+  --text-size: 19px;
+  --text-color: #474746;
+  --text-color-light: hsl(var(--text-color), 100%, 44%);
+  --c-eu: hsla(211.2, 100%, 29.4%, 1);
+  --c-eu-5: hsla(211.2, 100%, 29.4%, .5);
+  --c-secondary: #FCD838;
+  
+  --ratio: 1.5;
+  --s0: 1rem;
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  /* UI Colors */
+  --primary-hue: 12;
+  --color--primary: hsl(var(--primary-hue), 100%, 44%);
+  --color--primary--hover: hsl(var(--primary-hue), 100%, 39%);
+  --color--primary--active: hsl(var(--primary-hue), 100%, 30%);
+
+  /* Grays */
+  --c-g-1: hsl(0, 0%, 10%);
+  --c-g-2: hsl(0, 0%, 20%);
+  --c-g-3: hsl(0, 0%, 30%);
+  --c-g-4: hsl(0, 0%, 40%);
+  --c-g-5: hsl(0, 0%, 50%);
+  --c-g-6: hsl(0, 0%, 60%);
+  --c-g-7: hsl(0, 0%, 70%);
+  --c-g-8: hsl(0, 0%, 80%);
+  --c-g-9: hsl(0, 0%, 90%);
+
+  /* */
+  --border-color: #ebebeb;
+
+  /* Box Shadows */
+  --shadow: 0px 4px 4px 0px rgba(37, 37, 37, 0.25);
+  --shadow-01: 0px 2px 4px rgba(37, 37, 37, 0.1);
+  --shadow-02: 0px 4px 8px rgba(37, 37, 37, 0.1);
+  --shadow-03: 0px 8px 16px rgba(37, 37, 37, 0.1);
+  --shadow-04: 0px 16px 24px rgba(37, 37, 37, 0.1);
+  --shadow-05: 0px 24px 32px rgba(37, 37, 37, 0.1);
+}
+
+/* Modern CSS reset: https://github.com/hankchizljaw/modern-css-reset */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
 
 html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+
+img {
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+}
+
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+/* Utilities */
+
+.max-width\:measure {
+  max-width: var(--measure);
+}
+
+.max-width\:measure\/2 {
+  max-width: calc(var(--measure) / 2);
+}
+
+:root {
+  --font-size: 1rem;
+  --font-size-l: 1.75rem;
+  --font-size-xl: 2.25rem;
+}
+
+/* elements */
+
+h1,
+h2,
+h3,
+h4 {
+  line-height:var(--line-height-small);
+  font-family:var(--font-plain);
+  font-weight:700;
+  hyphens:auto
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
+  font-size: var(--font-size);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+}
+
+/* utilities */
+
+.cor-h1 {
+  font-size: var(--font-size-xl) !important;
+}
+
+.cor-h2 {
+  font-size: var(--font-size-l) !important;
+}
+
+.cor-h3 {
+  font-size: var(--font-size) !important;
+}
+
+.cor-h4 {
+  font-size: var(--font-size-s) !important;
+}
+
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.font-size\:biggish {
+  font-size: var(--font-size-biggish) !important;
+}
+
+.font-size\:big {
+  font-size: var(--font-size-big) !important;
+}
+
+.cor-stack  {
+  --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cor-stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cor-stack > * + * {
+  margin-top: var(--space);
+}
+
+.cor-box {
+  --color-light: #fff;
+  --color-dark: #000;
+
+  background-color: var(--color-light);
+  border: var(--border-thin) solid;
+  color: var(--color-dark);
+  padding: var(--s1);
+}
+
+.cor-box * {
+  color: inherit;
+}
+
+.cor-box.invert {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.cor-center {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--measure);
+}
+
+.cor-with-sidebar {
+  --content-min-width: 50%;
+  overflow: hidden;
+}
+
+.cor-with-sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--s1) / 2 * -1);
+}
+
+.cor-with-sidebar > * > * {
+  margin: calc(var(--s1) / 2);
+  flex-grow: 1;
+}
+
+.cor-with-sidebar > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(var(--content-min-width) - var(--s1));
+}
+
+.cor-cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 1rem;
+}
+
+.cor-cover > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cor-cover > :first-child:not(h1) {
+  margin-top: 0;
+}
+
+.cor-cover > :last-child:not(h1) {
+  margin-bottom: 0;
+}
+
+.cor-cover > h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cor-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@supports (width: min(250px, 100%)) {
+  .cor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+}
+
+.cor-frame {
+  --n: 9;
+  --d: 16;
+  padding-bottom: calc(var(--n) / var(--d) * 100%);
+  position: relative;
+}
+
+.cor-frame > * {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cor-frame > img,
+.cor-frame > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* https://www.sarasoueidan.com/blog/horizontal-rules/ */
+
+[role="separator"] .shape-fill {
+  fill: #4A90E2;
+}
+
+/* IE and Legacy Edge */
+
+@media screen and (-ms-high-contrast: active) {
+  [role="separator"] {
+      --hr-color: windowText;
+  }
+}
+
+/* Using the new standards for forced colors, currently supported in Chromium Edge */
+
+@media screen and (forced-colors: active) {
+[role="separator"] {
+      --hr-color: CanvasText;
+  }
+}
+
+.radius {
+  border-radius: 0.5rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+:root {
+  line-height: var(--ratio);
+  font-size: calc(.333vw + 1em);
+  font-family: var(--font-plain);
+  color: var(--color-dark);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
   color: red;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9hbGwuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVDQUF1Qzs7QUFFdkM7RUFDRSxVQUFVO0FBQ1oiLCJmaWxlIjoiYWxsLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiLi9zZXR0aW5ncy9fc2V0dGluZ3MuY3NzXCIpO1xuXG5odG1sIHtcbiAgY29sb3I6IHJlZDtcbn0iXX0= */
