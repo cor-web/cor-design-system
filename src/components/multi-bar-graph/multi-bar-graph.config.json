@@ -1,0 +1,96 @@
+{
+  "title": "Multi bar graph",
+  "context": {
+    "question": "If no, how should european countries show more solidarity? ",
+    "responses": [
+      {
+        "text": "la sécurité",
+        "choices": [
+          {
+            "text": "L'union européenne",
+            "value": 30
+          },
+          {
+            "text": "Le gouvernement national",
+            "value": 24
+          },
+          {
+            "text": "votre ville ou votre commune",
+            "value": 19
+          },
+          {
+            "text": "votre région",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "text": "le chômage",
+        "choices": [
+          {
+            "text": "L'union européenne",
+            "value": 30
+          },
+          {
+            "text": "Le gouvernement national",
+            "value": 24
+          },
+          {
+            "text": "votre ville ou votre commune",
+            "value": 19
+          },
+          {
+            "text": "votre région",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "text": "l'environnement",
+        "choices": [
+          {
+            "text": "By jointly tackling the negative impact of the economic and financial crisis",
+            "value": 30
+          },
+          {
+            "text": "By reducing inequalities between richer and poorer countries and regions",
+            "value": 24
+          },
+          {
+            "text": "By facing together the consequences of the migratory flows and of the refugees' crisis",
+            "value": 19
+          },
+          {
+            "text": "By defining a common approach to the climate and environmental challenges",
+            "value": 14
+          },
+          {
+            "text": "By defining a common approach to the climate and environmental challenges",
+            "value": 13
+          }
+        ]
+      },
+      {
+        "text": "La mobilité",
+        "choices": [
+          {
+            "text": "L'union européenne",
+            "value": 30
+          },
+          {
+            "text": "Le gouvernement national",
+            "value": 24
+          },
+          {
+            "text": "votre ville ou votre commune",
+            "value": 19
+          },
+          {
+            "text": "votre région",
+            "value": 14
+          }
+        ]
+      }
+    ]
+  }
+}

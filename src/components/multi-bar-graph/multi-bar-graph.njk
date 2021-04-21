@@ -1,0 +1,26 @@
+
+<dt>{{question}}</dt>
+  
+  {% for response in responses %}
+  
+    <dd>
+        
+        {# Start Multi bar graph #}
+        
+        {{response.text}}
+
+        <multi-bar-chart>
+          {% for choice in response.choices %}
+            <multi-bar-item value="{{choice.value}}">{{choice.text}} <span>{{choice.value}}%</span></multi-bar-item>
+          {% endfor %}
+        </multi-bar-chart>
+
+        {# End Multi bar graph #}
+
+  
+    </dd>
+  
+  {% endfor %}
+
+  <script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
+

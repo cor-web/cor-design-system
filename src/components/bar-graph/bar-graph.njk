@@ -1,0 +1,17 @@
+
+<dt>{{question}}</dt>
+  
+{% for response in responses %}
+
+  <dd>
+
+    {{response.text}} <span>{{response.value}}%</span>
+
+    <bar-chart value="{{response.value}}"></bar-chart>
+
+  </dd>
+
+{% endfor %}
+
+<script src="/components/bar-graph/bar-graph.js" type="module"></script>
+

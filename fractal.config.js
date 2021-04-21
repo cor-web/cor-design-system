@@ -18,3 +18,6 @@ fractal.docs.set('path', __dirname + '/src/docs');
 /* Static assets */
 fractal.web.set('static.path', __dirname + '/src');
 
+/* Build directory */
+fractal.web.set('builder.dest', __dirname + '/public/fractal');
+
