@@ -854,9 +854,7 @@
 
       _this = _super.call(this); // One value
 
-      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')]; // Multi value
-
-      if (_this.getAttribute('values')) _this.values = _this.getAttribute('values').split(',');
+      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')];
 
       _this.attachShadow({
         mode: 'open'
@@ -910,21 +908,35 @@
     }
   };
 
-  var MultiBarChart = /*#__PURE__*/function (_HTMLElement) {
-    _inherits(MultiBarChart, _HTMLElement);
+  var MultiBarChartItem = /*#__PURE__*/function (_HTMLElement) {
+    _inherits(MultiBarChartItem, _HTMLElement);
 
-    var _super = _createSuper(MultiBarChart);
+    var _super = _createSuper(MultiBarChartItem);
+
+    function MultiBarChartItem() {
+      _classCallCheck(this, MultiBarChartItem);
+
+      return _super.call(this);
+    }
+
+    return MultiBarChartItem;
+  }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
+
+  customElements.define("multi-bar-chartitem", MultiBarChartItem);
+
+  var MultiBarChart = /*#__PURE__*/function (_HTMLElement2) {
+    _inherits(MultiBarChart, _HTMLElement2);
+
+    var _super2 = _createSuper(MultiBarChart);
 
     function MultiBarChart() {
       var _this;
 
       _classCallCheck(this, MultiBarChart);
 
-      _this = _super.call(this); // One value
+      _this = _super2.call(this); // Multi value
 
-      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')]; // Multi value
-
-      if (_this.getAttribute('values')) _this.values = _this.getAttribute('values').split(',');
+      if (_this.getAttribute('value')) _this.values = _this.getAttribute('value').split(',');
 
       _this.attachShadow({
         mode: 'open'

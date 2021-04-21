@@ -8,9 +8,6 @@ class BarChart2 extends HTMLElement {
     // One value
     if (this.getAttribute('value')) this.values = [this.getAttribute('value')];
 
-    // Multi value
-    if (this.getAttribute('values')) this.values = this.getAttribute('values').split(',');
-
     let shadowRoot = this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = template.render(this.values);
   }

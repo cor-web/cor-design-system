@@ -7,7 +7,7 @@ fractal.components.engine("@frctl/nunjucks"); // register the Nunjucks adapter f
 fractal.components.set("ext", ".njk"); // look for files with a .nunj file extension
 
 /* Set the title of the project */
-fractal.set('project.title', 'Cor-Web Component Library');
+fractal.set('project.title', 'Cor-Web Components Library');
 
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/src/components');

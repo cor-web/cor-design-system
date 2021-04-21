@@ -1,15 +1,21 @@
 import animate from "../../js/libraries/animateplus.js";
 import template from "./template.js";
 
+class MultiBarChartItem extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+}
+
+customElements.define("multi-bar-chartitem", MultiBarChartItem);
+
 class MultiBarChart extends HTMLElement {
   constructor() {
     super();
 
-    // One value
-    if (this.getAttribute('value')) this.values = [this.getAttribute('value')];
-
     // Multi value
-    if (this.getAttribute('values')) this.values = this.getAttribute('values').split(',');
+    if (this.getAttribute('value')) this.values = this.getAttribute('value').split(',');
 
     let shadowRoot = this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = template.render(this.values);
