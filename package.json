@@ -1,13 +1,14 @@
 {
   "name": "@cor-web/cor-design-system",
-  "version": "0.1.1",
+  "version": "0.1.10",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev:js": "rollup -c -w",
     "dev:css": "postcss src/all.css -o dist/all.css -w",
     "start": "concurrently --kill-others npm:dev:*",
-    "site": "npx eleventy --serve",
+    "site": "eleventy --serve",
+    "fractal": "fractal start --sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +31,9 @@
     "rollup-plugin-postcss": "^4.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@frctl/fractal": "^1.5.6",
+    "@frctl/nunjucks": "^2.0.10",
     "animateplus": "^2.1.1",
     "postcss-import": "^14.0.1",
     "remove": "^0.1.5"

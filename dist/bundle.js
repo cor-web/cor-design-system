@@ -842,15 +842,15 @@
     }
   };
 
-  var BarChart = /*#__PURE__*/function (_HTMLElement) {
-    _inherits(BarChart, _HTMLElement);
+  var BarChart2 = /*#__PURE__*/function (_HTMLElement) {
+    _inherits(BarChart2, _HTMLElement);
 
-    var _super = _createSuper(BarChart);
+    var _super = _createSuper(BarChart2);
 
-    function BarChart() {
+    function BarChart2() {
       var _this;
 
-      _classCallCheck(this, BarChart);
+      _classCallCheck(this, BarChart2);
 
       _this = _super.call(this); // One value
 
@@ -866,7 +866,7 @@
       return _this;
     }
 
-    _createClass(BarChart, [{
+    _createClass(BarChart2, [{
       key: "connectedCallback",
       value: function connectedCallback() {
         var elements = this.shadowRoot.querySelectorAll("[animate]");
@@ -883,9 +883,9 @@
       }
     }]);
 
-    return BarChart;
+    return BarChart2;
   }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
-  customElements.define("bar-chart", BarChart);
+  customElements.define("bar-chart", BarChart2);
 
 }());

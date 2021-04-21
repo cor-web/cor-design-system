@@ -1,0 +1,16 @@
+.cor-cluster {
+  --space: 1rem;
+  overflow: hidden;
+}
+
+.cor-cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.cor-cluster > * > * {
+  margin: calc(var(--space) / 2);
+}

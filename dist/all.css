@@ -230,37 +230,42 @@ h4 {
 }
 
 h1 {
+  color: var(--text-color);
   font-size: var(--font-size-xl);
 }
 
 h2 {
+  color: var(--text-color);
   font-size: var(--font-size-l);
 }
 
 h3 {
+  color: var(--text-color);
   font-size: var(--font-size);
 }
 
 h4 {
+  color: var(--text-color);
   font-size: var(--font-size-s);
 }
 
 /* utilities */
 
 .cor-h1 {
-  font-size: var(--font-size-xl) !important;
+  color: var(--text-color);
+  font-size: var(--font-size-xl);
 }
 
 .cor-h2 {
-  font-size: var(--font-size-l) !important;
+  font-size: var(--font-size-l);
 }
 
 .cor-h3 {
-  font-size: var(--font-size) !important;
+  font-size: var(--font-size);
 }
 
 .cor-h4 {
-  font-size: var(--font-size-s) !important;
+  font-size: var(--font-size-s);
 }
 
 .font-size\:base {
@@ -273,6 +278,10 @@ h4 {
 
 .font-size\:big {
   font-size: var(--font-size-big) !important;
+}
+
+.text-color {
+  color: var(--text-color) !important;
 }
 
 .cor-stack  {
@@ -317,7 +326,25 @@ h4 {
   max-width: var(--measure);
 }
 
+.cor-cluster {
+  --space: 1rem;
+  overflow: hidden;
+}
+
+.cor-cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.cor-cluster > * > * {
+  margin: calc(var(--space) / 2);
+}
+
 .cor-with-sidebar {
+  --side-width: 20em;
   --content-min-width: 50%;
   overflow: hidden;
 }
@@ -330,6 +357,7 @@ h4 {
 
 .cor-with-sidebar > * > * {
   margin: calc(var(--s1) / 2);
+  flex-basis: 20em;
   flex-grow: 1;
 }
 

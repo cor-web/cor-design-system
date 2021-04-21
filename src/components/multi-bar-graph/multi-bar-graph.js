@@ -1,4 +1,4 @@
-import animate from "animateplus";
+import animate from "../../../node_modules/animateplus/animateplus.js";
 import template from "./template.js";
 
 class MultiBarChart extends HTMLElement {
