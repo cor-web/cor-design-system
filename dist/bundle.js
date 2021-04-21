@@ -820,9 +820,9 @@
     });
   };
 
-  var colors = ["266dd3", "344055", "888098", "cfb3cd", "dfc2f2"];
+  var colors$1 = ["266dd3", "344055", "888098", "cfb3cd", "dfc2f2"];
 
-  var getPosition = function getPosition(values, index) {
+  var getPosition$1 = function getPosition(values, index) {
     var valuesInNumbers = values.map(function (value) {
       return Number(value);
     });
@@ -834,10 +834,10 @@
     return position;
   };
 
-  var template = {
+  var template$1 = {
     render: function render(values) {
       return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect rx=\"1\" ry=\"1\" width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n      \n      ".concat(values.map(function (value, index) {
-        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " rx=\"1\" ry=\"1\" x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
+        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " rx=\"1\" ry=\"1\" x=\"").concat(getPosition$1(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors$1[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition$1(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
       }).join(''), "\n\n    </svg>\n    ");
     }
   };
@@ -862,7 +862,7 @@
         mode: 'open'
       });
 
-      _this.shadowRoot.innerHTML = template.render(_this.values);
+      _this.shadowRoot.innerHTML = template$1.render(_this.values);
       return _this;
     }
 
@@ -887,5 +887,73 @@
   }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
   customElements.define("bar-chart", BarChart2);
+
+  var colors = ["266dd3", "344055", "888098", "cfb3cd", "dfc2f2"];
+
+  var getPosition = function getPosition(values, index) {
+    var valuesInNumbers = values.map(function (value) {
+      return Number(value);
+    });
+    var previousValues = valuesInNumbers.slice(0, index);
+    var previousValuesTotal = previousValues.reduce(function (sum, current) {
+      return sum + current;
+    }, 0);
+    var position = index > 0 ? previousValuesTotal : 0;
+    return position;
+  };
+
+  var template = {
+    render: function render(values) {
+      return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n      \n      ".concat(values.map(function (value, index) {
+        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
+      }).join(''), "\n\n    </svg>\n    ");
+    }
+  };
+
+  var MultiBarChart = /*#__PURE__*/function (_HTMLElement) {
+    _inherits(MultiBarChart, _HTMLElement);
+
+    var _super = _createSuper(MultiBarChart);
+
+    function MultiBarChart() {
+      var _this;
+
+      _classCallCheck(this, MultiBarChart);
+
+      _this = _super.call(this); // One value
+
+      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')]; // Multi value
+
+      if (_this.getAttribute('values')) _this.values = _this.getAttribute('values').split(',');
+
+      _this.attachShadow({
+        mode: 'open'
+      });
+
+      _this.shadowRoot.innerHTML = template.render(_this.values);
+      return _this;
+    }
+
+    _createClass(MultiBarChart, [{
+      key: "connectedCallback",
+      value: function connectedCallback() {
+        var elements = this.shadowRoot.querySelectorAll("[animate]");
+        console.log(elements);
+        animate({
+          elements: elements,
+          duration: 1200,
+          delay: function delay(index) {
+            return index * 100;
+          },
+          transform: ["scalex(0)", "scalex(1)"],
+          fill: ["#80f", "#fc0"]
+        });
+      }
+    }]);
+
+    return MultiBarChart;
+  }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
+
+  customElements.define("multi-bar-chart", MultiBarChart);
 
 }());
