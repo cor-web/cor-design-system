@@ -233,8 +233,20 @@
     return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
   }
 
+  function _toConsumableArray(arr) {
+    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+  }
+
+  function _arrayWithoutHoles(arr) {
+    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+  }
+
   function _arrayWithHoles(arr) {
     if (Array.isArray(arr)) return arr;
+  }
+
+  function _iterableToArray(iter) {
+    if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
   }
 
   function _iterableToArrayLimit(arr, i) {
@@ -279,6 +291,10 @@
     for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
 
     return arr2;
+  }
+
+  function _nonIterableSpread() {
+    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
 
   function _nonIterableRest() {
@@ -902,64 +918,53 @@
 
   var template = {
     render: function render(values) {
-      return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n      \n      ".concat(values.map(function (value, index) {
-        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
-      }).join(''), "\n\n    </svg>\n    ");
+      return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n\n      ".concat(values.map(function (value, index) {
+        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      <g>\n        <slot name=\"my-test\">xx</slot>\n      </g>\n      ");
+      }).join(''), "\n\n    </svg>\n\n    ");
     }
   };
 
-  var MultiBarChartItem = /*#__PURE__*/function (_HTMLElement) {
-    _inherits(MultiBarChartItem, _HTMLElement);
+  var MultiBarChart = /*#__PURE__*/function (_HTMLElement) {
+    _inherits(MultiBarChart, _HTMLElement);
 
-    var _super = _createSuper(MultiBarChartItem);
-
-    function MultiBarChartItem() {
-      _classCallCheck(this, MultiBarChartItem);
-
-      return _super.call(this);
-    }
-
-    return MultiBarChartItem;
-  }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
-
-  customElements.define("multi-bar-chartitem", MultiBarChartItem);
-
-  var MultiBarChart = /*#__PURE__*/function (_HTMLElement2) {
-    _inherits(MultiBarChart, _HTMLElement2);
-
-    var _super2 = _createSuper(MultiBarChart);
+    var _super = _createSuper(MultiBarChart);
 
     function MultiBarChart() {
       var _this;
 
       _classCallCheck(this, MultiBarChart);
 
-      _this = _super2.call(this); // Multi value
-
-      if (_this.getAttribute('value')) _this.values = _this.getAttribute('value').split(',');
+      _this = _super.call(this);
 
       _this.attachShadow({
         mode: 'open'
       });
 
-      _this.shadowRoot.innerHTML = template.render(_this.values);
+      var children = _this.querySelectorAll("[value]");
+
+      _this.values = _toConsumableArray(children).map(function (child) {
+        return child.getAttribute('value');
+      });
+      var graphtemplate = document.createElement('template');
+      graphtemplate.innerHTML = template.render(_this.values);
+
+      _this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
+
       return _this;
     }
 
     _createClass(MultiBarChart, [{
       key: "connectedCallback",
       value: function connectedCallback() {
-        var elements = this.shadowRoot.querySelectorAll("[animate]");
-        console.log(elements);
+        /*
         animate({
-          elements: elements,
+          elements,
           duration: 1200,
-          delay: function delay(index) {
-            return index * 100;
-          },
+          delay: index => index * 100,
           transform: ["scalex(0)", "scalex(1)"],
           fill: ["#80f", "#fc0"]
         });
+        */
       }
     }]);
 

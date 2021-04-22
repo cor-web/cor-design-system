@@ -12,7 +12,8 @@
         <multi-bar-chart>
           {% for choice in response.choices %}
             <multi-bar-item value="{{choice.value}}">
-              <span>{{choice.text}}</span>
+              <span slot="item-text">{{choice.text}}</span>
+              <span slot="item-value">{{choice.value}}%</span>
             </multi-bar-item>
           {% endfor %}
         </multi-bar-chart>
