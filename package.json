@@ -10,6 +10,7 @@
     "site": "eleventy --serve",
     "fractal": "fractal start --sync",
     "fractal:build": "fractal build",
+    "css:build": "postcss src/all.css -o dist/all.css",
     "build": "eleventy && fractal build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

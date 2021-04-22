@@ -21,7 +21,7 @@
           },
           {
             "text": "votre région",
-            "value": 14
+            "value": 27
           }
         ]
       },
@@ -30,19 +30,19 @@
         "choices": [
           {
             "text": "L'union européenne",
-            "value": 30
+            "value": 20
           },
           {
             "text": "Le gouvernement national",
-            "value": 24
+            "value": 30
           },
           {
             "text": "votre ville ou votre commune",
-            "value": 19
+            "value": 40
           },
           {
             "text": "votre région",
-            "value": 14
+            "value": 10
           }
         ]
       },
@@ -50,24 +50,20 @@
         "text": "l'environnement",
         "choices": [
           {
-            "text": "By jointly tackling the negative impact of the economic and financial crisis",
+            "text": "L'union européenne",
+            "value": 20
+          },
+          {
+            "text": "Le gouvernement national",
             "value": 30
           },
           {
-            "text": "By reducing inequalities between richer and poorer countries and regions",
-            "value": 24
+            "text": "votre ville ou votre commune",
+            "value": 40
           },
           {
-            "text": "By facing together the consequences of the migratory flows and of the refugees' crisis",
-            "value": 19
-          },
-          {
-            "text": "By defining a common approach to the climate and environmental challenges",
-            "value": 14
-          },
-          {
-            "text": "By defining a common approach to the climate and environmental challenges",
-            "value": 13
+            "text": "votre région",
+            "value": 10
           }
         ]
       },
@@ -76,19 +72,19 @@
         "choices": [
           {
             "text": "L'union européenne",
-            "value": 30
+            "value": 20
           },
           {
             "text": "Le gouvernement national",
-            "value": 24
+            "value": 30
           },
           {
             "text": "votre ville ou votre commune",
-            "value": 19
+            "value": 40
           },
           {
             "text": "votre région",
-            "value": 14
+            "value": 10
           }
         ]
       }

@@ -1,32 +1,24 @@
 import animate from "../../js/libraries/animateplus.js";
 import template from "./template.js";
 
-class MultiBarChartItem extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-}
-
-customElements.define("multi-bar-chartitem", MultiBarChartItem);
-
 class MultiBarChart extends HTMLElement {
   constructor() {
     super();
 
-    // Multi value
-    if (this.getAttribute('value')) this.values = this.getAttribute('value').split(',');
-
     let shadowRoot = this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = template.render(this.values);
+
+    const children = this.querySelectorAll("[value]");
+    this.values = [...children].map(child => child.getAttribute('value'))
+
+    const graphtemplate = document.createElement('template');
+    graphtemplate.innerHTML = template.render(this.values);
+    this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
+
   }
 
   connectedCallback() {
 
-    const elements = this.shadowRoot.querySelectorAll("[animate]");
-
-    console.log(elements);
-
+    /*
     animate({
       elements,
       duration: 1200,
@@ -34,7 +26,7 @@ class MultiBarChart extends HTMLElement {
       transform: ["scalex(0)", "scalex(1)"],
       fill: ["#80f", "#fc0"]
     });
-
+    */
   }
 
 }
