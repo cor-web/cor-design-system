@@ -1,0 +1,40 @@
+
+<dt>{{question}}</dt>
+
+
+{% for response in responses %}
+
+  {# Start Country selector #}
+
+  <label for="country-select">Change country:</label>
+
+  <select name="countries" id="country-select">
+    {% for value in response.values %}
+      <option value="{{value.country}}">{{value.countryName}}</option>
+    {% endfor %}
+  </select>
+
+  {# End Country selector #}
+
+
+  <dd>
+
+    {{response.text}}
+
+    <ul>
+      
+      {% for value in response.values %}
+        <li country="{{value.country}}">
+          {{value.countryName}} <span>{{value.value}}%</span>
+
+          <bar-chart value="{{value.value}}"></bar-chart>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </dd>
+
+{% endfor %}
+
+<script src="/components/bar-graph/bar-graph.js" type="module"></script>
+
