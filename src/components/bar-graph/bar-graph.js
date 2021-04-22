@@ -19,8 +19,6 @@ class BarChart2 extends HTMLElement {
 
     const elements = this.shadowRoot.querySelectorAll("[animate]");
 
-    console.log(elements);
-
     animate({
       elements,
       duration: 1200,

@@ -4,24 +4,23 @@
 
 {% for response in responses %}
 
-  {# Start Country selector #}
-
-  <label for="country-select">Change country:</label>
-
-  <select name="countries" id="country-select">
-    {% for value in response.values %}
-      <option value="{{value.country}}">{{value.countryName}}</option>
-    {% endfor %}
-  </select>
-
-  {# End Country selector #}
-
-
-  <dd>
+  <dd id="survey-item-{{ questionID }}">
 
     {{response.text}}
 
-    <ul>
+    {# Start Country selector #}
+
+    <label for="country-select">Change country:</label>
+
+    <select name="countries" id="country-select">
+      {% for value in response.values %}
+        <option value="{{value.country}}">{{value.countryName}}</option>
+      {% endfor %}
+    </select>
+
+    {# End Country selector #}
+
+    <ul selector="country-select">
       
       {% for value in response.values %}
         <li country="{{value.country}}">
@@ -36,5 +35,25 @@
 
 {% endfor %}
 
+
+
 <script src="/components/bar-graph/bar-graph.js" type="module"></script>
 
+
+<script>
+  const filterableList = document.querySelector("[selector]");
+  const filterableListItems = filterableList.children;
+  const selector = document.getElementById(filterableList.getAttribute("selector"));
+
+  const filterList = (value) => {
+    [...filterableListItems].map( item => {
+      item.getAttribute("country") === value ? item.hidden = false : item.hidden = true ;
+    });
+  };
+  
+  filterList(selector.value);
+
+  selector.addEventListener('change', (event) => {
+    filterList(selector.value);
+  });
+</script>
