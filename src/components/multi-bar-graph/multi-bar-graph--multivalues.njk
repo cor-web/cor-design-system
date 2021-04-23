@@ -1,81 +1,46 @@
+<h3>{{intro}}</h3>
 
-<dt>{{question}}</dt>
+{# Start Filter #}
+{% for filter in filters %}
+  <label for="{{ filter.id }}-select">{{ filter.label }}</label>
+
+  <select name="{{ filter.id }}" id="{{ filter.id }}-select">
+    {% for value in filter.values %}
+      <option value="{{value.id}}">{{value.name}}</option>
+    {% endfor %}
+  </select>
+{% endfor %}
+{# End Filter #}
+
+<dl>
   
+  {% for subject in subjects %}
+    
+    <dt>{{subject.subject}}</dt>
 
-  
-    <dd id="survey-item-{{ questionID }}">
+    <dd>
 
-        {# Start Country selector #}
-
-        <label for="country-select">Change country:</label>
-aa
-        <select name="countries" id="country-select">
-
-          {# Dirty solution to get all the available values #}dd
-          {% for subject in subjects %}a
-            xx
-              {% for response in subject.reponses %}f
-               f
-                <option value="{{response.country}}">{{response.countryName}}</option>
-              
-              {% endfor %}
-            
-          {% endfor %}
-        </select>
-
-        {# End Country selector #}
-
-        <p>{{response.text}}</p>
-
-        
-          {% for choice in response.choices %}
-
+        {% for response in subject.responses %}
+          {# Start Multi bar graph #}
           
-            {% for value in choice.values %}
+          {{response.countryName}}
 
-            <p>{{value.countryName}}</p>
-            <multi-bar-chart>
-              {% for value in choice.values %}
-              {{choice.text}} {{choice.value}}%
-                <multi-bar-item value="{{value.value}}">
-                  <span slot="item-text">{{choice.text}}</span>
-                  <span slot="item-value">{{choice.value}}%</span>
-                </multi-bar-item>
-              {% endfor %}
-              </multi-bar-chart>
-              {% endfor %}
-          {% endfor %}
-        
+          <multi-bar-chart>
+            {% for choice in response.values %}
+              <multi-bar-item value="{{choice.value}}">
+                <span slot="item-text">{{choice.text}}</span>
+                <span slot="item-value">{{choice.value}}%</span>
+              </multi-bar-item>
+            {% endfor %}
+          </multi-bar-chart>
 
-        <ul>
-          {% for choice in response.choices %}
-            {{choice.text}}
+          {# End Multi bar graph #}
+        {% endfor %}
 
-            {# Start Multi bar graph #}
-
-            <ul selector="country-select">
-          
-              {% for value in choice.values %}
-                <li country="{{value.country}}">
-                  {{value.countryName}} <span>{{value.value}}%</span>
-                </li>
-              {% endfor %}
-            </ul>
-
-            
-
-          {% endfor %}
-
-          
-
-        </ul>
-
-        {# End Multi bar graph #}
-
-  
     </dd>
   
-  
+  {% endfor %}
+</dl>
 
-  <script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
+<script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
 

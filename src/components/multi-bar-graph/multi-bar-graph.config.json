@@ -2,8 +2,32 @@
   "title": "Multi bar graph",
   "status": "wip",
   "context": {
-    "question": "If no, how should european countries show more solidarity? ",
-    "questionID": 1,
+    "intro": "If no, how should european countries show more solidarity? ",
+    "filters": [
+      {
+        "name": "Countries",
+        "id": "countries",
+        "label": "Select country",
+        "values": [
+          {
+            "id": "EU",
+            "name": "Europe"
+          },
+          {
+            "id": "BE",
+            "name": "Belgium"
+          },
+          {
+            "id": "NL",
+            "name": "Nederland"
+          },
+          {
+            "id": "FR",
+            "name": "France"
+          }
+        ]
+      }
+    ],
     "responses": [
       {
         "text": "la sécurité",
@@ -100,6 +124,7 @@
         "subjects": [
           {
             "subject": "Mobility",
+            "filters": "",
             "responses": [
               {
                 "country": "EU",
@@ -129,11 +154,11 @@
                 "values": [
                   {
                     "text": "La mobilité",
-                    "value": 10
+                    "value": 30
                   },
                   {
                     "text": "Le gouvernement national",
-                    "value": 10
+                    "value": 20
                   },
                   {
                     "text": "votre ville ou votre commune",
