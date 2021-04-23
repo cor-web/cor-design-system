@@ -1,26 +1,25 @@
 
 <dt>{{question}}</dt>
 
+{# Start Filter #}
+{% for filter in filters %}
+<cor-filter>
+  <label for="{{ filter.id }}-filter">{{ filter.label }}</label>
+
+  <select name="{{ filter.id }}" id="{{ filter.id }}-filter">
+    {% for value in filter.values %}
+      <option value="{{value.id}}">{{value.name}}</option>
+    {% endfor %}
+  </select>
+</cor-filter>
+{% endfor %}
+{# End Filter #}
 
 {% for response in responses %}
 
   <dd id="survey-item-{{ questionID }}">
 
     {{response.text}}
-
-    {# Start Filter #}
-    {% for filter in filters %}
-    <cor-filter>
-      <label for="{{ filter.id }}-filter">{{ filter.label }}</label>
-
-      <select name="{{ filter.id }}" id="{{ filter.id }}-filter">
-        {% for value in filter.values %}
-          <option value="{{value.id}}">{{value.name}}</option>
-        {% endfor %}
-      </select>
-    </cor-filter>
-    {% endfor %}
-    {# End Filter #}
 
     <ul filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
       

@@ -2,9 +2,10 @@ class CorFilter extends HTMLElement {
   constructor() {
     super();
 
-    const filterableList = document.querySelector("[filter]");
-    const filterableListItems = filterableList.children;
-    const selector = document.getElementById(`${filterableList.getAttribute("filter")}-filter`);
+    const filterableLists = document.querySelectorAll("[filter]");
+    const filterableListItems = document.querySelectorAll("[filter] > *");
+    const idOfSelectors = [...filterableLists].map(list => list.getAttribute("filter"));
+    const selectors = [...filterableLists].map(list => document.getElementById(`${list.getAttribute("filter")}-filter`));
 
     const filterList = (value) => {
       [...filterableListItems].map(item => {
@@ -13,11 +14,11 @@ class CorFilter extends HTMLElement {
       });
     };
 
-    filterList(selector.value);
+    selectors.map(selector => filterList(selector.value));
 
-    selector.addEventListener('change', (event) => {
-      filterList(selector.value);
-    });
+    [...selectors].map(selector => selector.addEventListener('change', (event) =>
+      filterList(selector.value))
+    );
 
   }
 }

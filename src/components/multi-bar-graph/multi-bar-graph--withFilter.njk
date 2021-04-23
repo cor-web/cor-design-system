@@ -37,6 +37,11 @@
             {% endfor %}
           </multi-bar-chart>
 
+          <ul>
+            {% for choice in response.values %}
+              <li>{{choice.text}}</li>
+            {% endfor %}
+          </ul>
           {# End Multi bar graph #}
         {% endfor %}
 
