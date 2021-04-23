@@ -3,31 +3,6 @@
   "status": "wip",
   "context": {
     "intro": "If no, how should european countries show more solidarity? ",
-    "filters": [
-      {
-        "name": "Countries",
-        "id": "countries",
-        "label": "Select country",
-        "values": [
-          {
-            "id": "EU",
-            "name": "Europe"
-          },
-          {
-            "id": "BE",
-            "name": "Belgium"
-          },
-          {
-            "id": "NL",
-            "name": "Nederland"
-          },
-          {
-            "id": "FR",
-            "name": "France"
-          }
-        ]
-      }
-    ],
     "responses": [
       {
         "text": "la sécurité",
@@ -117,14 +92,38 @@
   },
   "variants": [
     {
-      "name": "multivalues",
+      "name": "withFilter",
       "status": "prototype",
       "context": {
         "question": "If no, how should european countries show more solidarity? ",
+        "filters": [
+          {
+            "name": "Countries",
+            "id": "countries",
+            "label": "Select country",
+            "values": [
+              {
+                "id": "EU",
+                "name": "Europe"
+              },
+              {
+                "id": "BE",
+                "name": "Belgium"
+              },
+              {
+                "id": "NL",
+                "name": "Nederland"
+              },
+              {
+                "id": "FR",
+                "name": "France"
+              }
+            ]
+          }
+        ],
         "subjects": [
           {
             "subject": "Mobility",
-            "filters": "",
             "responses": [
               {
                 "country": "EU",
@@ -224,6 +223,31 @@
                 ],
                 "filterableOn": [
                   "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "La mobilité",
+                    "value": 0
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
                 ]
               }
             ]

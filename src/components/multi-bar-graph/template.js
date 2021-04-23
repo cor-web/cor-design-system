@@ -28,9 +28,6 @@ export default {
         <text fill="white" font-family="arial"
           font-size="2" x="${getPosition(values, index) + 1}" y="50%">${value}</text>
       </g>
-      <g>
-        <slot name="my-test">xx</slot>
-      </g>
       `).join('')}
 
     </svg>

@@ -29,10 +29,35 @@
   },
   "variants": [
     {
-      "name": "multivalues",
+      "name": "withFilter",
       "status": "prototype",
       "context": {
         "question": "If no, how should european countries show more solidarity? ",
+        "filters": [
+          {
+            "name": "Countries",
+            "id": "countries",
+            "label": "Select country",
+            "values": [
+              {
+                "id": "EU",
+                "name": "Europe"
+              },
+              {
+                "id": "BE",
+                "name": "Belgium"
+              },
+              {
+                "id": "NL",
+                "name": "Nederland"
+              },
+              {
+                "id": "FR",
+                "name": "France"
+              }
+            ]
+          }
+        ],
         "responses": [
           {
             "text": "By jointly tackling the negative impact of the economic and financial crisis",
@@ -56,6 +81,11 @@
                 "country": "DE",
                 "countryName": "DE",
                 "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
               }
             ]
           }

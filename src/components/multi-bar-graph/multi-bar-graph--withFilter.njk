@@ -2,13 +2,15 @@
 
 {# Start Filter #}
 {% for filter in filters %}
-  <label for="{{ filter.id }}-select">{{ filter.label }}</label>
+<cor-filter>
+  <label for="{{ filter.id }}-filter">{{ filter.label }}</label>
 
-  <select name="{{ filter.id }}" id="{{ filter.id }}-select">
+  <select name="{{ filter.id }}" id="{{ filter.id }}-filter">
     {% for value in filter.values %}
       <option value="{{value.id}}">{{value.name}}</option>
     {% endfor %}
   </select>
+</cor-filter>
 {% endfor %}
 {# End Filter #}
 
@@ -18,7 +20,7 @@
     
     <dt>{{subject.subject}}</dt>
 
-    <dd>
+    <dd filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
 
         {% for response in subject.responses %}
           {# Start Multi bar graph #}
@@ -44,3 +46,4 @@
 </dl>
 
 <script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
+<script src="/components/cor-filter/cor-filter.js" type="module"></script>

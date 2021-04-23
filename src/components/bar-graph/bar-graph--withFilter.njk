@@ -1,0 +1,43 @@
+
+<dt>{{question}}</dt>
+
+
+{% for response in responses %}
+
+  <dd id="survey-item-{{ questionID }}">
+
+    {{response.text}}
+
+    {# Start Filter #}
+    {% for filter in filters %}
+    <cor-filter>
+      <label for="{{ filter.id }}-filter">{{ filter.label }}</label>
+
+      <select name="{{ filter.id }}" id="{{ filter.id }}-filter">
+        {% for value in filter.values %}
+          <option value="{{value.id}}">{{value.name}}</option>
+        {% endfor %}
+      </select>
+    </cor-filter>
+    {% endfor %}
+    {# End Filter #}
+
+    <ul filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
+      
+      {% for value in response.values %}
+        <li filterableBy="{{value.country}}">
+          {{value.countryName}} <span>{{value.value}}%</span>
+
+          <bar-chart value="{{value.value}}"></bar-chart>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </dd>
+
+{% endfor %}
+
+
+
+<script src="/components/bar-graph/bar-graph.js" type="module"></script>
+<script src="/components/cor-filter/cor-filter.js" type="module"></script>

@@ -1,0 +1,13 @@
+{# Start Filter #}
+{% for filter in filters %}
+<cor-filter>
+  <label for="{{ filter.id }}-filter">{{ filter.label }}</label>
+
+  <select name="{{ filter.id }}" id="{{ filter.id }}-filter">
+    {% for value in filter.values %}
+      <option value="{{value.id}}">{{value.name}}</option>
+    {% endfor %}
+  </select>
+</cor-filter>
+{% endfor %}
+{# End Filter #}
