@@ -23,9 +23,10 @@
         {% for response in subject.responses %}
           {# Start Multi bar graph #}
           
-          {{response.countryName}}
+          <multi-bar-chart filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
+            
+            {{response.countryName}}
 
-          <multi-bar-chart>
             {% for choice in response.values %}
               <multi-bar-item value="{{choice.value}}">
                 <span slot="item-text">{{choice.text}}</span>
@@ -43,4 +44,3 @@
 </dl>
 
 <script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
-

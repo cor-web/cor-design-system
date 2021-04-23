@@ -146,6 +146,9 @@
                     "text": "votre région",
                     "value": 10
                   }
+                ],
+                "filterableOn": [
+                  "EU"
                 ]
               },
               {
@@ -168,6 +171,9 @@
                     "text": "votre région",
                     "value": 10
                   }
+                ],
+                "filterableOn": [
+                  "BE"
                 ]
               },
               {
@@ -190,6 +196,9 @@
                     "text": "votre région",
                     "value": 10
                   }
+                ],
+                "filterableOn": [
+                  "FR"
                 ]
               },
               {
@@ -212,6 +221,9 @@
                     "text": "votre région",
                     "value": 10
                   }
+                ],
+                "filterableOn": [
+                  "DE"
                 ]
               }
             ]
