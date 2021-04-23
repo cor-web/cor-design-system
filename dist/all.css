@@ -473,8 +473,3 @@ h4 {
   font-family: var(--font-plain);
   color: var(--color-dark);
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: red;
-}

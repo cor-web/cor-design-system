@@ -3,6 +3,7 @@
   "status": "wip",
   "context": {
     "question": "If no, how should european countries show more solidarity? ",
+    "questionID": 1,
     "responses": [
       {
         "text": "la sécurité",
@@ -89,5 +90,109 @@
         ]
       }
     ]
-  }
+  },
+  "variants": [
+    {
+      "name": "multivalues",
+      "status": "prototype",
+      "context": {
+        "question": "If no, how should european countries show more solidarity? ",
+        "subjects": [
+          {
+            "subject": "Mobility",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "La mobilité",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "La mobilité",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "La mobilité",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }

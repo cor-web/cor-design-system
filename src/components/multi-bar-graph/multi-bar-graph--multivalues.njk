@@ -1,0 +1,81 @@
+
+<dt>{{question}}</dt>
+  
+
+  
+    <dd id="survey-item-{{ questionID }}">
+
+        {# Start Country selector #}
+
+        <label for="country-select">Change country:</label>
+aa
+        <select name="countries" id="country-select">
+
+          {# Dirty solution to get all the available values #}dd
+          {% for subject in subjects %}a
+            xx
+              {% for response in subject.reponses %}f
+               f
+                <option value="{{response.country}}">{{response.countryName}}</option>
+              
+              {% endfor %}
+            
+          {% endfor %}
+        </select>
+
+        {# End Country selector #}
+
+        <p>{{response.text}}</p>
+
+        
+          {% for choice in response.choices %}
+
+          
+            {% for value in choice.values %}
+
+            <p>{{value.countryName}}</p>
+            <multi-bar-chart>
+              {% for value in choice.values %}
+              {{choice.text}} {{choice.value}}%
+                <multi-bar-item value="{{value.value}}">
+                  <span slot="item-text">{{choice.text}}</span>
+                  <span slot="item-value">{{choice.value}}%</span>
+                </multi-bar-item>
+              {% endfor %}
+              </multi-bar-chart>
+              {% endfor %}
+          {% endfor %}
+        
+
+        <ul>
+          {% for choice in response.choices %}
+            {{choice.text}}
+
+            {# Start Multi bar graph #}
+
+            <ul selector="country-select">
+          
+              {% for value in choice.values %}
+                <li country="{{value.country}}">
+                  {{value.countryName}} <span>{{value.value}}%</span>
+                </li>
+              {% endfor %}
+            </ul>
+
+            
+
+          {% endfor %}
+
+          
+
+        </ul>
+
+        {# End Multi bar graph #}
+
+  
+    </dd>
+  
+  
+
+  <script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
+

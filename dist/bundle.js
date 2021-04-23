@@ -870,7 +870,9 @@
 
       _this = _super.call(this); // One value
 
-      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')];
+      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')]; // Multi values
+
+      if (_this.getAttribute('values')) _this.values = [_this.getAttribute('value')];
 
       _this.attachShadow({
         mode: 'open'
@@ -884,7 +886,6 @@
       key: "connectedCallback",
       value: function connectedCallback() {
         var elements = this.shadowRoot.querySelectorAll("[animate]");
-        console.log(elements);
         animate({
           elements: elements,
           duration: 1200,
