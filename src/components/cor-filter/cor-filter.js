@@ -4,17 +4,15 @@ class CorFilter extends HTMLElement {
 
     const filterableLists = document.querySelectorAll("[filter]");
     const filterableListItems = document.querySelectorAll("[filter] > *");
-    const idOfSelectors = [...filterableLists].map(list => list.getAttribute("filter"));
     const selectors = [...filterableLists].map(list => document.getElementById(`${list.getAttribute("filter")}-filter`));
 
     const filterList = (value) => {
-      [...filterableListItems].map(item => {
-        const listOfFilterabeTerms = item.getAttribute("filterableBy").split(',');
-        [...listOfFilterabeTerms].map(attributeItem => { attributeItem === value ? item.hidden = false : item.hidden = true });
-      });
-    };
+      const filteredItems = document.querySelectorAll(`[filterableBy*="${value}"]`);
+      for (const filterableListItem of filterableListItems) filterableListItem.hidden = true;
+      for (const filteredItem of filteredItems) filteredItem.hidden = false;
+    }
 
-    selectors.map(selector => filterList(selector.value));
+    for (const selector of selectors) filterList(selector.value);
 
     [...selectors].map(selector => selector.addEventListener('change', (event) =>
       filterList(selector.value))
