@@ -1,0 +1,16 @@
+<div class="cor-with-sidebar">
+  <div> <!-- intermediary wrapper -->
+    <div>
+      <!-- sidebar -->
+      {% block sidebar %}
+      sidebar
+      {% endblock %}
+    </div>
+    <div>
+      <!-- non-sidebar -->
+      {% block content %}
+      sidebar
+      {% endblock %}
+    </div>
+  </div>
+</div>

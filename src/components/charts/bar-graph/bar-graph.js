@@ -1,4 +1,4 @@
-import animate from "../../js/libraries/animateplus.js";
+import animate from "../../../js/libraries/animateplus.js";
 import template from "./template.js";
 
 class BarChart2 extends HTMLElement {

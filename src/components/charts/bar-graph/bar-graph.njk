@@ -1,9 +1,9 @@
 
-<dt>{{question}}</dt>
+<dt class="cor-h2">{{question}}</dt>
   
 {% for response in responses %}
 
-  <dd>
+  <dd class="border-bottom">
 
     {{response.text}} <span>{{response.value}}%</span>
 
@@ -13,5 +13,5 @@
 
 {% endfor %}
 
-<script src="/components/bar-graph/bar-graph.js" type="module"></script>
+<script src="/components/charts/bar-graph/bar-graph.js" type="module"></script>
 

@@ -36,19 +36,19 @@
               </multi-bar-item>
             {% endfor %}
           </multi-bar-chart>
-
-          <ul>
-            {% for choice in response.values %}
-              <li>{{choice.text}}</li>
-            {% endfor %}
-          </ul>
           {# End Multi bar graph #}
         {% endfor %}
+
+        <ul>
+          {% for choice in subject.responses.values %}
+            <li>{{choice.text}}</li>
+          {% endfor %}
+        </ul>
 
     </dd>
   
   {% endfor %}
 </dl>
 
-<script src="/components/multi-bar-graph/multi-bar-graph.js" type="module"></script>
-<script src="/components/cor-filter/cor-filter.js" type="module"></script>
+<script src="/components/charts/multi-bar-graph/multi-bar-graph.js" type="module"></script>
+<script src="/components/charts/cor-filter/cor-filter.js" type="module"></script>

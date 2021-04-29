@@ -1,2 +1,2 @@
-import './components/bar-graph/bar-graph';
-import './components/multi-bar-graph/multi-bar-graph';
+import './components/charts/bar-graph/bar-graph';
+import './components/charts/multi-bar-graph/multi-bar-graph';

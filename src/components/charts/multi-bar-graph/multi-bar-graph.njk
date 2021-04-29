@@ -1,0 +1,32 @@
+<h3>{{intro}}</h3>
+
+<dl>
+  
+  {% for response in responses %}
+    
+    <dt>{{response.text}}</dt>
+
+    <dd>
+
+        {# Start Multi bar graph #}
+        
+        <multi-bar-chart {% if loop.last %}legend="true"{% endif %}>
+          {% for choice in response.choices %}
+            <multi-bar-item slot="bar-item" value="{{choice.value}}">
+                <span slot="item-text">{{choice.text}}</span>
+                <span slot="item-value">{{choice.value}}%</span>
+            </multi-bar-item>
+          {% endfor %}
+        </multi-bar-chart>
+
+        {# End Multi bar graph #}
+
+        
+
+    </dd>
+  
+  {% endfor %}
+</dl>
+
+<script src="/components/charts/multi-bar-graph/multi-bar-graph.js" type="module"></script>
+
