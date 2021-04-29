@@ -19,13 +19,16 @@
   {% for subject in subjects %}
     
     <dt>{{subject.subject}}</dt>
-
+    
+    {# If it's the last question, we will show the legend #}
+    {% set lastQuestion = loop.last %}
+    
     <dd filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
 
         {% for response in subject.responses %}
           {# Start Multi bar graph #}
           
-          <multi-bar-chart filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
+          <multi-bar-chart {% if lastQuestion %}legend="true"{% endif %} filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
             
             {{response.countryName}}
 
@@ -38,12 +41,6 @@
           </multi-bar-chart>
           {# End Multi bar graph #}
         {% endfor %}
-
-        <ul>
-          {% for choice in subject.responses.values %}
-            <li>{{choice.text}}</li>
-          {% endfor %}
-        </ul>
 
     </dd>
   
