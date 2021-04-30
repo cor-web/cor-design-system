@@ -1,7 +1,7 @@
 title: "Website pages"
 status: "wip"
 label: 'Website pages'
-preview: @preview
+preview: "@preview"
 root: true
 context:
   title: "My website"

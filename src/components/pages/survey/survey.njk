@@ -1,12 +1,18 @@
-{% include "@page-header" %}  
+<div class="bg-white">
 
-<div class="cor-center">
+  {% include "@page-header" %}  
+qzaeayg
+  <div class="cor-center">
 
-  <div class="cor-stack">
-    {% include "@bar-graph" %}  
+    <div class="cor-stack">
+      {% for question in questions %}
+      {% render "@bar-graph--withfilter", question %}
+      {% endfor %}
+    </div>
+
   </div>
-
 </div>
+
 {#
 {% extends "@sidebar" %}
 

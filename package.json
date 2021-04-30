@@ -8,7 +8,7 @@
     "dev:css": "postcss src/all.css -o dist/all.css -w",
     "start": "concurrently --kill-others npm:dev:*",
     "site": "eleventy --serve",
-    "fractal": "fractal start --sync",
+    "fractal": "npm run css:build && fractal start --sync",
     "fractal:build": "fractal build",
     "css:build": "postcss src/all.css -o dist/all.css",
     "build": "eleventy && fractal build",

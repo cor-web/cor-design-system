@@ -1,13 +1,14 @@
 class CorFilter extends HTMLElement {
   constructor() {
     super();
-
-    const filterableLists = document.querySelectorAll("[filter]");
-    const filterableListItems = document.querySelectorAll("[filter] > *");
+    const filter = this.querySelector('select').name;
+    const filterableLists = document.querySelectorAll(`[filter=${filter}]`);
+    const filterableListItems = document.querySelectorAll(`[filter=${filter}] [filterableBy]`);
     const selectors = [...filterableLists].map(list => document.getElementById(`${list.getAttribute("filter")}-filter`));
 
     const filterList = (value) => {
-      const filteredItems = document.querySelectorAll(`[filterableBy*="${value}"]`);
+      const filteredItems = document.querySelectorAll(`[filter=${filter}] [filterableBy*="${value}"]`);
+      debugger;
       for (const filterableListItem of filterableListItems) filterableListItem.hidden = true;
       for (const filteredItem of filteredItems) filteredItem.hidden = false;
     }
@@ -21,4 +22,6 @@ class CorFilter extends HTMLElement {
   }
 }
 
-customElements.define("cor-filter", CorFilter);
+if (!customElements.get('cor-filter')) {
+  customElements.define('cor-filter', CorFilter);
+}

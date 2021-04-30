@@ -1,30 +1,258 @@
 {
   "status": "wip",
+  "variants": [
+    {
+      "name": "default",
+      "preview": "@preview"
+    },
+    {
+      "name": "inCor",
+      "preview": "@previewincor"
+    }
+  ],
   "context": {
     "title": "Survey results page",
     "description": "description",
-    "question": "If no, how should european countries show more solidarity? ",
-    "questionID": 1,
-    "responses": [
+    "questions": [
       {
-        "text": "By showing greater acceptance of the diversities that exists among the different countries",
-        "value": 21
+        "question": "111 If no, how should european countries show more solidarity? ",
+        "filters": [
+          {
+            "name": "Countries",
+            "id": "countries-1",
+            "label": "Select country",
+            "values": [
+              {
+                "id": "EU",
+                "name": "Europe"
+              },
+              {
+                "id": "BE",
+                "name": "Belgium"
+              },
+              {
+                "id": "NL",
+                "name": "Nederland"
+              },
+              {
+                "id": "FR",
+                "name": "France"
+              }
+            ]
+          }
+        ],
+        "responses": [
+          {
+            "text": "By jointly tackling the negative impact of the economic and financial crisis",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 50
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 100
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "Response 2",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 10
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 10
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "Response 3",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 80
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 100
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          }
+        ]
       },
       {
-        "text": "By jointly tackling the negative impact of the economic and financial crisis",
-        "value": 22
-      },
-      {
-        "text": "By reducing inequalities between richer and poorer countries and regions",
-        "value": 23
-      },
-      {
-        "text": "By facing together the consequences of the migratory flows and of the refugees' crisis",
-        "value": 24
-      },
-      {
-        "text": "By defining a common approach to the climate and environmental challenges",
-        "value": 19
+        "question": "222 If no, how should european countries show more solidarity? ",
+        "filters": [
+          {
+            "name": "Countries",
+            "id": "countries-2",
+            "label": "Select country",
+            "values": [
+              {
+                "id": "EU",
+                "name": "Europe"
+              },
+              {
+                "id": "BE",
+                "name": "Belgium"
+              },
+              {
+                "id": "NL",
+                "name": "Nederland"
+              },
+              {
+                "id": "FR",
+                "name": "France"
+              }
+            ]
+          }
+        ],
+        "responses": [
+          {
+            "text": "By jointly tackling the negative impact of the economic and financial crisis",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 50
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 100
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "Response 2",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 10
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 10
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "Response 3",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 80
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 100
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          }
+        ]
       }
     ]
   }
