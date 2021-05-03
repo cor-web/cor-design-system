@@ -15,7 +15,7 @@ const getPosition = (values, index) => {
 };
 
 export default {
-  render(values) {
+  render(values, theme) {
     return `
     <svg style="display:block" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
       
@@ -23,7 +23,7 @@ export default {
       
       ${values.map((value, index) => `
       <g>
-        <rect ${values > 0 ? "animate" : ""}  x="${getPosition(values, index)}"  width="${value}" height="4" fill="#${colors[index]}"></rect>
+        <rect ${values > 0 ? "animate" : ""}  x="${getPosition(values, index)}"  width="${value}" height="4" fill="var(--c-t-${theme}-1)"></rect>
 
         <text fill="white" font-family="arial"
           font-size="2" x="${getPosition(values, index) + 1}" y="50%">${value}</text>

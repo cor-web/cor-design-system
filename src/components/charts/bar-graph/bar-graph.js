@@ -11,8 +11,10 @@ class BarChart extends HTMLElement {
     // Multi values
     if (this.getAttribute('values')) this.values = [this.getAttribute('value')];
 
+    const theme = this.getAttribute('theme');
+
     let shadowRoot = this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = template.render(this.values);
+    this.shadowRoot.innerHTML = template.render(this.values, theme);
   }
 
   connectedCallback() {
@@ -23,8 +25,7 @@ class BarChart extends HTMLElement {
       elements,
       duration: 1200,
       delay: index => index * 100,
-      transform: ["scalex(0)", "scalex(1)"],
-      fill: ["#80f", "#fc0"]
+      transform: ["scalex(0)", "scalex(1)"]
     });
 
   }
