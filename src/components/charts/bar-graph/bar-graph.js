@@ -8,10 +8,17 @@ class BarChart extends HTMLElement {
     // One value
     if (this.getAttribute('value')) this.value = [this.getAttribute('value')];
 
-    const theme = this.getAttribute('theme');
+    const theme = this.getTheme(this.getAttribute('theme'));
 
     let shadowRoot = this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = template.render(this.value, theme);
+  }
+
+  getTheme(themeAttribute) {
+    return themeAttribute.substring(
+      themeAttribute.lastIndexOf("-") + 1,
+      themeAttribute.lastIndexOf(".")
+    );
   }
 
   connectedCallback() {
