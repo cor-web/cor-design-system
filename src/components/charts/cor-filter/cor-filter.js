@@ -8,7 +8,7 @@ class CorFilter extends HTMLElement {
 
     const filterList = (value) => {
       const filteredItems = document.querySelectorAll(`[filter=${filter}] [filterableBy*="${value}"]`);
-      debugger;
+
       for (const filterableListItem of filterableListItems) filterableListItem.hidden = true;
       for (const filteredItem of filteredItems) filteredItem.hidden = false;
     }

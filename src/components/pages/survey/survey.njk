@@ -1,12 +1,18 @@
 <div class="bg-white">
 
   {% include "@page-header" %}  
-qzaeayg
+
   <div class="cor-center">
 
     <div class="cor-stack">
       {% for question in questions %}
-      {% render "@bar-graph--withfilter", question %}
+        {% if question.type === "bargraph" %}
+          {% render "@bar-graph--withfilter", question %}
+        {% elif question.type === "multibargraph" %}
+          {% render "@multi-bar-graph--withfilter", question %}
+        {% else %}
+
+        {% endif %}
       {% endfor %}
     </div>
 

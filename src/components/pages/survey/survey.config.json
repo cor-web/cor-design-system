@@ -15,7 +15,8 @@
     "description": "description",
     "questions": [
       {
-        "question": "111 If no, how should european countries show more solidarity? ",
+        "question": "If no, how should european countries show more solidarity? ",
+        "type": "bargraph",
         "filters": [
           {
             "name": "Countries",
@@ -136,6 +137,7 @@
       },
       {
         "question": "222 If no, how should european countries show more solidarity? ",
+        "type": "bargraph",
         "filters": [
           {
             "name": "Countries",
@@ -249,6 +251,848 @@
                 "country": "NL",
                 "countryName": "Netherland",
                 "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "If no, how should european countries show more solidarity? ",
+        "type": "multibargraph",
+        "filters": [
+          {
+            "name": "Countries",
+            "id": "countries-3",
+            "label": "Select country",
+            "values": [
+              {
+                "id": "EU",
+                "name": "Europe"
+              },
+              {
+                "id": "BE",
+                "name": "Belgium"
+              },
+              {
+                "id": "NL",
+                "name": "Nederland"
+              },
+              {
+                "id": "FR",
+                "name": "France"
+              }
+            ]
+          }
+        ],
+        "subjects": [
+          {
+            "subject": "Mobility",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "EU"
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 30
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 20
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "BE"
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "FR"
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 0
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "Subject 2",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "EU"
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 30
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 20
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "BE"
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "FR"
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 0
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 30
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "Subject 3",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 50
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "EU"
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 30
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 20
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "BE"
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "FR"
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 0
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "If no, how should european countries show more solidarity? ",
+        "type": "multibargraph",
+        "filters": [
+          {
+            "name": "Countries",
+            "id": "countries-4",
+            "label": "Select country",
+            "values": [
+              {
+                "id": "EU",
+                "name": "Europe"
+              },
+              {
+                "id": "BE",
+                "name": "Belgium"
+              },
+              {
+                "id": "NL",
+                "name": "Nederland"
+              },
+              {
+                "id": "FR",
+                "name": "France"
+              }
+            ]
+          }
+        ],
+        "subjects": [
+          {
+            "subject": "Mobility",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "EU"
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 30
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 20
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "BE"
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "FR"
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 0
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "Subject 2",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "EU"
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 30
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 20
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "BE"
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "FR"
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "Europe",
+                    "value": 0
+                  },
+                  {
+                    "text": "Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "votre ville ou votre commune",
+                    "value": 30
+                  },
+                  {
+                    "text": "votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "Subject 3",
+            "responses": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "values": [
+                  {
+                    "text": "2Europe",
+                    "value": 50
+                  },
+                  {
+                    "text": "2Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "EU"
+                ]
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "values": [
+                  {
+                    "text": "2Europe",
+                    "value": 30
+                  },
+                  {
+                    "text": "2Le gouvernement national",
+                    "value": 20
+                  },
+                  {
+                    "text": "2votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "BE"
+                ]
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "values": [
+                  {
+                    "text": "2Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "2Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "FR"
+                ]
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "values": [
+                  {
+                    "text": "2Europe",
+                    "value": 10
+                  },
+                  {
+                    "text": "2Le gouvernement national",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre ville ou votre commune",
+                    "value": 10
+                  },
+                  {
+                    "text": "2votre région",
+                    "value": 10
+                  }
+                ],
+                "filterableOn": [
+                  "DE"
+                ]
+              },
+              {
+                "country": "Netherland",
+                "countryName": "NL",
+                "values": [
+                  {
+                    "text": "2Europe",
+                    "value": 0
+                  },
+                  {
+                    "text": "2Le gouvernement national",
+                    "value": 0
+                  },
+                  {
+                    "text": "2votre ville ou votre commune",
+                    "value": 0
+                  },
+                  {
+                    "text": "2votre région",
+                    "value": 0
+                  }
+                ],
+                "filterableOn": [
+                  "NL"
+                ]
               }
             ]
           }
