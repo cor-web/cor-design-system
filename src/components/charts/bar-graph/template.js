@@ -14,7 +14,7 @@ export default {
       
       
       <g>
-        <rect ${value > 0 ? "animate" : ""}  x="0"  width="${value}" height="4" fill="var(--c-1, var(--c-t-${theme}-1, var(--color, blue)))"></rect>
+        <rect ${value > 0 ? "animate" : ""}  x="0"  width="${value}" height="4" fill="var(--color, var(--chart-theme-${theme}-color-1, blue))"></rect>
 
         <text fill="white" font-family="arial"
           font-size="2" x="0" y="50%">${value}</text>

@@ -10,7 +10,7 @@ class MultiBarChart extends HTMLElement {
 
     this.attachShadow({ mode: 'open' });
 
-    const theme = this.getAttribute('theme');
+    const theme = this.getTheme(this.getAttribute('theme'));
     const children = this.querySelectorAll("[value]");
     this.values = [...children].map(child => child.getAttribute('value'))
 
@@ -20,6 +20,13 @@ class MultiBarChart extends HTMLElement {
 
     graphtemplate.innerHTML = template.render(this.values, theme);
 
+  }
+
+  getTheme(themeAttribute) {
+    return themeAttribute.substring(
+      themeAttribute.lastIndexOf("-") + 1,
+      themeAttribute.lastIndexOf(".")
+    );
   }
 
   addLegend() {

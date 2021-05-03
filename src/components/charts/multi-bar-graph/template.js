@@ -21,7 +21,7 @@ export default {
 
       :host {
         ${values.map((value, index) => `
-          --color-${index}: #${colors[index]};
+          --color-${index + 1}: #${colors[index + 1]};
         `).join('')}
       }
       
@@ -49,7 +49,7 @@ export default {
 
       ${values.map((value, index) => `
           li:nth-child(${index + 1}):before {
-            background-color: var(--c-${index + 1}, var(--c-t-${theme}-${index + 1}, var(--color-${index + 1}, blue)));
+            background-color: var(--color-${index + 1}, var(--chart-theme-${theme}-color-${index + 1}, blue));
           }
         `).join('')}
 
@@ -62,7 +62,7 @@ export default {
       ${values.map((value, index) => `
       <g aria-label="bar graph">
         <g>
-          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--c-${index + 1}, var(--c-t-${theme}-${index + 1}, var(--color-${index + 1}, blue)))"></rect>
+          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--color-${index + 1}, var(--chart-theme-${theme}-color-${index + 1}, blue))"></rect>
           <title>title</title>
         </g>
 

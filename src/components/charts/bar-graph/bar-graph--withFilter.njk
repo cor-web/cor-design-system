@@ -25,9 +25,10 @@
       
       {% for value in response.values %}
         <li filterableBy="{{value.country}}">
-          {{value.countryName}} <span>{{value.value}}%</span>
-
-          <bar-chart theme="1" value="{{value.value}}"></bar-chart>
+          <bar-chart theme="1" value="{{value.value}}">
+            <span slot="item-text">{{value.countryName}}</span>
+            <span slot="item-value">{{value.value}}%</span>
+          </bar-chart>
         </li>
       {% endfor %}
     </ul>
