@@ -1,0 +1,41 @@
+:root {
+  --color-theme-01-blue-munsell: hsla(191, 64%, 40%, 1);
+  --color-theme-01-polished-pine: hsla(170, 31%, 48%, 1);
+  --color-theme-01-laurel-green: hsla(91, 16%, 63%, 1);
+  --color-theme-01-pastel-pink: hsla(0, 46%, 79%, 1);
+  --color-theme-01-mauve: hsla(271, 100%, 88%, 1);
+  --c-t-1-1: var(--color-theme-01-blue-munsell);
+  --c-t-1-2: var(--color-theme-01-polished-pine);
+  --c-t-1-3: var(--color-theme-01-laurel-green);
+  --c-t-1-4: var(--color-theme-01-pastel-pink);
+  --c-t-1-5: var(--color-theme-01-mauve);
+
+  --color-theme-02-sky-blue: hsla(198, 70%, 73%, 1);
+  --color-theme-02-sonic-silver: hsla(293, 4%, 44%, 1);
+  --color-theme-02-brandy: hsla(4, 35%, 41%, 1);
+  --color-theme-02-brown-sugar: hsla(24, 45%, 43%, 1);
+  --color-theme-02-magnolia: hsla(275, 32%, 93%, 1);
+  --c-t-2-1: var(--color-theme-02-sky-blue);
+  --c-t-2-2: var(--color-theme-02-sonic-silver);
+  --c-t-2-3: var(--color-theme-02-brandy);
+  --c-t-2-4: var(--color-theme-02-brown-sugar);
+  --c-t-2-5: var(--color-theme-02-magnolia);
+
+  --color-theme-03-cadet-grey: hsla(209, 22%, 68%, 1);
+  --color-theme-03-cerulean-frost: hsla(206, 36%, 58%, 1);
+  --color-theme-03-tan: hsla(30, 37%, 73%, 1);
+  --color-theme-03-copper-red: hsla(11, 42%, 58%, 1);
+  --color-theme-03-dark-sienna: hsla(358, 89%, 7%, 1);
+
+  --color-theme-04-dark-blue-gray: hsla(233, 14%, 46%, 1);
+  --color-theme-04-shadow-blue: hsla(215, 19%, 55%, 1);
+  --color-theme-04-opal: hsla(172, 20%, 64%, 1);
+  --color-theme-04-laurel-green: hsla(106, 22%, 73%, 1);
+  --color-theme-04-dutch-white: hsla(47, 53%, 81%, 1);
+
+  --color-theme-05-palatinate-purple: hsla(312, 40%, 26%, 1);
+  --color-theme-05-liberty: hsla(250, 31%, 50%, 1);
+  --color-theme-05-maximum-blue-purple: hsla(231, 100%, 81%, 1);
+  --color-theme-05-sky-blue-crayola: hsla(190, 96%, 73%, 1);
+  --color-theme-05-maximum-blue: hsla(191, 65%, 57%, 1);
+}

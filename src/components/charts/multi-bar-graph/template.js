@@ -15,7 +15,7 @@ const getPosition = (values, index) => {
 };
 
 export default {
-  render(values) {
+  render(values, theme) {
     return `
     <style>
 
@@ -49,7 +49,7 @@ export default {
 
       ${values.map((value, index) => `
           li:nth-child(${index + 1}):before {
-            background-color: var(--color-${index});
+            background-color: var(--c-t-${theme}-${index + 1});
           }
         `).join('')}
 
@@ -62,7 +62,7 @@ export default {
       ${values.map((value, index) => `
       <g aria-label="bar graph">
         <g>
-          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="#${colors[index]}"></rect>
+          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--c-t-${theme}-${index + 1})"></rect>
           <title>title</title>
         </g>
 

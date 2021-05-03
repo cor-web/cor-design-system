@@ -28,7 +28,7 @@
         {% for response in subject.responses %}
           {# Start Multi bar graph #}
           
-          <multi-bar-chart {% if lastQuestion %}legend="true"{% endif %} filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
+          <multi-bar-chart theme="1" {% if lastQuestion %}legend="true"{% endif %} filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
             
             {{response.countryName}}
 

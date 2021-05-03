@@ -10,6 +10,7 @@ class MultiBarChart extends HTMLElement {
 
     this.attachShadow({ mode: 'open' });
 
+    const theme = this.getAttribute('theme');
     const children = this.querySelectorAll("[value]");
     this.values = [...children].map(child => child.getAttribute('value'))
 
@@ -17,7 +18,7 @@ class MultiBarChart extends HTMLElement {
     // this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
 
 
-    graphtemplate.innerHTML = template.render(this.values);
+    graphtemplate.innerHTML = template.render(this.values, theme);
 
   }
 
