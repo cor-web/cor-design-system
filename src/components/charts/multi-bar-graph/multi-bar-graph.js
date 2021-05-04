@@ -1,4 +1,3 @@
-import animate from "../../../../js/libraries/animateplus.js";
 import template from "./template.js";
 
 const graphtemplate = document.createElement('template');

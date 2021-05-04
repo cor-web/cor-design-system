@@ -836,53 +836,42 @@
     });
   };
 
-  var colors$1 = ["266dd3", "344055", "888098", "cfb3cd", "dfc2f2"];
-
-  var getPosition$1 = function getPosition(values, index) {
-    var valuesInNumbers = values.map(function (value) {
-      return Number(value);
-    });
-    var previousValues = valuesInNumbers.slice(0, index);
-    var previousValuesTotal = previousValues.reduce(function (sum, current) {
-      return sum + current;
-    }, 0);
-    var position = index > 0 ? previousValuesTotal : 0;
-    return position;
-  };
-
   var template$1 = {
-    render: function render(values) {
-      return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect rx=\"1\" ry=\"1\" width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n      \n      ".concat(values.map(function (value, index) {
-        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " rx=\"1\" ry=\"1\" x=\"").concat(getPosition$1(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors$1[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition$1(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
-      }).join(''), "\n\n    </svg>\n    ");
+    render: function render(value, theme) {
+      return "\n\n    <style>\n      :host {\n        --color: #266dd3;\n      }\n    </style>\n\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect width=\"100\" height=\"4\" fill=\"#fff\"></rect>\n      \n      \n      <g>\n        <rect ".concat(value > 0 ? "animate" : "", "  x=\"0\"  width=\"").concat(value, "\" height=\"4\" fill=\"var(--color, var(--chart-theme-").concat(theme, "-color-1, blue))\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"0\" y=\"50%\">").concat(value, "</text>\n      </g>\n      \n\n    </svg>\n    ");
     }
   };
 
-  var BarChart2 = /*#__PURE__*/function (_HTMLElement) {
-    _inherits(BarChart2, _HTMLElement);
+  var BarChart = /*#__PURE__*/function (_HTMLElement) {
+    _inherits(BarChart, _HTMLElement);
 
-    var _super = _createSuper(BarChart2);
+    var _super = _createSuper(BarChart);
 
-    function BarChart2() {
+    function BarChart() {
       var _this;
 
-      _classCallCheck(this, BarChart2);
+      _classCallCheck(this, BarChart);
 
       _this = _super.call(this); // One value
 
-      if (_this.getAttribute('value')) _this.values = [_this.getAttribute('value')]; // Multi values
+      if (_this.getAttribute('value')) _this.value = [_this.getAttribute('value')];
 
-      if (_this.getAttribute('values')) _this.values = [_this.getAttribute('value')];
+      var theme = _this.getTheme(_this.getAttribute('theme'));
 
       _this.attachShadow({
         mode: 'open'
       });
 
-      _this.shadowRoot.innerHTML = template$1.render(_this.values);
+      _this.shadowRoot.innerHTML = template$1.render(_this.value, theme);
       return _this;
     }
 
-    _createClass(BarChart2, [{
+    _createClass(BarChart, [{
+      key: "getTheme",
+      value: function getTheme(themeAttribute) {
+        return themeAttribute.substring(themeAttribute.lastIndexOf("-") + 1, themeAttribute.lastIndexOf("."));
+      }
+    }, {
       key: "connectedCallback",
       value: function connectedCallback() {
         var elements = this.shadowRoot.querySelectorAll("[animate]");
@@ -892,16 +881,17 @@
           delay: function delay(index) {
             return index * 100;
           },
-          transform: ["scalex(0)", "scalex(1)"],
-          fill: ["#80f", "#fc0"]
+          transform: ["scalex(0)", "scalex(1)"]
         });
       }
     }]);
 
-    return BarChart2;
+    return BarChart;
   }( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 
-  customElements.define("bar-chart", BarChart2);
+  if (!customElements.get('bar-chart')) {
+    customElements.define('bar-chart', BarChart);
+  }
 
   var colors = ["266dd3", "344055", "888098", "cfb3cd", "dfc2f2"];
 
@@ -918,12 +908,18 @@
   };
 
   var template = {
-    render: function render(values) {
-      return "\n    <svg style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      \n      <rect width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n\n      ".concat(values.map(function (value, index) {
-        return "\n      <g>\n        <rect ".concat(values > 0 ? "animate" : "", " x=\"").concat(getPosition(values, index), "\"  width=\"").concat(value, "\" height=\"4\" fill=\"#").concat(colors[index], "\"></rect>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      <g>\n        <slot name=\"my-test\">xx</slot>\n      </g>\n      ");
-      }).join(''), "\n\n    </svg>\n\n    ");
+    render: function render(values, theme) {
+      return "\n    <style>\n\n      :host {\n        ".concat(values.map(function (value, index) {
+        return "\n          --color-".concat(index + 1, ": #").concat(colors[index + 1], ";\n        ");
+      }).join(''), "\n      }\n      \n      ul {\n        list-style: none;\n        font-size: .8rem;\n        padding: 0;\n      }\n\n      li {\n        flex-grow: 1;\n      }\n\n\n      li:before {\n        background: red;\n        content:\"\";\n        display: inline-block;\n        height: 10px;\n        margin-right: .2rem;\n        width: 10px;\n      }\n\n      \n\n      ").concat(values.map(function (value, index) {
+        return "\n          li:nth-child(".concat(index + 1, "):before {\n            background-color: var(--color-").concat(index + 1, ", var(--chart-theme-").concat(theme, "-color-").concat(index + 1, ", blue));\n          }\n        ");
+      }).join(''), "\n\n      \n      </style>\n    <svg role=\"group\" aria-labelledby=\"graph-title\" aria-describedby=\"graph-desc\" style=\"display:block\" viewBox=\"0 0 100 4\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <desc id=\"timeline-desc\">An Interactive Timeline</desc>\n      <rect width=\"100\" height=\"4\" fill=\"#e3e3e3\"></rect>\n\n      ").concat(values.map(function (value, index) {
+        return "\n      <g aria-label=\"bar graph\">\n        <g>\n          <rect x=\"".concat(getPosition(values, index), "\" ").concat(values > 0 ? "animate" : "", "  width=\"").concat(value, "\" height=\"4\" fill=\"var(--color-").concat(index + 1, ", var(--chart-theme-").concat(theme, "-color-").concat(index + 1, ", blue))\"></rect>\n          <title>title</title>\n        </g>\n\n        <text fill=\"white\" font-family=\"arial\"\n          font-size=\"2\" x=\"").concat(getPosition(values, index) + 1, "\" y=\"50%\">").concat(value, "</text>\n      </g>\n      ");
+      }).join(''), "\n        \n    </svg>\n    ");
     }
   };
+
+  var graphtemplate = document.createElement('template');
 
   var MultiBarChart = /*#__PURE__*/function (_HTMLElement) {
     _inherits(MultiBarChart, _HTMLElement);
@@ -941,22 +937,43 @@
         mode: 'open'
       });
 
+      var theme = _this.getTheme(_this.getAttribute('theme'));
+
       var children = _this.querySelectorAll("[value]");
 
       _this.values = _toConsumableArray(children).map(function (child) {
         return child.getAttribute('value');
-      });
-      var graphtemplate = document.createElement('template');
-      graphtemplate.innerHTML = template.render(_this.values);
+      }); // this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
 
-      _this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
-
+      graphtemplate.innerHTML = template.render(_this.values, theme);
       return _this;
     }
 
     _createClass(MultiBarChart, [{
+      key: "getTheme",
+      value: function getTheme(themeAttribute) {
+        return themeAttribute.substring(themeAttribute.lastIndexOf("-") + 1, themeAttribute.lastIndexOf("."));
+      }
+    }, {
+      key: "addLegend",
+      value: function addLegend() {
+        var legends = _toConsumableArray(this.querySelectorAll('[slot="item-text"')).map(function (item) {
+          return item.textContent;
+        });
+
+        var legendTemplate = document.createElement('div');
+        legendTemplate.innerHTML = "\n    <ul>\n        ".concat(legends.map(function (legend) {
+          return "<li>".concat(legend, "</li>");
+        }).join(''), "\n    </ul>");
+        console.log(legendTemplate);
+        this.shadowRoot.appendChild(legendTemplate);
+      }
+    }, {
       key: "connectedCallback",
       value: function connectedCallback() {
+        this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
+        if (this.hasAttribute('legend')) this.addLegend(); // if (this.hasAttritube('legend')) console.log('yeah');
+
         /*
         animate({
           elements,
