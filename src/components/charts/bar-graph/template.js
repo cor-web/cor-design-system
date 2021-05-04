@@ -10,7 +10,7 @@ export default {
         <rect ${value > 0 ? "animate" : ""}  x="0"  width="${value}" height="4" fill="var(--chart-${theme}-color-1, blue)"></rect>
 
         <text fill="white" font-family="arial"
-          font-size="2" x="0" y="50%">${value}</text>
+          font-size="2" x="1" y="50%">${value}</text>
       </g>
       
 

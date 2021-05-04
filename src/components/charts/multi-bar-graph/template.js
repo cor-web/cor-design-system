@@ -5,13 +5,12 @@ const getPosition = (values, index) => {
   const valuesInNumbers = values.map(value => Number(value));
   const previousValues = valuesInNumbers.slice(0, index);
 
-  var previousValuesTotal = previousValues.reduce(function (sum, current) {
+  const previousValuesTotal = previousValues.reduce(function (sum, current) {
     return sum + current;
   }, 0);
 
   const position = (index > 0) ? previousValuesTotal : 0;
   return position;
-
 };
 
 export default {
@@ -37,7 +36,7 @@ export default {
 
 
       li:before {
-        background: red;
+        background: blue;
         content:"";
         display: inline-block;
         height: 10px;
@@ -49,7 +48,7 @@ export default {
 
       ${values.map((value, index) => `
           li:nth-child(${index + 1}):before {
-            background-color: var(--color-${index + 1}, var(--chart-theme-${theme}-color-${index + 1}, blue));
+            background-color: var(--chart-${theme}-color-${index + 1}, blue));
           }
         `).join('')}
 
@@ -62,7 +61,7 @@ export default {
       ${values.map((value, index) => `
       <g aria-label="bar graph">
         <g>
-          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--color-${index + 1}, var(--chart-theme-${theme}-color-${index + 1}, blue))"></rect>
+          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
           <title>title</title>
         </g>
 
