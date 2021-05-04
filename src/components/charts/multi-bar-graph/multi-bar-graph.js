@@ -9,23 +9,12 @@ class MultiBarChart extends HTMLElement {
 
     this.attachShadow({ mode: 'open' });
 
-    const theme = this.getTheme(this.getAttribute('theme'));
+    const theme = this.getAttribute('theme');
     const children = this.querySelectorAll("[value]");
     this.values = [...children].map(child => child.getAttribute('value'))
 
-
-    // this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
-
-
     graphtemplate.innerHTML = template.render(this.values, theme);
 
-  }
-
-  getTheme(themeAttribute) {
-    return themeAttribute.substring(
-      themeAttribute.lastIndexOf("-") + 1,
-      themeAttribute.lastIndexOf(".")
-    );
   }
 
   addLegend() {
@@ -43,18 +32,6 @@ class MultiBarChart extends HTMLElement {
 
     this.shadowRoot.appendChild(graphtemplate.content.cloneNode(true));
     if (this.hasAttribute('legend')) this.addLegend();
-
-
-    // if (this.hasAttritube('legend')) console.log('yeah');
-    /*
-    animate({
-      elements,
-      duration: 1200,
-      delay: index => index * 100,
-      transform: ["scalex(0)", "scalex(1)"],
-      fill: ["#80f", "#fc0"]
-    });
-    */
   }
 
 }
