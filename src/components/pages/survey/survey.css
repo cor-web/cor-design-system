@@ -1,0 +1,23 @@
+@import url("../../../base.css");
+
+:root {
+  --c-survey-1: #3A4E8C;
+  --c-survey-2: #049DBF;
+  --c-survey-3: #04ADBF;
+  --c-survey-4: #F2B33D;
+  --c-survey-5: #F27329;
+
+  --c-survey-gradient-1: #FFFFFF;
+  --c-survey-gradient-2: #00ACC9;
+  --c-survey-gradient-3: #54B6D3;
+
+  --bg-gradient: linear-gradient(90deg, var(--c-survey-gradient-1) 0%, var(--c-survey-gradient-2) 24%, var(--c-survey-gradient-3) 100% );
+}
+
+.bg-survey-gradient {
+  background: var(--bg-gradient);
+}
+
+.cor-cover {
+  --min-height: 50vh;
+}

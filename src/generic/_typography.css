@@ -39,7 +39,7 @@ h4 {
 /* utilities */
 .cor-h1 {
   color: var(--text-color);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl) !important;
 }
 
 .cor-h2 {

@@ -1,7 +1,9 @@
 .cor-cover {
+  --min-height: 100vh;
+
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  min-height: var(--min-height);
   padding: 1rem;
 }
 

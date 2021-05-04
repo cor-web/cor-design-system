@@ -22,7 +22,7 @@ export default [
 
     input: 'src/components/charts/charts.js',
     output: {
-      file: 'dist/charts/bundle.mjs',
+      file: 'dist/charts/bundle.modern.js',
       format: 'iife'
     },
     plugins: [
@@ -43,7 +43,7 @@ export default [
 
     input: 'src/components/charts/charts.js',
     output: {
-      file: 'dist/charts/bundle.js',
+      file: 'dist/charts/bundle.legacy.js',
       format: 'iife'
     },
     plugins: [
