@@ -36,7 +36,6 @@ class MultiBarChart extends HTMLElement {
     <ul>
         ${legends.map(legend => `<li>${legend}</li>`).join('')}
     </ul>`;
-    console.log(legendTemplate);
     this.shadowRoot.appendChild(legendTemplate);
   }
 
@@ -60,4 +59,6 @@ class MultiBarChart extends HTMLElement {
 
 }
 
-customElements.define("multi-bar-chart", MultiBarChart)
+if (!customElements.get('multi-bar-chart')) {
+  customElements.define('multi-bar-chart', MultiBarChart);
+}
