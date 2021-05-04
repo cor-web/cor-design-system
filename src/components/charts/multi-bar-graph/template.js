@@ -17,12 +17,6 @@ export default {
   render(values, theme) {
     return `
     <style>
-
-      :host {
-        ${values.map((value, index) => `
-          --color-${index + 1}: #${colors[index + 1]};
-        `).join('')}
-      }
       
       ul {
         list-style: none;
