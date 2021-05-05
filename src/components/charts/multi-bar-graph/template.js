@@ -42,7 +42,7 @@ export default {
 
       ${values.map((value, index) => `
           li:nth-child(${index + 1}):before {
-            background-color: var(--chart-${theme}-color-${index + 1}, blue));
+            background-color: var(--chart-${theme}-color-${index + 1}, blue);
           }
         `).join('')}
 
@@ -57,7 +57,7 @@ export default {
         <g>
           <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
           <title>title</title>
-        </g>
+        </g>b
 
         <text fill="white" font-family="arial"
           font-size="2" x="${getPosition(values, index) + 1}" y="50%">${value}</text>
