@@ -11,9 +11,11 @@ class MultiBarChart extends HTMLElement {
 
     const theme = this.getAttribute('theme');
     const children = this.querySelectorAll("[value]");
-    this.values = [...children].map(child => child.getAttribute('value'))
+    const values = [...children].map(child => child.getAttribute('value'));
+    const itemTexts = [...children].map(child => child.querySelector('[slot="item-text"]').textContent);
+    const itemValues = [...children].map(child => child.querySelector('[slot="item-value"]').textContent);
 
-    graphtemplate.innerHTML = template.render(this.values, theme);
+    graphtemplate.innerHTML = template.render(values, itemTexts, itemValues, theme);
 
   }
 

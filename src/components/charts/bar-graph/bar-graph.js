@@ -6,12 +6,12 @@ class BarChart extends HTMLElement {
     super();
 
     // One value
-    if (this.getAttribute('value')) this.value = [this.getAttribute('value')];
-
+    const value = this.getAttribute('value');
+    const text = this.querySelector('[slot="item-value"]').textContent;
     const theme = this.getAttribute('theme');
 
     let shadowRoot = this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = template.render(this.value, theme);
+    this.shadowRoot.innerHTML = template.render(value, text, theme);
   }
 
   connectedCallback() {

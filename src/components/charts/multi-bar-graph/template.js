@@ -14,7 +14,7 @@ const getPosition = (values, index) => {
 };
 
 export default {
-  render(values, theme) {
+  render(values, itemTexts, itemValues, theme) {
     return `
     <style>
       
@@ -50,17 +50,17 @@ export default {
       </style>
     <svg role="group" aria-labelledby="graph-title" aria-describedby="graph-desc" style="display:block" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
       <desc id="timeline-desc">An Interactive Timeline</desc>
-      <rect width="100" height="4" fill="#e3e3e3"></rect>
+      <rect width="100" height="4" fill="var(--chart-${theme}-background, #ECEFF1)"></rect>
 
       ${values.map((value, index) => `
       <g aria-label="bar graph">
         <g>
           <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
-          <title>title</title>
+          <title>${itemTexts[index]}</title>
         </g>b
 
-        <text fill="white" font-family="arial"
-          font-size="2" x="${getPosition(values, index) + 1}" y="50%">${value}</text>
+        <text fill="var(--chart-${theme}-text, white)" font-family="arial"
+          font-size="2" x="${getPosition(values, index) + 1}" y="75%">${itemValues[index]}</text>
       </g>
       `).join('')}
         
