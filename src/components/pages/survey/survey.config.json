@@ -15,7 +15,7 @@
     "description": "description",
     "questions": [
       {
-        "question": "If no, how should european countries show more solidarity? ",
+        "question": "Your city or region? ",
         "type": "bargraph",
         "filters": [
           {
