@@ -1,30 +1,32 @@
-<div class="bg-white">
+<div class="bg-white cor-survey">
 
-  {% include "@page-header" %}  
+  {% include "@cover--grid" %}  
 
-  <div class="cor-center">
+  <div class="cor-center ">
 
-    <div class="cor-stack">
+    <div>
+
       {% for question in questions %}
-        {% if question.type === "bargraph" %}
-          {% render "@bar-graph--withfilter", question %}
-        {% elif question.type === "multibargraph" %}
-          {% render "@multi-bar-graph--withfilter", question %}
-        {% else %}
+        <section>
+          {% if question.type === "bargraph" %}
+            {% render "@bar-graph--withfilter", question %}
+          {% elif question.type === "multibargraph" %}
+            {% render "@multi-bar-graph--withfilter", question %}
+          {% else %}
 
-        {% endif %}
+          {% endif %}
 
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20px">
-            <defs>
-              <pattern id="pattern_yP0sk" patternUnits="userSpaceOnUse" width="9.5" height="9.5" patternTransform="rotate(45)">
-                <line x1="0" y="0" x2="0" y2="9.5" stroke="#049CBE" stroke-width="1" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#pattern_yP0sk)" :opacity="1" />
-          </svg>
-        </div>
-
+          <div class="cor-survey__separator">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20px">
+              <defs>
+                <pattern id="pattern_yP0sk" patternUnits="userSpaceOnUse" width="9.5" height="9.5" patternTransform="rotate(45)">
+                  <line x1="0" y="0" x2="0" y2="9.5" stroke="#049CBE" stroke-width="1" />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#pattern_yP0sk)" :opacity="1" />
+            </svg>
+          </div>
+        </section>
       {% endfor %}
     </div>
 

@@ -14,23 +14,65 @@
   --bg-gradient: linear-gradient(90deg, var(--c-survey-gradient-1) 0%, var(--c-survey-gradient-2) 24%, var(--c-survey-gradient-3) 100% );
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .bg-survey-gradient {
   background: var(--bg-gradient);
 }
 
-.cor-cover {
-  --min-height: 50vh;
+.cor-survey p {
+  color: var(--text-color);
+  line-height: 1.8;
+  font-size: var(--step--3);
 }
 
-dt {
-  font-size: var(--step-1);
+.cor-survey h1 {
+  font-size: var(--step-1) !important;
+  color: var(--c-g-2);
+}
+
+dt,
+h3.cor-survey__question {
+  font-size: var(--step-1) !important;
+  font-weight: normal;
+  margin-top: var(--space-l);
 }
 
 cor-filter {
+  border-bottom: solid 1px var(--c-g-9);
   display: grid;
+  float: right;
   gap: var(--space);
   grid-template-columns: auto auto;
   justify-content: end;
+  margin: var(--space-3xs) 0 var(--space-m);
+  padding: var(--space-2xs) 0;
+}
+
+cor-filter + * {
+  clear: both;
+}
+
+cor-filter label,
+cor-filter select {
+  font-size: var(--step--3);
+}
+
+cor-filter select {
+  border: none;
+  margin-left: var(--space-2xs);
+}
+
+cor-filter select {
+  font-weight: bold;
 }
 
 ul[filter] {
@@ -40,10 +82,27 @@ ul[filter] {
 
 bar-chart {
   display: block;
-  margin: var(--space-xs) 0;
+  margin: var(--space-2xs) 0;
 }
 
 ul[filter] li {
   list-style: none;
 }
 
+
+dl dt {
+  font-size: var(--step--2) !important;
+  margin: var(--space-2xs) 0;
+}
+
+dd {
+  margin: var(--space-2xs) 0 var(--space-xs) ;
+}
+
+multi-bar-chart ul {
+  display: flex;
+}
+
+.cor-survey__separator {
+  margin: var(--space-xl);
+}

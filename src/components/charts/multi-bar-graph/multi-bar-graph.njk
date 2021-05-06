@@ -12,7 +12,7 @@
         
         <multi-bar-chart {% if loop.last %}legend="true"{% endif %}>
           {% for choice in response.choices %}
-            <multi-bar-item slot="bar-item" value="{{choice.value}}">
+            <multi-bar-item value="{{choice.value}}">
                 <span slot="item-text">{{choice.text}}</span>
                 <span slot="item-value">{{choice.value}}%</span>
             </multi-bar-item>

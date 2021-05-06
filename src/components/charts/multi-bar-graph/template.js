@@ -19,8 +19,11 @@ export default {
     <style>
       
       ul {
+        display: flex;
+        flex-direction: var(--direction);
         list-style: none;
         font-size: .8rem;
+        margin-top: var(--space-s);
         padding: 0;
       }
 

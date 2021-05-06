@@ -1,0 +1,7 @@
+.cor-cover h1 {
+  font-size: var(--step-2) !important;
+}
+
+.cor-cover--grid {
+  padding: 0;
+}

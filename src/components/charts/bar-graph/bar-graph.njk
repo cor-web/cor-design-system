@@ -1,13 +1,15 @@
 
-<dt class="cor-h2">{{question}}</dt>
+<dt>{{question}}</dt>
   
 {% for response in responses %}
 
-  <dd class="border-bottom">
+  <dd>
 
-    {{response.text}} <span>{{response.value}}%</span>
+    {{response.text}}
 
-    <bar-chart value="{{response.value}}"></bar-chart>
+    <bar-chart value="{{response.value}}">
+      <span slot="item-value">{{response.value}}%</span>
+    </bar-chart>
 
   </dd>
 

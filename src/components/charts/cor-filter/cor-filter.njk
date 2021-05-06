@@ -1,7 +1,7 @@
 {# Start Filter #}
 {% for filter in filters %}
 <cor-filter>
-  <label for="{{ filter.id }}-filter">{{ filter.label }}</label>
+  <label for="{{ filter.id }}-filter">{{ filter.label }}: </label>
 
   <select name="{{ filter.id }}" id="{{ filter.id }}-filter">
     {% for value in filter.values %}
