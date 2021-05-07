@@ -19,16 +19,26 @@ export default {
     <style>
       
       ul {
+        border: solid 1px var(--c-g-9);
         display: flex;
         flex-direction: var(--direction);
+        flex-wrap: wrap;
         list-style: none;
         font-size: .8rem;
         margin-top: var(--space-s);
-        padding: 0;
+        padding: .5rem;
       }
 
       li {
-        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-family: monospace;
+        margin-right: .5rem;
+      }
+
+      li:last-child {
+        margin-right: 0;
       }
 
 
@@ -36,9 +46,9 @@ export default {
         background: blue;
         content:"";
         display: inline-block;
-        height: 10px;
+        height: 15px;
         margin-right: .2rem;
-        width: 10px;
+        width: 15px;
       }
 
       
