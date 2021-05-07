@@ -51,19 +51,18 @@ export default {
 
       
       </style>
-    <svg role="group" aria-labelledby="graph-title" aria-describedby="graph-desc" style="display:block" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg role="group" aria-labelledby="graph-title" aria-describedby="graph-desc" style="display:block" viewBox="0 0 100 8" fill="none" xmlns="http://www.w3.org/2000/svg">
       <desc id="timeline-desc">An Interactive Timeline</desc>
-      <rect width="100" height="4" fill="var(--chart-${theme}-background, #ECEFF1)"></rect>
+      <rect width="100" height="8" fill="var(--chart-${theme}-background, #ECEFF1)"></rect>
 
       ${values.map((value, index) => `
       <g aria-label="bar graph">
         <g>
-          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="4" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
+          <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="8" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
           <title>${itemTexts[index]}</title>
-        </g>b
-
-        <text fill="var(--chart-${theme}-text, white)" font-family="arial"
-          font-size="2" x="${getPosition(values, index) + 1}" y="75%">${itemValues[index]}</text>
+          <text text-anchor="middle"  dominant-baseline="central"  
+           style="fill: rgb(224, 228, 228); font-size: 2px; font-weight: 500; text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px; font-family: &quot;IBM Plex Mono&quot;, monospace; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
+        </g>
       </g>
       `).join('')}
         
