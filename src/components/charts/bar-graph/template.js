@@ -8,7 +8,7 @@ export default {
       <g>
         <rect ${value > 0 ? "animate" : ""}  x="0"  width="${value}" height="8" fill="var(--chart-${theme}-color-1, #1E88E5)"></rect>
         <text text-anchor="middle"  dominant-baseline="central"  
-           style="fill: rgb(224, 228, 228); font-size: 2px; font-weight: 500; text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px; font-family: &quot;IBM Plex Mono&quot;, monospace; pointer-events: none;" x="${value / 2}" y="4">${text}</text>
+           style="fill: rgb(224, 228, 228); font-size: var(--bar-font-size, 25%); font-weight: 500; text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px; font-family: &quot;IBM Plex Mono&quot;, monospace; pointer-events: none;" x="${value / 2}" y="4">${text}</text>
       </g>
       
 

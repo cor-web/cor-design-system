@@ -15,29 +15,30 @@
 {% endfor %}
 {# End Filter #}
 
-{% for response in responses %}
+<div class="cor-bar-graph-responses-container">
 
-  <dd id="survey-item-{{ questionID }}">
+  {% for response in responses %}
 
-    {{response.text}}
+    <dd class="cor-bar-graph-container" id="survey-item-{{ questionID }}">
 
-    <ul filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
-      
-      {% for value in response.values %}
-        <li filterableBy="{{value.country}}">
-          <bar-chart theme="theme-1" value="{{value.value}}">
-            <span slot="item-text">{{value.countryName}}</span>
-            <span slot="item-value">{{value.value}}%</span>
-          </bar-chart>
-        </li>
-      {% endfor %}
-    </ul>
+      {{response.text}}
 
-  </dd>
+      <ul filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
+        
+        {% for value in response.values %}
+          <li filterableBy="{{value.country}}">
+            <bar-chart theme="theme-1" value="{{value.value}}">
+              <span slot="item-text">{{value.countryName}}</span>
+              <span slot="item-value">{{value.value}}%</span>
+            </bar-chart>
+          </li>
+        {% endfor %}
+      </ul>
 
-{% endfor %}
+    </dd>
 
-
+  {% endfor %}
+</div>
 
 <script src="/components/charts/bar-graph/bar-graph.js" type="module"></script>
 <script src="/components/charts/cor-filter/cor-filter.js" type="module"></script>

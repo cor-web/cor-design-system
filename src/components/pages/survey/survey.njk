@@ -2,20 +2,24 @@
 
   {% include "@cover--grid" %}  
 
-  <div class="cor-center ">
+  <div>
 
     <div>
+      
+      <h2 class="cor-survey-title">Your views on the future of europe</h2>
 
       {% for question in questions %}
-        <section>
+        
+        <section id="question{{ loop.index }}">
           {% if question.type === "bargraph" %}
-            {% render "@bar-graph--withfilter", question %}
+            {% render "@bar-graph--withfilter", question, id="1" %}
           {% elif question.type === "multibargraph" %}
             {% render "@multi-bar-graph--withfilter", question %}
           {% else %}
 
           {% endif %}
 
+          <!--
           <div class="cor-survey__separator">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20px">
               <defs>
@@ -26,6 +30,7 @@
               <rect width="100%" height="100%" fill="url(#pattern_yP0sk)" :opacity="1" />
             </svg>
           </div>
+          -->
         </section>
       {% endfor %}
     </div>
