@@ -22,11 +22,15 @@
     "contentnav": [
       {
         "link": "#introduction",
-        "text": "Introduction"
+        "text": "Your views on the future of Europe"
       },
       {
         "link": "#results",
         "text": "Survey Results"
+      },
+      {
+        "link": "#learnmore",
+        "text": "Learn more"
       },
       {
         "link": "#contact",
