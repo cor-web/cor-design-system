@@ -1,0 +1,9 @@
+context:
+  title: Content
+  nav:
+    - text: intro
+      link:
+    - text: second
+      link:
+    - text: third
+      link:

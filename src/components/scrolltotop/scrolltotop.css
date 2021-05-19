@@ -1,0 +1,24 @@
+#scrollToTopBtn {
+  background-color: var(--oc-blue-8);
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  bottom: 120px;
+  right: 30px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+  width: 50px;
+  height: 50px;
+  display: inline-grid;
+  padding: 10px;
+  place-items: center;
+}
+
+#scrollToTopBtn.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}

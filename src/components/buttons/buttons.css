@@ -1,0 +1,91 @@
+a.cor-btn {
+  display: inline-block;
+  border-radius: 11px;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  background: 0 0;
+  background-color: var(--oc-blue-8);
+  background-image: linear-gradient(
+    to bottom,
+    var(--oc-blue-7),
+    var(--oc-blue-8)
+  );
+  transition: all 0.2s ease-out;
+  font-size: var(--step--2);
+  cursor: pointer;
+  outline: 0;
+}
+
+.cor-btn.hover,
+.cor-btn:active,
+.cor-btn:focus,
+.cor-btn:hover {
+  background: var(--oc-blue-9);
+}
+
+a.cor-button {
+  text-decoration: none;
+}
+
+button.cor-button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  button.cor-button {
+    border: 2px solid currentcolor;
+  }
+}
+
+:root {
+  --oc-blue-8: #3e68ff;
+}
+
+a.button,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--oc-blue-8);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out;
+}
+
+a.button:hover,
+button.button:hover,
+a.button:active,
+button.button:active {
+  background-color: rgba(var(--oc-blue-8), 0.25);
+}
+
+button.button:focus,
+a.button:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px rgba(var(--oc-blue-8), 0.4);
+}
+
+button.button--small,
+a.button--small {
+  font-size: 1.15rem;
+}
+
+button.button--block,
+a.button--block {
+  width: 100%;
+}

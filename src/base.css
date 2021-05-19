@@ -10,7 +10,7 @@
 
 :root {
   line-height: var(--ratio);
-  font-size: calc(.333vw + 1em);
+  font-size: calc(0.333vw + 1em);
   font-family: var(--font-plain);
   color: var(--color-dark);
 }

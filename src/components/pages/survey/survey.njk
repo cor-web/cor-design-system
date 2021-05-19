@@ -1,16 +1,32 @@
-<div class="bg-white cor-survey">
+<div class="bg-white">
+  {% render "@cover--campaign", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
-  {% include "@cover--grid" %}  
+<div role="separator"></div>
+
+<div class="cor-with-sidenav bg-white cor-survey">
+
+  {% render "@toc" , {nav: contentnav}, true %}
+
+  <main>
+    <div class="cor-rich-text">
+    
+    <h2>Your views on the future of europe</h2>
+
+    <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+
+    <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+  </div>
+  
+  <div role="separator"></div>
 
   <div>
+    
 
-    <div>
-      
-      <h2 class="cor-survey-title">Your views on the future of europe</h2>
+    <h2>Survey results</h2>
 
       {% for question in questions %}
         
-        <section id="question{{ loop.index }}">
+        <section id="question{{ loop.index }}" class="cor-survey__question-container">
           {% if question.type === "bargraph" %}
             {% render "@bar-graph--withfilter", question, id="1" %}
           {% elif question.type === "multibargraph" %}
@@ -33,9 +49,33 @@
           -->
         </section>
       {% endfor %}
-    </div>
 
+  
   </div>
+
+  <div role="separator"></div>
+
+  <div>
+    <h2>Learn more</h2>
+
+    <h3>Related links</h3>
+    <ul>
+      <li><a href="test.be">Link 1</a></li>
+      <li><a href="test.be">Link 2</a></li>
+      <li><a href="test.be">Link 3</a></li>
+    </ul>
+  </div>
+  
+  
+  <div role="separator"></div>
+
+  <div>
+    <h2>Contact</h2>
+    <a href="test.be">contact@cor.europa.eu</a>
+  </div>
+  
+
+  
 </div>
 
 {#
@@ -49,6 +89,11 @@ pip
 pop
 {% endblock %}
 #}
+
+  </main>
+  
+</div>
+
 
 <script src="https://unpkg.com/@cor-web/cor-design-system/dist/charts/bundle.modern.js" type="module"></script>
 <script src="https://unpkg.com/@cor-web/cor-design-system/dist/charts/bundle.legacy.js" nomodule defer></script>

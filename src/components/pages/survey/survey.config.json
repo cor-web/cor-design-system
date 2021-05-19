@@ -11,9 +11,28 @@
     }
   ],
   "context": {
-    "title": "Future of Europe Citizen survey results",
+    "title": "Future of Europe",
+    "subtitle": "Citizen survey results",
+    "color": "red",
     "description": "​​​​​​​​​​​​​​​​​​​​The Future of Europe survey has been created by the European Committee of the Regions to find out what people think about the European Union, its role, function and its future challenges.    The survey is available in all official EU languages, and is completely anonymous.",
-    "poster": "https://cor.europa.eu/en/engage/PublishingImages/FutureOfEuropeSurvey/4527%209th%20May%20Survey_FB%201200x1200.png",
+    "poster": {
+        "src": "/assets/images/future-of-europe.png",
+        "alt": "Alt text"
+      },
+    "contentnav": [
+      {
+        "link": "#introduction",
+        "text": "Introduction"
+      },
+      {
+        "link": "#results",
+        "text": "Survey Results"
+      },
+      {
+        "link": "#contact",
+        "text": "Contact"
+      }
+    ],
     "questions": [
       {
         "question": "In your opinion, what are the main problems of your city or region?",
@@ -2080,12 +2099,12 @@
         ]
       },
       {
-        "question": "Do you think there",
+        "question": "How should Europen Countries show more solidarity?",
         "type": "bargraph",
         "filters": [
           {
             "name": "Countries",
-            "id": "countries-3",
+            "id": "countries-4",
             "label": "Select country",
             "values": [
               {
@@ -2109,7 +2128,7 @@
         ],
         "responses": [
           {
-            "text": "Yes",
+            "text": "By reducing inequalities between richer and poorer countries and regions",
             "values": [
               {
                 "country": "EU",
@@ -2139,7 +2158,127 @@
             ]
           },
           {
-            "text": "No",
+            "text": "By jointly tackling major health-related crises such as the COVID-19 pandemic",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 10
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 10
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "By facing together the consequences of migratory flows and the refugee crisis",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 10
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 10
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "By jointly tackling the negative impact of the economic and financial crisis",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 10
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 10
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "By defining a common approach to climate change and environmental challenges",
+            "values": [
+              {
+                "country": "EU",
+                "countryName": "Europe",
+                "value": 10
+              },
+              {
+                "country": "BE",
+                "countryName": "Belgium",
+                "value": 10
+              },
+              {
+                "country": "FR",
+                "countryName": "France",
+                "value": 10
+              },
+              {
+                "country": "DE",
+                "countryName": "DE",
+                "value": 75
+              },
+              {
+                "country": "NL",
+                "countryName": "Netherland",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "text": "By showing greater acceptance of the diversities that exist among the different countries ",
             "values": [
               {
                 "country": "EU",
@@ -2170,7 +2309,6 @@
           }
         ]
       }
-      
     ]
   }
 }

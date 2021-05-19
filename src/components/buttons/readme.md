@@ -1,0 +1,1 @@
+https://buttonbuddy.dev/#generator

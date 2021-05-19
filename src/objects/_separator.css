@@ -1,18 +1,5 @@
-/* https://www.sarasoueidan.com/blog/horizontal-rules/ */
-
-[role="separator"] .shape-fill {
-  fill: #4A90E2;
-}
-
-/* IE and Legacy Edge */
-@media screen and (-ms-high-contrast: active) {
-  [role="separator"] {
-      --hr-color: windowText;
-  }
-}
-/* Using the new standards for forced colors, currently supported in Chromium Edge */
-@media screen and (forced-colors: active) {
-[role="separator"] {
-      --hr-color: CanvasText;
-  }
+div[role="separator"] {
+  background-color: white;
+  border-top: solid 1px var(--c-g-8);
+  margin: var(--space-m) 0;
 }

@@ -7,10 +7,10 @@
     <dt>{{response.text}}</dt>
 
     <dd>
-
+    
         {# Start Multi bar graph #}
         
-        <multi-bar-chart {% if loop.last %}legend="true"{% endif %}>
+        <multi-bar-chart {% if loop.last or loop.first %}legend="true"{% endif %}>
           {% for choice in response.choices %}
             <multi-bar-item value="{{choice.value}}">
                 <span slot="item-text">{{choice.text}}</span>

@@ -1,0 +1,16 @@
+/*
+  https://chartscss.org/charts/bar/
+*/
+.cor-charts {
+  --color-1: #f03232bf;
+  --color-2: #ffb432bf;
+  --color-3: #ffdc5abf;
+  --color-4: #64d250bf;
+  --color-5: #5aa5ffbf;
+  --color-6: #aa5af0bf;
+  --color-7: #b4b4b4bf;
+  --color-8: #6e6e6ebf;
+  --color-9: #aa966ebf;
+  --color-10: #823214bf;
+  --chart-bg-color: #f5f5f5;
+}

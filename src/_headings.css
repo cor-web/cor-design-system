@@ -1,10 +1,22 @@
 /* elements */
-h3 {
-  font-size: var(--font-size-l);
+h1 {
+  font-size: var(--font-size-xl);
 }
 
 h2 {
   font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
+  font-size: var(--font-size-l);
+}
+
+h5 {
+  font-size: var(--font-size-l);
 }
 
 /* Utilities */
