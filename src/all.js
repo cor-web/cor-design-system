@@ -1,1 +1,1 @@
-// import './components/charts/bar-graph/bar-graph';
+console.log("test");
