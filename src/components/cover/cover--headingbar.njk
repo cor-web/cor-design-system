@@ -1,0 +1,26 @@
+<cor-cover style="--background-color:{{ color }};--text-color: {{ textColor }}">
+  <div class="cor-cover--headingbar">
+    <hgroup>
+      <h1>{% if title %} {{ title }} {% endif %}</h1>
+      
+      {% if subtitle %}
+        <h2>{{ subtitle }}</h2>
+      {% endif %}
+    </hgroup>
+    <div>
+      <img src="/assets/images/campaingPicto.png" alt="pictogram" />
+    </div>
+  </div>
+
+  <div class="cor-stack">
+      <p>{{ description }}</p>
+
+      <p>
+        <a href="www.greenpeace.org">Access the survey</a>
+      </p>
+  </div>
+  
+  <div>
+    <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+  </div>
+</cor-cover>

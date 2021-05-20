@@ -129,3 +129,16 @@ cor-cover.cor-cover--topbar > div:nth-child(0n + 3) {
 cor-cover.cor-cover--topbar > div:nth-child(0n + 4) {
   grid-area: cover;
 }
+
+cor-cover > :first-child.cor-cover--headingbar {
+  display: grid;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    var(--background-color) 78%,
+    rgba(44, 173, 200, 1) 88%
+  );
+  gap: var(--space-m);
+  grid-template-columns: 1fr 200px;
+  justify-items: end;
+}
