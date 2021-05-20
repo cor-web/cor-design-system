@@ -1,0 +1,9 @@
+.cor-badge {
+  background-color: var(--oc-indigo-8);
+  border-radius: 20px;
+  color: white;
+  display: inline-flex;
+  font-size: var(--step--4);
+  letter-spacing: 0.1rem;
+  padding: var(--space-4xs) var(--space-xs);
+}

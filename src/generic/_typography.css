@@ -43,11 +43,14 @@ h4 {
 }
 
 .cor-h3 {
-  font-size: var(--font-size);
+  color: var(--text-color);
+  font-size: var(--step-1) !important;
+  font-weight: bold;
+  text-transform: initial;
 }
 
 .cor-h4 {
-  font-size: var(--font-size-s);
+  font-size: var(--step--1) !important;
 }
 
 .font-size\:base {

@@ -1,4 +1,20 @@
 preview: "@previewincor"
 context:
-  title: Jobs
-  subtitle: Sub jobs
+  title: Work with us
+  description: No matter what experiences you bring with you, the challenges you have gone through or will go through, we want you to belong at CoR. You should never hide parts of yourself to fit in.
+  subtitle:
+  color: var(--oc-indigo-8)
+  poster:
+    src: https://cor-design-system.netlify.app/static/img/banner1.jpg
+    alt: Alt text
+  contentnav:
+    - link: #introduction
+      text: Why work with us?
+    - link: #introduction
+      text: Meet our colleagues
+    - link: #introduction
+      text: Vacancies (3)
+    - link: #introduction
+      text: How to join us?
+    - link: #introduction
+      text: Equality

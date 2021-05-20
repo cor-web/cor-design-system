@@ -1,0 +1,7 @@
+.padding-0 {
+  padding: 0 !important;
+}
+
+.padding-x {
+  padding: 0 var(--space-xs) 0 !important;
+}

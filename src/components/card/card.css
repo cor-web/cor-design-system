@@ -1,0 +1,13 @@
+.cor-card {
+  background-color: var(--oc-indigo-0);
+  border: solid 1px var(--oc-indigo-8);
+  border-radius: 20px;
+  display: grid;
+  font-size: var(--step--3);
+  gap: var(--space-2xs);
+  padding: var(--space-2xs);
+}
+
+.cor-card > * {
+  margin: 0;
+}
