@@ -1,8 +1,9 @@
 context:
-  color: "#217F94"
+  color: "#2CADC8"
   textColor: "#fff"
-  title: Page title
-  subtitle: Page Sub title
+  title: Green deal going local
+  subtitle: Europe Regions and Cities' race to zero emissions
+  barimage: /assets/images/campaingPicto.svg
   poster:
     src: https://cor.europa.eu/en/engage/PublishingImages/FutureOfEuropeSurvey/4527%209th%20May%20Survey_FB%201200x1200.png
     alt: Alt text

@@ -80,3 +80,52 @@ cor-cover p {
   font-size: var(--step--2);
   line-height: 1.4em;
 }
+
+cor-cover.cor-cover--topbar {
+  grid-template:
+    "bar bar"
+    "header header"
+    "description cover" / 1fr 1fr;
+}
+
+cor-cover.cor-cover--topbar > div:first-child {
+  grid-area: bar;
+  background-color: rgba(44, 173, 200, 1);
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding: var(--space-2xs);
+}
+
+cor-cover.cor-cover--topbar > div:first-child img {
+  width: 60px;
+}
+
+cor-cover.cor-cover--topbar > :first-child {
+  background: none;
+}
+
+cor-cover.cor-cover--topbar h1,
+cor-cover.cor-cover--topbar h2 {
+  margin: 0;
+  padding: 0;
+  color: var(--oc-gray-8);
+  text-transform: none;
+}
+
+cor-cover.cor-cover--topbar > :nth-child(0n + 2) {
+  grid-area: header;
+}
+
+cor-cover.cor-cover--topbar > :nth-child(0n + 2),
+cor-cover.cor-cover--topbar > :nth-child(0n + 3) {
+  padding: 0 0 0 var(--space-s);
+}
+
+cor-cover.cor-cover--topbar > div:nth-child(0n + 3) {
+  grid-area: description;
+}
+
+cor-cover.cor-cover--topbar > div:nth-child(0n + 4) {
+  grid-area: cover;
+}
