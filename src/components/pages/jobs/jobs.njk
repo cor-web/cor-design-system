@@ -32,7 +32,11 @@
     </div>
   </div>
 
+
+
 <div role="separator"></div>
+
+{% render "@nav" , {nav: secondarynav}, true %}
 
 <div class="cor-with-sidenav bg-white cor-survey">
 
@@ -53,6 +57,11 @@
     <div class="cor-rich-text">
     
       <h2>Meet our colleagues</h2>
+
+      <div class="cor-card padding-0 border-none">
+        {% render "@stories" %}
+      </div>
+     
 
       <p>Veniam irure fugiat qui commodo occaecat incididunt ipsum enim sunt sunt elit irure. Minim nostrud id laboris incididunt et. Ex sunt pariatur commodo aute ad est laborum enim. Aliquip laborum labore eiusmod officia deserunt esse tempor sunt. Aliquip Lorem esse et laborum magna reprehenderit et sit. Elit laboris pariatur mollit officia consectetur labore sunt occaecat cupidatat nulla. Sint sunt culpa anim voluptate.</p>
 
@@ -97,9 +106,16 @@
   <div>
     <h2>Learn more</h2>
 
+    <h3>Privacy statements</h3>
+    <ul>
+      <li><a href="test.be">Permanent staff privacy</a></li>
+      <li><a href="test.be">Temporary staff privacy</a></li>
+      <li><a href="test.be">National experts staff privacy</a></li>
+    </ul>
+    
     <h3>Related links</h3>
     <ul>
-      <li><a href="test.be">Link 1</a></li>
+      <li><a href="test.be">DECISION No 438-2015 on the rules applicable to national experts seconded to the Committee of the Regions</a></li>
       <li><a href="test.be">Link 2</a></li>
       <li><a href="test.be">Link 3</a></li>
     </ul>

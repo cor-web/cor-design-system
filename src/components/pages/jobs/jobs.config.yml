@@ -7,6 +7,17 @@ context:
   poster:
     src: https://cor-design-system.netlify.app/static/img/banner1.jpg
     alt: Alt text
+  secondarynav:
+    - link: #introduction
+      text: Why work with us?
+    - link: #introduction
+      text: Procedurs
+    - link: #introduction
+      text: Our culture
+    - link: #introduction
+      text: Traineeships
+    - link: #introduction
+      text: FAQ
   contentnav:
     - link: #introduction
       text: Why work with us?
@@ -18,3 +29,5 @@ context:
       text: How to join us?
     - link: #introduction
       text: Equality
+    - link: #introduction
+      text: Learn more

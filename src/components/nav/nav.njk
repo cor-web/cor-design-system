@@ -1,3 +1,5 @@
-<nav>
-  <a></a>
+<nav class="cor-nav--horizontal">
+  {% for item in nav %}
+  <a href="{{ item.src }}">{{ item.text }}</a>
+  {% endfor  %}
 </nav>

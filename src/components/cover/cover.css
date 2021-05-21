@@ -44,6 +44,7 @@ cor-cover h1,
 cor-cover h2 {
   margin: 0;
   padding: 0;
+  background-color: var(--text-background-color);
   color: var(--text-color);
   text-transform: none;
 }

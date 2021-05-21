@@ -1,0 +1,13 @@
+.cor-nav--horizontal {
+  display: flex;
+}
+
+.cor-nav--horizontal a {
+  color: white;
+  padding: var(--space-2xs) var(--space-m);
+  text-decoration: none;
+}
+
+.cor-nav--horizontal {
+  background-color: var(--oc-blue-8);
+}

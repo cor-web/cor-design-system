@@ -1,0 +1,48 @@
+.stories {
+  inline-size: 100vw;
+  block-size: 100vh;
+  display: grid;
+  grid: 1fr / auto-flow 100%;
+  gap: 1ch;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior: contain;
+  touch-action: pan-x;
+}
+
+/* desktop constraint */
+@media (hover: hover) and (min-width: 480px) {
+  .stories {
+    max-inline-size: 480px;
+    max-block-size: 848px;
+  }
+}
+
+.user {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: grid;
+  grid: [story] 1fr / [story] 1fr;
+}
+
+.story {
+  grid-area: story;
+
+  background-size: cover;
+  background-image: url(https://picsum.photos/480/841),
+    linear-gradient(
+      to top,
+      rgb(97.72% 97.73% 97.74%),
+      rgb(88.75% 88.76% 88.76%)
+    );
+
+  user-select: none;
+  touch-action: manipulation;
+
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.story.seen {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,6 +1,7 @@
 context:
-  color: "#217F94"
+  color: "#0aafcb"
   textColor: "#fff"
+  textBgColor: "#547D88"
   title: Green deal going local
   subtitle: Europe Regions and Cities' race to zero emissions
   barimage: /assets/images/campaingPicto.svg

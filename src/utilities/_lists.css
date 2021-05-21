@@ -1,0 +1,14 @@
+.list-none,
+.list-none li {
+  list-style-type: none !important;
+}
+
+.list-disc,
+.list-disc li {
+  list-style-type: disc !important;
+}
+
+.list-decimal,
+.list-decimal li {
+  list-style-type: decimal !important;
+}
