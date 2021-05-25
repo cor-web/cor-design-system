@@ -1,41 +1,35 @@
-cor-toc {
+.cor-toc {
   background: white;
   display: block;
 }
 
 @media screen and (min-width: 640px) {
-  cor-toc {
+  .cor-toc--sticky {
     position: sticky;
     top: 150px;
   }
 }
 
-cor-toc nav {
-  display: flex;
-  flex-direction: column;
+.cor-toc > ul {
+  margin: var(--space-3xs) 0 0 0;
+  padding: 0;
 }
 
-cor-toc h2 {
+.cor-toc > ul > li {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: var(--space-3xs);
+}
+
+.cor-toc h2 {
   color: var(--g-8);
   font-size: var(--step-0) !important;
   text-transform: initial;
   margin: 0 0 var(--space--4xs) 0;
 }
 
-cor-toc nav a {
-  align-items: center;
-  display: flex;
+.cor-toc a {
   font-size: var(--step--3);
   text-decoration: none;
   margin-top: var(--space-4xs, 1rem);
-}
-
-cor-toc nav a::before {
-  background-color: var(--c-g-5);
-  border-radius: 100%;
-  content: "";
-  display: inline-block;
-  height: 7px;
-  margin-right: var(--space-2xs);
-  width: 7px;
 }

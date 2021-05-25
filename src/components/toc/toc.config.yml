@@ -1,9 +1,13 @@
+variants:
+  - name: sticky
+    context:
+      modifier: sticky
 context:
-  title: Content
+  title: Contenu
   nav:
-    - text: intro
+    - text: premier lien
       link:
-    - text: second
+    - text: deuxième lien
       link:
-    - text: third
+    - text: troisième lien
       link:
