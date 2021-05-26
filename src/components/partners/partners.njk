@@ -1,0 +1,25 @@
+<section class="cor-partners margin-y">
+  <h2 class="text-center">{{ title }}</h2>
+  <ul class="cor-grid">
+    {% for partner in partners %}
+    <li>
+      <a href="{{ partner.link }}">
+        <img src="{{ partner.image }}" alt="{{ partner.alttext }}" />
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="cor-partners margin-y">
+  <h2 class="text-center">{{ title }}</h2>
+  <ul class="cor-grid">
+    {% for partner in partners.slice(0, 2) %}
+    <li>
+      <a href="{{ partner.link }}">
+        <img src="{{ partner.image }}" alt="{{ partner.alttext }}" />
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
