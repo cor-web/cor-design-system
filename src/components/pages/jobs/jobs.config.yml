@@ -16,8 +16,6 @@ context:
       text: Our culture
     - link: #introduction
       text: Traineeships
-    - link: #introduction
-      text: FAQ
   contentnav:
     - link: #introduction
       text: Why work with us?
