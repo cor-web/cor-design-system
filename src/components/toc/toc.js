@@ -13,7 +13,7 @@ class TableOfContent extends HTMLElement {
         }
       </style>
       <nav class="cor-toc cor-toc--sticky" aria-labelledby="sections-heading">
-        <h2 id="sections-heading">Contents</h2>
+        <h2 id="sections-heading"><slot name="toc-title">Contents</slot></h2>
         <ul class="list-disc">
           ${sections.map( section => `
             <li>
