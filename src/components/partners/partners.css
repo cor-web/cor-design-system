@@ -1,7 +1,14 @@
+.cor-partners ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .cor-partners ul li {
   list-style: none;
+  flex: 1 1 100px;
   padding: 0;
-  text-align: center;
   display: grid;
+  margin: 1rem;
   place-content: center;
 }
