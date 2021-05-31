@@ -1,10 +1,10 @@
-<div class="bg-white cor-content">
+<div class="bg-white cor-container">
   
   {% render "@cover", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
   <div role="separator"></div>
 
-  <div class="cor-with-sidenav">
+  <div class="cor-with-sidenav cor-content">
 
     {% render "@toc" , {nav: contentnav}, true %}
 
