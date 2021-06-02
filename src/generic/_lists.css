@@ -1,11 +1,11 @@
-ol,
-ul {
+.mainContent ol,
+.mainContent ul {
   margin: var(--space-l) 0;
   padding: 0 var(--space-s) var(--space-m);
 }
 
-ol li,
-ul li {
+.mainContent ol li,
+.mainContent ul li {
   margin-bottom: var(--space-4xs);
   padding-left: var(--space-2xs);
 }

@@ -1,21 +1,21 @@
 /* elements */
-h1 {
+.mainContent h1 {
   font-size: var(--font-size-xl);
 }
 
-h2 {
+.mainContent h2 {
   font-size: var(--font-size-xl);
 }
 
-h4 {
+.mainContent h4 {
   font-size: var(--font-size-l);
 }
 
-h3 {
+.mainContent h3 {
   font-size: var(--font-size-l);
 }
 
-h5 {
+.mainContent h5 {
   font-size: var(--font-size-l);
 }
 

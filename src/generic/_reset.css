@@ -1,31 +1,30 @@
 /* Modern CSS reset: https://github.com/hankchizljaw/modern-css-reset */
 
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+.mainContent *,
+.mainContent *::before,
+.mainContent *::after {
   box-sizing: border-box;
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+.mainContent ul[class],
+.mainContent ol[class] {
   padding: 0;
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-figure,
-blockquote,
-dl,
-dd {
+.mainContent h1,
+.mainContent h2,
+.mainContent h3,
+.mainContent h4,
+.mainContent p,
+.mainContent ul[class],
+.mainContent ol[class],
+.mainContent figure,
+.mainContent blockquote,
+.mainContent dl,
+.mainContent dd {
   margin: 0;
 }
 
@@ -37,38 +36,44 @@ html {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  /*
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  */
+}
+.mainContent {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
+.mainContent ul[class],
+.mainContent ol[class] {
   list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
+.mainContent a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
-img,
-picture {
+.mainContent img,
+.mainContent picture {
   max-width: 100%;
   display: block;
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
+.mainContent article > * + * {
   margin-top: 1em;
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+.mainContent input,
+.mainContent button,
+.mainContent textarea,
+.mainContent select {
   font: inherit;
 }
 

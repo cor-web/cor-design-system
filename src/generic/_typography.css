@@ -1,8 +1,8 @@
 /* elements */
-h1,
-h2,
-h3,
-h4 {
+.mainContent h1,
+.mainContent h2,
+.mainContent h3,
+.mainContent h4 {
   line-height: var(--line-height-small);
   font-family: var(--font-plain);
   font-weight: normal;
@@ -10,25 +10,25 @@ h4 {
   margin: var(--space-l) 0 var(--space-xs);
 }
 
-h1 {
+.mainContent h1 {
   color: var(--text-color);
   font-size: var(--step-4);
 }
 
-h2,
+.mainContent h2,
 .ms-rtestate-field h2 {
   color: var(--text-color);
   font-size: var(--step-3);
   text-transform: uppercase;
 }
 
-h3 {
+.mainContent h3 {
   color: var(--text-color);
   font-size: var(--step-1);
   font-weight: bold;
 }
 
-h4 {
+.mainContent h4 {
   color: var(--text-color);
   font-size: var(--step-1);
 }
@@ -73,7 +73,7 @@ h4 {
 /*
  * Paragraphs
  */
-p,
+.mainContent p,
 .ms-rtestate-field p,
 p.ms-rteElement-P {
   font-size: var(--step--3);

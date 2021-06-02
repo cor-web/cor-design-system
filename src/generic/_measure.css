@@ -1,10 +1,8 @@
-html,
-body,
-div,
-header,
-nav,
-main,
-footer {
+.mainContent div,
+.mainContent header,
+.mainContent nav,
+.mainContent main,
+.mainContent footer {
   max-width: none;
 }
 

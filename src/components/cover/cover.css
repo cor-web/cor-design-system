@@ -44,8 +44,8 @@ cor-cover > :first-child {
   display: block;
 }
 
-cor-cover h1,
-cor-cover h2 {
+.mainContent cor-cover h1,
+.mainContent cor-cover h2 {
   margin: 0;
   padding: 0;
   background-color: var(--text-background-color);
