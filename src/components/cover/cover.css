@@ -40,6 +40,10 @@ cor-cover > :first-child {
   text-align: center;
 }
 
+.editmode cor-cover > :first-child {
+  display: block;
+}
+
 cor-cover h1,
 cor-cover h2 {
   margin: 0;
