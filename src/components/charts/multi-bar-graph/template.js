@@ -70,7 +70,7 @@ export default {
           <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="8" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
           <title>${itemTexts[index]}</title>
           <text text-anchor="middle"  dominant-baseline="central"  
-           style="fill: rgb(224, 228, 228); font-size: var(--bar-font-size, 25%); font-weight: 500; text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px; font-family: &quot;IBM Plex Mono&quot;, monospace; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
+           style="fill: white; font-size: var(--bar-font-size, 25%); font-weight: 500; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
         </g>
       </g>
       `).join('')}

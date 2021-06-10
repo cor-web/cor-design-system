@@ -9,12 +9,11 @@ class TableOfContent extends HTMLElement {
     root.innerHTML = `
       <style>
         ul {
-          margin: var(--space-3xs) 0 0 0;
-          padding: 0;
+          margin: var(--space-3xs) 0 0 var(--space-3xs);
         }
         
         ul > li {
-          list-style-position: inside;
+          list-style-position: outside;
           list-style-type: disc;
           padding-left: var(--space-3xs);
         }
@@ -31,6 +30,17 @@ class TableOfContent extends HTMLElement {
           font-size: var(--step--3);
           text-decoration: none;
           margin-top: var(--space-4xs, 1rem);
+        }
+
+        a:link,
+        a:focus,
+        a:visited,
+        a:active {
+          color: var(--link-color);
+        }
+
+        a:hover {
+          text-decoration: underline;
         }
       
         :host {

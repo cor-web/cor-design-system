@@ -55,8 +55,8 @@ ul[filter] li {
   list-style: none;
 }
 
-section + section {
-  margin-top: var(--space-xl);
+main section {
+  margin-bottom: var(--space-xl);
 }
 
 dd {
