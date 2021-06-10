@@ -119,3 +119,7 @@ dd + dd {
   margin-top: var(--space-2xs);
 }
 */
+
+multi-bar-chart {
+  --direction: column;
+}

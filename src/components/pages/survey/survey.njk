@@ -6,13 +6,13 @@
 
   <div class="cor-with-sidenav cor-content">
 
-    {% render "@toc" , {nav: contentnav}, true %}
+    {% render "@toc--dynamic" , {nav: contentnav}, true %}
 
     <main>
       
       <div class="cor-rich-text">
       
-        <h2>Your views on the future of europe</h2>
+        <h2 class="cor-toc-section" id="yourviews">Your views on the future of europe</h2>
 
         <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
 
@@ -20,7 +20,7 @@
       
         <div role="separator"></div>
         
-        <h2>Survey results</h2>
+        <h2 class="cor-toc-section" id="results">Survey results</h2>
 
       </div>
     
@@ -61,7 +61,7 @@
       <div>
         <h2>Learn more</h2>
 
-        <h3>Related links</h3>
+        <h3 class="cor-toc-section" id="links">Related links</h3>
         <ul>
           <li><a href="test.be">Link 1</a></li>
           <li><a href="test.be">Link 2</a></li>
@@ -73,7 +73,7 @@
       <div role="separator"></div>
 
       <div>
-        <h2>Contact</h2>
+        <h2 class="cor-toc-section" id="contact">Contact</h2>
         <a href="test.be">contact@cor.europa.eu</a>
       </div>
     

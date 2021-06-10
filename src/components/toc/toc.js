@@ -8,6 +8,31 @@ class TableOfContent extends HTMLElement {
     
     root.innerHTML = `
       <style>
+        ul {
+          margin: var(--space-3xs) 0 0 0;
+          padding: 0;
+        }
+        
+        ul > li {
+          list-style-position: inside;
+          list-style-type: disc;
+          padding-left: var(--space-3xs);
+        }
+        
+        h2 {
+          color: var(--g-8);
+          font-size: var(--step-0) !important;
+          font-weight: normal;
+          text-transform: initial;
+          margin: 0 0 var(--space--4xs) 0;
+        }
+        
+        a {
+          font-size: var(--step--3);
+          text-decoration: none;
+          margin-top: var(--space-4xs, 1rem);
+        }
+      
         :host {
           display: block;
         }
