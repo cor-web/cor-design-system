@@ -1,1 +1,1 @@
-console.log("test");
+import './components/toc/toc.js';

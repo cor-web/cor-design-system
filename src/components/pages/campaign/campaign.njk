@@ -1,0 +1,119 @@
+<div class="bg-white cor-container">
+  
+  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+
+  <!-- Initiatives -->
+  <cor-switcher class="cor-switcher">
+    <div>
+      <article>
+        <h2>Initiatives</h2>
+        <article>
+          <img src="https://api.assetroulette.com/random_image" alt="">
+          <time datetime="2015-05-16 19:00">01/06/2021</time>
+          <h3>
+            <a href="www.greenpeace.org">Title</a>
+          </h3>
+        </article>
+        <article>
+          <img src="https://api.assetroulette.com/random_image" alt="">
+          <time datetime="2015-05-16 19:00">01/06/2021</time>
+          <h3>
+            <a href="www.greenpeace.org">Title</a>
+          </h3>
+        </article>
+        <article>
+          <img src="https://api.assetroulette.com/random_image" alt="">
+          <time datetime="2015-05-16 19:00">01/06/2021</time>
+          <h3>
+            <a href="www.greenpeace.org">Title</a>
+          </h3>
+        </article>
+      </article>
+    </div>
+  </cor-switcher>
+  <!-- /Initiatives -->
+
+  <div role="separator"></div>
+
+  <div class="cor-with-sidenav cor-content">
+
+    {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+    <main>
+      
+      <div class="cor-rich-text">
+      
+        <h2 class="cor-toc-section" id="yourviews">Your views on the future of europe</h2>
+
+        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+      
+        <div role="separator"></div>
+        
+        <h2 class="cor-toc-section" id="results">Survey results</h2>
+
+      </div>
+    
+      
+
+      <div>
+
+        {% for question in questions %}
+          
+          <section id="question{{ loop.index }}" class="cor-survey__question-container">
+            {% if question.type === "bargraph" %}
+              {% render "@bar-graph--withfilter", question, id="1" %}
+            {% elif question.type === "multibargraph" %}
+              {% render "@multi-bar-graph--withfilter", question %}
+            {% else %}
+
+            {% endif %}
+
+            <!--
+            <div class="cor-survey__separator">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20px">
+                <defs>
+                  <pattern id="pattern_yP0sk" patternUnits="userSpaceOnUse" width="9.5" height="9.5" patternTransform="rotate(45)">
+                    <line x1="0" y="0" x2="0" y2="9.5" stroke="#049CBE" stroke-width="1" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#pattern_yP0sk)" :opacity="1" />
+              </svg>
+            </div>
+            -->
+          </section>
+        {% endfor %}
+
+      </div>
+
+      <div role="separator"></div>
+
+      <div>
+        <h2>Learn more</h2>
+
+        <h3 class="cor-toc-section" id="links">Related links</h3>
+        <ul>
+          <li><a href="test.be">Link 1</a></li>
+          <li><a href="test.be">Link 2</a></li>
+          <li><a href="test.be">Link 3</a></li>
+        </ul>
+      </div>
+    
+    
+      <div role="separator"></div>
+
+      <div>
+        <h2 class="cor-toc-section" id="contact">Contact</h2>
+        <a href="test.be">contact@cor.europa.eu</a>
+      </div>
+    
+    </main>
+
+  </div>
+
+</div>
+
+
+<script src="https://unpkg.com/@cor-web/cor-design-system/dist/charts/bundle.modern.js" type="module"></script>
+<script src="https://unpkg.com/@cor-web/cor-design-system/dist/charts/bundle.legacy.js" nomodule defer></script>
