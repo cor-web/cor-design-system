@@ -1,5 +1,6 @@
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
+import versionInjector from 'rollup-plugin-version-injector';
 
 
 // rollup.config.js
@@ -23,7 +24,8 @@ export default [
           unsafe_arrows: true
         },
         output: { quote_style: 1 }
-      })
+      }),
+      versionInjector()
     ]
   },
   {
@@ -43,7 +45,8 @@ export default [
           toplevel: true
         },
         output: { quote_style: 1 }
-      })
+      }),
+      versionInjector()
     ]
   },
   {
