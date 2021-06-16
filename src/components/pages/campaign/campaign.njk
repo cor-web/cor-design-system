@@ -10,12 +10,11 @@
       <article class="cor-card">
         <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
         <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
-        <h3 class="cor-card__title cor-h6">
-          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
-            {% if initiative.link.size %}
-            <small>({{ initiative.link.size }})</small>          
-            {% endif %}
-          </a>
+        <h3 class="cor-card__title">
+          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} </a>
+          {% if initiative.link.size %}
+            <br/><small>({{ initiative.link.size }})</small>          
+          {% endif %}
         </h3>
       </article>
     {% endfor %}
