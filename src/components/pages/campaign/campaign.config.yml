@@ -1,22 +1,20 @@
-preview: "@previewincor"
+preview: "@previewincor_new"
 context:
   title: "My website"
   initiatives:
-    - title: "My website"
-      image: "https://api.assetroulette.com/random_image"
-      date: 01/06/2021
-      textlink: "2030 Regional Commitments"
-      document:
+    - image: "https://api.assetroulette.com/random_unsplash"
+      date: "01/06/2021"
+      link:
+        text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+        target: "document.pdf"
         size: "3 MB PDF"
-    - title: "My website"
-      image: "https://api.assetroulette.com/random_image"
-      date: 01/06/2021
-      textlink: "2030 Regional Commitments"
-      document:
-        size: "3 MB PDF"
-    - title: "My website"
-      image: "https://api.assetroulette.com/random_image"
-      date: 01/06/2021
-      textlink: "2030 Regional Commitments"
-      document:
-        size: "3 MB PDF"
+    - image: "https://api.assetroulette.com/random_unsplash"
+      date: "01/06/2021"
+      link:
+        text: "Europe Day: discover the European Union on the occasion of 9 May 2021"
+        target: "www.greenpeace.org"
+    - image: "https://api.assetroulette.com/random_unsplash"
+      date: "01/06/2021"
+      link:
+        text: "European Citizens Initiatives (ECIs) conclusions should be subject of a serious follow up by European institutions"
+        target: "2030 Regional Commitments"

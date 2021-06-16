@@ -3,20 +3,24 @@
   {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
   <!-- Initiatives -->
-  <cor-switcher class="cor-switcher">
-    <article>
-      <h2>Initiatives</h2>
-      {% for initiative in initiatives %}
-        <article class="cor-card">
-          <img src="https://api.assetroulette.com/random_image" alt="">
-          <time datetime="2015-05-16 19:00">01/06/2021</time>
-          <h3>
-            <a href="www.greenpeace.org">{{}}</a>
-          </h3>
-        </article>
-      {% endfor %}
-    </article>
-  </cor-switcher>
+  <article class="cor-box">
+    <h2>Initiatives</h2>
+    <div class="cor-switcher items-start">
+    {% for initiative in initiatives %}
+      <article class="cor-card">
+        <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
+        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
+        <h3 class="cor-card__title cor-h6">
+          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
+            {% if initiative.link.size %}
+            <small>({{ initiative.link.size }})</small>          
+            {% endif %}
+          </a>
+        </h3>
+      </article>
+    {% endfor %}
+    </div>
+  </article>
   <!-- /Initiatives -->
 
   <div role="separator"></div>

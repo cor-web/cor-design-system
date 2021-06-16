@@ -50,6 +50,7 @@ cor-cover > :first-child {
   padding: 0;
   background-color: var(--text-background-color);
   color: var(--text-color);
+  text-align: center;
   text-transform: none;
 }
 

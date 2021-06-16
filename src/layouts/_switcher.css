@@ -1,21 +1,18 @@
 .cor-switcher {
-  --space: var(--space-m);
+  --space: var(--space-xs);
   --measure: var(--threshold, 30rem);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
 }
 
 .cor-switcher > * {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc((var(--s1) / 2) * -1);
-}
-
-.cor-switcher > * > * {
   flex-grow: 1;
-  flex-basis: calc((var(--measure) - (100% - var(--space))) * 999);
-  margin: calc(var(--space) / 2);
+  flex-basis: calc((var(--measure) - 100%) * 999);
 }
 
-.cor-switcher > * > :nth-last-child(n + 5),
-.cor-switcher > * > :nth-last-child(n + 5) ~ * {
+.cor-switcher > * > :nth-last-child(n + 3),
+.cor-switcher > * > :nth-last-child(n + 3) ~ * {
   flex-basis: 100%;
 }

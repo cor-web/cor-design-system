@@ -1,4 +1,16 @@
 .cor-card {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--step--3);
+  gap: var(--space-3xs);
+  overflow: hidden;
+}
+
+.cor-card > * {
+  margin: 0;
+}
+
+.cor-card--border {
   background-color: var(--oc-indigo-0);
   border: solid 1px var(--oc-indigo-8);
   border-radius: 20px;
@@ -11,4 +23,9 @@
 
 .cor-card > * {
   margin: 0;
+}
+
+.cor-card__title {
+  all: unset;
+  font-size: var(--step-0);
 }

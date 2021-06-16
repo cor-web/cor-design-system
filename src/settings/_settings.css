@@ -1,4 +1,4 @@
-.maincontent {
+.mainContent {
   --measure: 60ch;
 
   --font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -24,6 +24,9 @@
   --c-eu: hsla(211.2, 100%, 29.4%, 1);
   --c-eu-5: hsla(211.2, 100%, 29.4%, 0.5);
   --c-secondary: #fcd838;
+
+  --link-color: var(--oc-blue-6);
+  --link-color-dark: var(--oc-blue-8);
 
   --ratio: 1.5;
   --s0: 1rem;
