@@ -3,5 +3,6 @@
 }
 
 .margin-y {
-  margin: 0 var(--space-xs) 0 !important;
+  margin-top: var(--space-xs) !important;
+  margin-bottom: var(--space-xs) !important;
 }

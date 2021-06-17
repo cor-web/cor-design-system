@@ -1,7 +1,9 @@
 preview: "@previewincor_new"
 context:
-  title: "Future of Europe"
-  subtitle: "Bringing Europe closer to its people"
+  title: "Member of the week"
+  subtitle: "Enda Stenson"
+  poster:
+    src: "/assets/images/memberProfile.png"
   initiatives:
     - image: "https://api.assetroulette.com/random_unsplash"
       date: "01/06/2021"

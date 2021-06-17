@@ -29,3 +29,25 @@ h3.cor-card__title {
   all: unset;
   font-size: var(--step--2);
 }
+
+.cor-card__title__link[href$=".pdf"]:after {
+  content: none;
+}
+
+.cor-card__title__link[href$=".pdf"] .cor-card__title__link__info {
+  align-items: center;
+  color: var(--text-color-light);
+  display: flex;
+  gap: var(--space-3xs);
+  margin-top: var(--space-3xs);
+}
+
+.cor-card__title__link[href$=".pdf"] .cor-card__title__link__info:before {
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: var(--icon-document);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}

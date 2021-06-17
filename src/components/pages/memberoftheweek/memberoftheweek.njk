@@ -1,0 +1,128 @@
+<style>
+cor-cover {
+  --color: #00aec3;
+}
+
+cor-cover > :first-child {
+  align-items: flex-start;
+  flex-direction: row;
+  background: var(--color);
+  color: white;
+  border: none;
+}
+
+cor-cover > :first-child div {
+  flex-grow:1;
+}
+
+cor-cover > :first-child img {
+  width: 150px;
+}
+
+.mainContent cor-cover h1, .mainContent cor-cover h2 {
+  color: white;
+  text-align: left;
+}
+
+cor-cover.cor-cover--topbar {
+    border-top: var(--color) solid 0;
+}
+
+cor-cover dt {
+  font-size: var(--step--1);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+cor-cover dd {
+  background: #DDDFEB;
+  font-size: var(--step--3);
+  padding: var(--space-2xs) var(--space-xs);
+}
+
+.cor-member__title span {
+  background: #00aec3;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+}
+
+</style>
+
+<div class="bg-white cor-container cor-memberoftheweek">
+  
+  {% render "@cover--member", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+
+  
+
+  <div role="separator"></div>
+
+  <div class="cor-with-sidenav  cor-content">
+
+        {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+
+    <main>
+      
+      <div class="cor-rich-text  cor-stack">
+      
+        <section class="cor-stack">
+          <dl class="cor-stack">
+            <dt class="cor-h5">What's your favourite dish and why?</dt>
+            <dd><p><strong>Irish Beef Stew</strong></p>
+              <p><q>It’s fantastic on a cold day. Growing up in a family of 10 it was a regular lovely meal which my mammy cooked for me.</q></p>
+            </dd>
+            
+
+            <dt class="cor-h5">What's your favourite book?</dt>
+            <dd><p><strong>That They Face the Rising Sun By John McGahern</strong></p>
+            <p><q>Love all his books as they are set in the countryside and you can identify with them.</q></p></dd>
+            
+
+            <dt class="cor-h5">What are your hobbies?</dt>
+            <dd>
+              <p><strong>Sports</p></strong>
+              <p>The Gaelic sports in particular, Gaelic Football</p>
+              <figure>
+                <img class="cor-image" src="https://api.assetroulette.com/random_unsplash" alt="my alt text"/>
+                <figcaption>Picture legend</figcaption>
+              </figure>
+            </dd>
+
+          </dl>
+          
+
+
+        </section>
+
+        
+
+
+        <section class="cor-stack">
+          <h3 class="cor-member__title"><span>My work at the CoR</span></h3>
+          <p>Rapporteur on the opinion on an EU Strategy for Rural Revival</br>
+          <q>Urban and rural areas must cooperate for both to grow and build a better Europe for all</q></p>
+        </section>
+
+        <section class="cor-stack">
+          <h3 class="cor-member__title"><span>A normal day looks like...</span></h3>
+        
+          <figure>
+              <img class="cor-image" src="https://api.assetroulette.com/random_unsplash" alt="my alt text"/>
+              <figcaption>Picture legend</figcaption>
+          </figure>
+        </section>
+        
+
+        <br/>
+        <br/>
+
+       
+
+      </div>
+    </main>
+
+  </div>
+
+</div>

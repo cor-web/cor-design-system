@@ -4,16 +4,16 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2>Initiatives</h2>
+    <h2>Our latest vacancies</h2>
     <div class="cor-switcher items-start">
-    {% for initiative in initiatives %}
+    {% for vacancy in vacancies %}
       <article class="cor-card">
-        <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
-        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
+        <img class="cor-image cor-card__image" src="{{ vacancy.image }}" alt="alternative text" class="cor-image">
+        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ vacancy.date }}</time>
         <h3 class="cor-card__title">
-          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
-            {% if initiative.link.size %}
-            <small class="cor-card__title__link__info">({{ initiative.link.size }})</small>
+          <a class="cor-card__title__link" href="{{ vacancy.link.target }}">{{ vacancy.link.text }} 
+            {% if vacancy.link.size %}
+            <small class="cor-card__title__link__info">({{ vacancy.link.size }})</small>
             {% endif %}
           </a>
         </h3>

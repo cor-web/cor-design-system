@@ -1,8 +1,8 @@
 preview: "@previewincor_new"
 context:
-  title: "Future of Europe"
+  title: "Work with us"
   subtitle: "Bringing Europe closer to its people"
-  initiatives:
+  vacancies:
     - image: "https://api.assetroulette.com/random_unsplash"
       date: "01/06/2021"
       link:
