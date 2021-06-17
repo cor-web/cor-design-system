@@ -5,7 +5,7 @@ h3.cor-survey__question {
 }
 
 cor-filter {
-  border-bottom: solid 1px var(--c-g-9);
+  border-bottom: solid 1px var(--chart-theme-1-color-1, #1e88e5);
   display: grid;
   float: right;
   gap: var(--space);
@@ -25,7 +25,6 @@ cor-filter select {
 }
 
 cor-filter select {
-  border: none;
   margin-left: var(--space-2xs);
 }
 
@@ -122,4 +121,58 @@ dd + dd {
 
 multi-bar-chart {
   --direction: column;
+}
+
+.cor-survey__legend-container {
+  display: grid;
+  gap: var(--space-2xs);
+  grid-template-columns: 2fr 3fr;
+}
+
+.cor-survey__legend {
+  grid-column: 2 / -1;
+  border: solid 1px var(--c-g-9);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 0.8rem;
+  margin-top: var(--space-s);
+  padding: 0.5rem;
+}
+
+.cor-survey__legend li {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0.5rem;
+}
+
+.cor-survey__legend li:last-child {
+  margin-right: 0;
+}
+
+.cor-survey__legend li:before {
+  background: blue;
+  content: "";
+  display: inline-block;
+  height: 15px;
+  margin-right: 0.2rem;
+  width: 15px;
+}
+
+.cor-survey__legend li:nth-child(1):before {
+  background-color: var(--chart-theme-1-color-1, blue);
+}
+
+.cor-survey__legend li:nth-child(2):before {
+  background-color: var(--chart-theme-1-color-2, blue);
+}
+
+.cor-survey__legend li:nth-child(3):before {
+  background-color: var(--chart-theme-1-color-3, blue);
+}
+
+.cor-survey__legend li:nth-child(4):before {
+  background-color: var(--chart-theme-1-color-4, blue);
 }

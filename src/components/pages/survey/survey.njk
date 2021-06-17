@@ -34,7 +34,17 @@
             {% if question.type === "bargraph" %}
               {% render "@bar-graph--withfilter", question, id="1" %}
             {% elif question.type === "multibargraph" %}
+
               {% render "@multi-bar-graph--withfilter", question %}
+    
+              <div class="cor-survey__legend-container">
+                <ul class="cor-survey__legend">
+                    <li>Your city or municipality</li>
+                    <li>Your region</li>
+                    <li>The national government</li>
+                    <li>The European Union</li>
+                </ul>
+              </div>
             {% else %}
 
             {% endif %}
