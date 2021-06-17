@@ -68,7 +68,8 @@ export default [
           unsafe_arrows: true
         },
         output: { quote_style: 1 }
-      })
+      }),
+      versionInjector()
     ]
   },
   {
@@ -88,7 +89,8 @@ export default [
           toplevel: true
         },
         output: { quote_style: 1 }
-      })
+      }),
+      versionInjector()
     ]
   }
 ]
