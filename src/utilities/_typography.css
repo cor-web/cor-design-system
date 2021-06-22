@@ -2,3 +2,23 @@
   font-size: var(--step--2);
   line-height: 1.75;
 }
+
+.text-dark {
+  color: var(--oc-gray-10);
+}
+
+.text-darkish {
+  color: var(--oc-gray-8);
+}
+
+.text-lightish {
+  color: var(--oc-gray-2);
+}
+
+.text-light {
+  color: var(--oc-gray-4);
+}
+
+.text-mid {
+  color: var(--oc-gray-5);
+}

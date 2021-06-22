@@ -4,6 +4,7 @@
   font-size: var(--step--3);
   gap: var(--space-3xs);
   overflow: hidden;
+  padding: var(--space-xs) 0 var(--space-xs);
 }
 
 .cor-card > * {
@@ -50,4 +51,9 @@ h3.cor-card__title {
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+}
+
+.cor-card--withbackground {
+  background-color: var(--oc-gray-1);
+  padding: var(--space-xs);
 }

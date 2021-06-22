@@ -8,7 +8,7 @@ export default {
       <g>
         <rect ${value > 0 ? "animate" : ""}  x="0"  width="${value}" height="8" fill="var(--chart-${theme}-color-1, #1E88E5)"></rect>
         <text text-anchor="middle"  dominant-baseline="central"  
-           style="fill: ${(value / 2) > 2 ? "white" : "black"  }; font-size: var(--bar-font-size, 25%); font-weight: 500; pointer-events: none;" x="${(value / 2) > 2 ? (value / 2) : 7  }" y="4">${text}</text>
+           style="fill: ${(value / 2) > 2 ? "white" : "black"  }; font-size: var(--bar-font-size, 15%); font-weight: 500; pointer-events: none;" x="${(value / 2) > 2 ? (value / 2) : 7  }" y="4">${text}</text>
       </g>
       
 

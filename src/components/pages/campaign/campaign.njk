@@ -31,7 +31,7 @@
 
     <main>
       
-      <div class="cor-rich-text">
+      <section class="cor-rich-text">
       
         <h2 class="cor-toc-section" id="yourviews">Your views on the future of europe</h2>
 
@@ -43,41 +43,28 @@
         
         <h2 class="cor-toc-section" id="results">Survey results</h2>
 
-      </div>
+      </section>
+
+      <div role="separator"></div>
+
+      <section>
+        <h2 class="cor-toc-section" id="whatson">What's on</h2>
+        
+        <h3>Latest news</h3>
+
+        <div class="cor-l-2andlist">
+        {% for newsitem in news %}
+          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image } %}
+        {% endfor %}
+        </div>
+
+      </section>
     
       
 
-      <div>
+      
 
-        {% for question in questions %}
-          
-          <section id="question{{ loop.index }}" class="cor-survey__question-container">
-            {% if question.type === "bargraph" %}
-              {% render "@bar-graph--withfilter", question, id="1" %}
-            {% elif question.type === "multibargraph" %}
-              {% render "@multi-bar-graph--withfilter", question %}
-            {% else %}
-
-            {% endif %}
-
-            <!--
-            <div class="cor-survey__separator">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="20px">
-                <defs>
-                  <pattern id="pattern_yP0sk" patternUnits="userSpaceOnUse" width="9.5" height="9.5" patternTransform="rotate(45)">
-                    <line x1="0" y="0" x2="0" y2="9.5" stroke="#049CBE" stroke-width="1" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#pattern_yP0sk)" :opacity="1" />
-              </svg>
-            </div>
-            -->
-          </section>
-        {% endfor %}
-
-      </div>
-
-      <div role="separator"></div>
+      
 
       <div>
         <h2>Learn more</h2>

@@ -1,3 +1,13 @@
-<div class="cor-card">
-  <h2>Title</h2>
-</div>
+<article class="cor-card cor-card--{{ modifier }}">
+  {% if image %}
+  <img class="cor-image cor-card__image" src="{{ image.src }}" alt="{{ image.alt }}" class="cor-image">
+  {% endif %}
+  <time class="cor-card__date text-mid" datetime="2015-05-16 19:00">{{ date }}</time>
+  <h3 class="cor-card__title">
+    <a class="cor-card__title__link" href="{{ link.target }}">{{ title }} 
+      {% if link.size %}
+      <small class="cor-card__title__link__info">({{ link.size }})</small>
+      {% endif %}
+    </a>
+  </h3>
+</article>
