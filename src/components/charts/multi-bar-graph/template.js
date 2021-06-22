@@ -65,13 +65,17 @@ export default {
       <rect width="100" height="8" fill="var(--chart-${theme}-background, #ECEFF1)"></rect>
 
       ${values.map((value, index) => `
-      <g aria-label="bar graph" ${value === '0' ? 'visibility="hidden"' : ''}>
+      <g aria-label="bar graph" ${value === '0' ? 'visibility="hidden"' : ''} >
         <g>
           <rect x="${getPosition(values, index)}" ${values > 0 ? "animate" : ""}  width="${value}" height="8" fill="var(--chart-${theme}-color-${index + 1}, blue)"></rect>
-          <title>${itemTexts[index]}</title>
-          <text text-anchor="middle"  dominant-baseline="central"  
-           style="fill: white; font-size: var(--bar-font-size, 15%); font-weight: 500; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
+          
+          ${Number(value) > 5 ? `
+            <text text-anchor="middle"  dominant-baseline="central"  
+            style="fill: white; font-size: var(--bar-font-size, 15%); font-weight: 500; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
+          ` : ''} 
+          
         </g>
+        <title>${itemTexts[index]}: ${itemValues[index]}</title>
       </g>
       `).join('')}
         

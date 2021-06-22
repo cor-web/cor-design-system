@@ -1,15 +1,6 @@
 {
   "status": "wip",
-  "variants": [
-    {
-      "name": "default",
-      "preview": "@preview"
-    },
-    {
-      "name": "inCor",
-      "preview": "@previewincor"
-    }
-  ],
+  "preview": "@previewincor",
   "context": {
     "title": "Future of Europe",
     "subtitle": "Citizen survey results",
@@ -437,7 +428,7 @@
                 "values": [
                   {
                     "text": "Europe",
-                    "value": 10
+                    "value": 5
                   },
                   {
                     "text": "Le gouvernement national",
@@ -445,11 +436,11 @@
                   },
                   {
                     "text": "votre ville ou votre commune",
-                    "value": 10
+                    "value": 5
                   },
                   {
                     "text": "votre région",
-                    "value": 10
+                    "value": 90
                   }
                 ],
                 "filterableOn": [
