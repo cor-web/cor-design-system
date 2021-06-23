@@ -1,0 +1,36 @@
+.mainContent .cor-list--documents {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.mainContent .cor-list--documents li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.mainContent .cor-list--documents li:before {
+  align-self: center;
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: var(--icon-document);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-size: contain;
+  margin-right: var(--space-3xs);
+  width: 24px;
+  height: 24px;
+}
+
+.cor-list--documents a[href$=".pdf"]:after {
+  content: none;
+}
+
+.cor-list--documents__info {
+  grid-column: 2 / 3;
+}
+
+.cor-list--withdividers li + li {
+  border-top: solid 1px var(--oc-gray-5);
+}

@@ -1,0 +1,12 @@
+<{{typeoflist}} class="cor-list {% if modifier %}cor-list--{{modifier}}{% endif %} {{listCLasse}}">
+  {% for item in list %}
+    <li>
+      {% if item.link %}
+        <a href="{{ item.link.target }}">{{ item.link.text }}</a>
+        <small class="cor-list--documents__info">{{ item.link.size }}</small>
+      {% else %}
+        {{ item.text }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</{{typeoflist}}>

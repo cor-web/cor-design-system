@@ -6,3 +6,7 @@
   margin-top: var(--space-xs) !important;
   margin-bottom: var(--space-xs) !important;
 }
+
+.margin-bottom {
+  margin-bottom: var(--space-xs) !important;
+}

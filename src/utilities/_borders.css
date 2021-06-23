@@ -17,3 +17,7 @@
 .border-none {
   border-style: none;
 }
+
+.cor-containerWithDivider > * + * {
+  border-top: solid 1px var(--oc-gray-2);
+}

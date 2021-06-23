@@ -29,3 +29,17 @@ a[href$=".pdf"]:after {
   width: 16px;
   height: 16px;
 }
+
+.cor-icon--before a[href$=".pdf"]:before {
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: var(--icon-document);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.cor-icon--before a[href$=".pdf"]:after {
+  content: none;
+}

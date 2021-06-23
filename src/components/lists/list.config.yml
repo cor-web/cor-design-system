@@ -1,0 +1,55 @@
+preview: "@previewincor_new"
+context:
+  typeoflist: "ul"
+  list:
+    - text: Consequat excepteur enim laborum anim.
+    - text: Consequat excepteur enim laborum anim.
+    - text: Consequat excepteur enim laborum anim.
+    - text: Consequat excepteur enim laborum anim.
+    - text: Consequat excepteur enim laborum anim.
+variants:
+  - name: "Unordered list"
+    context:
+      typeoflist: "ul"
+      list:
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+  - name: "Ordered list"
+    context:
+      typeoflist: "ol"
+      list:
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+  - name: "List with divider"
+    context:
+      modifier: "withdividers"
+      typeoflist: "ul"
+      list:
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+        - text: Consequat excepteur enim laborum anim.
+  - name: "Documents"
+    context:
+      modifier: "documents"
+      typeoflist: "ol"
+      list:
+        - link:
+            text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+            target: "document.pdf"
+            size: "3 MB PDF"
+        - link:
+            text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+            target: "document.pdf"
+            size: "3 MB PDF"
+        - link:
+            text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+            target: "document.pdf"
+            size: "3 MB PDF"

@@ -38,10 +38,10 @@
         <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
 
         <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-      
-        <div role="separator"></div>
-        
-        <h2 class="cor-toc-section" id="results">Survey results</h2>
+
+        <div class="padding margin-y bg inline-block">
+          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
+        </div>
 
       </section>
 
@@ -54,7 +54,34 @@
 
         <div class="cor-l-2andlist">
         {% for newsitem in news %}
-          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image } %}
+
+          {% set cardExtraClass = "" %}
+          {% if loop.index < 3 %}
+            {% set cardExtraClass = "bg padding" %}
+          {% endif %}
+          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+        {% endfor %}
+        </div>
+
+      </section>
+
+
+      <section>
+        <h2 class="cor-toc-section" id="events">Events</h2>
+        
+        <h3>Upcoming events</h3>
+
+        <div class="cor-grid margin-bottom">
+        {% for newsitem in upcomingEvents %}
+          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
+        {% endfor %}
+        </div>
+
+        <h3>Past events</h3>
+
+        <div class="cor-containerWithDivider cor-stack--2xs">
+        {% for newsitem in pastEvents %}
+          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
         {% endfor %}
         </div>
 

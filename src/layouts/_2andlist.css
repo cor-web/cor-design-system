@@ -14,6 +14,10 @@
   margin-right: var(--space);
 }
 
+.cor-l-2andlist > :nth-child(3) {
+  margin-top: var(--space-s);
+}
+
 .cor-l-2andlist > :nth-child(n + 3) {
   border-top: solid 1px var(--oc-gray-2);
   flex-basis: 100%;
@@ -21,4 +25,8 @@
 
 .cor-l-2andlist > :nth-child(n + 3) img {
   display: none;
+}
+
+.cor-l-2andlist > .bg + * {
+  border-top: none;
 }

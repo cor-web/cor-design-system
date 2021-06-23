@@ -9,3 +9,10 @@
   margin-bottom: var(--space-4xs);
   padding-left: var(--space-2xs);
 }
+
+.mainContent ol[class],
+.mainContent ul[class],
+.mainContent ol[class] li,
+.mainContent ul[class] li {
+  padding: 0;
+}

@@ -1,8 +1,19 @@
-<article class="cor-card cor-card--{{ modifier }}">
+<article class="cor-card cor-card--{{ modifier }} {{ cardExtraClass }}">
   {% if image %}
-  <img class="cor-image cor-card__image" src="{{ image.src }}" alt="{{ image.alt }}" class="cor-image">
+  <img  src="{{ image.src }}" alt="{{ image.alt }}" class="cor-image">
+<!--
+  <img 
+  class="cor-card__image"
+  width="400" 
+  height="300"
+  src="{{ image.src }}-570.jpg"
+  srcset="{{ image.src }}-1000.jpg 570w,
+          {{ image.src }}-2000.jpg 1040w,
+          {{ image.src }}-3000.jpg 2080w"
+  alt="{{ image.alt }}"/>
+-->
   {% endif %}
-  <time class="cor-card__date text-mid" datetime="2015-05-16 19:00">{{ date }}</time>
+  <time class="cor-card__date text-darkish" datetime="2015-05-16 19:00">{{ date }}</time>
   <h3 class="cor-card__title">
     <a class="cor-card__title__link" href="{{ link.target }}">{{ title }} 
       {% if link.size %}
