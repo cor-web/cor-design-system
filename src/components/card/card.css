@@ -69,7 +69,7 @@ h3.cor-card__title {
 .cor-card--opinion {
   display: grid;
   gap: var(--space-xs);
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 150px 1fr;
 }
 
 .cor-card--opinion > img:first-child {

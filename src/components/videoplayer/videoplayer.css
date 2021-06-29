@@ -1,6 +1,7 @@
 .cor-video-preview {
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 .cor-video-preview:before {
