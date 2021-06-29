@@ -1,23 +1,18 @@
 .cor-with-sidebar {
-  --side-width: 20em;
-  --content-min-width: 50%;
-  overflow: hidden;
-}
-
-.cor-with-sidebar > * {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(var(--s1) / 2 * -1);
+  gap: var(--space, var(--space-xs));
 }
 
-.cor-with-sidebar > * > * {
-  margin: calc(var(--s1) / 2);
-  flex-basis: 20em;
+.cor-with-sidebar--right > :last-child,
+.cor-with-sidebar--left > :first-child {
+  flex-basis: var(--sideWidth);
   flex-grow: 1;
 }
 
-.cor-with-sidebar > * > :last-child {
+.cor-with-sidebar--right > :first-child,
+.cor-with-sidebar--left > :last-child {
   flex-basis: 0;
   flex-grow: 999;
-  min-width: calc(var(--content-min-width) - var(--s1));
+  min-width: 50%;
 }

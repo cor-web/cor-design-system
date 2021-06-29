@@ -8,7 +8,12 @@ context:
     text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
     target: "document.pdf"
     size: "3 MB PDF"
+  rapporteur:
+    name: "Jane Doe"
 variants:
   - name: "With background"
     context:
       modifier: "withbackground"
+  - name: "Opinion"
+    context:
+      modifier: "opinion"

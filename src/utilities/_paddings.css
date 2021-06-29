@@ -11,3 +11,11 @@
 .padding-x {
   padding: 0 var(--space-xs) 0 !important;
 }
+
+.padding-y {
+  padding: var(--space-xs) 0 !important;
+}
+
+.padding-y--3xs {
+  padding: var(--space-3xs) 0 !important;
+}

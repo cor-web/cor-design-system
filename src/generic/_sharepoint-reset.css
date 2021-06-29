@@ -1,3 +1,7 @@
 body .mainContent {
   font-size: initial;
 }
+
+img {
+  margin: unset;
+}

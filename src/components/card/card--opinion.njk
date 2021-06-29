@@ -1,0 +1,27 @@
+<article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
+  {% if image %}
+  <img  src="{{ image.src }}" alt="{{ image.alt }}" class="cor-image">
+<!--
+  <img 
+  class="cor-card__image"
+  width="400" 
+  height="300"
+  src="{{ image.src }}-570.jpg"
+  srcset="{{ image.src }}-1000.jpg 570w,
+          {{ image.src }}-2000.jpg 1040w,
+          {{ image.src }}-3000.jpg 2080w"
+  alt="{{ image.alt }}"/>
+-->
+  {% endif %}
+  <div>
+    <h3 class="cor-card__title">
+      <a class="cor-card__title__link" href="{{ link.target }}">{{ title }}</a>
+    </h3>
+    <small class="cor-card__title__link__info">By Rapporteur</small>
+    <strong>{{ rapporteur.name }}</strong>
+    <div class="flex justify-end gap-xs">
+      <img height="25" alt="PES" src="https://www.cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-pes.png" />
+      <img height="25" alt="PES" src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/it.svg" />
+    </div>
+  </div>
+</article>

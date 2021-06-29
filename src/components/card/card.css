@@ -4,7 +4,7 @@
   font-size: var(--step--3);
   gap: var(--space-3xs);
   overflow: hidden;
-  padding: var(--padding, var(--space-2xs) 0 var(--space-2xs));
+  padding: var(--padding, 0);
 }
 
 .cor-card > * {
@@ -28,7 +28,7 @@
 
 h3.cor-card__title {
   all: unset;
-  font-size: var(--step--2);
+  font-size: var(--step--3);
 }
 
 .cor-card__title__link[href$=".pdf"]:after {
@@ -53,7 +53,42 @@ h3.cor-card__title {
   height: 16px;
 }
 
+.cor-card__image {
+  border-radius: 2px;
+}
+
+.cor-card__date {
+  font-size: var(--step--4);
+}
+
 .cor-card--withbackground {
   background-color: var(--oc-gray-1);
   padding: var(--space-xs);
+}
+
+.cor-card--opinion {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: 200px 1fr;
+}
+
+.cor-card--opinion > img:first-child {
+  align-self: stretch;
+  grid-row: 1 / 2;
+}
+
+.cor-card--opinion img + div {
+  display: grid;
+  gap: var(--space-2xs);
+  margin-top: 0;
+  padding: var(--space-2xs) var(--space-2xs) var(--space-2xs) 0;
+}
+
+.cor-card--opinion {
+  padding: 0;
+}
+
+.cor-card--opinion img + div :first-child {
+  margin-top: 0;
+  padding-top: 0;
 }

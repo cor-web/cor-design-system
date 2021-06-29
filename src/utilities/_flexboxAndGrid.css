@@ -1,0 +1,31 @@
+.gap-xl {
+  gap: var(--space-xl);
+}
+
+.gap-l {
+  gap: var(--space-l);
+}
+
+.gap-m {
+  gap: var(--space-m);
+}
+
+.gap-s {
+  gap: var(--space-s);
+}
+
+.gap-xs {
+  gap: var(--space-xs);
+}
+
+.gap-2xs {
+  gap: var(--space-2xs);
+}
+
+.gap-3xs {
+  gap: var(--space-3xs);
+}
+
+.justify-end {
+  justify-content: flex-end;
+}

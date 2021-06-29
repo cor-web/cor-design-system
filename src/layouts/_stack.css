@@ -13,7 +13,3 @@
 .cor-stack > * + * {
   margin-top: var(--space);
 }
-
-.cor-stack--2xs > * + * {
-  margin-top: var(--space-2xs);
-}

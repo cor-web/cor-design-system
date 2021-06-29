@@ -1,6 +1,6 @@
-<article class="cor-card cor-card--{{ modifier }} {{ cardExtraClass }}">
+<article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
   {% if image %}
-  <img  src="{{ image.src }}" alt="{{ image.alt }}" class="cor-image">
+  <img  src="{{ image.src }}" alt="{{ image.alt }}" class="cor-card__image">
 <!--
   <img 
   class="cor-card__image"

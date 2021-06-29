@@ -1,20 +1,13 @@
-<audio id="audio1" data-able-player preload="auto">
-  <source type="audio/ogg" src="https://res.cloudinary.com/dwwpulrwo/video/upload/v1617800214/Tests/ableplayer/frenchsong.ogg"/>
-  <source type="audio/mpeg" src="https://res.cloudinary.com/dwwpulrwo/video/upload/v1617800245/Tests/ableplayer/everyday.mp3"/>
-</audio>
 
-<video id="video1" preload="auto" width="480" height="360" poster="https://res.cloudinary.com/dwwpulrwo/image/upload/v1617800219/Tests/ableplayer/wwa.jpg" data-able-player data-skin="2020" playsinline>
-	<source type="video/mp4" src="https://res.cloudinary.com/dwwpulrwo/video/upload/v1617800232/Tests/ableplayer/wwa.mp4"/>
-  <source type="video/webm" src="https://res.cloudinary.com/dwwpulrwo/video/upload/v1617800232/Tests/ableplayer/wwa.webm"/>
-	<track kind="captions" src="https://res.cloudinary.com/dwwpulrwo/raw/upload/v1617800225/Tests/ableplayer/wwa_captions_en.vtt" srclang="en" label="English captions"/>
-</video>
-
-<!-- Dependencies -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/components/videoplayer/thirdparty/js.cookie.js"></script>
-
-<!-- CSS -->
-<link rel="stylesheet" href="/components/videoplayer/build/ableplayer.min.css" type="text/css"/>
-
-<!-- JavaScript -->
-<script src="/components/videoplayer/build/ableplayer.min.js"></script>
+<div class="cor-video-container--withplaylist">
+  <h4 class="cor-toc-section" id="links">{{ video.title }}​</h4>
+  <video width="100%" controls
+    poster="{{ video.poster }}​" >
+    {% for source in sources %}
+    <source
+      src="{{ video.sources.file }}"
+      type="{{ video.sources.type }}">
+    {% endfor %}
+    {{ fallbackText }}
+  </video>
+</div>

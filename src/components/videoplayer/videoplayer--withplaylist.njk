@@ -1,0 +1,31 @@
+
+<article class="cor-video-container bg padding">
+  <h1 class="cor-toc-section cor-h3" id="videos">{{ videoContainerTitle }}</h1>
+  <article>
+    <h2 class=" cor-h5" id="links">{{ video.title }}​</h2>
+    <video width="100%" controls
+      poster="{{ video.poster }}​" >
+      {% for source in sources %}
+      <source
+        src="{{ video.sources.file }}"
+        type="{{ video.sources.type }}">
+      {% endfor %}
+      {{ fallbackText }}
+    </video>
+
+  </article>
+  
+  <div>
+    <h3>Watch more</h3>
+    <ul class="list-none cor-grid" style="--threshold: 150px">
+      {% for video in relatedVideos %}
+      <li>
+        <a href="{{ video.id }}​" class="cor-with-sidebar cor-with-sidebar--left" style="--sideWidth: 150px">
+          <span class="cor-video-preview"><img src="{{ video.poster }}​" alt="" width="100"/></span>
+          <span>{{ video.title }}​</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

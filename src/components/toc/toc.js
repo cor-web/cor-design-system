@@ -9,6 +9,8 @@ class TableOfContent extends HTMLElement {
     root.innerHTML = `
       <style>
         ul {
+          display: grid;
+          gap: var(--space-3xs);
           margin: var(--space-3xs) 0 0 0;
           padding: 0;
         }

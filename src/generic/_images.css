@@ -25,11 +25,13 @@
 }
 
 /* Let SVG scale without boundaries */
+/*
 .mainContent img[src$=".svg"] {
   width: 100%;
   height: auto;
   max-width: none;
 }
+*/
 
 .cor-image {
   aspect-ratio: 3 / 2;

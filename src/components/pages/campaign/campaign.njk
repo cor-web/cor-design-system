@@ -1,4 +1,4 @@
-<div class="bg-white cor-container">
+<div class="bg-white cor-container" style="--campaign-color: 10, 175, 203">
   
   {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
@@ -79,37 +79,60 @@
 
         <h3>Past events</h3>
 
-        <div class="cor-containerWithDivider cor-stack--2xs">
+        <div class="cor-containerWithDivider ">
         {% for newsitem in pastEvents %}
-          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
         {% endfor %}
         </div>
 
       </section>
     
-      
+      <section>
+        <h2 class="cor-toc-section" id="events">Opinions & resolution</h2>
+        
+        <h3>Adopted opinions</h3>
+
+        <div class="cor-grid margin-bottom">
+        {% for newsitem in adoptedOpinions %}
+          {% render "@card--opinion" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, modifier: "opinion", cardExtraClass: "bg" } %}
+        {% endfor %}
+        </div>
+
+        <h3>Opinions currently in discussion</h3>
+
+        <div class="cor-containerWithDivider cor-stack--2xs">
+        {% for newsitem in indiscussionOpinions %}
+          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+        {% endfor %}
+        </div>
+
+      </section>
 
       
 
       
 
-      <div>
+      <section>
         <h2>Learn more</h2>
 
-        <h3 class="cor-toc-section" id="links">Related links</h3>
+        
+        {% render "@videoplayer--withplaylist" %}
+        
+        
+        <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
         <ul>
           <li><a href="test.be">Link 1</a></li>
           <li><a href="test.be">Link 2</a></li>
           <li><a href="test.be">Link 3</a></li>
         </ul>
-      </div>
+      </section>
     
     
       <div role="separator"></div>
 
       <div>
         <h2 class="cor-toc-section" id="contact">Contact</h2>
-        <a href="test.be">contact@cor.europa.eu</a>
+        <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
       </div>
     
     </main>
