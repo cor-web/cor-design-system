@@ -6,31 +6,31 @@ context:
     src: "/assets/images/future-of-europe.png"
     alt: "alternative text"
   initiatives:
-    - image: "https://api.assetroulette.com/random_unsplash"
+    - image: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
       date: "01/06/2021"
       link:
         text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
         target: "document.pdf"
         size: "3 MB PDF"
-    - image: "https://api.assetroulette.com/random_unsplash"
+    - image: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
       date: "01/06/2021"
       link:
         text: "Europe Day: discover the European Union on the occasion of 9 May 2021"
         target: "www.greenpeace.org"
-    - image: "https://api.assetroulette.com/random_unsplash"
+    - image: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
       date: "01/06/2021"
       link:
         text: "European Citizens Initiatives (ECIs) conclusions should be subject of a serious follow up by European institutions"
         target: "2030 Regional Commitments"
   news:
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
         alt: "alernative text"
       date: "01/06/2021"
       title: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
         alt: "alernative text"
       date: "01/06/2021"
       title: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
@@ -59,13 +59,13 @@ context:
         size: "3 MB PDF"
   upcomingEvents:
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
         alt: "alernative text"
       date: "01/06/2021"
       title: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
         alt: "alernative text"
       date: "01/06/2021"
       title: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
@@ -82,40 +82,41 @@ context:
       link: "www.cor.europa.eu"
   adoptedOpinions:
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://fakeface.rest/face/view/5?minimum_age=25"
         alt: "alernative text"
-      date: "01/06/2021"
       title: "(CDR 722/2021) - Revised Trans-European Energy Infrastructure Regulation fit for the Green and Digital Transition"
+      rapporteur: "Jane Doe"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://fakeface.rest/face/view/5?minimum_age=25"
         alt: "alernative text"
       date: "01/06/2021"
       title: "(CDR 1903/2021) - Forging a climate-resilient Europe - the new EU Strategy on Adaptation to Climate Change"
+      rapporteur: "Jane Doe"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://fakeface.rest/face/view/5?minimum_age=25"
         alt: "alernative text"
-      date: "01/06/2021"
       title: "(CDR 1903/2021) - Forging a climate-resilient Europe - the new EU Strategy on Adaptation to Climate Change"
+      rapporteur: "Jane Doe"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://fakeface.rest/face/view/5?minimum_age=25"
         alt: "alernative text"
-      date: "01/06/2021"
       title: "(CDR 1903/2021) - Forging a climate-resilient Europe - the new EU Strategy on Adaptation to Climate Change"
+      rapporteur: "Jane Doe"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://fakeface.rest/face/view/5?minimum_age=25"
         alt: "alernative text"
-      date: "01/06/2021"
       title: "(CDR 1903/2021) - Forging a climate-resilient Europe - the new EU Strategy on Adaptation to Climate Change"
+      rapporteur: "Jane Doe"
       link: "www.cor.europa.eu"
     - image:
-        src: "https://api.assetroulette.com/random_unsplash"
+        src: "https://fakeface.rest/face/view/5?minimum_age=25"
         alt: "alernative text"
-      date: "01/06/2021"
       title: "(CDR 1903/2021) - Forging a climate-resilient Europe - the new EU Strategy on Adaptation to Climate Change"
+      rapporteur: "Jane Doe"
       link: "www.cor.europa.eu"
   indiscussionOpinions:
     - title: "(CDR 3170/2016) - Towards a sustainable EU food policy"

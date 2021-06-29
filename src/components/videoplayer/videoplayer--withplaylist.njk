@@ -1,8 +1,7 @@
 
 <article class="cor-video-container bg padding">
-  <h1 class="cor-toc-section cor-h3" id="videos">{{ videoContainerTitle }}</h1>
   <article>
-    <h2 class=" cor-h5" id="links">{{ video.title }}​</h2>
+    <h1 class="cor-h5" id="links">{{ video.title }}​</h1>
     <video width="100%" controls
       poster="{{ video.poster }}​" >
       {% for source in sources %}
@@ -16,7 +15,7 @@
   </article>
   
   <div>
-    <h3>Watch more</h3>
+    <h4>Watch more</h4>
     <ul class="list-none cor-grid" style="--threshold: 150px">
       {% for video in relatedVideos %}
       <li>

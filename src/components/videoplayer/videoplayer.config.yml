@@ -10,7 +10,7 @@ context:
         file: "https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
       - type: "video/ogg"
         file: "https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
-    poster: "https://archive.org/download/WebmVp8Vorbis/webmvp8.gif"
+    poster: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
   relatedVideos:
     - title: 'The green revolution: "the EU must not fail" - Juan Espadas'
       poster: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"

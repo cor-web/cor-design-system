@@ -54,7 +54,7 @@ ul[filter] li {
   list-style: none;
 }
 
-main section {
+.cor-survey section {
   margin-bottom: var(--space-xl);
 }
 

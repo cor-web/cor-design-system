@@ -79,7 +79,7 @@ h3.cor-card__title {
 
 .cor-card--opinion img + div {
   display: grid;
-  gap: var(--space-2xs);
+  gap: var(--space-3xs);
   margin-top: 0;
   padding: var(--space-2xs) var(--space-2xs) var(--space-2xs) 0;
 }

@@ -21,3 +21,12 @@
 .cor-containerWithDivider > * + * {
   border-top: solid 1px var(--oc-gray-2);
 }
+
+/*to move*/
+.cor-containerWithDivider--space-l > * {
+  padding-bottom: var(--space-l);
+}
+
+.cor-containerWithDivider--space-l > * + * {
+  padding-top: var(--space-l);
+}

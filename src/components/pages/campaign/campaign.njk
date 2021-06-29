@@ -4,7 +4,7 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2>Initiatives</h2>
+    <h2 class="cor-toc-section" id="initiatives">Initiatives</h2>
     <div class="cor-switcher items-start">
     {% for initiative in initiatives %}
       <article class="cor-card">
@@ -29,7 +29,7 @@
 
     {% render "@toc--dynamic" , {nav: contentnav}, true %}
 
-    <main>
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
       
       <section class="cor-rich-text">
       
@@ -45,95 +45,98 @@
 
       </section>
 
-      <div role="separator"></div>
-
-      <section>
-        <h2 class="cor-toc-section" id="whatson">What's on</h2>
+      <section class="cor-stack">
+        <h2>What's on</h2>
         
-        <h3>Latest news</h3>
+        <section>
+          <h3 class="cor-toc-section" id="news">Latest news</h3>
 
-        <div class="cor-l-2andlist">
-        {% for newsitem in news %}
+          <div class="cor-l-2andlist">
+          {% for newsitem in news %}
 
-          {% set cardExtraClass = "" %}
-          {% if loop.index < 3 %}
-            {% set cardExtraClass = "bg padding" %}
-          {% endif %}
-          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
-        {% endfor %}
-        </div>
+            {% set cardExtraClass = "" %}
+            {% if loop.index < 3 %}
+              {% set cardExtraClass = "bg padding" %}
+            {% endif %}
+            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
 
-      </section>
+        </section>
 
+        <section>
 
-      <section>
-        <h2 class="cor-toc-section" id="events">Events</h2>
-        
-        <h3>Upcoming events</h3>
+          <h3 class="cor-toc-section" id="events">Events</h4>
+          
+          <h4>Upcoming events</h4>
 
-        <div class="cor-grid margin-bottom">
-        {% for newsitem in upcomingEvents %}
-          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
-        {% endfor %}
-        </div>
+          <div class="cor-grid margin-bottom">
+          {% for newsitem in upcomingEvents %}
+            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
+          {% endfor %}
+          </div>
 
-        <h3>Past events</h3>
+          <h4>Past events</h4>
 
-        <div class="cor-containerWithDivider ">
-        {% for newsitem in pastEvents %}
-          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-        {% endfor %}
-        </div>
+          <div class="cor-containerWithDivider ">
+          {% for newsitem in pastEvents %}
+            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+          {% endfor %}
+          </div>
+
+        </section>
 
       </section>
     
-      <section>
+      <section class="cor-stack">
         <h2 class="cor-toc-section" id="events">Opinions & resolution</h2>
         
-        <h3>Adopted opinions</h3>
+        <section>
+          <h3>Adopted opinions</h3>
 
-        <div class="cor-grid margin-bottom">
-        {% for newsitem in adoptedOpinions %}
-          {% render "@card--opinion" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, modifier: "opinion", cardExtraClass: "bg" } %}
-        {% endfor %}
-        </div>
+          <div class="cor-grid margin-bottom">
+          {% for opinion in adoptedOpinions %}
+            {% render "@card--opinion" , {title: opinion.title, link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+          {% endfor %}
+          </div>
+        </section>
 
-        <h3>Opinions currently in discussion</h3>
+        <section>
+          <h3>Opinions currently in discussion</h3>
 
-        <div class="cor-containerWithDivider cor-stack--2xs">
-        {% for newsitem in indiscussionOpinions %}
-          {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-        {% endfor %}
-        </div>
+          <div class="cor-containerWithDivider cor-stack--2xs">
+          {% for newsitem in indiscussionOpinions %}
+            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+          {% endfor %}
+          </div>
+        </section>
 
       </section>
 
-      
-
-      
-
-      <section>
+      <section class="cor-stack">
+        
         <h2>Learn more</h2>
 
-        
-        {% render "@videoplayer--withplaylist" %}
-        
-        
-        <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
-        <ul>
-          <li><a href="test.be">Link 1</a></li>
-          <li><a href="test.be">Link 2</a></li>
-          <li><a href="test.be">Link 3</a></li>
-        </ul>
-      </section>
-    
-    
-      <div role="separator"></div>
+        <section>
+          <h3 class="cor-toc-section margin-top" id="videos">Videos and others</h3>
+          {% render "@videoplayer--withplaylist" %}
+        </section>
 
-      <div>
+        <section>
+          <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
+          <ul>
+            <li><a href="test.be">Link 1</a></li>
+            <li><a href="test.be">Link 2</a></li>
+            <li><a href="test.be">Link 3</a></li>
+          </ul>
+        </section>
+
+      </section>
+
+      <section>
         <h2 class="cor-toc-section" id="contact">Contact</h2>
         <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
-      </div>
+      </section>
     
     </main>
 
