@@ -78,7 +78,7 @@
 
           <h4>Past events</h4>
 
-          <div class="cor-containerWithDivider ">
+          <div class="cor-containerWithDivider--dotted ">
           {% for newsitem in pastEvents %}
             {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
           {% endfor %}
@@ -104,7 +104,7 @@
         <section>
           <h3>Opinions currently in discussion</h3>
 
-          <div class="cor-containerWithDivider cor-stack--2xs">
+          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
           {% for newsitem in indiscussionOpinions %}
             {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
           {% endfor %}
@@ -124,7 +124,7 @@
 
         <section>
           <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
-          <ul>
+          <ul class="margin-bottom-0 padding-left">
             <li><a href="test.be">Link 1</a></li>
             <li><a href="test.be">Link 2</a></li>
             <li><a href="test.be">Link 3</a></li>

@@ -19,3 +19,7 @@
 .padding-y--3xs {
   padding: var(--space-3xs) 0 !important;
 }
+
+.padding-left {
+  padding-left: var(--space-xs) !important;
+}

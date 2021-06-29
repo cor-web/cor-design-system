@@ -19,7 +19,7 @@
 }
 
 .cor-l-2andlist > :nth-child(n + 3) {
-  border-top: solid 1px var(--oc-gray-2);
+  border-top: dotted 1px var(--oc-gray-3);
   flex-basis: 100%;
   padding: var(--space-3xs) 0;
 }

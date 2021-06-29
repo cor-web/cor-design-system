@@ -19,7 +19,11 @@
 }
 
 .cor-containerWithDivider > * + * {
-  border-top: solid 1px var(--oc-gray-2);
+  border-top: solid 1px var(--oc-gray-3);
+}
+
+.cor-containerWithDivider--dotted > * + * {
+  border-top: dotted 1px var(--oc-gray-3);
 }
 
 /*to move*/
