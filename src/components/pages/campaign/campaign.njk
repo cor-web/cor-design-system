@@ -72,7 +72,7 @@
 
           <div class="cor-grid margin-bottom">
           {% for newsitem in upcomingEvents %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
+            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
           {% endfor %}
           </div>
 
@@ -80,7 +80,7 @@
 
           <div class="cor-containerWithDivider--dotted ">
           {% for newsitem in pastEvents %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
           {% endfor %}
           </div>
 
@@ -96,7 +96,7 @@
 
           <div class="cor-grid margin-bottom">
           {% for opinion in adoptedOpinions %}
-            {% render "@card--opinion" , {title: opinion.title, link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+            {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
           {% endfor %}
           </div>
         </section>
