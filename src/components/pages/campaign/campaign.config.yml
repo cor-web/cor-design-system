@@ -1,5 +1,6 @@
 preview: "@previewincor_new"
 context:
+  metadata: "bum"
   title: "Future of Europe"
   subtitle: "Bringing Europe closer to its people"
   poster:
