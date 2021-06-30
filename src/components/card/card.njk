@@ -14,11 +14,12 @@
 -->
   {% endif %}
   <time class="cor-card__date text-darkish" datetime="2015-05-16 19:00">{{ date }}</time>
-  <h3 class="cor-card__title">
+
+  <{% if titleLevel %}{{ titleLevel }}{% else %}h3{% endif %} class="cor-card__title cor-fontsize--3">
     <a class="cor-card__title__link" href="{{ link.target }}">{{ title }} 
       {% if link.size %}
       <small class="cor-card__title__link__info">({{ link.size }})</small>
       {% endif %}
     </a>
-  </h3>
+  </{% if titleLevel %}{{ titleLevel }}{% else %}h3{% endif %}>
 </article>

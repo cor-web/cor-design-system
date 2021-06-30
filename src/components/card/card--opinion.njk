@@ -14,9 +14,9 @@
 -->
   {% endif %}
   <div>
-    <h3 class="cor-card__title">
+    <{% if titleLevel %}{{ titleLevel }}{% else %}h3{% endif %} class="cor-card__title cor-fontsize--3">
       <a class="cor-card__title__link" href="{{ link }}">{{ title }}</a>
-    </h3>
+    </{% if titleLevel %}{{ titleLevel }}{% else %}h3{% endif %}>
     <small class="cor-card__title__link__info">By Rapporteur</small>
     <strong>{{ rapporteur }}</strong>
     <div class="flex justify-end gap-xs">

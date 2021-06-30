@@ -10,7 +10,7 @@
       <article class="cor-card">
         <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
         <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
-        <h3 class="cor-card__title">
+        <h3 class="cor-card__title cor-fontsize--3">
           <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
             {% if initiative.link.size %}
             <small class="cor-card__title__link__info">({{ initiative.link.size }})</small>
@@ -58,7 +58,7 @@
             {% if loop.index < 3 %}
               {% set cardExtraClass = "bg padding" %}
             {% endif %}
-            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
           {% endfor %}
           </div>
 
@@ -72,7 +72,7 @@
 
           <div class="cor-grid margin-bottom">
           {% for newsitem in upcomingEvents %}
-            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
+            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
           {% endfor %}
           </div>
 
@@ -80,7 +80,7 @@
 
           <div class="cor-containerWithDivider--dotted ">
           {% for newsitem in pastEvents %}
-            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
           {% endfor %}
           </div>
 
@@ -106,7 +106,7 @@
 
           <div class="cor-containerWithDivider--dotted cor-stack--2xs">
           {% for newsitem in indiscussionOpinions %}
-            {% render "@card" , {date: newsitem.date, title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
           {% endfor %}
           </div>
         </section>

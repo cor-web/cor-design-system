@@ -114,6 +114,10 @@
   font-size: var(--step--2) !important;
 }
 
+.cor-fontsize--3 {
+  font-size: var(--step--3) !important;
+}
+
 .font-size\:base {
   font-size: var(--font-size-base) !important;
 }

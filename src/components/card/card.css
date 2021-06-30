@@ -26,7 +26,7 @@
   margin: 0;
 }
 
-h3.cor-card__title {
+.cor-card__title {
   all: unset;
   font-size: var(--step--3);
 }
