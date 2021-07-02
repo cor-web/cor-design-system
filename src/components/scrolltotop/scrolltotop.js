@@ -1,6 +1,6 @@
 const scrollToTopBtn = document.getElementById("scrollToTopBtn")
 
-const target = document.querySelector("footer");
+const target = document.querySelector("main");
 
 function callback(entries, observer) {
   entries.forEach( entry => {

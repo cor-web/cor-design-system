@@ -1,0 +1,24 @@
+preview: "@previewincor_new"
+context:
+  title: "Work with us"
+  subtitle: ""
+  poster:
+    src: "/assets/images/future-of-europe.png"
+    alt: "alternative text"
+  initiatives:
+    - image: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
+      date: "01/06/2021"
+      link:
+        text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+        target: "document.pdf"
+        size: "3 MB PDF"
+    - image: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
+      date: "01/06/2021"
+      link:
+        text: "Europe Day: discover the European Union on the occasion of 9 May 2021"
+        target: "www.greenpeace.org"
+    - image: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
+      date: "01/06/2021"
+      link:
+        text: "European Citizens Initiatives (ECIs) conclusions should be subject of a serious follow up by European institutions"
+        target: "2030 Regional Commitments"

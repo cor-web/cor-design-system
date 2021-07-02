@@ -4,7 +4,7 @@ class TableOfContent extends HTMLElement {
 
     const root = this.attachShadow({mode: "open"});
     const sectionsElements = document.querySelectorAll('.cor-toc-section');
-    const sections = [...sectionsElements].map( section => ({ id: section.id,title:section.textContent}));
+    this.sections = [...sectionsElements].map( section => ({ id: section.id,title:section.textContent}));
     
     root.innerHTML = `
       <style>
@@ -49,11 +49,15 @@ class TableOfContent extends HTMLElement {
         :host {
           display: block;
         }
+
+        .readingSection {
+          border: solid 1px red;
+        }
       </style>
       <nav class="cor-toc cor-toc--sticky" aria-labelledby="sections-heading">
         <h2 id="sections-heading"><slot name="toc-title">Contents</slot></h2>
         <ul class="list-disc">
-          ${sections.map( section => `
+          ${this.sections.map( section => `
             <li>
               <a href="#${section.id}">${section.title}</a>
             </li>
@@ -61,8 +65,43 @@ class TableOfContent extends HTMLElement {
         </ul>
       </nav>
     `;
+    
+    // const targetsToObserve = [...this.sections.map( section => this.observe(section.id)) ];
+    const targetsToObserve = sectionsElements;
+    const linksToObserve = root.querySelectorAll('a');
+    // this.observe(targetsToObserve,linksToObserve);
+
+    [...this.sections.map( section => {
+      
+      
+      const observedSection = [...targetsToObserve].find( target => target.id === section.id);
+      const link = [...linksToObserve].find( target => target.href.indexOf(`#${section.id}`) !== -1 );
+      
+      this.observe(observedSection, link);
+    }) ];
   }
-};
+
+
+  observe(observedSection, link) {
+
+    // Create a new observer
+    let observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        
+        if (entry.isIntersecting) {
+          link.classList.add('readingSection');
+          console.log("yes",entry.target);
+        } else {
+          link.classList.remove('readingSection');
+          console.log("no",entry.target);
+        }
+
+      });
+    });
+
+    observer.observe(observedSection);
+  }
+}
 
 if (!customElements.get('cor-toc')) {
   customElements.define('cor-toc', TableOfContent);
