@@ -1,0 +1,779 @@
+/* 
+ *
+* Main 2 */
+
+#s4-workspace {
+  xbackground-color: #f2f6f9;
+}
+
+p,
+.ms-rtestate-field p,
+p.ms-rteElement-P {
+  font-family: Arial;
+  /*    color: #333;*/
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 0;
+  margin-bottom: 15px !important;
+  text-align: left;
+  line-height: 1.4em;
+}
+
+.ms-cui-topBar2 {
+  height: 100% !important;
+}
+
+.clearfix {
+  clear: both !important;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* 
+ *
+* Main  */
+
+#searchwrapper {
+}
+
+/*bootstrap resets for SharePoint*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: content-box;
+  /*border-box causes many issues with SP*/
+  box-sizing: content-box;
+}
+
+img {
+  max-width: none;
+  width: auto;
+}
+
+#s4-ribbonrow {
+  font-size: 13px;
+}
+
+#s4-ribbonrow [class*="span"] {
+  float: none;
+  margin-left: 0px;
+  line-height: 1.2em;
+}
+
+select,
+input[type="file"] {
+  height: auto;
+  line-height: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.ms-fullWidth,
+.ms-webpart-chrome {
+  display: block;
+}
+
+.ms-webpart-cell-vertical {
+  margin-bottom: 20px;
+}
+
+/*end bootstrap resets*/
+.container {
+  width: 100%;
+  position: relative;
+  -moz-box-sizing: border-box;
+  /*border-box causes many issues with SP*/
+  box-sizing: border-box;
+}
+
+.container *,
+.container *:before,
+.container *:after {
+  -moz-box-sizing: border-box;
+  /*border-box causes many issues with SP*/
+  box-sizing: border-box;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+a:hover {
+  color: #004896;
+  text-decoration: none;
+}
+
+img {
+  margin: auto;
+}
+
+#cor-ribbon *,
+#cor-ribbon:after,
+#cor-ribbon:before {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.ms-cui-ribbonTopBars {
+  float: left;
+}
+
+#fullscreenmodebox,
+#site_follow_button,
+#ctl00_site_share_button {
+  display: none !important;
+}
+
+.mainContent li {
+  list-style-position: inside;
+  text-align: left;
+  list-style: disc;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #cookie-consent-banner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #cookie-consent-banner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    min-width: 960px;
+    padding: 0;
+  }
+
+  #cookie-consent-banner {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    min-width: 1170px;
+    padding: 0;
+  }
+
+  #cookie-consent-banner {
+    width: 1170px;
+  }
+}
+
+#CorContainer {
+  padding: 0;
+  font-family: Arial;
+  color: #474746;
+  background-color: #e6edec;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#contentRow {
+  padding-bottom: 30px;
+}
+
+body {
+  overflow: visible;
+  height: inherit;
+  width: inherit;
+}
+
+#cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+}
+
+body #s4-workspace {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+body #s4-bodyContainer {
+  min-width: 0px;
+}
+
+.o365cs-nav-leftAlign {
+  visibility: hidden !important;
+}
+
+.ms-webpartzone-cell {
+  margin: 0;
+}
+
+h1,
+.heading1,
+.ms-rtestate-field h1,
+.ms-rteElement-H1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #004896;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+h2,
+.heading2,
+.ms-rtestate-field h2,
+.ms-rteElement-H2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #004896;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h3,
+.heading3,
+.ms-rtestate-field h3,
+.ms-rteElement-H3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #004896;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.4em;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.ui-accordion {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.ui-accordion h3 {
+  background-color: #bbd6dd !important;
+  color: #004895 !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+
+.ui-accordion-header-icon {
+  float: right;
+  margin-top: 2px;
+}
+
+.sticky-top {
+  z-index: 1005;
+}
+
+/************************************ hover menu start ****************************************/
+#hoverMenu {
+  background-color: #004896;
+  height: 80px;
+}
+
+#hoverMenu ul.root {
+  display: flex;
+  justify-content: center;
+}
+
+/* first level */
+#hoverMenu li {
+  list-style-type: none;
+}
+
+#hoverMenu li.static {
+  /*    width: 14.28%;*/
+  border-left: 1px solid #dadada;
+  background-color: #004896;
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+  flex: 1;
+}
+
+#hoverMenu li.static:first-child {
+  border-left: none;
+}
+
+#hoverMenu li.static a.static {
+  float: left;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+
+#hoverMenu li.static a.static {
+  color: white;
+}
+
+#hoverMenu li.static.hover a.static,
+#hoverMenu li.static:hover a.static {
+  background-color: #bbd6dd;
+  color: #004895;
+  cursor: pointer;
+}
+
+#hoverMenu .menu-item-text {
+  line-height: normal;
+}
+
+#hoverMenu .fa-angle-down {
+  position: relative;
+  top: 1px;
+  margin-left: 15px;
+}
+
+#hoverMenu li.static.hover .fa-angle-down:before {
+  content: "\f106";
+}
+
+/* second level */
+#hoverMenu .root > li > ul.dynamic {
+  margin-top: 30px;
+  left: 0 !important;
+  text-align: left;
+}
+
+#hoverMenu ul.dynamic {
+  background-color: #bbd6dd;
+  padding: 0;
+  width: auto !important;
+  white-space: nowrap;
+}
+
+#hoverMenu ul.dynamic li .menu-item {
+  color: #004895;
+}
+
+#hoverMenu .dynamic-children {
+  background-image: none;
+  padding-right: 0;
+}
+
+#hoverMenu .fa-angle-right {
+  position: relative;
+  top: 4px;
+}
+
+#hoverMenu li.dynamic > span.dynamic-children {
+  background-color: #d0d0d0;
+  color: #004895 !important;
+}
+
+#hoverMenu li.dynamic a.dynamic,
+#hoverMenu li.dynamic span.dynamic {
+  padding: 10px;
+}
+
+#hoverMenu span.menu-item-text,
+#hoverMenu .fa-angle-right {
+  cursor: default;
+}
+
+#hoverMenu a span.menu-item-text,
+#hoverMenu a .fa-angle-right {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    margin-right: 40px;
+  }
+}
+
+/************************************ hover menu end ******************************************/
+/**********************************************************************************************/
+/************************************ clickable menu start ************************************/
+#clickableMenu {
+  background-color: #004896;
+}
+
+/* header start */
+@media (min-width: 992px) {
+  .header {
+    margin-top: 0 !important;
+  }
+}
+
+.logo {
+  position: absolute;
+  left: -137px;
+  width: 422px;
+  height: 156px;
+  /*	background-image: url("/Style Library/CorWeb/New Homepage/img/CoRLogoTriangle.png");
+background-size: 422px;
+background-repeat: no-repeat;*/
+}
+
+.logo .CoRLogo2 {
+  position: relative;
+  width: 422px;
+  height: 156px;
+  display: block;
+}
+
+.logo .CoRLogo {
+  position: absolute;
+  height: 98px;
+  top: 25px;
+  left: 150px;
+}
+
+.header {
+  margin-bottom: 15px;
+  height: 156px;
+}
+
+.supHere {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.supHere .breadcrumbCurrentNode {
+  font-weight: bold;
+  color: #004896;
+}
+
+.TitleText {
+  font-size: 24px;
+  line-height: 28px;
+  color: #72a9bd;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  width: 80%;
+  text-align: right;
+}
+
+.Toplinks a,
+.Toplinks a:link,
+.Toplinks a:visited,
+.Toplinks a:focus {
+  color: #474746;
+  font-size: 12px;
+}
+
+.Toplinks {
+  margin-right: 500px;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.Toplinks > div {
+  display: inline-block;
+}
+
+.Toplinks .contact {
+  margin-left: 25px;
+}
+
+.Toplinks img {
+  width: 18px;
+}
+
+.socials {
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.socials a,
+.socials img {
+  color: white !important;
+  border-radius: 50%;
+  background-color: #474746 !important;
+  width: 25px;
+  height: 25px;
+}
+
+.header .socials li {
+  margin-left: 0 !important;
+}
+
+.socials li {
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.socials li:first-child {
+  margin-left: 0px;
+}
+
+.btn-social-icon > :first-child {
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.header .socials {
+  margin-top: 15px;
+  margin-right: 80px;
+  z-index: 3;
+  width: 30%;
+}
+
+.header .socials a,
+.header .socials img {
+  width: 30px;
+  height: 30px;
+}
+
+.header .btn-social-icon > :first-child {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.LangSelection select {
+  /* styling */
+  font-size: 12px;
+  background-color: #f0f6f9;
+  border: 1px solid #c1d9e2;
+  border-radius: 5px;
+  display: inline-block;
+  color: #474746;
+  padding-left: 10px;
+  padding-right: 35px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  /* reset */
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  webkit-appearance: none;
+  /* arrows */
+  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, #c1d9e2, #c1d9e2);
+  background-position: calc(100% - 15px) calc(8px), calc(100% - 9px) calc(8px),
+    100% 0px;
+  background-size: 6px 6px, 6px 6px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+/* End Language Selector */
+/* Start Search */
+.s4-notdlg {
+  position: relative;
+  z-index: 10;
+}
+
+.ms-menubuttoninactivehover {
+  margin: 0;
+  padding: 0;
+}
+
+.searchwrapper .glyphicon-search {
+  position: absolute;
+  color: #c1d9e2;
+  top: 8px;
+  left: 11px;
+  cursor: pointer;
+}
+
+.searchwrapper {
+  width: 60%;
+}
+
+.searchwrapper #SearchBox,
+.searchwrapper #SearchBox input {
+  width: 100% !important;
+}
+
+.ms-srch-sb {
+  display: block;
+}
+
+.ms-srch-sb-border,
+.ms-srch-sb-border:hover,
+.ms-srch-sb-borderFocused {
+  border: 0;
+}
+
+#SearchBox input {
+  height: 27px;
+  border-radius: 14px;
+  border: 1px solid #c1d9e2 !important;
+  background-color: #f0f6f9;
+  font-size: 12px;
+  color: #777777;
+  margin-top: 1px;
+  padding-left: 26px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  outline: 0;
+}
+
+/* End Search */
+/* header end */
+/* footer start */
+footer {
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  /*    bottom: 0;
+  left: 0;*/
+}
+
+footer ul {
+  display: block;
+  position: relative;
+  padding: 35px 0px;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  border-left: 1px solid #dadada;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+footer li:first-child {
+  border-left: none;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:focus {
+  color: #474746;
+}
+
+a,
+a:link,
+a:visited,
+a:focus {
+  color: #1cbbff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #004896;
+}
+
+.fa-home {
+  font-size: 18px;
+}
+
+.slwpmarker {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#SearchBox {
+  height: auto;
+}
+
+.brexit.ui-accordion {
+  margin-bottom: 0;
+}
+
+.lightbox {
+  cursor: zoom-out;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1300;
+}
+
+.debugview h3 {
+  border-width: 2px;
+}
+
+.debugview > div {
+  border-color: #004896;
+  border-width: 2px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.debugview li div {
+  display: inline;
+}

@@ -9,8 +9,10 @@
 @import url("./nav/nav.css");
 @import url("./page-header/page-header.css");
 @import url("./partners/partners.css");
+@import url("./quotes/quotes.css");
 @import url("./scrolltotop/scrolltotop.css");
 @import url("./stories/stories.css");
 @import url("./toc/toc.css");
 @import url("./tooltip/tooltip.css");
-@import url("./videoplayer/videoplayer.css");
+@import url("./videoplayer/corvideoplayer/videoplayer.css");
+@import url("./videoplayer/ableplayer/ableplayer.css");
