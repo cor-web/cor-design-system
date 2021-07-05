@@ -7,6 +7,9 @@
     <h2 class="cor-toc-section" id="initiatives">Initiatives</h2>
     <div class="cor-switcher items-start">
     {% for initiative in initiatives %}
+      {% render "@card" , {date: initiative.date, titleLevel: "h3", title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
+
+      <!--
       <article class="cor-card">
         <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
         <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
@@ -18,6 +21,7 @@
           </a>
         </h3>
       </article>
+      -->
     {% endfor %}
     </div>
   </article>

@@ -14,3 +14,7 @@
 .margin-bottom {
   margin-bottom: var(--space-xs) !important;
 }
+
+.margin-bottom-xl {
+  margin-bottom: var(--space-xl) !important;
+}

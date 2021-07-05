@@ -71,7 +71,7 @@ export default {
           
           ${Number(value) > 5 ? `
             <text text-anchor="middle"  dominant-baseline="central"  
-            style="fill: white; font-size: var(--bar-font-size, 15%); font-weight: 500; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
+            style="fill: var(--chart-${theme}-color-${index + 1}-text, white); font-size: var(--bar-font-size, 20%);font-family: consolas; font-weight: 500; pointer-events: none;" x="${getPosition(values, index) + (value / 2)}" y="4">${itemValues[index]}</text>
           ` : ''} 
           
         </g>

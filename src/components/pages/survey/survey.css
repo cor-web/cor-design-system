@@ -141,6 +141,10 @@ multi-bar-chart {
   padding: 0.5rem;
 }
 
+.mainContent ul.cor-survey__legend {
+  padding: var(--space-2xs);
+}
+
 .cor-survey__legend li {
   align-items: center;
   display: flex;
@@ -149,7 +153,7 @@ multi-bar-chart {
 }
 
 .cor-survey__legend li:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .cor-survey__legend li:before {
