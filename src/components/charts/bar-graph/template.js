@@ -11,7 +11,7 @@ export default {
            style="fill: ${(value / 2) > 2 ? `var(--chart-${theme}-color-1-text, white)` : "black"  }; font-family: consolas; font-size: var(--bar-font-size, 20%); font-weight: 500; pointer-events: none;" x="${(value / 2) > 2 ? (value / 2) : 7  }" y="4">${text}</text>
       </g>
       
-
+      <title>${value}%</title>
     </svg>
     `
   }
