@@ -51,7 +51,7 @@ class TableOfContent extends HTMLElement {
         }
 
         .readingSection {
-          font-weight: bold;
+          
         }
       </style>
       <nav class="cor-toc cor-toc--sticky" aria-labelledby="sections-heading">
