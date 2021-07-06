@@ -7,7 +7,7 @@
     <h2 class="cor-toc-section" id="initiatives">Initiatives</h2>
     <div class="cor-switcher items-start">
     {% for initiative in initiatives %}
-      {% render "@card" , {date: initiative.date, titleLevel: "h3", title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
+      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
 
       <!--
       <article class="cor-card">
