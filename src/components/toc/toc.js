@@ -3,8 +3,17 @@ class TableOfContent extends HTMLElement {
     super();
 
     const root = this.attachShadow({mode: "open"});
-    const sectionsElements = document.querySelectorAll('.cor-toc-section');
-    this.sections = [...sectionsElements].map( section => ({ id: section.id,title:section.textContent}));
+    const sectionsElements = document.querySelectorAll('h2[id],h3[id],.cor-rich-text h2');
+    
+    this.sections = [...sectionsElements].map( (section, i) => {
+      section.classList.add("cor-anchor");
+      
+      if (!section.id) {
+        section.id = i;
+      }
+
+      return ({ id: section.id,title:section.textContent});
+    });
     
     root.innerHTML = `
       <style>

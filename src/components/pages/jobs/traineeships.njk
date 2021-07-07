@@ -4,7 +4,7 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2 id="initiatives">Initiatives</h2>
+    <h2 class="cor-toc-section" id="projects">Discover some of our trainees projects</h2>
     <div class="cor-switcher items-start">
     {% for initiative in initiatives %}
       {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
@@ -37,20 +37,10 @@
       
       <section class="cor-rich-text">
       
-        <h2>Your views on the future of europe</h2>
+        <h2 class="cor-toc-section" id="yourviews">Your views on the future of europe</h2>
 
         <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
 
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <h2>Anim minim exercitation est cillum exercitation commodo</h2>
-
-        <h3>exercitation commodo</h3>
-
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <h3>Anim minim exercitation</h3>
-        
         <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
 
         <div class="padding margin-y bg inline-block">
@@ -63,7 +53,7 @@
         <h2>What's on</h2>
         
         <section>
-          <h3 id="news">Latest news</h3>
+          <h3 class="cor-toc-section" id="news">Latest news</h3>
 
           <div class="cor-l-2andlist">
           {% for newsitem in news %}
@@ -80,7 +70,7 @@
 
         <section>
 
-          <h3 id="events">Events</h4>
+          <h3 class="cor-toc-section" id="events">Events</h4>
           
           <h4>Upcoming events</h4>
 
@@ -103,7 +93,7 @@
       </section>
     
       <section class="cor-stack">
-        <h2 id="opinions">Opinions & resolution</h2>
+        <h2 class="cor-toc-section" id="opinions">Opinions & resolution</h2>
         
         <section>
           <h3>Adopted opinions</h3>
@@ -148,7 +138,7 @@
       </section>
 
       <section>
-        <h2 id="contact">Contact</h2>
+        <h2 class="cor-toc-section" id="contact">Contact</h2>
         <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
       </section>
 

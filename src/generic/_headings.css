@@ -21,7 +21,6 @@
 .ms-rtestate-field h2 {
   color: var(--text-color);
   font-size: var(--step-2);
-  font-weight: bold;
 }
 
 .mainContent h3 {
@@ -91,7 +90,6 @@
 
 .cor-h2 {
   font-size: var(--step-2) !important;
-  font-weight: bold;
 }
 
 .cor-h3 {

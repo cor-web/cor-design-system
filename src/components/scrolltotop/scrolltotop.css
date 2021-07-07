@@ -1,9 +1,10 @@
 #scrollToTopBtn {
   background-color: var(--oc-blue-8);
-  border-radius: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
   cursor: pointer;
-  display: inline-block;
+  gap: var(--space-3xs);
   position: fixed;
   bottom: 120px;
   right: 30px;
@@ -11,9 +12,8 @@
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.5s ease;
-  width: 50px;
-  height: 50px;
   display: inline-grid;
+  grid-template-columns: 20px auto;
   padding: 10px;
   place-items: center;
 }

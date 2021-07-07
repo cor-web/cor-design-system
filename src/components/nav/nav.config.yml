@@ -10,3 +10,15 @@ context:
       src: www.greenpeace.org
     - text: Link 5
       src: www.greenpeace.org
+  mainnav:
+    - text: Link
+      src: www.greenpeace.org
+      subnav:
+        - text: Link 2
+          src: www.greenpeace.org
+        - text: Link 3
+          src: www.greenpeace.org
+        - text: Link 4
+          src: www.greenpeace.org
+    - text: Link 5
+      src: www.greenpeace.org

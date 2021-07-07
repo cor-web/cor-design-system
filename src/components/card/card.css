@@ -26,7 +26,8 @@
   margin: 0;
 }
 
-.cor-card__title {
+.cor-card__title,
+.mainContent .cor-card__title {
   all: unset;
   font-size: var(--step--3);
 }

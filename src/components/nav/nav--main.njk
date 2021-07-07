@@ -1,0 +1,22 @@
+<nav aria-label="Main Navigation">
+  <ul>
+    {% for navitem in mainnav %}
+    <li {% if navitem.subnav %}class="has-submenu"{% endif %}>
+      <a href="navitem.target">{{ navitem.text }}</a>
+
+      {% if navitem.subnav %}
+      <ul>
+        {% for navitem in navitem.subnav %}
+        <li>
+          <a href="navitem.target">{{ navitem.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<script src="/components/nav/nav.js" type="module"></script>
