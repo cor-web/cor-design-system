@@ -1,0 +1,4 @@
+.cor-slider {
+  display: flex;
+  overflow-x: scroll;
+}
