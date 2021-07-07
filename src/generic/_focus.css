@@ -1,4 +1,5 @@
+/* https://www.nicchan.me/blog/tips-for-focus-styles/ */
+
 :focus {
-  outline: 4px solid rgba(0, 125, 250, 0.6);
-  outline-offset: 1px;
+  box-shadow: 0 0 0 0.5rem white, /* background color here */ 0 0 0 0.75rem blue; /* outline color here */
 }

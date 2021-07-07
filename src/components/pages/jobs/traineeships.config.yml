@@ -9,21 +9,21 @@ context:
     alt: "alternative text"
   projects:
     - image:
-        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
+        src: "/assets/images/jobs/nextstop.png"
         alt: "alt text"
       date: "01/06/2021"
       link:
         text: " YFactor presents: Next Stop podcast  "
         target: "www.greenpeace.org"
     - image:
-        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
+        src: "/assets/images/jobs/yfactorconf.png"
         alt: "alt text"
       date: "01/06/2021"
       link:
         text: "YFactor Conference 2015"
         target: "www.greenpeace.org"
     - image:
-        src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"
+        src: "/assets/images/jobs/yfactorevent.png"
         alt: "alt text"
       date: "01/06/2021"
       link:

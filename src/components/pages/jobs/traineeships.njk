@@ -6,8 +6,8 @@
   <article class="cor-box">
     <h2 class="cor-toc-section" id="projects">Discover some of our trainees projects</h2>
     <div class="cor-switcher items-start">
-    {% for initiative in initiatives %}
-      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
+    {% for project in projects %}
+      {% render "@card" , {date: project.date, titleLevel: "h3", link: project.link, title: project.link.text, image: project.image, cardExtraClass: cardExtraClass } %}
 
       <!--
       <article class="cor-card">
