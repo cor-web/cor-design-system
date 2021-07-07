@@ -4,6 +4,11 @@ context:
   title: "Work with us"
   subtitle: "Traineeships"
   description: "In a standard traineeship, you will be witnessing first-hand the dynamics of a multilingual and multinational work environment. Within a small group of trainees you will not only be able to attend a wide range of conferences, forums and seminars, but you will also have the unique possibility to create an event by yourself! "
+  cta:
+    - target: "https://trainee.cor.europa.eu/Form.aspx?m=i&culture=en"
+      text: "Apply now"
+    - target: "https://cor.europa.eu/en/about/Pages/traineeships.aspx"
+      text: "Learn more about our traineeships opportunities"
   poster:
     src: "https://cor.europa.eu/en/about/PublishingImages/Traineeship/pictures_of_trainees.jpg"
     alt: "alternative text"
@@ -11,21 +16,18 @@ context:
     - image:
         src: "/assets/images/jobs/nextstop.png"
         alt: "alt text"
-      date: "01/06/2021"
       link:
         text: " YFactor presents: Next Stop podcast  "
         target: "www.greenpeace.org"
     - image:
         src: "/assets/images/jobs/yfactorconf.png"
         alt: "alt text"
-      date: "01/06/2021"
       link:
         text: "YFactor Conference 2015"
         target: "www.greenpeace.org"
     - image:
         src: "/assets/images/jobs/yfactorevent.png"
         alt: "alt text"
-      date: "01/06/2021"
       link:
         text: "YFactor Event 2018 - Citizen's Dialogue in Molenbeek"
         target: "www.greenpeace.org"

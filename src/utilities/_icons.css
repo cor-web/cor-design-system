@@ -1,5 +1,5 @@
 .icon {
-  display: flex;
+  display: inline-flex;
   gap: var(--space-3xs);
   align-items: center;
 }

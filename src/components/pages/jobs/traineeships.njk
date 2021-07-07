@@ -1,6 +1,6 @@
 <div class="bg-white cor-container" style="--campaign-color: 10, 175, 203">
   
-  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description,  cta: cta}, true %}
 
   <!-- Initiatives -->
   <article class="cor-box">
@@ -8,20 +8,6 @@
     <div class="cor-switcher items-start">
     {% for project in projects %}
       {% render "@card" , {date: project.date, titleLevel: "h3", link: project.link, title: project.link.text, image: project.image, cardExtraClass: cardExtraClass } %}
-
-      <!--
-      <article class="cor-card">
-        <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
-        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
-        <h3 class="cor-card__title cor-fontsize--3">
-          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
-            {% if initiative.link.size %}
-            <small class="cor-card__title__link__info">({{ initiative.link.size }})</small>
-            {% endif %}
-          </a>
-        </h3>
-      </article>
-      -->
     {% endfor %}
     </div>
   </article>
@@ -37,83 +23,61 @@
       
       <section class="cor-rich-text">
       
-        <h2 class="cor-toc-section" id="yourviews">Your views on the future of europe</h2>
+        <h2 class="cor-toc-section" id="yourviews">Tempor non proident culpa amet sint.</h2>
 
-        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+        <p>Proident excepteur laboris minim ea eiusmod laboris velit cillum proident consectetur qui officia aliquip minim. In ullamco occaecat adipisicing aliqua. Quis fugiat ullamco enim excepteur dolore velit ex. Laboris amet reprehenderit officia officia cillum et reprehenderit. Deserunt excepteur aliqua ex non proident nulla laboris voluptate in veniam.</p>
 
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <div class="padding margin-y bg inline-block">
-          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
-        </div>
-
-      </section>
-
-      <section class="cor-stack">
-        <h2>What's on</h2>
         
-        <section>
-          <h3 class="cor-toc-section" id="news">Latest news</h3>
+        <toggle-section>
+          <h3>Standard traineeships​</h3>
+          <div class="padding-y"> 
+      <strong>In a nutshell</strong><br> 
+      <ul><li>5 months</li><li>Full time / 40 hours a week</li><li>Workplace in Brussels, Belgium</li><li>Paid by grant (approx. 1200 euros/month)</li><li>Preferred choice between 3 of the CoR's departments</li><li>Travel and mobility allowance<br></li><li>Health insurance cover optional</li><li>Accident insurance included<br></li></ul><div> 
+         <strong>Calendar</strong></div><div>
+         <strong></strong> 
+         <br> 
+         <strong>Spring Session:16<sup>th</sup> of February to 15<sup>th</sup> of July</strong> </div><div>Application period:  1<sup>st</sup>&nbsp;of April to&nbsp;30<sup>th</sup> of September (midnight, Brussels time) of the previous year Pre-selection and interviews: November Selection: December 
+         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+         <strong></strong></div><div>
+         <strong>Autumn Session: 16<sup>th</sup> of September to&nbsp;15<sup>th´of</sup> February</strong><br>Application period: 1<sup>st</sup> of October&nbsp;to 31<sup>st</sup>&nbsp;of March (midnight, Brussels time) of the same year<br>Pre-selection and interviews: May<br>Selection: June<br><br><strong>Warning: </strong>Avoid applying close to the deadline, as high data traffic could impair the chance of your application to reach us. We will not accept any applications that were not send in time or not submitted electronically. </div><div> &nbsp; 
+         <p> 
+            <strong>Who are we looking for?</strong></p><ul><li>EU citizens<br></li><li>Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with&nbsp;requirements under national immigration law for residing and working legally in Belgium​​<br></li><li>University graduates that have completed a full degree by the closing date for applications</li><li>Candidates with excellent knowledge of one of the EU's official languages and satisfactory knowledge of French or English<br></li><li>Candidates that have NOT yet received more than 8 weeks of training or employment with a European Institution or body. This applies also to assistants to a Member of the European Parliament, intramural consultants or researchers, temporary/contract/auxiliary/interim staff members of any EU institution, body, delegation or representative office </li></ul><p> 
+            <br> 
+            <strong>How to apply?</strong></p><ul><li>Choose your preferred CoR-department (up to 3 possible)</li><li>Fill out the online application form (in English or French)<br></li><li>Make sure that you fill the mandatory fields, only provide correct information and check before you submit</li></ul><p>Note: You will still be able to make changes to your form before the application deadline. False statements will lead to rejection of the application or cancellation of the traineeship. </p><p>Note: After submitting you will receive a personal access code with whom you can check your application status anytime&nbsp;<br></p><div> 
+            <span><strong>Got what it takes? Use our 
+                  <a href="https://trainee.cor.europa.eu/Form.aspx?m=i&amp;culture=en">
+                     <em>Application form</em></a> and apply now!</strong></span> </div></div></div>
+        </toggle-section>
 
-          <div class="cor-l-2andlist">
-          {% for newsitem in news %}
+        <toggle-section>
+          <h3>Short term study visits</h3>
+          <div class="padding-y"><p>Finalise your research project or satisfy your specific interest in the work of one of the CoR's department by applying for a short term study visit!</p><p> 
+         <strong>In a nutshell</strong></p><ul><li>1-4 months, extendable to 6 months depending on the resources available</li><li>Starting date is agreed upon with the candidate</li><li>Full time/ 40 hours a week</li><li>Workplace in Brussels, Belgium</li><li>Unpaid, all expenses to be covered by the participant</li><li>Health insurance cover not provided</li><li>Accident insurance included</li></ul><p> 
+         <strong>Who are we looking for?</strong></p><ul><li>EU citizens<br></li></ul><p>Note: Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with requirements under national immigration law for residing and working legally in Belgium​​<br></p><ul><li>University graduates that have completed at least a Bachelor's degree</li></ul><p style="text-align:left;">Note: The Secretary General or his delegate may grant derogation to candidates who are not yet holder of a Bachelor's degree provided they can demonstrate to have successfully completed, at the start of the study visit, at least half of the training cycle related to a Bachelors' degree which is deemed relevant to CoR activities.</p><ul><li>Candidates with excellent knowledge of one of the EU's official languages and satisfactory knowledge of French or English</li></ul><p> 
+         <strong>What do I need to apply?</strong></p><ul><li>Curriculum vitae in English, French or German</li><li>Motivation letter mentioning your preferred CoR department</li><li>Legible copy of a passport or identity card, giving surnames, forenames, date and place of birth and the nationality of the applicant</li><li>Proof of obligatory health insurance cover for the whole short term study visit</li><li>Copy of the Bachelor diploma or a certificate attesting that the candidate has successfully completed, at the start of the study visit, at least half of the training cycle related to a Bachelors' degree which is deemed relevant to CoR activities</li></ul><p> 
+         <strong>Upon request you will need to provide:</strong></p><ul><li>Copies of relevant diplomas and/ or official certificates held </li><li>Copies of proof of professional experiences </li><li>Proof of knowledge of at least one of English or French </li></ul><p> 
+         <strong>Note: </strong>
+         <strong>All these documents are to be sent electronically to the </strong>
+         <strong>Traineeships Office:</strong>&nbsp;<a href="mailto:trainee@cor.europa.eu">trainee@cor.europa.eu</a></p></div>
+        </toggle-section>
 
-            {% set cardExtraClass = "" %}
-            {% if loop.index < 3 %}
-              {% set cardExtraClass = "bg padding" %}
-            {% endif %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
-          {% endfor %}
-          </div>
-
-        </section>
-
-        <section>
-
-          <h3 class="cor-toc-section" id="events">Events</h4>
+        <toggle-section>
+          <h3>Traineeship for Government Officials</h3>
+          <div class="padding-y"><p> 
+         <strong>In a nutshell</strong></p><ul><li>1-4 months, extendable to 6 months possible with permission of the Secretary General</li><li>Starting date is agreed upon with the candidate</li><li>Full time/ 40 hours</li><li>Workplace in Brussels, Belgium</li><li>Unpaid, all expenses to be covered by the participant or their sending authority</li><li>Accident insurance covered by the CoR</li></ul><p> 
+         <strong>Who can apply?</strong></p><ul><li>Staff from a national, regional or local public authority of an EU Member state&nbsp;<br></li></ul><p>Note:&nbsp;Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with requirements under national immigration law for residing and working legally in Belgium&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;<br></p><ul><li>Existing job has corresponding duties to the level of an EU Administrator</li><li>Excellent knowledge of French or English</li></ul><p> 
+         <strong>What do I need to apply?</strong></p><ul><li>A curriculum vitae in English, French or German</li><li>A motivation letter mentioning your preferred CoR-department</li></ul><p> 
+         <strong>Once accepted, you will be asked for:</strong></p><ul><li>Confirmation of employment by the sending authority and its agreement to a traineeship at the CoR</li><li>Legible copy of a passport or identity card, giving surnames, forenames, date and place of birth and the nationality of the applicant</li><li>Proof of obligatory health insurance cover</li><li>Proof of Language skills </li></ul><p> 
+         <strong>Note: </strong>
+         <strong>All these documents are to be sent electronically to the </strong>
+         <strong>Traineeships Office:</strong>&nbsp;<a href="mailto:trainee@cor.europa.eu">trainee@cor.europa.eu</a></p></div>
+        </toggle-section>
           
-          <h4>Upcoming events</h4>
+        <script src="/components/toggle/toggle.js" type="module"></script>
 
-          <div class="cor-grid margin-bottom">
-          {% for newsitem in upcomingEvents %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
-          {% endfor %}
-          </div>
-
-          <h4>Past events</h4>
-
-          <div class="cor-containerWithDivider--dotted ">
-          {% for newsitem in pastEvents %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-          {% endfor %}
-          </div>
-
-        </section>
-
-      </section>
-    
-      <section class="cor-stack">
-        <h2 class="cor-toc-section" id="opinions">Opinions & resolution</h2>
         
-        <section>
-          <h3>Adopted opinions</h3>
 
-          <div class="cor-grid margin-bottom">
-          {% for opinion in adoptedOpinions %}
-            {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
-          {% endfor %}
-          </div>
-        </section>
-
-        <section>
-          <h3>Opinions currently in discussion</h3>
-
-          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
-          {% for newsitem in indiscussionOpinions %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-          {% endfor %}
-          </div>
-        </section>
+        
 
       </section>
 
@@ -121,17 +85,30 @@
         
         <h2>Learn more</h2>
 
-        <section>
-          <h3 class="cor-toc-section margin-top" id="videos">Videos and others</h3>
-          {% render "@videoplayer--withplaylist" %}
-        </section>
 
         <section>
-          <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
+          <h3 class="margin-top" id="documents">Documents</h3>
           <ul class="margin-bottom-0 padding-left">
-            <li><a href="test.be">Link 1</a></li>
-            <li><a href="test.be">Link 2</a></li>
-            <li><a href="test.be">Link 3</a></li>
+            <li><a href="test.be">CoR departments (PDF 2.1 mb)</a></li>
+            <li><a href="test.be">Traineeship rules (PDF 2.1 mb)</a></li>
+            <li><a href="test.be">Provision regarding Travel Expenses (PDF 2.1 mb)</a></li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3 class="margin-top" id="links">Quick links</h3>
+          <ul class="margin-bottom-0 padding-left">
+            <li><a href="test.be"><strong>FAQ</strong> Traineeship</a></li>
+            <li><a href="test.be">Apply via our <strong>Application form</strong></a></li>
+            <li><a href="test.be">Read our <strong>privacy statements</strong></a></li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3 class="margin-top" id="links">Useful links</h3>
+          <ul class="margin-bottom-0 padding-left">
+            <li><a href="test.be">Expat? Get help on <strong>Expat Welcome Desk</strong></a></li>
+            <li><a href="test.be"><strong>Visit Brussels</strong></a></li>
           </ul>
         </section>
 
