@@ -31,7 +31,7 @@
 
         {% for question in questions %}
           
-          <section id="question{{ loop.index }}" class="cor-survey__question-container margin-bottom margin-bottom-xl">
+          <section id="question{{ loop.index }}" class="cor-survey__question-container margin-bottom-xl">
             {% if question.type === "bargraph" %}
               {% render "@bar-graph--withfilter", question, id="1" %}
             {% elif question.type === "multibargraph" %}
