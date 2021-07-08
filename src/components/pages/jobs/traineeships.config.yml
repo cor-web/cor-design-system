@@ -3,7 +3,7 @@ context:
   metadata: "bum"
   title: "Work with us"
   subtitle: "Traineeships"
-  description: "In a standard traineeship, you will be witnessing first-hand the dynamics of a multilingual and multinational work environment. Within a small group of trainees you will not only be able to attend a wide range of conferences, forums and seminars, but you will also have the unique possibility to create an event by yourself! "
+  description: "The CoR is a relatively young institution and, as such, recognizes the importance of giving voice to the ideas of newcomers and younger generations. Involving young people in the EU decision-making process is precisely the aim of the CoR traineeship programme."
   cta:
     - target: "https://trainee.cor.europa.eu/Form.aspx?m=i&culture=en"
       text: "Apply now"

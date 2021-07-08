@@ -1,5 +1,24 @@
-<div role="group" aria-label="slider" tabindex="0">
-  <ul>
-    <img src="gallery1.svg" alt="A tessellation of diagonal lines, forming interlocked patterns. Some lines are missing, giving the appearance of an eroded structure like the aerial view of an excavated city.">
-  </ul>
+<div class="cor-gallery-container" style="max-width: 450px">
+  <div class="cor-gallery" role="group" aria-label="gallery" tabindex="0" aria-describedby="instructions">
+    <ul class="cor-gallery__list">
+      {% for slide in slides %}
+      <li>
+        <figure>
+          <img data-src="{{ slide.src }}" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 2" stroke="currentColor" stroke-dasharray="1,0.5"><path d="M1,1 5,1" /></svg>' class="dots" alt="{{ slide.alt }}">
+          <noscript>
+            <img src="{{ slide.src }}" alt="{{ slide.alt }}">
+          </noscript>
+          {% if slide.title %}
+            <figcaption>{{ slide.title }}</figcaption>
+          {% endif %}
+        </figure>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="instructions">
+    <p id="hover">scroll for more</p>
+    <p id="focus">Use your arrow keys to explore</p>
+  </div>
 </div>
+<script src="/components/slider/slider.js" type="module"></script>

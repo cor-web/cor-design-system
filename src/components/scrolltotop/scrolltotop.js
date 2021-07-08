@@ -1,6 +1,6 @@
 const scrollToTopBtn = document.getElementById("scrollToTopBtn")
 
-const target = document.querySelector("main");
+const target = document.querySelector(".mainContent");
 
 function callback(entries, observer) {
   entries.forEach( entry => {

@@ -1,0 +1,13 @@
+preview: "@previewincor_new"
+context:
+  slides:
+    - src: "https://thispersondoesnotexist.com/image"
+      alt: "alt text"
+    - src: "https://thispersondoesnotexist.com/image"
+      alt: "alt text"
+    - src: "https://thispersondoesnotexist.com/image"
+      alt: "alt text"
+    - src: "https://thispersondoesnotexist.com/image"
+      alt: "alt text"
+    - src: "https://thispersondoesnotexist.com/image"
+      alt: "alt text"
