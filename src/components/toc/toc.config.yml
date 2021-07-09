@@ -3,7 +3,7 @@ variants:
     context:
       modifier: sticky
 context:
-  title: Contenu
+  title: Content
   nav:
     - text: premier lien
       link:

@@ -2,12 +2,12 @@
   align-items: start;
   display: grid;
   gap: var(--space-s);
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   padding: var(--space-m) var(--space-s);
 }
 
 @media screen and (min-width: 640px) {
   .cor-with-sidenav {
-    grid-template-columns: 12rem 1fr;
+    grid-template-columns: 12rem minmax(0, 1fr);
   }
 }

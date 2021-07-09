@@ -1,4 +1,4 @@
-<div class="cor-gallery-container" style="max-width: 450px">
+<div class="cor-gallery-container">
   <div class="cor-gallery" role="group" aria-label="gallery" tabindex="0" aria-describedby="instructions">
     <ul class="cor-gallery__list">
       {% for slide in slides %}
@@ -12,11 +12,17 @@
             <figcaption>{{ slide.title }}</figcaption>
           {% endif %}
         </figure>
+        <figure>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+          </blockquote>
+          <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+      </figure>
       </li>
       {% endfor %}
     </ul>
   </div>
-  <div class="instructions">
+  <div id="instructions">
     <p id="hover">scroll for more</p>
     <p id="focus">Use your arrow keys to explore</p>
   </div>

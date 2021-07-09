@@ -3,7 +3,7 @@ class TableOfContent extends HTMLElement {
     super();
 
     const root = this.attachShadow({mode: "open"});
-    const sectionsElements = document.querySelectorAll('h2[id],h3[id],.cor-rich-text h2');
+    const sectionsElements = document.querySelectorAll('h2[id],h3[id]');
     
     this.sections = [...sectionsElements].map( (section, i) => {
       section.classList.add("cor-anchor");
@@ -99,10 +99,8 @@ class TableOfContent extends HTMLElement {
         
         if (entry.isIntersecting) {
           link.classList.add('readingSection');
-          console.log("yes",entry.target);
         } else {
           link.classList.remove('readingSection');
-          console.log("no",entry.target);
         }
 
       });

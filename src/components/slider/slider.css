@@ -1,9 +1,12 @@
 .cor-gallery-container {
+  --buttonWidth: 50px;
+
+  background: white;
   position: relative;
 }
 
 .cor-gallery {
-  border: 2px solid;
+  border: 2px solid var(--oc-blue-9);
   overflow-x: scroll;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -48,13 +51,14 @@
 }
 
 .cor-gallery::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: var(--oc-blue-8);
 }
 
 #instructions {
   display: none;
   text-align: center;
   margin-top: 0.5rem;
+  padding: var(--space, 1rem);
 }
 
 .cor-gallery:hover + #instructions,
@@ -107,21 +111,29 @@ img.dots {
 }
 
 .cor-gallery-controls button {
+  background: white;
   position: absolute;
   bottom: 0;
   top: 0;
-  width: 100px;
+  width: var(--buttonWidth);
   border: 0;
   padding: 0.5rem;
-  background: #000;
+  background: var(--oc-blue-8);
+  min-width: auto;
+}
+
+.cor-gallery-controls button[disabled][disabled] {
+  background: white;
+}
+
+.cor-gallery-controls button:hover {
+  cursor: pointer;
 }
 
 .cor-gallery-controls svg {
-  width: 100%;
+  width: 30px;
   fill: #fff;
-  stroke: #000;
-  stroke-width: 1.5;
-  stroke-linejoin: round;
+  stroke: white;
 }
 
 .previous {
@@ -129,7 +141,7 @@ img.dots {
 }
 
 .next {
-  left: calc(100% - 100px);
+  left: calc(100% - var(--buttonWidth));
 }
 
 .visually-hidden {
@@ -140,4 +152,22 @@ img.dots {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden !important;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
 }

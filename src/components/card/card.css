@@ -76,6 +76,7 @@
 .cor-card--opinion > img:first-child {
   align-self: stretch;
   grid-row: 1 / 2;
+  height: 100%;
 }
 
 .cor-card--opinion img + div {

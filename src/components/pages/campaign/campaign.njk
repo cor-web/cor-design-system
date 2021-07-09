@@ -4,7 +4,7 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2 id="initiatives">Initiatives</h2>
+    <h2>Initiatives</h2>
     <div class="cor-switcher items-start">
     {% for initiative in initiatives %}
       {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
@@ -37,7 +37,7 @@
       
       <section class="cor-rich-text">
       
-        <h2>Your views on the future of europe</h2>
+        <h2 id="Our goals">Our goals</h2>
 
         <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
 
@@ -60,10 +60,10 @@
       </section>
 
       <section class="cor-stack">
-        <h2>What's on</h2>
+        <h2 id="What's on">What's on</h2>
         
         <section>
-          <h3 id="news">Latest news</h3>
+          <h3>Latest news</h3>
 
           <div class="cor-l-2andlist">
           {% for newsitem in news %}
@@ -80,7 +80,7 @@
 
         <section>
 
-          <h3 id="events">Events</h4>
+          <h3>Events</h4>
           
           <h4>Upcoming events</h4>
 
@@ -103,7 +103,7 @@
       </section>
     
       <section class="cor-stack">
-        <h2 id="opinions">Opinions & resolution</h2>
+        <h2 id="opinions">Opinions</h2>
         
         <section>
           <h3>Adopted opinions</h3>
@@ -129,15 +129,15 @@
 
       <section class="cor-stack">
         
-        <h2>Learn more</h2>
+        <h2 id="learnmore">Learn more</h2>
 
         <section>
-          <h3 class="cor-toc-section margin-top" id="videos">Videos and others</h3>
+          <h3 class="cor-toc-section margin-top">Videos and others</h3>
           {% render "@videoplayer--withplaylist" %}
         </section>
 
         <section>
-          <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
+          <h3 class="cor-toc-section margin-top">Related links</h3>
           <ul class="margin-bottom-0 padding-left">
             <li><a href="test.be">Link 1</a></li>
             <li><a href="test.be">Link 2</a></li>

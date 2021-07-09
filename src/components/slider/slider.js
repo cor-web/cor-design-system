@@ -46,14 +46,14 @@ controls.innerHTML = `
 <li>
   <button class="previous" aria-label="previous artwork">
     <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
-      <path d="M18,2 2,10 18,18" />
+      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
     </svg>
   </button>
 </li>
 <li>
   <button class="next" aria-label="next artwork">
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
-      <path d="M2,2 18,10 2,18" />
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
     </svg>
   </button>
 </li>
@@ -65,7 +65,7 @@ prev.disabled = true;
 
 const instructions = document.getElementById('instructions');
 gallery.parentNode.insertBefore(controls, gallery);
-gallery.parentNode.style.padding = '0 100px';
+gallery.parentNode.style.padding = '0 var(--buttonWidth)';
 
 function scrollIt(slideToShow) {
   let scrollPos = Array.prototype.indexOf.call(slides, slideToShow) * (gallery.scrollWidth / slides.length);
