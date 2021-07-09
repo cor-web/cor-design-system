@@ -25,7 +25,7 @@ class TableOfContent extends HTMLElement {
         }
         
         ul > li {
-          list-style-position: outside;
+          list-style-position: inside;
           list-style-type: disc;
           padding-left: var(--space-3xs);
         }
