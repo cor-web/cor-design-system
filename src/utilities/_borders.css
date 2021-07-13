@@ -19,7 +19,7 @@
 }
 
 .cor-containerWithDivider > * + * {
-  border-top: solid 1px var(--oc-gray-3);
+  border-top: solid 3px var(--oc-gray-8);
 }
 
 .cor-containerWithDivider--dotted > * + * {
@@ -32,5 +32,5 @@
 }
 
 .cor-containerWithDivider--space-l > * + * {
-  padding-top: var(--space-l);
+  padding-top: var(--space-xs);
 }

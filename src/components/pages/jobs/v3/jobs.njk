@@ -4,18 +4,14 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2 class="cor-toc-section" id="initiatives">Initiatives</h2>
+    <h2 class="cor-toc-section" id="initiatives">Our latest oppurtunities</h2>
     <div class="cor-switcher items-start">
     {% for initiative in initiatives %}
       <article class="cor-card">
         <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
-        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
+        <span>Deadline: <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time></span>
         <h3 class="cor-card__title cor-fontsize--3">
-          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
-            {% if initiative.link.size %}
-            <small class="cor-card__title__link__info">({{ initiative.link.size }})</small>
-            {% endif %}
-          </a>
+          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }}</a>
         </h3>
       </article>
     {% endfor %}
@@ -33,84 +29,45 @@
       
       <section class="cor-rich-text">
       
-        <h2 class="cor-toc-section" id="yourviews">Your views on the future of europe</h2>
+        <h2 class="cor-toc-section" id="yourviews">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 
-        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+        <p>The European Committee of the Regions (CoR) is the voice of regions and cities in the European Union (EU). By empowering local and regional elected politicians to shape the EU legislation, we pursue our mission to create a Union closer to its citizens and built on their needs. </p>
 
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+ 
 
-        <div class="padding margin-y bg inline-block">
-          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
-        </div>
+        <p>No village, town, or city is too far for us to bring it closer to the pulse of EU politics. By joining the CoR, you will contribute to make Europe a great place to live. At the CoR, you will have the opportunity to address the future challenges of the EU while thriving in a familiar work environment that respects human diversity and enhances individual creativity.  </p>
+
+ 
+
+        <p>Throughout your professional path, you can always count on the support of a small but multicultural, dynamic and diverse, community of experts. Thanks to a crosscutting approach to objectives, you will have the chance to share knowledge with colleagues whose rich backgrounds reflect all the diversity and the vast potential of the EU.  </p>
 
       </section>
 
       <section class="cor-stack">
-        <h2>What's on</h2>
-        
-        <section>
-          <h3 class="cor-toc-section" id="news">Latest news</h3>
+        <h2>Meet the people of the CoR</h2>
 
-          <div class="cor-l-2andlist">
-          {% for newsitem in news %}
+        <p>The CoR staff works tirelessly for the voice of European regions and cities. But what better occasion to listen to your future colleagues to know how a day within the CoR looks like? </p>
 
-            {% set cardExtraClass = "" %}
-            {% if loop.index < 3 %}
-              {% set cardExtraClass = "bg padding" %}
-            {% endif %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
-          {% endfor %}
-          </div>
-
-        </section>
-
-        <section>
-
-          <h3 class="cor-toc-section" id="events">Events</h4>
-          
-          <h4>Upcoming events</h4>
-
-          <div class="cor-grid margin-bottom">
-          {% for newsitem in upcomingEvents %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
-          {% endfor %}
-          </div>
-
-          <h4>Past events</h4>
-
-          <div class="cor-containerWithDivider--dotted ">
-          {% for newsitem in pastEvents %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-          {% endfor %}
-          </div>
-
-        </section>
-
+        <p>Testimonials</p>
       </section>
-    
+
       <section class="cor-stack">
-        <h2 class="cor-toc-section" id="events">Opinions & resolution</h2>
-        
-        <section>
-          <h3>Adopted opinions</h3>
+        <h2>Current opportunities  </h2>
 
-          <div class="cor-grid margin-bottom">
-          {% for opinion in adoptedOpinions %}
-            {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
-          {% endfor %}
-          </div>
-        </section>
+        <p>We look for talented individuals from a wide range of disciplines. Will your skills make the difference for European regions and cities? </p>
 
-        <section>
-          <h3>Opinions currently in discussion</h3>
+        <p>We regularly advertise job openings for several support, professional and leadership roles. Mainly, we recruit people through the reserve lists of the European Personnel Selection Office (EPSO). Sometimes, we also employ temporary or contract staff. Read the vacancies and find out the position that best suits your profile.</p>
 
-          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
-          {% for newsitem in indiscussionOpinions %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-          {% endfor %}
-          </div>
-        </section>
+        <p>The CoR is an equal opportunity employer who believes that inclusion and diversity are necessary to deliver better policies for EU citizens. Therefore, we promote the inclusion of qualified and experienced staff without regard to their gender, age, racial or ethnic origin, religion or beliefs, sexual orientation/identity or disability. </p>
 
+        <h3>VACANCIES</h3>
+        <p>There are no vacancies available at the moment. However, the world of European careers is constantly changing. To keep up to date with the latest opportunities, check the EU Careers website. And if you want to stay ahead of the competition, let's practice with EPSO sample tests!  </p>
+      </section>
+
+      <section class="cor-stack">
+        <h2>Your diversity matters</h2>
+
+        <p>So bring us your personal experience, your perspective, and your background. It is our differences that fuel the power of the EU to deliver a better life for all.</p>
       </section>
 
       <section class="cor-stack">
@@ -118,12 +75,16 @@
         <h2>Learn more</h2>
 
         <section>
-          <h3 class="cor-toc-section margin-top" id="videos">Videos and others</h3>
-          {% render "@videoplayer--withplaylist" %}
+          <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
+          <ul class="margin-bottom-0 padding-left">
+            <li><a href="test.be">Link 1</a></li>
+            <li><a href="test.be">Link 2</a></li>
+            <li><a href="test.be">Link 3</a></li>
+          </ul>
         </section>
 
         <section>
-          <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
+          <h3 class="cor-toc-section margin-top" id="links">See also</h3>
           <ul class="margin-bottom-0 padding-left">
             <li><a href="test.be">Link 1</a></li>
             <li><a href="test.be">Link 2</a></li>
