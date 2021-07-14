@@ -1,4 +1,4 @@
-<h3 class="cor-survey__question">{{question}}</h3>
+<h3>{{question}}</h3>
 
 {# Start Filter #}
 {% for filter in filters %}
@@ -15,21 +15,22 @@
 {# End Filter #}
 
 
-<dl>
+<ul class="cor-survey__matrix-question-list">
   
   {% for subject in subjects %}
-    
-    <dt>{{subject.subject}}</dt>
+  <li class="cor-survey__matrix-question">
+
+    <span class="cor-bar-graph-response">{{subject.subject}}</span>
     
     {# If it's the last question, we will show the legend #}
     {% set lastQuestion = loop.last %}
     
-    <dd filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
+    <div filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
 
         {% for response in subject.responses %}
           {# Start Multi bar graph #}
           
-          <multi-bar-chart theme="theme-1" {% if lastQuestion %}legend="true"{% endif %} filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
+          <multi-bar-chart theme="theme-1" filterableBy="{% for filterTerm in response.filterableOn %}{{filterTerm}}{% if not loop.last %},{% endif %}{% endfor %}">
             
             {{response.countryName}}
 
@@ -43,10 +44,11 @@
           {# End Multi bar graph #}
         {% endfor %}
 
-    </dd>
-  
+    </div>
+
+  </li>
   {% endfor %}
-</dl>
+</ul>
 
 <script src="/components/charts/multi-bar-graph/multi-bar-graph.js" type="module"></script>
 <script src="/components/charts/cor-filter/cor-filter.js" type="module"></script>

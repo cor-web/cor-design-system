@@ -70,40 +70,48 @@ dd {
   grid-row: 1 / 4;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
   .cor-bar-graph-container {
     align-items: center;
     display: grid;
     gap: var(--space-2xs);
     grid-template-columns: 2fr 3fr;
     font-size: var(--step--3) !important;
-    text-align: right;
   }
 
   bar-chart svg text {
     font-size: initial;
   }
+
+  .cor-bar-graph-response {
+    text-align: right;
+  }
 }
 
-.cor-survey__question-container dl dt {
+.cor-survey__question-container dt {
   font-size: var(--step--3) !important;
   font-weight: normal;
 }
 
-.cor-survey__question-container dl {
+.cor-survey__matrix-question-list {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.cor-survey__question-container .cor-survey__matrix-question {
   align-items: center;
   display: grid;
   gap: var(--space-2xs);
   grid-template-columns: 1fr;
 }
 
-@media screen and (min-width: 640px) {
-  .cor-survey__question-container dl {
+@media screen and (min-width: 800px) {
+  .cor-survey__question-container .cor-survey__matrix-question {
     grid-template-columns: 2fr 3fr;
   }
 }
 
-.cor-survey__question-container dl dt:last-of-type {
+.cor-survey__question-container .cor-survey__matrix-question dt:last-of-type {
   align-self: flex-start;
 }
 
@@ -123,10 +131,12 @@ multi-bar-chart {
   --direction: column;
 }
 
-.cor-survey__legend-container {
-  display: grid;
-  gap: var(--space-2xs);
-  grid-template-columns: 2fr 3fr;
+@media screen and (min-width: 800px) {
+  .cor-survey__legend-container {
+    display: grid;
+    gap: var(--space-2xs);
+    grid-template-columns: 2fr 3fr;
+  }
 }
 
 .cor-survey__legend {

@@ -1,5 +1,5 @@
 /* https://www.nicchan.me/blog/tips-for-focus-styles/ */
 
-:focus {
+#CorContainer :focus {
   box-shadow: 0 0 0 0.5rem white, /* background color here */ 0 0 0 0.75rem blue; /* outline color here */
 }

@@ -1,5 +1,5 @@
 
-<dt>{{question}}</dt>
+<h3 class="cor-chart-question">{{question}}</h3>
 
 {# Start Filter #}
 {% for filter in filters %}
@@ -15,13 +15,13 @@
 {% endfor %}
 {# End Filter #}
 
-<div class="cor-bar-graph-responses-container">
+<ul class="cor-bar-graph-responses-container">
 
   {% for response in responses %}
 
-    <dd class="cor-bar-graph-container" id="survey-item-{{ questionID }}">
+    <li class="cor-bar-graph-container" id="survey-item-{{ questionID }}">
 
-      {{response.text}}
+      <span class="cor-bar-graph-response">{{response.text}}</span>
 
       <ul filter="{% for filter in filters %}{{filter.id}}{% if not loop.last %},{% endif %}{% endfor %}">
         
@@ -35,10 +35,10 @@
         {% endfor %}
       </ul>
 
-    </dd>
+    </li>
 
   {% endfor %}
-</div>
+</ul>
 
 <script src="/components/charts/bar-graph/bar-graph.js" type="module"></script>
 <script src="/components/charts/cor-filter/cor-filter.js" type="module"></script>
