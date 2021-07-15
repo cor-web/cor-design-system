@@ -1,5 +1,22 @@
 /* https://www.nicchan.me/blog/tips-for-focus-styles/ */
 
-#CorContainer :focus {
-  box-shadow: 0 0 0 0.5rem white, /* background color here */ 0 0 0 0.75rem blue; /* outline color here */
+#CorContainer [tabindex]:not([tabindex="-1"]),
+#CorContainer a,
+#CorContainer button,
+#CorContainer input,
+#CorContainer select,
+#CorContainer textarea {
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: outline-offset 0.2s linear;
+}
+
+#CorContainer [tabindex]:not([tabindex="-1"]):focus,
+#CorContainer a:focus,
+#CorContainer button:focus,
+#CorContainer input:focus,
+#CorContainer select:focus:focus,
+#CorContainer textarea:focus {
+  outline-color: currentColor;
+  outline-offset: 2px;
 }
