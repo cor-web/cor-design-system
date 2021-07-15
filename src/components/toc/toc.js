@@ -3,10 +3,10 @@ class TableOfContent extends HTMLElement {
     super();
 
     const root = this.attachShadow({mode: "open"});
-    const sectionsElements = document.querySelectorAll('h2[id],h3[id]');
+    const sectionsElements = document.querySelectorAll('h2[id],h3[id],.cor-rich-text h2');
     
     this.sections = [...sectionsElements].map( (section, i) => {
-      section.classList.add("cor-anchor");
+      section.classList.add('cor-anchor');
       
       if (!section.id) {
         section.id = i;
@@ -20,12 +20,12 @@ class TableOfContent extends HTMLElement {
         ul {
           display: grid;
           gap: var(--space-3xs);
-          margin: var(--space-3xs) 0 0 0;
+          margin: var(--space-3xs) 0 0 1rem;
           padding: 0;
         }
         
         ul > li {
-          list-style-position: inside;
+          list-style-position: outside;
           list-style-type: disc;
           padding-left: var(--space-3xs);
         }
