@@ -30,17 +30,17 @@
 
 .mainContent h4 {
   color: var(--text-color);
-  font-size: var(--step-0);
+  font-size: var(--step--1);
 }
 
 .mainContent h5 {
   color: var(--text-color);
-  font-size: var(--step--1);
+  font-size: var(--step--2);
 }
 
 .mainContent h6 {
   color: var(--text-color);
-  font-size: var(--step--2);
+  font-size: var(--step--3);
 }
 
 /* elements */
@@ -57,15 +57,15 @@
 }
 
 .mainContent h4 {
-  font-size: var(--step-0);
-}
-
-.mainContent h5 {
   font-size: var(--step--1);
 }
 
-.mainContent h6 {
+.mainContent h5 {
   font-size: var(--step--2);
+}
+
+.mainContent h6 {
+  font-size: var(--step--3);
 }
 
 /* Utilities */
