@@ -74,39 +74,6 @@ class TableOfContent extends HTMLElement {
         </ul>
       </nav>
     `;
-    
-    // const targetsToObserve = [...this.sections.map( section => this.observe(section.id)) ];
-    const targetsToObserve = sectionsElements;
-    const linksToObserve = root.querySelectorAll('a');
-    // this.observe(targetsToObserve,linksToObserve);
-
-    [...this.sections.map( section => {
-      
-      
-      const observedSection = [...targetsToObserve].find( target => target.id === section.id);
-      const link = [...linksToObserve].find( target => target.href.indexOf(`#${section.id}`) !== -1 );
-      
-      this.observe(observedSection, link);
-    }) ];
-  }
-
-
-  observe(observedSection, link) {
-
-    // Create a new observer
-    let observer = new IntersectionObserver(function (entries, obs) {
-      entries.forEach(function (entry) {
-        
-        if (entry.isIntersecting) {
-          link.classList.add('readingSection');
-        } else {
-          link.classList.remove('readingSection');
-        }
-
-      });
-    });
-
-    observer.observe(observedSection);
   }
 }
 
