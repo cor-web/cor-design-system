@@ -1,0 +1,136 @@
+<div class="bg-white cor-container cor-memberoftheweek">
+  
+  <cor-cover class="cor-cover--topbar" style="--color:{{ color }}">
+  
+    <hgroup>
+      <div>
+      
+        <h1>{% if title %} {{ title }} {% endif %}</h1>
+      
+        {% if subtitle %}
+          <h2>{{ subtitle }}</h2>
+        {% endif %}
+
+      </div>
+      
+    </hgroup>
+
+    
+  </cor-cover>
+  
+
+  <div role="separator"></div>
+
+  <div class="cor-with-sidenav  cor-content">
+
+        {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
+      
+        
+      <section>
+        <dl class="cor-stack">
+          <dt>Political group</dt>
+          <dd>ECR (European Conservatives and Reformists Group)</dd>
+
+          <dt>Commissions</dt>
+          <dd>
+            <ul class="margin margin-bottom-0">
+              <li>COTER (Commission for Territorial Cohesion Policy)</li>
+              <li>ENVE (Commission for Environment, Climate change and Energy)</li>
+            </ul>
+          </dd>
+
+          <dt>Languages</dt>
+          <dd>Polish</dd>
+
+          <dt>Represented Country</dt>
+          <dd>Poland</dd>
+
+          <dt>Member of the European Committee of the Regions since</dt>
+          <dd>08.11.2016</dd>
+        </dl>
+      </section>
+          
+      <section>
+        <h2 id="contact">Contact</h2>
+        <a href="tel:+33500000000">+48 17 8501780</a>
+        <a href="mailto:j.rog@podkarpackie.pl">j.rog@podkarpackie.pl</a>
+      </section>
+
+      <section>
+        <h2  id="socialmedia">Social media</h2>
+        <a href="www.facebook.com">Facebook</a>
+      </section>
+
+      <section>
+        <h2 id="title">Title for this section</h2>
+          <h3>President</h3>
+          <ul class="m">
+            <li>Carpathians IG</li>
+            <li>ECR Group</li>
+          </ul>
+
+          <h3>Rapporteur</h3>
+          <ul  class="m">
+            <li>7th Mandate - Commission COTER</li>
+          </ul>
+
+          <h3>Member</h3>
+          <ul class="m">
+            <li>7th Mandate - Commission COTER</li>
+            <li>7th Mandate - Commission ENVE</li>
+            ⁪<li>Conference of Presidents</li>
+            <li>CoR Delegation to the CoFoE</li>
+            <li>Enlargement Day</li>
+            <li>JCC Serbia</li>
+            <li>Polish delegation</li>
+            <li>WG Ukraine</li>
+          </ul>
+      </section>
+
+      <section class="cor-stack">
+        <h2 id="opinions">Opinions</h2>
+        
+        <section>
+          <h3>Adopted Opinions</h3>
+
+          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
+          {% for opinion in opinions %}
+            {% render "@card" , {date: opinion.date,  titleLevel: "h4", title: opinion.title, image: opinion.image, cardExtraClass: "padding-y--3xs" } %}
+          {% endfor %}
+          </div>
+        </section>
+      </section>
+
+        <section>
+          <h2 id="news">Latest news</h3>
+
+          <div class="cor-l-2andlist">
+          {% for newsitem in news %}
+
+            {% set cardExtraClass = "" %}
+            {% if loop.index < 3 %}
+              {% set cardExtraClass = "bg padding" %}
+            {% endif %}
+            {% render "@card" , {promo: newsitem.promo, date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
+        </section>
+
+        <section>
+          <h2 id="videos">Videos</h2>
+          {% render "@videoplayer--withplaylist" %}
+        </section>
+
+        <section>
+          <h2 id="photos">Photos</h2>
+          {% render "@slider"  %}
+        </section>
+
+    </main>
+
+  </div>
+
+</div>

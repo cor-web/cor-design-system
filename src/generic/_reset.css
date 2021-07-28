@@ -65,9 +65,11 @@ body {
 }
 
 /* Natural flow and rhythm in articles by default */
+/*
 .mainContent article > * + * {
   margin-top: 1em;
 }
+*/
 
 /* Inherit fonts for inputs and buttons */
 .mainContent input,

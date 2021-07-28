@@ -12,6 +12,14 @@
   padding: 0 var(--space-xs) 0 !important;
 }
 
+.padding-m {
+  padding: var(--space-m);
+}
+
+.padding-xl {
+  padding: var(--space-xl);
+}
+
 .padding-y {
   padding: var(--space-xs) 0 !important;
 }

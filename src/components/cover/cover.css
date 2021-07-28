@@ -90,3 +90,18 @@ cor-cover p {
 cor-cover.cor-cover--topbar {
   border-top: var(--color) solid var(--space-xs);
 }
+
+@media screen and (min-width: 640px) {
+  cor-cover.cor-cover--centered {
+    grid-template:
+      "header"
+      "description"
+      "cover" / 1fr;
+    justify-items: center;
+  }
+}
+
+.cor-cover--centered .cor-cover__description {
+  max-width: 500px;
+  text-align: center;
+}

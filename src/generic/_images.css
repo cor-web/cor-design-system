@@ -41,6 +41,7 @@
   object-fit: cover;
 }
 
-.ms-webpart-menuArrowImg {
+.ms-webpart-menuArrowImg,
+.ms-cui-menu img {
   max-width: auto;
 }

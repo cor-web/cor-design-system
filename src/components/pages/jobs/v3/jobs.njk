@@ -1,29 +1,66 @@
 <div class="bg-white cor-container" style="--campaign-color: 10, 175, 203">
   
-  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+  {% render "@cover--centered", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
   <!-- Initiatives -->
   <article class="cor-box">
     <h2 class="cor-toc-section" id="initiatives">Our latest oppurtunities</h2>
-    <div class="cor-switcher items-start">
-    {% for initiative in initiatives %}
-      <article class="cor-card">
-        <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
-        <span>Deadline: <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time></span>
-        <h3 class="cor-card__title cor-fontsize--3">
-          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }}</a>
-        </h3>
+    <div class="cor-switcher">
+
+    {% for item in latestopportunities %}
+      <article class="cor-card bg rounded padding">
+        <span class="cor-badge">{{ item.grade }}</span>
+        <h3 class="margin-0">{{ item.jobtitle }}</h3>
+        
+        <strong>Deadline:</strong>
+        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+
+        <strong>Directorate:</strong>
+        <span>Directorate B, Legislative Work 1</span>
+        
       </article>
     {% endfor %}
     </div>
+    <a class="">Explore all our vacancies</a>
   </article>
   <!-- /Initiatives -->
 
-  <div role="separator"></div>
+  <nav class="cor-switcher padding padding-m bg margin-top">
+    <a href="www.google.be">
+      <strong>Diversity</strong>
+      <p>Experiencing diversity is the best way to drive creativity and success. For us "United in Diversity" it's not just a hashtag, it's a long-term objective.</p>
+      <div class="text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+    </a>
+    <a href="www.google.be">
+      <strong>Work life/Balance</strong>
+      <p>If you believe that reconciling family and work life is what makes a job right, then we already have something in common.</p>
+      <div class="text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+    </a>
+    <a href="www.google.be">
+      <strong>Procedure</strong>
+      <p>Discover all the opportunities to become part of the CoR community. We offer different kind of posts, but they all will allow you to make an impact on EU policies.</p>
+      <div class="text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+    </a>
+  </nav>
 
-  <div class="cor-with-sidenav cor-content">
 
-    {% render "@toc--dynamic" , {nav: contentnav}, true %}
+  
+
+  <div class=" cor-content">
+
+    
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
       

@@ -1,4 +1,4 @@
-<cor-cover class="{% if modifier %}cor-cover--{{ modifier }} {% endif %}">
+<cor-cover style="--background-color:{{ color }};--text-color: {{ textColor }};--text-background-color: {{ textBgColor }}" class="{% if modifier %}cor-cover--{{ modifier }} {% endif %}">
   <hgroup>
     <h1>{% if title %} {{ title }} {% endif %}</h1>
     
@@ -8,13 +8,11 @@
   </hgroup>
 
   <div class="cor-stack">
-      <p  class="txt-xl cor-cover__description">{{ description }}</p>
+      <p>{{ description }}</p>
 
-      {% if cta %}
       <p>
-        <a href="{{ cta.link }}">{{ cta.text }}</a>
+        <a href="www.greenpeace.org">Access the survey</a>
       </p>
-      {% endif %}
   </div>
   
   <div>

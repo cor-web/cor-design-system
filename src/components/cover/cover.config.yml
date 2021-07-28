@@ -2,7 +2,18 @@ context:
   color: "#0aafcb"
   title: Green deal going local
   subtitle: Europe Regions and Cities' race to zero emissions
+  cta:
+    - text: Join us
+      link: "https://seashepherd.org"
   poster:
     src: https://cor.europa.eu/en/engage/PublishingImages/FutureOfEuropeSurvey/4527%209th%20May%20Survey_FB%201200x1200.png
     alt: Alt text
   description: Dolore exercitation elit nostrud labore proident elit. Enim enim qui elit veniam duis eu irure cupidatat magna officia culpa magna. Elit ex amet laboris nulla quis Lorem aute deserunt. Nisi eiusmod ut aute reprehenderit magna proident ad duis. Nulla dolor consectetur dolor officia mollit velit. Occaecat veniam pariatur sit labore esse nisi irure ex aute fugiat excepteur.
+variants:
+  - name: "centered"
+    context:
+      modifier: "centered"
+      color:
+      cta:
+        - text: Join us
+          link: "https://seashepherd.org"

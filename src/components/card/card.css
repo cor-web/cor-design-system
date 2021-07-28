@@ -1,6 +1,7 @@
 .cor-card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   font-size: var(--step--3);
   gap: var(--space-3xs);
   overflow: hidden;

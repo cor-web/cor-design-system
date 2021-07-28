@@ -1,0 +1,80 @@
+preview: "@previewincor_new"
+context:
+  title: "Władysław ORTYL"
+  subtitle: "President of the Podkarpackie Region"
+  poster:
+    src: "/assets/images/memberProfile.png"
+  initiatives:
+    - image: "https://api.assetroulette.com/random_unsplash"
+      date: "01/06/2021"
+      link:
+        text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+        target: "document.pdf"
+        size: "3 MB PDF"
+    - image: "https://api.assetroulette.com/random_unsplash"
+      date: "01/06/2021"
+      link:
+        text: "Europe Day: discover the European Union on the occasion of 9 May 2021"
+        target: "www.greenpeace.org"
+    - image: "https://api.assetroulette.com/random_unsplash"
+      date: "01/06/2021"
+      link:
+        text: "European Citizens Initiatives (ECIs) conclusions should be subject of a serious follow up by European institutions"
+        target: "2030 Regional Commitments"
+  opinions:
+    - title: "(CDR 3170/2016) - Towards a sustainable EU food policy"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 435/2018) - Local and regional incentives to promote healthy and sustainable diets"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 3637/2018) - Reform of the CAP"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 4601/2019) - Stepping up EU Action to Protect and Restore the World’s Forests"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 4764/2019) - Implementation of Free Trade Agreements (FTAs): The regional and local perspective"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 4829/2019) - AC The renewal of the Leipzig Charter on Sustainable European Cities"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 539/2020) - Bio-diverse cities and regions beyond 2020 at the UN CBD COP 15 and in the EU Biodiversity Strategy for 2030"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 549/2020) - Towards a Roadmap for Clean Hydrogen – the contribution of local and regional authorities to a climate-neutral Europe"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 540/2020) - The Future of EU Clean Air policy in the framework of the zero-pollution ambition"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 541/2020) - Fitness check of the Water Framework Directive, Groundwater Directive, Environmental Quality Standards Directive and Floods Directive"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 594/2020) - From Farm to Fork the local and regional dimension"
+      link: "www.cor.europa.eu"
+    - title: "(CDR 418/2020) - Just Transition Fund"
+      link: "www.cor.europa.eu"
+  news:
+    - image:
+        src: "https://cor.europa.eu/en/news/PublishingImages/W%C5%82adys%C5%82aw%20Ortyl%20PL%20%20ECR.png"
+        alt: "alernative text"
+      date: "01/06/2021"
+      title: "Regional airports are key for the economic recovery and territorial cohesion in the EU"
+      link: "www.cor.europa.eu"
+      themes:
+        ["Transport infrastructure and TEN-networks", "Sustainable mobility"]
+      promo: "Aviation has been one of the sectors worst affected by the COVID-19 pandemic. Smaller regional airports have recorded the greatest decline in direct flight connections, particularly in passenger flights. Treviso (Italy) lost 95% of its connections, Vaasa (Finland) 91%, Quimper (France) 87%, and Burgas (Bulgaria) 82%."
+    - image:
+        src: "https://cor.europa.eu/en/news/PublishingImages/plane_shutterstock.jpg"
+        alt: "alernative text"
+      date: "01/06/2021"
+      title: "Cities and regions want more support for regional airports struggling from the pandemic"
+      link: "www.cor.europa.eu"
+      themes:
+        [
+          "Air transport",
+          "Transport policy",
+          "Territorial cohesion",
+          "Green Deal",
+          "Sustainable mobility",
+        ]
+      promo: "With many regional airports struggling to recover from the economic hardship caused by the pandemic, members of the European Committee of the Regions adopted an opinion on 1 July, which calls on the European Commission to develop more flexible and more effective public aid rules that enable Member States to provide regional airports with financial assistance. In the opinion , which was drafted by Władysław Ortyl (PL/ECR), the CoR also emphasized that financial support must be invested in making airports more sustainable in order to help achieve the objectives set out in the European Green Deal."
+    - image:
+        src: "https://cor.europa.eu/en/news/PublishingImages/Plenary.jpg"
+        alt: "alernative text"
+      date: "01/06/2021"
+      title: "#CoRplenary: Local leaders to discuss democracy, the European way of life, and the Conference on the Future of Europe"
+      link: "www.cor.europa.eu"
+      themes: ["EU communication policy"]

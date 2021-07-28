@@ -11,10 +11,19 @@
   margin-bottom: var(--space-xs) !important;
 }
 
+.margin-y-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .margin-bottom {
   margin-bottom: var(--space-xs) !important;
 }
 
 .margin-bottom-xl {
   margin-bottom: var(--space-xl) !important;
+}
+
+.margin-top {
+  margin-top: var(--space-xs) !important;
 }
