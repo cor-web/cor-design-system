@@ -1,27 +1,48 @@
-{% block extrahead %}
-uiohuih
-<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-{% endblock extrahead %}
 
-<video
-    id="my-video"
-    class="video-js"
-    controls
-    preload="auto"
-    width="640"
-    height="264"
-    poster="MY_VIDEO_POSTER.jpg"
-    data-setup="{}"
-  >
-    <source src="MY_VIDEO.mp4" type="video/mp4" />
-    <source src="MY_VIDEO.webm" type="video/webm" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
+<link href="http://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/7.0/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-youtube@2.6.1/dist/Youtube.min.js"></script>
+
+
+<video id="example_video_1" class="video-js" controls preload="none" width="640" height="264" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+    <track kind="captions" src="../shared/example-captions.vtt" srclang="en" label="English">
+    <track kind="subtitles" src="../shared/example-captions.vtt" srclang="en" label="English">
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
 
-  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+
+<hr/>
+<video id="example_video_2" class="video-js" controls preload="none" width="640" height="360"
+      data-setup='{ "html5" : { "nativeTextTracks" : false } }'
+      poster="http://d2zihajmogu5jn.cloudfront.net/elephantsdream/poster.png">
+
+    <source src="//d2zihajmogu5jn.cloudfront.net/elephantsdream/ed_hd.mp4" type="video/mp4">
+    <source src="//d2zihajmogu5jn.cloudfront.net/elephantsdream/ed_hd.ogg" type="video/ogg">
+
+    <track kind="captions" src="captions.en.vtt" srclang="en" label="English" default>
+    <track kind="captions" src="captions.sv.vtt" srclang="sv" label="Swedish">
+    <track kind="captions" src="captions.ru.vtt" srclang="ru" label="Russian">
+    <track kind="captions" src="captions.ja.vtt" srclang="ja" label="Japanese">
+    <track kind="captions" src="captions.ar.vtt" srclang="ar" label="Arabic">
+
+    <track kind="descriptions" src="descriptions.en.vtt" srclang="en" label="English">
+
+    <track kind="chapters" src="chapters.en.vtt" srclang="en" label="English">
+
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+
+  <hr/>
+  Youtube
+  <video
+    id="vid1"
+    class="video-js vjs-default-skin"
+    controls
+    autoplay
+    width="640" height="264"
+    data-setup='{ "techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=bJOq8fXhl8I"}] }'
+  >
+  </video>
