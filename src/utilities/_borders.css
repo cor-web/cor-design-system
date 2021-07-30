@@ -39,7 +39,7 @@
 }
 
 .cor-containerWithDivider > * + * {
-  border-top: solid 3px var(--oc-gray-8);
+  border-top: solid 3px var(--page-color, var(--oc-gray-8));
 }
 
 .cor-containerWithDivider--dotted > * + * {
