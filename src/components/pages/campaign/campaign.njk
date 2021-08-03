@@ -206,28 +206,7 @@
       </section>
 
       <section>
-        <script defer src="https://europa.eu/webtools/load.js" type="text/javascript"></script>
-        <strong>Share</strong>:
-        <script type="application/json">
-        {
-          "service": "share",
-          "popup": false,
-          "icon": true,
-          "tomore": [
-            "facebook"
-          ],
-          "to": [
-            "twitter",
-            "facebook",
-            "linkedin"
-          ],
-          "selection": false,
-          "css": {
-            "button": "cor-btn"
-          },
-          "shortenurl": true
-        }
-        </script>
+        {% render "@share" %}
       </section>
       
     
