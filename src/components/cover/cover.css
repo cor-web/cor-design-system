@@ -88,7 +88,7 @@ cor-cover p {
 }
 
 cor-cover.cor-cover--topbar {
-  border-top: var(--page-color) solid var(--space-xs);
+  border-top: rgb(var(--page-color)) solid var(--space-xs);
 }
 
 @media screen and (min-width: 640px) {

@@ -1,6 +1,6 @@
-.mainContent .cor-list--documents {
-  display: grid;
-  gap: var(--space-3xs);
+.mainContent ol[class].cor-list > li,
+.mainContent ul[class].cor-list > li {
+  padding: var(--space-3xs);
 }
 
 .mainContent .cor-list--documents li {
