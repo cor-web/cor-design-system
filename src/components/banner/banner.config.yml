@@ -1,0 +1,6 @@
+context:
+  image:
+    src: "https://thispersondoesnotexist.com/image"
+    alt: "Alternate text"
+  title: "European Democracy Action Plan with Věra Jourová, Vice-President of the European Commission for Values and Transparency"
+  date: "07/05/2021 11:30"
