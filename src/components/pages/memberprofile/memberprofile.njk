@@ -1,5 +1,6 @@
-<div class="bg-white cor-container cor-memberoftheweek">
+<div class="bg-white cor-container cor-page--member">
   
+  <!--
   <cor-cover class="cor-cover--topbar" style="--color:{{ color }}">
   
     <hgroup>
@@ -17,20 +18,26 @@
 
     
   </cor-cover>
-  
+  -->
 
-  <div role="separator"></div>
-
-  <div class="cor-with-sidenav  cor-content ">
-
-        {% render "@toc--dynamic" , {nav: contentnav}, true %}
-
-
-    <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
+  <cor-cover class="cor-cover--topbar">
+    
+    <hgroup>
+      <h1 class="flex"><img class="margin-right" src="https://lipis.github.io/flag-icon-css/flags/4x3/be.svg" style="width: 50px" alt=""/> Władysław ORTYL </h1>
       
-        
-      <section>
-        <dl class="cor-stack">
+      
+        <h2>President of the Podkarpackie Region</h2>
+      
+    </hgroup>
+
+    <div class="cor-stack">
+      <img src="https://cor.europa.eu/Members_Portraits/2032249.jpeg" alt="Alt text">
+      <br/>
+      <img style="width: 250px" src="https://cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-ecr.png" alt="Alt text"><br/>
+    </div>
+    
+    <div>
+      <dl class="cor-stack">
           <dt>Political group</dt>
           <dd>ECR (European Conservatives and Reformists Group)</dd>
 
@@ -51,20 +58,38 @@
           <dt>Member of the European Committee of the Regions since</dt>
           <dd>08.11.2016</dd>
         </dl>
-      </section>
-          
-      <section>
+
         <h2 id="contact">Contact</h2>
-        <a href="tel:+33500000000">+48 17 8501780</a>
-        <a href="mailto:j.rog@podkarpackie.pl">j.rog@podkarpackie.pl</a>
-      </section>
+        <ul class>
+          <li>
+            <a href="tel:+33500000000" class="txt-xl icon icon-before" style="--icon:var(--icon-phone)">+48 17 8501780</a>
+          </li>
+          <li>
+            <a href="mailto:j.rog@podkarpackie.pl" class="txt-xl icon icon-before" style="--icon:var(--icon-envelope)">j.rog@podkarpackie.pl</a>
+          </li>
+        </ul>
 
-      <section>
         <h2  id="socialmedia">Social media</h2>
-        <a href="www.facebook.com">Facebook</a>
-      </section>
+        <ul class>
+          <li>
+            <a href="tel:+33500000000" class="txt-xl icon icon-before" style="--icon:var(--icon-facebook)">Facebook</a>
+          </li>
+        </ul>
+    </div>
+  </cor-cover>
 
-      <section>
+  <div role="separator"></div>
+
+  <div class="cor-with-sidenav  cor-content ">
+
+        {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
+      
+      
+
+      <section class="padding-top-0">
         <h2 id="title">Title for this section</h2>
           <h3>President</h3>
           <ul class="m">
