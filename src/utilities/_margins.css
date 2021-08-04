@@ -24,6 +24,10 @@
   margin-bottom: var(--space-xl) !important;
 }
 
+.margin-right {
+  margin-right: var(--space-xs);
+}
+
 .margin-top {
   margin-top: var(--space-xs) !important;
 }

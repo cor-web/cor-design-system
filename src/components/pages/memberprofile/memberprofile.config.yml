@@ -3,7 +3,7 @@ context:
   title: "Władysław ORTYL"
   subtitle: "President of the Podkarpackie Region"
   poster:
-    src: "/assets/images/memberProfile.png"
+    src: "https://thispersondoesnotexist.com/image"
   initiatives:
     - image: "https://api.assetroulette.com/random_unsplash"
       date: "01/06/2021"
