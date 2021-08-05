@@ -38,23 +38,6 @@
   border-style: none;
 }
 
-.cor-containerWithDivider > * + * {
-  border-top: solid 3px var(--oc-gray-8);
-}
-
-.cor-containerWithDivider--dotted > * + * {
-  border-top: dotted 1px var(--oc-gray-3);
-}
-
-/*to move*/
-.cor-containerWithDivider--space-l > * {
-  padding-bottom: var(--space-l);
-}
-
-.cor-containerWithDivider--space-l > * + * {
-  padding-top: var(--space-xs);
-}
-
 /* Border radius */
 .rounded {
   border-radius: 0.25rem;

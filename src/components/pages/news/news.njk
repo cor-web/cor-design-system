@@ -1,0 +1,508 @@
+<div class="mainContent">		
+							<div id="DeltaPlaceHolderMain">
+	
+								<a id="mainContent" name="mainContent" tabindex="-1"></a>
+								
+		
+	<div class="row">
+		<div class="col-lg-8 contentCol">
+			
+
+<!-- SCRIPT -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($("span[id$='MachineTranslationControl_Title']").length > 0) {
+            automaticTranslationButton();
+            var originalText = "";
+            var translatedText = "";
+            var translatedMessage = "";
+            var buttonOriginal = "Show original text";
+            var buttonTranslation = "Show translation";
+
+
+            var methodUrl = "/_layouts/15/RestApi/RestApi.aspx?op=GetTranslation&sourceUrl=" + window.location.pathname;
+            var ct = {};
+
+            $(".loader").hide();
+
+            $("span[id$='MachineTranslationControl_Title']").click(function (event) {
+               
+                switch ($(this).attr("name")) {
+                    case "Automatic Translation":
+                        _gaq.push(['_trackEvent', 'Translate', 'Request', GetVariation(window.location.pathname).substring(1, 3) + ";" + window.location.pathname.substring(3), , false]);
+                        $("input[id$='BodyToTranslate']").val($("#forTranslation").html());
+                        $("button[id$='MachineTranslationServerButton']").click();
+                        break;
+                    case "Show original text":
+                        this.innerText = buttonTranslation;
+                        $(this).attr("name", "Show translation");
+                        $("#forTranslation").html(originalText);
+                        automaticTranslationPosition();
+                        break;
+                    case "Show translation":
+                        this.innerText = buttonOriginal;
+                        $(this).attr("name", "Show original text");
+                        $("#forTranslation").html(translatedText);
+                        automaticTranslationPosition();
+                        break;
+                }
+            });
+
+            // if page is postback, it means that the button was clicked
+            if ($("input[id$='isPostBack']").val() == "1") {
+                $(".loader").show();
+                var timer = setInterval(checkTranslation, 3000);
+                checkTranslation();
+            }
+
+            function checkTranslation() {
+                if ($("input[id$='BodyToTranslate']").val() != "") {
+                    $.ajax({
+                        type: "POST",
+                        url: methodUrl,
+                        data: "",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            if (data.d.results.length > 0) {
+                                var translation = data.d.results[0]
+                                if (!translation.Requested) {
+                                    $(".loader").fadeOut(100);
+                                    originalText = $("#forTranslation").html();
+                                    $("#forTranslation").html(translation.PageBody);
+                                    translatedText = translation.PageBody;
+                                    clearInterval(timer);
+                                    SP.SOD.executeFunc('sp.js', 'SP.ClientContext', getResourceMachineTranslationMessage);
+
+                                    if (typeof (UsedWithMachineTranslation) == 'function')
+                                        UsedWithMachineTranslation();
+                                }
+                            }
+                        },
+                        error: function (result) {
+                            alert("Error in the ajax call");
+                        }
+                    });
+                }
+            }
+            //get resource strings from ‘EventNotification’ resource file depending on the current language
+            function getResourceMachineTranslationMessage() {
+                currentUICluture = _spPageContextInfo.currentUICultureName;
+                var resourceUrl = '/_layouts/ScriptResx.ashx?culture=' + currentUICluture + '&name=Resource_Website';
+
+                $.getScript(resourceUrl, function () {
+                    if (Res['mt_Translated'] != null)
+                        translatedMessage = Res['mt_Translated'];
+                    if (Res['mt_Button_Original'] != null)
+                        buttonOriginal = Res['mt_Button_Original'];
+                    if (Res['mt_Button_Translation'] != null)
+                        buttonTranslation = Res['mt_Button_Translation'];
+
+                    var defaultUICulture = "en-gb";
+                    var defaultResourceUrl = '/_layouts/ScriptResx.ashx?culture=' + defaultUICulture + '&name=Resource_Website';
+                    $.getScript(defaultResourceUrl, function () {
+                        if (translatedMessage == undefined)
+                            translatedMessage = Res['mt_Translated'];
+                        if (buttonOriginal == undefined)
+                            buttonOriginal = Res['mt_Button_Original'];
+                        if (buttonTranslation == undefined)
+                            buttonTranslation = Res['mt_Button_Translation'];
+                    });
+
+                    var button = $("span[id$='MachineTranslationControl_Title']");
+                    button.text(buttonOriginal);
+                    button.attr("name", "Show original text");
+
+                    $("div[id$='Control_Body']").text(translatedMessage);
+                    automaticTranslationPosition();
+                });
+            }
+        }
+    });
+    function automaticTranslationButton() {
+        var automaticTranslationBox = document.querySelector('.mt-status-translation');
+        var infoButton = document.querySelector('.mt-status-translation__icon-question');
+        var infoText = document.querySelector('.mt-status-translation__infotext');
+        var infoCloseButton = document.querySelector('.mt-status-translation__infotext__close');
+
+        /* Initial Position */
+        automaticTranslationPosition();
+        /* Keep Position when resize */
+        window.onresize = automaticTranslationPosition;
+        
+        infoButton.addEventListener('click', toggleInfo);
+        infoCloseButton.addEventListener('click', toggleInfo);
+    }
+    function automaticTranslationPosition() {
+        var titleHeight = document.querySelector('.blueHeader').clientHeight;
+        var automaticTranslationBox = document.querySelector('.mt-status-translation');
+        var infoText = document.querySelector('.mt-status-translation__infotext');
+        automaticTranslationBox.style.top = titleHeight - 10 + 'px';
+        infoText.style.top = (titleHeight - 10) + 'px';
+    };
+    /* Toggle Info text when clicking on ? or close*/
+    function toggleInfo() {
+        var automaticTranslationBox = document.querySelector('.mt-status-translation');
+        automaticTranslationBox.classList.toggle('mt-status-translation--expanded');
+    }
+</script>
+<style>
+    .contentCol {
+        position: relative;
+    }
+    .contentCol .content {
+        margin-top: 15px;
+    }
+    .mt-status-translation {
+      position: absolute;
+      right: 0;
+      background: #60c0dc;
+      color: #fff;
+      border-radius: 36px 0 0 36px;
+      border: 0;
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      overflow: hidden;
+      z-index: 1;
+      float: right;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+        0 4px 8px 3px rgba(60, 64, 67, 0.15);
+      padding: 0;
+      border-right: solid 1px #60c0dc;
+    }
+
+    .mt-status-title {
+      border-right: solid 1px;
+      margin: 0;
+      padding: 10px 15px;
+    }
+
+    .mt-status-title:hover,
+    .mt-status-translation__icon-question:hover {
+      cursor: pointer;
+    }
+
+    .mt-status-translation__icon-question svg {
+      padding: 5px 10px;
+    }
+
+    #forTranslation .article {
+      clear: both;
+    }
+
+    /* Infotext */
+    .mt-status-translation__infotext {
+      background: #60c0dc;
+      border: solid 1px #60c0dc;
+      border-radius: 4px 0 0 4px;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+        0 4px 8px 3px rgba(60, 64, 67, 0.15);
+      color: #fff;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      width: 250px;
+      right: 0;
+      padding: 0 10px 1.5rem 1.5rem;
+      z-index: 1;
+    }
+
+    .mt-status-translation--expanded + .mt-status-translation__infotext {
+      display: block;
+    }
+
+    /* Close Button */
+    .mt-status-translation__infotext__close {      
+      background: 0;
+      border: 0;
+      cursor: pointer;
+      margin: 5px 0 15px;
+      padding: 0;      
+      position: absolute;
+      right: 15px;
+      top: 5px;
+    }
+    /* Loader */
+    .loader {
+        display: inline-block;
+        vertical-align middle;
+        border: 5px solid #f3f3f3; 
+        border-top: 5px solid #3498db; 
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 2s linear infinite;
+        margin-left: 10px;
+    }
+    .mt-status-translation__infotext .loader {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 20px;
+        float: left;
+    }
+    .mt-status-translation__infotext .infotext {
+        margin-top: 24px;
+        width: 200px;
+    }
+    .providedBy {
+        font-size: 11px;
+        margin-top: 5px !important;
+        border-top: 1px solid #e6edec;
+        padding-top: 5px;
+    }    
+    .providedBy a, .providedBy a:link, .providedBy a:visited, .providedBy a:focus {    
+        color: #004896;
+    }
+    .providedBy a:hover{
+        color: white;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+</style>
+
+
+<!-- Info text-->
+<div class="mt-status-translation__infotext">    
+    <!-- Close button -->
+    <span class="mt-status-translation__infotext__close">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#fff"></path>
+        </svg>
+    </span>
+    <!-- /Close button -->    
+    <div class="loader">&nbsp;</div>
+    <div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_MachineTranslationControl_Body" class="infotext">Click here to get an automatic translation of the text below.</div>
+    <div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_MachineTranslationControl_ProvidedBy" class="providedBy infotext"><a href="/en/Pages/language-policy.aspx">Automatic machine translation</a> provided by the <a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Machine+translation">European Commission eTranslation Service</a></div>
+</div>
+<!-- Info text-->    
+<input type="hidden" name="ctl00$PlacerHolderContentRow$PlaceHolderMain$MachineTranslationControl$BodyToTranslate" id="ctl00_PlacerHolderContentRow_PlaceHolderMain_MachineTranslationControl_BodyToTranslate">        
+<input type="hidden" name="ctl00$PlacerHolderContentRow$PlaceHolderMain$MachineTranslationControl$isPostBack" id="ctl00_PlacerHolderContentRow_PlaceHolderMain_MachineTranslationControl_isPostBack" value="0">        
+<input type="hidden" name="ctl00$PlacerHolderContentRow$PlaceHolderMain$MachineTranslationControl$ResponseValue" id="ctl00_PlacerHolderContentRow_PlaceHolderMain_MachineTranslationControl_ResponseValue" value="0">        
+<button type="submit" name="ctl00$PlacerHolderContentRow$PlaceHolderMain$MachineTranslationControl$MachineTranslationServerButton" value="Translate" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlacerHolderContentRow$PlaceHolderMain$MachineTranslationControl$MachineTranslationServerButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlacerHolderContentRow_PlaceHolderMain_MachineTranslationControl_MachineTranslationServerButton" class="btn btn-success mb-2 d-none">Translate</button>
+
+			<div id="forTranslation">
+				<div class="blueHeader">
+					Fair, just and deliverable: EU's "Fit for 55" climate package success hinges on bringing every city and region on board
+					&nbsp;</div>
+							
+				<div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_EditModePanelDevelopers">
+		
+							
+				
+	</div>										
+				<div class="content">
+					<div class="article">
+						<div class="article-header">
+							<div class="date-line">
+								<span class="newsType pressRelease"><span title="Press release">Press release</span></span>
+								14/07/2021
+								
+								
+								
+								
+										<span class="Theme">| <span title="Climate change policy">Climate change policy</span>; <span title="Green Deal">Green Deal</span>; <span title="Energy industry">Energy industry</span>; <span title="Biodiversity">Biodiversity</span>; <span title="Transport policy">Transport policy</span></span>
+										
+									
+							</div>
+						</div>
+					</div>
+					
+					<menu class="ms-hide">
+		<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu>
+					
+					<div class="article article-left">
+						
+							
+								<div class="captioned-image lightbox-image">
+									<div class="image">
+										
+										<div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl15_label" style="display:none">Rollup Image</div><div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl15__ControlWrapper_RichImageField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl15_label"><div class="ms-rtestate-field"><img alt="" src="https://cor.europa.eu/en/events/PublishingImages/resized-Photo%20CP-130%20shuterstock.jpg" style="BORDER:0px solid;width: 300px" ></div></div>
+									</div>
+									<div class="caption">
+										<div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl16_label" style="display:none">Image Caption</div><div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl16__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl16_label"><p>
+    © Shutterstock<br></p></div>
+									</div>
+								</div>								
+							
+							<div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_DisplayModePanelPicture">
+									
+									
+							
+	</div>															
+						
+
+
+						<div class="article-content">
+							<div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl05_label" style="display:none">Page Content</div><div id="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlacerHolderContentRow_PlaceHolderMain_ctl05_label"><p>​​<strong>Reacting to the European Commission's </strong>
+   <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_3541"> <strong>'Fit for 55' </strong></a>
+   <strong> package which seeks to cut EU carbon emissions by 55% by 2030, the European Committee of the Regions (CoR) calls for the new and updated rules to secure a central role and ensure direct financing for cities and regions who have legal competences and proximity to people in the transition towards climate-neutrality.&nbsp;</strong></p><p>
+    The climate package proposed by the European Commission today aims to
+    reduce emissions from industry, buildings, transport and land use, and will
+    have significant implications for all European regions, businesses and
+    citizens alike, also translating the polluter pays principle into practice.
+    With a renewed vision for carbon pricing as the focal point, it is
+    important that the package contributes to territorial cohesion. The package
+    must meet the needs of every territory, increase the involvement, revenue
+    allocation and access to direct financing for green investments and climate
+    social expenditure for local and regional authorities who are responsible
+    for implementing 90% of climate adaptation and 70% of climate mitigation
+    actions.
+</p><p>
+    <a href="/en/members/Pages/memberprofile.aspx?MemberId=2032166">
+        <strong>Apostolos Tzitzikostas</strong></a>, President of the European Committee of the Regions and Governor of the
+    Central Macedonia Region in Greece, said: "
+    <em>
+        Europe's transition towards climate-neutrality will only be achieved if
+        it places people's needs at its heart, takes into account the
+        specificities of every territory and leaves no person nor region
+        behind.
+    </em>
+    <em>
+        We must start by cutting red tape, ensuring Europe's local and regional
+        governments have direct access to EU funds. Europe needs a green and
+        just recovery that tackles the climate emergency, builds
+    </em>
+    <em>
+        resilience, supports innovation and creates local jobs. Where they have
+        competencies – such as in energy efficiency in buildings, sustainable
+        transport, biodiversity protection and tackling energy poverty – we
+        must empower cities, regions and all our citizens as to accelerate the
+        green transition. This is why we have launched a European wide campaign
+        –
+    </em>
+    <a href="/en/engage/Pages/green-deal.aspx?utm_source=SharedLink&amp;utm_medium=ShortURL&amp;utm_campaign=Green%20Deal%20Going%20Local">
+        <strong><em>Green Deal Going Local</em></strong>
+    </a>
+    .<em>"</em>
+</p><p>
+    <em></em>
+</p><p>
+    <em>The Mayor of Seville, </em>
+    <a href="/fr/members/Pages/memberprofile.aspx?MemberId=2034263">
+        <strong>Juan Espadas</strong>
+    </a>
+    <em> (PES/ES), Chair of the </em>
+    <a href="/en/our-work/Pages/enve.aspx">
+        <strong>CoR's ENVE commission</strong>
+    </a>
+    <em> and of the </em>
+    <a href="/en/engage/Pages/green-deal.aspx">
+        <strong>Green Deal Going Local working group</strong>
+    </a>
+    <em>
+        , declared: "The Fit for 55 package is the starting point of a new
+        climate revolution. It must be ambitious but we know that this all
+        comes at a cost. The reality of climate change will affect every person
+        and every territory, but it will impact the most vulnerable in society
+        first. On housing, mobility, energy, and more, to be ‘Fit for 55’, we
+        have a big role to play to make sure equity and strong social support
+        are guaranteed to leave no people and no places behind."
+    </em>
+    <em></em>
+</p><p>
+    <strong> </strong>
+</p><p>
+    With the new and updated set of energy and climate laws, the EU aims at
+    cutting emissions by 55% by 2030 and reaching a net zero balance by 2050.
+    The 'Fit for 55 package' is a major pillar of the Union's climate action
+    and growth strategy. It consists of 13 legislative proposals that tackle
+    different aspects of the green transition, with a revitalised Emission
+    Trading System at its cornerstone. The revision of the EU ETS Directive
+    aims to bring forward emission trading to the building and road transport
+    sectors, where local and regional authorities have both the expertise and
+    the competencies to deliver on the European Green Deal objectives and a
+    socially just transition.
+</p><p>
+    Europe's regions and cities must be recognised within the Social Climate
+    Fund, alongside the Just Transition Fund, as over centralisation can
+    threaten territorial cohesion and the social fairness of the green
+    transition. The 'Fit for 55 package' also concerns the energy efficiency of
+    buildings, where an enhanced cooperation between the European Committee of
+    the Regions and the European Commission was<strong> </strong>
+    <a href="/en/news/Pages/renovation-wave-CoR-and-Commission-launch-cooperation-to-boost-building-overhaul.aspx">
+        <strong>launched in March 2021</strong></a>.
+</p><p>
+    'Fit for 55' updates of existing EU laws:
+</p><ul><li>Revision of the EU emission trading scheme (EU ETS)
+</li><li>Revision of the regulation on land use, land use change and forestry
+    (LULUCF)
+</li><li>Revision of the effort sharing regulation (ESR)
+</li><li>
+        Amendment to the renewable energy directive (RED)
+    </li><li>&nbsp;Amendment to the energy efficiency directive (EED)
+</li><li>Revision of the alternative fuels infrastructure directive (AFID)
+</li><li>Amendment of the regulation setting CO2 emission standards for cars and
+    vans
+</li><li>Revision of the energy taxation directive
+</li></ul><p>
+    'Fit for 55' new legislative proposals:
+</p><ul><li>New EU forest strategy
+</li><li>A carbon border adjustment mechanism (CBAM)
+</li><li>A Climate Action Social Facility
+</li><li>ReFuelEU Aviation – on sustainable aviation fuels
+</li><li>
+        FuelEU Maritime – on greening Europe’s maritime space
+    </li></ul><p>
+    <strong> </strong>
+</p><p>
+    <strong>Contact:<br></strong>David Crous<br><a href="mailto:david.crous@cor.europa.eu" style="background-color:white;"><strong>david.crous@cor.europa.eu</strong></a><br>+32 (0) 470 88 10 37</p>
+
+<p></p><p></p><p></p></div>
+
+
+							
+							{% render "@share" %}
+              
+							
+						</div>
+					</div>				
+				</div>
+			</div>		
+			
+      
+		
+			
+							
+		</div>
+		<div class="col-lg-4 rightCol">
+						
+			<div class="content">
+				
+					
+																								
+								
+				
+
+
+				
+			
+			
+				
+			
+			
+<div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+		<div webpartid="00000000-0000-0000-0000-000000000000" haspers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " onlyformepart="true" allowdelete="false" style=""><div id="cbqwpctl00_PlacerHolderContentRow_PlaceHolderMain_g_cdb56663_faa3_410e_81c5_cd5873aa808b" class="cbq-layout-main"><div class="lightBlueHeader">Related news</div><div class="row"><div class="w-100"></div><div class="w-100"><a href="https://cor.europa.eu/en/news/Pages/Enlargement-day-13-July.aspx" title="" class="news-link" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime"><div class="news-container"><img class="img-fluid" src="https://cor.europa.eu/en/events/PublishingImages/resized-Dovzan_ed.jpg" title="EU funds are 'huge opportunity' for municipalities in the Western Balkans" alt="EU funds are 'huge opportunity' for municipalities in the Western Balkans"><div class="news-caption"><div class="news-title">EU funds are 'huge opportunity' for municipalities in the Western Balkans</div><div class="news-date">13.07.2021</div></div></div></a></div><div class="w-100"><a href="https://cor.europa.eu/en/news/Pages/contributions-to-tackling-climate-change-need-to-be-measured-included-valued-under-Paris-Agreement.aspx" title="" class="news-link" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime"><div class="news-container"><img class="img-fluid" src="https://cor.europa.eu/en/news/PublishingImages/Vincent%20Chauvet.jpg" title="Local and regional authorities' contributions to tackling climate change need to be measured, included and valued under the Paris Agreement " alt="Local and regional authorities' contributions to tackling climate change need to be measured, included and valued under the Paris Agreement "><div class="news-caption"><div class="news-title">Local and regional authorities' contributions to tackling climate change need to be measured, included and valued under the Paris Agreement </div><div class="news-date">02.07.2021</div></div></div></a></div><div class="w-100"><a href="https://cor.europa.eu/en/news/Pages/mobility-revolution.aspx" title="" class="news-link" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime"><div class="news-container"><img class="img-fluid" src="https://cor.europa.eu/en/engage/PublishingImages/light.jpg" title="Cities and Regions ready to lead the sustainable mobility revolution in Europe" alt="Cities and Regions ready to lead the sustainable mobility revolution in Europe"><div class="news-caption"><div class="news-title">Cities and Regions ready to lead the sustainable mobility revolution in Europe</div><div class="news-date">01.07.2021</div></div></div></a></div><div class="w-100"><a href="https://cor.europa.eu/en/news/Pages/mediterranean-citizens-and-mediterranean-sea-.aspx" title="" class="news-link" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime"><div class="news-container"><img class="img-fluid" src="https://cor.europa.eu/en/engage/PublishingImages/Vincenzo_Bianco.jpg" title="Mediterranean citizens and Mediterranean Sea need special attention from EU" alt="Mediterranean citizens and Mediterranean Sea need special attention from EU"><div class="news-caption"><div class="news-title">Mediterranean citizens and Mediterranean Sea need special attention from EU</div><div class="news-date">01.07.2021</div></div></div></a></div></div></div><div class="ms-clear"></div></div>
+	</div>
+			
+			
+			
+			
+			
+			
+			
+				
+			</div>
+		</div>		
+	</div>		
+			
+<script src="/Style%20Library/Cor/style/js/JScript/Article.js" type="text/javascript"></script>		
+
+							
+</div>
+						</div>

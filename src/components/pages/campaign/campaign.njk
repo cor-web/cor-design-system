@@ -1,4 +1,4 @@
-<div class="bg-white cor-container" style="--campaign-color: 10, 175, 203">
+<div class="bg-white cor-container" style="--page-color: 10, 175, 203">
   
   {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
@@ -129,7 +129,7 @@
 
       <section class="cor-stack">
         <h2 id="opinions">Reports</h2>
-        <ol class="cor-list cor-list--documents">
+        <ol class="cor-list cor-list--documents cor-containerWithDivider--dotted">
           <li>
             <a href="document.pdf">14.06.21 European Year of Rail_Abruzzo</a> <small class="cor-list--documents__info">3 MB PDF</small>
           </li>
@@ -138,6 +138,15 @@
           </li>
           <li>
             <a href="document.pdf">10.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">3 MB PDF</small>
+          </li>
+          <li>
+            {% render "@document--study" %}
+          </li>
+          <li>
+            {% render "@document--study" %}
+          </li>
+          <li>
+            {% render "@document--study" %}
           </li>
         </ol>
       </section>
@@ -196,6 +205,9 @@
         <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
       </section>
 
+      <section>
+        {% render "@share" %}
+      </section>
       
     
     </main>

@@ -12,3 +12,22 @@
 .list-decimal li {
   list-style-type: decimal !important;
 }
+
+/*to move*/
+
+.cor-containerWithDivider > * + * {
+  border-top: solid 3px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.cor-containerWithDivider--dotted > * + * {
+  border-top: dotted 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.mainContent ol.cor-containerWithDivider--dotted li,
+.mainContent ul.cor-containerWithDivider--dotted li {
+  margin: 0;
+}
+
+.cor-containerWithDivider--space-l > * {
+  padding: var(--space-l) 0;
+}
