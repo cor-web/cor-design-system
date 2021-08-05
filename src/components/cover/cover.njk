@@ -18,6 +18,10 @@
   </div>
   
   <div>
-    <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+    {% if poster.svg %}
+      {{ poster.svg | safe  }}
+    {% else %}
+      <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+    {% endif %}
   </div>
 </cor-cover>
