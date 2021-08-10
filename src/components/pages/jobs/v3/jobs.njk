@@ -1,58 +1,73 @@
-<div class="bg-white cor-container" style="--campaign-color: 10, 175, 203">
+<div class="cor-container bg-white" style="--campaign-color: 10, 175, 203">
+
   
   {% render "@cover--centered", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2 class="cor-toc-section" id="initiatives">Our latest oppurtunities</h2>
-    <div class="cor-switcher">
+    <h2 class="cor-toc-section cor-h3" id="initiatives">Our latest oppurtunities</h2>
+    
+    <div class="cor-jobs-opportunities">
 
     {% for item in latestopportunities %}
-      <article class="cor-card bg rounded padding">
-        <span class="cor-badge">{{ item.grade }}</span>
-        <h3 class="margin-0">{{ item.jobtitle }}</h3>
+      <article class="padding">
+        <strong class="txt-xl">{{ item.grade }}</strong>
+        <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
         
-        <strong>Deadline:</strong>
-        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
-
-        <strong>Directorate:</strong>
         <span>Directorate B, Legislative Work 1</span>
+
+        <div>
+          <strong>Deadline:</strong>
+          <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+        </div>
         
       </article>
     {% endfor %}
+
     </div>
+
     <a class="">Explore all our vacancies</a>
   </article>
   <!-- /Initiatives -->
 
-  <nav class="cor-switcher padding padding-m bg margin-top">
-    <a href="www.google.be">
-      <strong>Diversity</strong>
+  <nav class="cor-switcher cor-switcher--4 margin-top cor-jobs__nav padding">
+    <div href="www.google.be" class="  cor-stack">
+      <strong class="cor-h6 margin-bottom">Diversity</strong>
       <p>Experiencing diversity is the best way to drive creativity and success. For us "United in Diversity" it's not just a hashtag, it's a long-term objective.</p>
-      <div class="text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <div>
+        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        </svg>
+        </svg></a>
       </div>
-    </a>
-    <a href="www.google.be">
-      <strong>Work life/Balance</strong>
+    </div>
+    <div href="www.google.be" class="   cor-stack">
+      <strong class="cor-h6 margin-bottom">Work life/Balance</strong>
       <p>If you believe that reconciling family and work life is what makes a job right, then we already have something in common.</p>
-      <div class="text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <div>
+        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        </svg>
+        </svg></a>  
       </div>
-    </a>
-    <a href="www.google.be">
-      <strong>Procedure</strong>
+    </div>
+    <div href="www.google.be" class="   cor-stack">
+      <strong class="cor-h6 margin-bottom">Procedure</strong>
       <p>Discover all the opportunities to become part of the CoR community. We offer different kind of posts, but they all will allow you to make an impact on EU policies.</p>
-      <div class="text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <div>
+        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        </svg>
+        </svg></a>
+        
       </div>
-    </a>
+    </div>
+    <div href="www.google.be" class=" cor-stack">
+      <strong class="cor-h6 margin-bottom">Traineeships</strong>
+      <p>Mollit ullamco in ullamco aliqua culpa mollit dolore laboris aliqua fugiat. Est non eu nulla consequat consectetur in excepteur deserunt nisi.</p>
+      <div>
+        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg></a>
+      </div>
+    </div>
   </nav>
 
 
@@ -62,22 +77,27 @@
 
     
 
-    <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
-      
-      <section class="cor-rich-text">
-      
-        <h2 class="cor-toc-section" id="yourviews">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-l padding-m">
 
-        <p>The European Committee of the Regions (CoR) is the voice of regions and cities in the European Union (EU). By empowering local and regional elected politicians to shape the EU legislation, we pursue our mission to create a Union closer to its citizens and built on their needs. </p>
+      <section class="cor-grid">
+        <div>
+          <h3>Empowering local and regional</h3>
+          <p class="txt-xl">The European Committee of the Regions (CoR) is the voice of regions and cities in the European Union (EU). By empowering local and regional elected politicians to shape the EU legislation, we pursue our mission to create a Union closer to its citizens and built on their needs. </p>
+          <a href="">Learn about our local and regional</a>
+        </div>
+        <div class="cor-grid">
+          <img alt src="https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+          <img alt src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+          <img alt src="https://images.unsplash.com/photo-1501952476817-d7ae22e8ee4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80">
+        </div>
+      </section>
 
- 
+      <section>
+        <h3>The pulse of EU politics</h3>
+        <p class="txt-xl">No village, town, or city is too far for us to bring it closer to the pulse of EU politics. By joining the CoR, you will contribute to make Europe a great place to live. At the CoR, you will have the opportunity to address the future challenges of the EU while thriving in a familiar work environment that respects human diversity and enhances individual creativity.  </p>
 
-        <p>No village, town, or city is too far for us to bring it closer to the pulse of EU politics. By joining the CoR, you will contribute to make Europe a great place to live. At the CoR, you will have the opportunity to address the future challenges of the EU while thriving in a familiar work environment that respects human diversity and enhances individual creativity.  </p>
-
- 
-
-        <p>Throughout your professional path, you can always count on the support of a small but multicultural, dynamic and diverse, community of experts. Thanks to a crosscutting approach to objectives, you will have the chance to share knowledge with colleagues whose rich backgrounds reflect all the diversity and the vast potential of the EU.  </p>
-
+        <h3>Multicultural, dynamic and diverse, community</h3>
+        <p class="txt-xl">Throughout your professional path, you can always count on the support of a small but multicultural, dynamic and diverse, community of experts. Thanks to a crosscutting approach to objectives, you will have the chance to share knowledge with colleagues whose rich backgrounds reflect all the diversity and the vast potential of the EU.  </p>
       </section>
 
       <section class="cor-stack">
@@ -88,6 +108,48 @@
         <p>Testimonials</p>
       </section>
 
+      <section class="cor-stack">
+        <h2>Diversity</h2>
+      </section>
+
+      <section class="cor-stack">
+        <h2>Work life/Balance</h2>
+      </section>
+
+      <section class="cor-grid">
+        <div class="cor-stack">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="var(--oc-gray-6)" class="bi bi-card-list" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+          </svg>
+          <h2>Procedure</h2>
+          <p class="txt-xl">The application process for a position at the CoR depends on the contract type. However, in order to be recruited as an official by an EU institution, you have to follow a competition procedure that might include several oral and written tests.</p>
+          <a class="txt-xl" href="">Learn more</a>
+        </div>
+        <ul class="cor-stack cor-containerWithDivider--dotted list-none margin-top padding-left cor-list--arrows">
+          <li class="padding-y--3xs">
+            <a href="" class="txt-xl strong">Permanent staff</a>
+            
+          </li>
+          <li class="padding-y--3xs">
+            <a href="" class="txt-xl strong">Temporary staff</a>
+            
+          </li>
+          <li class="padding-y--3xs">
+            <a href="" class="txt-xl strong">National experts</a>
+            
+          </li>
+          <li class="padding-y--3xs">
+            <a href="" class="txt-xl strong">Trainees</a>
+            
+          </li>
+        </ul>
+      </section>
+
+      <section class="cor-stack">
+        <h2>Traineeships</h2>
+      </section>
+      
       <section class="cor-stack">
         <h2>Current opportunities  </h2>
 
@@ -141,5 +203,6 @@
     </main>
 
   </div>
+
 
 </div>

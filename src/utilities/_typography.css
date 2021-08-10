@@ -4,8 +4,8 @@
 }
 
 .mainContent .txt-2xl {
-  font-size: var(--step-1);
-  line-height: 1.75;
+  font-size: var(--step--1);
+  line-height: 1.5;
 }
 
 .text-dark {
