@@ -11,6 +11,11 @@
   margin-bottom: var(--space-xs) !important;
 }
 
+.margin-y--xl {
+  margin-top: var(--space-xl) !important;
+  margin-bottom: var(--space-xl) !important;
+}
+
 .margin-y-0 {
   margin-top: 0;
   margin-bottom: 0;
