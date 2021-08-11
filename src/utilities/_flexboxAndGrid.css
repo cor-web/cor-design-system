@@ -1,3 +1,11 @@
+.align-items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
 .gap-xl {
   gap: var(--space-xl);
 }
@@ -24,6 +32,10 @@
 
 .gap-3xs {
   gap: var(--space-3xs);
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .justify-end {

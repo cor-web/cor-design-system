@@ -1,0 +1,34 @@
+.cor-jobs-opportunities > article {
+  align-items: baseline;
+  background: rgb(49, 54, 204);
+  color: white;
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: auto 1fr auto auto;
+}
+
+.cor-jobs-opportunities > article + article {
+  border-top: solid 1px white;
+}
+
+.cor-jobs-opportunities > article h3 {
+  color: white;
+}
+
+.cor-jobs__nav {
+  background-color: white;
+}
+
+.cor-list--arrows a {
+  align-items: center;
+  display: flex;
+}
+
+.cor-list--arrows a:after {
+  background: var(--icon-arrow-right-circle) no-repeat;
+  content: "";
+  display: block;
+  height: 16px;
+  margin-left: auto;
+  width: 16px;
+}
