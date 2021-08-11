@@ -5,3 +5,7 @@
 .bg-blue-1 {
   background-color: var(--oc-blue-1);
 }
+
+.bg-europe {
+  background-color: var(--c-eu);
+}

@@ -6,27 +6,31 @@
   <!-- Initiatives -->
   <article class="cor-box">
     <h2 class="cor-toc-section cor-h3" id="initiatives">Our latest oppurtunities</h2>
-    
+
     <div class="cor-jobs-opportunities">
+    {% if latestopportunities %}
+      {% for item in latestopportunities %}
+        <article class="padding">
+          <strong class="txt-xl">{{ item.grade }}</strong>
+          <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
+          
+          <span>Directorate B, Legislative Work 1</span>
 
-    {% for item in latestopportunities %}
-      <article class="padding">
-        <strong class="txt-xl">{{ item.grade }}</strong>
-        <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
-        
-        <span>Directorate B, Legislative Work 1</span>
+          <div>
+            <strong>Deadline:</strong>
+            <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+          </div>
+          
+        </article>
+      {% endfor %}
 
-        <div>
-          <strong>Deadline:</strong>
-          <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
-        </div>
-        
-      </article>
-    {% endfor %}
+      </div>
 
-    </div>
+      <a class="">Explore all our vacancies</a>
 
-    <a class="">Explore all our vacancies</a>
+    {% else %}
+    <p>There are no vacancies available at the moment. However, the world of European careers is constantly changing. To keep up to date with the latest opportunities, check the EU Careers website. And if you want to stay ahead of the competition, let's practice with EPSO sample tests! </p>
+    {% endif %}
   </article>
   <!-- /Initiatives -->
 
@@ -61,7 +65,7 @@
     </div>
     <div href="www.google.be" class=" cor-stack">
       <strong class="cor-h6 margin-bottom">Traineeships</strong>
-      <p>Mollit ullamco in ullamco aliqua culpa mollit dolore laboris aliqua fugiat. Est non eu nulla consequat consectetur in excepteur deserunt nisi.</p>
+      <p>The CoR is a relatively young institution and, as such, recognizes the importance of giving voice to the ideas of newcomers and younger generations. Involving young people in the EU decision-making process is precisely the aim of the CoR traineeship programme.</p>
       <div>
         <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -105,15 +109,60 @@
 
         <p>The CoR staff works tirelessly for the voice of European regions and cities. But what better occasion to listen to your future colleagues to know how a day within the CoR looks like? </p>
 
-        <p>Testimonials</p>
+        <h3>Testimonials</h3>
+
+        <ul class="list-none">
+          {% for testimonial in testimonials %}
+          <li>
+            <figure>
+              <blockquote cite="https://www.huxley.net/bnw/four.html">
+                  <p>{{ testimonial.text }}</p>
+              </blockquote>
+              <figcaption>{{ testimonial.author }}</figcaption>
+          </figure>
+          </li>
+          {% endfor %}
+        </ul>
       </section>
 
       <section class="cor-stack">
         <h2>Diversity</h2>
+        <p>You can enjoy working with diverse and talented colleagues. As an employer, the CoR does not discriminate on any grounds such as sex, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation. You will be given an equal opportunity to demonstrate your abilities during the selection procedures.</p>
       </section>
 
       <section class="cor-stack">
         <h2>Work life/Balance</h2>
+        <h3>Advantageous working conditions </h3>
+        <p>At the CoR we balance the need for efficient use of our resources against modern human resources policies that enable our staff to reconcile professional and family life.</p>
+        <h4>We offer:</h4>
+        <ul class="cor-switcher">
+          <li>
+            <h4>Flexible working arrangements</h4>
+            <p>flexible working hours, part-time work and teleworking</p>
+          </li>
+          <li>
+            <h4>Leave and holidays</h4>
+            <p>24 vacation (annual leave) days plus public holidays. Subject to conditions, there are also additional days for travel towards the place of origin.</p>
+          </li>
+          <li>
+            <h4>Support with childcare</h4>
+            <p>In order to foster well-being among staff, the Social actions service provides a series of services to staff and their families (childcare facilities – crèches, European schools, after school childcare, holiday childcare, etc.)</p>
+          </li>
+          <li>
+            <h4>Service to families</h4>
+            <p>Welcome office, Social service, language courses for partners, etc.</p>
+          </li>
+          <li>
+            <h4>Health and wellbeing policy</h4>
+            <p>Medical service, Safety and Health at Work Programme, nutrition, ergonomic office design, etc.</p>
+          </li>
+          <li>
+            <h4>Social and cultural events</h4>
+            <p>We like to socialise! You get many opportunities to network. We also have other social events – Staff’s parties and events where you and your family are always welcome, cultural events, exhibitions, conferences on interesting topics, etc.</p>
+          </li>
+        </ul>
+        
+        <strong>We offer high-quality working conditions to ensure a sound and healthy working environment.</strong>
       </section>
 
       <section class="cor-grid">
@@ -145,10 +194,6 @@
           </li>
         </ul>
       </section>
-
-      <section class="cor-stack">
-        <h2>Traineeships</h2>
-      </section>
       
       <section class="cor-stack">
         <h2>Current opportunities  </h2>
@@ -159,37 +204,40 @@
 
         <p>The CoR is an equal opportunity employer who believes that inclusion and diversity are necessary to deliver better policies for EU citizens. Therefore, we promote the inclusion of qualified and experienced staff without regard to their gender, age, racial or ethnic origin, religion or beliefs, sexual orientation/identity or disability. </p>
 
-        <h3>VACANCIES</h3>
-        <p>There are no vacancies available at the moment. However, the world of European careers is constantly changing. To keep up to date with the latest opportunities, check the EU Careers website. And if you want to stay ahead of the competition, let's practice with EPSO sample tests!  </p>
+        <h3>Vacancies</h3>
+
+        <div class="cor-jobs-opportunities">
+        {% if latestopportunities %}
+          {% for item in latestopportunities %}
+            <article class="padding">
+              <strong class="txt-xl">{{ item.grade }}</strong>
+              <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
+              
+              <span>Directorate B, Legislative Work 1</span>
+
+              <div>
+                <strong>Deadline:</strong>
+                <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+              </div>
+              
+            </article>
+          {% endfor %}
+        {% endif %}
+        </div>
+        
       </section>
 
-      <section class="cor-stack">
-        <h2>Your diversity matters</h2>
-
-        <p>So bring us your personal experience, your perspective, and your background. It is our differences that fuel the power of the EU to deliver a better life for all.</p>
-      </section>
+      
 
       <section class="cor-stack">
         
-        <h2>Learn more</h2>
+        <h2>Quick links</h2>
 
-        <section>
-          <h3 class="cor-toc-section margin-top" id="links">Related links</h3>
-          <ul class="margin-bottom-0 padding-left">
-            <li><a href="test.be">Link 1</a></li>
-            <li><a href="test.be">Link 2</a></li>
-            <li><a href="test.be">Link 3</a></li>
-          </ul>
-        </section>
-
-        <section>
-          <h3 class="cor-toc-section margin-top" id="links">See also</h3>
-          <ul class="margin-bottom-0 padding-left">
-            <li><a href="test.be">Link 1</a></li>
-            <li><a href="test.be">Link 2</a></li>
-            <li><a href="test.be">Link 3</a></li>
-          </ul>
-        </section>
+        <ul class="margin-bottom-0 padding-left">
+          <li><a href="test.be">Begin your process on <strong>EPSO</strong></a></li>
+          <li><a href="test.be">Read our <strong>privacy statements</strong></a></li>
+          <li><a href="test.be"><strong>National expert?</strong> Read our  applicable rules</a></li>
+        </ul>
 
       </section>
 
@@ -198,11 +246,23 @@
         <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
       </section>
 
+      <section class="text-center">
+        <a href="test.be" class="txt-step-4">#EUcareers</a>
+      </section>
+
       
     
     </main>
+
+    <section class="bg-europe text-white padding-m grid justify-items-center">
+        <a href="www.epso.europa.eu"><img alt="EPSO flag" src="/assets/images/jobs/epsoflag.png" /></a>
+        <h2 class="text-white">Do you have the ambition to #ShapingEurope </h2>
+        <p>Visit the EU Careers website where you can search the database of available job opportunities for permanent and temporary positions, including contract agent posts, traineeships and secondments in EU Institutions and Agencies.​​</p>
+        <a class="www.epso.europa.eu">Join us!</a>
+      </section>
 
   </div>
 
 
 </div>
+
