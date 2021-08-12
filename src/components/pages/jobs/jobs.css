@@ -41,3 +41,9 @@
 .cor-jobs__testimonials > * {
   flex: 1 0 33%;
 }
+
+.cor-jobs__wordcloud li {
+  font-size: var(--step-4);
+  font-weight: bold;
+  text-align: center;
+}
