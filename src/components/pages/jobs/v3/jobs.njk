@@ -9,7 +9,7 @@
 
     <div class="cor-jobs-opportunities">
     {% if latestopportunities %}
-      {% for item in latestopportunities %}
+      {% for item in latestopportunities.slice(0, 3) %}
         <article class="padding">
           <strong class="txt-xl">{{ item.grade }}</strong>
           <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
@@ -111,14 +111,14 @@
 
         <h3>Testimonials</h3>
 
-        <ul class="list-none">
+        <ul class="list-none cor-jobs__testimonials">
           {% for testimonial in testimonials %}
           <li>
             <figure>
               <blockquote cite="https://www.huxley.net/bnw/four.html">
                   <p>{{ testimonial.text }}</p>
               </blockquote>
-              <figcaption>{{ testimonial.author }}</figcaption>
+              <figcaption><img alt="alt name" src="https://thispersondoesnotexist.com/image" width="50" height="50" class="block rounded-full" />{{ testimonial.author }}</figcaption>
           </figure>
           </li>
           {% endfor %}
@@ -135,10 +135,10 @@
         <h3>Advantageous working conditions </h3>
         <p>At the CoR we balance the need for efficient use of our resources against modern human resources policies that enable our staff to reconcile professional and family life.</p>
         <h4>We offer:</h4>
-        <ul class="cor-switcher">
+        <ul class="cor-grid list-style-none" style="--threshold: 300px">
           <li>
             <h4>Flexible working arrangements</h4>
-            <p>flexible working hours, part-time work and teleworking</p>
+            <p>Flexible working hours, part-time work and teleworking</p>
           </li>
           <li>
             <h4>Leave and holidays</h4>
@@ -163,6 +163,14 @@
         </ul>
         
         <strong>We offer high-quality working conditions to ensure a sound and healthy working environment.</strong>
+      </section>
+
+
+
+      <section>
+        <h2>A career at the CoR</h2>
+        <p>Our staff are mainly officials recruited via the reserve lists from general competitions organised by the European Personnel Selection Office. In certain circumstances, however, the European Committee of the Regions may also engage temporary or contract staff.</p>
+        <p>Our working and contractual conditions are based on the Staff Regulations (SR) and the Conditions of Employment of other Servants of the European Communities (CEOS).</p>
       </section>
 
       <section class="cor-grid">

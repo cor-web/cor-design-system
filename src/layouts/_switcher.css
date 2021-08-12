@@ -11,12 +11,15 @@
   flex-grow: 1;
   flex-basis: calc((var(--measure) - 100%) * 999);
 }
+/*
 
 .cor-switcher > :nth-last-child(n + 4),
 .cor-switcher > :nth-last-child(n + 4) ~ * {
   flex-basis: 100%;
 }
+*/
 
+/*
 .cor-switcher--4 > :nth-last-child(n + 4),
 .cor-switcher--4 > :nth-last-child(n + 4) ~ * {
   flex-basis: calc((var(--measure) - 100%) * 999);
@@ -26,3 +29,4 @@
 .cor-switcher--4 > :nth-last-child(n + 5) ~ * {
   flex-basis: 100%;
 }
+*/
