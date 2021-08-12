@@ -32,3 +32,12 @@
   margin-left: auto;
   width: 16px;
 }
+
+.cor-jobs__testimonials {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.cor-jobs__testimonials > * {
+  flex: 1 0 33%;
+}

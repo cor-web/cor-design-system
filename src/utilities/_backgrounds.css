@@ -9,3 +9,7 @@
 .bg-europe {
   background-color: var(--c-eu);
 }
+
+.bg-cor-prev-bg {
+  background-color: var(--color-cor-prev-bg);
+}
