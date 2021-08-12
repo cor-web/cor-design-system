@@ -36,3 +36,8 @@
 .margin-top {
   margin-top: var(--space-xs) !important;
 }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
