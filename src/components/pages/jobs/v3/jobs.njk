@@ -29,34 +29,38 @@
   <article class="cor-box">
     <h2 class="cor-toc-section cor-h3" id="initiatives">Our latest oppurtunities</h2>
 
-    <div class="cor-jobs-opportunities">
+    <ul class="cor-jobs-opportunities cor-stack list-style-none">
     {% if latestopportunities %}
       {% for item in latestopportunities.slice(0, 3) %}
-        <article class="padding">
-          <strong class="txt-xl">{{ item.grade }}</strong>
-          <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
-          
-          <span>Directorate B, Legislative Work 1</span>
+        <li>
+          <a class="padding" href="">
+            <strong class="txt-xl">{{ item.grade }}</strong>
+            <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
+            
+            <span>Directorate B, Legislative Work 1</span>
 
-          <div>
-            <strong>Deadline:</strong>
-            <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
-          </div>
-          
-        </article>
+            <div>
+              <strong>Deadline:</strong>
+              <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+            </div>
+          </a>
+        </li>
       {% endfor %}
 
-      </div>
+      </ul>
 
-      <a class="">Explore all our vacancies</a>
+      <p class="text-center">
+        <a href="" class=" margin-top inline-block rounded-full border padding-x-xl padding-y text-center">Explore all our vacancies</a>
+      </p>
 
     {% else %}
     <p>There are no vacancies available at the moment. However, the world of European careers is constantly changing. To keep up to date with the latest opportunities, check the EU Careers website. And if you want to stay ahead of the competition, let's practice with EPSO sample tests! </p>
     {% endif %}
+  </ul>
   </article>
   <!-- /Initiatives -->
 
-  <nav class="cor-switcher cor-switcher--4 margin-top cor-jobs__nav padding">
+  <nav class="cor-switcher cor-switcher--4 margin-top-xl cor-jobs__nav padding">
     <div href="www.google.be" class="  cor-stack">
       <strong class="cor-h6 margin-bottom">Diversity</strong>
       <p>Experiencing diversity is the best way to drive creativity and success. For us "United in Diversity" it's not just a hashtag, it's a long-term objective.</p>
@@ -268,24 +272,25 @@
 
         <h3>Vacancies</h3>
 
-        <div class="cor-jobs-opportunities">
-        {% if latestopportunities %}
-          {% for item in latestopportunities %}
-            <article class="padding">
-              <strong class="txt-xl">{{ item.grade }}</strong>
-              <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
-              
-              <span>Directorate B, Legislative Work 1</span>
+        <ul class="cor-jobs-opportunities cor-stack list-style-none">
+          {% if latestopportunities %}
+            {% for item in latestopportunities %}
+              <li>
+                <a class="padding" href="">
+                  <strong class="txt-xl">{{ item.grade }}</strong>
+                  <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
+                  
+                  <span>Directorate B, Legislative Work 1</span>
 
-              <div>
-                <strong>Deadline:</strong>
-                <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
-              </div>
-              
-            </article>
-          {% endfor %}
-        {% endif %}
-        </div>
+                  <div>
+                    <strong>Deadline:</strong>
+                    <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          {% endif %}
+        </ul>
         
       </section>
 
@@ -330,7 +335,8 @@
       </section>
 
       <section class="text-center">
-        <a href="test.be" class="txt-step-4">#EUcareers</a>
+        <a href="test.be" class="txt-step-3">#EUcareers</a>
+        <a href="test.be" class="txt-step-3">#ShapingEuropeTogether</a>
       </section>
 
       

@@ -1,18 +1,14 @@
-.cor-jobs-opportunities > article {
+.cor-jobs-opportunities > li > a {
   align-items: baseline;
-  background: rgb(49, 54, 204);
-  color: white;
+  border: solid 1px rgb(49, 54, 204);
+  color: rgb(49, 54, 204);
   display: grid;
   gap: var(--space-xs);
   grid-template-columns: auto 1fr auto auto;
 }
 
-.cor-jobs-opportunities > article + article {
-  border-top: solid 1px white;
-}
-
-.cor-jobs-opportunities > article h3 {
-  color: white;
+.cor-jobs-opportunities > li h3 {
+  color: rgb(49, 54, 204);
 }
 
 .cor-jobs__nav {
