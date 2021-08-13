@@ -1,7 +1,7 @@
 .padding {
   --padding: var(--space-xs);
 
-  padding: var(--padding);
+  padding: var(--padding) !important;
 }
 
 .padding-0 {
@@ -13,7 +13,13 @@
 }
 
 .padding-x {
-  padding: 0 var(--space-xs) 0 !important;
+  padding-left: var(--space-xs) !important;
+  padding-right: var(--space-xs) !important;
+}
+
+.padding-x-xl {
+  padding-left: var(--space-xl) !important;
+  padding-right: var(--space-xl) !important;
 }
 
 .padding-m {
@@ -25,7 +31,12 @@
 }
 
 .padding-y {
-  padding: var(--space-xs) 0 !important;
+  padding-top: var(--space-xs) !important;
+  padding-bottom: var(--space-xs) !important;
+}
+
+.padding-y-xl {
+  padding: var(--space-xl) 0;
 }
 
 .padding-y--3xs {
@@ -34,4 +45,8 @@
 
 .padding-left {
   padding-left: var(--space-xs) !important;
+}
+
+.padding-left-xl {
+  padding-left: var(--space-xl) !important;
 }
