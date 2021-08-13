@@ -13,10 +13,10 @@
 }
 /*
 
-.cor-switcher > :nth-last-child(n + 4),
-.cor-switcher > :nth-last-child(n + 4) ~ * {
-  flex-basis: 100%;
-}
+  .cor-switcher > :nth-last-child(n + 4),
+  .cor-switcher > :nth-last-child(n + 4) ~ * {
+    flex-basis: 100%;
+  }
 */
 
 /*
