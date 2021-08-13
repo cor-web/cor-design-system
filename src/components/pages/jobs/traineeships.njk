@@ -4,7 +4,7 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2 class="cor-toc-section" id="projects">Discover some of our trainees projects</h2>
+    <h2 class="cor-toc-section">Discover some of our trainees projects</h2>
     <div class="cor-switcher items-start">
     {% for project in projects %}
       {% render "@card" , {date: project.date, titleLevel: "h3", link: project.link, title: project.link.text, image: project.image, cardExtraClass: cardExtraClass } %}
@@ -22,10 +22,7 @@
     <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
       
       <section class="cor-rich-text">
-      
-        <h2 class="cor-toc-section" id="yourviews">Tempor non proident culpa amet sint.</h2>
-
-        <p>Proident excepteur laboris minim ea eiusmod laboris velit cillum proident consectetur qui officia aliquip minim. In ullamco occaecat adipisicing aliqua. Quis fugiat ullamco enim excepteur dolore velit ex. Laboris amet reprehenderit officia officia cillum et reprehenderit. Deserunt excepteur aliqua ex non proident nulla laboris voluptate in veniam.</p>
+    
 
         <h3 id="standard">Standard traineeships​</h3>
 
@@ -210,11 +207,11 @@
 
   </div>
 
-  <section class="bg-europe text-white padding-m grid justify-items-center">
+  <section class="bg-europe text-white padding-y padding-x-xl grid justify-items-center">
         <a href="www.epso.europa.eu"><img alt="EPSO flag" src="/assets/images/jobs/epsoflag.png" /></a>
-        <h2 class="text-white">Do you have the ambition to #ShapingEurope </h2>
-        <p>Visit the EU Careers website where you can search the database of available job opportunities for permanent and temporary positions, including contract agent posts, traineeships and secondments in EU Institutions and Agencies.​​</p>
-        <a class="www.epso.europa.eu">Join us!</a>
+        <h2 class="text-white margin-top">Do you have the ambition to #ShapingEurope </h2>
+        <p class="txt-xl">Visit the EU Careers website where you can search the database of available job opportunities for permanent and temporary positions, including contract agent posts, traineeships and secondments in EU Institutions and Agencies.​​</p>
+        <a href="www.epso.europa.eu" class="rounded-full border padding-x-xl padding-y text-white">Join us!</a>
       </section>
 
 </div>
