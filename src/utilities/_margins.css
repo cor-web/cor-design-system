@@ -33,6 +33,10 @@
   margin-right: var(--space-xs);
 }
 
+.margin-left {
+  margin-left: var(--space-xs);
+}
+
 .margin-top {
   margin-top: var(--space-xs) !important;
 }

@@ -1,3 +1,9 @@
+<style>
+  .cor-containerWithDivider > * + * {
+  border-top: solid 1px var(--oc-gray-3);
+}
+</style>
+
 <div class="cor-container bg-white">
 
   
@@ -33,7 +39,7 @@
     {% if latestopportunities %}
       {% for item in latestopportunities.slice(0, 3) %}
         <li>
-          <a class="padding" href="">
+          <a class="padding" href="/components/preview/vacancy">
             <strong class="txt-xl">{{ item.grade }}</strong>
             <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
             
@@ -65,7 +71,7 @@
       <strong class="cor-h6 margin-bottom">Diversity</strong>
       <p>Experiencing diversity is the best way to drive creativity and success. For us "United in Diversity" it's not just a hashtag, it's a long-term objective.</p>
       <div>
-        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <a href="#diversity" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg></a>
       </div>
@@ -74,7 +80,7 @@
       <strong class="cor-h6 margin-bottom">Work life/Balance</strong>
       <p>If you believe that reconciling family and work life is what makes a job right, then we already have something in common.</p>
       <div>
-        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <a href="#worklife" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg></a>  
       </div>
@@ -83,7 +89,7 @@
       <strong class="cor-h6 margin-bottom">Procedure</strong>
       <p>Discover all the opportunities to become part of the CoR community. We offer different kind of posts, but they all will allow you to make an impact on EU policies.</p>
       <div>
-        <a href="/components/preview/jobs" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <a href="#procedure" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg></a>
         
@@ -93,7 +99,7 @@
       <strong class="cor-h6 margin-bottom">Traineeships</strong>
       <p>The CoR is a relatively young institution and, as such, recognizes the importance of giving voice to the ideas of newcomers and younger generations. Involving young people in the EU decision-making process is precisely the aim of the CoR traineeship programme.</p>
       <div>
-        <a href="" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <a href="/components/preview/traineeships" class="">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg></a>
       </div>
@@ -335,8 +341,8 @@
       </section>
 
       <section class="text-center">
-        <a href="test.be" class="txt-step-3">#EUcareers</a>
-        <a href="test.be" class="txt-step-3">#ShapingEuropeTogether</a>
+        <a href="test.be" class="txt-step-3">#EUcareers</a> 
+        <a href="test.be" class="txt-step-3 margin-left">#ShapingEuropeTogether</a>
       </section>
 
       
