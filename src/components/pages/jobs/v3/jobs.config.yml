@@ -1,10 +1,11 @@
 preview: "@previewincor_new"
 context:
   title: "Work with us"
+  description: No matter what experiences you bring with you, the challenges you have gone through or will go through, we want you to belong at CoR. You should never hide parts of yourself to fit in.
   subtitle: ""
   cta:
-    - text: Join us
-      link: "https://seashepherd.org"
+    - text: "Join us"
+      link: "/components/preview/procedure"
   poster:
     src: "/assets/images/jobs/montage.jpg"
     alt: "alternative text"

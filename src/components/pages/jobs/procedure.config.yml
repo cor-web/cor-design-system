@@ -3,10 +3,10 @@ context:
   metadata: "bum"
   title: "Work with us"
   subtitle: "Procedure"
-  description: "Ut Lorem incididunt irure labore ex officia. Sit cupidatat officia ad ipsum. Excepteur eu laboris exercitation excepteur reprehenderit eiusmod laborum esse velit dolore veniam laboris non."
+  description: "In order to be recruited as an official by an EU institution, you need to pass an open competition organised at the inter-institutional level by the European Personnel Selection Office. The Committee of the Regions also employs temporary or contract staff."
   cta:
   poster:
-    src: "https://images.unsplash.com/photo-1571285347425-542374fc8e29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    src: "https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
     alt: "alternative text"
   projects:
     - image:

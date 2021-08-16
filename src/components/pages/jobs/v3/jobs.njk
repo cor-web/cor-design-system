@@ -1,7 +1,7 @@
 <div class="cor-container bg-white">
 
   
-  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description, cta: cta}, true %}
 
 
   <ul class="cor-jobs__wordcloud padding list-style-none margin-y--xl">
@@ -50,7 +50,7 @@
       </ul>
 
       <p class="text-center">
-        <a href="" class=" margin-top inline-block rounded-full border padding-x-xl padding-y text-center">Explore all our vacancies</a>
+        <a href="#vacancies" class=" margin-top inline-block rounded-full border padding-x-xl padding-y text-center">Explore all our vacancies</a>
       </p>
 
     {% else %}
@@ -262,7 +262,7 @@
       </section>
       
       <section class="cor-stack">
-        <h2>Current opportunities  </h2>
+        <h2 id="vacancies">Current opportunities  </h2>
 
         <p class="txt-xl">We look for talented individuals from a wide range of disciplines. Will your skills make the difference for European regions and cities? </p>
 

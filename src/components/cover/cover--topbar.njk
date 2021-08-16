@@ -14,7 +14,7 @@
       {% if cta %}
       <p>
         {% for link in cta %}
-        <a href="{{ link.target }}" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">{{ link.text }}</a>
+        <a href="{{ link.link }}" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">{{ link.text }}</a>
         {% endfor %}
         <!--
         <a href="www.greenpeace.org" class="txt-xl icon icon-after" style="--icon:var(--icon-box-arrow-up-right)">Access the survey</a>
