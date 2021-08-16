@@ -43,3 +43,17 @@
   font-weight: bold;
   text-align: center;
 }
+
+.cor-jobs__wordcloud li,
+[observe] {
+  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
+  transform: translateY(100px);
+  opacity: 0.5;
+}
+
+.cor-jobs__wordcloud li.visible,
+[observe].visible {
+  opacity: 1;
+  transform: translateX(0);
+  opacity: 1;
+}
