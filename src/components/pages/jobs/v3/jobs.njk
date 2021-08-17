@@ -127,18 +127,8 @@
 
         <p  class="txt-xl">The CoR staff works tirelessly for the voice of European regions and cities. But what better occasion to listen to your future colleagues to know how a day within the CoR looks like? </p>
 
-        <ul class="list-none cor-jobs__testimonials margin-y-xl">
-          {% for testimonial in testimonials %}
-          <li class="shadow-lg bg-white radius border">
-            <figure>
-              <blockquote  class="padding"  cite="https://www.huxley.net/bnw/four.html">
-                  <p class="bg-white">{{ testimonial.text }}</p>
-              </blockquote>
-              <figcaption><img alt="alt name" src="https://thispersondoesnotexist.com/image" width="50" height="50" class="block" />{{ testimonial.author }}</figcaption>
-          </figure>
-          </li>
-          {% endfor %}
-        </ul>
+        {% render "@carousel--testimonials"  %}
+        
       </section>
 
       <section class="cor-stack">
