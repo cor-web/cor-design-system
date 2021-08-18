@@ -22,84 +22,22 @@
   
   <div class="cor-carousel__scrollable " class="bg-blue-1">
     <ul class="cor-carousel__list">
+       {% for testimonial in testimonials %}
         <li>
           <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
             
-            <img  src="https://thispersondoesnotexist.com/image" alt="{{ image.alt }}" class="cor-card__image cor-image">
-         
+            {% if testimonial.img %}
+            <img  src="{{ testimonial.img }}" alt="{{ image.alt }}" class="cor-card__image cor-image">
+            {% endif %}
 
             <p class="cor-card__copy">
-              {% render "@testimonial" %}
+              {% render "@testimonial", { quote: testimonial.quote, author: testimonial.author, more: testimonial.more } %}
             </p>
         
 
           </article>
         </li>
-        <li>
-          <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
-            
-            <img  src="https://thispersondoesnotexist.com/image" alt="{{ image.alt }}" class="cor-card__image cor-image">
-         
-
-            <p class="cor-card__copy">
-              {% render "@testimonial" %}
-            </p>
-        
-
-          </article>
-        </li>
-        <li>
-          <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
-            
-            <img  src="https://thispersondoesnotexist.com/image" alt="{{ image.alt }}" class="cor-card__image cor-image">
-         
-
-            <p class="cor-card__copy">
-              {% render "@testimonial" %}
-            </p>
-        
-
-          </article>
-        </li>
-        <li>
-          <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
-            
-            <img  src="https://thispersondoesnotexist.com/image" alt="{{ image.alt }}" class="cor-card__image cor-image">
-         
-
-            <p class="cor-card__copy">
-              {% render "@testimonial" %}
-            </p>
-        
-
-          </article>
-        </li>
-        <li>
-          <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
-            
-            <img  src="https://thispersondoesnotexist.com/image" alt="{{ image.alt }}" class="cor-card__image cor-image">
-         
-
-            <p class="cor-card__copy">
-              {% render "@testimonial" %}
-            </p>
-        
-
-          </article>
-        </li>
-        <li>
-          <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
-            
-            <img  src="https://thispersondoesnotexist.com/image" alt="{{ image.alt }}" class="cor-card__image cor-image">
-         
-
-            <p class="cor-card__copy">
-              {% render "@testimonial" %}
-            </p>
-        
-
-          </article>
-        </li>
+        {% endfor%}
       </ul>
   </div>
 </div>
