@@ -28,6 +28,6 @@
   margin: 0;
 }
 
-.cor-containerWithDivider--space-l > * {
+.cor-containerWithDivider--space-l > * + * {
   padding: var(--space-l) 0;
 }
