@@ -3,13 +3,13 @@
   padding: var(--space-3xs);
 }
 
-.mainContent .cor-list--documents li {
+.mainContent .cor-list__item--document {
   list-style: none;
   display: grid;
   grid-template-columns: auto 1fr;
 }
 
-.mainContent .cor-list--documents li:before {
+.mainContent .cor-list__item--document:before {
   align-self: top;
   display: inline-block;
   content: "";
@@ -25,7 +25,7 @@
   height: 24px;
 }
 
-.cor-list--documents a[href$=".pdf"]:after {
+.cor-list__item--document a[href$=".pdf"]:after {
   content: none;
 }
 
