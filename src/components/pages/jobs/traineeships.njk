@@ -4,7 +4,7 @@
 
   <!-- Initiatives -->
   <article class="cor-box">
-    <h2 class="cor-toc-section" id="projects">Discover some of our trainees projects</h2>
+    <h2 class="cor-toc-section">Discover some of our trainees projects</h2>
     <div class="cor-switcher items-start">
     {% for project in projects %}
       {% render "@card" , {date: project.date, titleLevel: "h3", link: project.link, title: project.link.text, image: project.image, cardExtraClass: cardExtraClass } %}
@@ -22,10 +22,7 @@
     <main class="cor-containerWithDivider cor-containerWithDivider--space-l">
       
       <section class="cor-rich-text">
-      
-        <h2 class="cor-toc-section" id="yourviews">Tempor non proident culpa amet sint.</h2>
-
-        <p>Proident excepteur laboris minim ea eiusmod laboris velit cillum proident consectetur qui officia aliquip minim. In ullamco occaecat adipisicing aliqua. Quis fugiat ullamco enim excepteur dolore velit ex. Laboris amet reprehenderit officia officia cillum et reprehenderit. Deserunt excepteur aliqua ex non proident nulla laboris voluptate in veniam.</p>
+    
 
         <h3 id="standard">Standard traineeships​</h3>
 
@@ -35,7 +32,7 @@
           <h4>Standard traineeships ​In a nutshell</h4>
           <div class="padding-y"> 
       
-          <ul>
+          <ul class>
             <li>5 months</li>
             <li>Full time / 40 hours a week</li>
             <li>Workplace in Brussels, Belgium</li>
@@ -69,7 +66,7 @@
             
             <h5>Who are we looking for?</h5>
             
-            <ul>
+            <ul class>
               <li>EU citizens<br /></li>
               <li>
                 Citizens from third countries (including the UK) may apply and may be
@@ -97,7 +94,7 @@
             
             <h5>How to apply?</h5>
             
-            <ul>
+            <ul class>
               <li>Choose your preferred CoR-department (up to 3 possible)</li>
               <li><a href="">Fill out the online application form</a> (in English or French)</li>
               <li>
@@ -135,9 +132,9 @@
 
         <toggle-section class="margin-bottom-xl">
           <h4>Short term study visits ​In a nutshell</h4>
-          <div class="padding-y"><ul><li>1-4 months, extendable to 6 months depending on the resources available</li><li>Starting date is agreed upon with the candidate</li><li>Full time/ 40 hours a week</li><li>Workplace in Brussels, Belgium</li><li>Unpaid, all expenses to be covered by the participant</li><li>Health insurance cover not provided</li><li>Accident insurance included</li></ul><p> 
-         <strong>Who are we looking for?</strong></p><ul><li>EU citizens<br></li></ul><p>Note: Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with requirements under national immigration law for residing and working legally in Belgium​​<br></p><ul><li>University graduates that have completed at least a Bachelor's degree</li></ul><p style="text-align:left;">Note: The Secretary General or his delegate may grant derogation to candidates who are not yet holder of a Bachelor's degree provided they can demonstrate to have successfully completed, at the start of the study visit, at least half of the training cycle related to a Bachelors' degree which is deemed relevant to CoR activities.</p><ul><li>Candidates with excellent knowledge of one of the EU's official languages and satisfactory knowledge of French or English</li></ul><p> 
-         <strong>What do I need to apply?</strong></p><ul><li>Curriculum vitae in English, French or German</li><li>Motivation letter mentioning your preferred CoR department</li><li>Legible copy of a passport or identity card, giving surnames, forenames, date and place of birth and the nationality of the applicant</li><li>Proof of obligatory health insurance cover for the whole short term study visit</li><li>Copy of the Bachelor diploma or a certificate attesting that the candidate has successfully completed, at the start of the study visit, at least half of the training cycle related to a Bachelors' degree which is deemed relevant to CoR activities</li></ul><p> 
+          <div class="padding-y"><ul class><li>1-4 months, extendable to 6 months depending on the resources available</li><li>Starting date is agreed upon with the candidate</li><li>Full time/ 40 hours a week</li><li>Workplace in Brussels, Belgium</li><li>Unpaid, all expenses to be covered by the participant</li><li>Health insurance cover not provided</li><li>Accident insurance included</li></ul><p> 
+         <strong>Who are we looking for?</strong></p><ul class><li>EU citizens<br></li></ul><p>Note: Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with requirements under national immigration law for residing and working legally in Belgium​​<br></p><ul><li>University graduates that have completed at least a Bachelor's degree</li></ul><p style="text-align:left;">Note: The Secretary General or his delegate may grant derogation to candidates who are not yet holder of a Bachelor's degree provided they can demonstrate to have successfully completed, at the start of the study visit, at least half of the training cycle related to a Bachelors' degree which is deemed relevant to CoR activities.</p><ul><li>Candidates with excellent knowledge of one of the EU's official languages and satisfactory knowledge of French or English</li></ul><p> 
+         <strong>What do I need to apply?</strong></p><ul class><li>Curriculum vitae in English, French or German</li><li>Motivation letter mentioning your preferred CoR department</li><li>Legible copy of a passport or identity card, giving surnames, forenames, date and place of birth and the nationality of the applicant</li><li>Proof of obligatory health insurance cover for the whole short term study visit</li><li>Copy of the Bachelor diploma or a certificate attesting that the candidate has successfully completed, at the start of the study visit, at least half of the training cycle related to a Bachelors' degree which is deemed relevant to CoR activities</li></ul><p> 
          <strong>Upon request you will need to provide:</strong></p><ul><li>Copies of relevant diplomas and/ or official certificates held </li><li>Copies of proof of professional experiences </li><li>Proof of knowledge of at least one of English or French </li></ul><p> 
          <strong>Note: </strong>
          <strong>All these documents are to be sent electronically to the </strong>
@@ -149,22 +146,31 @@
 
         <toggle-section class="margin-bottom-xl">
           <h4>Traineeship for Government Officials ​In a nutshell</h4>
-          <div class="padding-y"><ul><li>1-4 months, extendable to 6 months possible with permission of the Secretary General</li><li>Starting date is agreed upon with the candidate</li><li>Full time/ 40 hours</li><li>Workplace in Brussels, Belgium</li><li>Unpaid, all expenses to be covered by the participant or their sending authority</li><li>Accident insurance covered by the CoR</li></ul><p> 
-         <strong>Who can apply?</strong></p><ul><li>Staff from a national, regional or local public authority of an EU Member state&nbsp;<br></li></ul><p>Note:&nbsp;Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with requirements under national immigration law for residing and working legally in Belgium&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;<br></p><ul><li>Existing job has corresponding duties to the level of an EU Administrator</li><li>Excellent knowledge of French or English</li></ul><p> 
-         <strong>What do I need to apply?</strong></p><ul><li>A curriculum vitae in English, French or German</li><li>A motivation letter mentioning your preferred CoR-department</li></ul><p> 
-         <strong>Once accepted, you will be asked for:</strong></p><ul><li>Confirmation of employment by the sending authority and its agreement to a traineeship at the CoR</li><li>Legible copy of a passport or identity card, giving surnames, forenames, date and place of birth and the nationality of the applicant</li><li>Proof of obligatory health insurance cover</li><li>Proof of Language skills </li></ul><p> 
+          <div class="padding-y"><ul class><li>1-4 months, extendable to 6 months possible with permission of the Secretary General</li><li>Starting date is agreed upon with the candidate</li><li>Full time/ 40 hours</li><li>Workplace in Brussels, Belgium</li><li>Unpaid, all expenses to be covered by the participant or their sending authority</li><li>Accident insurance covered by the CoR</li></ul><p> 
+         <strong>Who can apply?</strong></p><ul class><li>Staff from a national, regional or local public authority of an EU Member state&nbsp;<br></li></ul><p>Note:&nbsp;Citizens from third countries (including the UK) may apply and may be selected in exceptional cases, notably if their candidature is of particular interest to the CoR and if they comply with requirements under national immigration law for residing and working legally in Belgium&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;<br></p><ul><li>Existing job has corresponding duties to the level of an EU Administrator</li><li>Excellent knowledge of French or English</li></ul><p> 
+         <strong>What do I need to apply?</strong></p><ul class><li>A curriculum vitae in English, French or German</li><li>A motivation letter mentioning your preferred CoR-department</li></ul><p> 
+         <strong>Once accepted, you will be asked for:</strong></p><ul class><li>Confirmation of employment by the sending authority and its agreement to a traineeship at the CoR</li><li>Legible copy of a passport or identity card, giving surnames, forenames, date and place of birth and the nationality of the applicant</li><li>Proof of obligatory health insurance cover</li><li>Proof of Language skills </li></ul><p> 
          <strong>Note: </strong>
          <strong>All these documents are to be sent electronically to the </strong>
          <strong>Traineeships Office:</strong>&nbsp;<a href="mailto:trainee@cor.europa.eu">trainee@cor.europa.eu</a></p></div>
         </toggle-section>
+
+        <p><a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Apply via our <strong>Application form</strong></span>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg></a></li>
+              </a></p>
           
         <script src="/components/toggle/toggle.js" type="module"></script>
       </section>
 
       <section>
         <h2>Testimonials</h2>
-        {% render "@slider"  %}
+        {% render "@carousel--testimonials", {testimonials: testimonials }   %}
       </section>
+      
 
       <section class="cor-stack">
         
@@ -173,19 +179,70 @@
 
         <section>
           <h3 class="margin-top" id="documents">Documents</h3>
-          <ul class="margin-bottom-0 padding-left">
-            <li><a href="test.be">CoR departments (PDF 2.1 mb)</a></li>
-            <li><a href="test.be">Traineeship rules (PDF 2.1 mb)</a></li>
-            <li><a href="test.be">Provision regarding Travel Expenses (PDF 2.1 mb)</a></li>
+          <ul class="margin-bottom-0 padding-left list-none">
+            <li>
+              <a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Discover our <strong>CoR departments</strong> (PDF 2.1 mb)</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Read our <strong>Traineeship rules</strong> (PDF 2.1 mb)</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Read our <strong>provision regarding Travel Expenses</strong> (PDF 2.1 mb)</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                </svg>
+              </a>
+            </li>
+
           </ul>
         </section>
         
         <section>
           <h3 class="margin-top" id="links">Quick links</h3>
-          <ul class="margin-bottom-0 padding-left">
-            <li><a href="test.be"><strong>FAQ</strong> Traineeship</a></li>
-            <li><a href="test.be">Apply via our <strong>Application form</strong></a></li>
-            <li><a href="test.be">Read our <strong>privacy statements</strong></a></li>
+          <ul class="margin-bottom-0 padding-left list-none">
+            <li>
+              <a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Read our <strong>FAQ</strong></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Apply via our <strong>Application form</strong></span>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg></a></li>
+              </a>
+            </li>
+            <li>
+              <a class="txt-xl border padding block rounded-full padding-left-xl flex" href="test.be">
+                <span>Read our <strong>privacy statements</strong></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left-auto margin-right bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  <path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+                </svg>
+              </a>
+            </li>
           </ul>
         </section>
         
@@ -209,5 +266,12 @@
     </main>
 
   </div>
+
+  <section class="bg-europe text-white padding-y padding-x-xl grid justify-items-center">
+        <a href="www.epso.europa.eu"><img alt="EPSO flag" src="/assets/images/jobs/epsoflag.png" /></a>
+        <h2 class="text-white margin-top">Do you have the ambition to #ShapingEurope </h2>
+        <p class="txt-xl">Visit the EU Careers website where you can search the database of available job opportunities for permanent and temporary positions, including contract agent posts, traineeships and secondments in EU Institutions and Agencies.​​</p>
+        <a href="www.epso.europa.eu" class="rounded-full border padding-x-xl padding-y text-white">Join us!</a>
+      </section>
 
 </div>

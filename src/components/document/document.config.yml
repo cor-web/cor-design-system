@@ -1,2 +1,15 @@
 context:
   title: Preventing corruption at local and regional level in South Mediterranean countries
+  documents:
+    - title: Document title
+      language: English
+      size: 3 MB
+      type: PDF
+    - title: Titre du document
+      language: français
+      size: 3 MB
+      type: PDF
+    - title: Document title
+      language: Deutsch
+      size: 3 MB
+      type: PDF

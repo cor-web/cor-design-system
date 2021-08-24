@@ -1,3 +1,15 @@
 .bg {
   background-color: rgba(var(--page-color), 0.1);
 }
+
+.bg-blue-1 {
+  background-color: var(--oc-blue-1);
+}
+
+.bg-europe {
+  background-color: var(--c-eu);
+}
+
+.bg-cor-prev-bg {
+  background-color: var(--color-cor-prev-bg);
+}

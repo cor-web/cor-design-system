@@ -8,7 +8,7 @@
   </hgroup>
 
   <div class="cor-stack">
-      <p  class="txt-xl cor-cover__description">{{ description }}</p>
+      <p  class="txt-2xl cor-cover__description">{{ description }}</p>
 
       {% if cta %}
       <p>
@@ -18,6 +18,10 @@
   </div>
   
   <div>
-    <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+    {% if poster.svg %}
+      {{ poster.svg | safe  }}
+    {% else %}
+      <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+    {% endif %}
   </div>
 </cor-cover>

@@ -1,0 +1,29 @@
+preview: "@previewincor_new"
+context:
+  metadata: "bum"
+  title: "Work with us"
+  subtitle: "A diverse and rewarding working environment"
+  description: "The primary mission of the CoR is to bring Europe closer to its people by allowing the voices of its citizens to be heard. From villages to cities, municipalities to regions, no place is too small to generate a positive impact on EU legislation. To help us achieve this, we rely on the best resource of all our staff."
+  cta:
+  poster:
+    src: "/assets/images/jobs/corbuilding.jpg"
+    alt: "alternative text"
+  projects:
+    - image:
+        src: "/assets/images/jobs/nextstop.png"
+        alt: "alt text"
+      link:
+        text: " YFactor presents: Next Stop podcast  "
+        target: "www.greenpeace.org"
+    - image:
+        src: "/assets/images/jobs/yfactorconf.png"
+        alt: "alt text"
+      link:
+        text: "YFactor Conference 2015"
+        target: "www.greenpeace.org"
+    - image:
+        src: "/assets/images/jobs/yfactorevent.png"
+        alt: "alt text"
+      link:
+        text: "YFactor Event 2018 - Citizen's Dialogue in Molenbeek"
+        target: "www.greenpeace.org"

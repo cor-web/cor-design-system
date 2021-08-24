@@ -20,6 +20,12 @@ a.cor-btn {
   outline: 0;
 }
 
+.mainContent a.cor-btn,
+.mainContent a.cor-btn:link,
+.mainContent a.cor-btn:visited {
+  color: white;
+}
+
 .cor-btn.hover,
 .cor-btn:active,
 .cor-btn:focus,

@@ -1,0 +1,73 @@
+.cor-jobs-opportunities > li > a {
+  align-items: baseline;
+  border: solid 1px var(--link-color);
+  color: var(--link-color);
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: auto 1fr auto auto;
+}
+
+.cor-jobs-opportunities > li > a:hover {
+  background-color: white;
+}
+
+.cor-jobs-opportunities > li > a:hover {
+  background-color: var(--link-color);
+  color: white;
+  text-decoration: none;
+}
+
+.cor-jobs-opportunities > li h3 {
+  color: var(--link-color);
+}
+
+.cor-jobs-opportunities > li > a:hover h3 {
+  color: white;
+}
+
+.cor-jobs__nav {
+  background-color: white;
+}
+
+.cor-list--arrows a {
+  align-items: center;
+  display: flex;
+}
+
+.cor-list--arrows a:after {
+  background: var(--icon-arrow-right-circle) no-repeat;
+  content: "";
+  display: block;
+  height: 16px;
+  margin-left: auto;
+  width: 16px;
+}
+
+.cor-jobs__testimonials {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.cor-jobs__testimonials > * {
+  flex: 1 0 40%;
+}
+
+.cor-jobs__wordcloud li {
+  font-size: var(--step-4);
+  font-weight: bold;
+  text-align: center;
+}
+
+.cor-jobs__wordcloud li,
+[observe] {
+  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
+  transform: translateY(100px);
+  opacity: 0.5;
+}
+
+.cor-jobs__wordcloud li.visible,
+[observe].visible {
+  opacity: 1;
+  transform: translateX(0);
+  opacity: 1;
+}
