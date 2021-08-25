@@ -23,8 +23,8 @@
   border-top: dotted 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
 }
 
-.mainContent ol.cor-containerWithDivider--dotted li,
-.mainContent ul.cor-containerWithDivider--dotted li {
+.mainContent ol.cor-containerWithDivider--dotted > li,
+.mainContent ul.cor-containerWithDivider--dotted > li {
   margin: 0;
 }
 
