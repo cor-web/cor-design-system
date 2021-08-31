@@ -43,9 +43,7 @@
 
       </ul>
 
-      <p class="text-center">
-        <a href="#vacancies" class=" margin-top inline-block rounded-full border padding-x-xl padding-y text-center">Explore all our vacancies</a>
-      </p>
+      
 
     {% else %}
     <p>There are no vacancies available at the moment. However, the world of European careers is constantly changing. To keep up to date with the latest opportunities, check the EU Careers website. And if you want to stay ahead of the competition, let's practice with EPSO sample tests! </p>
@@ -238,36 +236,6 @@
           </li>
         </ul>
       </section>
-      
-      <section class="cor-stack">
-        <h2 id="vacancies">Vacancies</h2>
-
-        <p class="txt-xl">We look for talented individuals from a wide range of disciplines. Read the vacancies and find out the position that best suits your profile.</p>
-
-
-        <ul class="cor-jobs-opportunities cor-stack list-style-none margin-top-m">
-          {% if latestopportunities %}
-            {% for item in latestopportunities %}
-              <li>
-                <a class="padding" href="/components/preview/vacancy">
-                  <strong class="txt-xl">{{ item.grade }}</strong>
-                  <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
-                  
-                  <span>Directorate B, Legislative Work 1</span>
-
-                  <div>
-                    <strong>Deadline:</strong>
-                    <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
-                  </div>
-                </a>
-              </li>
-            {% endfor %}
-          {% endif %}
-        </ul>
-        
-      </section>
-
-      
 
       <section class="cor-stack">
         

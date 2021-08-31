@@ -31,6 +31,7 @@ a.cor-link:hover {
   box-shadow: 0 0 0 3px #fff, 0 0 0 4px #dd7eb4;
 }
 
+/*
 a[href$=".pdf"]:after {
   display: inline-block;
   content: "";
@@ -54,3 +55,4 @@ a[href$=".pdf"]:after {
 .cor-icon--before a[href$=".pdf"]:after {
   content: none;
 }
+*/
