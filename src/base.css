@@ -8,7 +8,7 @@
 
 @import url("./utilities/_all.css");
 
-:root .mainContent {
+:root {
   line-height: var(--ratio);
   font-size: calc(0.333vw + 1em);
   font-family: var(--font-plain);
