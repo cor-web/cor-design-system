@@ -147,7 +147,7 @@
       const all = document.querySelectorAll('toggle-section');
 
       // Insert the button controls before the first <toggle-section>
-      first.parentNode.insertBefore(buttons, first);
+      if (first) first.parentNode.insertBefore(buttons, first);
 
       // Place the click on the parent <ul> ...
       buttons.addEventListener('click', (e) => {

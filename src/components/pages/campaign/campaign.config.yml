@@ -1,4 +1,10 @@
+title: "Work with us"
 preview: "@previewincor_new"
+variants:
+  - name: "Prod"
+    preview: "@previewincor_prod"
+    context:
+      prod: true
 context:
   metadata: "bum"
   title: "Future of Europe"

@@ -1,28 +1,42 @@
 const template = document.createElement('template');
 
+const render = element => {
+  const alt = element.getAttribute('alt');
+  const link = element.getAttribute('link');
+  const image = element.getAttribute('image');
+  const cta = element.getAttribute('cta');
+  const title = element.getAttribute('title');
+  const description = element.getAttribute('description');
 
-export class CorBanner extends HTMLElement {
-  static get properties() {
-    return {
-      image: { type: String }
-    };
-  }
-
-  constructor() {
-    super();
-
-    this.attachShadow({ mode: "open" });
-
-    template.innerHTML = `
+  template.innerHTML = `
     <style>
       :host {
+        background: white;
         display: block;
         margin-bottom: var(--space-2xs);
+      }
+      
+      :host([type="card"]) {
+        transition: border-color 0.5s ease;
+        border: solid 1px var(--oc-gray-3);
+      }
+
+      :host([type="card"]:hover) {
+        border-color: var(--oc-indigo-5);
+      }
+
+      :host([type="card"]) h3 {
+        text-decoration: underline;
+      }
+
+      :host([type="card"]:hover) h3 {
+        text-decoration: none;
       }
 
       a {
         display: block;
         position: relative;
+        text-decoration: none;
       }
       
       img {
@@ -43,7 +57,10 @@ export class CorBanner extends HTMLElement {
       
       a:hover:before {
         background-color: #0005;
-        
+      }
+
+      :host([type="card"]) a:before {
+        content: none;
       }
 
       span {
@@ -58,13 +75,44 @@ export class CorBanner extends HTMLElement {
         bottom: 0;
         width: 100%;
       }
+
+      p, h3 {
+        margin: var(--space-2xs) var(--space-2xs);
+      }
+
+      h3 {
+        color: var(--link-color);
+      }
+
+      p {
+        color: var(--text-color);
+      }
    
     </style>
-    <a href="${this.getAttribute('link')}">
-      <img src="${this.getAttribute('image')}" alt="" />
-      <span>${this.getAttribute('cta')}</span>
+    <a href="${link}">
+      ${image ? `<img src="${image}" alt="${alt}" />` : '' }
+      ${title ? `<h3>${title}</h3>` : ''}
+      ${description ? `<p>${description}</p>` : ''}
+      ${cta ? `<span>${cta}</span>` : ''}
     </a>
       `;
+};
+
+
+
+export class CorBanner extends HTMLElement {
+  static get properties() {
+    return {
+      image: { type: String }
+    };
+  }
+
+  constructor() {
+    super();
+
+    this.attachShadow({ mode: 'open' });
+
+    render(this);
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 }

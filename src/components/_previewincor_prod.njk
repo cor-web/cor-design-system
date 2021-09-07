@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        {% include '@head-pro' %}
+    </head>
+
+    <body>
+
+        {% include '@before-content--new' %}
+        
+        <div class="mainContent">
+        
+            {{ yield | safe }}
+
+            {% render '@scrolltotop' %}
+
+        </div>
+        
+        {% include '@after-content' %}
+
+
+        <script src="https://unpkg.com/@cor-web/cor-design-system/dist/bundle.modern.js"></script>
+
+    </body>
+
+</html>

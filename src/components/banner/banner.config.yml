@@ -2,3 +2,10 @@ context:
   image: "https://placeimg.com/600/400/nature"
   cta: "LorCulpa fugiat Lorem eiusmod id ut minim irure id."
   link: "www.greenpeace.org"
+variants:
+  - name: card
+    context:
+      image: "https://placeimg.com/600/400/nature"
+      title: "LorCulpa fugiat Lorem eiusmod id ut minim irure id."
+      description: Occaecat nisi fugiat magna occaecat aliquip deserunt amet sint ex in dolor voluptate consectetur. Magna qui incididunt consectetur incididunt. Adipisicing sit officia ipsum anim aliquip sunt et tempor ullamco irure ea. Sunt proident laboris fugiat sit velit laborum tempor velit.
+      link: "www.greenpeace.org"

@@ -1,5 +1,10 @@
-preview: "@previewincor_new"
 title: "Work with us"
+preview: "@previewincor"
+variants:
+  - name: "Prod"
+    preview: "@previewincor_prod"
+    context:
+      prod: true
 context:
   title: "Work with us"
   description: "At the CoR, you will have the opportunity to address the future challenges of the EU while thriving in a familiar work environment that respects human diversity and enhances individual creativity."
