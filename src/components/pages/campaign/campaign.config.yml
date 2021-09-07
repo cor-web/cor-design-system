@@ -1,6 +1,10 @@
 title: "Work with us"
 preview: "@previewincor_new"
 variants:
+  - name: "Staging"
+    preview: "@previewincor_staging"
+    context:
+      staging: true
   - name: "Prod"
     preview: "@previewincor_prod"
     context:

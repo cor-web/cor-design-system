@@ -1,0 +1,5 @@
+context:
+  label: Who's the best wizard?
+  subject: wizards
+  data-list:
+    - option
