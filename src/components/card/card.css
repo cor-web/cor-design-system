@@ -4,7 +4,6 @@
   align-items: flex-start;
   font-size: var(--step--3);
   gap: var(--space-3xs);
-  overflow: hidden;
   padding: var(--padding, 0);
 }
 
@@ -20,7 +19,6 @@
   font-size: var(--step--3);
   gap: var(--space-xs);
   padding: var(--space-m) var(--space-2xs);
-  overflow: hidden;
 }
 
 .cor-card > * {

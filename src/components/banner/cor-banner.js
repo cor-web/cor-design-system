@@ -68,6 +68,7 @@ const render = element => {
         background-color: #00000094;
         color: white;
         display: block;
+        font-size: 16px;
         font-weight: bold;
         text-decoration: none;
         padding: .5rem;
@@ -82,10 +83,12 @@ const render = element => {
 
       h3 {
         color: var(--link-color);
+        font-size: 16px;
       }
 
       p {
         color: var(--text-color);
+        font-size: 14px;
       }
    
     </style>
