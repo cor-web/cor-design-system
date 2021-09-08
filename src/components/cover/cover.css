@@ -105,3 +105,7 @@ cor-cover.cor-cover--topbar {
   max-width: 600px;
   text-align: center;
 }
+
+.cor-cover__cta:after {
+  background: var(--link-color);
+}
