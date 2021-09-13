@@ -10,7 +10,7 @@
     "site": "eleventy --serve",
     "fractal": "npm run css:build && fractal start --sync",
     "fractal:build": "fractal build",
-    "css:build": "postcss src/all.css -o dist/all.css",
+    "css:build": "postcss src/all.css -o dist/all.css && postcss src/base.css -o dist/base.css",
     "build": "rollup -c && fractal build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

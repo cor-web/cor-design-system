@@ -2,7 +2,9 @@
   type="card"
   image="{{ image }}" 
   title="{{ title }}" 
+  {% if description %}
   description="{{ description }}"
+  {% endif %}
   link="{{ link }}">
 </cor-banner>
 
