@@ -102,6 +102,7 @@
   background: #0007;
   bottom: 0;
   color: #fff;
+  font-size: var(--step--4);
   padding: var(--space-3xs);
   position: absolute;
   text-align: right;
