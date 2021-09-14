@@ -1,7 +1,17 @@
 <article class="cor-card {% if modifier %}cor-card--{{ modifier }}{% endif %} {{ cardExtraClass }}">
   {% if image %}
   
-  <img  src="{{ image.src }}" alt="{{ image.alt }}" class="cor-card__image cor-image">
+  <figure>
+    <img src="{{ image.src }}" alt="{{ image.alt }}" class="cor-card__image cor-image" />
+    {% if image.copyright %}
+    <footer><small>{{ image.copyright }}</small></footer>
+    {% endif %}
+
+    {% if image.caption %}
+    <figcaption>{{ image.caption }}</figcaption>
+    {% endif %}
+  </figure>
+
 <!--
   <img 
   class="cor-card__image"

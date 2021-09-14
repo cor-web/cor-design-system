@@ -31,3 +31,7 @@
 .cor-containerWithDivider--space-l > * + * {
   padding: var(--space-l) 0;
 }
+
+.cor-containerWithDivider--space-s > * + * {
+  padding: var(--space-s) 0;
+}

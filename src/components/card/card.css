@@ -93,3 +93,20 @@
   margin-top: 0;
   padding-top: 0;
 }
+
+.cor-card figure {
+  position: relative;
+}
+
+.cor-card figure footer {
+  background: #0007;
+  bottom: 0;
+  color: #fff;
+  padding: var(--space-3xs);
+  position: absolute;
+  text-align: right;
+}
+
+.cor-card figure:hover {
+  bottom: 0; /* main.css override */
+}

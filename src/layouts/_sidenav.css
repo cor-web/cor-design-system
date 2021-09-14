@@ -3,7 +3,7 @@
   display: grid;
   gap: var(--space-s);
   grid-template-columns: minmax(0, 1fr);
-  padding: var(--space-m) var(--space-s);
+  padding: var(--space-xs) var(--space-s);
 }
 
 @media screen and (min-width: 640px) {
