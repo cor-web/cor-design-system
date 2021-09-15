@@ -13,6 +13,14 @@
   line-height: 1.5;
 }
 
+.mainContent .txt-step-1 {
+  font-size: var(--step-1);
+}
+
+.mainContent .txt-step-2 {
+  font-size: var(--step-2);
+}
+
 .mainContent .txt-step-3 {
   font-size: var(--step-3);
 }
