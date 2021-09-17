@@ -45,3 +45,8 @@
 .cor-stack > * + * {
   margin-top: var(--stack-space);
 }
+
+/* Used when a section is alone in a webpart */
+.cor-children-sections-margin-bottom section {
+  margin-bottom: var(--stack-space);
+}
