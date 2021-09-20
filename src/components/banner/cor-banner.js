@@ -13,6 +13,11 @@ const render = element => {
       :host {
 
         /* START: To remove when Base CSS is available everywhere */
+        --fluid-min-width: 320;
+        --fluid-max-width: 1140;
+        --fluid-screen: 100vw;
+        --fluid-bp: calc( (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)) );
+
         --f-0-min: 21;
         --f-0-max: 24;
         --fc-s-min: (var(--f-0-min, 21));
@@ -45,7 +50,7 @@ const render = element => {
       }
 
       :host([type="card"]:hover) h3 {
-        text-decoration: none;
+        text-decoration: underline;
       }
 
       a {
