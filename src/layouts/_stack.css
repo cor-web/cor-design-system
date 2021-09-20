@@ -48,5 +48,5 @@
 
 /* Used when a section is alone in a webpart */
 .cor-children-sections-margin-bottom section {
-  margin-bottom: var(--stack-space);
+  margin-bottom: var(--space, 1.5rem);
 }

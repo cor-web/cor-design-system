@@ -25,10 +25,6 @@ const render = element => {
         border-color: var(--oc-indigo-5);
       }
 
-      :host([type="card"]) h3 {
-        text-decoration: underline;
-      }
-
       :host([type="card"]:hover) h3 {
         text-decoration: none;
       }
@@ -93,7 +89,7 @@ const render = element => {
    
     </style>
     <a href="${link}">
-      ${image ? `<img src="${image}" alt="${alt}" />` : '' }
+      ${image ? `<img src="${image}" alt="${alt}" />` : ''}
       ${title ? `<h3>${title}</h3>` : ''}
       ${description ? `<p>${description}</p>` : ''}
       ${cta ? `<span>${cta}</span>` : ''}

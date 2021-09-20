@@ -22,7 +22,40 @@
             <div class="ms-webpart-zone ms-fullWidth">
 		<div id="MSOZoneCell_WebPartWPQ3" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
 			<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
-				<div webpartid="846a355e-8a65-4e23-bcff-630f9838408f" haspers="false" id="WebPartWPQ3" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div id="cbqwpctl00_ctl58_g_846a355e_8a65_4e23_bcff_630f9838408f" class="cbq-layout-main"><div class="TitleHeader">Le CdR et le président</div><div class="news_image"><div class="socials"><ul class="social_media_icons"><li><a class="btn btn-social-icon btn-twitter" target="_blank" href="https://twitter.com/CoR_President"><span class="fa fa-twitter"></span></a></li></ul></div><img id="news-picture-hp" src="http://www.cor.europa.eu/Style Library/Cor/style/img/CoR-President.png" alt=""><div class="news_description"><div class="news_title"><a href="https://cor.europa.eu/fr/news/Pages/Conference-Future-Europe-9-Mai-Debate.aspx">La conférence sur l'avenir de l'Europe ne peut réussir qu'en allant au-delà de Bruxelles et des capitales et en impliquant les communautés locales et régionales</a></div><div class="news_date">09.05.2021</div></div></div><div class="news_buttons btn_group"><a id="PresidentAgendaButton" class="btn cor_button pull-left" href="/fr/about/president/Pages/president.aspx" role="button">&nbsp;Le président&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a><a id="FVicePresidentButton" class="btn cor_button pull-right" href="/fr/about/vice-president/Pages/first-vice-president.aspx" role="button">&nbsp;Le premier vice-président&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a></div></div><div class="ms-clear"></div></div>
+				<div webpartid="846a355e-8a65-4e23-bcff-630f9838408f" haspers="false" id="WebPartWPQ3" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div id="cbqwpctl00_ctl58_g_846a355e_8a65_4e23_bcff_630f9838408f" class="cbq-layout-main"><div class="TitleHeader">Le CdR et le président</div>
+                
+
+                    {% render "@banner--card" , {type: "card", link: "www.seashepherd.org" , image: "http://www.cor.europa.eu/Style Library/Cor/style/img/CoR-President.png", title: "La
+                            conférence sur l'avenir de l'Europe ne peut réussir qu'en allant au-delà de Bruxelles et des capitales et en
+                            impliquant les communautés locales et régionales", description: false}, true %}
+
+<!--
+                    <div class="news_image">
+                        <div class="socials">
+                            <ul class="social_media_icons">
+                                <li><a class="btn btn-social-icon btn-twitter" target="_blank" href="https://twitter.com/CoR_President"><span
+                                class="fa fa-twitter"></span></a></li>
+                            </ul>
+                        </div><img id="news-picture-hp" src="http://www.cor.europa.eu/Style Library/Cor/style/img/CoR-President.png" alt="">
+                        <div class="news_description">
+                            <div class="news_title"><a href="https://cor.europa.eu/fr/news/Pages/Conference-Future-Europe-9-Mai-Debate.aspx">La
+                            conférence sur l'avenir de l'Europe ne peut réussir qu'en allant au-delà de Bruxelles et des capitales et en
+                            impliquant les communautés locales et régionales</a></div>
+                            <div class="news_date">09.05.2021</div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="news_buttons btn_group"><a id="PresidentAgendaButton" class="btn cor_button pull-left"
+                            href="/fr/about/president/Pages/president.aspx" role="button">&nbsp;Le président&nbsp;<span
+                            class="glyphicon glyphicon-chevron-right"></span></a><a id="FVicePresidentButton"
+                            class="btn cor_button pull-right" href="/fr/about/vice-president/Pages/first-vice-president.aspx"
+                            role="button">&nbsp;Le premier vice-président&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="ms-clear"></div>
+            </div>
+
+
 			</div>
 		</div>
 	</div>
@@ -47,6 +80,8 @@
 					À la une 
 				</div>
 
+                {% render "@banner--card" , {type: "card", link: "www.seashepherd.org" , image: "/assets/images/Banner-future-of-europe.png", title: "Future of Europe, get information about our survey", description: "The Conference on the Future of Europe was launched on 9 May 2021 (Europe Day) in Strasbourg."}, true %}
+
                 
 				
 				<div class="banners_container"><div class="banner"><a href="https://cor.europa.eu/en/news/Pages/learn-about-the-features-of-the-new-app-for-ios-and-android-devices.aspx"><img class="img-fluid" src="http://www.cor.europa.eu/en/events/PublishingImages/Pages/9th%20of%20may/4519-CoR-App-promotion-Web-InTheSpotlight-700x200px.png" alt=""></a></div><div class="banner"><a href="https://cor.europa.eu/en/events/Pages/multilevel-climate-and-energy-dialogue.aspx"><img class="img-fluid" src="http://www.cor.europa.eu/en/engage/PublishingImages/Pages/Green%20deal/green%20deal.png" alt=""></a></div></div>
@@ -55,7 +90,7 @@
         </div>	
     	<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 darkblue">
 
-            {% render "@banner--card" , {type: "card", image: "/assets/images/plenary/bannerPlenary.png", title: "143th Plenary, 24-25 June 2021 ", description: false}, true %}
+            {% render "@banner--card" , {type: "card", link: "www.seashepherd.org" , image: "/assets/images/plenary/bannerPlenary.png", title: "143th Plenary, 24-25 June 2021 ", description: false}, true %}
 
             {% render "@banner--card" , {type: "card", image: "/assets/images/plenary/speaker.png", title: "14 June 2021 - 12:00, Debate by Elisa Ferreira on new cohesion policy programmes in synergy with recovery tools", description: false}, true %}
             
@@ -79,7 +114,7 @@
         <div id="HPMemberContainer" class="HPMemberContainer carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
     
-        <div id="HPMemberContainer-7" class="carousel-item">
+        <div id="HPMemberContainer-7" class="carousel-item active">
             <div class="socials">
                 <ul class="social_media_icons">
                     
@@ -88,34 +123,12 @@
                     
                 </ul>
             </div>
-            <div class="carousel-image">
-           
-                <img alt="Christophe ROUILLON" src="https://cor.europa.eu/Members_Portraits/2020345.jpeg" id="HPMemberPic-7" class="d-block w-100">
-            
-            </div>
-            <div class="carousel-caption">
-                <div class="HPMemberName">
-                    <a id="HPMemberName-7" class="HPMemberName" href="/fr/Members/Pages/memberprofile.aspx?MemberId=2020345">
-                        Christophe ROUILLON (France<span id="ctl00_ctl58_g_84f0a576_cd71_4903_b7f9_e1036764b20e_ctl00_MainContainer_ctl01_Span1" class="HPMemberGrp">/PES</span>)</a>
-                </div>
-                <div class="HPMemberRepresentation">
-                    <span class="HPMemberRepLabel">Representing: </span><span class="HPMemberRepValue">
-                        France, Pays de la Loire</span>
-                </div>
-                <span class="HPMemberGrp">
-                    PES (Party of European Socialists)</span> <span class="HPMemberCom">
-                        
-                    </span>
-                <div class="HPMemberOpinion">
 
-                  
-                  <a class="HPMemberOpLink" href="/fr/news/Pages/cohesion-policy-and-over-centralised-EU-Recovery-Plan.aspx">
-                        Regional leaders call to avoid competition between cohesion policy and over-centralised EU Recovery Plan</a>
-                </div>
-            </div>
+            {% render "@banner--card" , {type: "card", link: "www.seashepherd.org" , image: "https://cor.europa.eu/Members_Portraits/2020345.jpeg", title: "Christophe ROUILLON (France)", description: "Regional leaders call to avoid competition between cohesion policy and over-centralised EU Recovery Plan"}, true %}
+
         </div>
     
-        <div id="HPMemberContainer-8" class="carousel-item active">
+        <div id="HPMemberContainer-8" class="carousel-item">
             <div class="socials">
                 <ul class="social_media_icons">
                     
