@@ -141,5 +141,49 @@ export default [
       }),
       versionInjector()
     ]
+  },
+  {
+
+    // ES6 output
+
+    input: 'src/components/banner/cor-banner.js',
+    output: {
+      file: 'dist/banner/cor-banner.modern.js',
+      format: 'iife'
+    },
+    plugins: [
+      terser({
+        ecma: 2018,
+        mangle: { toplevel: true },
+        compress: {
+          module: true,
+          toplevel: true,
+          unsafe_arrows: true
+        },
+        output: { quote_style: 1 }
+      }),
+      versionInjector()
+    ]
+  },
+  {
+    // ES5 output
+
+    input: 'src/components/banner/cor-banner.js',
+    output: {
+      file: 'dist/banner/cor-banner.legacy.js',
+      format: 'iife'
+    },
+    plugins: [
+      babel({ babelHelpers: 'bundled' }),
+      terser({
+        ecma: 2015,
+        mangle: { toplevel: true },
+        compress: {
+          toplevel: true
+        },
+        output: { quote_style: 1 }
+      }),
+      versionInjector()
+    ]
   }
 ]

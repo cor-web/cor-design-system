@@ -11,6 +11,25 @@ const render = element => {
   template.innerHTML = `
     <style>
       :host {
+
+        /* START: To remove when Base CSS is available everywhere */
+        --f-0-min: 21;
+        --f-0-max: 24;
+        --fc-s-min: (var(--f-0-min, 21));
+        --fc-s-max: (var(--f-0-max, 24));
+        --fc-2xs-min: (var(--fc-s-min) * 0.5);
+        --fc-2xs-max: (var(--fc-s-max) * 0.5);
+        --space-2xs: calc( ((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-2xs-max) - var(--fc-2xs-min)) * var(--fluid-bp) );
+
+        --oc-blue-8: #1971c2;
+        --oc-indigo-5: #5c7cfa;
+        --oc-gray-3: #dee2e6;
+        --oc-gray-9: #212529;
+
+        --link-color: var(--oc-blue-8);
+        --text-color: var(--oc-gray-9);
+        /* END: To remove when Base CSS is available everywhere */
+
         background: white;
         display: block;
         margin-bottom: var(--space-2xs);
@@ -80,6 +99,7 @@ const render = element => {
       h3 {
         color: var(--link-color);
         font-size: 16px;
+        margin: var(--space-2xs) var(--space-2xs);
       }
 
       p {
