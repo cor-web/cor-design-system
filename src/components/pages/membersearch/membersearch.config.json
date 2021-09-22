@@ -1,0 +1,25 @@
+{
+  "preview": "@previewincor_new",
+  "context": {
+    "members": [
+      {
+        "Name": "Rick Deckard",
+        "Country": "Slovenia",
+        "Region": "Vzhodna",
+        "PolGroup": "EPP"
+      },
+      {
+        "Name": "Roy Batty",
+        "Country": "Austria",
+        "Region": "Wien",
+        "PolGroup": "EPP"
+      },
+      {
+        "Name": "Dave Holden",
+        "Country": "Bulgaria",
+        "Region": "Jadranska Hrvatska",
+        "PolGroup": "EPP"
+      }
+    ]
+  }
+}
