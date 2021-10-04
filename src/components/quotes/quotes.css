@@ -52,3 +52,25 @@
   bottom: 0;
   right: 0;
 }
+
+
+/* BArometer video in campaign page */
+
+.cor-quote-text {
+  --space: var(--space-s);
+  display: grid;
+  grid-template:
+  "left links"
+  "right quote"/1fr 1fr;
+  padding: var(--space-s) 0;
+  }
+  
+  .cor-quote-text .blockquote {
+    font-size: var(--step--3);
+    }
+    
+    
+    
+    .ec-cor-barometer-webstreaming__links {
+    font-size: var(--step--3);
+    }

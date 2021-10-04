@@ -29,6 +29,22 @@
   font-size: var(--step-4);
 }
 
+.mainContent .txt-step--1 {
+  font-size: var(--step--1);
+}
+
+.mainContent .txt-step--2 {
+  font-size: var(--step--2);
+}
+
+.mainContent .txt-step--3 {
+  font-size: var(--step--3);
+}
+
+.mainContent .txt-step--4 {
+  font-size: var(--step--4);
+}
+
 .text-dark {
   color: var(--oc-gray-10);
 }
