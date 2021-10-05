@@ -1,6 +1,5 @@
 .cor-grid {
   --space: var(--space-xs);
-  --measure: var(--threshold, 350px);
 
   display: grid;
   gap: var(--space);
@@ -8,9 +7,6 @@
 
 @supports (width: min(250px, 100%)) {
   .cor-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(min(var(--measure, 350px), 100%), 1fr)
-    );
+    grid-template-columns:repeat(auto-fill, minmax(min(270px, 50%), 1fr));
   }
 }
