@@ -2,7 +2,8 @@
   --space: var(--space-s);
 
   display: grid;
-  gap: var(--space);
+  column-gap: var(--space);
+  row-gap: var(--space-2xs);
   grid-template-columns:repeat(auto-fill, minmax(min(270px, 50%), 1fr));
 }
 
@@ -11,7 +12,7 @@
 .cor-l-2andlist > :nth-child(n + 3) {
   border-top: dotted 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
   grid-column: 1 / -1;
-  padding: var(--space) 0 0;
+  padding: var(--space-2xs) 0 0;
 }
 
 .cor-l-2andlist > :nth-child(3) {
