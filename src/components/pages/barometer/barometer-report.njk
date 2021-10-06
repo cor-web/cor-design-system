@@ -2,31 +2,6 @@
   
   {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
-  <!-- Initiatives -->
-  <article class="cor-box">
-    <h2>Initiatives</h2>
-    <div class="cor-switcher items-start">
-    {% for initiative in initiatives %}
-      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
-
-      <!--
-      <article class="cor-card">
-        <img class="cor-image cor-card__image" src="{{ initiative.image }}" alt="alternative text" class="cor-image">
-        <time class="cor-card__date" datetime="2015-05-16 19:00">{{ initiative.date }}</time>
-        <h3 class="cor-card__title cor-fontsize--3">
-          <a class="cor-card__title__link" href="{{ initiative.link.target }}">{{ initiative.link.text }} 
-            {% if initiative.link.size %}
-            <small class="cor-card__title__link__info">({{ initiative.link.size }})</small>
-            {% endif %}
-          </a>
-        </h3>
-      </article>
-      -->
-    {% endfor %}
-    </div>
-  </article>
-  <!-- /Initiatives -->
-
   <div role="separator"></div>
 
   <div class="cor-with-sidenav cor-content">
@@ -37,25 +12,50 @@
       
       <section class="cor-rich-text">
       
-        <h2 id="Our goals">Our goals</h2>
+        <h2>A 180 billion budget cut is putting at risk regional and local finances</h2>
 
-        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+        <p>In 2020 local and regional authorities across Europe experienced an increase in expenditure of around 125 billion euros – due to
+        pandemic related measures - and a fall in revenues of 55 billion euros - largely due to decreased economic activity, tax, tariff and
+        fee income.</p>
 
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+        <p>This ''scissors effect'' translates into a gap of around 180 billion euros in our finances, with 130 billion lost by regional and
+        intermediate levels, and 50 billion lost at municipal level. German LRAs are the by far the most hit in absolute terms (-111 billions),
+        followed by Italian (-22,7) and Spanish (-12,3) ones. The losses as percentage of total revenues were highest for LRAs in Cyprus
+        (-25%), Bulgaria (-15,3%) and Luxembourg (-13,5%).</p>
 
-        <h2>Anim minim exercitation est cillum exercitation commodo</h2>
+        <h3>How big is the scissors effect</h3>
+        <ol>
+          <li><span>Austria</span><span>-2.30</span></li>
+          <li><span>Belgium</span><span>-4.70</span></li>
+          <li><span>Bulgaria</span><span>-0.64</span></li>
+          <li><span>Croatia</span><span>-0.24</span></li>
+          <li><span>Cyprus</span><span>-0.075</span></li>
+          <li><span>Czech Republic</span><span>-1.95</span></li>
+          <li><span>Denmark</span><span> -1.91</span></li>
+          <li><span>Estonia</span><span> 0.03</span></li>
+          <li><span>Finland</span><span> -2.00</span></li>
+          <li><span>France </span><span>-7.20</span></li>
+          <li><span>Germany </span><span>-111.7</span></li>
+          <li><span>Greece</span><span> -0.12</span></li>
+          <li><span>Hungary</span><span> -0.15</span></li>
+          <li><span>Ireland</span><span> -0.32</span></li>
+          <li><span>Italy </span><span>-22.78</span></li>
+          <li><span>Latvia</span><span> -0.10</span></li>
+          <li><span>Lithuania</span><span> -0.08</span></li>
+          <li><span>Luxembourg </span><span>-0.42</span></li>
+          <li><span>Malta</span><span> n/a</span></li>
+          <li><span>Netherlands </span><span>-2.77</span></li>
+          <li><span>Poland</span><span> -3.00</span></li>
+          <li><span>Portugal </span><span>-0.55</span></li>
+          <li><span>Romania</span><span> -0.43</span></li>
+          <li><span>Slovakia </span><span>-0.20</span></li>
+          <li><span>Slovenia</span><span> -0.20</span></li>
+          <li><span>Spain</span><span> -12.37</span></li>
+          <li><span>Sweden</span><span> -3.49</span></li>
+          <li><span>EU-27 </span><span>-179.67</span></li>
+        </ol>
 
-        <h3>exercitation commodo</h3>
-
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <h3>Anim minim exercitation</h3>
-        
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <div class="padding margin-y bg inline-block">
-          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
-        </div>
+        <h3>EU regions worst-hit by COVID-19</h3>
 
       </section>
 
@@ -84,14 +84,9 @@
           
           <h4>Upcoming events</h4>
 
-          <div class="cor-l-2andlist margin-bottom">
+          <div class="cor-grid margin-bottom">
           {% for newsitem in upcomingEvents %}
-
-            {% set cardExtraClass = "col-span-full" %}
-            {% if loop.index < 3 %}
-              {% set cardExtraClass = "bg padding" %}
-            {% endif %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "bg padding" } %}
           {% endfor %}
           </div>
 
@@ -212,7 +207,7 @@
 
       <section>
         <h2 id="contact">Follow us</h2>
-        <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> 
+        <a href="test.be" class="txt-xl">#EUcareers</a> <a href="test.be" class="txt-xl">#EUcareers</a> <a href="test.be" class="txt-xl">#EUcareers</a> 
       </section>
 
       <section>
