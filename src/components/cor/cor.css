@@ -1,0 +1,4 @@
+/* cor elements to clean */
+footer a {
+  font-size: var(--text-size);
+}
