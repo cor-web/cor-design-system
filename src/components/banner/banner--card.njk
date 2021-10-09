@@ -1,12 +1,15 @@
 <cor-banner
   type="card"
   image="{{ image }}" 
+  imageWidth="{{ imageWidth }}" 
+  imageHeight="{{ imageHeight }}" 
   title="{{ title }}" 
   {% if description %}
   description="{{ description }}"
   {% endif %}
   link="{{ link }}"
-  class="{{ class }}">
+  class="{{ class }}"
+  >
 </cor-banner>
 
 <script type="module" src='../banner/cor-banner.js'></script>

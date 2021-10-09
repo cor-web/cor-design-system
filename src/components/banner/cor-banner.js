@@ -3,7 +3,9 @@ const template = document.createElement('template');
 const render = element => {
   const alt = element.getAttribute('alt');
   const link = element.getAttribute('link');
-  const image = element.getAttribute('image');
+  const imageSRC = element.getAttribute('image');
+  const imageWidth = element.getAttribute('imageWidth');
+  const imageHeight = element.getAttribute('imageHeight');
   const cta = element.getAttribute('cta');
   const title = element.getAttribute('title');
   const description = element.getAttribute('description');
@@ -60,9 +62,13 @@ const render = element => {
       }
       
       img {
+        box-shadow: inset 0 0 80px rgb(230 237 236 / 50%);
         display: block;
-        max-width: 100%;
-
+        height: auto;
+        width: 100%;
+        aspect-ratio: ${imageWidth} / ${imageHeight};
+        transition: .3s,filter;
+        opacity: 1;
       }
 
       a:before {
@@ -114,7 +120,7 @@ const render = element => {
    
     </style>
     <a href="${link}">
-      ${image ? `<img src="${image}" alt="${alt}" />` : ''}
+      ${imageSRC ? `<img src="${imageSRC}" alt="${alt}" width="${imageWidth}" height="${imageHeight}" />` : ''}
       ${title ? `<h3>${title}</h3>` : ''}
       ${description ? `<p>${description}</p>` : ''}
       ${cta ? `<span>${cta}</span>` : ''}
