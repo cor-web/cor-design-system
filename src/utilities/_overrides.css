@@ -10,3 +10,8 @@
 .TitleText {
   color: #578191;
 }
+
+/* Twitter Wall */
+.smk img {
+  display: initial;
+}
