@@ -7,7 +7,7 @@ class TableOfContent extends HTMLElement {
   }
 
   getSections() {
-    const sectionsElements = document.querySelectorAll('h2[id],h3[id],.cor-rich-text h2');
+    const sectionsElements = document.querySelectorAll('.cor-container h2[id],.cor-container h3[id],.cor-rich-text h2');
 
     this.sections = [...sectionsElements].map((section, i) => {
       section.classList.add('cor-anchor');
