@@ -2,20 +2,30 @@ class TableOfContent extends HTMLElement {
   constructor() {
     super();
 
-    const root = this.attachShadow({mode: "open"});
+    this.root = this.attachShadow({ mode: "open" });
+    this.render();
+  }
+
+  getSections() {
     const sectionsElements = document.querySelectorAll('h2[id],h3[id],.cor-rich-text h2');
-    
-    this.sections = [...sectionsElements].map( (section, i) => {
+
+    this.sections = [...sectionsElements].map((section, i) => {
       section.classList.add('cor-anchor');
-      
+
       if (!section.id) {
         section.id = i;
       }
 
-      return ({ id: section.id,title:section.textContent});
+      return ({ id: section.id, title: section.textContent });
     });
-    
-    root.innerHTML = `
+
+    return this.sections;
+  }
+
+  render() {
+    this.sections = this.getSections();
+
+    this.root.innerHTML = `
       <style>
         ul {
           display: grid;
@@ -43,14 +53,12 @@ class TableOfContent extends HTMLElement {
           text-decoration: none;
           margin-top: var(--space-4xs, 1rem);
         }
-
         a:link,
         a:focus,
         a:visited,
         a:active {
           color: var(--link-color);
         }
-
         a:hover {
           text-decoration: underline;
         }
@@ -58,7 +66,6 @@ class TableOfContent extends HTMLElement {
         :host {
           display: block;
         }
-
         .readingSection {
           
         }
@@ -66,7 +73,7 @@ class TableOfContent extends HTMLElement {
       <nav class="cor-toc cor-toc--sticky" aria-labelledby="sections-heading">
         <h2 id="sections-heading"><slot name="toc-title">Contents</slot></h2>
         <ul class="list-disc">
-          ${this.sections.map( section => `
+          ${this.sections.map(section => `
             <li>
               <a href="#${section.id}">${section.title}</a>
             </li>
