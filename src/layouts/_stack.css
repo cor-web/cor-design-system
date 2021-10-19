@@ -48,7 +48,5 @@
 
 /* Used when a section is alone in a webpart */
 .cor-stack .ms-webpartzone-cell:not(:first-child) {
-  border-top: 3px solid rgb(var(--page-color,var(--oc-gray-8-rgb)));
   margin-top: var(--space-s);
-  padding-top: var(--space-s);
-}
+  }
