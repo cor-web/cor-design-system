@@ -47,6 +47,8 @@
 }
 
 /* Used when a section is alone in a webpart */
-.cor-children-sections-margin-bottom section {
-  margin-bottom: var(--space, 1.5rem);
+.cor-stack .ms-webpartzone-cell:not(:first-child) {
+  border-top: 3px solid rgb(var(--page-color,var(--oc-gray-8-rgb)));
+  margin-top: var(--space-s);
+  padding-top: var(--space-s);
 }
