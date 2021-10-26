@@ -22,7 +22,7 @@
 }
 
 .cor-stack--m {
-  --stack-space: var(--space-l);
+  --stack-space: var(--space-m);
 }
 
 .cor-stack--l {
@@ -47,6 +47,12 @@
 }
 
 /* Used when a section is alone in a webpart */
+<<<<<<< HEAD
 .cor-stack .ms-webpartzone-cell:not(:first-child) {
   margin-top: var(--space-s);
   }
+=======
+.cor-children-sections-margin-bottom section {
+  margin-bottom: var(--space, 1.5rem);
+}
+>>>>>>> d2d8c7066bb1b35d4822618c49ba083e9ef7d9cb

@@ -1,0 +1,13 @@
+<ul class="cor-list--thumbnail-list">
+  {% for item in items %}
+  <li>
+    <div class="cor-list--thumbnail__thumbnail">
+      <img src="{{ item.image }}" alt/>
+    </div>
+    <div>
+      <span>{{ item.title }}</span>
+      <span>{{ item.description }}</span>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
