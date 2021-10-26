@@ -22,7 +22,7 @@
 }
 
 .cor-stack--m {
-  --stack-space: var(--space-l);
+  --stack-space: var(--space-m);
 }
 
 .cor-stack--l {

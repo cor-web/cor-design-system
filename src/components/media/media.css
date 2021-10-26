@@ -1,0 +1,37 @@
+.cor-media__image {
+  grid-area: img;
+}
+.cor-media__title {
+  grid-area: title;
+}
+.cor-media__content {
+  grid-area: bd;
+}
+.cor-media__footer {
+  grid-area: ft;
+}
+
+.cor-media {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-areas:
+    "title"
+    "img"
+    "bd"
+    "ft";
+}
+
+@media (min-width: 600px) {
+  .cor-media {
+    grid-template-columns: 150px 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "img title"
+      "img bd"
+      "ft ft";
+  }
+
+  .cor-media__image {
+    width: 150px;
+  }
+}

@@ -53,3 +53,9 @@ variants:
             text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
             target: "document.pdf"
             size: "3 MB PDF"
+  - name: "thumbnails"
+    context:
+      items:
+        - image: "https://placeimg.com/300/200/nature"
+          title: "Aliquip aliqua veniam incididunt amet adipisicing labore elit et elit officia."
+          description: "In minim elit aute exercitation elit non id occaecat irure do Lorem sunt deserunt tempor. Dolore consequat elit sunt consequat est cupidatat. Aliqua ipsum fugiat labore ex. Labore fugiat pariatur enim in consectetur pariatur ad quis proident dolor sunt tempor. Aliquip dolore do adipisicing sit Lorem consectetur dolor ipsum consequat aliqua ex irure nulla. Dolore elit commodo commodo consequat mollit ut magna."

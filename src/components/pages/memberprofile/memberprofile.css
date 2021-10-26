@@ -1,0 +1,3 @@
+.cor-page--member cor-cover {
+  grid-template: "header header" "cover description" / 250px 1fr;
+}

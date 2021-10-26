@@ -54,3 +54,7 @@
 .padding-right-xl {
   padding-right: var(--space-xl) !important;
 }
+
+.padding-bottom {
+  padding-bottom: var(--space-xs) !important;
+}

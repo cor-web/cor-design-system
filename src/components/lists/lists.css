@@ -44,3 +44,9 @@
 .cor-list--withdividers > li + li {
   border-top: solid 1px var(--oc-gray-5);
 }
+
+.cor-list--thumbnail-list li {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-xs);
+}
