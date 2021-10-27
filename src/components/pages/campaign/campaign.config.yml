@@ -2,8 +2,9 @@ title: "Work with us"
 preview: "@previewincor_new"
 variants:
   - name: "Staging"
-    preview: "@previewincor_staging"
+    preview: "@previewincor_new"
     context:
+      css: "bouhou.css"
       staging: true
   - name: "Prod"
     preview: "@previewincor_prod"
