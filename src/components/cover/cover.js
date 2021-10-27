@@ -1,3 +1,4 @@
+/*
 const template = document.createElement("template");
 template.innerHTML = `
   <style>
@@ -19,3 +20,4 @@ class CorCover extends HTMLElement {
 }
 
 customElements.define("cor-cover", CorCover);
+*/

@@ -1,83 +1,84 @@
-<div class="bg-white cor-container" style="--page-color: 0 , 0 , 0">
+<div class="bg-white cor-container cor-page--member">
 
+
+  <cor-cover class="cor-cover--topbar">
+    <hgroup slot="title">
+      <h1 class="margin-0">{{ title }}</h1>
+      {% if subtitle %} <h2 class="cor-h4">{{ subtitle }}</h2>{% endif %}
+    </hgroup>
+
+    <div slot="image" class="cor-stack col-span-2">
+      <img src="https://placeimg.com/600/400/nature" alt />
+      <img class="img-fluid" alt="EPP" src="https://cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-epp.png">
+    </div>
+
+    <div slot="description" class="cor-stack cor-stack--3xs">
+      
+      <div>
+        <h2 class="cor-h6 font-bold">Political group</h2>
+        <p>ECR (European Conservatives and Reformists Group)</p>
+      </div>
+
+      <div>
+        <h2 class="cor-h6 font-bold">Commissions</h2>
+        <ul class="margin margin-bottom-0 list-none">
+          <li>COTER (Commission for Territorial Cohesion Policy)</li>
+          <li>ENVE (Commission for Environment, Climate change and Energy)</li>
+        </ul>
+      </div>
+    
+      <div>
+        <h2 class="cor-h6 font-bold">Languages</h2>
+        <ul class="margin margin-bottom-0 list-none">
+          <li>Polish</li>
+          <li>French</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="cor-h6 font-bold">Represented Country</h2>
+        <p>Poland</p>
+      </div>
+
+      <div>
+        <h2 class="cor-h6 font-bold">Member of the European Committee of the Regions since</h2>
+        <p>08.11.2016</p>
+      </div>
+      
+      
+    </div>
+
+    <div class="cor-stack cor-stack--3xs">
+      <div>
+        <h2 class="cor-h6 font-bold" id="contact">Contact</h2>
+        <ul class="margin margin-bottom-0 list-none">
+          <li>
+            <a href="tel:+33500000000" class="icon icon-before" style="--icon:var(--icon-phone)">+48 17 8501780</a>
+          </li>
+          <li>
+            <a href="mailto:j.rog@podkarpackie.pl" class=" icon icon-before" style="--icon:var(--icon-envelope)">j.rog@podkarpackie.pl</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="cor-h6 font-bold"  id="socialmedia">Social media</h2>
+        <ul class="margin margin-bottom-0 list-none">
+          <li>
+            <a href="tel:+33500000000" class="icon icon-before" style="--icon:var(--icon-facebook)">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </cor-cover>
+
+  <div role="separator"></div>
+  
   <div class="cor-with-sidenav cor-content">
 
     {% render "@toc--dynamic" , {nav: contentnav}, true %}
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
-
-      <div>
-        <hgroup>
-          <h1 class="margin-0">{% if title %} {{ title }} {% endif %}</h1>
-          <h2 class="cor-h4">{% if subtitle %} {{ subtitle }} {% endif %}</h2>
-        </hgroup>
-        
-        <div class="cor-with-sidebar cor-with-sidebar--left padding-0 padding-bottom" style="--sideWidth: 300px">
-          <div class="cor-stack">
-            <img src="https://placeimg.com/600/400/nature" alt />
-            <img class="img-fluid" alt="EPP" src="https://cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-epp.png">
-          </div>
-          <div class="cor-stack cor-stack--xs">
-            
-            <div>
-              <h2 class="cor-h5">Political group</h2>
-              <p>ECR (European Conservatives and Reformists Group)</p>
-            </div>
-
-            <div>
-              <h2 class="cor-h5">Commissions</h2>
-              <ul class="margin margin-bottom-0">
-                <li>COTER (Commission for Territorial Cohesion Policy)</li>
-                <li>ENVE (Commission for Environment, Climate change and Energy)</li>
-              </ul>
-            </div>
-          
-            <div>
-              <h2 class="cor-h5">Languages</h2>
-              <ul class="margin margin-bottom-0">
-                <li>Polish</li>
-                <li>French</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 class="cor-h5">Represented Country</h2>
-              <p>Poland</p>
-            </div>
-
-            <div>
-              <h2 class="cor-h5">Member of the European Committee of the Regions since</h2>
-              <p>08.11.2016</p>
-            </div>
-            
-            <div>
-              <h2 class="cor-h5" id="contact">Contact</h2>
-              <ul class="margin margin-bottom-0 list-none">
-                <li>
-                  <a href="tel:+33500000000" class="txt-xl icon icon-before" style="--icon:var(--icon-phone)">+48 17 8501780</a>
-                </li>
-                <li>
-                  <a href="mailto:j.rog@podkarpackie.pl" class="txt-xl icon icon-before" style="--icon:var(--icon-envelope)">j.rog@podkarpackie.pl</a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 class="cor-h5"  id="socialmedia">Social media</h2>
-              <ul class="margin margin-bottom-0 list-none">
-                <li>
-                  <a href="tel:+33500000000" class="txt-xl icon icon-before" style="--icon:var(--icon-facebook)">Facebook</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      
-      
-      
-
 
       <section class="cor-rich-text">
       

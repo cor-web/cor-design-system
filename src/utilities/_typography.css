@@ -64,3 +64,7 @@
 .text-mid {
   color: var(--oc-gray-5);
 }
+
+.font-bold {
+  font-weight: 700 !important;
+}
