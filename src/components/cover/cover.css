@@ -16,10 +16,11 @@ cor-cover {
     "header"
     "cover"
     "description";
+  padding: var(--space-xs);
 }
 
-cor-cover.cor-cover--1col {
-  grid-template-columns: 1fr;
+cor-cover * {
+  max-width: 75ch;
 }
 
 @media screen and (min-width: 640px) {
@@ -28,6 +29,14 @@ cor-cover.cor-cover--1col {
       "header header"
       "description cover" / 1fr 1fr;
   }
+
+  cor-cover.cor-cover--1col {
+    grid-template:
+      "header"
+      "description";
+    justify-content: center;
+  }
+ 
 }
 
 cor-cover > :first-child {
@@ -79,6 +88,10 @@ cor-cover > div:nth-child(0n + 2) {
   cor-cover > div:nth-child(0n + 2) {
     grid-area: description;
     padding: 0 0 0 var(--space);
+  }
+
+  cor-cover.cor-cover--1col > div:nth-child(0n + 2) {
+    grid-area: description;
   }
 }
 
