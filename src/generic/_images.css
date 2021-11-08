@@ -16,10 +16,13 @@
   vertical-align: middle; /* [3] */
 }
 
-/* .ms-webpart-menuArrowImg img */
-
-.mainContent img[width] {
-  width: auto; /* Defer to max-width */
+/**
+   * If a `width` and/or `height` attribute has been explicitly defined, let’s
+   * not make the image fluid.
+   */
+.mainContent img[width],
+.mainContent img[height] {
+  max-width: none;
 }
 
 .mainContent img[width][height] {
