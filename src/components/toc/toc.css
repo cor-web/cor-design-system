@@ -1,6 +1,8 @@
 .cor-toc {
   background: white;
   display: block;
+  border: solid 1px var(--oc-gray-3);
+  padding: var(--space-3xs);
 }
 
 @media screen and (min-width: 640px) {
@@ -9,3 +11,4 @@
     top: 150px;
   }
 }
+

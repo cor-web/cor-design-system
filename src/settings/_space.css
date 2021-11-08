@@ -18,11 +18,11 @@
 }
 
 .mainContent {
-  --fc-5xs-min: (var(--fc-s-min) * 0.25);
-  --fc-5xs-max: (var(--fc-s-max) * 0.25);
+  --fc-5xs-min: (var(--fc-s-min) * 0.15);
+  --fc-5xs-max: (var(--fc-s-max) * 0.15);
 
-  --fc-4xs-min: (var(--fc-s-min) * 0.25);
-  --fc-4xs-max: (var(--fc-s-max) * 0.25);
+  --fc-4xs-min: (var(--fc-s-min) * 0.20);
+  --fc-4xs-max: (var(--fc-s-max) * 0.20);
 
   --fc-3xs-min: (var(--fc-s-min) * 0.25);
   --fc-3xs-max: (var(--fc-s-max) * 0.25);
@@ -50,6 +50,9 @@
 
   --fc-3xl-min: (var(--fc-s-min) * 6);
   --fc-3xl-max: (var(--fc-s-max) * 6);
+
+  --fc-4xl-min: (var(--fc-s-min) * 8);
+  --fc-4xl-max: (var(--fc-s-max) * 8);
 
   /* T-shirt sizes */
   --space-5xs: calc(
@@ -94,6 +97,10 @@
   );
   --space-3xl: calc(
     ((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-3xl-max) - var(--fc-3xl-min)) *
+      var(--fluid-bp)
+  );
+  --space-4xl: calc(
+    ((var(--fc-4xl-min) / 16) * 1rem) + (var(--fc-4xl-max) - var(--fc-4xl-min)) *
       var(--fluid-bp)
   );
 

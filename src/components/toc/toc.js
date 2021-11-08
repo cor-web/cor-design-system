@@ -29,7 +29,7 @@ class TableOfContent extends HTMLElement {
       <style>
         ul {
           display: grid;
-          gap: var(--space-3xs);
+          gap: var(--space-4xs);
           margin: var(--space-3xs) 0 0 1rem;
           padding: 0;
         }
@@ -42,15 +42,15 @@ class TableOfContent extends HTMLElement {
         
         h2 {
           color: var(--g-8);
-          font-size: var(--step-0) !important;
-          font-weight: normal;
+          font-size: var(--step--3) !important;
+          font-weight: bold;
           text-transform: initial;
           margin: 0 0 var(--space--4xs) 0;
         }
         
         a {
           font-size: var(--step--3);
-          text-decoration: none;
+          text-decoration: underline;
           margin-top: var(--space-4xs, 1rem);
         }
         a:link,
