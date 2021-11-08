@@ -13,7 +13,6 @@
 }
 
 cor-cover > :first-child {
-  align-items: flex-start;
   padding: 0;
 }
 

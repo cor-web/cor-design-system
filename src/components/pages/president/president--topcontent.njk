@@ -1,26 +1,57 @@
-<div class="bg-white cor-container" style="--page-color: 10, 175, 203">
-  
-  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+<div class="bg-white cor-container">
 
-  <!-- Initiatives -->
-  <article class="cor-box">
-    <h2>Initiatives</h2>
-    <div class="cor-switcher items-start">
-    {% for initiative in initiatives %}
-      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
-    {% endfor %}
-    </div>
-  </article>
-  <!-- /Initiatives -->
+  <cor-cover class="cor-cover--1col">
+    <hgroup>
+      <h1 class="margin-0">{{ title }}</h1>
+      {% if subtitle %} <h2 class="cor-h4">{{ subtitle }}</h2>{% endif %}
+    </hgroup>
+
+    <div class="cor-with-sidebar cor-with-sidebar--left" style="--sideWidth: var(--space-4xl)">
+          <div class="cor-stack">
+            <div>
+              <img class="cor-image" src="https://placeimg.com/600/400/nature" alt />
+            </div>
+            <ul class="list-none margin-top">
+              <li><a href="test.be" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-box-arrow-up-right)">Image gallery</a></li>
+              <li><a href="test.be" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-document)">CV</a> <small class=""> (1M - PDF)</small></li>
+            </ul>
+          </div>
+
+          <div>
+            <p>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Apostolos Tzitzikostas was born on September 2, 1978. He studied Government and International Relations at Georgetown University, in Washington DC. After graduating in 2000, he had his first working experience at the Office of the President of the Committee on Foreign Affairs of the United States Congress. In 2002 he obtained a Masters Degree on European Public Policy and Economics from the University College of London. Following his studies, he created his own company on the field of production, processing and standardization of dairy products, based on organic standards.</p>
+            <p>In 2007, he was elected Member of the Greek Parliament with the Nea Demokratia Party (EPP) in the First District of Thessaloniki. In the Regional Elections of November 2010 he was elected Vice-Governor of the Region of Central Macedonia and Head of the Metropolitan Area of Thessaloniki. On the Regional Elections of May 2014 he was elected Governor of the Region of Central Macedonia, and on the Regional Elections of May 2019 was re-elected Governor of the Region of Central Macedonia. On November 2019 he was elected President of the Association of Greek Regions.​​</p>
+            <p>Since 2015 he is a Member of the European Committee of the Regions. In July 2017, he was elected Head of the Greek Delegation and Vice-President of the European Committee of the Regions. He fluently speaks English and French and his articles are regularly being published in Greek and foreign newspapers and magazines.</p>
+          </div>
+        </div>
+  </cor-cover>
 
   <div role="separator"></div>
-
-  <div class="cor-with-sidenav cor-content">
+  
+  <div class="cor-with-sidenav cor-content padding-top-0">
 
     {% render "@toc--dynamic" , {nav: contentnav}, true %}
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+
+      <section class="cor-stack">
+
+        <div>
+          <h5 class="cor-h5" id="links">President's message Covid FullHD​</h5>
+          <video width="100%" controls poster="https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=550&amp;q=80​"></video>
+        </div>
+      </section>
       
+      <section>
+        <h2>My team</h2>
+        <ul>
+          <li>
+
+          </li>
+        </ul>
+      </section>
+
+
+
       <section class="cor-rich-text">
       
         <h2 id="Our goals">Our goals</h2>
@@ -215,4 +246,5 @@
 
   </div>
 
+  </div>
 </div>
