@@ -1,21 +1,12 @@
-<div class="bg-white cor-container cor-page--member">
+<div class="bg-white cor-container">
 
-  <cor-cover class="cor-cover--topbar">
+  <cor-cover class="cor-cover--topbar cor-cover--1col">
     <hgroup>
       <h1 class="margin-0">{{ title }}</h1>
       {% if subtitle %} <h2 class="cor-h4">{{ subtitle }}</h2>{% endif %}
     </hgroup>
 
-  </cor-cover>
-  
-  <div class="cor-with-sidenav cor-content padding-top-0">
-
-    {% render "@toc--dynamic" , {nav: contentnav}, true %}
-
-    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
-
-      <section class="cor-stack">
-        <div class="cor-with-sidebar cor-with-sidebar--left" style="--sideWidth: var(--space-4xl)">
+    <div class="cor-with-sidebar cor-with-sidebar--left" style="--sideWidth: var(--space-4xl)">
           <div class="cor-stack">
             <div>
               <img class="cor-image" src="https://placeimg.com/600/400/nature" alt />
@@ -26,12 +17,23 @@
             </ul>
           </div>
 
-          <div>
+          <div class="txt-xl-container">
             <p>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Apostolos Tzitzikostas was born on September 2, 1978. He studied Government and International Relations at Georgetown University, in Washington DC. After graduating in 2000, he had his first working experience at the Office of the President of the Committee on Foreign Affairs of the United States Congress. In 2002 he obtained a Masters Degree on European Public Policy and Economics from the University College of London. Following his studies, he created his own company on the field of production, processing and standardization of dairy products, based on organic standards.</p>
             <p>In 2007, he was elected Member of the Greek Parliament with the Nea Demokratia Party (EPP) in the First District of Thessaloniki. In the Regional Elections of November 2010 he was elected Vice-Governor of the Region of Central Macedonia and Head of the Metropolitan Area of Thessaloniki. On the Regional Elections of May 2014 he was elected Governor of the Region of Central Macedonia, and on the Regional Elections of May 2019 was re-elected Governor of the Region of Central Macedonia. On November 2019 he was elected President of the Association of Greek Regions.​​</p>
             <p>Since 2015 he is a Member of the European Committee of the Regions. In July 2017, he was elected Head of the Greek Delegation and Vice-President of the European Committee of the Regions. He fluently speaks English and French and his articles are regularly being published in Greek and foreign newspapers and magazines.</p>
           </div>
         </div>
+  </cor-cover>
+
+  <div role="separator"></div>
+  
+  <div class="cor-with-sidenav cor-content padding-top-0">
+
+    {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+
+      <section class="cor-stack">
 
         <div>
           <h5 class="cor-h5" id="links">President's message Covid FullHD​</h5>
