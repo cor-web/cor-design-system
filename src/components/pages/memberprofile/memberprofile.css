@@ -1,5 +1,4 @@
 .cor-page--member cor-cover {
-  gap: 0;
   grid-template-columns: 1fr;
   padding: var(--space-s);
 }
@@ -7,31 +6,30 @@
 @media screen and (min-width: 640px) {
   .cor-page--member cor-cover {
     gap: var(--space-s);
-    grid-template-areas: "header header header" "cover description contact";
-    grid-template-columns: 12rem 5fr 2fr;
-    justify-items: center;
+    grid-template-areas: "header header" "cover description";
+    grid-template-columns: 12rem 1fr;
   }
 }
 
-cor-cover > :first-child {
+.cor-page--member cor-cover > :first-child {
   padding: 0;
 }
 
-.mainContent cor-cover h1,
-.mainContent cor-cover h2 {
+.mainContent .cor-page--member cor-cover h1,
+.mainContent .cor-page--member cor-cover h2 {
   text-align: left;
 }
 
-cor-cover > div:nth-child(0n + 2) {
+.cor-page--member cor-cover > div:nth-child(0n + 2) {
   grid-area: cover;
   margin-bottom: var(--space);
   padding: 0;
 }
 
-cor-cover > div:nth-child(0n + 3) {
+.cor-page--member cor-cover > div:nth-child(0n + 3) {
   grid-area: description;
 }
 
-cor-cover > div:last-child {
+.cor-page--member cor-cover > div:last-child {
   padding-right: var(--space);
 }
