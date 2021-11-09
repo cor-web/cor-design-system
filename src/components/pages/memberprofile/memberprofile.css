@@ -9,6 +9,7 @@
     gap: var(--space-s);
     grid-template-areas: "header header header" "cover description contact";
     grid-template-columns: 12rem 5fr 2fr;
+    justify-items: center;
   }
 }
 
