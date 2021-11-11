@@ -83,6 +83,11 @@ cor-cover.cor-cover--topbar {
   
   .cor-cover--grid-4 .cor-cover__description {
     grid-column: span 3; 
+    order: 0;
+  }
+
+  .cor-cover__picture {
+    order: 1;
   }
   
   cor-cover[class*="img-left"] {
@@ -90,12 +95,8 @@ cor-cover.cor-cover--topbar {
   }
 
   cor-cover[class*="img-left"] .cor-cover__picture {
-    grid-column-start: 1;
     order: 0;
   }
-  
-  cor-cover[class*="img-left"] .cor-cover__description {
-    order: 1;
-  }
+
 }
 
