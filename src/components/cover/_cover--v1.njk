@@ -1,0 +1,27 @@
+<cor-cover class="{% if modifier %}cor-cover--{{ modifier }} {% endif %}">
+  <hgroup>
+    <h1>{% if title %} {{ title }} {% endif %}</h1>
+    
+    {% if subtitle %}
+      <h2>{{ subtitle }}</h2>
+    {% endif %}
+  </hgroup>
+
+  <div class="cor-stack">
+      <p  class="txt-2xl cor-cover__description">{{ description }}</p>
+
+      {% if cta %}
+      <p>
+        <a href="{{ cta.link }}">{{ cta.text }}</a>
+      </p>
+      {% endif %}
+  </div>
+  
+  <div>
+    {% if poster.svg %}
+      {{ poster.svg | safe  }}
+    {% else %}
+      <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+    {% endif %}
+  </div>
+</cor-cover>

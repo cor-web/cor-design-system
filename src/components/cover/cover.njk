@@ -1,5 +1,7 @@
-<cor-cover class="{% if modifier %}cor-cover--{{ modifier }} {% endif %}">
-  <hgroup>
+<cor-cover class="{% if modifier %}{% for item in modifier %}cor-cover--{{ item }} {% endfor %}{% endif %}">
+  
+  <hgroup class="cor-cover__header">
+  
     <h1>{% if title %} {{ title }} {% endif %}</h1>
     
     {% if subtitle %}
@@ -7,21 +9,21 @@
     {% endif %}
   </hgroup>
 
-  <div class="cor-stack">
-      <p  class="txt-2xl cor-cover__description">{{ description }}</p>
+  <div class="cor-cover__description cor-stack max-width:measure">
+      <p class="txt-xl">{{ description }}</p>
 
       {% if cta %}
       <p>
-        <a href="{{ cta.link }}">{{ cta.text }}</a>
+        {% for link in cta %}
+        <a href="{{ link.link }}" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">{{ link.text }}</a>
+        {% endfor %}
       </p>
       {% endif %}
   </div>
   
-  <div>
-    {% if poster.svg %}
-      {{ poster.svg | safe  }}
-    {% else %}
-      <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
-    {% endif %}
+  {% if poster %}
+  <div class="cor-cover__picture">
+    <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
   </div>
+  {% endif %}
 </cor-cover>

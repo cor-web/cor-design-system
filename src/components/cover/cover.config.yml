@@ -10,10 +10,25 @@ context:
     alt: Alt text
   description: Dolore exercitation elit nostrud labore proident elit. Enim enim qui elit veniam duis eu irure cupidatat magna officia culpa magna. Elit ex amet laboris nulla quis Lorem aute deserunt. Nisi eiusmod ut aute reprehenderit magna proident ad duis. Nulla dolor consectetur dolor officia mollit velit. Occaecat veniam pariatur sit labore esse nisi irure ex aute fugiat excepteur.
 variants:
-  - name: "centered"
+  - name: "Description only"
     context:
-      modifier: "centered"
-      color:
-      cta:
-        - text: Join us
-          link: "https://seashepherd.org"
+      poster:
+      modifier: 
+  - name: "grid-2"
+    context:
+      modifier:
+        - "grid-2"
+  - name: "grid-2-img-left"
+    context:
+      modifier:
+        - "grid-2"
+        - "img-left"
+  - name: "grid-4"
+    context:
+      modifier:
+        - "grid-4"
+  - name: "grid-4-img-left"
+    context:
+      modifier:
+        - "grid-4"
+        - "img-left"

@@ -1,13 +1,3 @@
-/*
-.mainContent div,
-.mainContent header,
-.mainContent nav,
-.mainContent main,
-.mainContent footer {
-  max-width: none;
-}
-
-
 .max-width\:measure {
   max-width: var(--measure);
 }
@@ -15,5 +5,3 @@
 .max-width\:measure\/2 {
   max-width: calc(var(--measure) / 2);
 }
-
-*/
