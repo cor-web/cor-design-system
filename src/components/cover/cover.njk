@@ -1,13 +1,19 @@
 <cor-cover class="{% if modifier %}{% for item in modifier %}cor-cover--{{ item }} {% endfor %}{% endif %}">
   
   <hgroup class="cor-cover__header">
-  
+
     <h1>{% if title %} {{ title }} {% endif %}</h1>
     
     {% if subtitle %}
       <h2>{{ subtitle }}</h2>
     {% endif %}
   </hgroup>
+
+  {% if poster %}
+  <div class="cor-cover__picture">
+    <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+  </div>
+  {% endif %}
 
   <div class="cor-cover__description cor-stack max-width:measure">
       <p class="txt-xl">{{ description }}</p>
@@ -20,10 +26,5 @@
       </p>
       {% endif %}
   </div>
-  
-  {% if poster %}
-  <div class="cor-cover__picture">
-    <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
-  </div>
-  {% endif %}
+
 </cor-cover>
