@@ -8,7 +8,6 @@
   line-height: var(--line-height-small);
   font-family: var(--font-plain);
   font-weight: normal;
-  hyphens: auto;
   margin: 0 0 var(--space-xs);
 }
 
