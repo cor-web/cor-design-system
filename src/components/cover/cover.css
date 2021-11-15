@@ -11,9 +11,9 @@ cor-cover {
 
   background-color: white;
   display: grid;
-  gap: var(--space-m);
+  gap: var(--space);
   justify-content: center;
-  padding: var(--space);
+  padding: var(--space-s);
 }
 
 cor-cover.cor-cover--1col {
@@ -55,9 +55,8 @@ cor-cover p {
 }
 
 cor-cover.cor-cover--topbar {
-  border-top: rgb(var(--page-color)) solid var(--space-xs);
+  border-top: rgb(var(--cover-border-color)) solid var(--space-xs);
 }
-
 
 .cor-cover__cta:after {
   background: var(--link-color);
@@ -75,21 +74,20 @@ cor-cover.cor-cover--topbar {
   .cor-cover--grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .cor-cover--grid-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  
-  
+
   .cor-cover--grid-4 .cor-cover__description {
-    grid-column: span 3; 
+    grid-column: span 3;
     order: 0;
   }
 
   .cor-cover__picture {
     order: 1;
   }
-  
+
   cor-cover[class*="img-left"] {
     padding-right: var(--space);
   }
@@ -97,6 +95,4 @@ cor-cover.cor-cover--topbar {
   cor-cover[class*="img-left"] .cor-cover__picture {
     order: 0;
   }
-
 }
-
