@@ -62,7 +62,8 @@ cor-cover.cor-cover--topbar {
   background: var(--link-color);
 }
 
-.cor-cover__header {
+.cor-cover__header,
+cor-cover :first-child {
   grid-column: 1 / -1;
 }
 
@@ -95,4 +96,5 @@ cor-cover.cor-cover--topbar {
   cor-cover[class*="img-left"] .cor-cover__picture {
     order: 0;
   }
+
 }
