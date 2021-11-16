@@ -1,8 +1,8 @@
-<ul class="cor-grid">
+<ul class="cor-grid" style="--measure: 300px">
   {% for member in members %}
-  <li class="cor-card bg align-items-center cor-stack padding">
+  <li class="cor-card bg align-items-center cor-stack cor-stack--m padding">
       <img src="{{ member.picture }}" alt="portrait of {{ member.name }}"/>
-      <strong>{{ member.name }}</strong>
+      <strong class="txt-step--2">{{ member.name }}</strong>
       <span>{{ member.jobTitle}}</span>
       <ul class="list-disc">
         <li>Minus harum et ea officia fuga officiis.</li>
