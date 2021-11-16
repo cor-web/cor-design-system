@@ -1,6 +1,6 @@
 {
   "name": "@cor-web/cor-design-system",
-  "version": "0.1.107",
+  "version": "0.1.108",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -56,6 +56,7 @@
     "@frctl/nunjucks": "^2.0.10",
     "@js-temporal/polyfill": "^0.2.0",
     "animateplus": "^2.1.1",
+    "faker": "^5.5.3",
     "netlify-cli": "^2.12.0",
     "node-fetch": "^2.6.1",
     "open-color": "^1.8.0",

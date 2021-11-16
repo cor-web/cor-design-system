@@ -6,3 +6,5 @@
 
 @import url("./components/pages/jobs/jobs.css");
 @import url("./components/pages/memberprofile/memberprofile.css");
+
+@import url("./utilities/_all.css");

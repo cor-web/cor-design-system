@@ -6,8 +6,6 @@
 
 @import url("./objects/_all.css");
 
-@import url("./utilities/_all.css");
-
 :root {
   line-height: var(--ratio);
   font-size: calc(0.333vw + 1em);

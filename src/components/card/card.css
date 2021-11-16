@@ -31,11 +31,11 @@
   font-size: var(--step--3);
 }
 
-.cor-card__title__link[href$=".pdf"]:after {
+.cor-card__title__link[href]:after {
   content: none;
 }
 
-.cor-card__title__link[href$=".pdf"] .cor-card__title__link__info {
+.cor-card__title__link[href] .cor-card__title__link__info {
   align-items: center;
   color: var(--text-color-light);
   display: flex;
@@ -43,7 +43,7 @@
   margin-top: var(--space-3xs);
 }
 
-.cor-card__title__link[href$=".pdf"] .cor-card__title__link__info:before {
+.cor-card__title__link[href] .cor-card__title__link__info:before {
   display: inline-block;
   content: "";
   vertical-align: -0.125em;

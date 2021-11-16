@@ -1,0 +1,19 @@
+<ul class="cor-grid">
+  {% for member in members %}
+  <li class="cor-card bg align-items-center cor-stack">
+      <img src="{{ member.picture }}" alt="portrait of {{ member.name }}"/>
+      <strong>{{ member.name }}</strong>
+      <span>{{ member.jobTitle}}</span>
+      <ul class="list-disc">
+        <li>Minus harum et ea officia fuga officiis.</li>
+        <li>Nisi et non ipsa voluptas ratione et.</li>
+        <li>Illo debitis nemo necessitatibus doloremque.</li>
+        <li>Omnis cumque eaque.</li>
+        <li>Minus harum et ea officia fuga officiis.</li>
+      </ul>
+
+      <a href="" class="icon icon-before" style="--icon: var(--icon-phone)">{{ member.phone }}</a>
+      <a href="" class="icon icon-before" style="--icon: var(--icon-envelope)">{{ member.email }}</a>
+  </li>
+  {% endfor %}
+</ul>
