@@ -1,0 +1,239 @@
+<div class="bg-white cor-container">
+
+  <cor-cover>
+  
+    <hgroup class="cor-cover__header">
+
+      <h1>{% if title %} {{ title }} {% endif %}</h1>
+      
+      {% if subtitle %}
+        <h2>{{ subtitle }}</h2>
+      {% endif %}
+    </hgroup>
+
+    <div class="cor-cover__description cor-stack max-width:measure">
+        <div>
+            <p>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Apostolos Tzitzikostas was born on September 2, 1978. He studied Government and International Relations at Georgetown University, in Washington DC. After graduating in 2000, he had his first working experience at the Office of the President of the Committee on Foreign Affairs of the United States Congress. In 2002 he obtained a Masters Degree on European Public Policy and Economics from the University College of London. Following his studies, he created his own company on the field of production, processing and standardization of dairy products, based on organic standards.</p>
+            <p>In 2007, he was elected Member of the Greek Parliament with the Nea Demokratia Party (EPP) in the First District of Thessaloniki. In the Regional Elections of November 2010 he was elected Vice-Governor of the Region of Central Macedonia and Head of the Metropolitan Area of Thessaloniki. On the Regional Elections of May 2014 he was elected Governor of the Region of Central Macedonia, and on the Regional Elections of May 2019 was re-elected Governor of the Region of Central Macedonia. On November 2019 he was elected President of the Association of Greek Regions.​​</p>
+            <p>Since 2015 he is a Member of the European Committee of the Regions. In July 2017, he was elected Head of the Greek Delegation and Vice-President of the European Committee of the Regions. He fluently speaks English and French and his articles are regularly being published in Greek and foreign newspapers and magazines.</p>
+        </div>
+    </div>
+
+  </cor-cover>
+
+  
+
+  <div role="separator"></div>
+  
+  <div class="cor-content cor-box">
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+
+      <section class="cor-stack">
+
+        <div>
+          <h5 class="cor-h5" id="links">President's message Covid FullHD​</h5>
+          <video width="100%" controls poster="https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=550&amp;q=80​"></video>
+        </div>
+      </section>
+      
+  
+
+
+
+      <section class="cor-rich-text">
+      
+        <h2 id="Our goals">Our goals</h2>
+
+        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+
+        <h2>Anim minim exercitation est cillum exercitation commodo</h2>
+
+        <h3>exercitation commodo</h3>
+
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+
+        <h3>Anim minim exercitation</h3>
+        
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+
+        <div class="padding margin-y bg inline-block">
+          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
+        </div>
+
+      </section>
+
+      <section class="cor-stack">
+        <h2 id="What's on" class="margin-0">What's on</h2>
+        
+        <section>
+          <h3>Latest news</h3>
+
+          <div class="cor-l-2andlist">
+          {% for newsitem in news %}
+
+            {% set cardExtraClass = "" %}
+            {% if loop.index < 3 %}
+              {% set cardExtraClass = "bg padding" %}
+            {% endif %}
+            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3>Events</h4>
+          
+          <h4>Upcoming events</h4>
+
+          <div class="cor-l-2andlist margin-bottom">
+          {% for newsitem in upcomingEvents %}
+
+            {% set cardExtraClass = "" %}
+            {% if loop.index < 3 %}
+              {% set cardExtraClass = "bg padding" %}
+            {% endif %}
+            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
+
+          <h4>Past events</h4>
+
+          <div class="cor-containerWithDivider--dotted ">
+          {% for newsitem in pastEvents %}
+            {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+          {% endfor %}
+          </div>
+
+        </section>
+
+      </section>
+    
+      <section class="cor-stack">
+        <h2 id="opinions" class="margin-0">Opinions</h2>
+        
+        <section>
+          <h3>Adopted opinions</h3>
+
+          <div class="cor-grid margin-bottom">
+          {% for opinion in adoptedOpinions %}
+            {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+          {% endfor %}
+          </div>
+        </section>
+
+        <section>
+          <h3>Opinions currently in discussion</h3>
+
+          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
+          {% for newsitem in indiscussionOpinions %}
+            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+          {% endfor %}
+          </div>
+        </section>
+
+      </section>
+
+      <section class="cor-stack">
+        <h2 id="opinions" class="margin-0">Reports</h2>
+        <div>
+          <ol class="cor-list cor-list--documents list-style-none cor-containerWithDivider--dotted">
+            <li>
+              <a href="document.pdf">14.06.21 European Year of Rail_Abruzzo</a> <small class="cor-list--documents__info">(3 MB - PDF)</small>
+            </li>
+            <li>
+              <a href="document.pdf">14.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">(3 MB - PDF)</small>
+            </li>
+            <li>
+              <a href="document.pdf">10.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">(3 MB - PDF)</small>
+            </li>
+            <li>
+              {% render "@document--study" %}
+            </li>
+            <li>
+              {% render "@document--study" %}
+            </li>
+            <li>
+              {% render "@document--study" %}
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        
+        <h2 id="learnmore" class="margin-0">Learn more</h2>
+
+        <div class="cor-stack">
+          <section>
+            <h3 class="cor-toc-section margin-top">Videos and others</h3>
+            {% render "@videoplayer--withplaylist" %}
+          </section>
+
+          <section>
+            <h3 class="cor-toc-section margin-top">Related links</h3>
+            <ul class="margin-bottom-0 padding-left">
+              <li><a href="test.be">Link 1</a></li>
+              <li><a href="test.be">Link 2</a></li>
+              <li><a href="test.be">Link 3</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="cor-toc-section margin-top">See also</h3>
+            
+            <div class="cor-stack">
+              <div>
+                <h4>COVID-19</h4>
+                <ul class="padding-left">
+                  <li><a href="test.be">Link 1</a></li>
+                  <li><a href="test.be">Link 2</a></li>
+                  <li><a href="test.be">Link 3</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>Survey</h4>
+                <ul class="padding-left">
+                  <li><a href="test.be">Link 1</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>USeful resources</h4>
+                <ul class="padding-left">
+                  <li><a href="test.be">Link 1</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+      </section>
+
+      <section>
+        <h2 id="contact">Follow us</h2>
+        <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> 
+      </section>
+
+      <section>
+        <h2 id="contact">Contact</h2>
+        <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
+      </section>
+
+      <section>
+        {% render "@share" %}
+      </section>
+      
+    
+    </main>
+
+  </div>
+
+  </div>
+</div>
