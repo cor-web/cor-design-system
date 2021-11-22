@@ -1,5 +1,8 @@
-<cor-document class="cor-document cor-stack cor-stack--3xs">
-  <span class="cor-document__title">{{ document.title }}</span>
+<cor-document class="cor-document">
+  <span class="cor-document__header">
+    <span class="cor-document__title">{{ document.title }}</span>
+    {% if document.date %}<span class="cor-document__date">Date: {{ document.date }}</span>{% endif %}
+  </span>
   <span class="cor-document__language">{{ document.language }}</span>
   <a href="test.be" class="cor-document__translations__item__link">Download</a>
   {% if document.translations %}
