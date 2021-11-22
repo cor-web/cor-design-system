@@ -1,3 +1,22 @@
-<article>
-  <h2>{{ title }}</h2>
-</article>
+<cor-document class="cor-document cor-stack cor-stack--3xs">
+  <span class="cor-document__title">{{ document.title }}</span>
+  <span class="cor-document__language">{{ document.language }}</span>
+  <a href="test.be" class="cor-document__translations__item__link">Download</a>
+  {% if document.translations %}
+  <cor-expander class="cor-document__translations margin-top">
+    <a href="test.be" class="cor-document__translations__btn">Other languages ({{ document.translations| length }})</a>
+    <ol class="cor-document__translations__list margin-y">
+      {% for translation in document.translations %}
+      <li class="cor-document__translations__item">
+        <strong class="cor-document__translations__item__language">{{ translation.language }}</strong>
+        <span class="cor-document__translations__item__info">({{ translation.size }} - {{ translation.type }})</span>
+        <a href="test.be" class="cor-document__translations__item__link">Download</a>
+      </li>
+      {% endfor %}
+    </ol>
+    <span>Looking for another language which is not on the list? <a href="test.be">Find out why</a>.</span>
+  </cor-expander>
+  {% endif %}
+</cor-document>
+
+<script src="/components/expander/expander.js" type="module"></script>
