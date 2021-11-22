@@ -3,10 +3,13 @@
     <span class="cor-document__title">{{ document.title }}</span>
     {% if document.date %}<span class="cor-document__date">Date: {{ document.date }}</span>{% endif %}
   </span>
-  <span class="cor-document__language">{{ document.language }}</span>
+  <div class="cor-document__info">
+    <strong class="cor-document__language">{{ document.language }}</strong>
+    <span class="cor-document__translations__item__info">({{ document.size }} - {{ document.type }})</span>
+  </div>
   <a href="test.be" class="cor-document__translations__item__link">Download</a>
   {% if document.translations %}
-  <cor-expander class="cor-document__translations margin-top">
+  <cor-expander class="cor-document__translations margin-top-3xs">
     <a href="test.be" class="cor-document__translations__btn">Other languages ({{ document.translations| length }})</a>
     <ol class="cor-document__translations__list margin-y">
       {% for translation in document.translations %}

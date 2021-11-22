@@ -45,6 +45,14 @@
   margin-top: var(--space-xs) !important;
 }
 
+.margin-top-3xs {
+  margin-top: var(--space-3xs) !important;
+}
+
+.margin-top-2xs {
+  margin-top: var(--space-2xs) !important;
+}
+
 .margin-top-m {
   margin-top: var(--space-m) !important;
 }
