@@ -2,14 +2,6 @@
   <span class="cor-document__header">
     <span class="cor-document__title">{{ document.title }}</span>
     {% if document.date %}<span class="cor-document__date">Date: {{ document.date }}</span>{% endif %}
-
-    {% if document.tags %}
-    <ul class="cor-document__tags">
-      {% for tag in document.tags %}
-      <li class="cor-document__tag">{{ tag }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
   </span>
   <div class="cor-document__info">
     {% if document.cover %}

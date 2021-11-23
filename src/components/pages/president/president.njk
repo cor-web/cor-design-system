@@ -37,7 +37,9 @@
   
   <div class="cor-with-sidenav cor-content padding-top-0">
 
-    {% render "@toc--dynamic" , {nav: contentnav}, true %}
+    <div>
+      {% render "@toc--dynamic" , {nav: contentnav}, true %}
+    </div>
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
 
@@ -61,6 +63,18 @@
           <li>{% render "@document", {document: document} %}</li>
           {% endfor %}
         </ol>
+      </section>
+
+      <section>
+        <toggle-section>
+          <h2>Open Tenders</h2>
+          <ol class="cor-containerWithDivider--1 list-none">
+            {% for document in documents %}
+            <li>{% render "@document", {document: document} %}</li>
+            {% endfor %}
+          </ol>
+        </toggle-section>
+
       </section>
 
 

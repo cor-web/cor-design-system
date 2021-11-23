@@ -1,0 +1,1 @@
+- adapter News et events sur layout 1 col

@@ -49,9 +49,10 @@ cor-cover h2 {
   font-size: var(--step-0) !important;
 }
 
-cor-cover p {
+cor-cover p,
+.cor-cover__description p  {
   font-size: var(--step--2);
-  line-height: 1.4em;
+  line-height: 1.75;
 }
 
 cor-cover.cor-cover--topbar {
