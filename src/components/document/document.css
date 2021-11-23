@@ -86,8 +86,12 @@
 }
 
 .cor-document__translations__item {
-  display: flex;
+  display: grid;
   gap: var(--space-2xs);
+}
+
+.cor-document__translations__item__title {
+  grid-template-columns: 1 / 2;
 }
 
 .cor-document__translations__item__link {

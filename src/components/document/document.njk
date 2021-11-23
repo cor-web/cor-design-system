@@ -32,9 +32,12 @@
     <ol class="cor-document__translations__list margin-y">
       {% for translation in document.translations %}
       <li class="cor-document__translations__item">
-        <strong class="cor-document__translations__item__language">{{ translation.language }}</strong>
-        <span class="cor-document__translations__item__info">({{ translation.size }} - {{ translation.type }})</span>
-        <a href="test.be" class="cor-document__translations__item__link">Download</a>
+        <div class="flex gap">
+          <strong class="cor-document__translations__item__language">{{ translation.language }}</strong>
+          <span class="cor-document__translations__item__info">({{ translation.size }} - {{ translation.type }})</span>
+          <a href="test.be" class="cor-document__translations__item__link margin-left-auto">Download</a>
+        </div>
+        <span class="cor-document__translations__item__title">{{ translation.title }}</span>
       </li>
       {% endfor %}
     </ol>
