@@ -1,8 +1,33 @@
-<article>
-  <toggle-section>
-    <h2>Titre</h2>
-    <p>Content</p>
-  </toggle-section>
-</article>
+<cor-document class="cor-document">
+  <span class="cor-document__header">
+    <span class="cor-document__title">{{ document.title }}</span>
+    {% if document.date %}<span class="cor-document__date">Date: {{ document.date }}</span>{% endif %}
+  </span>
+  <div class="cor-document__info">
+    {% if document.cover %}
+    <img class="block" src="{{ document.cover }}" alt="alt text" />
+    {% endif %}
+  </div>
+  <div class="cor-document__footer">
+    <strong class="cor-document__language">{{ document.language }}</strong>
+    <span class="cor-document__translations__item__info">({{ document.size }} - {{ document.type }})</span>
+    <a href="test.be" class="cor-document__translations__item__link">Download</a>
+  </div>
+  {% if document.translations %}
+  <cor-expander class="cor-document__translations margin-top-3xs">
+    <a href="test.be" class="cor-document__translations__btn">Other languages ({{ document.translations| length }})</a>
+    <ol class="cor-document__translations__list margin-y">
+      {% for translation in document.translations %}
+      <li class="cor-document__translations__item">
+        <strong class="cor-document__translations__item__language">{{ translation.language }}</strong>
+        <span class="cor-document__translations__item__info">({{ translation.size }} - {{ translation.type }})</span>
+        <a href="test.be" class="cor-document__translations__item__link">Download</a>
+      </li>
+      {% endfor %}
+    </ol>
+    <span>Looking for another language which is not on the list? <a href="test.be">Find out why</a>.</span>
+  </cor-expander>
+  {% endif %}
+</cor-document>
 
-<script src="/components/toggle/toggle.js" type="module"></script>
+<script src="/components/expander/expander.js" type="module"></script>

@@ -19,6 +19,14 @@
   border-top: solid 3px rgb(var(--page-color, var(--oc-gray-8-rgb)));
 }
 
+.cor-containerWithDivider--1 > * + * {
+  border-top: solid 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.cor-containerWithDivider--2 > * + * {
+  border-top: solid 2px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
 .cor-containerWithDivider--dotted > * + * {
   border-top: dotted 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
 }

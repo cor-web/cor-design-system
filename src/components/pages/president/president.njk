@@ -54,6 +54,15 @@
         {% render "@team" %}
       </section>
 
+      <section>
+        <h2>Documents</h2>
+        <ol class="cor-containerWithDivider--1 list-none">
+          {% for document in documents %}
+          <li>{% render "@document", {document: document} %}</li>
+          {% endfor %}
+        </ol>
+      </section>
+
 
 
       <section class="cor-rich-text">
