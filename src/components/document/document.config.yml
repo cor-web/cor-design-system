@@ -7,6 +7,11 @@ context:
     size: 3 MB
     type: PDF
     cover: /assets/images/documentCover.png
+    description: "Id enim aute nisi occaecat quis non veniam. Laboris incididunt enim veniam fugiat voluptate esse. Officia minim deserunt esse id culpa eu deserunt ad officia ipsum ut irure. Eu cupidatat duis ipsum ex mollit qui excepteur deserunt aliqua excepteur exercitation. Et voluptate ipsum do laborum."
+    tags:
+      - speech
+      - green deal
+      - study
     translations:
       - language: français
         title: FR Eu dolor magna elit reprehenderit sunt laborum consequat do ipsum sunt eu ad cillum eiusmod.

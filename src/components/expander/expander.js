@@ -37,7 +37,8 @@
         }
 
         .cor-expander--header button:focus {
-          outline: 2px solid var(--oc-blue-8);
+          border-color: white;
+          outline: 2px solid var(--oc-cyan-4);
         }
 
         button svg {
