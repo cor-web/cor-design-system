@@ -1,0 +1,9 @@
+.cor-tender-header {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-2xs);
+}
+
+.cor-tender-container {
+  border: solid 1px var(--link-color);
+}

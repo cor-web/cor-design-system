@@ -29,6 +29,8 @@
   --link-color: var(--oc-blue-8);
   --link-color-dark: var(--oc-blue-10);
 
+  --focus-color: var(--oc-cyan-4);
+
   --ratio: 1.5;
   --s0: 1rem;
   --s-1: calc(var(--s0) / var(--ratio));

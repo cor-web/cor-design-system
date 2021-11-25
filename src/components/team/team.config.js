@@ -11,7 +11,7 @@ for (var i = 0; i < memberCount; i++) {
     jobTitle: faker.name.jobTitle(),
     phone: faker.phone.phoneNumber(),
     email: faker.internet.email(),
-    picture: faker.image.avatar()
+    picture: 'https://thispersondoesnotexist.com/image'
   });
 }
 

@@ -26,7 +26,9 @@
 
         h3 button {
           all: inherit;
+          align-items: center;
           box-sizing: border-box;
+          color: var(--link-color);
           cursor: hover;
           display: flex;
           justify-content: space-between;
@@ -34,8 +36,12 @@
           padding: 0.5em 0;
         }
 
+        h3 button:hover {
+          cursor:pointer;
+        }
+        
         h3 button:focus svg {
-          outline: 2px solid;
+          outline: 2px solid var(--focus-color);
         }
 
         button svg {
@@ -48,7 +54,7 @@
         }
 
         [aria-expanded] rect {
-          fill: currentColor;
+          fill: var(--link-color);
         }
       </style>
     `;

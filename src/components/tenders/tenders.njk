@@ -1,0 +1,26 @@
+<cor-toggle open="true" class="cor-tenders-container">
+  <h3 slot="toggle-heading">Open tender (3)</h3>
+  <div slot="toggle-content">
+    
+    <ol class="list-style-none cor-stack--3xs">
+      {% for tender in tenders%}
+      <li class="cor-tender-container">{% render "@tender", {tender: tender} %}</li>
+      {% endfor %}
+    </ol>
+  </div>
+</cor-toggle>
+
+<cor-toggle class="cor-tenders-container">
+  <h3 slot="toggle-heading">Close tender (3)</h3>
+  <div slot="toggle-content">
+    
+    <ol class="list-style-none cor-stack--3xs">
+      {% for tender in tenders%}
+      <li class="cor-tender-container">{% render "@tender", {tender: tender} %}</li>
+      {% endfor %}
+    </ol>
+  </div>
+</cor-toggle>
+
+
+<script src="/components/toggle/toggleNew.js" type="module"></script>

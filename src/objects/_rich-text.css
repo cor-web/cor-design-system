@@ -1,3 +1,27 @@
 .cor-rich-text > :first-child {
   margin-top: 0;
 }
+
+.mainContent a {
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1em;
+}
+
+.cor-rich-text a:hover {
+  color: var(--link-color-dark);
+  text-decoration-thickness: max(3px, .1875rem, .12em);
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip: none;
+  text-decoration-skip: none;
+}
+
+.cor-rich-text a:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: var(--oc-yellow-4);
+  box-shadow: 0 -2px var(--oc-yellow-4),0 4px #0b0c0c;
+  text-decoration: none;
+}

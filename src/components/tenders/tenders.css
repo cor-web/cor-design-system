@@ -1,0 +1,10 @@
+
+
+.cor-tender-content {
+  background: white;
+  padding: var(--space-2xs);
+}
+
+.cor-tender-container {
+  background: var(--oc-blue-0);
+}

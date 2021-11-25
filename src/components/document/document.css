@@ -33,7 +33,6 @@
 }
 
 .cor-document__date {
-  color: var(--text-color-light);
   font-size: var(--step--3);
 }
 
@@ -76,11 +75,12 @@
   grid-column: 2 / -1;
 }
 
-.cor-document__title {
+.cor-document__title,
+.mainContent .cor-document__title {
   font-size: var(--step--2);
+  font-weight: bold;
 }
 
-.cor-document__title,
 .cor-document__language {
   font-weight: bold;
 }

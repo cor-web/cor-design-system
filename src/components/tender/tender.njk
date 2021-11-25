@@ -1,0 +1,14 @@
+<cor-toggle class="cor-tender" style="--toggle-heading-padding: 0 var(--space-2xs) 0 0">
+  <h3 class="cor-tender-header cor-h6 margin-0" slot="toggle-heading">
+    {{ tender.reference }} - 
+    {{ tender.title }}
+  </h3>
+  <div class="cor-tender-content  cor-stack bg-white" slot="toggle-content">
+    <span>{{ tender.date }}</span>
+    <div>
+      {{ tender.description}}
+    </div>
+  </div>
+</cor-toggle>
+
+<script src="/components/toggle/toggleNew.js" type="module"></script>

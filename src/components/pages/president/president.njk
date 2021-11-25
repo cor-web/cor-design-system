@@ -23,7 +23,7 @@
 
     <div class="cor-cover__description cor-stack max-width:measure">
         <div>
-            <p>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Apostolos Tzitzikostas was born on September 2, 1978. He studied Government and International Relations at Georgetown University, in Washington DC. After graduating in 2000, he had his first working experience at the Office of the President of the Committee on Foreign Affairs of the United States Congress. In 2002 he obtained a Masters Degree on European Public Policy and Economics from the University College of London. Following his studies, he created his own company on the field of production, processing and standardization of dairy products, based on organic standards.</p>
+            <p>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Apostolos Tzitzikostas was born on <a href='test.be'>September 2</a>, 1978. He studied Government and International Relations at Georgetown University, in Washington DC. After graduating in 2000, he had his first working experience at the Office of the President of the Committee on Foreign Affairs of the United States Congress. In 2002 he obtained a Masters Degree on European Public Policy and Economics from the University College of London. Following his studies, he created his own company on the field of production, processing and standardization of dairy products, based on organic standards.</p>
             <p>In 2007, he was elected Member of the Greek Parliament with the Nea Demokratia Party (EPP) in the First District of Thessaloniki. In the Regional Elections of November 2010 he was elected Vice-Governor of the Region of Central Macedonia and Head of the Metropolitan Area of Thessaloniki. On the Regional Elections of May 2014 he was elected Governor of the Region of Central Macedonia, and on the Regional Elections of May 2019 was re-elected Governor of the Region of Central Macedonia. On November 2019 he was elected President of the Association of Greek Regions.​​</p>
             <p>Since 2015 he is a Member of the European Committee of the Regions. In July 2017, he was elected Head of the Greek Delegation and Vice-President of the European Committee of the Regions. He fluently speaks English and French and his articles are regularly being published in Greek and foreign newspapers and magazines.</p>
         </div>
@@ -37,9 +37,8 @@
   
   <div class="cor-with-sidenav cor-content padding-top-0">
 
-    <div>
-      {% render "@toc--dynamic" , {nav: contentnav}, true %}
-    </div>
+    
+    {% render "@toc--dynamic" , {nav: contentnav}, true %}
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
 
@@ -66,15 +65,9 @@
       </section>
 
       <section>
-        <toggle-section>
-          <h2>Open Tenders</h2>
-          <ol class="cor-containerWithDivider--1 list-none">
-            {% for document in documents %}
-            <li>{% render "@document", {document: document} %}</li>
-            {% endfor %}
-          </ol>
-        </toggle-section>
-
+        <h2>Tenders</h2>
+        <p>Magna sit aute consequat Lorem ad. Adipisicing aliqua cupidatat elit ut culpa ex exercitation. Quis ullamco officia quis dolore excepteur eu sint adipisicing reprehenderit veniam.</p>
+        {% render "@tenders" %}
       </section>
 
 
@@ -83,7 +76,7 @@
       
         <h2 id="Our goals">Our goals</h2>
 
-        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+        <p>The final results of the Future <a href='test.be'>September 2</a> of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
 
         <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
 

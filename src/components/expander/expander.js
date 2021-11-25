@@ -38,7 +38,7 @@
 
         .cor-expander--header button:focus {
           border-color: white;
-          outline: 2px solid var(--oc-cyan-4);
+          outline: 2px solid var(--focus-color);
         }
 
         button svg {
@@ -86,26 +86,10 @@
           this.btn = this.shadowRoot.querySelector('span button');
 
           // Get the first element in light DOM
-          // and cast its heading level (which should, but may not, exist)
           const oldHeading = this.querySelector(':first-child');
-          let level = parseInt(oldHeading.tagName.substr(1));
 
           // Get the Shadow DOM <h3>
           this.heading = this.shadowRoot.querySelector('span');
-
-          // If there is no level, there is no heading.
-          // Add a warning
-          if (!level) {
-            console.warn(
-              'The first element inside each <toggle-section> should be a heading of an appropriate level.'
-            );
-          }
-
-          // If the level is a real integer and not 2
-          // set `aria-level`accordingly
-          if (level && level !== 2) {
-            this.heading.setAttribute('aria-level', level);
-          }
 
           // Add the light DOM heading label to the innerHTML of the toggle button
           // and remove the now unwanted Light DOM heading
@@ -148,34 +132,6 @@
       // Add our new custom element to the window for use
       window.customElements.define('cor-expander', CorExpander);
 
-      // Define the expand/collapse all template
-      const buttons = document.createElement('div');
-      buttons.innerHTML = `
-        <ul class='toggle-section-controls' aria-label='section controls'>
-          <li><button id='expand'>expand all</button></li>
-          <li><button id='collapse'>collapse all</button></li>
-        </ul>
-      `;
-
-      // Get the first `toggle-section` on the page
-      // and all toggle sections as a node list
-      const first = document.querySelector('toggle-section');
-      const all = document.querySelectorAll('toggle-section');
-
-      // Insert the button controls before the first <toggle-section>
-      if (first) first.parentNode.insertBefore(buttons, first);
-
-      // Place the click on the parent <ul> ...
-      buttons.addEventListener('click', (e) => {
-        // ... then determine which button was the target
-        let expand = e.target.id === 'expand' ? true : false;
-
-        // Iterate over the toggle sections to switch
-        // each one's state uniformly
-        Array.prototype.forEach.call(all, (t) => {
-          t.setAttribute('open', expand);
-        });
-      });
     }
   }
 })();

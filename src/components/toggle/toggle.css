@@ -27,10 +27,14 @@ Only applies if script runs and
 `role="region"` is added
 */
 toggle-section[role="region"] {
-  border-width: 2px 0;
-  border-style: solid;
+  border-top: solid 2px var(--link-color);
+  border-bottom: solid 2px var(--link-color);
 }
 
 toggle-section[role="region"] + toggle-section {
   border-top: 0;
+}
+
+cor-toggle {
+  display: block;
 }

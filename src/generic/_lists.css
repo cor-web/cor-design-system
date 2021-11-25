@@ -1,7 +1,7 @@
 .mainContent ol,
 .mainContent ul {
   margin: var(--space-2xs) 0;
-  padding: 0 var(--space-s) var(--space-2xs);
+  padding: 0 var(--space-s) 0;
 }
 
 .mainContent ol li,

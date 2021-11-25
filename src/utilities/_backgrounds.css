@@ -1,5 +1,5 @@
 .bg {
-  background-color: rgba(var(--page-color), 0.1);
+  background-color: rgba(var(--page-color), 0.05);
 }
 
 .bg-blue-1 {
