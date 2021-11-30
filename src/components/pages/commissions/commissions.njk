@@ -1,0 +1,47 @@
+<div class="bg-white cor-container">
+
+  <cor-cover>
+  
+    <hgroup class="cor-cover__header">
+
+      <h1>{% if title %} {{ title }} {% endif %}</h1>
+      
+      {% if subtitle %}
+        <h2>{{ subtitle }}</h2>
+      {% endif %}
+    </hgroup>
+
+    <div class="cor-cover__description cor-stack max-width:measure">
+        <div>
+            {{ description }}
+        </div>
+    </div>
+
+  </cor-cover>
+  
+  <div class="cor-content cor-box">
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+
+      <section class="cor-stack">
+
+        <ul class="list-style-none cor-containerWithDivider">
+          {% for commission in commissions %}
+          <li class="padding">
+              {% render "@media--imageflexie", {title: commission.label, image: commission.image, description: commission.name, modifier: "img-flexie", readmore: true} %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section>
+        {% render "@share" %}
+      </section>
+      
+    
+    </main>
+
+  </div>
+
+  </div>
+</div>

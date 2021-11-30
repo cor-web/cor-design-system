@@ -1,7 +1,18 @@
 preview: "@previewincor_new"
 context:
-  media:
-    image: "https://placeimg.com/600/400/nature"
-    title: "Lorem amet commodo culpa veniam."
-    content: "Consequat aliqua pariatur id Lorem sint minim. Consectetur elit velit ullamco sit aliqua veniam sint consectetur eiusmod adipisicing est. Ut reprehenderit proident quis exercitation non proident labore ad ipsum et anim sit duis."
-    footer: "Eu eiusmod occaecat amet eu dolore non est Lorem dolore aute fugiat cupidatat enim minim."
+  image: 
+    src: "https://placeimg.com/600/400/nature"
+    alt: "alt text"
+  title: "Lorem amet commodo culpa veniam."
+  description: "Consequat aliqua pariatur id Lorem sint minim. Consectetur elit velit ullamco sit aliqua veniam sint consectetur eiusmod adipisicing est. Ut reprehenderit proident quis exercitation non proident labore ad ipsum et anim sit duis."
+  footer: "Eu eiusmod occaecat amet eu dolore non est Lorem dolore aute fugiat cupidatat enim minim."
+variants:
+  - name: "flip"
+    context:
+      modifier: "flip"
+  - name: "imageflexie"
+    context:
+      modifier: "img-flexie"
+  - name: "flipimageflexie"
+    context:
+      modifier: "flip cor-media--img-flexie"

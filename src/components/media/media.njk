@@ -1,12 +1,15 @@
-<div class="cor-media">
+<div class="cor-media {% if modifier %}cor-media--{{ modifier }}{% endif %}">
   <div class="cor-media__img">
-    <img src="http://placehold.it/250x250" alt="Placeholder">
+    <img src="{{ image.src }}" alt="{{ image.alt }}">
   </div>
-  <h2 class="cor-media__title">Ut dolore occaecat ullamco elit ad sunt ad magna ex qui deserunt.</h2>
+  <h2 class="cor-media__title cor-h4 margin-0">{{ title }}</h2>
   <div class="cor-media__content">
-    <p>Consequat eu est culpa labore. Consectetur eu proident cupidatat ut irure veniam ex duis anim enim occaecat nulla. Esse labore ex nulla ipsum.</p>
+    <p>{{ description }}</p>
+    {% if readmore %}
+    <a href="test.be">Read more</a>
+    {% endif %}
   </div>
   <div class="cor-media__footer">
-    Sint pariatur excepteur sint magna.
+    {{ footer }}
   </div>
 </div>

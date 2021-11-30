@@ -1,0 +1,42 @@
+preview: "@previewincor_new"
+context:
+  title: Commissions
+  description: Ea veniam nisi officia ea Lorem nisi voluptate magna proident deserunt. Cupidatat eiusmod dolor adipisicing non sunt exercitation nulla fugiat officia amet aliqua qui. Quis culpa anim minim aute proident amet. Sunt eiusmod reprehenderit mollit cillum ad enim cupidatat proident ut quis pariatur laboris consequat enim. Aliqua voluptate ex cupidatat occaecat aute aliquip. Pariatur nisi cillum quis amet ad cupidatat eiusmod minim minim veniam Lorem quis eu.
+  poster:
+  commissions:
+    - name: Commission for Citizenship, Governance, Institutional and External Affairs
+      label: CIVEX
+      description: Est sit consequat velit labore qui do aute commodo irure ad sit reprehenderit ea. Officia amet magna et est ut pariatur. Sit voluptate culpa quis est elit consequat veniam quis. Adipisicing aute consectetur sunt esse nulla do dolor elit laboris.
+      image:
+        src: https://cor.europa.eu/en/our-work/PublishingImages/CIVEX.jpg
+        alt:
+    - name: Commission for Territorial Cohesion Policy and EU Budget
+      label: COTER
+      description: Aliqua nostrud sint velit ea reprehenderit aute elit dolor sint. Magna amet sit nulla in dolore duis ipsum. Minim eu officia duis consectetur incididunt occaecat laboris ad in duis est elit. Aliqua incididunt reprehenderit aliqua esse. Anim velit excepteur ea ad aliquip. Quis elit ut dolor adipisicing ex mollit culpa laboris duis eu. Et est ut nostrud veniam aliqua et fugiat.
+      image:
+        src: https://cor.europa.eu/en/our-work/PublishingImages/COTER.jpg
+        alt:
+    - name: Commission for Economic Policy
+      label: ECON
+      description: Non exercitation tempor deserunt duis commodo deserunt mollit ullamco consequat exercitation deserunt. Consectetur ad minim laborum in non ut ullamco nulla est aute magna. Excepteur qui excepteur reprehenderit aliquip labore nulla ex. Do dolore pariatur aliquip sit est voluptate sit ea cupidatat qui incididunt.
+      image:
+        src: https://cor.europa.eu/en/our-work/PublishingImages/ECON.jpg
+        alt:
+    - name: Commission for the Environment, Climate change and Energy
+      label: ENVE
+      description: Labore do labore ea fugiat minim velit. Nisi commodo voluptate culpa ipsum. Tempor sint aliqua nulla dolore laborum velit Lorem aliquip velit esse veniam id incididunt. Veniam laboris Lorem Lorem commodo pariatur nostrud ad tempor enim sint aute. Do velit sit excepteur aliqua eu.
+      image:
+        src: https://cor.europa.eu/en/our-work/PublishingImages/ENVE.jpg
+        alt:
+    - name: Commission for Natural Resources 
+      label: NAT
+      description: Nulla esse proident nulla aute consequat sint. Velit nisi ipsum incididunt incididunt consectetur. Eu ipsum quis non mollit commodo officia magna do Lorem cupidatat. Velit consectetur veniam aute incididunt. Mollit Lorem sit reprehenderit ipsum fugiat et Lorem nisi quis dolor sunt consequat minim.
+      image:
+        src: https://cor.europa.eu/en/our-work/PublishingImages/NAT.jpg
+        alt:
+    - name: Commission for Social Policy, Education, Employment, Research and Culture
+      label: SEDEC
+      description: Magna qui minim velit ipsum consectetur eu cillum dolore minim. Ipsum elit commodo amet ad ex nulla aute dolor enim quis velit voluptate adipisicing. Est ut laborum eiusmod occaecat adipisicing excepteur.
+      image:
+        src: https://cor.europa.eu/en/our-work/PublishingImages/SEDEC.jpg
+        alt:
