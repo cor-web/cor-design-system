@@ -1,0 +1,158 @@
+<div class="bg-white cor-container">
+
+  <cor-cover class="cor-cover--grid-4 cor-cover--img-left">
+  
+    <hgroup class="cor-cover__header">
+
+      <h1>{% if title %} {{ title }} {% endif %}</h1>
+      
+      {% if subtitle %}
+        <h2>{{ subtitle }}</h2>
+      {% endif %}
+
+      <div class="margin-top text-center">
+        <span class="txt-step-5">{{ type }}</span> |
+        <span class="txt-step-5">{{ date }}</span> |
+        <span class="txt-step-5">{{ location }}</span>
+      </div>
+    </hgroup>
+
+    {% if poster %}
+    <div class="cor-cover__picture">
+      <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
+      <ul class="list-none margin-top">
+        <li><a href="test.be" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-box-arrow-up-right)">Image gallery</a></li>
+        <li><a href="test.be" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-document)">CV</a> <small class=""> (1M - PDF)</small></li>
+      </ul>
+    </div>
+    {% endif %}
+
+  </cor-cover>
+
+  
+
+  <div role="separator"></div>
+  
+  <div class="cor-with-sidenav cor-content">
+
+    
+    {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+      
+      <section class="cor-rich-text txt-xl-container max-width:measure">        
+        <p>Monsieur le Président,</p> 
+ 
+        <p>Je souhaiterais vous remercier très sincèrement  de l'opportunité d'échanger avec vous sur ce qui 
+        nous unit: l'avenir du projet européen et la défense de nos valeurs démocratiques. </p>
+        
+        <p>Le Comité européen des régions, l'assemblée politique représentant plus d'un million d'élus 
+        provenant de près de 300 régions et 90.000 municipalités, constitue un élément indispensable pour 
+        la démocratie.  </p>
+        
+        <p>Cette démocratie de proximité, dont je connais votre attachement à ses origines grecques, est la 
+        fondation de la construction européenne.  </p>
+        
+        <p>Elle garantit la diversité de nos territoires au service de la cohésion économique, sociale et 
+        territoriale et assure le respect de nos valeurs basées sur la subsidiarité, l'Etat de droit et les droits 
+        fondamentaux.  </p>
+        
+        <p>Nos membres travaillent sans arrêt pour défendre ces valeurs et lutter contre les discours 
+        d'intolérance,  de radicalisation, de haine, d'oppression et de xénophobie.  </p>
+        
+        <p>Mais nous assistons aujourd'hui, y compris en France, à une recrudescence de ces actes de violence  
+        dont nos concitoyens et leurs élus locaux et régionaux sont, parfois, les victimes.  </p>
+        
+        <p>Certains d'entre eux en ont même payé de leur vie, comme notre regretté collègue,  
+        le Maire de Gdansk, Pawel Adamowicz.  </p>
+        
+        <p>Face à ces menaces, l'Europe doit apporter une réponse qui garantit l'avenir de notre modèle 
+        démocratique.  </p>
+        
+        <p>Cette réponse doit passer par l'éducation et la promotion des valeurs auprès de la jeunesse.  </p>
+        
+        <p>C'est pourquoi, et en vue de l'Année européenne 2022 pour la jeunesse, le Comité européen des 
+        régions envisage, en coopération avec la Commission européenne, un projet pilote sur la promotion 
+        des valeurs démocratiques par l'éducation.</p>
+
+        <p>Votre soutien, au nom de la France, à cette initiative en faveur de la citoyenneté européenne  
+        aurait une portée symbolique forte. </p>
+
+        <hr/>
+        
+        <p>Monsieur le Président,  </p>
+        
+        <p>A votre appel, les dialogues locaux des citoyens organisés en France inspirent la Conférence sur 
+        l'avenir de l'Europe.  </p>
+        
+        <p>Nous croyons que ces exercices de démocratie participative, vont renforcer la démocratie 
+        représentative et vont rapprocher les citoyens de l'Europe.  </p>
+        
+        <p>Mais, proposer une nouvelle vision aux citoyens ne peut être crédible qu'à condition que la 
+        gouvernance européenne soit réformée.  </p>
+        
+        <p>L'Europe a besoin d'une approche du bas vers le haut, en renforçant les capacités de résilience  
+        et de relance durable des régions, villes et villages.    </p>
+        
+        <p>Les défis,  comme les changements climatiques et démographiques, ainsi que les transformations 
+        sociétales et technologiques appellent à des solutions concertées entre tous les niveaux de 
+        gouvernance et avec les ressources nécessaires.  </p>
+        
+        <p>Cet appel sera au cœur du Sommet des villes et régions que nous organisons à Marseille les 3 et 4 
+        mars 2022 durant la Présidence française de L'UE. </p>
+        
+        <p>Nous sommes heureux de travailler avec la Région Sud, son président Renaud Muselier, et en 
+        partenariat avec toutes les associations françaises et européennes des collectivités territoriales. </p>
+        
+        <p>Je vous invite donc chaleureusement à Marseille pour adresser les élus locaux et régionaux de 
+        l'Europe entière.  </p>
+        
+        <p>Cher Président Macron,  </p>
+        
+        <p>Avant de conclure, Je souhaite vous remercier d'avoir pris l'initiative d'organiser, avec le Président 
+        du Parlement européen, la cérémonie en l'honneur du président Valéry Giscard d'Estaing qui a 
+        également été membre de notre Comité européen des Régions, et à laquelle je suis honoré de 
+        participer demain à Strasbourg  </p>
+        
+        <p>Je n'oublierai jamais son rôle dans le processus d'adhésion européen de mon pays, la Grèce.  </p>
+        
+        <p>Comme aujourd'hui personne ne peut oublier votre engagement dans le renforcement de la 
+        sécurité en Europe.  </p>
+        
+        <p>Étant grec, je vous assure, qu'on ne peut pas avoir de la démocratie sans sécurité. </p>
+
+        <p>Étant Européen, je suis rassuré que, dans ces temps d'incertitude et changements, l'Europe se 
+        trouve sous votre leadership.  </p>
+        
+        <p>Votre capacité à rassembler autour de valeurs communes démocratiques va renouveler notre 
+        projet européen et le rendra plus ambitieux pour nos citoyens. </p>
+        
+        <p>Monsieur le Président, vous avez la parole.</p>
+
+      </section>
+
+      <section>
+        <h2 id="print">Print version</h2>
+        <ol class="cor-containerWithDivider--1 list-none">
+          {% for document in documents %}
+          <li class="bg">{% render "@document", {document: document} %}</li>
+          {% endfor %}
+        </ol>
+      </section>
+
+      <section>
+        <h2 id="Related media">Related media</h2>
+        {% render "@videojs--player", { src: '' }%}
+      </section>
+
+      <section>
+        {% render "@share" %}
+      </section>
+      
+    
+    </main>
+
+  </div>
+
+  </div>
+</div>

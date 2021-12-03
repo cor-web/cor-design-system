@@ -1,0 +1,15 @@
+preview: "@previewincor_new"
+context:
+  type: Speech
+  date: 1 December 2021
+  location: Bruxelles
+  title: Discours du President Tzitzikostas 
+  subtitle: Débat avec Emmanuel Macron, Président de la République française
+  documents:
+    - title: Discours du Président Tzitzikostas – Débat avec Emmanuel Macron - Président de la République française, session plénière du Comité européen des régions"
+      src: "google.be"
+      date: "12/11/2021"
+      language: "English"
+      size: "3 MB"
+      type: "PDF"
+

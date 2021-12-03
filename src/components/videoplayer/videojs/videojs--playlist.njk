@@ -1,5 +1,19 @@
 
-<link href="https://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+<!-- Video.js base CSS -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+
+<!-- City -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+
+<!-- Fantasy -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+<!-- Forest -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+<!-- Sea -->
+<link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
 <link href="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.css" rel="stylesheet">
 test
 <style>
@@ -13,6 +27,10 @@ test
 
 .player-container {
   background: #1a1a1a;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   overflow: auto;
   width: 900px;
   margin: 0 0 20px;
@@ -26,7 +44,7 @@ test
 .my-custom-class,
 #my-custom-element {
   float: left;
-  width: 300px;
+
 }
 
 .vjs-playlist.vjs-playlist-horizontal {
@@ -34,24 +52,48 @@ test
   height: 120px;
   width: 600px;
 }
+
+.vjs-playlist-container {
+  height: 25em;
+  position: relative;
+}
+
+.vjs-playlist {
+  position: absolute;
+  height: 100%;
+}
+
+.cor-vjs {
+  flex: 3 1 75%;
+min-width: 300px;
+min-height: 150px;
+height: 0px;
+position: relative;
+}
+
+.cor-vjs + div {
+ flex: 1 1 25%;
+}
 </style>
 
 <div class="player-container">
+    
     <video
       id="video"
-      class="video-js"
-      height="300"
-      width="600"
+      class="video-js vjs-theme-sea cor-vjs"
       controls>
       <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
       <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
     </video>
+    
 
-    <div class="vjs-playlist">
+    <div class="vjs-playlist-container">
+      <div class="vjs-playlist vjs-fluid vjs-playlist-vertical vjs-csspointerevents vjs-mouse">
       <!--
         The contents of this element will be filled based on the
         currently loaded playlist
       -->
+      </div>
     </div>
   </div>
 
@@ -60,7 +102,10 @@ test
   <script src="https://cdn.jsdelivr.net/npm/videojs-playlist@4.3.1/dist/videojs-playlist.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.min.js"></script>
   <script>
-    var player = videojs('video');
+
+    var player = videojs('video', {
+      fluid: true
+    });
 
     player.playlist([{
       name: 'Youtube video',
@@ -78,6 +123,22 @@ test
       sources: [
         { src: 'https://www.youtube.com/watch?v=bJOq8fXhl8I', type: 'video/youtube' }
       ],
+
+      name: 'StreamOvation video',
+      description: 'Explore the depths of our planet\'s oceans. ' +
+        'Experience the stories that connect their world to ours. ' +
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
+        'sed do eiusmod tempor incididunt ut labore et dolore magna ' +
+        'aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ' +
+        'laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure ' +
+        'dolor in reprehenderit in voluptate velit esse cillum dolore eu ' +
+        'fugiat nulla pariatur. Excepteur sint occaecat cupidatat non ' +
+        'proident, sunt in culpa qui officia deserunt mollit anim id est ' +
+        'laborum.',
+      duration: 45,
+      sources: [
+        { src: 'https://edge.cdn.media.smv.cloud/cor-vod/_definst_/cor-cache/433_264_The_Horizon_Missions_of_the_European_Commission_e233453a82ccd0abe05df39e1f9cbbc8e3216d0b---mbr-11---.mp4/playlist.m3u8?tracks=fr&clientip=35.241.245.187&smvplayersession=b226f5dc-73bc-4b65-af8d-8c3cb7c575ff&new=true', type: 'application/x-mpegURL' }
+      ],
       
 
       // you can use <picture> syntax to display responsive images
@@ -88,7 +149,7 @@ test
           media: '(min-width: 400px;)'
         },
         {
-          src: 'https://placeimg.com/236/188/people'
+          src: 'https://placeimg.com/600/400/people'
         }
       ]
     },
