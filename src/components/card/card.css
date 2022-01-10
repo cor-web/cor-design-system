@@ -31,6 +31,11 @@
   font-size: var(--step--3);
 }
 
+.mainContent a.cor-card__title__link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .cor-card__title__link[href]:after {
   content: none;
 }

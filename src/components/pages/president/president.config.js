@@ -22,7 +22,7 @@ module.exports = {
     title: "​Apostolos Tzitzikostas",
     subtitle: "President of the European Committee of the Regions",
     poster: {
-      src: "https://thispersondoesnotexist.com/image",
+      src: "https://cor.europa.eu/en/about/president/PublishingImages/tzitzikostas.png",
     },
     members: memberData,
     documents: [

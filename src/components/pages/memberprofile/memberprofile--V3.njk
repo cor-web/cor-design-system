@@ -17,14 +17,14 @@
   </div>
 
 
-  <div class="cor-cover__description cor-stack max-width:measure">
+  <div class="cor-cover__description cor-stack cor-stack--2xs max-width:measure">
       <div>
-        <h2 class="cor-h6 font-bold">Political group</h2>
+        <h2 class="cor-h6 font-bold margin-0">Political group</h2>
         <p>ECR (European Conservatives and Reformists Group)</p>
       </div>
 
       <div>
-        <h2 class="cor-h6 font-bold">Commissions</h2>
+        <h2 class="cor-h6 font-bold margin-0">Commissions</h2>
         <ul class="margin margin-bottom-0 list-none">
           <li>COTER (Commission for Territorial Cohesion Policy)</li>
           <li>ENVE (Commission for Environment, Climate change and Energy)</li>
@@ -32,7 +32,7 @@
       </div>
     
       <div>
-        <h2 class="cor-h6 font-bold">Languages</h2>
+        <h2 class="cor-h6 font-bold margin-0">Languages</h2>
         <ul class="margin margin-bottom-0 list-none">
           <li>Polish</li>
           <li>French</li>
@@ -40,17 +40,17 @@
       </div>
 
       <div>
-        <h2 class="cor-h6 font-bold">Represented Country</h2>
+        <h2 class="cor-h6 font-bold margin-0">Represented Country</h2>
         <p>Poland</p>
       </div>
 
       <div>
-        <h2 class="cor-h6 font-bold">Member of the European Committee of the Regions since</h2>
+        <h2 class="cor-h6 font-bold margin-0">Member of the European Committee of the Regions since</h2>
         <p>08.11.2016</p>
       </div>
       
       <div>
-        <h2 class="cor-h6 font-bold" id="contact">Contact</h2>
+        <h2 class="cor-h6 font-bold margin-0" id="contact">Contact</h2>
         <ul class="margin margin-bottom-0 list-none">
           <li>
             <a href="tel:+33500000000" class="icon icon-before" style="--icon:var(--icon-phone)">+48 17 8501780</a>
@@ -62,13 +62,15 @@
       </div>
 
       <div>
-        <h2 class="cor-h6 font-bold"  id="socialmedia">Social media</h2>
+        <h2 class="cor-h6 font-bold margin-0"  id="socialmedia">Social media</h2>
         <ul class="margin margin-bottom-0 list-none">
           <li>
             <a href="tel:+33500000000" class="icon icon-before" style="--icon:var(--icon-facebook)">Facebook</a>
           </li>
         </ul>
       </div>
+
+
   </div>
   
   
@@ -84,187 +86,87 @@
 
       <section class="cor-rich-text">
       
-        <h2 id="Our goals">Our goals</h2>
+        <h2 id="Bodies">Bodies</h2>
 
-        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+        <h3>President/Chair</h3>
+        <ul>
+          <li>Carpathians IG</li>
+          <li>ECR Group</li>
+        </ul>
 
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <h2>Anim minim exercitation est cillum exercitation commodo</h2>
-
-        <h3>exercitation commodo</h3>
-
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
-
-        <h3>Anim minim exercitation</h3>
+        <h3>Rapporteur</h3>
+        <ul>
+          <li>7th Mandate - Commission COTER</li>
+        </ul>
         
-        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+        <h3>Member</h3>
+        <ul>
+          <li>⁪Conference of Presidents</li>
+          <li>CoR Delegation to the CoFoE</li>
+          <li>Enlargement Day</li>
+          <li>JCC Serbia</li>
+          <li>Polish delegation</li>
+          <li>WG Ukraine</li>
+        </ul>
 
-        <div class="padding margin-y bg inline-block">
-          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
+      </section>
+
+      <section>
+        <h2 id="green">Green Deal Going Local</h2>
+        <div class="cor-grid">
+          <div>
+            <h2 id="green" class="cor-h4">CoR Member in Action</h2>
+            <p>Cillum nisi ullamco enim exercitation ad dolor adipisicing anim sunt nisi ea sit.</p>
+            <ul>
+              <li><a href="#">Ambassador of the Covenant of Mayor</a></li>
+              <li><a href="#">Climate Pact Ambassador</a></li>
+              <li><a href="#">Ambassador of the Covenant of Mayor</a></li>
+              <li><a href="#">Climate Pact Ambassador</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <article class="cor-card  bg padding">
+              <figure>
+                <img src="https://cor.europa.eu/en/events/PublishingImages/4565%20GREEN%20DEAL%20new%20branding%20-%20web%20banner%20900x600.png" alt="alernative text" class="cor-card__image cor-image">
+              </figure>  
+
+              <h4 class="cor-card__title cor-fontsize--3">
+                <a class="cor-card__title__link" href="">Green Deal</a>
+              </h4>
+
+              <p>Laborum elit aliqua cupidatat magna consectetur dolore.</p>
+
+            </article>
+          </div>
         </div>
-
       </section>
 
-      <section class="cor-stack">
-        <h2 id="What's on" class="margin-0">What's on</h2>
-        
-        <section>
-          <h3>Latest news</h3>
 
-          <div class="cor-l-2andlist">
-          {% for newsitem in news %}
-
-            {% set cardExtraClass = "" %}
-            {% if loop.index < 3 %}
-              {% set cardExtraClass = "bg padding" %}
-            {% endif %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
-          {% endfor %}
-          </div>
-
-        </section>
-
-        <section>
-
-          <h3>Events</h4>
-          
-          <h4>Upcoming events</h4>
-
-          <div class="cor-l-2andlist margin-bottom">
-          {% for newsitem in upcomingEvents %}
-
-            {% set cardExtraClass = "" %}
-            {% if loop.index < 3 %}
-              {% set cardExtraClass = "bg padding" %}
-            {% endif %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
-          {% endfor %}
-          </div>
-
-          <h4>Past events</h4>
-
-          <div class="cor-containerWithDivider--dotted ">
-          {% for newsitem in pastEvents %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-          {% endfor %}
-          </div>
-
-        </section>
-
-      </section>
-    
       <section class="cor-stack">
         <h2 id="opinions" class="margin-0">Opinions</h2>
-        
-        <section>
-          <h3>Adopted opinions</h3>
-
-          <div class="cor-grid margin-bottom">
-          {% for opinion in adoptedOpinions %}
-            {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+        <ul class="cor-list list-style-none cor-containerWithDivider--dotted">
+          {% for opinion in opinions %}
+            <li>
+              <a href="#" sy>{{ opinion.title }}</a>
+            </li>
           {% endfor %}
-          </div>
-        </section>
-
-        <section>
-          <h3>Opinions currently in discussion</h3>
-
-          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
-          {% for newsitem in indiscussionOpinions %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
-          {% endfor %}
-          </div>
-        </section>
-
+        </ul>
       </section>
 
-      <section class="cor-stack">
-        <h2 id="opinions" class="margin-0">Reports</h2>
-        <div>
-          <ol class="cor-list cor-list--documents list-style-none cor-containerWithDivider--dotted">
-            <li>
-              <a href="document.pdf">14.06.21 European Year of Rail_Abruzzo</a> <small class="cor-list--documents__info">(3 MB - PDF)</small>
-            </li>
-            <li>
-              <a href="document.pdf">14.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">(3 MB - PDF)</small>
-            </li>
-            <li>
-              <a href="document.pdf">10.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">(3 MB - PDF)</small>
-            </li>
-            <li>
-              {% render "@document--study" %}
-            </li>
-            <li>
-              {% render "@document--study" %}
-            </li>
-            <li>
-              {% render "@document--study" %}
-            </li>
-          </ol>
+      <section>
+        <h3 id="latets-news">Latest news</h3>
+
+        <div class="cor-l-2andlist">
+        {% for newsitem in news %}
+
+          {% set cardExtraClass = "" %}
+          {% if loop.index < 3 %}
+            {% set cardExtraClass = "bg padding" %}
+          {% endif %}
+          {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+        {% endfor %}
         </div>
-      </section>
-
-      <section>
-        
-        <h2 id="learnmore" class="margin-0">Learn more</h2>
-
-        <div class="cor-stack">
-          <section>
-            <h3 class="cor-toc-section margin-top">Videos and others</h3>
-            {% render "@videoplayer--withplaylist" %}
-          </section>
-
-          <section>
-            <h3 class="cor-toc-section margin-top">Related links</h3>
-            <ul class="margin-bottom-0 padding-left">
-              <li><a href="test.be">Link 1</a></li>
-              <li><a href="test.be">Link 2</a></li>
-              <li><a href="test.be">Link 3</a></li>
-            </ul>
-          </section>
-
-          <section>
-            <h3 class="cor-toc-section margin-top">See also</h3>
-            
-            <div class="cor-stack">
-              <div>
-                <h4>COVID-19</h4>
-                <ul class="padding-left">
-                  <li><a href="test.be">Link 1</a></li>
-                  <li><a href="test.be">Link 2</a></li>
-                  <li><a href="test.be">Link 3</a></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4>Survey</h4>
-                <ul class="padding-left">
-                  <li><a href="test.be">Link 1</a></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4>USeful resources</h4>
-                <ul class="padding-left">
-                  <li><a href="test.be">Link 1</a></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-        </div>
-
-      </section>
-
-      <section>
-        <h2 id="contact">Follow us</h2>
-        <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> 
-      </section>
-
-      <section>
-        <h2 id="contact">Contact</h2>
-        <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
       </section>
 
       <section>

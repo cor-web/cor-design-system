@@ -119,10 +119,10 @@
         <h2 id="opinions">Opinions</h2>
         
         <section>
-          <h3>Adopted Opinions</h3>
+          <h3>Adopted Opinions 3</h3>
 
-          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
-          {% for opinion in opinions %}
+          <div class="cor-containerWithDivider--dotted cor-stack--2xs">111
+          {% for opinion in opinions %}test
             {% render "@card" , {date: opinion.date,  titleLevel: "h4", title: opinion.title, image: opinion.image, cardExtraClass: "padding-y--3xs" } %}
           {% endfor %}
           </div>

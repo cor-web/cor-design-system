@@ -78,3 +78,26 @@ context:
       title: "#CoRplenary: Local leaders to discuss democracy, the European way of life, and the Conference on the Future of Europe"
       link: "www.cor.europa.eu"
       themes: ["EU communication policy"]
+    - image:
+        src: "https://cor.europa.eu/en/news/PublishingImages/plane_shutterstock.jpg"
+        alt: "alernative text"
+      date: "01/06/2021"
+      title: "Cities and regions want more support for regional airports struggling from the pandemic"
+      link: "www.cor.europa.eu"
+      themes:
+        [
+          "Air transport",
+          "Transport policy",
+          "Territorial cohesion",
+          "Green Deal",
+          "Sustainable mobility",
+        ]
+      promo: "With many regional airports struggling to recover from the economic hardship caused by the pandemic, members of the European Committee of the Regions adopted an opinion on 1 July, which calls on the European Commission to develop more flexible and more effective public aid rules that enable Member States to provide regional airports with financial assistance. In the opinion , which was drafted by Władysław Ortyl (PL/ECR), the CoR also emphasized that financial support must be invested in making airports more sustainable in order to help achieve the objectives set out in the European Green Deal."
+    - image:
+        src: "https://cor.europa.eu/en/news/PublishingImages/Plenary.jpg"
+        alt: "alernative text"
+      date: "01/06/2021"
+      title: "#CoRplenary: Local leaders to discuss democracy, the European way of life, and the Conference on the Future of Europe"
+      link: "www.cor.europa.eu"
+      themes: ["EU communication policy"]
+
