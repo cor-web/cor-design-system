@@ -1,42 +1,40 @@
-<cor-cover class="cor-cover--topbar" style="--color:{{ color }}">
+<cor-cover class="cor-cover--grid-2">
   
-  <hgroup>
-    <div>
-    
+  <div>
+    <hgroup class="cor-cover__header">
+
       <h1>{% if title %} {{ title }} {% endif %}</h1>
-    
+      
       {% if subtitle %}
         <h2>{{ subtitle }}</h2>
       {% endif %}
-
-    </div>
-    
-  </hgroup>
-
-  <div class="cor-stack">
-      
-        <dl class="cor-stack">
-          <dt>Name</dt>
-          <dd >Enda Stenson</dd>
-
-          <dt>Nationality</dt>
-          <dd>Irish</dd>
-
-          <dt>Region/City</dt>
-          <dd>County Leitrim</dd>
-
-          <dt>Political group in the CoR</dt>
-          <dd>European Alliance Group</dd>
-
-          <dt>Position/Title</dt>
-          <dd>Local councilor, Leitrim<br/>
-          County Council, IE</dd>
-        </dl>
-        
-      
+    </hgroup>
   </div>
-  
-  <div>
+
+  {% if poster %}
+  <div class="cor-cover__picture">
     <img src="{{ poster.src }}" alt="{{ poster.alt }}" />
   </div>
+  {% endif %}
+
+  <div class="cor-cover__description cor-stack max-width:measure">
+    <dl class="cor-stack">
+      <dt>Name</dt>
+      <dd >Enda Stenson</dd>
+
+      <dt>Nationality</dt>
+      <dd>Irish</dd>
+
+      <dt>Region/City</dt>
+      <dd>County Leitrim</dd>
+
+      <dt>Political group in the CoR</dt>
+      <dd>European Alliance Group</dd>
+
+      <dt>Position/Title</dt>
+      <dd>Local councilor, Leitrim<br/>
+      County Council, IE</dd>
+    </dl>
+  </div>
+
 </cor-cover>
