@@ -37,7 +37,7 @@ class TableOfContent extends HTMLElement {
         ul > li {
           list-style-position: outside;
           list-style-type: disc;
-          padding-left: var(--space-3xs);
+          line-height: initial;
         }
         
         h2 {
@@ -49,7 +49,7 @@ class TableOfContent extends HTMLElement {
         }
         
         a {
-          font-size: var(--step--3);
+          font-size: var(--step--4);
           text-decoration: underline;
           margin-top: var(--space-4xs, 1rem);
         }

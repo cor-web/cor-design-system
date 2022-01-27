@@ -95,3 +95,7 @@ button.button--block,
 a.button--block {
   width: 100%;
 }
+
+[role="button"]:hover {
+   cursor: pointer;
+}

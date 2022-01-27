@@ -22,3 +22,25 @@
   width: 100%;
   z-index: 1;
 }
+
+.cor-video-container ul li,
+.cor-video-container h5 {
+  margin: 0;
+}
+
+.cor-video-container [role="button"] {
+  --space: var(--space-2xs);
+}
+
+.cor-video-container [role="button"],
+.cor-video-container [role="button"] h5 {
+  color: var(--link-color);
+  font-weight: bold;
+  font-size: var(--step--4);
+  text-decoration: none;
+} 
+
+.cor-video-container [role="button"]:hover,
+.cor-video-container [role="button"]:hover h5 {
+  text-decoration: underline;
+} 

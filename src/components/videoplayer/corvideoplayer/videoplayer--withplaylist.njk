@@ -1,5 +1,5 @@
 
-<article class="cor-video-container bg padding">
+<div class="cor-video-container bg padding">
   <article>
     <h5 class="cor-h5" id="links">{{ video.title }}​</h5>
     <video width="100%" controls
@@ -19,12 +19,12 @@
     <ul class="list-none cor-grid" style="--threshold: 150px">
       {% for video in relatedVideos %}
       <li>
-        <a href="{{ video.id }}​" class="cor-with-sidebar cor-with-sidebar--left" style="--sideWidth: 150px">
+        <div role="button" tabindex="0" class="cor-with-sidebar cor-with-sidebar--left" style="--sideWidth: 150px">
           <span class="cor-video-preview"><img src="{{ video.poster }}​" alt="" class="cor-image" /></span>
-          <h5 class="cor-fontsize--3">{{ video.title }}​</h5>
+          <h5>{{ video.title }}​</h5>
         </a>
       </li>
       {% endfor %}
     </ul>
   </div>
-</article>
+</div>

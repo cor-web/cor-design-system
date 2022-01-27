@@ -7,6 +7,16 @@
   list-style-image: var(--icon-document);
 }
 
+
+.mainContent .cor-list--documents a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mainContent .cor-list--documents a:hover {
+  text-decoration: underline;
+}
+
 .mainContent .cor-list--documents > li {
   list-style: none;
   display: grid;
