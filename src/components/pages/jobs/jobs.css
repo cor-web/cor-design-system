@@ -1,10 +1,15 @@
+.mainContent p {
+  max-width: 75ch;
+}
+
 .cor-jobs-opportunities > li > a {
   align-items: baseline;
   border: solid 1px var(--link-color);
   color: var(--link-color);
   display: grid;
-  gap: var(--space-xs);
+  gap: var(--space-3xs);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-decoration: none;
 }
 
 .cor-jobs-opportunities > li > a:hover {
@@ -23,6 +28,25 @@
 
 .cor-jobs-opportunities > li > a:hover h3 {
   color: white;
+}
+
+.cor-jobs__campaign {
+  background-color: var(--oc-gray-1);
+  padding: var(--space-l);
+  margin: var(--space-2xl);
+  display: grid;
+  justify-items: center;
+  gap: var(--space-xs);
+}
+
+.cor-jobs__campaign > h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.cor-jobs__campaign > button {
+  background-color: var(--oc-gray-1);
+  border-color: black !important; /* Override bootrstrap */
 }
 
 .cor-jobs__nav {

@@ -7,7 +7,7 @@
 <div class="cor-container bg-white">
 
   
-  {% render "@cover--topbar", {title: title, subtitle: subtitle, poster: poster, description: description, cta: cta}, true %}
+  {% render "@cover--grid-2", {title: title, subtitle: subtitle, poster: poster, description: description, cta: cta}, true %}
 
 
   <ul class="cor-jobs__wordcloud padding list-style-none margin-y--xl">
@@ -18,38 +18,66 @@
     <li>Work life balance </li>
   </ul>
 
+  <!-- <div class="cor-jobs__campaign">
+    <h2>Expert National? Aliquip incididunt reprehenderit ut incididunt dolore labore occaecat nisi mollit tempor enim anim velit?</h2>
+    <button class="txt-xl border padding rounded-full padding-left-xl flex">En savoir plus</button>
+  </div>
+  -->
 
   <!-- Initiatives -->
-  <article class="cor-box cor-stack">
-    <h2 class="cor-toc-section cor-h3" id="initiatives">Our current job opportunities?</h2>
-    <p class="txt-xl">Are YOU the talent we are looking for? Read our current vacancy notices and apply to the position that best suits your profile. </p>
-    <ul class="cor-jobs-opportunities cor-stack list-style-none">
-    {% if latestopportunities %}
-      {% for item in latestopportunities.slice(0, 3) %}
-        <li>
-          <a class="padding" href="/components/preview/vacancy">
-            <strong class="txt-xl">{{ item.grade }}</strong>
-            <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
-            
-            <span>Directorate B, Legislative Work 1</span>
+  <section class="cor-box cor-stack ">
+    <h2>Our current job opportunities?</h2>
+    <div><p class="txt-xl">Are YOU the talent we are looking for? Read our current vacancy notices and apply to the position that best suits your profile. </p></div>
+    <div>
+      <h3>Title of the campaign</h3>
+      <ul class="cor-jobs-opportunities list-style-none cor-grid">
+      
+        {% for item in latestopportunities %}
+          <li>
+            <a class="padding" href="/components/preview/vacancy">
+              <span>{{ item.grade }}</span>
+              <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
+              
+              <span>Directorate B, Legislative Work 1</span>
 
-            <div>
-              <strong>Deadline:</strong>
-              <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
+              <div>
+                <strong>Deadline:</strong>
+                <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div>
+      <h3>Current opportunities</h3>
+      <ul class="cor-jobs-opportunities list-style-none cor-grid">
+      {% if latestopportunities %}
+        {% for item in latestopportunities %}
+          <li>
+            <a class="padding" href="/components/preview/vacancy">
+              <span>{{ item.grade }}</span>
+              <h3 class="cor-h5 margin-0">{{ item.jobtitle }}</h3>
+              
+              <span>Directorate B, Legislative Work 1</span>
 
-      </ul>
+              <div>
+                <strong>Deadline:</strong>
+                <time class="cor-card__date" datetime="2015-05-16 19:00">{{ item.date }}</time>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
 
+        </ul>
+      </div>
       
 
     {% else %}
     <p>There are no vacancies available at the moment. However, the world of European careers is constantly changing. To keep up to date with the latest opportunities, check the EU Careers website. And if you want to stay ahead of the competition, let's practice with EPSO sample tests! </p>
     {% endif %}
   </ul>
-  </article>
+  </section>
   <!-- /Initiatives -->
 <!--
   <nav class="cor-switcher cor-switcher--4 margin-top-xl cor-jobs__nav padding">

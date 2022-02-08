@@ -1,48 +1,59 @@
-.cor-stack {
+.cor-stack,
+.mainContent .cor-stack {
   --stack-space: var(--space, 1.5rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.cor-stack--3xs {
+.cor-stack--3xs,
+.mainContent .cor-stack--3xs  {
   --stack-space: var(--space-3xs);
 }
 
-.cor-stack--2xs {
+.cor-stack--2xs,
+.mainContent .cor-stack--2xs  {
   --stack-space: var(--space-2xs);
 }
 
-.cor-stack--xs {
+.cor-stack--xs,
+.mainContent .cor-stack--xs {
   --stack-space: var(--space-xs);
 }
 
-.cor-stack--s {
+.cor-stack--s,
+.mainContent .cor-stack--s {
   --stack-space: var(--space-s);
 }
 
-.cor-stack--m {
+.cor-stack--m,
+.mainContent .cor-stack--m {
   --stack-space: var(--space-m);
 }
 
-.cor-stack--l {
+.cor-stack--l,
+.mainContent .cor-stack--l {
   --stack-space: var(--space-l);
 }
 
-.cor-stack--xl {
+.cor-stack--xl,
+.mainContent .cor-stack--xl {
   --stack-space: var(--space-xl);
 }
 
-.cor-stack--2xl {
+.cor-stack--2xl,
+.mainContent .cor-stack--2xl {
   --stack-space: var(--space-2xl);
 }
 
-.cor-stack > * {
+.cor-stack > *,
+.mainContent .cor-stack > * {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.cor-stack > * + * {
+.cor-stack > * + * ,
+.mainContent .cor-stack > * + * {
   margin-top: var(--stack-space);
 }
 

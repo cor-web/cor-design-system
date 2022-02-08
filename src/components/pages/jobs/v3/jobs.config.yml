@@ -25,6 +25,13 @@ context:
         target: "document.pdf"
         size: "3 MB PDF"
     - date: "01/06/2021"
+      grade: "AST1 - AST7"
+      jobtitle: "Project manager"
+      link:
+        text: "The Bratislava - Petržalka Youth Parliament debates how the European Green Deal can make the city of Bratislava greener and healthier"
+        target: "document.pdf"
+        size: "3 MB PDF"
+    - date: "01/06/2021"
       grade: AST1 - AST7
       jobtitle: "Project manager"
       link:
