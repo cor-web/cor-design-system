@@ -47,6 +47,14 @@
   padding-left: var(--space-xs) !important;
 }
 
+.padding-left-l {
+  padding-left: var(--space-l) !important;
+}
+
+.padding-left-m {
+  padding-left: var(--space-m) !important;
+}
+
 .padding-left-xl {
   padding-left: var(--space-xl) !important;
 }
