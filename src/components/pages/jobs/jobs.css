@@ -44,13 +44,28 @@
 .cor-jobs__campaign--withimage {
   display: grid;
   gap: var(--space-xs);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .cor-jobs__campaign--withimage img + div {
-  grid-column: 2 / -1;
   padding: var(--space-xs);
 }
+
+@media screen and (min-width: 500px) {
+  .cor-jobs__campaign--withimage {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: var(--space-xs);
+  }
+
+
+  
+  .cor-jobs__campaign--withimage img + div {
+    grid-column: 2 / -1;
+    padding: 0;
+  }
+}
+
+
 
 .cor-jobs__campaign .cor-card :not(:first-child) {
   margin: 0 var(--space-xs);
