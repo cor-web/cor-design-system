@@ -30,25 +30,23 @@
   color: white;
 }
 
+.cor-jobs__campaigns-list {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 .cor-jobs__campaign {
   background-color: var(--oc-gray-1);
-  padding: var(--space-l);
-  margin: 0 var(--space-2xl);
-  display: grid;
-  justify-items: center;
-  gap: var(--space-xs);
 }
 
-.cor-jobs__campaign--withimg {
-  grid-template-columns: repeat(
-      auto-fit,
-      minmax(min(150px), 100%), 1fr)
-    );
+.cor-jobs__campaign .cor-card :not(:first-child) {
+  margin: 0 var(--space-xs);
 }
 
-
-@media screen  {
-  
+.cor-jobs__campaign .cor-card {
+  padding-bottom: var(--space-xs);
 }
 
 .cor-jobs__campaign > h2 {
