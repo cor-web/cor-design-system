@@ -22,32 +22,21 @@
   <section class="cor-box cor-stack ">
     <h2>Our current job opportunities?</h2>
     <div><p class="txt-xl">Are YOU the talent we are looking for? Read our current vacancy notices and apply to the position that best suits your profile. </p></div>
-    <!--
+    
     <div>
-      <div class="cor-jobs__campaign">
-        <h3 class="cor-h4">Opportunities for secondment of national experts to discover the work of the CoR from the inside and to enhance cross-cooperation between local and regional authorities and the CoR</h3>
-          <button href="https://europa.eu/epso/application/passport/login.cfm?langsub=ok&amp;lang=en" class="txt-xl border padding block rounded-full padding-left-m flex">Read more
+      <div class="cor-jobs__campaign cor-jobs__campaign--withimage">
+        <img src="/assets/images/jobs/jobs-campaign-end.png" alt="" class="cor-card__image cor-image">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="margin-left margin-right bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-            </svg>
-          </button>
+        <div>
+          <h3 class="cor-h4">Campaign title</h3>
+          <p>Opportunities for secondment of national experts to discover the work of the CoR from the inside and to enhance cross-cooperation between local and regional authorities and the CoR</p>
+
+          <a href="test.be" class="cor-card__cta icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">
+          Learn more
+          </a>
+        </div>
       </div>
     </div>
-    -->
-
-    <div>
-      <h3>Our campaigns</h3>
-      <ul class="cor-jobs__campaigns-list list-style-none">
-        {% for campaign in campaigns %}
-        <li class="cor-jobs__campaign">
-            {% render "@card" , {date: campaign.date, titleLevel: "h3", link: campaign.link, promo: campaign.description, cta: campaign.link, image: campaign.image, cardExtraClass: cardExtraClass } %}
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
 
     <div>
       <h3>Current opportunities</h3>

@@ -41,6 +41,17 @@
   background-color: var(--oc-gray-1);
 }
 
+.cor-jobs__campaign--withimage {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cor-jobs__campaign--withimage img + div {
+  grid-column: 2 / -1;
+  padding: var(--space-xs);
+}
+
 .cor-jobs__campaign .cor-card :not(:first-child) {
   margin: 0 var(--space-xs);
 }
