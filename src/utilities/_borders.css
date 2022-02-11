@@ -1,9 +1,8 @@
 .border {
   --border-size: 1px;
-  --border-color: var(--color-dark);
   --border-style: solid;
 
-  border: var(--border-size) var(--border-style) var(--border-color) !important;
+  border: var(--border-size) var(--border-style) var(--border-color, inherit) !important;
 }
 
 .border-top {
