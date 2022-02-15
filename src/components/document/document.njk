@@ -1,7 +1,11 @@
 <cor-document class="cor-document">
   <span class="cor-document__header">
-    <h3 class="cor-document__title">{{ document.title }}</h3>
-    {% if document.date %}<span class="cor-document__date">Date: {{ document.date }}</span>{% endif %}
+    <h3 class="cor-document__title margin-0">{{ document.title }}</h3>
+    {% if document.author %}<span class="cor-document__author">Author: <strong>{{ document.author }}</strong></span>{% endif %}
+    {% if document.date %}<span class="cor-document__date">Date: <strong>{{ document.date }}</strong></span>{% endif %}
+    {% if document.themes %}
+      <span class="cor-document__themes">Themes: {% for theme in document.themes %}{{ theme }}{% endfor %}</span>
+    {% endif %}
   </span>
   <div class="cor-document__info">
     {% if document.cover %}

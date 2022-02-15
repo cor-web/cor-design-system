@@ -28,6 +28,8 @@ module.exports = {
     documents: [
       {
         title: "Preventing corruption at local and regional level in South Mediterranean countries",
+        author: "Jane Doe",
+        themes: ["thème 1", "thème 2", "thème 3"],
         src: "google.be",
         date: "12/11/2021",
         language: "English",
@@ -58,6 +60,8 @@ module.exports = {
       },
       {
         title: "Preventing corruption at local and regional level in South Mediterranean countries",
+        author: "Jane Doe",
+        themes: ["thème 1", "thème 2", "thème 3"],
         src: "google.be",
         date: "12/11/2021",
         language: "English",
