@@ -12,6 +12,14 @@
   padding-top: 0 !important;
 }
 
+.padding-top-2xs {
+  padding-top: var(--space-2xs) !important;
+}
+
+.padding-top-m {
+  padding-top: var(--space-m);
+}
+
 .padding-x {
   padding-left: var(--space-xs) !important;
   padding-right: var(--space-xs) !important;
@@ -33,6 +41,11 @@
 .padding-y {
   padding-top: var(--space-xs) !important;
   padding-bottom: var(--space-xs) !important;
+}
+
+.padding-y-2xs {
+  padding-top: var(--space-2xs) !important;
+  padding-bottom: var(--space-2xs) !important;
 }
 
 .padding-y-xl {

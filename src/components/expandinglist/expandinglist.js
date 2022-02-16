@@ -19,7 +19,7 @@ class ExpandingList extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
     // Get li elements 
-    const lis = Array.from(this.querySelectorAll('li'));
+    const lis = Array.from(this.children[0].children);
 
     this.button = this.shadowRoot.querySelector('button');
 
@@ -43,26 +43,22 @@ class ExpandingList extends HTMLElement {
   }
 
   _checkVisibleElements() {
+    if (this.querySelectorAll('.visually-hidden').length === 0) {
 
+      this.setAttribute('expanded', '');
+
+      if (this.txtButtonHide) {
+        this.button.textContent = this.txtButtonHide;
+      }
+    }
   }
 
   _onFocusin(focusedElement) {
-    console.log(focusedElement);
 
     if (focusedElement.closest('.visually-hidden')) {
       focusedElement.closest('.visually-hidden').classList.remove('visually-hidden');
-
-
-      if (this.querySelectorAll('.visually-hidden').length === 0) {
-
-        this.setAttribute('expanded', '');
-
-        if (this.txtButtonHide) {
-          this.button.textContent = this.txtButtonHide;
-        }
-      }
+      this._checkVisibleElements();
     }
-
   }
 
   _onClick() {

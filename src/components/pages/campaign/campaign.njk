@@ -51,16 +51,18 @@
         <section>
           <h3>Latest news</h3>
 
-          <div class="cor-l-2andlist">
+          <ul class="cor-l-2andlist list-style-none">
           {% for newsitem in news %}
 
             {% set cardExtraClass = "" %}
             {% if loop.index < 3 %}
               {% set cardExtraClass = "bg padding" %}
             {% endif %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            <li class="padding-top-2xs">
+              {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            </li>
           {% endfor %}
-          </div>
+          </ul>
 
         </section>
 
@@ -70,24 +72,28 @@
           
           <h4>Upcoming events</h4>
 
-          <div class="cor-l-2andlist margin-bottom">
+          <ul class="cor-l-2andlist margin-bottom list-style-none">
           {% for newsitem in upcomingEvents %}
 
             {% set cardExtraClass = "" %}
             {% if loop.index < 3 %}
               {% set cardExtraClass = "bg padding" %}
             {% endif %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            <li class="padding-top-2xs">
+              {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            </li>
           {% endfor %}
-          </div>
+          </ul>
 
           <h4>Past events</h4>
 
-          <div class="cor-containerWithDivider--dotted ">
+          <ul class="cor-containerWithDivider--dotted list-style-none">
           {% for newsitem in pastEvents %}
-            {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            <li class="padding-y-2xs">
+              {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            </li>
           {% endfor %}
-          </div>
+          </ul>
 
         </section>
 
@@ -99,21 +105,25 @@
         <section>
           <h3>Adopted opinions</h3>
 
-          <div class="cor-grid margin-bottom">
+          <ul class="cor-grid margin-bottom list-style-none">
           {% for opinion in adoptedOpinions %}
-            {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+            <li>
+              {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+            </li>
           {% endfor %}
-          </div>
+          </ul>
         </section>
 
         <section>
           <h3>Opinions currently in discussion</h3>
 
-          <div class="cor-containerWithDivider--dotted cor-stack--2xs">
+          <ul class="cor-containerWithDivider--dotted cor-stack--2xs list-style-none">
           {% for newsitem in indiscussionOpinions %}
-            {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            <li>
+              {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            </li>
           {% endfor %}
-          </div>
+          </ul>
         </section>
 
       </section>
