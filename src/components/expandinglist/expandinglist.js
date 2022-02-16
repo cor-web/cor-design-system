@@ -4,6 +4,8 @@ template.innerHTML = `
     :host {
     display: block;
     }
+
+
   </style>
   <slot></slot>
   <button aria-hidden="true">Read More</button>
@@ -27,9 +29,39 @@ class ExpandingList extends HTMLElement {
 
     this.button.addEventListener('click', this._onClick.bind(this));
 
+    this.focusableElements = Array.from(this.querySelectorAll('li a'));
+    this.focusableElements.forEach(focusableElement => {
+      focusableElement.addEventListener('focus', (event) => {
+        this._onFocusin(event.target);
+      });
+    });
+
   }
 
   connectedCallback() {
+
+  }
+
+  _checkVisibleElements() {
+
+  }
+
+  _onFocusin(focusedElement) {
+    console.log(focusedElement);
+
+    if (focusedElement.closest('.visually-hidden')) {
+      focusedElement.closest('.visually-hidden').classList.remove('visually-hidden');
+
+
+      if (this.querySelectorAll('.visually-hidden').length === 0) {
+
+        this.setAttribute('expanded', '');
+
+        if (this.txtButtonHide) {
+          this.button.textContent = this.txtButtonHide;
+        }
+      }
+    }
 
   }
 
@@ -49,6 +81,7 @@ class ExpandingList extends HTMLElement {
     this.listToHide.forEach(li => {
       li.classList.remove('visually-hidden');
     });
+    this.listToHide[0].focus();
     this.setAttribute('expanded', '');
 
     if (this.txtButtonHide) {
@@ -94,4 +127,6 @@ class ExpandingList extends HTMLElement {
   }
 }
 
-customElements.define('expanding-list', ExpandingList);
+if (!customElements.get('expanding-list')) {
+  customElements.define('expanding-list', ExpandingList);
+}
