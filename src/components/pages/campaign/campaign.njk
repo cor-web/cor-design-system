@@ -17,7 +17,22 @@
 
   <div class="cor-with-sidenav cor-content">
 
-    {% render "@toc--dynamic" , {nav: contentnav}, true %}
+    <div class="cor-stack">
+
+      <div class="cor-stack cor-stack--2xs">
+        <h2 class="font-bold txt-step--3 margin-0">Commissions</h2>
+        <nav class="cor-cluster">
+          <a class="txt-step--3" href="test.be">Link 1</a>
+          <a class="txt-step--3" href="test.be">Link 2</a>
+          <a class="txt-step--3" href="test.be">Link 3</a>
+          <a class="txt-step--3" href="test.be">Link 4</a>
+          <a class="txt-step--3" href="test.be">Link 5</a>
+        </nav>
+      </div>
+      
+      {% render "@toc--dynamic" , {nav: contentnav}, true %}
+      
+    </div>
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
       
