@@ -123,6 +123,6 @@ class ExpandingList extends HTMLElement {
   }
 }
 
-if (!customElements.get('expanding-list')) {
-  customElements.define('expanding-list', ExpandingList);
+if (!customElements.get('cor-expanding-list')) {
+  customElements.define('cor-expanding-list', ExpandingList);
 }

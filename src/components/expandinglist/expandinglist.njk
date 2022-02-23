@@ -1,12 +1,12 @@
-<expanding-list limit="3" more-btn-txt-show="Plus"  more-btn-txt-hide="Moins">
+<cor-expanding-list limit="3" more-btn-txt-show="Plus"  more-btn-txt-hide="Moins">
   <ul>
     {% for newsitem in news %}
       <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
     {% endfor %}
   </ul>
-</expanding-list>
+</cor-expanding-list>
 
-<expanding-list limit="3" more-btn-txt-show="Plus"  more-btn-txt-hide="Moins">
+<cor-expanding-list limit="3" more-btn-txt-show="Plus"  more-btn-txt-hide="Moins">
   <ul>
     <li>
       {% render "@document" %}
@@ -27,7 +27,7 @@
       {% render "@document" %}
     </li>
   </ul>
-</expanding-list>
+</cor-expanding-list>
 
 
 

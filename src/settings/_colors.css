@@ -38,4 +38,17 @@
   --color-theme-05-maximum-blue-purple: hsla(231, 100%, 81%, 1);
   --color-theme-05-sky-blue-crayola: hsla(190, 96%, 73%, 1);
   --color-theme-05-maximum-blue: hsla(191, 65%, 57%, 1);
+
+  --color-commission-civex : #8A72AE;
+  --color-commission-civex-rgb : #8A72AE;
+  --color-commission-coter : #DC911B;
+  --color-commission-coter-rgb : #DC911B;
+  --color-commission-econ : #8E2554;
+  --color-commission-econ-rgb : #8E2554;
+  --color-commission-enve : #97BB3A;
+  --color-commission-enve-rgb : #97BB3A;
+  --color-commission-nat : #BA3DC;
+  --color-commission-nat-rgb : #BA3DC;
+  --color-commission-cedec : #007990;
+  --color-commission-cedec-rgb : #007990;
 }
