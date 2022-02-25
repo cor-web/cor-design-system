@@ -25,6 +25,11 @@
   padding-right: var(--space-xs) !important;
 }
 
+.padding-x-2xs {
+  padding-left: var(--space-2xs) !important;
+  padding-right: var(--space-2xs) !important;
+}
+
 .padding-x-xl {
   padding-left: var(--space-xl) !important;
   padding-right: var(--space-xl) !important;

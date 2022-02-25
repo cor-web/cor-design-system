@@ -60,7 +60,7 @@ class TableOfContent extends HTMLElement {
           color: var(--link-color);
         }
         a:hover {
-          text-decoration: underline;
+          text-decoration: none;
         }
       
         :host {

@@ -73,7 +73,38 @@
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}	
+
 .border-color-page {
   --border-color: rgb(var(--page-color,var(--oc-gray-8-rgb)));
 }
+
+.border-color-commission-civex {
+  --border-color: rgb(var(--color-commission-civex-rgb));
+}
+
+.border-color-commission-coter {
+  --border-color: rgb(var(--color-commission-coter-rgb));
+}
+
+.border-color-commission-econ {
+  --border-color: rgb(var(--color-commission-econ-rgb));
+}
+
+.border-color-commission-enve {
+  --border-color: rgb(var(--color-commission-enve-rgb));
+}
+
+.border-color-commission-nat {
+  --border-color: rgb(var(--color-commission-nat-rgb));
+}
+
+.border-color-commission-cedec {
+  --border-color: rgb(var(--color-commission-cedec-rgb));
+}
+
+
+
 

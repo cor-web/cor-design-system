@@ -10,12 +10,14 @@
   vertical-align: -0.125em;
   -webkit-mask-image: var(--icon);
   mask-image: var(--icon);
-  background: var(--color);
+  background: var(--bg-color, var(--color));
   height: 16px;
   width: 16px;
 }
 
 a.icon:before,
-a.icon:after {
+a.icon:after,
+.icon:before,
+.icon:after {
   --color: var(--link-color);
 }
