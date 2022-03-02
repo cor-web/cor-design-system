@@ -30,6 +30,7 @@
 
 .cor-video-container [role="button"] {
   --space: var(--space-2xs);
+  align-items: flex-start;
 }
 
 .cor-video-container [role="button"],

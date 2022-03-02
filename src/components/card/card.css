@@ -36,6 +36,10 @@
   text-decoration: none;
 }
 
+.mainContent a.cor-card__title__link:hover {
+  text-decoration: underline;
+}
+
 .cor-card__title__link[href]:after {
   content: none;
 }

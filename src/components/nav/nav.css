@@ -50,13 +50,23 @@ nav [aria-current="page"] {
   font-size: var(--step--3);
 }
 
-.cor-sidenav nav a {
+.cor-sidenav nav a[href$="/Pages/civex.aspx"],
+.cor-sidenav nav a[href$="/Pages/coter.aspx"],
+.cor-sidenav nav a[href$="/Pages/econ.aspx"],
+.cor-sidenav nav a[href$="/Pages/enve.aspx"],
+.cor-sidenav nav a[href$="/Pages/nat.aspx"],
+.cor-sidenav nav a[href$="/Pages/cedec.aspx"] {
   display: inline-flex;
   gap: var(--space-3xs);
   align-items: center;
 }
 
-.cor-sidenav nav a:before {
+.cor-sidenav nav a[href$="/Pages/civex.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/coter.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/econ.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/enve.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/nat.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/cedec.aspx"]:before {
   content: "";
   vertical-align: -0.125em;
   -webkit-mask-image: var(--icon-chevron-right);
@@ -65,6 +75,7 @@ nav [aria-current="page"] {
   height: 16px;
   width: 16px;
 }
+
 
 .cor-sidenav nav a[href$="/Pages/civex.aspx"] {
   --color: var(--color-commission-civex);

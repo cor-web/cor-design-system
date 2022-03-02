@@ -17,8 +17,10 @@
 
   <div class="cor-with-sidenav cor-content">
 
-    <div class="cor-stack cor-sidenav">
+    <div class="cor-stack cor-sidenav cor-sidenav--sticky">
 
+      {% render "@toc--dynamic" , {nav: contentnav}, true %}
+      
       <div class="cor-nav cor-stack cor-stack--2xs">
         <h2 class="cor-nav__title">Commissions</h2>
         <nav class="cor-stack cor-stack--2xs">
@@ -28,8 +30,6 @@
         </nav>
       </div>
       
-      {% render "@toc--dynamic" , {nav: contentnav}, true %}
-      
     </div>
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
@@ -38,7 +38,7 @@
       
         <h2 id="Our goals">Our goals</h2>
 
-        <p>The final results of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+        <p><a href="test.be">The final results</a> of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
 
         <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
 
