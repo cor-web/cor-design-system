@@ -6,6 +6,21 @@
   </ul>
 </cor-expanding-list>
 
+<hr/>
+2 elements
+<cor-expanding-list limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ul>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+  </ul>
+</cor-expanding-list>
+
+<hr/>
+
 <cor-expanding-list limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
   <ul>
     <li>
@@ -27,6 +42,27 @@
       {% render "@document" %}
     </li>
   </ul>
+</cor-expanding-list>
+
+
+<cor-expanding-list selector=".item" limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ul>
+    <li class="item">
+      {% render "@document" %}
+    </li>
+    <li class="item">
+      {% render "@document" %}
+    </li>
+  </ul>
+  <p class="item">Item</p>
+  <p class="item">Item</p>
+  <p class="item">Item</p>
+  <p class="item">Item</p>
+  <ol>
+    <li>
+      UN 
+    </li>
+  </ol>
 </cor-expanding-list>
 
 

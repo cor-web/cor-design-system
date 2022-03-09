@@ -57,6 +57,10 @@ class TableOfContent extends HTMLElement {
           transition: outline-offset 0.2s linear;
         }
         
+        a:hover {
+          text-decoration: none;
+        }
+
         a:link,
         a:focus,
         a:visited,
@@ -69,7 +73,7 @@ class TableOfContent extends HTMLElement {
           background-color: #024;
         }
 
-        a:hover {
+        a:focus {
           outline-color: currentColor;
           outline-offset: 2px;
         }

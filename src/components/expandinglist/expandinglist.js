@@ -16,7 +16,7 @@ template.innerHTML = `
       vertical-align: middle;
       user-select: none;
       border: var(--button-border-width, 1px) solid var(--button-background-color);
-      margin: 0 auto;
+      margin: var(--button-margin-y, var(--space-xs)) var(--button-margin-x, auto);
       padding: var(--button-padding-y) var(--button-padding-x);
     }
 
@@ -59,13 +59,16 @@ class ExpandingList extends HTMLElement {
   constructor() {
     super();
 
+    const selector = this.selector ? this.querySelectorAll(this.selector) : this.children[0].children;
+
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
     // Get li elements 
-    const lis = Array.from(this.children[0].children);
+    const lis = Array.from(selector);
 
     this.button = this.shadowRoot.querySelector('button');
+    if (lis.length <= this.limit) this.button.remove();
 
     this.listToHide = lis.slice(this.limit);
 
@@ -143,7 +146,11 @@ class ExpandingList extends HTMLElement {
   }
 
   get limit() {
-    return this.getAttribute('limit');
+    return Number(this.getAttribute('limit'));
+  }
+
+  get selector() {
+    return this.getAttribute('selector');
   }
 
   get txtButtonShow() {
