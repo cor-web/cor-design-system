@@ -52,12 +52,16 @@ template.innerHTML = `
 
   </style>
   <slot></slot>
+
   <button class="cor-btn" aria-hidden="true">Read More</button>
 `;
 
 class ExpandingList extends HTMLElement {
   constructor() {
     super();
+
+    this.sliceStart = 0;
+    this.sliceEnd = this.slice;
 
     const selector = this.selector ? this.querySelectorAll(this.selector) : this.children[0].children;
 
@@ -121,16 +125,26 @@ class ExpandingList extends HTMLElement {
   }
 
   _show() {
-    this.listToHide.forEach(li => {
+
+
+    const elementsToShow = this.slice ? this.listToHide.slice(this.sliceStart, this.sliceEnd) : this.listToHide;
+
+
+
+    elementsToShow.forEach(li => {
       li.classList.remove('visually-hidden');
+      this.sliceStart++;
+      this.sliceEnd++;
     });
+
     this.listToHide[0].focus();
-    this.setAttribute('expanded', '');
 
-    if (this.txtButtonHide) {
-      this.button.textContent = this.txtButtonHide;
+    if (this.listToHide.length === this.sliceEnd - this.slice) {
+      if (this.txtButtonHide) {
+        this.button.textContent = this.txtButtonHide;
+      }
+      this.setAttribute('expanded', '');
     }
-
   }
 
   _hide() {
@@ -140,6 +154,11 @@ class ExpandingList extends HTMLElement {
 
     this.removeAttribute('expanded');
 
+    // window.scrollTo(0, this.offsetTop);
+
+    this.sliceStart = 0;
+    this.sliceEnd = this.slice;
+
     if (this.txtButtonShow) {
       this.button.textContent = this.txtButtonShow;
     }
@@ -147,6 +166,10 @@ class ExpandingList extends HTMLElement {
 
   get limit() {
     return Number(this.getAttribute('limit'));
+  }
+
+  get slice() {
+    return Number(this.getAttribute('slice'));
   }
 
   get selector() {
