@@ -39,3 +39,65 @@ nav [aria-current="page"] {
   color: #000;
   border-bottom: 0.25em solid #444;
 }
+
+.cor-sidenav .cor-nav__title {
+  font-weight: bold;
+  font-size: var(--step--3);
+  margin: 0;
+}
+
+.cor-sidenav nav a {
+  font-size: var(--step--3);
+}
+
+.cor-sidenav nav a[href$="/Pages/civex.aspx"],
+.cor-sidenav nav a[href$="/Pages/coter.aspx"],
+.cor-sidenav nav a[href$="/Pages/econ.aspx"],
+.cor-sidenav nav a[href$="/Pages/enve.aspx"],
+.cor-sidenav nav a[href$="/Pages/nat.aspx"],
+.cor-sidenav nav a[href$="/Pages/cedec.aspx"] {
+  display: inline-flex;
+  gap: var(--space-3xs);
+  align-items: center;
+}
+
+.cor-sidenav nav a[href$="/Pages/civex.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/coter.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/econ.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/enve.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/nat.aspx"]:before,
+.cor-sidenav nav a[href$="/Pages/cedec.aspx"]:before {
+  content: "";
+  vertical-align: -0.125em;
+  -webkit-mask-image: var(--icon-chevron-right);
+  mask-image: var(--icon-chevron-right);
+  background: var(--color);
+  height: 16px;
+  width: 16px;
+}
+
+
+.cor-sidenav nav a[href$="/Pages/civex.aspx"] {
+  --color: var(--color-commission-civex);
+}
+
+.cor-sidenav nav a[href$="/Pages/coter.aspx"] {
+  --color: var(--color-commission-coter);
+}
+
+.cor-sidenav nav a[href$="/Pages/econ.aspx"] {
+  --color: var(--color-commission-econ);
+}
+
+.cor-sidenav nav a[href$="/Pages/enve.aspx"] {
+  --color: var(--color-commission-enve);
+}
+
+.cor-sidenav nav a[href$="/Pages/nat.aspx"] {
+  --color: var(--color-commission-nat);
+}
+
+.cor-sidenav nav a[href$="/Pages/cedec.aspx"] {
+  --color: var(--color-commission-cedec);
+}
+

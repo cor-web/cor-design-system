@@ -1,0 +1,10 @@
+.cor-sidenav a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+  .cor-sidenav--sticky {
+    position: sticky;
+    top: 150px;
+  }
+}

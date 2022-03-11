@@ -1,14 +1,28 @@
-a.cor-btn {
+.mainContent {
+  --button-background-color: var(--oc-blue-9);
+  --button-background-color-hover: var(--oc-blue-8);
+  --button-border-radius: 10px;
+  --button-border-color: var(--oc-blue-9);
+  --button-border-color-hover: var(--oc-blue-9);
+  --button-color: #fff;
+  --button-color-hover: #fff;
+  --button-font-weight: bold;
+  --button-padding-y: var(--space-2xs);
+  --button-padding-x: var(--space-xs);
+}
+
+a.cor-btn,
+.cor-btn {
   display: inline-block;
-  border-radius: 11px;
-  padding: 0.5em 1em;
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding-y) var(--button-padding-x);
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: var(--button-color);
   border: none;
-  font-weight: 700;
+  font-weight: var(--button-font-weight);
   background: 0 0;
-  background-color: var(--oc-blue-8);
+  background-color: var(--button-background-color);
   background-image: linear-gradient(
     to bottom,
     var(--oc-blue-7),

@@ -43,4 +43,10 @@
   </p>
   {% endif %}
 
+  {% if cta %}
+  <a href="{{ cta.target }}" class="cor-card__cta icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">
+    {{ cta.text }}
+  </a>
+  {% endif %}
+
 </article>

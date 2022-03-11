@@ -52,15 +52,30 @@ class TableOfContent extends HTMLElement {
           font-size: var(--step--4);
           text-decoration: underline;
           margin-top: var(--space-4xs, 1rem);
+          outline: 2px solid transparent;
+          outline-offset: 5px;
+          transition: outline-offset 0.2s linear;
         }
+        
+        a:hover {
+          text-decoration: none;
+        }
+
         a:link,
         a:focus,
         a:visited,
         a:active {
           color: var(--link-color);
         }
-        a:hover {
-          text-decoration: underline;
+
+        a:active {
+          color: #fff;
+          background-color: #024;
+        }
+
+        a:focus {
+          outline-color: currentColor;
+          outline-offset: 2px;
         }
       
         :host {

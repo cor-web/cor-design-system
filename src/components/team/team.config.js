@@ -2,7 +2,7 @@
 'use strict';
 
 const faker = require('faker'); // require the faker module
-const memberCount = 10; // how many members we should generate data for
+const memberCount = 9; // how many members we should generate data for
 const memberData = [];
 
 for (var i = 0; i < memberCount; i++) {

@@ -13,3 +13,7 @@
 .bg-cor-prev-bg {
   background-color: var(--color-cor-prev-bg);
 }
+
+.bg-color {
+  background-color: var(--color);
+}

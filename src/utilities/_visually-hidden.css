@@ -1,6 +1,6 @@
 /* https://kittygiraudel.com/snippets/sr-only-class/ */
-.visually-hidden,
-.sr-only {
+.visually-hidden:not(:focus):not(:active),
+.sr-only:not(:focus):not(:active) {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%) !important;

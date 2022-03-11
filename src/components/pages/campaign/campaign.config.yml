@@ -17,6 +17,19 @@ context:
   poster:
     src: "/assets/images/future-of-europe.png"
     alt: "alternative text"
+  secondarynav:
+    - name: "CIVEX"
+      link: "https://cor.europa.eu/fr/our-work/Pages/civex.aspx"
+    - name: "COTER"
+      link: "https://cor.europa.eu/fr/our-work/Pages/coter.aspx"
+    - name: "ECON"
+      link: "https://cor.europa.eu/fr/our-work/Pages/econ.aspx"
+    - name: "ENVE"
+      link: "https://cor.europa.eu/fr/our-work/Pages/enve.aspx"
+    - name: "NAT"
+      link: "https://cor.europa.eu/fr/our-work/Pages/nat.aspx"
+    - name: "CEDEC"
+      link: "https://cor.europa.eu/fr/our-work/Pages/cedec.aspx"
   initiatives:
     - image:
         src: "https://images.unsplash.com/photo-1485126813038-6bcabfed7bc6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80"

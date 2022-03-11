@@ -7,7 +7,6 @@
 @import url("./cover/cover.css");
 @import url("./document/document.css");
 @import url("./layouts/switcher/switcher.css");
-@import url("./links/links.css");
 @import url("./lists/lists.css");
 @import url("./media/media.css");
 @import url("./nav/nav.css");
@@ -16,6 +15,7 @@
 @import url("./quotes/quotes.css");
 @import url("./scrolltotop/scrolltotop.css");
 @import url("./slider/slider.css");
+@import url("./sidenav/sidenav.css");
 @import url("./stories/stories.css");
 @import url("./tender/tender.css");
 @import url("./tender/tender.css");

@@ -1,0 +1,70 @@
+<cor-expanding-list slice="5" limit="5" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ul>
+    {% for newsitem in news %}
+      <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
+    {% endfor %}
+  </ul>
+</cor-expanding-list>
+
+<hr/>
+2 elements
+<cor-expanding-list limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ul>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+  </ul>
+</cor-expanding-list>
+
+<hr/>
+
+<cor-expanding-list limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ul>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+    <li>
+      {% render "@document" %}
+    </li>
+  </ul>
+</cor-expanding-list>
+
+
+<cor-expanding-list selector=".item" limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ul>
+    <li class="item">
+      {% render "@document" %}
+    </li>
+    <li class="item">
+      {% render "@document" %}
+    </li>
+  </ul>
+  <p class="item">Item</p>
+  <p class="item">Item</p>
+  <p class="item">Item</p>
+  <p class="item">Item</p>
+  <ol>
+    <li>
+      UN 
+    </li>
+  </ol>
+</cor-expanding-list>
+
+
+
+<script src="/components/expandinglist/expandinglist.js" type="module"></script>

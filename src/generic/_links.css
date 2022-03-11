@@ -7,6 +7,13 @@
   width: 1rem;
 }
 
+.mainContent a {
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1em;
+}
+
 .mainContent a,
 .mainContent a:link,
 .mainContent a:visited {
