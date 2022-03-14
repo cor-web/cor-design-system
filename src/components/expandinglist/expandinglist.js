@@ -63,8 +63,9 @@ class ExpandingList extends HTMLElement {
     this.sliceStart = 0;
     this.sliceEnd = this.slice;
 
-    const selector = this.selector ? this.querySelectorAll(this.selector) : this.children[0].children;
+    const selector = this.selector ? this.querySelector(this.selector).children : this.children[0].children;
 
+    // if (!selector) debugger;
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
@@ -199,4 +200,25 @@ class ExpandingList extends HTMLElement {
 
 if (!customElements.get('cor-expanding-list')) {
   customElements.define('cor-expanding-list', ExpandingList);
+}
+
+class CorExpandingLists extends HTMLElement {
+  constructor() {
+    super();
+    const lists = this.querySelectorAll(this.selector);
+    [...lists].map(list => {
+      list.insertAdjacentHTML('afterend', `<cor-expanding-list ${[...this.attributes].map(attribute => ` ${attribute.nodeName}="${attribute.nodeValue}"`)}>${list.outerHTML}</cor-expanding-list>`);
+      list.remove();
+      // list.nextSibling.appendChild(list);
+    });
+
+  }
+
+  get selector() {
+    return this.getAttribute('selector');
+  }
+}
+
+if (!customElements.get('cor-expanding-lists')) {
+  customElements.define('cor-expanding-lists', CorExpandingLists);
 }
