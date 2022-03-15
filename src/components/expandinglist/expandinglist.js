@@ -5,11 +5,16 @@ template.innerHTML = `
       display: grid;
     }
 
+    button {
+      align-content: center;
+      display: inline-flex;
+      gap: var(--space-2xs);
+    }
+
     .cor-btn {
       background-color: white;
       border-radius: var(--button-border-radius);
       color: var(--button-background-color);
-      display: inline-block;
       font-weight: var(--button-font-weight);
       text-align: center;
       white-space: nowrap;
@@ -53,7 +58,12 @@ template.innerHTML = `
   </style>
   <slot></slot>
 
-  <button class="cor-btn" aria-hidden="true">Read More</button>
+  <button class="cor-btn" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg> 
+    <span>Read More</span>
+  </button>
 `;
 
 class ExpandingList extends HTMLElement {
@@ -73,6 +83,8 @@ class ExpandingList extends HTMLElement {
     const lis = Array.from(selector);
 
     this.button = this.shadowRoot.querySelector('button');
+    this.button.content = this.shadowRoot.querySelector('button span');
+
     if (lis.length <= this.limit) this.button.remove();
 
     this.listToHide = lis.slice(this.limit);
@@ -100,7 +112,7 @@ class ExpandingList extends HTMLElement {
       this.setAttribute('expanded', '');
 
       if (this.txtButtonHide) {
-        this.button.textContent = this.txtButtonHide;
+        this.changeTextButton(this.txtButtonHide);
       }
     }
   }
@@ -161,7 +173,7 @@ class ExpandingList extends HTMLElement {
     this.sliceEnd = this.slice;
 
     if (this.txtButtonShow) {
-      this.button.textContent = this.txtButtonShow;
+      this.changeTextButton(this.txtButtonShow);
     }
   }
 
@@ -183,6 +195,10 @@ class ExpandingList extends HTMLElement {
 
   get txtButtonHide() {
     return this.getAttribute('more-btn-txt-hide');
+  }
+
+  changeTextButton(newText) {
+    if (newText) this.button.content.textContent = newText;
   }
 
   set expanded(value) {
