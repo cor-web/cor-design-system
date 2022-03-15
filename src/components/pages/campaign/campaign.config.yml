@@ -28,7 +28,7 @@ context:
       link: "https://cor.europa.eu/fr/our-work/Pages/enve.aspx"
     - name: "NAT"
       link: "https://cor.europa.eu/fr/our-work/Pages/nat.aspx"
-    - name: "CEDEC"
+    - name: "SEDEC"
       link: "https://cor.europa.eu/fr/our-work/Pages/cedec.aspx"
   initiatives:
     - image:

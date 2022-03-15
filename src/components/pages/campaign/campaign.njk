@@ -55,7 +55,7 @@
           --color: var(--color-commission-nat);
         }
         .commissions-nav a.commissions-nav--sedec {
-          --color: var(--color-commission-cedec);
+          --color: var(--color-commission-sedec);
         }
         
       </style>
@@ -63,7 +63,7 @@
         <h2 class="cor-nav__title">Commissions</h2>
         <nav class="cor-stack cor-stack--2xs">
           {% for navitem in secondarynav %}
-          <a href="{{ navitem.link }}">{{ navitem.name }}</a>
+          <a class="commissions-nav--{{ navitem.name | lower}}" href="{{ navitem.link }}">{{ navitem.name }}</a>
           {% endfor %}
         </nav>
       </div>
