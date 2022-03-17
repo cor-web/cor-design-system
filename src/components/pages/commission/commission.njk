@@ -1,0 +1,321 @@
+<div class="bg-white cor-container" style="--page-color: 10, 175, 203">
+  
+  <cor-cover class="cor-cover--grid-2  cor-cover--topbar">
+  
+  <div>
+    <hgroup class="cor-cover__header">
+
+      <h1> Future of Europe </h1>
+      
+      
+        <h2>Bringing Europe closer to its people</h2>
+      
+    </hgroup>
+  </div>
+
+  
+  <div class="cor-cover__picture">
+    <img src="/assets/images/future-of-europe.png" alt="alternative text">
+  </div>
+  
+
+  <div class="cor-cover__description cor-stack max-width:measure">
+    <div class="txt-xl">Dolore exercitation elit cia culpa magna. Elit ex amet laboris nulla quis Lorem aute deserunt. Nisi eiusmod ut aute reprehenderit magna proident ad duis. Nulla dolor consectetur dolor officia mollit velit. Occaecat veniam pariatur sit labore esse nisi irure ex aute fugiat excepteur.</div>
+
+    <p>
+      <a href="https://seashepherd.org 3" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">Join us</a>
+    </p>
+
+    <style>
+        
+        
+        .commissions-nav nav {
+          display: flex;
+          gap: var(--space-2xs);
+          flex-wrap: wrap;
+        }
+        
+        .commissions-nav a {
+          border: solid 1px var(--color);
+          border-radius: 20px;
+          display: inline-flex;
+          gap: var(--space-3xs);
+          align-items: center;
+          padding: 0 var(--space-2xs);
+          text-decoration: none;
+        }
+
+        .commissions-nav a:before {
+          
+          content: "";
+          vertical-align: -0.125em;
+          -webkit-mask-image: var(--icon-chevron-right);
+          mask-image: var(--icon-chevron-right);
+          background: var(--color);
+          height: 16px;
+          width: 16px;
+        }
+
+        .commissions-nav a.commissions-nav--civex {
+          --color: var(--color-commission-civex);
+        }
+        .commissions-nav a.commissions-nav--coter {
+          --color: var(--color-commission-coter);
+        }
+        .commissions-nav a.commissions-nav--econ {
+          --color: var(--color-commission-econ);
+        }
+        .commissions-nav a.commissions-nav--enve {
+          --color: var(--color-commission-enve);
+        }
+        .commissions-nav a.commissions-nav--nat {
+          --color: var(--color-commission-nat);
+        }
+        .commissions-nav a.commissions-nav--sedec {
+          --color: var(--color-commission-sedec);
+        }
+        
+      </style>
+      <div class="commissions-nav  cor-stack">
+        <strong>Choisir une autre commission du CdR: </strong>
+        <nav>
+          {% for navitem in secondarynav %}
+          <a class="commissions-nav--{{ navitem.name | lower}}" href="{{ navitem.link }}">{{ navitem.name }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    
+  </div>
+
+</cor-cover>
+
+  
+
+  <!-- Initiatives -->
+  <article class="cor-box">
+    <h2>Initiatives</h2>
+    <div class="cor-switcher items-start">
+    {% for initiative in initiatives %}
+      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
+    {% endfor %}
+    </div>
+  </article>
+  <!-- /Initiatives -->
+
+  <div role="separator"></div>
+
+  <div class="cor-with-sidenav cor-content">
+
+    <div class="cor-stack cor-sidenav cor-sidenav--sticky">
+
+      {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
+    </div>
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+      
+      <section class="cor-rich-text">
+      
+        <h2 id="Our goals">Our goals</h2>
+
+        <p><a href="test.be">The final results</a> of the Future of Europe survey will feed into the Conference on the Future of Europe in the spring of 2022, and will also be published on this page.</p>
+
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+
+        <h2>Anim minim exercitation est cillum exercitation commodo</h2>
+
+        <h3>exercitation commodo</h3>
+
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+
+        <h3>Anim minim exercitation</h3>
+        
+        <p>In the meantime, the graphics below show some of the results of the survey so far. In most cases, the statistics are available both as overall figures and also broken down by EU country.</p>
+
+        <div class="padding margin-y bg inline-block">
+          {% render "@list", {modifier: "documents", typeoflist: "ul", list: documents} %}
+        </div>
+
+      </section>
+
+      <section class="cor-stack">
+        <h2 id="What's on" class="margin-0">What's on</h2>
+        
+        <section>
+          <h3>Latest news</h3>
+
+          <ul class="cor-l-2andlist list-style-none">
+          {% for newsitem in news %}
+
+            {% set cardExtraClass = "" %}
+            {% if loop.index < 3 %}
+              {% set cardExtraClass = "bg padding" %}
+            {% endif %}
+            <li class="padding-top-2xs">
+              {% render "@card" , {date: newsitem.date, titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            </li>
+          {% endfor %}
+          </ul>
+
+        </section>
+
+        <section>
+
+          <h3>Events</h4>
+          
+          <h4>Upcoming events</h4>
+
+          <ul class="cor-l-2andlist margin-bottom list-style-none">
+          {% for newsitem in upcomingEvents %}
+
+            {% set cardExtraClass = "" %}
+            {% if loop.index < 3 %}
+              {% set cardExtraClass = "bg padding" %}
+            {% endif %}
+            <li class="padding-top-2xs">
+              {% render "@card" , {date: newsitem.date,  titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: cardExtraClass } %}
+            </li>
+          {% endfor %}
+          </ul>
+
+          <h4>Past events</h4>
+
+          <ul class="cor-containerWithDivider--dotted list-style-none">
+          {% for newsitem in pastEvents %}
+            <li class="padding-y-2xs">
+              {% render "@card" , {date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            </li>
+          {% endfor %}
+          </ul>
+
+        </section>
+
+      </section>
+    
+      <section class="cor-stack">
+        <h2 id="opinions" class="margin-0">Opinions</h2>
+        
+        <section>
+          <h3>Adopted opinions</h3>
+
+          <ul class="cor-grid margin-bottom list-style-none">
+          {% for opinion in adoptedOpinions %}
+            <li>
+              {% render "@card--opinion" , {title: opinion.title, titleLevel: "h4", link: opinion.link, image: opinion.image, rapporteur: opinion.rapporteur, modifier: "opinion", cardExtraClass: "bg" } %}
+            </li>
+          {% endfor %}
+          </ul>
+        </section>
+
+        <section>
+          <h3>Opinions currently in discussion</h3>
+
+          <ul class="cor-containerWithDivider--dotted cor-stack--2xs list-style-none">
+          {% for newsitem in indiscussionOpinions %}
+            <li>
+              {% render "@card" , {date: newsitem.date,  titleLevel: "h4", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}
+            </li>
+          {% endfor %}
+          </ul>
+        </section>
+
+      </section>
+
+      <section class="cor-stack">
+        <h2 id="opinions" class="margin-0">Reports</h2>
+        <div>
+          <ol class="cor-list cor-list--documents list-style-none cor-containerWithDivider--dotted">
+            <li>
+              <a href="document.pdf">14.06.21 European Year of Rail_Abruzzo</a> <small class="cor-list--documents__info">(3 MB - PDF)</small>
+            </li>
+            <li>
+              <a href="document.pdf">14.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">(3 MB - PDF)</small>
+            </li>
+            <li>
+              <a href="document.pdf">10.06.21 Green deal - Building resilient communities</a>  <small class="cor-list--documents__info">(3 MB - PDF)</small>
+            </li>
+            <li>
+              {% render "@document--study" %}
+            </li>
+            <li>
+              {% render "@document--study" %}
+            </li>
+            <li>
+              {% render "@document--study" %}
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        
+        <h2 id="learnmore" class="margin-0">Learn more</h2>
+
+        <div class="cor-stack">
+          <section>
+            <h3 class="cor-toc-section margin-top">Videos and others</h3>
+            {% render "@videoplayer--withplaylist" %}
+          </section>
+
+          <section>
+            <h3 class="cor-toc-section margin-top">Related links</h3>
+            <ul class="margin-bottom-0 padding-left">
+              <li><a href="test.be">Link 1</a></li>
+              <li><a href="test.be">Link 2</a></li>
+              <li><a href="test.be">Link 3</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="cor-toc-section margin-top">See also</h3>
+            
+            <div class="cor-stack">
+              <div>
+                <h4>COVID-19</h4>
+                <ul class="padding-left">
+                  <li><a href="test.be">Link 1</a></li>
+                  <li><a href="test.be">Link 2</a></li>
+                  <li><a href="test.be">Link 3</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>Survey</h4>
+                <ul class="padding-left">
+                  <li><a href="test.be">Link 1</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>USeful resources</h4>
+                <ul class="padding-left">
+                  <li><a href="test.be">Link 1</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+      </section>
+
+      <section>
+        <h2 id="contact">Follow us</h2>
+        <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> <a href="test.be" class="txt-3xl">#EUcareers</a> 
+      </section>
+
+      <section>
+        <h2 id="contact">Contact</h2>
+        <a href="test.be" class="txt-xl">contact@cor.europa.eu</a>
+      </section>
+
+      <section>
+        {% render "@share" %}
+      </section>
+      
+    
+    </main>
+
+  </div>
+
+</div>
