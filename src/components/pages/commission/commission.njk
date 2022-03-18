@@ -25,8 +25,14 @@
     <p>
       <a href="https://seashepherd.org 3" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">Join us</a>
     </p>
+    
+  </div>
 
-    <style>
+ 
+
+</cor-cover>
+
+   <style>
         
         
         .commissions-nav nav {
@@ -36,9 +42,10 @@
         }
         
         .commissions-nav a {
-          border: solid 1px var(--color);
+          border: solid 2px var(--color);
           border-radius: 20px;
           display: inline-flex;
+          font-size: var(--step--3);
           gap: var(--space-3xs);
           align-items: center;
           padding: 0 var(--space-2xs);
@@ -76,7 +83,7 @@
         }
         
       </style>
-      <div class="commissions-nav  cor-stack">
+      <div class="commissions-nav  cor-stack padding-x-s">
         <strong>Choisir une autre commission du CdR: </strong>
         <nav>
           {% for navitem in secondarynav %}
@@ -84,12 +91,6 @@
           {% endfor %}
         </nav>
       </div>
-    
-  </div>
-
-</cor-cover>
-
-  
 
   <!-- Initiatives -->
   <article class="cor-box">
