@@ -94,7 +94,8 @@
           // Add the light DOM heading label to the innerHTML of the toggle button
           // and remove the now unwanted Light DOM heading
           this.btn.innerHTML = oldHeading.textContent + this.btn.innerHTML;
-          oldHeading.parentNode.removeChild(oldHeading);
+          // oldHeading.parentNode.removeChild(oldHeading);
+          oldHeading.hidden = 'true';
 
           // The main state switching function
           this.switchState = () => {

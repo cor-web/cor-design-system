@@ -20,6 +20,11 @@
   padding-top: var(--space-m);
 }
 
+.padding-x-s {
+  padding-left: var(--space-s) !important;
+  padding-right: var(--space-s) !important;
+}
+
 .padding-x {
   padding-left: var(--space-xs) !important;
   padding-right: var(--space-xs) !important;

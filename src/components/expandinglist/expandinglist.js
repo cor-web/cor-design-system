@@ -5,11 +5,16 @@ template.innerHTML = `
       display: grid;
     }
 
+    button {
+      align-content: center;
+      display: inline-flex;
+      gap: var(--space-2xs);
+    }
+
     .cor-btn {
       background-color: white;
       border-radius: var(--button-border-radius);
       color: var(--button-background-color);
-      display: inline-block;
       font-weight: var(--button-font-weight);
       text-align: center;
       white-space: nowrap;
@@ -50,8 +55,19 @@ template.innerHTML = `
       box-shadow: var(--button-focus-box-shadow) var(--button-active-box-shadow);
     }
 
+    .less svg {
+      transform: rotate(0.5turn);
+    }
+
   </style>
   <slot></slot>
+
+  <button class="cor-btn more" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg> 
+    <span>Read More</span>
+  </button>
 `;
 
 class ExpandingList extends HTMLElement {
@@ -61,32 +77,11 @@ class ExpandingList extends HTMLElement {
     this.sliceStart = 0;
     this.sliceEnd = this.slice;
 
-    const shadow = this.attachShadow({ mode: "open" });
+    const selector = this.selector ? this.querySelector(this.selector).children : this.children[0].children;
 
-    shadow.appendChild(template.content.cloneNode(true));
-
-    const selector = this.parentSelector
-      ? this.querySelectorAll(this.parentSelector)
-      : this.children[0].children;
-
-    if (this.parentSelector) {
-      const parents = this.querySelectorAll(this.parentSelector);
-      [...parents].map((parent) => {
-        this.button = document.createElement("button");
-        this.button.classList.add("cor-btn");
-        this.button.setAttribute("aria-hidden", "true");
-        shadow.appendChild(this.button);
-
-        const content = parent;
-        console.log("content:", content);
-
-        const div = document.createElement("div");
-
-        // parent.parentNode.innerHTML = newListWrapper;
-        debugger;
-
-        //  parent.parentNode.replaceChild(parent, newListWrapper);
-        div.innerHTML = `<cor-expanding-list-multi>Test</cor-expanding-list-multi>`;
+    // if (!selector) debugger;
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
 
         parent.parentNode.appendChild(div);
       });
@@ -97,8 +92,10 @@ class ExpandingList extends HTMLElement {
     // Get elements
     const elements = Array.from(selector);
 
-    this.button = this.shadowRoot.querySelector("button");
-    if (elements.length <= this.limit) this.button.remove();
+    this.button = this.shadowRoot.querySelector('button');
+    this.button.content = this.shadowRoot.querySelector('button span');
+
+    if (lis.length <= this.limit) this.button.remove();
 
     this.listToHide = elements.slice(this.limit);
 
@@ -121,7 +118,7 @@ class ExpandingList extends HTMLElement {
       this.setAttribute("expanded", "");
 
       if (this.txtButtonHide) {
-        this.button.textContent = this.txtButtonHide;
+        this.changeTextButton(this.txtButtonHide);
       }
     }
   }
@@ -162,9 +159,10 @@ class ExpandingList extends HTMLElement {
 
     if (this.listToHide.length === this.sliceEnd - this.slice) {
       if (this.txtButtonHide) {
-        this.button.textContent = this.txtButtonHide;
+        this.changeTextButton(this.txtButtonHide)
       }
-      this.setAttribute("expanded", "");
+      this.setAttribute('expanded', '');
+      this.button.classList.add('less');
     }
   }
 
@@ -173,7 +171,8 @@ class ExpandingList extends HTMLElement {
       li.classList.add("visually-hidden");
     });
 
-    this.removeAttribute("expanded");
+    this.removeAttribute('expanded');
+    this.button.classList.remove('less');
 
     // window.scrollTo(0, this.offsetTop);
 
@@ -181,7 +180,7 @@ class ExpandingList extends HTMLElement {
     this.sliceEnd = this.slice;
 
     if (this.txtButtonShow) {
-      this.button.textContent = this.txtButtonShow;
+      this.changeTextButton(this.txtButtonShow);
     }
   }
 
@@ -205,6 +204,10 @@ class ExpandingList extends HTMLElement {
     return this.getAttribute("more-btn-txt-hide");
   }
 
+  changeTextButton(newText) {
+    if (newText) this.button.querySelector('span').textContent = newText;
+  }
+
   set expanded(value) {
     value = Boolean(value);
     if (value) this.setAttribute("expanded", "");
@@ -226,6 +229,27 @@ class ExpandingListMulti extends HTMLElement {
   }
 }
 
-if (!customElements.get("cor-expanding-list-multi")) {
-  customElements.define("cor-expanding-list-multi", ExpandingListMulti);
+if (!customElements.get('cor-expanding-list')) {
+  customElements.define('cor-expanding-list', ExpandingList);
+}
+
+class CorExpandingLists extends HTMLElement {
+  constructor() {
+    super();
+    const lists = this.querySelectorAll(this.selector);
+    [...lists].map(list => {
+      list.insertAdjacentHTML('afterend', `<cor-expanding-list ${[...this.attributes].map(attribute => ` ${attribute.nodeName}="${attribute.nodeValue}"`)}>${list.outerHTML}</cor-expanding-list>`);
+      list.remove();
+      // list.nextSibling.appendChild(list);
+    });
+
+  }
+
+  get selector() {
+    return this.getAttribute('selector');
+  }
+}
+
+if (!customElements.get('cor-expanding-lists')) {
+  customElements.define('cor-expanding-lists', CorExpandingLists);
 }

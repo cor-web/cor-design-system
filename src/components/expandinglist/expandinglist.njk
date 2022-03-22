@@ -1,4 +1,4 @@
-<h2>One list</h2>
+<h2>Expanding list</h2>
 <cor-expanding-list slice="5" limit="5" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
   <ul>
     {% for newsitem in news %}
@@ -23,8 +23,26 @@
 </cor-expanding-list>
 
 <hr/>
+
+<h2>Expanding lists container</h2>
+<cor-expanding-lists selector="ul" slice="5" limit="5" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <h2>Titre</h2>
+  <ul>
+    {% for newsitem in news %}
+      <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
+    {% endfor %}
+  </ul>
+  <p>paragraph</p>
+  <ul>
+    {% for newsitem in news %}
+      <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
+    {% endfor %}
+  </ul>
+</cor-expanding-lists>
+
+<hr/> 
 2 elements
-<cor-expanding-list limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+<cor-expanding-lists limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
   <ul>
     <li>
       {% render "@document" %}
@@ -33,12 +51,12 @@
       {% render "@document" %}
     </li>
   </ul>
-</cor-expanding-list>
+</cor-expanding-lists>
 
 <hr/>
 
-<cor-expanding-list limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
-  <ul>
+<cor-expanding-lists selector="ol" limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <ol>
     <li>
       {% render "@document" %}
     </li>
@@ -57,12 +75,18 @@
     <li>
       {% render "@document" %}
     </li>
-  </ul>
+  </ol>
 </cor-expanding-list>
 
 
 <cor-expanding-list selector="ul" limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
   <ul>
+    <li class="item">
+      {% render "@document" %}
+    </li>
+    <li class="item">
+      {% render "@document" %}
+    </li>
     <li class="item">
       {% render "@document" %}
     </li>

@@ -1,35 +1,59 @@
 <div class="bg-white cor-container" style="--page-color: 10, 175, 203">
   
-  {% render "@cover--grid-2", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
+  <cor-cover class="cor-cover--grid-2  cor-cover--topbar">
+  
+  <div>
+    <hgroup class="cor-cover__header">
 
-  <!-- Initiatives -->
-  <article class="cor-box">
-    <h2>Initiatives</h2>
-    <div class="cor-switcher items-start">
-    {% for initiative in initiatives %}
-      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
-    {% endfor %}
-    </div>
-  </article>
-  <!-- /Initiatives -->
-
-  <div role="separator"></div>
-
-  <div class="cor-with-sidenav cor-content">
-
-    <div class="cor-stack cor-sidenav cor-sidenav--sticky">
-
-      {% render "@toc--dynamic" , {nav: contentnav}, true %}
+      <h1> Future of Europe </h1>
       
-      <style>
+      
+        <h2>Bringing Europe closer to its people</h2>
+      
+    </hgroup>
+  </div>
+
+  
+  <div class="cor-cover__picture">
+    <img src="/assets/images/future-of-europe.png" alt="alternative text">
+  </div>
+  
+
+  <div class="cor-cover__description cor-stack max-width:measure">
+    <div class="txt-xl">Dolore exercitation elit cia culpa magna. Elit ex amet laboris nulla quis Lorem aute deserunt. Nisi eiusmod ut aute reprehenderit magna proident ad duis. Nulla dolor consectetur dolor officia mollit velit. Occaecat veniam pariatur sit labore esse nisi irure ex aute fugiat excepteur.</div>
+
+    <p>
+      <a href="https://seashepherd.org 3" class="txt-xl icon icon-after cor-cover__cta" style="--icon:var(--icon-chevron-right)">Join us</a>
+    </p>
+    
+  </div>
+
+ 
+
+</cor-cover>
+
+   <style>
+        
+        
+        .commissions-nav nav {
+          display: flex;
+          gap: var(--space-2xs);
+          flex-wrap: wrap;
+        }
         
         .commissions-nav a {
+          border: solid 2px var(--color);
+          border-radius: 20px;
           display: inline-flex;
+          font-size: var(--step--3);
           gap: var(--space-3xs);
           align-items: center;
+          padding: 0 var(--space-2xs);
+          text-decoration: none;
         }
 
         .commissions-nav a:before {
+          
           content: "";
           vertical-align: -0.125em;
           -webkit-mask-image: var(--icon-chevron-right);
@@ -59,15 +83,34 @@
         }
         
       </style>
-      <div class="cor-nav cor-stack cor-stack--2xs commissions-nav">
-        <h2 class="cor-nav__title">Commissions</h2>
-        <nav class="cor-stack cor-stack--2xs">
+      <div class="commissions-nav  cor-stack padding-x-s">
+        <strong>Choisir une autre commission du CdR: </strong>
+        <nav>
           {% for navitem in secondarynav %}
           <a class="commissions-nav--{{ navitem.name | lower}}" href="{{ navitem.link }}">{{ navitem.name }}</a>
           {% endfor %}
         </nav>
       </div>
-      
+
+  <!-- Initiatives -->
+  <article class="cor-box">
+    <h2>Initiatives</h2>
+    <div class="cor-switcher items-start">
+    {% for initiative in initiatives %}
+      {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
+    {% endfor %}
+    </div>
+  </article>
+  <!-- /Initiatives -->
+
+  <div role="separator"></div>
+
+  <div class="cor-with-sidenav cor-content">
+
+    <div class="cor-stack cor-sidenav cor-sidenav--sticky">
+
+      {% render "@toc--dynamic" , {nav: contentnav}, true %}
+
     </div>
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
@@ -203,11 +246,6 @@
             </li>
           </ol>
         </div>
-      </section>
-
-      <section>
-        <h2 id="twitter" class="margin-0">Twitter</h2>
-        {% render "@twitter", {screen_name: "@CoR_President"}, true  %}
       </section>
 
       <section>
