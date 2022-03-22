@@ -1,0 +1,25 @@
+<style>
+  cor-twitter-container {
+    background: url(/assets/images/twitter-facade.png) no-repeat center;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    height: 1200px;
+  }
+
+  cor-twitter-container[loaded] {
+    background: none;
+    height: auto;
+  }
+
+  cor-twitter-container[loaded] > button {
+    display: none;
+  }
+</style>
+
+<cor-twitter-container id="twitterContainer">
+  <button>Show content</button>
+</cor-twitter-container>
+
+
+<script src="/components/twitter/twitter.js" type="module"></script>
