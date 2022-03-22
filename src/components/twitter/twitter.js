@@ -2,7 +2,7 @@ const twitterOptions = {
   service: "smk",
   type: "user",
   screen_name: "@CoR_President",
-  count: 3,
+  count: 4,
   include_rts: false,
   rts_display_original: false,
   exclude_replies: true,

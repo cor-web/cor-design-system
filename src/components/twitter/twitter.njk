@@ -4,6 +4,13 @@
     place-items: center;
   }
 
+  cor-twitter-container .smk {
+    display: grid;
+    gap: var(--space-xs);
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    max-width: initial;
+  }
+
   .twitterfacade {
     cursor: pointer;
     display: grid;
@@ -21,8 +28,16 @@
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.twitterfacade img {
+  filter: blur(2px);
+}
+
+.twitterfacade:hover img {
+  filter: blur(2px) brightness(0.8);
+}
   cor-twitter-container[loaded] {
     background: none;
+    display: block;
     height: auto;
   }
 
