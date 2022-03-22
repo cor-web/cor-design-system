@@ -1,5 +1,21 @@
+<h2>One list</h2>
 <cor-expanding-list slice="5" limit="5" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
   <ul>
+    {% for newsitem in news %}
+      <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
+    {% endfor %}
+  </ul>
+</cor-expanding-list>
+
+
+<cor-expanding-list selector=".expanding-list" slice="5" limit="5" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+  <h2>Two lists</h2>
+  <ul class="expanding-list">
+    {% for newsitem in news %}
+      <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
+    {% endfor %}
+  </ul>
+  <ul class="expanding-list">
     {% for newsitem in news %}
       <li>{% render "@card" , { link: newsitem.link, date: newsitem.date, titleLevel: "h5", title: newsitem.title, image: newsitem.image, cardExtraClass: "padding-y--3xs" } %}</li>
     {% endfor %}
@@ -45,7 +61,7 @@
 </cor-expanding-list>
 
 
-<cor-expanding-list selector=".item" limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
+<cor-expanding-list selector="ul" limit="3" more-btn-txt-show="Voir plus d'articles"  more-btn-txt-hide="Voir moins d'articles">
   <ul>
     <li class="item">
       {% render "@document" %}

@@ -1,4 +1,4 @@
-const template = document.createElement('template');
+const template = document.createElement("template");
 template.innerHTML = `
   <style>
     :host {
@@ -52,8 +52,6 @@ template.innerHTML = `
 
   </style>
   <slot></slot>
-
-  <button class="cor-btn" aria-hidden="true">Read More</button>
 `;
 
 class ExpandingList extends HTMLElement {
@@ -63,40 +61,64 @@ class ExpandingList extends HTMLElement {
     this.sliceStart = 0;
     this.sliceEnd = this.slice;
 
-    const selector = this.selector ? this.querySelectorAll(this.selector) : this.children[0].children;
+    const shadow = this.attachShadow({ mode: "open" });
 
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    shadow.appendChild(template.content.cloneNode(true));
 
-    // Get li elements 
-    const lis = Array.from(selector);
+    const selector = this.parentSelector
+      ? this.querySelectorAll(this.parentSelector)
+      : this.children[0].children;
 
-    this.button = this.shadowRoot.querySelector('button');
-    if (lis.length <= this.limit) this.button.remove();
+    if (this.parentSelector) {
+      const parents = this.querySelectorAll(this.parentSelector);
+      [...parents].map((parent) => {
+        this.button = document.createElement("button");
+        this.button.classList.add("cor-btn");
+        this.button.setAttribute("aria-hidden", "true");
+        shadow.appendChild(this.button);
 
-    this.listToHide = lis.slice(this.limit);
+        const content = parent;
+        console.log("content:", content);
+
+        const div = document.createElement("div");
+
+        // parent.parentNode.innerHTML = newListWrapper;
+        debugger;
+
+        //  parent.parentNode.replaceChild(parent, newListWrapper);
+        div.innerHTML = `<cor-expanding-list-multi>Test</cor-expanding-list-multi>`;
+
+        parent.parentNode.appendChild(div);
+      });
+    }
+
+    console.log(selector);
+
+    // Get elements
+    const elements = Array.from(selector);
+
+    this.button = this.shadowRoot.querySelector("button");
+    if (elements.length <= this.limit) this.button.remove();
+
+    this.listToHide = elements.slice(this.limit);
 
     this._hide();
 
-    this.button.addEventListener('click', this._onClick.bind(this));
+    this.button.addEventListener("click", this._onClick.bind(this));
 
-    this.focusableElements = Array.from(this.querySelectorAll('li a'));
-    this.focusableElements.forEach(focusableElement => {
-      focusableElement.addEventListener('focus', (event) => {
+    this.focusableElements = Array.from(this.querySelectorAll("li a"));
+    this.focusableElements.forEach((focusableElement) => {
+      focusableElement.addEventListener("focus", (event) => {
         this._onFocusin(event.target);
       });
     });
-
   }
 
-  connectedCallback() {
-
-  }
+  connectedCallback() {}
 
   _checkVisibleElements() {
-    if (this.querySelectorAll('.visually-hidden').length === 0) {
-
-      this.setAttribute('expanded', '');
+    if (this.querySelectorAll(".visually-hidden").length === 0) {
+      this.setAttribute("expanded", "");
 
       if (this.txtButtonHide) {
         this.button.textContent = this.txtButtonHide;
@@ -105,9 +127,10 @@ class ExpandingList extends HTMLElement {
   }
 
   _onFocusin(focusedElement) {
-
-    if (focusedElement.closest('.visually-hidden')) {
-      focusedElement.closest('.visually-hidden').classList.remove('visually-hidden');
+    if (focusedElement.closest(".visually-hidden")) {
+      focusedElement
+        .closest(".visually-hidden")
+        .classList.remove("visually-hidden");
       this._checkVisibleElements();
     }
   }
@@ -125,14 +148,12 @@ class ExpandingList extends HTMLElement {
   }
 
   _show() {
+    const elementsToShow = this.slice
+      ? this.listToHide.slice(this.sliceStart, this.sliceEnd)
+      : this.listToHide;
 
-
-    const elementsToShow = this.slice ? this.listToHide.slice(this.sliceStart, this.sliceEnd) : this.listToHide;
-
-
-
-    elementsToShow.forEach(li => {
-      li.classList.remove('visually-hidden');
+    elementsToShow.forEach((li) => {
+      li.classList.remove("visually-hidden");
       this.sliceStart++;
       this.sliceEnd++;
     });
@@ -143,16 +164,16 @@ class ExpandingList extends HTMLElement {
       if (this.txtButtonHide) {
         this.button.textContent = this.txtButtonHide;
       }
-      this.setAttribute('expanded', '');
+      this.setAttribute("expanded", "");
     }
   }
 
   _hide() {
-    this.listToHide.forEach(li => {
-      li.classList.add('visually-hidden');
+    this.listToHide.forEach((li) => {
+      li.classList.add("visually-hidden");
     });
 
-    this.removeAttribute('expanded');
+    this.removeAttribute("expanded");
 
     // window.scrollTo(0, this.offsetTop);
 
@@ -165,38 +186,46 @@ class ExpandingList extends HTMLElement {
   }
 
   get limit() {
-    return Number(this.getAttribute('limit'));
+    return Number(this.getAttribute("limit"));
   }
 
   get slice() {
-    return Number(this.getAttribute('slice'));
+    return Number(this.getAttribute("slice"));
   }
 
-  get selector() {
-    return this.getAttribute('selector');
+  get parentSelector() {
+    return this.getAttribute("selector");
   }
 
   get txtButtonShow() {
-    return this.getAttribute('more-btn-txt-show');
+    return this.getAttribute("more-btn-txt-show");
   }
 
   get txtButtonHide() {
-    return this.getAttribute('more-btn-txt-hide');
+    return this.getAttribute("more-btn-txt-hide");
   }
 
   set expanded(value) {
     value = Boolean(value);
-    if (value)
-      this.setAttribute('expanded', '');
-    else
-      this.removeAttribute('expanded');
+    if (value) this.setAttribute("expanded", "");
+    else this.removeAttribute("expanded");
   }
 
   get expanded() {
-    return this.hasAttribute('expanded');
+    return this.hasAttribute("expanded");
   }
 }
 
-if (!customElements.get('cor-expanding-list')) {
-  customElements.define('cor-expanding-list', ExpandingList);
+if (!customElements.get("cor-expanding-list")) {
+  customElements.define("cor-expanding-list", ExpandingList);
+}
+
+class ExpandingListMulti extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+
+if (!customElements.get("cor-expanding-list-multi")) {
+  customElements.define("cor-expanding-list-multi", ExpandingListMulti);
 }
