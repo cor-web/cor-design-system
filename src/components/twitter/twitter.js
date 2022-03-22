@@ -1,18 +1,17 @@
 const twitterOptions = {
-  'service': 'smk',
-  'type': 'user',
-  'screen_name': '@CoR_President',
-  'count': 3,
-  'include_rts': false,
-  'rts_display_original': false,
-  'exclude_replies': true,
-  'display_user': true,
-  'display_user_pic': true,
-  'auto_expand_photo': false,
-  'auto_expand_video': false,
-  'tweet_more_btn': true
+  service: "smk",
+  type: "user",
+  screen_name: "@CoR_President",
+  count: 3,
+  include_rts: false,
+  rts_display_original: false,
+  exclude_replies: true,
+  display_user: true,
+  display_user_pic: true,
+  auto_expand_photo: false,
+  auto_expand_video: false,
+  tweet_more_btn: true,
 };
-
 
 class CorTwitterContainer extends HTMLElement {
   constructor() {
@@ -20,9 +19,9 @@ class CorTwitterContainer extends HTMLElement {
   }
 
   connectedCallback() {
-    const button = document.querySelector('cor-twitter-container button');
-    button.addEventListener('click', this._onClick.bind(this));
-    this.addEventListener('click', this._onClick.bind(this));
+    const button = document.querySelector("cor-twitter-container button");
+    button.addEventListener("click", this._onClick.bind(this));
+    this.addEventListener("click", this._onClick.bind(this));
   }
 
   _onClick() {
@@ -30,21 +29,24 @@ class CorTwitterContainer extends HTMLElement {
   }
 
   _onMouseenter() {
-    this.classList.add('shadow');
+    this.classList.add("shadow");
   }
 
   _onMouseleave() {
-    this.classList.remove('shadow');
+    this.classList.remove("shadow");
   }
 
   loadScript() {
-
-    $wt.render('twitterContainer', twitterOptions);
-    this.setAttribute('loaded', '');
-
+    $wt.render("twitterContainer", twitterOptions);
+    this.setAttribute("loaded", "");
+    this.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest",
+    });
   }
 }
 
-if (!customElements.get('cor-twitter-container')) {
-  customElements.define('cor-twitter-container', CorTwitterContainer);
+if (!customElements.get("cor-twitter-container")) {
+  customElements.define("cor-twitter-container", CorTwitterContainer);
 }

@@ -20,53 +20,7 @@
     <div class="cor-stack cor-sidenav cor-sidenav--sticky">
 
       {% render "@toc--dynamic" , {nav: contentnav}, true %}
-      
-      <style>
-        
-        .commissions-nav a {
-          display: inline-flex;
-          gap: var(--space-3xs);
-          align-items: center;
-        }
 
-        .commissions-nav a:before {
-          content: "";
-          vertical-align: -0.125em;
-          -webkit-mask-image: var(--icon-chevron-right);
-          mask-image: var(--icon-chevron-right);
-          background: var(--color);
-          height: 16px;
-          width: 16px;
-        }
-
-        .commissions-nav a.commissions-nav--civex {
-          --color: var(--color-commission-civex);
-        }
-        .commissions-nav a.commissions-nav--coter {
-          --color: var(--color-commission-coter);
-        }
-        .commissions-nav a.commissions-nav--econ {
-          --color: var(--color-commission-econ);
-        }
-        .commissions-nav a.commissions-nav--enve {
-          --color: var(--color-commission-enve);
-        }
-        .commissions-nav a.commissions-nav--nat {
-          --color: var(--color-commission-nat);
-        }
-        .commissions-nav a.commissions-nav--sedec {
-          --color: var(--color-commission-sedec);
-        }
-        
-      </style>
-      <div class="cor-nav cor-stack cor-stack--2xs commissions-nav">
-        <h2 class="cor-nav__title">Commissions</h2>
-        <nav class="cor-stack cor-stack--2xs">
-          {% for navitem in secondarynav %}
-          <a class="commissions-nav--{{ navitem.name | lower}}" href="{{ navitem.link }}">{{ navitem.name }}</a>
-          {% endfor %}
-        </nav>
-      </div>
       
     </div>
 
