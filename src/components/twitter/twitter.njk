@@ -1,54 +1,25 @@
-<style>
-  cor-twitter-container {
-    display: grid;
-    place-items: center;
-  }
-
-  cor-twitter-container .smk {
-    display: grid;
-    gap: var(--space-xs);
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    max-width: initial;
-  }
-
-  .twitterfacade {
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-  }
-
-  .twitterfacade > button {
-    position: absolute;
-  }
-
-  .twitterfacade:hover {
-   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.twitterfacade img {
-  filter: blur(2px);
-}
-
-.twitterfacade:hover img {
-  filter: blur(2px) brightness(0.8);
-}
-  cor-twitter-container[loaded] {
-    background: none;
-    display: block;
-    height: auto;
-  }
-
-  cor-twitter-container[loaded] > button {
-    display: none;
-  }
-</style>
-
 <cor-twitter-container id="twitterContainer">
+  <script>
+    var twitterOptions = {
+      service: "smk",
+      type: "user",
+      screen_name: "@CoR_President",
+      count: 4,
+      include_rts: false,
+      rts_display_original: false,
+      exclude_replies: true,
+      display_user: true,
+      display_user_pic: true,
+      auto_expand_photo: false,
+      auto_expand_video: false,
+      tweet_more_btn: false,
+    };
+  </script>
+
   <div class="twitterfacade">
-    <img src='/assets/images/twitter-facade.png' alt />
+    <img src='/assets/images/twitter-facade.png' srcset="/assets/images/twitter-facade.png 620w,
+ /assets/images/twitter-facade-desktop.png 1660w" alt sizes="100vw"
+ />
     <button>Show content</button>
   </div>
 </cor-twitter-container>

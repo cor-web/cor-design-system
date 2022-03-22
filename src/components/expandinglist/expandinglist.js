@@ -4,13 +4,11 @@ template.innerHTML = `
     :host {
       display: grid;
     }
-
     button {
       align-content: center;
       display: inline-flex;
       gap: var(--space-2xs);
     }
-
     .cor-btn {
       background-color: white;
       border-radius: var(--button-border-radius);
@@ -24,7 +22,6 @@ template.innerHTML = `
       margin: var(--button-margin-y, var(--space-xs)) var(--button-margin-x, auto);
       padding: var(--button-padding-y) var(--button-padding-x);
     }
-
     .cor-btn:hover {
       color: var(--button-color-hover);
       background-color: var(--button-background-color-hover);
@@ -45,23 +42,18 @@ template.innerHTML = `
     .cor-btn:not(:disabled):not(.disabled) {
       cursor: pointer;
     }
-
     .cor-btn:not(:disabled):not(.disabled):active {
       background-image: none;
       box-shadow: var(--button-active-box-shadow);
     }
-
     .cor-btn:not(:disabled):not(.disabled):active :focus {
       box-shadow: var(--button-focus-box-shadow) var(--button-active-box-shadow);
     }
-
     .less svg {
       transform: rotate(0.5turn);
     }
-
   </style>
   <slot></slot>
-
   <button class="cor-btn more" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -77,27 +69,23 @@ class ExpandingList extends HTMLElement {
     this.sliceStart = 0;
     this.sliceEnd = this.slice;
 
-    const selector = this.selector ? this.querySelector(this.selector).children : this.children[0].children;
+    const selector = this.selector
+      ? this.querySelector(this.selector).children
+      : this.children[0].children;
 
     // if (!selector) debugger;
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-        parent.parentNode.appendChild(div);
-      });
-    }
+    // Get li elements
+    const lis = Array.from(selector);
 
-    console.log(selector);
-
-    // Get elements
-    const elements = Array.from(selector);
-
-    this.button = this.shadowRoot.querySelector('button');
-    this.button.content = this.shadowRoot.querySelector('button span');
+    this.button = this.shadowRoot.querySelector("button");
+    this.button.content = this.shadowRoot.querySelector("button span");
 
     if (lis.length <= this.limit) this.button.remove();
 
-    this.listToHide = elements.slice(this.limit);
+    this.listToHide = lis.slice(this.limit);
 
     this._hide();
 
@@ -159,10 +147,10 @@ class ExpandingList extends HTMLElement {
 
     if (this.listToHide.length === this.sliceEnd - this.slice) {
       if (this.txtButtonHide) {
-        this.changeTextButton(this.txtButtonHide)
+        this.changeTextButton(this.txtButtonHide);
       }
-      this.setAttribute('expanded', '');
-      this.button.classList.add('less');
+      this.setAttribute("expanded", "");
+      this.button.classList.add("less");
     }
   }
 
@@ -171,8 +159,8 @@ class ExpandingList extends HTMLElement {
       li.classList.add("visually-hidden");
     });
 
-    this.removeAttribute('expanded');
-    this.button.classList.remove('less');
+    this.removeAttribute("expanded");
+    this.button.classList.remove("less");
 
     // window.scrollTo(0, this.offsetTop);
 
@@ -192,7 +180,7 @@ class ExpandingList extends HTMLElement {
     return Number(this.getAttribute("slice"));
   }
 
-  get parentSelector() {
+  get selector() {
     return this.getAttribute("selector");
   }
 
@@ -205,7 +193,7 @@ class ExpandingList extends HTMLElement {
   }
 
   changeTextButton(newText) {
-    if (newText) this.button.querySelector('span').textContent = newText;
+    if (newText) this.button.querySelector("span").textContent = newText;
   }
 
   set expanded(value) {
@@ -223,33 +211,27 @@ if (!customElements.get("cor-expanding-list")) {
   customElements.define("cor-expanding-list", ExpandingList);
 }
 
-class ExpandingListMulti extends HTMLElement {
-  constructor() {
-    super();
-  }
-}
-
-if (!customElements.get('cor-expanding-list')) {
-  customElements.define('cor-expanding-list', ExpandingList);
-}
-
 class CorExpandingLists extends HTMLElement {
   constructor() {
     super();
     const lists = this.querySelectorAll(this.selector);
-    [...lists].map(list => {
-      list.insertAdjacentHTML('afterend', `<cor-expanding-list ${[...this.attributes].map(attribute => ` ${attribute.nodeName}="${attribute.nodeValue}"`)}>${list.outerHTML}</cor-expanding-list>`);
+    [...lists].map((list) => {
+      list.insertAdjacentHTML(
+        "afterend",
+        `<cor-expanding-list ${[...this.attributes].map(
+          (attribute) => ` ${attribute.nodeName}="${attribute.nodeValue}"`
+        )}>${list.outerHTML}</cor-expanding-list>`
+      );
       list.remove();
       // list.nextSibling.appendChild(list);
     });
-
   }
 
   get selector() {
-    return this.getAttribute('selector');
+    return this.getAttribute("selector");
   }
 }
 
-if (!customElements.get('cor-expanding-lists')) {
-  customElements.define('cor-expanding-lists', CorExpandingLists);
+if (!customElements.get("cor-expanding-lists")) {
+  customElements.define("cor-expanding-lists", CorExpandingLists);
 }
