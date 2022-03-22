@@ -29,6 +29,14 @@ class CorTwitterContainer extends HTMLElement {
     this.loadScript();
   }
 
+  _onMouseenter() {
+    this.classList.add('shadow');
+  }
+
+  _onMouseleave() {
+    this.classList.remove('shadow');
+  }
+
   loadScript() {
 
     $wt.render('twitterContainer', twitterOptions);

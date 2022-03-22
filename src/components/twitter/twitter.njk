@@ -1,11 +1,25 @@
 <style>
   cor-twitter-container {
-    background: url(/assets/images/twitter-facade.png) no-repeat center;
+    display: grid;
+    place-items: center;
+  }
+
+  .twitterfacade {
     cursor: pointer;
     display: grid;
     place-items: center;
-    height: 1200px;
   }
+
+  .twitterfacade > button {
+    position: absolute;
+  }
+
+  .twitterfacade:hover {
+   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 
   cor-twitter-container[loaded] {
     background: none;
@@ -18,7 +32,10 @@
 </style>
 
 <cor-twitter-container id="twitterContainer">
-  <button>Show content</button>
+  <div class="twitterfacade">
+    <img src='/assets/images/twitter-facade.png' alt />
+    <button>Show content</button>
+  </div>
 </cor-twitter-container>
 
 
