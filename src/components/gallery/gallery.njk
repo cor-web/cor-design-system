@@ -1,0 +1,9 @@
+<cor-gallery>
+  <ul class="list-style-none">
+    {% for image in gallery %}
+    <li>
+      <img src="{{ image.src }}" alt="{{ image.alt }}"  />
+    </li>
+    {% endfor %}
+  </ul>
+</cor-gallery>

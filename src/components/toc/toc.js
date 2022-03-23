@@ -77,9 +77,9 @@ class TableOfContent extends HTMLElement {
         }
         
         h2 {
-          color: var(--g-8);
+          color: var(--oc-gray-7);
           font-size: var(--step--3) !important;
-          font-weight: bold;
+          font-weight: normal;
           letter-spacing: 1.5px;
           text-transform: uppercase;
           margin: 0 0 var(--space--4xs) 0;
