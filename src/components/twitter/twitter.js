@@ -35,6 +35,8 @@ class CorTwitterContainer extends HTMLElement {
   }
 }
 
-if (!customElements.get("cor-twitter-container")) {
-  customElements.define("cor-twitter-container", CorTwitterContainer);
-}
+document.addEventListener("DOMContentLoaded", (event) => {
+  if (!customElements.get("cor-twitter-container")) {
+    customElements.define("cor-twitter-container", CorTwitterContainer);
+  }
+});
