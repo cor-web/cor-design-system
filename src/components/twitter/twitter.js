@@ -7,7 +7,7 @@ class CorTwitterContainer extends HTMLElement {
     const button = document.querySelector("cor-twitter-container button");
 
     const onClick = () => {
-      console.log(this, 'test');
+      console.log(this, "test");
       this.loadScript();
       this.removeEventListener("click", onClick);
     };
@@ -31,6 +31,7 @@ class CorTwitterContainer extends HTMLElement {
       block: "center",
       inline: "nearest",
     });
+    this.removeEventListener("click", this._onClick);
   }
 }
 

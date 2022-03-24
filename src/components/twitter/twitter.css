@@ -1,9 +1,10 @@
-cor-twitter-container, cor-twitter-container-more {
+cor-twitter-container,
+cor-twitter-container-more {
   display: grid;
   place-items: center;
 }
 cor-twitter-container-more {
-    visibility: hidden;
+  visibility: hidden;
 }
 cor-twitter-container .smk {
   display: grid;
@@ -19,13 +20,11 @@ cor-twitter-container .smk {
 }
 .twitterfacade > button {
   position: absolute;
-  top: 25%;
+  top: 50px;
 }
-.twitterfacade:hover {
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+cor-twitter-container[loaded] .twitterfacade:hover {
+  box-shadow: none;
+  cursor: inherit;
 }
 .twitterfacade > img {
   filter: blur(2px);
@@ -35,9 +34,22 @@ cor-twitter-container .smk {
 }
 cor-twitter-container[loaded] {
   background: none;
-  display: block;
+  display: grid;
+  gap: var(--space-xs);
   height: auto;
 }
 cor-twitter-container[loaded] > button {
   display: none;
+}
+
+cor-twitter-container > a[href] {
+  display: none;
+}
+
+cor-twitter-container[loaded] > a[href] {
+  display: inline-flex;
+}
+
+cor-twitter-container > a {
+  padding: var(--space-2xs) var(--space-xs);
 }
