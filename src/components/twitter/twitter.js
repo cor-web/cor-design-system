@@ -5,12 +5,14 @@ class CorTwitterContainer extends HTMLElement {
 
   connectedCallback() {
     const button = document.querySelector("cor-twitter-container button");
-    button.addEventListener("click", this._onClick.bind(this));
-    this.addEventListener("click", this._onClick.bind(this));
-  }
 
-  _onClick() {
-    this.loadScript();
+    const onClick = () => {
+      console.log(this, "test");
+      this.loadScript();
+      this.removeEventListener("click", onClick);
+    };
+
+    this.addEventListener("click", onClick);
   }
 
   _onMouseenter() {
