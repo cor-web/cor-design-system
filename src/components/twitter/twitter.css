@@ -1,37 +1,34 @@
-cor-twitter-container {
+cor-twitter-container, cor-twitter-container-more {
   display: grid;
   place-items: center;
 }
-
+cor-twitter-container-more {
+    visibility: hidden;
+}
 cor-twitter-container .smk {
   display: grid;
   gap: var(--space-xs);
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   max-width: initial;
 }
-
 .twitterfacade {
   cursor: pointer;
   display: grid;
   place-items: center;
 }
-
 .twitterfacade > button {
   position: absolute;
 }
-
 .twitterfacade:hover {
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
-.twitterfacade img {
+.twitterfacade > img {
   filter: blur(2px);
 }
-
-.twitterfacade:hover img {
+.twitterfacade:hover > img {
   filter: blur(2px) brightness(0.8);
 }
 cor-twitter-container[loaded] {
@@ -39,7 +36,6 @@ cor-twitter-container[loaded] {
   display: block;
   height: auto;
 }
-
 cor-twitter-container[loaded] > button {
   display: none;
 }
