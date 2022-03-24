@@ -36,10 +36,23 @@ cor-twitter-container .smk {
 }
 cor-twitter-container[loaded] {
   background: none;
-  display: block;
+  display: grid;
+  gap: var(--space-xs);
   height: auto;
 }
 
 cor-twitter-container[loaded] > button {
   display: none;
+}
+
+cor-twitter-container > a[href] {
+  display: none;
+}
+
+cor-twitter-container[loaded] > a[href] {
+  display: inline-flex;
+}
+
+cor-twitter-container > a {
+  padding: var(--space-2xs) var(--space-xs);
 }

@@ -29,6 +29,7 @@ class CorTwitterContainer extends HTMLElement {
       block: "center",
       inline: "nearest",
     });
+    this.removeEventListener("click", this._onClick);
   }
 }
 

@@ -1,4 +1,4 @@
-<cor-twitter-container id="twitterContainer">
+<cor-twitter-container>
   <script>
     var twitterOptions = {
       service: "smk",
@@ -16,12 +16,15 @@
     };
   </script>
 
-  <div class="twitterfacade">
+  <div class="twitterfacade" id="twitterContainer">
     <img src='/assets/images/twitter-facade.png' srcset="/assets/images/twitter-facade.png 620w,
  /assets/images/twitter-facade-desktop.png 1660w" alt sizes="100vw"
  />
     <button>Show content</button>
   </div>
+  
+  <a href="test.be" target="_blank" class=" txt-xl border rounded-full icon icon-after flex" style="--icon: var(--icon-box-arrow-up-right)">More Tweets</a>
+
 </cor-twitter-container>
 
 
