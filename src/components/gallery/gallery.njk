@@ -1,9 +1,17 @@
-<cor-gallery>
-  <ul class="list-style-none">
-    {% for image in gallery %}
-    <li>
-      <img src="{{ image.src }}" alt="{{ image.alt }}"  />
-    </li>
-    {% endfor %}
-  </ul>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.umd.min.js"></script>
+
+<cor-gallery id="lightgallery">
+  {% for image in gallery %}
+  <a href="{{ image.src }}" data-lg-size="1600-2400">
+        <img alt="{{ image.alt }}" src="{{ image.src }}" />
+  </a>
+  {% endfor %}
 </cor-gallery>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+<script src="/components/gallery/gallery.js" type="module"></script>

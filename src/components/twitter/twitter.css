@@ -1,11 +1,8 @@
-cor-twitter-container,
-cor-twitter-container-more {
+cor-twitter-container {
   display: grid;
   place-items: center;
 }
-cor-twitter-container-more {
-  visibility: hidden;
-}
+
 cor-twitter-container .smk {
   display: grid;
   gap: var(--space-xs);
@@ -52,4 +49,9 @@ cor-twitter-container[loaded] > a[href] {
 
 cor-twitter-container > a {
   padding: var(--space-2xs) var(--space-xs);
+}
+
+.wt-img {
+  -webkit-filter: none !important;
+  filter: none!important;
 }

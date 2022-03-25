@@ -70,11 +70,13 @@ class TableOfContent extends HTMLElement {
           padding: var(--space-4xs) var(--space-2xs);
           line-height: initial;
         }
-
+        
+        /*
         ul > li.active {
           background-color: rgba(var(--oc-blue-8-rgb), .1);
           border-left: solid 2px var(--oc-blue-8);
         }
+        */
         
         h2 {
           color: var(--oc-gray-7);
@@ -106,10 +108,12 @@ class TableOfContent extends HTMLElement {
           color: var(--txt-color);
         }
 
+        /*
         a:active {
           color: #fff;
           background-color: #024;
         }
+        */
 
         a:focus {
           outline-color: currentColor;
@@ -127,14 +131,14 @@ class TableOfContent extends HTMLElement {
         <h2 id="sections-heading"><slot name="toc-title">Contents</slot></h2>
         <ul>
           ${this.sections
-            .map(
-              (section) => `
+        .map(
+          (section) => `
             <li>
               <a href="#${section.id}">${section.title}</a>
             </li>
           `
-            )
-            .join("")}
+        )
+        .join("")}
         </ul>
       </nav>
     `;
