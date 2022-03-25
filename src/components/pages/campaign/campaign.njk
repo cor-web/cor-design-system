@@ -170,8 +170,14 @@
 
         <div class="cor-stack">
           <section>
-            <h3 class="cor-toc-section margin-top">Videos and others</h3>
+            <h3 class="cor-toc-section margin-top" id="multimedia">Videos and others</h3>
             {% render "@videoplayer--withplaylist" %}
+          </section>
+
+          <section>
+            <h3 class="cor-toc-section margin-top" id="multimedia">Photos</h3>
+
+            {% render "@gallery" %}
           </section>
 
           <section>

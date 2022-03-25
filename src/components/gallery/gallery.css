@@ -1,0 +1,13 @@
+cor-gallery {
+  display: block;
+}
+
+cor-gallery .gallery-container {
+  width: 700px;
+  height: 500px;
+  position: relative;
+}
+
+.mainContent cor-gallery img:not([alt]) {
+  filter: inherit;
+}
