@@ -1,7 +1,8 @@
-import lightGallery from 'https://cdn.skypack.dev/lightgallery@2.0.0-beta.4';
-import lgZoom from 'https://cdn.skypack.dev/lightgallery@2.0.0-beta.4/plugins/zoom';
-import lgThumbnail from 'https://cdn.skypack.dev/lightgallery@2.0.0-beta.4/plugins/thumbnail';
-
+import lightGallery from "https://cdn.skypack.dev/lightgallery@2.1.2";
+import lgZoom from "https://cdn.skypack.dev/lightgallery@2.1.2/plugins/zoom";
+import lgThumbnail from "https://cdn.skypack.dev/lightgallery@2.1.2/plugins/thumbnail";
+import lgAutoplay from "https://cdn.skypack.dev/lightgallery@2.1.2/plugins/autoplay";
+import lgFullscreen from "https://cdn.skypack.dev/lightgallery@2.1.2/plugins/fullscreen";
 class CorGallery extends HTMLElement {
   constructor() {
     super();
@@ -15,7 +16,18 @@ class CorGallery extends HTMLElement {
       closable: false,
       // Add maximize icon to enlarge the gallery
       showMaximizeIcon: true,
-      plugins: [lgZoom, lgThumbnail],
+      plugins: [
+        lgZoom,
+        lgThumbnail,
+        lgFullscreen,
+        lgAutoplay
+      ],
+      mobileSettings: {
+        controls: false,
+        showCloseIcon: false,
+        download: false,
+        rotate: false
+      },
       licenseKey: 45,
     });
     lg.openGallery(0);

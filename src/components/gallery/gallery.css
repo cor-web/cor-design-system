@@ -2,12 +2,19 @@ cor-gallery {
   display: block;
 }
 
-cor-gallery .gallery-container {
-  width: 700px;
-  height: 500px;
+cor-gallery #gallery-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
   position: relative;
 }
 
 .mainContent cor-gallery img:not([alt]) {
   filter: inherit;
+}
+
+cor-gallery button {
+  min-width: inherit;
 }
