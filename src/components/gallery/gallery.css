@@ -68,5 +68,10 @@ cor-gallery .lg-outer {
 
 .mainContent .lg-sub-html p {
   max-width: inherit;
+  margin-bottom: 0 !important;
   text-align: center;
+}
+
+.mainContent .lg-sub-html small {
+  font-size: 12px !important;
 }
