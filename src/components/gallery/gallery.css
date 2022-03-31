@@ -51,3 +51,22 @@ cor-gallery .lg-outer {
 .cor-auth cor-gallery .lg-outer {
   height: calc(100% - var(--top-bar-height--authentified));
 }
+
+/*
+ * Description styles
+ */
+.lg-sub-html {
+  text-align: center;
+}
+
+.mainContent .lg-sub-html h4 {
+  color: white;
+  font-size: var(--step--3) !important;
+  font-weight: strong;
+  text-align: center;
+}
+
+.mainContent .lg-sub-html p {
+  max-width: inherit;
+  text-align: center;
+}
