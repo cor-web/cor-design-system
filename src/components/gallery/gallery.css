@@ -61,7 +61,7 @@ cor-gallery .lg-outer {
 
 .mainContent .lg-sub-html h4 {
   color: white;
-  font-size: var(--step--3) !important;
+  font-size: 14px !important;
   font-weight: strong;
   text-align: center;
 }
