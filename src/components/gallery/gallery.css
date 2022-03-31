@@ -18,3 +18,36 @@ cor-gallery #gallery-container {
 cor-gallery button {
   min-width: inherit;
 }
+
+/*
+ * Tob bar space (EU websites, Ritton in auth mode)
+ */
+
+cor-gallery {
+  display: block;
+  --top-bar-height: 25px;
+  --top-bar-height--authentified: 80px;
+}
+
+.lg-inline {
+  --top-bar-height: 0px;
+  --top-bar-height--authentified: 0px;
+}
+
+cor-gallery .lg-backdrop,
+cor-gallery .lg-outer {
+  top: var(--top-bar-height);
+}
+
+cor-gallery .lg-outer {
+  height: calc(100% - var(--top-bar-height));
+}
+
+.cor-auth cor-gallery .lg-backdrop,
+.cor-auth cor-gallery .lg-outer {
+  top: var(--top-bar-height--authentified);
+}
+
+.cor-auth cor-gallery .lg-outer {
+  height: calc(100% - var(--top-bar-height--authentified));
+}
