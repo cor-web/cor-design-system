@@ -15,6 +15,8 @@ class CorGallery extends HTMLElement {
       // Do not allow users to close the gallery
       closable: false,
       // Add maximize icon to enlarge the gallery
+      download: false,
+      fullScreen: false,
       showMaximizeIcon: true,
       plugins: [
         lgZoom,
