@@ -9,16 +9,13 @@ class CorGallery extends HTMLElement {
 
     const lgContainer = document.getElementById('gallery-container');
      
-    lgContainer.addEventListener('lgAfterAppendSubHtml', (event) => {
-      const { index } = event.detail;
-      const description = document.querySelector('.lg-sub-html');
-      const height = description.clientHeight;
-
-      const img = document.querySelector('.lg-inner');
-      debugger;
-      img.style.bottom = height + 'px';
-      console.log('test', index);
+    lgContainer.addEventListener('lgAfterAppendSubHtml', () => {
+      const imgContainer = document.querySelector('.lg-inner');
+      const componentContainer = document.querySelector('.lg-components');
+      imgContainer.style.bottom = componentContainer.clientHeight + 'px';
     });
+
+    
 
 
     const lg = lightGallery(lgContainer, {
