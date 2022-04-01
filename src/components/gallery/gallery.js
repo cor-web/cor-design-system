@@ -7,11 +7,23 @@ class CorGallery extends HTMLElement {
   constructor() {
     super();
 
-    const $lgContainer = document.getElementById('gallery-container');
+    const lgContainer = document.getElementById('gallery-container');
+     
+    lgContainer.addEventListener('lgAfterAppendSubHtml', (event) => {
+      const { index } = event.detail;
+      const description = document.querySelector('.lg-sub-html');
+      const height = description.clientHeight;
 
-    const lg = lightGallery($lgContainer, {
+      const img = document.querySelector('.lg-inner');
+      debugger;
+      img.style.bottom = height + 'px';
+      console.log('test', index);
+    });
+
+
+    const lg = lightGallery(lgContainer, {
       speed: 500,
-      container: $lgContainer,
+      container: lgContainer,
       // Do not allow users to close the gallery
       closable: false,
       // Add maximize icon to enlarge the gallery
@@ -31,7 +43,11 @@ class CorGallery extends HTMLElement {
       },
       licenseKey: 45,
     });
+   
+
     lg.openGallery(0);
+
+    
   }
 }
 

@@ -13,6 +13,7 @@ class TableOfContent extends HTMLElement {
       threshold: 1.0,
     };
 
+    /*
     const observer = new IntersectionObserver((entries, options) => {
       entries.forEach((entry) => {
         const id = entry.target.getAttribute("id");
@@ -34,6 +35,7 @@ class TableOfContent extends HTMLElement {
     document.querySelectorAll("h2[id],h3[id]").forEach((section) => {
       observer.observe(section);
     });
+    */
   }
 
   getSections() {
