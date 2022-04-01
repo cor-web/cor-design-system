@@ -7,7 +7,9 @@ class CorGallery extends HTMLElement {
     lgContainer.addEventListener('lgAfterAppendSubHtml', () => {
       const imgContainer = document.querySelector('.lg-inner');
       const componentContainer = document.querySelector('.lg-components');
+      console.log(imgContainer.style.bottom,componentContainer);
       imgContainer.style.bottom = componentContainer.clientHeight + 'px';
+      console.log(imgContainer.style.bottom, imgContainer);
     });
 
     
