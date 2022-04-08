@@ -2,8 +2,10 @@
   --border-size: 1px;
   --border-style: solid;
 
-  border: var(--border-size) var(--border-style) var(--border-color, inherit) !important;
+  border: var(--border-size) var(--border-style) rgb(var(--page-color, var(--border-color, inherit))) !important;
 }
+
+
 
 .border-top {
   border-width: var(--border-size, 1px) 0 0 0 !important;

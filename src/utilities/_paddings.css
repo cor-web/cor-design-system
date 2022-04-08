@@ -40,6 +40,10 @@
   padding-right: var(--space-xl) !important;
 }
 
+.padding-2xs {
+  padding: var(--space-2xs);
+}
+
 .padding-m {
   padding: var(--space-m);
 }

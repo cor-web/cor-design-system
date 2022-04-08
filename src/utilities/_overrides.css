@@ -15,3 +15,8 @@
 .smk img {
   display: initial;
 }
+
+/* overddide main.css :252 */
+.mainContent ol li {
+	list-style: decimal;
+}
