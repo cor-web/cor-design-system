@@ -102,6 +102,8 @@ class CorToggle extends HTMLElement {
 
 window.customElements.define('cor-toggle', CorToggle);
 
+
+/*
 (function () {
   // Define the expand/collapse all template
   const buttons = document.createElement('div');
@@ -132,3 +134,4 @@ window.customElements.define('cor-toggle', CorToggle);
     });
   });
 })();
+*/
