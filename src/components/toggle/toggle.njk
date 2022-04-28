@@ -1,18 +1,8 @@
-{% for  in agenda %}
-<toggle-section {% if loop.first %}open{% endif %}>
-  <h3 class="cor-plenary-heading--3">{{ day.day }}</h3>
-  <ul class="cor-plenary__agenda__list">
-    {% for agendaItem in day.program %}
-    <li class="cor-plenary__agenda__list__item">
-      <span class="cor-plenary__agenda__list__item__time">{{ agendaItem.time }}</span>
-      <div class="cor-plenary__agenda__list__item__description-container">
-        <strong class="cor-plenary__agenda__list__item__title">{{ agendaItem.title }}</strong>
-        <span  class="cor-plenary__agenda__list__item__description">{{ agendaItem.description }}</span>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</toggle-section>
-{% endfor %}
+  <cor-toggle>
+    <h3 slot="toggle-heading">My title</h3>
+    <div slot="toggle-content">
+      My content
+    </div>
+  </cor-toggle>
 
 <script src="/components/toggle/toggle.js" type="module"></script>
