@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
 .gap-xl {
   gap: var(--space-xl);
 }
