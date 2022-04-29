@@ -1,0 +1,44 @@
+title: "Presidents"
+preview: "@previewincor_new"
+context:
+  metadata: "bum"
+  title: "Presidents"
+  subtitle: "Bringing Europe closer to its people"
+  description: "Exercitation amet ex aute veniam ut ea excepteur. Occaecat aliqua laborum eiusmod pariatur. Velit adipisicing aute aliqua consequat aliquip. Dolore consectetur consequat quis cupidatat cillum labore consectetur mollit."
+  poster: false
+  presidents:
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "LoCillum adipisicing"
+      years: "2010-2014"
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"

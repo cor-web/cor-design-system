@@ -1,0 +1,35 @@
+<div class="bg-white cor-container" style="--page-color: 10, 175, 203">
+  
+  {% render "@cover", {title: title, subtitle: subtitle, poster: false, cta: false }, true %}
+
+  <div class=" cor-content">
+
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+      
+      <section class="cor-rich-text cor-box">
+      
+        <ol class="cor-grid list-none">
+          {% for president in presidents %}
+          <li class="cor-stack cor-stack--2xs">
+              <img src="{{ president.portrait.src }}" alt="portrait of {{ president.name }}"/>
+              <strong>{{ president.name}}</strong>
+              <p>President from 2018 to 2020</p>
+          </li>
+          {% endfor %}
+        </ol>
+
+      </section>
+
+      
+
+      <section>
+        {% render "@share" %}
+      </section>
+      
+    
+    </main>
+
+  </div>
+
+</div>
