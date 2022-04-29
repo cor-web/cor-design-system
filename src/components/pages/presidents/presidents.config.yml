@@ -7,37 +7,43 @@ context:
   description: "Exercitation amet ex aute veniam ut ea excepteur. Occaecat aliqua laborum eiusmod pariatur. Velit adipisicing aute aliqua consequat aliquip. Dolore consectetur consequat quis cupidatat cillum labore consectetur mollit."
   poster: false
   presidents:
-    - name: "LoCillum adipisicing"
+    - name: "Jane Doe"
+      years: "2010-2014"
+      description: "Esse incididunt in Lorem fugiat anim proident ex irure cillum exercitation amet fugiat esse nisi. Anim fugiat officia elit reprehenderit adipisicing ea. Laborum incididunt laboris eiusmod duis tempor sint eu. Pariatur dolor exercitation cillum aliqua laborum sit. Enim culpa voluptate dolor ut. Pariatur labore voluptate et esse nulla Lorem et officia officia pariatur pariatur incididunt. Laborum eu minim do aute duis.
+
+Adipisicing anim laboris laborum ullamco ad labore quis consectetur nisi incididunt est nisi anim quis. In culpa nostrud est eiusmod in ex culpa pariatur et. Ea deserunt deserunt esse eiusmod voluptate occaecat esse cupidatat culpa fugiat ea magna anim pariatur. Eu elit consectetur consectetur aliquip proident id est consequat exercitation est.
+
+Eu esse duis aliquip voluptate ullamco nostrud culpa consectetur ut elit adipisicing cupidatat. Dolor minim ut velit magna ad fugiat in duis pariatur. Ex minim laboris dolore excepteur velit consectetur do. Aliqua proident laboris proident velit ea non nisi irure velit adipisicing exercitation. Minim anim do eiusmod amet Lorem. Cillum eiusmod aliqua cillum nostrud aliqua. Enim nulla pariatur incididunt laboris commodo reprehenderit nulla laborum nostrud consectetur."
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "Jane Doe"
+      years: "2010-2014"
+      description: "Non occaecat irure veniam nostrud ipsum eiusmod consectetur sit commodo non Lorem Lorem anim. In duis ullamco sit pariatur commodo eu mollit nulla est aute tempor eu sint. Ipsum esse pariatur aliqua excepteur dolor do ea tempor sit cupidatat ullamco cupidatat laborum do. Cupidatat velit amet anim eu ea magna. Lorem adipisicing mollit nisi excepteur minim labore id. Lorem in eu incididunt aliquip Lorem deserunt est nostrud ad mollit minim incididunt qui ut. Id dolor elit irure nulla."
+      portrait:
+        src: "https://picsum.photos/500/500"
+        alt: "portrait of"
+    - name: "Jane Doe"
       years: "2010-2014"
       portrait:
         src: "https://picsum.photos/500/500"
         alt: "portrait of"
-    - name: "LoCillum adipisicing"
+    - name: "Jane Doe"
       years: "2010-2014"
       portrait:
         src: "https://picsum.photos/500/500"
         alt: "portrait of"
-    - name: "LoCillum adipisicing"
+    - name: "Jane Doe"
       years: "2010-2014"
       portrait:
         src: "https://picsum.photos/500/500"
         alt: "portrait of"
-    - name: "LoCillum adipisicing"
+    - name: "Jane Doe"
       years: "2010-2014"
       portrait:
         src: "https://picsum.photos/500/500"
         alt: "portrait of"
-    - name: "LoCillum adipisicing"
-      years: "2010-2014"
-      portrait:
-        src: "https://picsum.photos/500/500"
-        alt: "portrait of"
-    - name: "LoCillum adipisicing"
-      years: "2010-2014"
-      portrait:
-        src: "https://picsum.photos/500/500"
-        alt: "portrait of"
-    - name: "LoCillum adipisicing"
+    - name: "Jane Doe"
       years: "2010-2014"
       portrait:
         src: "https://picsum.photos/500/500"
