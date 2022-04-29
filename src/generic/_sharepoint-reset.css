@@ -7,4 +7,9 @@ img {
   filter: none !important;
   -webkit-filter: none !important;
   max-width: none;
-  }
+}
+
+p, .ms-rtestate-field p, p.ms-rteElement-P {
+  all:unset;
+  margin-bottom: 0!important;
+}

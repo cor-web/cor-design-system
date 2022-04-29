@@ -3,13 +3,16 @@
     <img src="{{ image.src }}" alt="{{ image.alt }}">
   </div>
   <h2 class="cor-media__title cor-h4 margin-0">{{ title }}</h2>
-  <div class="cor-media__content">
+  <div class="cor-media__content cor-stack cor-stack--2xs">
+    <h3 class="cor-h5">{{ subtitle }}</h3>
     <p>{{ description }}</p>
     {% if readmore %}
-    <a href="test.be">Read more</a>
+    <a href="test.be" class="inline">Read more</a>
     {% endif %}
   </div>
+  {% if footer %}
   <div class="cor-media__footer">
     {{ footer }}
   </div>
+  {% endif %}
 </div>
