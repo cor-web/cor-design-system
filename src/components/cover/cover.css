@@ -56,7 +56,7 @@ cor-cover p,
 }
 
 cor-cover.cor-cover--topbar {
-  border-top: rgb(var(--page-color)) solid var(--space-xs);
+  border-top: rgb(var(--cover-border-color)) solid var(--space-xs);
 }
 
 .cor-cover__cta:after {
