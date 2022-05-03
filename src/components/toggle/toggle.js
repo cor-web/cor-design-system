@@ -27,6 +27,7 @@ tmpl.innerHTML = `
     }
 
     button svg {
+      flex-shrink: 0;
       height: 1em;
       margin-left: 0.5em;
     }

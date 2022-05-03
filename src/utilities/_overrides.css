@@ -20,3 +20,7 @@
 .mainContent ol li {
 	list-style: decimal;
 }
+
+.mainContent ol.list-style-none li {
+  list-style: none;
+}
