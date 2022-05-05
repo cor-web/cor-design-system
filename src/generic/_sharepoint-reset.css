@@ -10,6 +10,5 @@ img {
 }
 
 p, .ms-rtestate-field p, p.ms-rteElement-P {
-  all:unset;
   margin-bottom: 0!important;
 }

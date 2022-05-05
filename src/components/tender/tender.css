@@ -1,5 +1,6 @@
 .cor-tender-header {
   display: grid;
+  font-size: var(--step--6);
   gap: var(--space-2xs);
   padding: var(--space-2xs);
 }
