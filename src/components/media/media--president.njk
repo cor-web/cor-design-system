@@ -1,0 +1,27 @@
+<div class="cor-media {% if modifier %}cor-media--{{ modifier }}{% endif %}">
+  <div class="cor-media__img">
+    <img src="{{ image.src }}" alt="{{ image.alt }}">
+  </div>
+  <div class="cor-media__title">
+      <h2 class="cor-media--president__title cor-h4 margin-0">
+        <span>{{ title }}</span>
+      </h2>
+      <div class="cor-media--president__flags">
+        <img alt="EPP" src="https://cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-epp.png">
+        <img alt="EPP" src="https://cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-epp.png">
+      </div>
+  </div>
+  <div class="cor-media__content cor-stack cor-stack--2xs align-items-flex-start">
+    <span class="cor-h6">{{ subtitle }}</span>
+    <span class="italic">Wallonie, Belgique, EPP</span>
+    <p>{{ description }}</p>
+    {% if readmore %}
+    <a href="test.be" class="inline">Read more</a>
+    {% endif %}
+  </div>
+  {% if footer %}
+  <div class="cor-media__footer">
+    {{ footer }}
+  </div>
+  {% endif %}
+</div>

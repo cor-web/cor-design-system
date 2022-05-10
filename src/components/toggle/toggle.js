@@ -3,7 +3,7 @@ tmpl.innerHTML = `
   <style>
     .toggle-heading {
       display: flex;
-      padding: var(--toggle-heading-padding)
+      padding: var(--toggle-heading-padding);
     }
   
     .toggle-heading button {
@@ -13,7 +13,6 @@ tmpl.innerHTML = `
       color: var(--link-color);
       cursor: hover;
       display: flex;
-      justify-content: space-between;
       width: 100%;
       padding: 0.5em 0;
     }

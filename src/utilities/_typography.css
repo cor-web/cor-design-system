@@ -73,3 +73,7 @@
 .font-bold {
   font-weight: 700 !important;
 }
+
+.italic {
+  font-style: italic;
+}

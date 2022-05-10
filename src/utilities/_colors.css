@@ -37,3 +37,7 @@
 .color-oc--gray-8 {
   color: var(--oc-gray-8);
 }
+
+.color-link {
+  color: var(--link-color);
+}

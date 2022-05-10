@@ -12,7 +12,7 @@
         <ol class="list-none cor-containerWithDivider cor-containerWithDivider--1">
           {% for president in presidents %}
           <li class="padding cor-stack cor-stack--2xs">       
-              {% render "@media--imageflexie", {title: president.name, image: president.portrait, description: president.description, subtitle: president.years, modifier: "img-flexie row-gap-4xs column-gap-xs", readmore: true} %}
+              {% render "@media--president", {title: president.name, image: president.portrait, description: president.description, subtitle: president.years, modifier: "img-flexie cor-media--president row-gap-4xs column-gap-xs", readmore: true} %}
           </li>
           {% endfor %}
         </ol>
