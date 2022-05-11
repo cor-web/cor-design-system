@@ -137,16 +137,17 @@
 .cor-media--president .cor-media__title {
   display: flex;
   gap: var(--space-xs);
+  flex-wrap: wrap;
 }
 
 .cor-media--president__title {
   flex: 1 0 0;
-  min-inline-size: 66%;
 }
 
 .cor-media--president__flags {
   margin-left: auto;
   display: grid;
   gap: var(--space-xs);
-  grid-template-columns: 50px 50px;
+  grid-template-columns: 50px 75px;
 }
+
