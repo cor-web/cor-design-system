@@ -1,0 +1,16 @@
+title: "Presidents"
+preview: "@previewincor_new"
+context:
+  metadata: "bum"
+  title: "Media Center"
+  subtitle: ""
+  description: "Exercitation amet ex aute veniam ut ea excepteur. Occaecat aliqua laborum eiusmod pariatur. Velit adipisicing aute aliqua consequat aliquip. Dolore consectetur consequat quis cupidatat cillum labore consectetur mollit."
+  cta: false
+  poster:
+    src: "https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+  nav:
+    - "News"
+    - "Events"
+    - "Social Media"
+    - "Videos"
+    - "Consultations"

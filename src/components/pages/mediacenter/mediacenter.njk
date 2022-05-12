@@ -1,0 +1,29 @@
+<div class="bg-white cor-container" style="--page-color: 10, 175, 203">
+  
+  {% render "@cover--grid-2", {title: title, subtitle: subtitle, poster: poster, description: description, cta: cta}, true %}
+
+  <div class=" cor-content">
+
+
+    <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+      
+      <section class="cor-rich-text cor-box">
+      
+        <nav class="cor-stack">
+          {% for navitem in nav %}
+          <a href="test.be">
+          {{ navitem }}
+          </a>
+          {% endfor %}
+        </nav>
+
+      </section>
+
+      
+
+    
+    </main>
+
+  </div>
+
+</div>
