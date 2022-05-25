@@ -149,3 +149,7 @@
 .col-end-4 {
   grid-column-end: 4;
 }
+
+.grid-flow-row-dense {
+  grid-auto-flow: row dense;
+}

@@ -3,7 +3,8 @@
  */
 .mainContent p,
 .ms-rtestate-field p,
-p.ms-rteElement-P {
+p.ms-rteElement-P,
+.cor-p {
   font-size: var(--step--3);
   line-height: 1.4em;
 }

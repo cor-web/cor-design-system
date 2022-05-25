@@ -17,6 +17,30 @@
           {% endfor %}
         </nav>
 
+
+
+      </section>
+
+      <section>
+        <div class="cor-box">
+          <h2>Latest News</h2>
+          <div class="cor-switcher items-start">
+          {% for initiative in news %}
+            {% render "@card" , {date: initiative.date,  titleLevel: "h3", link: initiative.link, title: initiative.title, image: initiative.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="cor-box">
+          <h2>Latest Events</h2>
+          <div class="cor-switcher items-start">
+          {% for initiative in news %}
+            {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.title, image: initiative.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
+        </div>
       </section>
 
       

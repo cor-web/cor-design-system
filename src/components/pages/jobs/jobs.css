@@ -1,4 +1,5 @@
-.mainContent p {
+.mainContent p,
+.cor-p {
   max-width: 75ch;
 }
 

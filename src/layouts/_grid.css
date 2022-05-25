@@ -23,4 +23,3 @@
     grid-template-columns: repeat(auto-fit, minmax(min(var(--measure, 350px), 100%), 1fr));
   }
 }
-
