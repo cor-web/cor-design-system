@@ -1,0 +1,22 @@
+.cor-enlargcountries-grid {
+  --threshold: 200px;
+  display: grid;
+  grid-template: 'headerleft headerright'
+                          'contentleft contentright';
+}
+
+.cor-enlargcountries-grid h5:first-child {
+  grid-area: headerleft;
+}
+
+.cor-enlargcountries-grid h5:first-child + ul {
+  grid-area: contentleft;
+}
+
+.cor-enlargcountries-grid ul + h5 {
+  grid-area: headerright;
+}
+
+.cor-enlargcountries-grid ul + h5 + ul {
+  grid-area: contentright;
+}
