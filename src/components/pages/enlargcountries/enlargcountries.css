@@ -3,6 +3,7 @@
   display: grid;
   grid-template: 'headerleft headerright'
                           'contentleft contentright';
+  grid-template-columns: 1fr 1fr;
 }
 
 .cor-enlargcountries-grid h5:first-child {
