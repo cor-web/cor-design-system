@@ -1,7 +1,9 @@
 .cor-with-sidenav {
+  --space: var(--space-xs);
+
   align-items: start;
   display: grid;
-  gap: var(--space-s);
+  gap: var(--space);
   grid-template-columns: minmax(0, 1fr);
   padding: var(--space-xs) var(--space-s);
 }

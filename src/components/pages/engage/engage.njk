@@ -3,14 +3,14 @@
   {% render "@cover--grid-2", {title: title, subtitle: subtitle, poster: poster, description: description}, true %}
 
   <!-- Initiatives -->
-  <article class="cor-box">
+  <div class="cor-box">
     <h2>Initiatives</h2>
-    <div class="cor-grid" style="--threshold: 260px">
+    <div class="cor-grid lg-grid-cols-4">
     {% for initiative in initiatives %}
       {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
     {% endfor %}
     </div>
-  </article>
+  </div>
   <!-- /Initiatives -->
 
   <div role="separator"></div>
@@ -25,6 +25,17 @@
     </div>
 
     <main class="cor-containerWithDivider cor-containerWithDivider--space-s">
+
+      <section>
+        <!-- Initiatives -->
+          <h2>Initiatives</h2>
+          <div class="cor-grid lg-grid-cols-3 margin-bottom">
+          {% for initiative in initiatives %}
+            {% render "@card" , {date: initiative.date, titleLevel: "h3", link: initiative.link, title: initiative.link.text, image: initiative.image, cardExtraClass: cardExtraClass } %}
+          {% endfor %}
+          </div>
+        <!-- /Initiatives -->
+      </section>
       
       <section class="cor-rich-text">
       
