@@ -21,3 +21,8 @@
 .cor-enlargcountries-grid ul + h5 + ul {
   grid-area: contentright;
 }
+
+/* tofix: initiatives in central content */
+.mainContent article.cor-box {
+  padding: 0;
+}
