@@ -40,7 +40,7 @@ class TableOfContent extends HTMLElement {
 
   getSections() {
     const sectionsElements = document.querySelectorAll(
-      ".cor-container h2[id],.cor-container h3[id],.cor-rich-text h2"
+      "main h2[id],main h3[id],.cor-rich-text h2"
     );
 
     this.sections = [...sectionsElements].map((section, i) => {
