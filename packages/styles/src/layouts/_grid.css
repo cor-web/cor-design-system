@@ -1,0 +1,25 @@
+.cor-grid {
+  --space: var(--space-xs);
+  --measure: var(--threshold, 350px);
+
+  display: grid;
+  gap: var(--space);
+}
+
+@supports (width: min(250px, 100%)) {
+  .cor-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--measure, 350px), 100%), 1fr)
+    );
+  }
+
+  /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+  .cor-grid--fill {
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--measure, 350px), 100%), 1fr));
+  }
+
+  .cor-grid--fit {
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--measure, 350px), 100%), 1fr));
+  }
+}

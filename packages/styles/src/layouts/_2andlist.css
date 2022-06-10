@@ -1,0 +1,40 @@
+.cor-l-2andlist {
+  --space: var(--space-s);
+
+  display: grid;
+  column-gap: var(--space);
+  row-gap: var(--space-2xs);
+  grid-template-columns:repeat(auto-fill, minmax(min(270px, 50%), 1fr));
+}
+
+
+
+.cor-l-2andlist > :nth-child(n + 3) {
+  border-top: dotted 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+  grid-column: 1 / -1;
+  padding: var(--space-2xs)  0;
+}
+
+.cor-l-2andlist > :nth-child(3) {
+  padding-top: 0;
+}
+
+.cor-l-2andlist > :nth-child(n + 3) img {
+  display: none;
+}
+
+.cor-l-2andlist > .bg + * {
+  border-top: none;
+}
+
+.cor-l-2andlist > :only-child {
+  gap: var(--space);
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(270px, 50%), 1fr));
+  grid-template-rows: auto 1fr;
+}
+
+.cor-l-2andlist > :only-child :first-child {
+  grid-row: 1 / 3;
+}

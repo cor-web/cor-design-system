@@ -1,0 +1,26 @@
+/* Main css overrides */
+.mainContent h4 {
+  font-size: var(--step--1) !important;
+}
+
+.mainContent h4.cor-fontsize--3 {
+  font-size: var(--step--3) !important;
+}
+
+.TitleText {
+  color: #578191;
+}
+
+/* Twitter Wall */
+.smk img {
+  display: initial;
+}
+
+/* overddide main.css :252 */
+.mainContent ol li {
+	list-style: decimal;
+}
+
+.mainContent ol.list-style-none li {
+  list-style: none;
+}

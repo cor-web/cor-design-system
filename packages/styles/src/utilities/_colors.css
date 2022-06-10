@@ -1,0 +1,43 @@
+.bg-t1-c1 {
+  background-color: var(--color-theme-01-blue-munsell);
+}
+
+.bg-t1-c2 {
+  background-color: var(--color-theme-01-polished-pine);
+}
+
+.bg-t1-c3 {
+  background-color: var(--color-theme-01-laurel-green);
+}
+
+.bg-t1-c4 {
+  background-color: var(--color-theme-01-pastel-pink);
+}
+
+.bg-t1-c5 {
+  background-color: var(--color-theme-01-mauve);
+}
+
+.color-oc--gray-4 {
+  color: var(--oc-gray-4);
+}
+
+.color-oc--gray-5 {
+  color: var(--oc-gray-5);
+}
+
+.color-oc--gray-6 {
+  color: var(--oc-gray-6);
+}
+
+.color-oc--gray-7 {
+  color: var(--oc-gray-7);
+}
+
+.color-oc--gray-8 {
+  color: var(--oc-gray-8);
+}
+
+.color-link {
+  color: var(--link-color);
+}

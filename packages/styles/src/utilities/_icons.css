@@ -1,0 +1,23 @@
+.icon {
+  display: inline-flex;
+  gap: var(--space-3xs);
+  align-items: center;
+}
+
+.icon-before:before,
+.icon-after:after {
+  content: "";
+  vertical-align: -0.125em;
+  -webkit-mask-image: var(--icon);
+  mask-image: var(--icon);
+  background: var(--bg-color, var(--color));
+  height: 16px;
+  width: 16px;
+}
+
+a.icon:before,
+a.icon:after,
+.icon:before,
+.icon:after {
+  --color: var(--link-color);
+}

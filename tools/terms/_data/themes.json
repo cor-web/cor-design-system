@@ -1,0 +1,2601 @@
+{
+  "d": {
+      "__type": "Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject",
+      "Error": "",
+      "Content": [
+          {
+              "Nm": null,
+              "Cc": 0,
+              "Id": null,
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": false,
+              "Lb": [],
+              "SCP": null,
+              "Lm": 0,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 0,
+              "Sw": false,
+              "So": false,
+              "Tp": 0,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Agriculture and Fisheries",
+              "subs": {
+                "d": {
+                    "__type": "Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject",
+                    "Error": "",
+                    "Content": [
+                        {
+                            "Nm": null,
+                            "Cc": 0,
+                            "Id": null,
+                            "Ds": null,
+                            "Ow": null,
+                            "La": null,
+                            "OLa": null,
+                            "OWL": null,
+                            "Dl": null,
+                            "Di": null,
+                            "Sh": null,
+                            "Sp": null,
+                            "It": false,
+                            "Io": false,
+                            "Ip": false,
+                            "Ik": false,
+                            "Ig": false,
+                            "Iro": false,
+                            "Iscg": false,
+                            "Ir": false,
+                            "Irp": false,
+                            "Tb": false,
+                            "Ic": false,
+                            "Is": false,
+                            "Lb": [],
+                            "SCP": null,
+                            "Lm": 0,
+                            "Gm": null,
+                            "Cb": null,
+                            "Scu": null,
+                            "Hb": false,
+                            "Ha": false,
+                            "Dw": 0,
+                            "Sw": false,
+                            "So": false,
+                            "Tp": 0,
+                            "Mt": "",
+                            "Rl": false
+                        },
+                        {
+                            "Nm": "Agriculture",
+                            "Cc": 0,
+                            "Id": "d40af8b8-a5d3-48bf-9d73-f787b5556123",
+                            "Ds": null,
+                            "Ow": null,
+                            "La": null,
+                            "OLa": null,
+                            "OWL": null,
+                            "Dl": null,
+                            "Di": null,
+                            "Sh": null,
+                            "Sp": null,
+                            "It": true,
+                            "Io": false,
+                            "Ip": false,
+                            "Ik": false,
+                            "Ig": false,
+                            "Iro": false,
+                            "Iscg": false,
+                            "Ir": false,
+                            "Irp": false,
+                            "Tb": false,
+                            "Ic": false,
+                            "Is": true,
+                            "Lb": [
+                                {
+                                    "Lc": "1026",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1029",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1030",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1031",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1032",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1033",
+                                    "Ds": "",
+                                    "Ln": "Agriculture"
+                                },
+                                {
+                                    "Lc": "1035",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1036",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1038",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1040",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1043",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1045",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1048",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1050",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1051",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1053",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1060",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1061",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1062",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1063",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2057",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2070",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2108",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "3082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                }
+                            ],
+                            "SCP": null,
+                            "Lm": 636899808993330000,
+                            "Gm": null,
+                            "Cb": null,
+                            "Scu": null,
+                            "Hb": false,
+                            "Ha": false,
+                            "Dw": 1,
+                            "Sw": false,
+                            "So": false,
+                            "Tp": 4,
+                            "Mt": "",
+                            "Rl": false
+                        },
+                        {
+                            "Nm": "Fisheries and maritime affairs",
+                            "Cc": 0,
+                            "Id": "1dddd128-f3d5-4baf-a8bf-6234fb4115e7",
+                            "Ds": null,
+                            "Ow": null,
+                            "La": null,
+                            "OLa": null,
+                            "OWL": null,
+                            "Dl": null,
+                            "Di": null,
+                            "Sh": null,
+                            "Sp": null,
+                            "It": true,
+                            "Io": false,
+                            "Ip": false,
+                            "Ik": false,
+                            "Ig": false,
+                            "Iro": false,
+                            "Iscg": false,
+                            "Ir": false,
+                            "Irp": false,
+                            "Tb": false,
+                            "Ic": false,
+                            "Is": true,
+                            "Lb": [
+                                {
+                                    "Lc": "1026",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1029",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1030",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1031",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1032",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1033",
+                                    "Ds": "",
+                                    "Ln": "Fisheries and maritime affairs"
+                                },
+                                {
+                                    "Lc": "1035",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1036",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1038",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1040",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1043",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1045",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1048",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1050",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1051",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1053",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1060",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1061",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1062",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1063",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2057",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2070",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2108",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "3082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                }
+                            ],
+                            "SCP": null,
+                            "Lm": 636899809707570000,
+                            "Gm": null,
+                            "Cb": null,
+                            "Scu": null,
+                            "Hb": false,
+                            "Ha": false,
+                            "Dw": 1,
+                            "Sw": false,
+                            "So": false,
+                            "Tp": 4,
+                            "Mt": "",
+                            "Rl": false
+                        },
+                        {
+                            "Nm": "Food production",
+                            "Cc": 0,
+                            "Id": "d8e8a5c0-5e3b-43b0-8ab0-7dc827b20241",
+                            "Ds": null,
+                            "Ow": null,
+                            "La": null,
+                            "OLa": null,
+                            "OWL": null,
+                            "Dl": null,
+                            "Di": null,
+                            "Sh": null,
+                            "Sp": null,
+                            "It": true,
+                            "Io": false,
+                            "Ip": false,
+                            "Ik": false,
+                            "Ig": false,
+                            "Iro": false,
+                            "Iscg": false,
+                            "Ir": false,
+                            "Irp": false,
+                            "Tb": false,
+                            "Ic": false,
+                            "Is": true,
+                            "Lb": [
+                                {
+                                    "Lc": "1026",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1029",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1030",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1031",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1032",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1033",
+                                    "Ds": "",
+                                    "Ln": "Food production"
+                                },
+                                {
+                                    "Lc": "1035",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1036",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1038",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1040",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1043",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1045",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1048",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1050",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1051",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1053",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1060",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1061",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1062",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1063",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2057",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2070",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2108",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "3082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                }
+                            ],
+                            "SCP": null,
+                            "Lm": 636899809856970000,
+                            "Gm": null,
+                            "Cb": null,
+                            "Scu": null,
+                            "Hb": false,
+                            "Ha": false,
+                            "Dw": 1,
+                            "Sw": false,
+                            "So": false,
+                            "Tp": 4,
+                            "Mt": "",
+                            "Rl": false
+                        },
+                        {
+                            "Nm": "Forestry",
+                            "Cc": 0,
+                            "Id": "6c7ed8ea-4df6-4145-a3ec-33d80bbe4b28",
+                            "Ds": null,
+                            "Ow": null,
+                            "La": null,
+                            "OLa": null,
+                            "OWL": null,
+                            "Dl": null,
+                            "Di": null,
+                            "Sh": null,
+                            "Sp": null,
+                            "It": true,
+                            "Io": false,
+                            "Ip": false,
+                            "Ik": false,
+                            "Ig": false,
+                            "Iro": false,
+                            "Iscg": false,
+                            "Ir": false,
+                            "Irp": false,
+                            "Tb": false,
+                            "Ic": false,
+                            "Is": true,
+                            "Lb": [
+                                {
+                                    "Lc": "1026",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1029",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1030",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1031",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1032",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1033",
+                                    "Ds": "",
+                                    "Ln": "Forestry"
+                                },
+                                {
+                                    "Lc": "1035",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1036",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1038",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1040",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1043",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1045",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1048",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1050",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1051",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1053",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1060",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1061",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1062",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1063",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2057",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2070",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2108",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "3082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                }
+                            ],
+                            "SCP": null,
+                            "Lm": 636899809987170000,
+                            "Gm": null,
+                            "Cb": null,
+                            "Scu": null,
+                            "Hb": false,
+                            "Ha": false,
+                            "Dw": 1,
+                            "Sw": false,
+                            "So": false,
+                            "Tp": 4,
+                            "Mt": "",
+                            "Rl": false
+                        },
+                        {
+                            "Nm": "Rural development",
+                            "Cc": 0,
+                            "Id": "1c058e43-11f0-4997-9b97-c15f06f2177f",
+                            "Ds": null,
+                            "Ow": null,
+                            "La": null,
+                            "OLa": null,
+                            "OWL": null,
+                            "Dl": null,
+                            "Di": null,
+                            "Sh": null,
+                            "Sp": null,
+                            "It": true,
+                            "Io": false,
+                            "Ip": false,
+                            "Ik": false,
+                            "Ig": false,
+                            "Iro": false,
+                            "Iscg": false,
+                            "Ir": false,
+                            "Irp": false,
+                            "Tb": false,
+                            "Ic": false,
+                            "Is": true,
+                            "Lb": [
+                                {
+                                    "Lc": "1026",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1029",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1030",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1031",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1032",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1033",
+                                    "Ds": "",
+                                    "Ln": "Rural development"
+                                },
+                                {
+                                    "Lc": "1035",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1036",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1038",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1040",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1043",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1045",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1048",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1050",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1051",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1053",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1060",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1061",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1062",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1063",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "1082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2057",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2070",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "2108",
+                                    "Ds": "",
+                                    "Ln": ""
+                                },
+                                {
+                                    "Lc": "3082",
+                                    "Ds": "",
+                                    "Ln": ""
+                                }
+                            ],
+                            "SCP": null,
+                            "Lm": 636899810111700000,
+                            "Gm": null,
+                            "Cb": null,
+                            "Scu": null,
+                            "Hb": false,
+                            "Ha": false,
+                            "Dw": 1,
+                            "Sw": false,
+                            "So": false,
+                            "Tp": 4,
+                            "Mt": "",
+                            "Rl": false
+                        }
+                    ],
+                    "OtherData": null,
+                    "PinData": null,
+                    "NewKeywordId": null
+                }
+            },
+              "Cc": 5,
+              "Id": "8efb38a1-0640-4dae-baca-6046cf339e4f",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Agriculture and Fisheries"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636903172654430000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Citizenship, Governance and Institutional Affairs",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":true,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Citizenship","Cc":0,"Id":"356e1136-a8b4-416e-8408-f8fc452a0cf9","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Citizenship"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899810350370000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"EU communication policy","Cc":0,"Id":"6a1bd5f4-27e6-4bcc-8fc9-05a576a10de6","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"EU communication policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899826721830000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"EU Treaties","Cc":0,"Id":"a79c5c6e-9289-4060-96bd-2a635469a9bc","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"EU Treaties"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899810627730000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Fundamental rights and rule of law","Cc":0,"Id":"0eff3109-305f-4103-ad1f-69becf49b4cc","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Fundamental rights and rule of law"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899810872800000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Future of Europe","Cc":0,"Id":"ffd6dfa1-251f-49c0-bccb-52a944c65b0e","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Future of Europe"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899810975870000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Judicial cooperation","Cc":0,"Id":"2c66eda5-e906-408e-abd0-0a5ae0a5b9ab","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Judicial cooperation"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899811122330000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Multi-level governance and devolution","Cc":0,"Id":"d3394d5f-0857-43f4-b06b-0eaed939bf90","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Multi-level governance and devolution"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899811274900000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Public administration","Cc":0,"Id":"501991d5-27d2-4660-a563-555584934240","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Public administration"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899827667230000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"REFIT and better law-making","Cc":0,"Id":"36047af3-6e9b-4dec-90d6-b9c0dfa9344a","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"REFIT and better law-making"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899827774800000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Resolutions E.C. Workprogram","Cc":0,"Id":"24f0492a-3223-4a03-9449-e9e365aae627","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Resolutions E.C. Workprogram"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899827951170000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 11,
+              "Id": "2dcea0cd-36cf-4be4-97db-f5fec16a1982",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Citizenship, Governance and Institutional Affairs"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582672130000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Cohesion Policy, Structural funds and EU Budget",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Cohesion policy reform","Cc":0,"Id":"08a2a85a-6dc7-480c-b25e-c357a9f48d2d","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Cohesion policy reform"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899811737530000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Cross-border and territorial cooperation","Cc":0,"Id":"7d3bbc3d-80d7-4358-8996-d7d48740e738","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Cross-border and territorial cooperation"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899811919130000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"EU annual budget","Cc":0,"Id":"97b64d47-6789-4422-9c92-4ada0a6514e0","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"EU annual budget"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899812073500000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"European Structural and Investment Funds","Cc":0,"Id":"4935cd27-26ec-4bb2-b4cb-dc5e8eec958a","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"European Structural and Investment Funds"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899812232670000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Financial instruments for cohesion","Cc":0,"Id":"52a53860-2b7e-4062-a4c6-d396bdb757f5","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Financial instruments for cohesion"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899812485200000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Multi-annual financial framework (MFF)","Cc":0,"Id":"7bd32649-e045-40b3-80f2-9d8925468a32","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Multi-annual financial framework (MFF)"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899812647700000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Territorial cohesion","Cc":0,"Id":"26b1e350-8fc9-494a-b998-884f3c9d745b","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Territorial cohesion"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899812803600000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Urban policy","Cc":0,"Id":"8e6010f7-7b9b-411a-9f1c-0710503a0c09","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Urban policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899813029170000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 8,
+              "Id": "711a38b9-b1a9-419a-86d7-b5ae29d848bc",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Cohesion Policy, Structural funds and EU Budget"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582708070000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Consumer Policy, Health and Tourism",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Consumer policy","Cc":0,"Id":"1fcb3b8b-ad64-4768-9736-16f9702a7916","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Consumer policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899813940830000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Public health","Cc":0,"Id":"2a5ec7b8-9dc8-4fe7-a8c2-27ebd8175f32","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Public health"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899814118500000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Tourism","Cc":0,"Id":"44e652aa-d7c7-4f3d-8160-099cc3d239de","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Tourism"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899814280400000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 3,
+              "Id": "28831211-b9b3-47f3-8ad1-f9c72dfcea33",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Consumer Policy, Health and Tourism"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582739370000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Economic and monetary policy",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":true,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Economic and Monetary Union (EMU)","Cc":0,"Id":"1f275a91-9471-470c-8c53-8e26102203f4","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Economic and Monetary Union (EMU)"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899829769770000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Entrepreneurship","Cc":0,"Id":"7a8d53c6-48fc-43de-8184-67104e110ee7","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Entrepreneurship"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899829924230000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Europe 2020 Strategy","Cc":0,"Id":"bd7349a8-40ae-4b56-8aba-442d3dcd3765","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Europe 2020 Strategy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899830084670000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"European Fund for Strategic Investment (EFSI)","Cc":0,"Id":"dd004c32-e6d1-41ef-a2f9-7b1665cc9625","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"European Fund for Strategic Investment (EFSI)"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899830362670000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"European semester / Economic Governance","Cc":0,"Id":"855b6fce-d6cd-43a2-ac07-f269e1f273eb","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"European semester / Economic Governance"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899830563400000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Financial markets","Cc":0,"Id":"0bcf00c2-091c-473e-a4af-7b8e2230c5ea","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Financial markets"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899830776470000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Industrial policy","Cc":0,"Id":"2e2e85a3-0ac4-4293-9602-0619de920f3b","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Industrial policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899830916700000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Internal market","Cc":0,"Id":"18d926ce-7231-4b1a-bcf1-f18e397e0df6","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Internal market"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899831237770000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Investment policy","Cc":0,"Id":"a533bd6e-e8ab-4913-bcfe-009772c5092b","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Investment policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637298838243870000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Long-term strategy for investment, growth and jobs (renewed Europe 2020)","Cc":0,"Id":"bd23422a-8f34-441f-9260-f855fc4018b7","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Long-term strategy for investment, growth and jobs (renewed Europe 2020)"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899831537970000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 18,
+              "Id": "1e76f5b1-5df9-4952-8a2e-27e209151971",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Economic and monetary policy"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582825400000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Environment, Climate Change and Energy",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":true,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Air Quality","Cc":0,"Id":"4d4111c2-a223-4702-a081-f7fb086a702a","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Air Quality"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899809404130000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Biodiversity","Cc":0,"Id":"d4d3b54a-e7c4-48ea-81d4-b90f9a1f70de","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Biodiversity"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899834517170000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Circular economy","Cc":0,"Id":"947a377f-eb9b-4b97-83f4-17cbd91f54a7","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Circular economy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899834694730000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Climate change policy","Cc":0,"Id":"8a75daac-49a6-4254-a909-522cf44f1457","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Climate change policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899834970670000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Covenant of Mayors","Cc":0,"Id":"7609ba1a-1784-46a7-929d-d6859c0dec5f","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Covenant of Mayors"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899835163000000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Disaster prevention","Cc":0,"Id":"fc5cd6f0-4e72-462e-badc-9ff47a21b563","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Disaster prevention"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899835290600000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Energy efficiency","Cc":0,"Id":"9901ba65-4c9e-478c-9a52-f757cd5e81ed","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Energy efficiency"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637299030867770000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Energy efficiency, market and technology","Cc":0,"Id":"7e8546c8-7ee1-43df-845b-ca838eda5d3c","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Energy efficiency, market and technology"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637298846461430000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Energy grid and networks","Cc":0,"Id":"b07ce698-6528-4cd8-843f-913e6faf1508","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Energy grid and networks"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637299030179600000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Energy industry","Cc":0,"Id":"684e1251-e6b2-4ba2-90a4-8157a07321a6","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Energy industry"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637299030292070000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 19,
+              "Id": "654fd2ee-0377-4abd-b8b5-8b316c3aadaf",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Environment, Climate Change and Energy"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582860000000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Migration and External relations",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":true,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Area of freedom, security and justice","Cc":0,"Id":"3c8a5960-9bfc-472d-9b8f-bc7771d27c17","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Area of freedom, security and justice"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899837159930000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Development cooperation","Cc":0,"Id":"22f0aa02-5f0b-4584-a073-a1011a1f0a61","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Development cooperation"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637298835873870000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Eastern Partnership and Russia","Cc":0,"Id":"84a48582-e79e-4190-8b8f-23c5eb905d30","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Eastern Partnership and Russia"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899837626900000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Enlargement","Cc":0,"Id":"540e41bc-ec78-4111-b187-4e5daf441a12","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Enlargement"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637178043990830000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Euro-Mediterranean Partnership","Cc":0,"Id":"ecf1b5b6-4d03-4a80-8455-4f3b001e4497","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Euro-Mediterranean Partnership"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899837942870000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"External border protection","Cc":0,"Id":"fe704917-8d01-4f12-89c0-fb8001ebe764","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"External border protection"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899838092030000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Migration, asylum and integration of migrants","Cc":0,"Id":"117710dc-a4b2-4c27-8802-6a6ac26c6b14","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Migration, asylum and integration of migrants"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637298834606800000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Radicalisation, Terrorism and Security","Cc":0,"Id":"a2f3c2b3-2732-4f5b-80fc-edf57378bc59","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Radicalisation, Terrorism and Security"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637298835257830000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Transatlantic relations","Cc":0,"Id":"d6f04cc0-0967-4c35-8e58-4c1746995486","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Transatlantic relations"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636965218535800000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Turkey","Cc":0,"Id":"bc340888-6605-4012-b543-463cc83fa5e1","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Turkey"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899838994570000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 12,
+              "Id": "40ca3c9a-39d1-441a-8843-9f50822d7cfa",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Migration and External relations"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582894600000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Research, Innovation and Digital Single Market",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Digital agenda","Cc":0,"Id":"38e24b88-b75e-49be-87f9-48e1cb6ed0b3","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Digital agenda"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899839641130000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Digital policy and connectivity","Cc":0,"Id":"fcb81ece-f64b-475e-a057-8f66362a8d3b","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Digital policy and connectivity"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636965367137030000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Innovation and research","Cc":0,"Id":"4f0875cc-4e15-4f40-a0fd-5e8441d2dc41","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Innovation and research"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":637299017287000000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Research and innovation","Cc":0,"Id":"dd9d6d0b-5840-4b7d-b1dc-f68e48bb86d9","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Research and innovation"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636965367014500000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Smart specialisation","Cc":0,"Id":"46c6ab54-f3d5-4e94-9676-2a2a3a65aa05","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Smart specialisation"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636965220558270000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Space policy, Galileo, Copernicus","Cc":0,"Id":"4d6447fe-4d04-488d-94e7-d48195a57256","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Space policy, Galileo, Copernicus"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899840136000000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Trans-European telecommunications networks","Cc":0,"Id":"a7c923d6-5fa3-4d73-8258-12c5020bb8ae","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Trans-European telecommunications networks"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899840462130000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 7,
+              "Id": "c4588122-cf55-4505-872e-298d9299a0ea",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Research, Innovation and Digital Single Market"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595582928000000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Social Policy, Education, Employment and Culture",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Culture","Cc":0,"Id":"f87f2906-fc1c-43df-9099-3d4cda6f5892","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Culture"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899840678100000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Demographic change","Cc":0,"Id":"07d7b275-b84f-486d-b317-25cc84555f24","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Demographic change"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899840799970000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Education","Cc":0,"Id":"b40a9bf2-9e43-4a61-8331-428474173ddb","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Education"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899841059700000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Employment","Cc":0,"Id":"25c8271c-8ec2-4a07-8593-da1d3cafe7f4","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Employment"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899841200530000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Equal opportunities","Cc":0,"Id":"9a113316-50b6-4e32-9330-65f84c150fb0","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Equal opportunities"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899841356670000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Labour mobility","Cc":0,"Id":"a89e27bc-5d11-4b8e-b722-bde5a232719f","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Labour mobility"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899841536470000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Social economy","Cc":0,"Id":"a7f8f3e1-2fe3-46d5-adb8-11eb01e30659","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Social economy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899841898570000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Social protection","Cc":0,"Id":"20b57fb0-48b4-47ef-b42c-932b8374639b","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Social protection"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899842127800000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Sport","Cc":0,"Id":"2d56e9bc-f191-4f2a-b370-9d1bd1b5ffca","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Sport"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899842285770000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Youth policy","Cc":0,"Id":"58485409-ef1e-4174-a739-5e3274a9f39b","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Youth policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899842444970000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 10,
+              "Id": "347aa03f-6ba0-4b79-a13b-ea349602fe78",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Social Policy, Education, Employment and Culture"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595583027970000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          },
+          {
+              "Nm": "Transport",
+              "subs": {"d":{"__type":"Microsoft.SharePoint.Taxonomy.WebServices.TSMTReturnObject","Error":"","Content":[{"Nm":null,"Cc":0,"Id":null,"Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":false,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":false,"Lb":[],"SCP":null,"Lm":0,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":0,"Sw":false,"So":false,"Tp":0,"Mt":"","Rl":false},{"Nm":"Air transport","Cc":0,"Id":"9f198660-28ea-43d9-add7-17bd6606c114","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Air transport"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899809181400000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Rail transport","Cc":0,"Id":"b3ee82b7-7f86-48db-97ee-dc893ca03a18","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Rail transport"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899843008030000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Road transport","Cc":0,"Id":"2304a0bc-5aee-4be7-aab6-6184e9f72b4a","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Road transport"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899843175630000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Transport infrastructure and TEN-networks","Cc":0,"Id":"9ac1e454-5583-459f-87c8-7f82c1f7a80d","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Transport infrastructure and TEN-networks"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899843321500000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Transport policy","Cc":0,"Id":"2a57be40-7935-4a62-9918-056a949b7bbc","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Transport policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899843620630000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Urban mobility","Cc":0,"Id":"7a255c01-1a64-4a51-94f9-acdd38977861","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Urban mobility"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899843701030000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Urban policy","Cc":0,"Id":"765fef91-114e-4cfb-90a5-32a9e35749de","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Urban policy"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636965365920170000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false},{"Nm":"Water transport","Cc":0,"Id":"79dbbdc8-aecd-4312-8ec4-3a1e02563f1e","Ds":null,"Ow":null,"La":null,"OLa":null,"OWL":null,"Dl":null,"Di":null,"Sh":null,"Sp":null,"It":true,"Io":false,"Ip":false,"Ik":false,"Ig":false,"Iro":false,"Iscg":false,"Ir":false,"Irp":false,"Tb":false,"Ic":false,"Is":true,"Lb":[{"Lc":"1026","Ds":"","Ln":""},{"Lc":"1029","Ds":"","Ln":""},{"Lc":"1030","Ds":"","Ln":""},{"Lc":"1031","Ds":"","Ln":""},{"Lc":"1032","Ds":"","Ln":""},{"Lc":"1033","Ds":"","Ln":"Water transport"},{"Lc":"1035","Ds":"","Ln":""},{"Lc":"1036","Ds":"","Ln":""},{"Lc":"1038","Ds":"","Ln":""},{"Lc":"1040","Ds":"","Ln":""},{"Lc":"1043","Ds":"","Ln":""},{"Lc":"1045","Ds":"","Ln":""},{"Lc":"1048","Ds":"","Ln":""},{"Lc":"1050","Ds":"","Ln":""},{"Lc":"1051","Ds":"","Ln":""},{"Lc":"1053","Ds":"","Ln":""},{"Lc":"1060","Ds":"","Ln":""},{"Lc":"1061","Ds":"","Ln":""},{"Lc":"1062","Ds":"","Ln":""},{"Lc":"1063","Ds":"","Ln":""},{"Lc":"1082","Ds":"","Ln":""},{"Lc":"2057","Ds":"","Ln":""},{"Lc":"2070","Ds":"","Ln":""},{"Lc":"2108","Ds":"","Ln":""},{"Lc":"3082","Ds":"","Ln":""}],"SCP":null,"Lm":636899843853130000,"Gm":null,"Cb":null,"Scu":null,"Hb":false,"Ha":false,"Dw":1,"Sw":false,"So":false,"Tp":4,"Mt":"","Rl":false}],"OtherData":null,"PinData":null,"NewKeywordId":null}},
+              "Cc": 8,
+              "Id": "afa0e717-1ff9-48f0-b16f-e9c916a45e0e",
+              "Ds": null,
+              "Ow": null,
+              "La": null,
+              "OLa": null,
+              "OWL": null,
+              "Dl": null,
+              "Di": null,
+              "Sh": null,
+              "Sp": null,
+              "It": false,
+              "Io": false,
+              "Ip": false,
+              "Ik": false,
+              "Ig": false,
+              "Iro": false,
+              "Iscg": false,
+              "Ir": false,
+              "Irp": false,
+              "Tb": false,
+              "Ic": false,
+              "Is": true,
+              "Lb": [
+                  {
+                      "Lc": "1026",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1029",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1030",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1031",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1032",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1033",
+                      "Ds": "",
+                      "Ln": "Transport"
+                  },
+                  {
+                      "Lc": "1035",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1036",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1038",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1040",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1043",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1045",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1048",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1050",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1051",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1053",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1060",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1061",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1062",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1063",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "1082",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2057",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2070",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "2108",
+                      "Ds": "",
+                      "Ln": ""
+                  },
+                  {
+                      "Lc": "3082",
+                      "Ds": "",
+                      "Ln": ""
+                  }
+              ],
+              "SCP": null,
+              "Lm": 636595583085270000,
+              "Gm": null,
+              "Cb": null,
+              "Scu": null,
+              "Hb": false,
+              "Ha": false,
+              "Dw": 1,
+              "Sw": false,
+              "So": false,
+              "Tp": 4,
+              "Mt": "",
+              "Rl": false
+          }
+      ],
+      "OtherData": null,
+      "PinData": null,
+      "NewKeywordId": null
+  }
+}

@@ -1,0 +1,1 @@
+import { CorLogo } from "@cor-web/components";

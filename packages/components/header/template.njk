@@ -1,0 +1,48 @@
+<cor-header>
+  <cor-header-toolbar>
+  </cor-header-toolbar>
+  <cor-header-navbar>
+
+    <svg xmlns="http://www.w3.org/2000/svg"  hidden>
+      <symbol id="arrow" viewbox="0 0 16 16" >
+        <polyline points="4 6, 8 10, 12 6" stroke="#fff" stroke-width="2" fill="transparent" stroke-linecap="round" />
+      </symbol>
+    </svg>
+
+    <nav>
+      <ul clicky-menu class="no-js cor-header-navbar__level1">
+        {% for navitem in params.nav %}
+        <li>
+          <a href="{{ navitem.link }}">
+            {{ navitem.text }}
+            {% if navitem.subnav %}
+            <svg aria-hidden="true" width="16" height="16">
+              <use xlink:href="#arrow" />
+            </svg>
+            {% endif %}
+          </a>
+          {% if navitem.subnav %}
+          <ul class="cor-header-navbar__subnav cor-header-navbar__level2">
+            {% for subnavitem in navitem.subnav %}
+            <li>
+              <a href="{{ subnavitem.link }}" id="{{ subnavitem.text }}_label">{{ subnavitem.text }}</a>
+             
+                  {% if subnavitem.subnav %}
+                  <ul class="cor-header-navbar__subpanel cor-header-navbar__level3" aria-labelledby="{{ subnavitem.text }}_label">
+                    {% for subsubnavitem in subnavitem.subnav %}
+                    <li>
+                      <a href="{{ subsubnavitem.link }}">{{ subsubnavitem.text }}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </cor-header-navbar>
+</cor-header>

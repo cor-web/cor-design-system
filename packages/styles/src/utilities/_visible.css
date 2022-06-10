@@ -1,0 +1,16 @@
+.visible-on-focus {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.visible-on-focus:active,
+.visible-on-focus:focus {
+  position: relative;
+  width: auto;
+  height: auto;
+  left: auto;
+}

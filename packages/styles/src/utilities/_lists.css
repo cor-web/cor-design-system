@@ -1,0 +1,49 @@
+.list-none,
+.list-none > li {
+  list-style-type: none !important;
+}
+
+.list-disc,
+.list-disc > li {
+  list-style-type: disc !important;
+}
+
+.list-decimal,
+.list-decimal > li {
+  list-style-type: decimal !important;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+/*to move*/
+
+.cor-containerWithDivider > * + * {
+  border-top: solid 3px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.cor-containerWithDivider--1 > * + * {
+  border-top: solid 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.cor-containerWithDivider--2 > * + * {
+  border-top: solid 2px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.cor-containerWithDivider--dotted > * + * {
+  border-top: dotted 1px rgb(var(--page-color, var(--oc-gray-8-rgb)));
+}
+
+.mainContent ol.cor-containerWithDivider--dotted > li,
+.mainContent ul.cor-containerWithDivider--dotted > li {
+  margin: 0;
+}
+
+.cor-containerWithDivider--space-l > * + * {
+  padding: var(--space-l) 0;
+}
+
+.cor-containerWithDivider--space-s > * + * {
+  padding: var(--space-s) 0;
+}

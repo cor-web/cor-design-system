@@ -1,0 +1,100 @@
+{% from "./macro.njk" import corHeader %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <link rel="stylesheet" href="src/cor-header.css" />
+  </head>
+  <body>
+    
+    <nav>
+      <a href="#main">Skip to content</a>
+    </nav>
+    <header>
+      {{ corHeader({
+        "nav": [
+          {
+            "text": "About",
+            "link": "test.be"
+          },
+          {
+            "text": "Our work",
+            "link": "test.be",
+            "subnav": [
+              {
+                "text": "International cooperation",
+                "link": "test.be"
+              },
+              {
+                "text": "EU Annual Regional and Local Barometer",
+                "link": "test.be"
+              },
+              {
+                "text": "Plenary sessions",
+                "link": "test.be"
+              },
+              {
+                "text": "Commissions",
+                "link": "test.be",
+                "subnav": [
+                  {
+                    "text": "International cooperation",
+                    "link": "test.be"
+                  },
+                  {
+                    "text": "EU Annual Regional and Local Barometer",
+                    "link": "test.be"
+                  },
+                  {
+                    "text": "Plenary sessions",
+                    "link": "test.be"
+                  },
+                  {
+                    "text": "Commissions",
+                    "link": "test.be"
+                  }
+                ]
+              },
+              {
+                "text": "Regional Hubs",
+                "link": "test.be"
+              },
+              {
+                "text": "Plenary sessions",
+                "link": "test.be"
+              }
+            ]
+          },
+          {
+            "text": "Members",
+            "link": "test.be"
+          },
+          {
+            "text": "News",
+            "link": "test.be"
+          },
+          {
+            "text": "Events",
+            "link": "test.be"
+          },
+          {
+            "text": "Engage",
+            "link": "test.be"
+          },
+          {
+            "text": "Europe in my region",
+            "link": "test.be"
+          }
+        ]
+      }) }}
+    </header>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

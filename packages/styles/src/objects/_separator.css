@@ -1,0 +1,5 @@
+div[role="separator"] {
+  background-color: white;
+  border-top: solid 1px var(--c-g-8);
+  margin: var(--space-2xs) 0;
+}

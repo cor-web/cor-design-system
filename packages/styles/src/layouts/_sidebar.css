@@ -1,0 +1,18 @@
+.cor-with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, var(--space-xs));
+}
+
+.cor-with-sidebar--right > :last-child,
+.cor-with-sidebar--left > :first-child {
+  flex-basis: var(--sideWidth);
+  flex-grow: 1;
+}
+
+.cor-with-sidebar--right > :first-child,
+.cor-with-sidebar--left > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 50%;
+}

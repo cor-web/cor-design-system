@@ -1,0 +1,95 @@
+.padding {
+  --padding: var(--space-xs);
+
+  padding: var(--padding) !important;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.padding-top-0 {
+  padding-top: 0 !important;
+}
+
+.padding-top-2xs {
+  padding-top: var(--space-2xs) !important;
+}
+
+.padding-top-m {
+  padding-top: var(--space-m);
+}
+
+.padding-x-s {
+  padding-left: var(--space-s) !important;
+  padding-right: var(--space-s) !important;
+}
+
+.padding-x {
+  padding-left: var(--space-xs) !important;
+  padding-right: var(--space-xs) !important;
+}
+
+.padding-x-2xs {
+  padding-left: var(--space-2xs) !important;
+  padding-right: var(--space-2xs) !important;
+}
+
+.padding-x-xl {
+  padding-left: var(--space-xl) !important;
+  padding-right: var(--space-xl) !important;
+}
+
+.padding-2xs {
+  padding: var(--space-2xs);
+}
+
+.padding-m {
+  padding: var(--space-m);
+}
+
+.padding-xl {
+  padding: var(--space-xl);
+}
+
+.padding-y {
+  padding-top: var(--space-xs) !important;
+  padding-bottom: var(--space-xs) !important;
+}
+
+.padding-y-2xs {
+  padding-top: var(--space-2xs) !important;
+  padding-bottom: var(--space-2xs) !important;
+}
+
+.padding-y-xl {
+  padding: var(--space-xl) 0;
+}
+
+.padding-y--3xs {
+  padding: var(--space-3xs) 0 !important;
+}
+
+.padding-left {
+  padding-left: var(--space-xs) !important;
+}
+
+.padding-left-l {
+  padding-left: var(--space-l) !important;
+}
+
+.padding-left-m {
+  padding-left: var(--space-m) !important;
+}
+
+.padding-left-xl {
+  padding-left: var(--space-xl) !important;
+}
+
+.padding-right-xl {
+  padding-right: var(--space-xl) !important;
+}
+
+.padding-bottom {
+  padding-bottom: var(--space-xs) !important;
+}

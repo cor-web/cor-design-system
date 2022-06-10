@@ -1,0 +1,79 @@
+.mainContent .txt-xl {
+  font-size: var(--step--2);
+  line-height: 1.5;
+}
+
+.mainContent .txt-xl-container > * {
+  font-size: var(--step--2);
+  line-height: 1.5;
+}
+
+.mainContent .txt-2xl {
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+.mainContent .txt-3xl {
+  font-size: var(--step-0);
+  line-height: 1.5;
+}
+
+.mainContent .txt-step-1 {
+  font-size: var(--step-1);
+}
+
+.mainContent .txt-step-2 {
+  font-size: var(--step-2);
+}
+
+.mainContent .txt-step-3 {
+  font-size: var(--step-3);
+}
+
+.mainContent .txt-step-4 {
+  font-size: var(--step-4);
+}
+
+.mainContent .txt-step--1 {
+  font-size: var(--step--1);
+}
+
+.mainContent .txt-step--2 {
+  font-size: var(--step--2);
+}
+
+.mainContent .txt-step--3 {
+  font-size: var(--step--3);
+}
+
+.mainContent .txt-step--4 {
+  font-size: var(--step--4);
+}
+
+.text-dark {
+  color: var(--oc-gray-10);
+}
+
+.text-darkish {
+  color: var(--oc-gray-8);
+}
+
+.text-lightish {
+  color: var(--oc-gray-2);
+}
+
+.text-light {
+  color: var(--oc-gray-4);
+}
+
+.text-mid {
+  color: var(--oc-gray-5);
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.italic {
+  font-style: italic;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@cor-web/storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook"
+  },
+  "dependencies": {
+    "@cor-web/components": "workspace:*",
+    "@cor-web/styles": "workspace:*",
+    "lit": "^2.2.5"
+  },
+  "keywords": [],
+  "author": "Jessy Govart",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack4": "^6.5.7",
+    "@storybook/manager-webpack4": "^6.5.7",
+    "@storybook/web-components": "^6.5.7",
+    "babel-loader": "^8.2.5",
+    "lit-html": "^2.2.5"
+  }
+}

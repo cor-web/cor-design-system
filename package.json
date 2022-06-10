@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/cor-web/cor-design-system/issues"
   },
-  "homepage": "https://github.com/cor-web/cor-design-system#readme"
+  "homepage": "https://github.com/cor-web/cor-design-system#readme",
+  "dependencies": {
+    "@changesets/cli": "^2.22.0"
+  },
+  "devDependencies": {
+    "turbo": "^1.2.16"
+  }
 }

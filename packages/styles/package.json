@@ -1,0 +1,21 @@
+{
+  "name": "@cor-web/styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss src/all.css -o dist/all.css && postcss src/base.css -o dist/base.css --watch",
+    "build": "postcss src/all.css -o dist/all.css && postcss src/base.css -o dist/base.css"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.14",
+    "postcss-preset-env": "^7.7.0",
+    "postcss-import": "^14.1.0",
+    "postcss-easings": "^3.0.1",
+    "postcss-import-url": "^7.0.0",
+    "cssnano": "^5.1.10"
+  },
+  "keywords": [],
+  "author": "Jessy Govart",
+  "license": "ISC"
+}

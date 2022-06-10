@@ -1,0 +1,132 @@
+/* elements */
+.mainContent h1,
+.mainContent h2,
+.mainContent h3,
+.mainContent h4,
+.mainContent h5,
+.mainContent h6 {
+  line-height: var(--line-height-small);
+  font-family: var(--font-plain);
+  font-weight: normal;
+  margin: 0 0 var(--space-xs);
+}
+
+.mainContent h1 {
+  color: var(--text-color);
+  font-size: var(--step-3);
+}
+
+.mainContent h2,
+.ms-rtestate-field h2 {
+  color: var(--text-color);
+  font-size: var(--step-2);
+}
+
+.mainContent h3 {
+  color: var(--text-color);
+  font-size: var(--step-1);
+}
+
+.mainContent h4 {
+  color: var(--text-color);
+  font-size: var(--step--1);
+}
+
+.mainContent h5 {
+  color: var(--text-color);
+  font-size: var(--step--2);
+}
+
+.mainContent h6 {
+  color: var(--text-color);
+  font-size: var(--step--3);
+}
+
+/* elements */
+.mainContent h1 {
+  font-size: var(--step-3);
+}
+
+.mainContent h2 {
+  font-size: var(--step-2);
+}
+
+.mainContent h3 {
+  font-size: var(--step-1);
+}
+
+.mainContent h4 {
+  font-size: var(--step--1);
+}
+
+.mainContent h5 {
+  font-size: var(--step--2);
+}
+
+.mainContent h6 {
+  font-size: var(--step--3);
+}
+
+/* Utilities */
+
+.font-size\:base {
+  font-size: var(--font-size) !important;
+}
+
+.font-size\:l {
+  font-size: var(--font-size-l) !important;
+}
+
+.font-size\:xl {
+  font-size: var(--font-size-xl) !important;
+}
+
+/* utilities */
+.cor-h1 {
+  color: var(--text-color);
+  font-size: var(--step-3) !important;
+}
+
+.cor-h2 {
+  font-size: var(--step-2) !important;
+}
+
+.cor-h3 {
+  color: var(--text-color);
+  font-size: var(--step-1) !important;
+  font-weight: bold;
+  text-transform: initial;
+}
+
+.cor-h4 {
+  font-size: var(--step-0) !important;
+}
+
+.cor-h5 {
+  font-size: var(--step--1) !important;
+  font-weight: normal !important;
+}
+
+.cor-h6 {
+  font-size: var(--step--2) !important;
+}
+
+.cor-fontsize--3 {
+  font-size: var(--step--3) !important;
+}
+
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.font-size\:biggish {
+  font-size: var(--font-size-biggish) !important;
+}
+
+.font-size\:big {
+  font-size: var(--font-size-big) !important;
+}
+
+.text-color {
+  color: var(--text-color) !important;
+}

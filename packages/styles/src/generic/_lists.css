@@ -1,0 +1,18 @@
+.mainContent ol,
+.mainContent ul {
+  margin: var(--space-2xs) 0;
+  padding: 0 var(--space-s) 0;
+}
+
+.mainContent ol li,
+.mainContent ul li {
+  margin-bottom: var(--space-4xs);
+  padding-left: var(--space-2xs);
+}
+
+.mainContent ol[class],
+.mainContent ul[class],
+.mainContent ol[class] li,
+.mainContent ul[class] li {
+  padding: 0;
+}

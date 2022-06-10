@@ -1,0 +1,12 @@
+{
+  "name": "terms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Jessy Govart",
+  "license": "ISC"
+}

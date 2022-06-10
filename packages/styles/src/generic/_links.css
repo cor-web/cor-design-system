@@ -1,0 +1,65 @@
+.cor-link {
+  display: inline-block;
+}
+
+.cor-link > svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.mainContent a {
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1em;
+}
+
+.mainContent a,
+.mainContent a:link,
+.mainContent a:visited {
+  color: var(--link-color);
+}
+
+.mainContent a:hover,
+.mainContent a:focus {
+  color: var(--link-color);
+}
+
+.mainContent a:hover {
+  text-decoration: underline;
+}
+
+a.cor-link:active,
+a.cor-link:focus,
+a.cor-link:hover {
+  color: var(--link-color-dark);
+  text-decoration: underline;
+  transform: rotate(-3deg);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #dd7eb4;
+}
+
+/*
+a[href$=".pdf"]:after {
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: var(--icon-document);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.cor-icon--before a[href$=".pdf"]:before {
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: var(--icon-document);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.cor-icon--before a[href$=".pdf"]:after {
+  content: none;
+}
+*/

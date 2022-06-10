@@ -84,3 +84,8 @@ web_modules/
 
 # Local Netlify folder
 .netlify
+
+.turbo
+build/**
+dist/**
+.next/**

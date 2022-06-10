@@ -1,0 +1,58 @@
+[
+  {
+    "key": "About",
+    "url": "/about/",
+    "title": "About",
+    "children": [
+      {
+        "key": "President",
+        "parentKey": "About",
+        "url": "/president/",
+        "title": "President"
+      },
+      {
+        "key": "First Vice-President",
+        "parentKey": "About",
+        "url": "/first-vice-president/",
+        "title": "First Vice-President"
+      },
+      {
+        "key": "Secretary-General",
+        "parentKey": "About",
+        "url": "/secretary-general/",
+        "title": "Secretary-General"
+      },
+      {
+        "key": "Protocol service",
+        "parentKey": "About",
+        "url": "/protocol-service/",
+        "title": "Protocol service"
+      },
+      {
+        "key": "Tenders",
+        "parentKey": "About",
+        "url": "/tenders/",
+        "title": "Tenders"
+      },
+      {
+        "key": "Work with us",
+        "parentKey": "About",
+        "url": "/work-with-us/",
+        "title": "Work with us",
+        "children": [
+          {
+            "key": "Jobs",
+            "parentKey": "Work with us",
+            "url": "/jobs/",
+            "title": "Jobs"
+          },{
+            "key": "Traineeships",
+            "parentKey": "Work with us",
+            "url": "/traineeships/",
+            "title": "Traineeships"
+          }
+        ]
+      }
+    ]
+  }
+]
