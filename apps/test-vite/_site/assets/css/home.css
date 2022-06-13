@@ -1,4 +1,59 @@
-body {
-  --color: purple;
-  background-color: var(--color);
+.cor-languages-grid {
+  --row-count: 24;
+
+  display: grid;
+  gap: var(--space-2xs);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(var(--row-count), 6fr);
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+@media screen and (min-width: 600px) {
+  .cor-languages-grid {
+    --row-count: 12;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .cor-languages-grid {
+    --row-count: 8;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cor-languages-grid {
+    --row-count: 6;
+  }
+}
+
+.cor-languages-grid li {
+  border: solid 1px var(--c-eu);
+}
+
+.cor-languages-grid li a {
+  display: block;
+  font-size: var(--step--3);
+  font-weight: bold;
+  padding:  var(--space-3xs) var(--space-xs);
+  text-decoration: none;
+}
+
+
+.cor-languages-grid li a,
+.cor-languages-grid li a:visited {
+  color: var(--c-eu);
+}
+
+.cor-languages-grid li a:hover {
+  background-color: var(--c-eu);
+  color: white;
+}
+
+
+.cor-languages-grid li span {
+  font-size: var(--step--4);
+  font-weight: normal;
+  margin-right: var(--space-2xs);
 }

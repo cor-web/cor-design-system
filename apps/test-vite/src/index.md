@@ -2,10 +2,6 @@
 layout: home.html
 ---
 
-debut
+{%- from "components/languagesgrid/macro.njk" import languagesgrid %}
 
-fin
-
-<p>Boom 2</p>
-
-{% user %}
+{{ languagesgrid(languages) }}

@@ -1,3 +1,14 @@
 body {
   background-color: var(--color);
 }
+
+.cor-main-grid2 {
+  --grid-spacing: var(--grid-spacing);
+  --columns: 6;
+  --column-width: 130px;
+
+  display: grid;
+  grid: auto/repeat(var(--columns), minmax(0, var(--column-width)));
+  align-items: start;
+  justify-content: center;
+}
