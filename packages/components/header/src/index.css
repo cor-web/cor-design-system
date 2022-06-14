@@ -36,16 +36,6 @@ cor-header nav a {
   text-decoration: none;
 }
 
-[clicky-menu] ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  visibility: hidden;
-}
-
-[clicky-menu] > li {
-  
-}
 
 
 [clicky-menu].no-js ul {
@@ -53,7 +43,8 @@ cor-header nav a {
 }
 
 
-[clicky-menu].no-js > ul {
+[clicky-menu].no-js .cor-header-navbar__level2 {
+  background-color: var(--background-color);
   position: absolute;
   top: 100%;
   left: 0;
@@ -61,7 +52,7 @@ cor-header nav a {
 }
 
 
-[clicky-menu].no-js ul ul {
+[clicky-menu].no-js ul .cor-header-navbar__subpanel {
   background-color: rgba(var(--c-eu-rgb), 0.95);
   border-left: solid 1px rgba(255, 255, 255, 0.5);
   bottom: 0;
@@ -78,7 +69,7 @@ cor-header nav a {
 }
 
 
-[clicky-menu].no-js li:hover > ul {
+[clicky-menu].no-js li:hover > * {
   visibility: visible;
 }
 
@@ -92,7 +83,6 @@ svg[hidden] {
 }
 
 [clicky-menu] ul {
-  background-color: var(--background-color);
   list-style: none;
 }
 
@@ -110,4 +100,19 @@ svg[hidden] {
   right: 0;
   width: calc(100% + var(--space-s));
   height: 1px;
+}
+
+.cor-header-navbar__subpanel__heading {
+  color: white;
+  display: block;
+  font-size: var(--step--3);
+  margin: var(--space-xs) var(--space-s) 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cor-header-navbar__subpanel__description {
+  color: white;
+  font-size: var(--step--4);
+  margin: var(--space-xs) var(--space-s) 0;
 }

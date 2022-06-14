@@ -27,15 +27,22 @@
             <li>
               <a href="{{ subnavitem.link }}" id="{{ subnavitem.text }}_label">{{ subnavitem.text }}</a>
              
-                  {% if subnavitem.subnav %}
-                  <ul class="cor-header-navbar__subpanel cor-header-navbar__level3" aria-labelledby="{{ subnavitem.text }}_label">
-                    {% for subsubnavitem in subnavitem.subnav %}
-                    <li>
-                      <a href="{{ subsubnavitem.link }}">{{ subsubnavitem.text }}</a>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                  {% endif %}
+              {% if subnavitem.subnav %}
+              <div class="cor-header-navbar__subpanel">
+                <span class="cor-header-navbar__subpanel__heading">{{ subnavitem.text }}</span>
+                <div class="cor-header-navbar__subpanel__description">
+                  {{ subnavitem.description }}
+                </div>
+                <ul class="cor-header-navbar__level3" aria-labelledby="{{ subnavitem.text }}_label">
+                  {% for subsubnavitem in subnavitem.subnav %}
+                  <li>
+                    <a href="{{ subsubnavitem.link }}">{{ subsubnavitem.text }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% endif %}
+
             </li>
             {% endfor %}
           </ul>
