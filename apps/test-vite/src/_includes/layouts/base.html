@@ -24,11 +24,9 @@
 </head>
 <body>
 
-  <header>
-    {% block header %}{% endblock %}
-  </header>
+  {% include "partials/site-head.html" %}
   
-  <main class="cor-main-grid {{ page.class }}">
+  <main tabindex="-1" class="cor-main-grid {{ page.class }}" id="main-content">
     {% block content %}{% endblock %}
   </main>
 

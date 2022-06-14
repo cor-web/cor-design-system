@@ -1,0 +1,6 @@
+.cor-skip-link {
+  position: absolute;
+  top: var(--space-2xs);
+  left: var(--space-2xs);
+  z-index: 99;
+}

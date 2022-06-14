@@ -1,7 +1,6 @@
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 // const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-const CorHeader = require('@cor-web/components/header/template.js');
 
 module.exports = function (eleventyConfig) {
 
@@ -13,9 +12,7 @@ module.exports = function (eleventyConfig) {
      *  File PassThroughs: Tell 11ty to copy assets to the final site
      * ***************************************************************************************/
 
-  eleventyConfig.addShortcode("header", function(data) {
-    return CorHeader({firstName:'si', lastName:'sjiu'})
-  });
+
 
   eleventyConfig.addWatchTarget("./src/assets/");
 

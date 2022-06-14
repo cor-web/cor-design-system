@@ -1,39 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  
-  <script type="module" src="/assets/js/index.js"></script>
-  
-
-  
-    
-      <link rel="stylesheet" href="/assets/css/home.css">
-    
-  
-  
-
-  
-  
-</head>
-<body>
-
-  
-
-
-
-<a class="cor-skip-link visually-hidden" href="#main-content">Skip to content</a>
-<cor-header>
-
-  <a class="cor-logo" href="">
-  <svg viewBox="0 0 339 184" fill="none"
-  xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" focusable="false">
+<svg aria-hidden="true" focusable="false" width="331" height="175" viewBox="0 0 339 184"
+  xmlns="http://www.w3.org/2000/svg">
   <path style="filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, .25));" d="M331 0.20808L133.608 161.058C111.872 178.77 80.6781 178.696 59.0265 160.882L0 112.317V0H331V0.20808Z" fill="white"/>
   <path d="M123.654 33.6305H68.2799V71.473H123.654V33.6305Z" fill="white"/>
   <path d="M122.272 35.0125H69.7284V70.0251H122.272V35.0125Z" fill="#034EA2"/>
@@ -83,33 +49,3 @@
   <path d="M122.798 113.857C122.798 113.067 122.798 112.475 122.732 111.882H124.379L124.444 112.672C124.708 112.211 125.3 111.685 126.288 111.685C127.539 111.685 128.395 112.54 128.395 114.317V118.134H126.486V114.515C126.486 113.791 126.222 113.264 125.63 113.264C125.169 113.264 124.839 113.593 124.774 113.922C124.708 114.054 124.708 114.251 124.708 114.449V118.134H122.864V113.857H122.798Z" fill="black"/>
   <path d="M129.778 116.489C130.107 116.687 130.765 116.884 131.292 116.884C131.819 116.884 132.082 116.687 132.082 116.358C132.082 116.028 131.885 115.831 131.226 115.568C129.975 115.107 129.58 114.383 129.58 113.725C129.58 112.54 130.502 111.685 132.016 111.685C132.675 111.685 133.267 111.882 133.662 112.014L133.333 113.33C133.07 113.198 132.609 113.001 132.082 113.001C131.621 113.001 131.358 113.198 131.358 113.528C131.358 113.791 131.555 113.988 132.28 114.251C133.399 114.712 133.86 115.304 133.86 116.16C133.86 117.345 132.938 118.2 131.292 118.2C130.568 118.2 129.844 118.003 129.448 117.805L129.778 116.489Z" fill="black"/>
 </svg>
-
-
-</a>
-  
-  <cor-header-toolbar>
-  </cor-header-toolbar>
-  <cor-header-navbar>
-
-    <nav>
-      <ul clicky-menu class="no-js cor-header-navbar__level1">
-        
-      </ul>
-    </nav>
-  </cor-header-navbar>
-</cor-header>
-
-  
-  <main tabindex="-1" class="cor-main-grid " id="main-content">
-    
-  <p>About content</p>
-
-
-  </main>
-
-  <footer>
-    
-  </footer>
-
-</body>
-</html>

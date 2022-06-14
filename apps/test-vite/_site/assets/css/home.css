@@ -1,6 +1,7 @@
 .cor-languages-grid {
   --row-count: 24;
 
+  grid-column: 1 / -1;
   display: grid;
   gap: var(--space-2xs);
   grid-auto-flow: column;

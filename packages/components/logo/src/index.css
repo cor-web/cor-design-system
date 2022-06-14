@@ -1,7 +1,6 @@
 cor-logo {
   --image-diamond: url("/assets/images/diamond.png");
   
-  border: solid 1px var(--oc-green-5, green);
   display: block;
   height: 183px;
   width: 339px;

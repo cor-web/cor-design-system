@@ -1,13 +1,13 @@
+{% from "node_modules/@cor-web/components/logo/macro.njk" import corLogo %}
+
+<a class="cor-skip-link visually-hidden" href="#main-content">Skip to content</a>
 <cor-header>
+
+  <a class="cor-logo" href="{{ site.url }}">{{ corLogo() }}</a>
+  
   <cor-header-toolbar>
   </cor-header-toolbar>
   <cor-header-navbar>
-
-    <svg xmlns="http://www.w3.org/2000/svg"  hidden>
-      <symbol id="arrow" viewbox="0 0 16 16" >
-        <polyline points="4 6, 8 10, 12 6" stroke="#fff" stroke-width="2" fill="transparent" stroke-linecap="round" />
-      </symbol>
-    </svg>
 
     <nav>
       <ul clicky-menu class="no-js cor-header-navbar__level1">
