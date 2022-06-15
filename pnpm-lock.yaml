@@ -166,6 +166,7 @@ importers:
     specifiers:
       cssnano: ^5.1.10
       postcss: ^8.4.14
+      postcss-cli: ^9.1.0
       postcss-easings: ^3.0.1
       postcss-import: ^14.1.0
       postcss-import-url: ^7.0.0
@@ -173,6 +174,7 @@ importers:
     devDependencies:
       cssnano: 5.1.10_postcss@8.4.14
       postcss: 8.4.14
+      postcss-cli: 9.1.0_postcss@8.4.14
       postcss-easings: 3.0.1_postcss@8.4.14
       postcss-import: 14.1.0_postcss@8.4.14
       postcss-import-url: 7.0.0_postcss@8.4.14
@@ -7183,6 +7185,11 @@ packages:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
 
+  /array-union/3.0.1:
+    resolution: {integrity: sha512-1OvF9IbWwaeiM9VhzYXVQacMibxpXOMYVNIvMtKRyX9SImBXpKcFr8XvFDeEslCyuH/t6KRt7HEO94AlP8Iatw==}
+    engines: {node: '>=12'}
+    dev: true
+
   /array-uniq/1.0.3:
     resolution: {integrity: sha512-MNha4BWQ6JbwhFhj03YK552f7cb3AzoE8SzeljgChvL1dl3IcvggXVz1DilzySZkCja+CXuZbdW7yATchWn8/Q==}
     engines: {node: '>=0.10.0'}
@@ -12018,6 +12025,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /get-stdin/9.0.0:
+    resolution: {integrity: sha512-dVKBjfWisLAicarI2Sf+JuBE/DghV4UzNAVe9yhEJuzeREd3JhOTE9cUaJTeSa77fsbQUK3pcOpJfM59+VKZaA==}
+    engines: {node: '>=12'}
+    dev: true
+
   /get-stream/2.3.1:
     resolution: {integrity: sha512-AUGhbbemXxrZJRD5cDvKtQxLuYaIbNtDTK8YqupCI393Q2KSTreEsLUN3ZxAWFGiKTzL6nKuzfcIvieflUX9qA==}
     engines: {node: '>=0.10.0'}
@@ -12234,6 +12246,18 @@ packages:
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 3.0.0
+
+  /globby/12.2.0:
+    resolution: {integrity: sha512-wiSuFQLZ+urS9x2gGPl1H5drc5twabmm4m2gTR27XDFyjUHJUNsS8o/2aKyIF6IoBaR630atdher0XJ5g6OMmA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      array-union: 3.0.1
+      dir-glob: 3.0.1
+      fast-glob: 3.2.11
+      ignore: 5.2.0
+      merge2: 1.4.1
+      slash: 4.0.0
+    dev: true
 
   /globby/9.2.0:
     resolution: {integrity: sha512-ollPHROa5mcxDEkwg6bPt3QbEf4pDQSNtd6JPL1YvOvAo/7/0VAm9TccUeoTmarjPw4pfUthSCqcyfNB1I3ZSg==}
@@ -16310,6 +16334,30 @@ packages:
       - ts-node
     dev: true
 
+  /postcss-cli/9.1.0_postcss@8.4.14:
+    resolution: {integrity: sha512-zvDN2ADbWfza42sAnj+O2uUWyL0eRL1V+6giM2vi4SqTR3gTYy8XzcpfwccayF2szcUif0HMmXiEaDv9iEhcpw==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      chokidar: 3.5.3
+      dependency-graph: 0.11.0
+      fs-extra: 10.1.0
+      get-stdin: 9.0.0
+      globby: 12.2.0
+      picocolors: 1.0.0
+      postcss: 8.4.14
+      postcss-load-config: 3.1.4_postcss@8.4.14
+      postcss-reporter: 7.0.5_postcss@8.4.14
+      pretty-hrtime: 1.0.3
+      read-cache: 1.0.0
+      slash: 4.0.0
+      yargs: 17.5.1
+    transitivePeerDependencies:
+      - ts-node
+    dev: true
+
   /postcss-color-functional-notation/4.2.3_postcss@8.4.14:
     resolution: {integrity: sha512-5fbr6FzFzjwHXKsVnkmEYrJYG8VNNzvD1tAXaPPWR97S6rhKI5uh2yOfV5TAzhDkZoq4h+chxEplFDc8GeyFtw==}
     engines: {node: ^12 || ^14 || >=16}
@@ -17734,7 +17782,7 @@ packages:
     dev: true
 
   /read-cache/1.0.0:
-    resolution: {integrity: sha1-5mTvMRYRZsl1HNvo28+GtftY93Q=}
+    resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
     dependencies:
       pify: 2.3.0
 
@@ -18781,6 +18829,11 @@ packages:
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
+
+  /slash/4.0.0:
+    resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
+    engines: {node: '>=12'}
+    dev: true
 
   /slice-ansi/2.1.0:
     resolution: {integrity: sha512-Qu+VC3EwYLldKa1fCxuuvULvSJOKEgk9pi8dZeCVK7TqBfUNTH4sFkk4joj8afVSfAYgJoSOetjx9QWOJ5mYoQ==}
@@ -21055,7 +21108,6 @@ packages:
   /yargs-parser/21.0.1:
     resolution: {integrity: sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==}
     engines: {node: '>=12'}
-    dev: false
 
   /yargs/15.4.1:
     resolution: {integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==}
@@ -21110,7 +21162,6 @@ packages:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 21.0.1
-    dev: false
 
   /yarn/1.22.18:
     resolution: {integrity: sha512-oFffv6Jp2+BTUBItzx1Z0dpikTX+raRdqupfqzeMKnoh7WD6RuPAxcqDkMUy9vafJkrB0YaV708znpuMhEBKGQ==}

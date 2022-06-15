@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
     "postcss-preset-env": "^7.7.0",
     "postcss-import": "^14.1.0",
     "postcss-easings": "^3.0.1",
