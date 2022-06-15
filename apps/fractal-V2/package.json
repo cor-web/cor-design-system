@@ -44,6 +44,7 @@
     "postcss-import-url": "^7.0.0",
     "postcss-nested-import": "^0.2.0",
     "postcss-preset-env": "^7.7.0",
+    "rollup": "^2.75.6",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^4.0.0",
