@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <script type="module" src="/assets/js/index.js"></script>
+  
+
+  {% if pageStyles %}
+    {% for item in pageStyles %}
+      <link rel="stylesheet" href="{{ item }}">
+    {% endfor %}
+  {% endif %}
+  
+
+  {# Add facility for pages to delare an array of critical styles #}
+  
+</head>
+<body>
+11 
+
+{%- from "components/mainnav/macro.njk" import mainnav %}
+{{ mainnav(cornavigation) }}
+
+  
+  <h1>{{ metadata.title }}</h1>
+
+  <h1 class="text-2xl font-bold underline bg-blue-500">
+    Hello world!
+  </h1>
+  
+   {% block css %}
+    BOOM
+    {% endblock %}
+
+    {{ tchic }}
+
+    
+
+  <main class="{{ page.class }}">
+    MAIN start
+    {% block content %}{% endblock %}
+    MAIN end
+  </main>
+  <div id="app"></div>
+  <canvas id="tutoriel" width="150" height="150"></canvas>
+</body>
+</html>
