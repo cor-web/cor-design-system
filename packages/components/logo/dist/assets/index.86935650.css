@@ -1,0 +1,1 @@
+cor-logo{--image-diamond: url(/assets/images/diamond.png);display:block;height:183px;width:339px}cor-logo img{left:25px;max-width:150px;max-height:100%;position:absolute}cor-logo[shadow]{background-image:var(--image-diamond);background-repeat:no-repeat;display:inline-block;position:relative}
