@@ -1,1 +1,0 @@
-export { CorButton } from './CorButton.js';

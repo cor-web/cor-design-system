@@ -1,8 +1,0 @@
-@import "reset.css";
-@import "@cor-web/styles/src/all.css";
-@import "general.css";
-
-@import "@cor-web/components/header/src/index.css";
-
-/* Tailwind utilities */
-@tailwind utilities;
