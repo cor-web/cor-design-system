@@ -120,3 +120,7 @@
 .cor-card figure:hover {
   bottom: 0; /* main.css override */
 }
+
+/* To move */
+.cor-image-customratio h3.cor-card__title { text-align: center; width: 100%;}
+.cor-image-customratio .cor-image { aspect-ratio: auto; }
