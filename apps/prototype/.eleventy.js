@@ -1,11 +1,11 @@
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
-// const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyVitePlugin);
-  //// eleventyConfig.addPlugin(eleventyNavigationPlugin); 
+  eleventyConfig.addPlugin(eleventyNavigationPlugin); 
   
   
   /*****************************************************************************************

@@ -45,7 +45,8 @@
             "parentKey": "Work with us",
             "url": "/jobs/",
             "title": "Jobs"
-          },{
+          },
+          {
             "key": "Traineeships",
             "parentKey": "Work with us",
             "url": "/traineeships/",
