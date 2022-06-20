@@ -8,3 +8,24 @@ img {
   -webkit-filter: none !important;
   max-width: none;
 }
+
+/* To check */
+.cor-image-customratio figure { margin: auto; height: 100px;}
+.cor-image-customratio img { height: 100%; }
+/* option au module pour rendre l'image cliquable  */
+.webpart_properties { word-break: break-all; }
+.mainContent .txt-xl ul{font-size:var(--step--2);line-height:1.5}
+.cor-image-customratio h3.cor-card__title { text-align: center; width: 100%;}
+.cor-image-customratio .cor-image { aspect-ratio: auto; height: 100%; }
+.cor-image-customratio figure { margin: auto; height: 100px;}
+.cor-image-customratio a:hover { outline-color: currentColor !important; outline-offset: 2px !important; }
+
+.webpart_properties {
+word-break: break-all;
+}
+.mainContent .txt-xl ul {
+font-size: var(--step--2);
+line-height: 1.5
+}
+
+
