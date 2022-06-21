@@ -18,6 +18,4 @@
 }
 
 /* To move and check ^ initiatives */
-.mainContent .cor-box {
-  padding: 0;
-}
+main .cor-box {padding:0;}
