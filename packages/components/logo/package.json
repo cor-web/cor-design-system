@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build2": "vite build",
     "preview": "vite preview"
   },

@@ -134,13 +134,13 @@ importers:
     specifiers:
       '@cor-web/components': workspace:*
       '@cor-web/styles': workspace:*
-      vite: ^2.9.9
+      vite: ^2.9.13
       vite-plugin-nunjucks: ^0.1.10
     dependencies:
       '@cor-web/components': link:..
       '@cor-web/styles': link:../../styles
     devDependencies:
-      vite: 2.9.9
+      vite: 2.9.13
       vite-plugin-nunjucks: 0.1.10
 
   packages/components/logo:
@@ -11644,16 +11644,6 @@ packages:
       from2: 2.3.0
     dev: false
 
-  /follow-redirects/1.15.1:
-    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dev: false
-
   /follow-redirects/1.15.1_debug@4.3.2:
     resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
     engines: {node: '>=4.0'}
@@ -11664,18 +11654,6 @@ packages:
         optional: true
     dependencies:
       debug: 4.3.2
-    dev: false
-
-  /follow-redirects/1.15.1_debug@4.3.4:
-    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dependencies:
-      debug: 4.3.4
     dev: false
 
   /for-in/1.0.2:
@@ -12720,7 +12698,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1
+      follow-redirects: 1.15.1_debug@4.3.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -12731,7 +12709,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1_debug@4.3.4
+      follow-redirects: 1.15.1_debug@4.3.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -20588,12 +20566,36 @@ packages:
     resolution: {integrity: sha512-nL8UoJJPVWY0StRbmWxFHesoimadgjLM6DSs5gy0azvWc+lnJ+8vwEon8KXdtfC2ynvUzTzWdDZTP+gnsqGuAw==}
     dependencies:
       nunjucks: 3.2.3
-      vite: 2.9.9
+      vite: 2.9.13
     transitivePeerDependencies:
       - chokidar
       - less
       - sass
       - stylus
+    dev: true
+
+  /vite/2.9.13:
+    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+    engines: {node: '>=12.2.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+    dependencies:
+      esbuild: 0.14.42
+      postcss: 8.4.14
+      resolve: 1.22.0
+      rollup: 2.75.6
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /vite/2.9.9:

@@ -12,7 +12,7 @@
     "@cor-web/components": "workspace:*"
   },
   "devDependencies": {
-    "vite": "^2.9.9",
+    "vite": "^2.9.13",
     "vite-plugin-nunjucks": "^0.1.10"
   }
 }
