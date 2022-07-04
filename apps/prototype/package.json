@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:css": "",
-    "watch:eleventy": "npx @11ty/eleventy --serve --quiet --incremental --port=8091",
+    "watch:eleventy": "npx @11ty/eleventy --serve --quiet --incremental --port=8093",
     "build:css": "",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:css --parallel watch:*",
