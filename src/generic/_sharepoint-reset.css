@@ -29,3 +29,10 @@ line-height: 1.5
 }
 
 
+.commissions-nav a{
+  border: solid 2px var(--color) !important;
+  }
+  img.ms-webpart-menuArrowImg {
+      max-width: none !important;
+  }
+  
