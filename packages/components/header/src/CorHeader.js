@@ -2,6 +2,7 @@ import Component from "./component.js";
 //import { ClickyMenus } from './clickyMenu';
 import "./cor-search-box.js";
 
+console.log("imported CorHeader.js");
 export class CorHeader extends HTMLElement {
   constructor() {
     super();

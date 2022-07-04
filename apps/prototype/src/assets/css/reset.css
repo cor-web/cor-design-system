@@ -75,3 +75,14 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

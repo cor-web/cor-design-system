@@ -1,4 +1,4 @@
-<cor-header>
+<cor-header  {{ params.type }} >
 
   <div class="cor-logo-container">
     <a class="cor-logo" href="{{ site.url }}" aria-label="CoR Homepage" >
@@ -6,6 +6,9 @@
     </a>
   </div> 
 
+  {% if params.type !== "light" %}
+
+  
   <cor-header-toolbar>
     <nav id="tools-quicklinks" class="cor-nav-toplinks">
       <ul>
@@ -232,4 +235,5 @@
     
     {% endif %}
   </cor-header-subnav-container>
+  {% endif %}
 </cor-header>

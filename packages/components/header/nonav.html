@@ -1,0 +1,149 @@
+{% from "./macro.njk" import corHeader %}
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <style>
+      /* Modern CSS reset: https://github.com/hankchizljaw/modern-css-reset */
+
+      /* Box sizing rules */
+       *,
+       *::before,
+       *::after {
+        box-sizing: border-box;
+      }
+
+      /* Remove default padding */
+       ul[class],
+       ol[class] {
+        padding: 0;
+      }
+
+      /* Remove default margin */
+       h1,
+       h2,
+       h3,
+       h4,
+       p,
+       ul[class],
+       ol[class],
+       figure,
+       blockquote,
+       dl,
+       dd {
+        margin: 0;
+      }
+
+      /* Set core root defaults */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Set core body defaults */
+      body {
+        min-height: 100vh;
+        /*
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        */
+        margin: 0;
+      }
+     
+
+      /* Remove list styles on ul, ol elements with a class attribute */
+       ul[class],
+       ol[class] {
+        list-style: none;
+      }
+
+      /* A elements that don't have a class get default styles */
+       a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+
+      /* Make images easier to work with */
+       img,
+       picture {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* Natural flow and rhythm in articles by default */
+      /*
+       article > * + * {
+        margin-top: 1em;
+      }
+      */
+
+      /* Inherit fonts for inputs and buttons */
+       input,
+       button,
+       textarea,
+       select {
+        font: inherit;
+      }
+
+      /* Blur images when they have no alt attribute */
+       img:not([alt]) {
+        filter: blur(10px);
+      }
+       .remove-empty-alt-filter img:not([alt]) {
+        filter: none;
+      }
+
+      /* Remove all animations and transitions for people that prefer not to see them */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      button {
+        border: none;
+        background: none;
+        font: inherit;
+        cursor: pointer;
+        line-height: inherit;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    </style>
+    <link rel="stylesheet" href="src/cor-header.css" />
+
+    <script>
+      // This is a capable browser, let's improve the UI further!
+      document.documentElement.classList.add("enhanced");
+      document.documentElement.classList.remove('no-js');
+    </script>
+  </head>
+  <body>
+    
+    <a class="cor-skip-link" href="#main-content">Skip to content</a>
+
+    
+    <header>
+      {{ corHeader({
+        type: "light"
+      }) }}
+    </header>
+    <div id="app"></div>
+    <script type="module">
+      // This is a capable browser, let's improve the UI further!
+      document.documentElement.classList.add("enhanced");
+      document.documentElement.classList.remove('no-js');
+    </script>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

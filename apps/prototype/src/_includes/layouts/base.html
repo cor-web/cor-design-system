@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
   
   <link rel="stylesheet" href="/assets/css/styles.css">
   
-  <script type="module" src="/assets/js/index.js"></script>
+  
   
 
   {% if pageStyles %}
@@ -33,6 +33,14 @@
   <footer>
     {% block footer %}{% endblock %}
   </footer>
+
+  <script type="module">
+    // This is a capable browser, let's improve the UI further!
+    document.documentElement.classList.add("enhanced");
+    document.documentElement.classList.remove('no-js');
+  </script>
+
+<script type="module" src="/assets/js/index.js"></script>
 
 </body>
 </html>

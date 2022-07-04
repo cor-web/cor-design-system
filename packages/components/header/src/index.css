@@ -132,7 +132,9 @@ cor-header .cor-logo img {
 }
 
 
-
+cor-header[light] {
+  background-color: var(--c-eu);
+}
 
 
 cor-header ul {
