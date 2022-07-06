@@ -251,7 +251,7 @@ export class CorHeader extends HTMLElement {
 }
 
 export class CorHeaderNavbar extends HTMLElement {
-  /*
+ 
   constructor() {
     super();
     
@@ -263,7 +263,7 @@ export class CorHeaderNavbar extends HTMLElement {
     // shadowRoot.appendChild(templateContent.cloneNode(true));
   
   }
-
+ /*
   connectedCallback() {
     this.buttons = this.shadowRoot.querySelectorAll("button");
     this.buttons.forEach( button => {
