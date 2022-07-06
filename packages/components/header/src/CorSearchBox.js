@@ -7,7 +7,9 @@ export class CorSearchBox extends HTMLElement {
 
     
     const searchButton = document.querySelector("#site-search-button button");
-    searchButton.addEventListener("click", this.toggleSearchBox.bind(this));
+    if (searchButton) {
+      searchButton.addEventListener("click", this.toggleSearchBox.bind(this));
+    }
   }
 
   static get observedAttributes() {
