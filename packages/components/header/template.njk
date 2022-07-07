@@ -172,9 +172,7 @@
           }
 
           button[aria-expanded=true] {
-            background-color: rgba(0,0,0,.1);
-            border-radius: 4px;
-            
+            background-color: rgba(0,0,0,.1);            
           }
 
           a {
@@ -308,7 +306,7 @@
 
               
               <cor-subnav-description id="{{ subnavitem.text  | replace(' ', '-') }}--{{ loop.index }}" aria-labelledby="button--{{ subnavitem.text }}">
-                <span class="cor-header-navbar__subpanel__heading">{{ subnavitem.text }} TEXT</span>
+                <span class="cor-header-navbar__subpanel__heading">{{ subnavitem.text }}</span>
                 <div class="cor-header-navbar__subpanel__description">
                   {{ subnavitem.description }}
                 </div>
