@@ -19,4 +19,4 @@
 
 [build.environment]
   # This makes netlify skip their automatic npm install, to let pnpm take care of it.
-  NPM_FLAGS="--prefix=/"
+  NPM_FLAGS="--prefix=/dev/null"
