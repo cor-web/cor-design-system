@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "[[ $CI = true ]] && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
@@ -24,6 +25,7 @@
     "@changesets/cli": "^2.22.0"
   },
   "devDependencies": {
+    "pnpm": "^7.9.0",
     "turbo": "^1.2.16"
   }
 }
