@@ -1,18 +1,22 @@
-
 .cor-media__img {
   grid-area: img;
 }
+
 .cor-media__title {
   grid-area: title;
 }
+
 .cor-media__content {
   grid-area: bd;
 }
+
 .cor-media__footer {
   grid-area: ft;
 }
 
 .cor-media {
+  --img-width: var(--space-3xl);
+
   display: grid;
   gap: var(--space-xs);
   grid-template-areas:
@@ -24,7 +28,7 @@
 
 @media (min-width: 600px) {
   .cor-media {
-    grid-template-columns: 150px 3fr;
+    grid-template-columns: var(--img-width) 3fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "img title"
@@ -33,7 +37,7 @@
   }
 
   .cor-media__image {
-    width: 150px;
+    width: var(--img-width);
   }
 }
 
@@ -51,7 +55,7 @@
     clear: both;
   }
 
-  .cor-media > .media {
+  .cor-media>.media {
     margin-left: 160px;
     clear: both;
   }
@@ -59,9 +63,9 @@
   .cor-media .img {
     float: left;
     margin: 0 10px 0 0;
-    width: 150px;
+    width: var(--img-width);
   }
-  
+
   .cor-media .footer {
     background-color: #eee;
     padding: 10px;
@@ -72,25 +76,28 @@
     margin: 0 0 0 10px;
   }
 
-  .cor-media > * {
+  .cor-media>* {
     margin: 0 0 0 160px;
   }
 
-  .cor-media--flip > * {
+  .cor-media--flip>* {
     margin: 0 160px 0 0;
   }
 
-  @supports(display: grid ) {
+  @supports(display: grid) {
+
     /* override */
-    .cor-media > *,
-    .cor-media--flip > * {
+    .cor-media>*,
+    .cor-media--flip>* {
       margin: 0;
     }
+
     .cor-media .img,
     .cor-media--flip .img {
       width: auto;
       margin: 0;
     }
+
     .cor-media:after {
       content: none;
     }
@@ -98,7 +105,7 @@
     .cor-media {
       display: grid;
       grid-column-gap: 20px;
-      grid-template-columns: 150px 3fr;
+      grid-template-columns: var(--img-width) 3fr;
       grid-template-rows: auto 1fr auto;
       grid-template-areas:
         "img title"
@@ -107,7 +114,7 @@
     }
 
     .cor-media--flip {
-      grid-template-columns: 3fr 150px ;
+      grid-template-columns: 3fr var(--img-width);
       grid-template-areas:
         "title img"
         "bd img"
@@ -115,17 +122,18 @@
     }
 
     .cor-media--img-flexie {
-      grid-template-columns: minmax(150px, 1fr) 3fr;
+      grid-template-columns: minmax(var(--img-width), 1fr) 3fr;
     }
 
     .cor-media--flip.cor-media--img-flexie {
-      grid-template-columns: 3fr minmax(150px, 1fr);
+      grid-template-columns: 3fr minmax(var(--img-width), 1fr);
     }
 
     /* nested */
-    .cor-media > .cor-media {
-      grid-column: 2 / -1 ;
-      margin: 0; /* override */
+    .cor-media>.cor-media {
+      grid-column: 2 / -1;
+      margin: 0;
+      /* override */
       margin-top: 1em;
     }
   }
@@ -150,4 +158,3 @@
   gap: var(--space-xs);
   grid-template-columns: 50px 75px;
 }
-

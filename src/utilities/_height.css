@@ -1,0 +1,43 @@
+.h-4xs {
+  width: var(--space-4xs)
+}
+
+.h-3xs {
+  width: var(--space-3xs)
+}
+
+.h-2xs {
+  width: var(--space-2xs)
+}
+
+.h-xs {
+  width: var(--space-xs)
+}
+
+.h-s {
+  width: var(--space-s)
+}
+
+.h-m {
+  width: var(--space-m)
+}
+
+.h-l {
+  width: var(--space-l)
+}
+
+.h-xl {
+  width: var(--space-xl)
+}
+
+.h-2xl {
+  width: var(--space-2xl)
+}
+
+.h-3xl {
+  width: var(--space-3xl)
+}
+
+.h-4xl {
+  width: var(--space-4xl)
+}

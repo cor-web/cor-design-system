@@ -1,0 +1,16 @@
+{% for member in members %}
+<div class="cor-media">
+    <div class="cor-media__img cor-stack">
+      <img class="cor-image" src="{{ member.picture }}" alt="portrait of {{ member.name }}"/>
+    </div>
+    
+    <strong class="txt-step--2 cor-media__title">{{ member.name }}</strong>
+    <div class="cor-media__content cor-stack  cor-stack--3xs">
+      <a href="" class="txt-step--3 icon icon-before" style="--icon: var(--icon-phone)">{{ member.phone }}</a>
+      <address class="txt-step--3" style="--icon: var(--icon-brief)">Leuvenseweg 86<br/>
+      1000 Bruxelles - Brussel<br/>
+      Belgique/België</address>
+    </div>
+
+</div>
+{% endfor %}

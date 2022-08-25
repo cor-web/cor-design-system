@@ -1,0 +1,13 @@
+{% for member in members %}
+<a class="cor-media" href="test.be">
+    <div class="cor-media__img cor-stack">
+      
+      <img class="cor-image" src="{{ member.picture }}" alt="portrait of {{ member.name }}"/>
+    </div>
+    
+    <strong class="txt-step--2 cor-media__title">{{ member.name }}</strong>
+    
+    <img class="img-fluid w-xl" alt="PES" src="https://cor.europa.eu/Style%20Library/Cor/style/img/Homepage/pg-pes.png">
+
+</a>
+{% endfor %}

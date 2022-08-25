@@ -16,3 +16,7 @@
 .mainContent ul[class] li {
   padding: 0;
 }
+
+.cor-rich-text ul {
+  max-width: 75ch;
+}
