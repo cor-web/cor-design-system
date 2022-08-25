@@ -1,30 +1,30 @@
 /* Modern CSS reset: https://github.com/hankchizljaw/modern-css-reset */
 
 /* Box sizing rules */
-.mainContent *,
-.mainContent *::before,
-.mainContent *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* Remove default padding */
-.mainContent ul[class],
-.mainContent ol[class] {
+ul[class],
+ol[class] {
   padding: 0;
 }
 
 /* Remove default margin */
-.mainContent h1,
-.mainContent h2,
-.mainContent h3,
-.mainContent h4,
-.mainContent p,
-.mainContent ul[class],
-.mainContent ol[class],
-.mainContent figure,
-.mainContent blockquote,
-.mainContent dl,
-.mainContent dd {
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
@@ -41,49 +41,51 @@ body {
   line-height: 1.5;
   */
 }
-.mainContent {
+
+  {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-.mainContent ul[class],
-.mainContent ol[class] {
+ul[class],
+ol[class] {
   list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
-.mainContent a:not([class]) {
+a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
-.mainContent img,
-.mainContent picture {
+img,
+picture {
   max-width: 100%;
   display: block;
 }
 
 /* Natural flow and rhythm in articles by default */
 /*
-.mainContent article > * + * {
+article > * + * {
   margin-top: 1em;
 }
 */
 
 /* Inherit fonts for inputs and buttons */
-.mainContent input,
-.mainContent button,
-.mainContent textarea,
-.mainContent select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* Blur images when they have no alt attribute */
-.mainContent img:not([alt]) {
+img:not([alt]) {
   filter: blur(10px);
 }
-.mainContent .remove-empty-alt-filter img:not([alt]) {
+
+.remove-empty-alt-filter img:not([alt]) {
   filter: none;
 }
 

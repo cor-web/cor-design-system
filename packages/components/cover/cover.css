@@ -1,0 +1,103 @@
+.cor-cover--grid {
+  padding: 0;
+}
+
+cor-cover {
+  --cor-cover-space: var(--space--2xs, 1rem);
+  --cor-cover-background-color: white;
+  --cor-cover-padding: var(--space-s);
+  --cor-cover-gap: var(--space-m);
+  --cor-cover-bordertop-color: 255, 0, 0;
+  --cor-cover-bordertop-width: var(--space-xs);
+
+  background-color: var(--cor-cover-background-color);
+  display: grid;
+  gap: var(--cor-cover-gap);
+  justify-content: center;
+  padding: var(--cor-cover-padding);
+}
+
+cor-cover.cor-cover--1col {
+  grid-template-columns: 1fr;
+}
+
+cor-cover .cor-cover__header {
+  background-image: var(--background-image);
+  background-color: var(--background-color);
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+.editmode cor-cover .cor-cover__header {
+  display: block;
+}
+
+.cor-cover__header h1,
+.cor-cover__header h2 {
+  margin: 0;
+  padding: 0;
+  background-color: var(--text-background-color);
+  color: var(--text-color);
+  text-align: center;
+  text-transform: none;
+}
+
+cor-cover h1 {
+  font-size: var(--step-3) !important;
+}
+
+
+cor-cover h2 {
+  font-size: var(--step-0) !important;
+}
+
+cor-cover p,
+.cor-cover__description p {
+  font-size: var(--step--2);
+  line-height: 1.75;
+}
+
+cor-cover.cor-cover--topbar {
+  border-top: rgb(var(--cor-cover-bordertop-color)) solid var(--cor-cover-bordertop-width);
+}
+
+.cor-cover__cta:after {
+  background: var(--link-color);
+}
+
+.cor-cover__header,
+cor-cover :first-child {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 640px) {
+  cor-cover[class*="grid"] {
+    padding-right: 0;
+  }
+
+  .cor-cover--grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cor-cover--grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cor-cover--grid-4 .cor-cover__description {
+    grid-column: span 3;
+    order: 0;
+  }
+
+  .cor-cover__picture {
+    order: 1;
+  }
+
+  cor-cover[class*="img-left"] {
+    padding-right: var(--cor-cover-space);
+  }
+
+  cor-cover[class*="img-left"] .cor-cover__picture {
+    order: 0;
+  }
+
+}

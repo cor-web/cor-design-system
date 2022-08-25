@@ -1,0 +1,10 @@
+{
+  "name": "@cor-web/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Jessy Govart",
+  "license": "ISC",
+  "type": "module"
+}

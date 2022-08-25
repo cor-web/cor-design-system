@@ -11,6 +11,7 @@
   "dependencies": {
     "@cor-web/components": "workspace:*",
     "@cor-web/styles": "workspace:*",
+    "@cor-web/tokens": "workspace:*",
     "lit": "^2.2.5"
   },
   "keywords": [],
@@ -18,12 +19,13 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.2",
-    "@storybook/addon-actions": "^6.5.7",
-    "@storybook/addon-essentials": "^6.5.7",
-    "@storybook/addon-links": "^6.5.7",
-    "@storybook/builder-webpack4": "^6.5.7",
-    "@storybook/manager-webpack4": "^6.5.7",
-    "@storybook/web-components": "^6.5.7",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-docs": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/web-components": "^6.5.10",
     "babel-loader": "^8.2.5",
     "lit-html": "^2.2.5"
   }

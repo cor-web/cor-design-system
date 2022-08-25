@@ -1,4 +1,5 @@
 @import url("./_reset.css");
+@import url("./_reset--sharepoint.css");
 
 @import url("./_sharepoint-reset.css");
 @import url("./_buttons.css");
