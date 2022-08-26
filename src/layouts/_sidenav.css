@@ -3,13 +3,17 @@
 
   align-items: start;
   display: grid;
-  gap: var(--space);
+  gap: var(--space-m);
   grid-template-columns: minmax(0, 1fr);
-  padding: var(--space-xs) var(--space-s);
+  padding: var(--space-xs) var(--space) var(--space-xs) var(--space-s);
 }
 
 @media screen and (min-width: 640px) {
   .cor-with-sidenav {
-    grid-template-columns: 12rem minmax(0, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .cor-with-sidenav> :last-child {
+    grid-column: 2 / -1;
   }
 }

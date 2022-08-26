@@ -6,13 +6,18 @@
   justify-content: flex-start;
 }
 
+.cor-stack--4xs,
+.mainContent .cor-stack--4xs {
+  --stack-space: var(--space-4xs);
+}
+
 .cor-stack--3xs,
-.mainContent .cor-stack--3xs  {
+.mainContent .cor-stack--3xs {
   --stack-space: var(--space-3xs);
 }
 
 .cor-stack--2xs,
-.mainContent .cor-stack--2xs  {
+.mainContent .cor-stack--2xs {
   --stack-space: var(--space-2xs);
 }
 
@@ -46,14 +51,14 @@
   --stack-space: var(--space-2xl);
 }
 
-.cor-stack > *,
-.mainContent .cor-stack > * {
+.cor-stack>*,
+.mainContent .cor-stack>* {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.cor-stack > * + * ,
-.mainContent .cor-stack > * + * {
+.cor-stack>*+*,
+.mainContent .cor-stack>*+* {
   margin-top: var(--stack-space);
 }
 

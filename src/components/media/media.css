@@ -15,10 +15,8 @@
 }
 
 .cor-media {
-  --img-width: var(--space-3xl);
-
   display: grid;
-  gap: var(--space-xs);
+  gap: var(--space-3xs);
   grid-template-areas:
     "title"
     "img"
@@ -28,7 +26,7 @@
 
 @media (min-width: 600px) {
   .cor-media {
-    grid-template-columns: var(--img-width) 3fr;
+    grid-template-columns: var(--img-width, var(--space-2xl)) 3fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "img title"
@@ -105,7 +103,7 @@
     .cor-media {
       display: grid;
       grid-column-gap: 20px;
-      grid-template-columns: var(--img-width) 3fr;
+      grid-template-columns: var(--img-width, var(--space-2xl)) 3fr;
       grid-template-rows: auto 1fr auto;
       grid-template-areas:
         "img title"
@@ -114,7 +112,7 @@
     }
 
     .cor-media--flip {
-      grid-template-columns: 3fr var(--img-width);
+      grid-template-columns: 3fr var(--img-width, var(--space-2xl));
       grid-template-areas:
         "title img"
         "bd img"
@@ -122,11 +120,11 @@
     }
 
     .cor-media--img-flexie {
-      grid-template-columns: minmax(var(--img-width), 1fr) 3fr;
+      grid-template-columns: minmax(var(--img-width, var(--space-2xl)), 1fr) 3fr;
     }
 
     .cor-media--flip.cor-media--img-flexie {
-      grid-template-columns: 3fr minmax(var(--img-width), 1fr);
+      grid-template-columns: 3fr minmax(var(--img-width, var(--space-2xl)), 1fr);
     }
 
     /* nested */

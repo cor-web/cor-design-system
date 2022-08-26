@@ -19,6 +19,8 @@
       
         <h2 id="Our goals">Overview</h2>
 
+        <p>The Belgian delegation consists of 12 members and an equivalent number of alternates. Members are appointed by decision of the respective governments of each of the Belgian regions and communities, after an agreement has been reached on the number of members and alternates to be allocated to each one.</p>
+
         <p>Belgium's three linguistic communities are therefore represented. Proposals are put forward by the Minister-Presidents, generally in cooperation with the ministers for international relations of each government. The majority of the Belgian members are members of either the governments or the parliaments of the regions and communities. Some members, i.e. the mayors, represent the local authorities.</p>
 
         <p>All members of the Belgian delegation are expected to meet during CoR plenary sessions in order to coordinate, as effectively as possible, each member's work and to ensure the dissemination of relevant information. There is also cooperation with the federal units' Permanent Representations to the European Union.</p>
@@ -29,7 +31,7 @@
 
       </section>
 
-      <section>
+      <section  style="--img-width: var(--space-4xl)">
         <h2 id="president">President</h2>
         <div class="cor-switcher items-start">
         {% for i in [1] %}
@@ -40,29 +42,29 @@
 
       <section>
         <h2 id="members">Members</h2>
-        <div class="cor-grid items-start">
+        <ul class="list-none cor-grid items-start">
         {% for i in [1,2,3,5,6,7,8,9,10,11,12] %}
-          {% render "@member" %}
+          <li>{% render "@member" %}</li>
         {% endfor %}
-        </div>
+        </ul>
       </section>
 
       <section>
         <h2 id="alternates">Alternates</h2>
-        <div class="cor-grid items-start">
+        <ul class="list-none cor-grid items-start">
         {% for i in [1,2,3,5,6,7,8,9,10,11,12] %}
-          {% render "@member" %}
+          <li>{% render "@member" %}</li>
         {% endfor %}
-        </div>
+        </ul>
       </section>
 
-      <section>
+      <section  style="--img-width: var(--space-2xl)">
         <h2 id="alternates">Coordinators</h2>
-        <div class="cor-stack items-start">
+        <ul class="list-none cor-grid items-start">
         {% for i in [1,2] %}
-          {% render "@member--president" %}
+          <li>{% render "@member--president" %}</li>
         {% endfor %}
-        </div>
+        </ul>
       </section>
 
 

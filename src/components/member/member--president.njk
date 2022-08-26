@@ -6,10 +6,16 @@
     
     <strong class="txt-step--2 cor-media__title">{{ member.name }}</strong>
     <div class="cor-media__content cor-stack  cor-stack--3xs">
-      <a href="" class="txt-step--3 icon icon-before" style="--icon: var(--icon-phone)">{{ member.phone }}</a>
-      <address class="txt-step--3" style="--icon: var(--icon-brief)">Leuvenseweg 86<br/>
-      1000 Bruxelles - Brussel<br/>
-      Belgique/België</address>
+      
+      <address class="txt-step--3 cor-stack cor-stack--4xs">
+        <a href="" class="txt-step--3 icon icon-before" style="--icon: var(--icon-phone)">{{ member.phone }}</a>
+        <a href="" class="txt-step--3 icon icon-before" style="--icon: var(--icon-envelope)">{{ member.email }}</a>
+        <strong class="txt-step--3 icon icon-before" style="--icon: var(--icon-geo)">Address</strong>
+        <span>Leuvenseweg 86<br/>
+        1000 Bruxelles - Brussel<br/>
+        Belgique/België
+        </span>
+      </address>
     </div>
 
 </div>
