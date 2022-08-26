@@ -7,7 +7,6 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials"
   ],
-  "staticDirs": ["../public"],
   "framework": "@storybook/web-components",
   "features": {
     postcss: false,
