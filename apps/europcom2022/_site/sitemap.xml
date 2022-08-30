@@ -2,87 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://example.com/posts/firstpost/</loc>
+    <loc>https://cor.europa.eu/posts/firstpost/</loc>
     <lastmod>2018-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/posts/secondpost/</loc>
+    <loc>https://cor.europa.eu/posts/secondpost/</loc>
     <lastmod>2018-07-04</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/posts/thirdpost/</loc>
+    <loc>https://cor.europa.eu/posts/thirdpost/</loc>
     <lastmod>2018-08-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/posts/fourthpost/</loc>
+    <loc>https://cor.europa.eu/posts/fourthpost/</loc>
     <lastmod>2018-09-30</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/about/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/about/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/posts/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/posts/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/faq/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/page-list/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/page-list/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/another-tag/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/programme/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/second-tag/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/speakers/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/posts-with-two-tags/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/styles/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/number-2/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/tags/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/speakers/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/tags/another-tag/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/programme/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/tags/second-tag/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/faq/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/tags/number-2/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/styles/</loc>
-    <lastmod>2022-08-26</lastmod>
+    <loc>https://cor.europa.eu/tags/posts-with-two-tags/</loc>
+    <lastmod>2022-08-29</lastmod>
   </url>
 </urlset>
