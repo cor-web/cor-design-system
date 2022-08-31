@@ -603,7 +603,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm',
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="mobileNavigation">
-						<div class="container navbar-nav">
+						<div class="  navbar-nav">
 							<a id="ctl00_navigationHomeMobile" class="nav-item nav-link active" href="/europcom/2022/Pages/homepage.aspx"><span class="ms-splinkbutton-text">Home</span></a>
 							<a id="ctl00_navigationProgrammeMobile" class="nav-item nav-link" href="/europcom/2022/Pages/Programme.aspx"><span class="ms-splinkbutton-text">Programme</span></a>
 							<a id="ctl00_navigationSpeakersMobile" class="nav-item nav-link" href="/europcom/2022/Pages/Contributors.aspx"><span class="ms-splinkbutton-text">Contributors</span></a>
@@ -623,7 +623,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm',
           <div id="desktop-navigation">
             <nav class="navbar navbar-expand-lg">
               <div class="collapse navbar-collapse">
-                <div class="container navbar-nav">
+                <div class=" navbar-nav">
                   <div class="nav-item">
                     <a id="ctl00_navigationProgramme" class="nav-link" href="/europcom/2022/Pages/Programme.aspx"><span class="ms-splinkbutton-text">Programme</span></a>
                   </div>							
@@ -709,8 +709,8 @@ $("a[id$='navigationMaterial']").parent().hide();
 	
 	
 	
-	<div class="container text-center europcom-quote">
-		<blockquote class="blockquote ec-europcom-blockquote">
+	<div class="container-fluid text-center europcom-quote">
+		<blockquote class="container blockquote ec-europcom-blockquote">
 		  <div>
 		    <svg width="51" height="32" viewBox="0 0 51 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 		    <path d="M28.8921 21.3318C28.8921 15.4441 33.8389 10.67 39.946 10.67C46.0532 10.67 51 15.4441 51 21.3318C51 27.2194 46.0532 32 39.946 32C33.8389 32 28.8921 27.2258 28.8921 21.3318Z" fill="#40403F"></path>
@@ -730,63 +730,37 @@ $("a[id$='navigationMaterial']").parent().hide();
 	</div>
 	
 	<div class="container">
-		<div class="row" id="Speakers-container">
-			<div class="col-12">
-				<div class="row mt-5">
-		  			<div class="col-12">			
-						<menu class="ms-hide">
-		<ie:menuitem id="MSOMenu_Help" iconsrc="https://cor.europa.eu//_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
-
-		</ie:menuitem>
-	</menu>
-						<div id="ctl00_PlaceHolderMain_ctl02_label" style="display:none">EuroPCom_MarketPlace</div><div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label"><p></p></div>			
-					</div>
-				</div>
-			</div>
+		<div class="" id="Speakers-container">
+			<h3 class="europcom-h2 text-4">Meet our speakers</h3>
 		</div>
 	</div>
 	<div class="container-fluid" id="Themes-container">
 		<div class="container">
 			<section class="ec-europcom-themes">
-				<div class="ec-europcom-themes__theme ec-europcom-themes__theme--1 p-4">				
-					
-					<div id="ctl00_PlaceHolderMain_DisplayModePanelTheme1Title">
-		
-					    <h3 class="theme-title"></h3>
-					
-	</div>			
-	    			<div class="theme-description">
-						</div>
-	  			</div>
-	  			<div>
-						  				
-				</div>
-				<div class="ec-europcom-themes__theme ec-europcom-themes__theme--2 p-4">
-					
-					<div id="ctl00_PlaceHolderMain_DisplayModePanelTheme2Title">
-		
-					    <h3 class="theme-title"></h3>
-					
-	</div>			
-	    			<div class="theme-description">
-						</div>
-	  			</div>
-	  			<div>	  			
-					
-	  			</div>				
-				<div class="ec-europcom-themes__theme ec-europcom-themes__theme--3 p-4">
-	    			
-					<div id="ctl00_PlaceHolderMain_DisplayModePanelTheme3Title">
-		
-					    <h3 class="theme-title"></h3>
-					
-	</div>			
-	    			<div class="theme-description">
-						</div>
-	  			</div>
-	  			<div>	  			
-					
-	  			</div>				
+				
+        
+        <div class="ec-europcom-themes__theme ec-europcom-themes__theme--1 ">				
+
+          <div class="europcom-theme__imgcontainer">
+            <img src="/img/vague.png" alt="alt text" />
+          </div>
+
+          <div>
+            <div id="ctl00_PlaceHolderMain_DisplayModePanelTheme1Title">
+              <h3 class="theme-title">
+              Communicating Climate Action
+              </h3>
+            </div>			
+            <div class="theme-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+            </div>
+
+          </div>
+        </div>
+
+			
+
+			
 			</section>
 		</div>
 	</div>
@@ -848,10 +822,7 @@ $("a[id$='navigationMaterial']").parent().hide();
 				</li>				
 			</ul>
 		</section>
-		<hr>
-		<section class="ec-europcom-flags">
-			<img width="100px" id="ctl00_onetidHeadbnnr0" class="img-fluid m-0 mb-3" name="onetidHeadbnnr0" src="https://cor.europa.eu//style%20library/europcom/img/320px-Flag_of_Europe.svg.webp" alt="European Institutions">
-		</section>
+
 	</div>			
 	<footer class="noindex noprint ec-europcom-footer">
 		<ul>
