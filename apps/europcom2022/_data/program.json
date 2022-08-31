@@ -1,0 +1,56 @@
+[
+  {
+    "date": "Monday 11 october 2022 10:24",
+    "title": "Lorem veniam non tempor ad culpa occaecat id sit.",
+    "description": "Nisi eu nisi exercitation quis tempor duis aliquip incididunt minim dolore sit tempor pariatur nisi. Nostrud ipsum exercitation irure irure enim anim et qui esse amet mollit laborum qui aute. Magna amet esse pariatur nisi sunt quis est. Quis dolore deserunt sunt cupidatat ullamco cillum deserunt.",
+    "speakers": [
+      {
+        "name": "Jane Doe",
+        "title": "CEO at My incredible company"
+      },
+      {
+        "name": "Jane Doe",
+        "title": "CEO at My incredible company"
+      },
+      {
+        "name": "Jane Doe",
+        "title": "CEO at My incredible company"
+      }
+    ]
+  },
+  {
+    "date": "Monday 11 october 2022 10:24",
+    "title": "Lorem veniam non tempor ad culpa occaecat id sit.",
+    "description": "Nisi eu nisi exercitation quis tempor duis aliquip incididunt minim dolore sit tempor pariatur nisi. Nostrud ipsum exercitation irure irure enim anim et qui esse amet mollit laborum qui aute. Magna amet esse pariatur nisi sunt quis est. Quis dolore deserunt sunt cupidatat ullamco cillum deserunt.",
+    "speakers": [
+      {
+        "name": "Jane Doe",
+        "title": "CEO at My incredible company"
+      },
+      {
+        "name": "Jane Doe",
+        "title": "CEO at My incredible company"
+      },
+      {
+        "name": "Jane Doe",
+        "title": "CEO at My incredible company"
+      }
+    ]
+  },
+  {
+    "date": "Monday 11 october 2022 10:24",
+    "title": "Lorem veniam non tempor ad culpa occaecat id sit.",
+    "description": "Nisi eu nisi exercitation quis tempor duis aliquip incididunt minim dolore sit tempor pariatur nisi. Nostrud ipsum exercitation irure irure enim anim et qui esse amet mollit laborum qui aute. Magna amet esse pariatur nisi sunt quis est. Quis dolore deserunt sunt cupidatat ullamco cillum deserunt.",
+    "speakers": [
+      {
+        "name": "Jane Doe, CEO at My incredible company"
+      },
+      {
+        "name": "Jane Doe, CEO at My incredible company"
+      },
+      {
+        "name": "Jane Doe, CEO at My incredible company"
+      }
+    ]
+  }
+]
