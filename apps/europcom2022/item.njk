@@ -1,0 +1,63 @@
+---
+layout: layouts/programme.njk
+permalink: /item/
+title: Est sit sint dolore magna id commodo reprehenderit consectetur.
+hero: true
+eventdate: Monday 11 october 2022 10:24
+speakers:
+  - name: Jane Doe
+    title: CEO at My incredible company
+  - name: Jane Doe
+    title: CEO at My incredible company
+  - name: Jane Doe
+    title: CEO at My incredible company
+documents:
+  - title: Consectetur tempor non consequat sint non ipsum laboris.
+  - title: Consectetur tempor non consequat sint non ipsum laboris.
+  - title: Consectetur tempor non consequat sint non ipsum laboris.
+--- 
+<div class="europcom-pagecontent">
+  <span class="europcom-pagecontent__date">{{ eventdate }}</span>
+  <p class="text-xl">Nisi aute non commodo aute adipisicing commodo exercitation. Et ut deserunt amet aute labore sint minim aliquip elit et. Magna minim non non mollit ut do. </p>
+
+  <p>Aliqua ad eiusmod ea incididunt incididunt pariatur cupidatat eu eu. Ipsum proident non est anim cillum est labore aute proident ex aliquip. Labore sint non id tempor aliqua adipisicing eu minim dolore do duis incididunt anim. Non irure aliquip tempor tempor in enim dolor quis. Dolor cillum enim et elit.</p>
+
+  <p>Nisi aute non commodo aute adipisicing commodo exercitation. Et ut deserunt amet aute labore sint minim aliquip elit et. Magna minim non non mollit ut do. Deserunt esse ad nisi pariatur esse excepteur ea exercitation anim ex ea.</p>
+
+  <p>Veniam dolore exercitation elit esse laborum dolore cupidatat est ex consectetur duis. Dolor excepteur ex Lorem fugiat Lorem magna. Cillum do commodo ad in deserunt eiusmod qui do sit dolore ex dolore sit. Officia mollit eiusmod consectetur ex culpa ea mollit. Ea deserunt minim ex labore fugiat do labore irure dolor nostrud laboris deserunt.</p>
+</div>
+
+<section class="europcom-content__contributors">
+  <h4 class="p-y">Contributors</h4>
+  <ul class="europcom-program__speakerlist ">
+  {% for speaker in speakers %}
+  <li class="europcom-program__speaker">
+    <div class="europcom-program__avatar">
+      <img class="img" src='https://dummyimage.com/200x200.gif' alt='portrait of {{ speaker.name }}'/>
+    </div>
+    <div>
+      <strong>{{ speaker.name }}</strong><br/>
+      {{ speaker.title }}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+</section>
+
+<section  class="europcom-content__video">
+  <h4 class="p-y">Video</h4>
+  <div class="wrapper"><iframe src=" https://frontend.cor.smv.cloud/en/sessions/reference/enlargement-day-plenary-session/embed/" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" mozallowfullscreen="true"></iframe></div>
+</section>
+
+<section  class="europcom-content__documents">
+  <h4 class="p-y">Documents</h4>
+  <ul class="europcom-program__documentslist ">
+    {% for document in documents %}
+    <li class="europcom-document">
+      <a href="">{{ document.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<h4 class="p-y">Share</h4>

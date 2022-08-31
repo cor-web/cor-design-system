@@ -86,6 +86,9 @@
 
   --background-color: #fff;
 
+  --measure: 75ch;
+
+
   --primary-button-background-color: var(--color-primary);
   --primary-button-hover-color: var(--color-primary-500);
   --secondary-button-background-color: var(--color-primary);
@@ -126,6 +129,7 @@ html {
   background-color: var(--body-background-color);
   height: 100%;
   font-family: var(--font-family);
+  font-size: var(--step--1);
   overflow-x: hidden;
   caret-color: var(--link-color);
 }
@@ -155,6 +159,12 @@ h5,
 h6 {
   font-family: var(--font-family);
 }
+
+p {
+  max-inline-size: var(--measure);
+}
+
+
 
 /* Buttons */
 .europcom-button {
@@ -433,6 +443,9 @@ header#title .twitter,
 }
 
 /* Utilities */
+.text-xl {
+  font-size: var(--text-xl);
+}
 
 .text--4 {
   font-size: var(--step--4);
@@ -590,4 +603,94 @@ header#title .twitter,
 
 .europcom-program__link span {
   text-decoration: underline;
+}
+
+/* Item page */
+.europcom-hero-image {
+  position: relative;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .europcom-hero-image h2.europcom-page-title {
+    color: white;
+    background-color: #0007;
+    position: absolute;
+    bottom: 0;
+    padding: var(--space-s);
+    line-height: 1;
+  }
+
+  .europcom-hero-image h2.europcom-page-title {
+    color: white !important;
+    line-height: 1 !important;
+  }
+}
+
+
+
+.p-y {
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+}
+
+/* VIdeo */
+.wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Breadcrumb */
+.europcom-breadcrumb {
+  margin-top: var(--space-m);
+}
+
+.europcom-breadcrumb ol {
+  background-color: var(--color-secondary-100);
+  border: solid 1px var(--color-secondary-200);
+  display: flex;
+  padding: var(--space-2xs);
+  list-style: none;
+}
+
+nav.europcom-breadcrumb li {
+  padding-right: var(--space-s);
+}
+
+nav.europcom-breadcrumb li+li::before {
+  display: inline-block;
+  transform: rotate(15deg);
+  border-right: 0.1em solid currentcolor;
+  height: 0.8em;
+  content: "";
+  margin-left: var(--space-xs);
+
+}
+
+.europcom-breadcrumb a {
+  text-decoration: underline;
+}
+
+/* Page content */
+.europcom-pagecontent__date {
+  display: block;
+  text-transform: uppercase;
+  font-size: var(--step--1);
+  padding-bottom: var(--space-xs);
+}
+
+.europcom-pagecontent-wrapper {
+  max-width: 800px;
 }
