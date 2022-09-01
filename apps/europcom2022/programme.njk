@@ -11,7 +11,7 @@ eleventyNavigation:
   {% for item in program %}
   <li class="europcom-program__item">
     <span class="europcom-program__item__date">{{ item.date }}</span>
-    <h3 class="europcom-program__item__title"><a href="{{ '/item' | url }}">{{ item.title }}</a></h3>
+    <h3 class="europcom-program__item__title">{% if item.type %}<span class="europcom-program__item__session">{{ item.type }} /</span> {% endif %}<a href="/programme/{{ item.title | slug | url }} ">{{ item.title }}</a></h3>
     <p>{{ item.description }}</p>
     <ul class="europcom-program__speakerlist">
       {% for speaker in item.speakers %}

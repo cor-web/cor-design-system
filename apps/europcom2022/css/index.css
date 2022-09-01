@@ -69,6 +69,7 @@
 
   --color-primary: #003753;
   --color-secondary: #CAE7EE;
+  --color-third: #6AA842;
 
   --color-primary-100: #ced8de;
   --color-primary-200: #a5b8c2;
@@ -177,7 +178,7 @@ p {
   gap: var(--space-3xs);
   align-items: center;
   padding: var(--space-2xs) var(--space-m);
-  font-size: var(--step--1);
+  font-size: var(--step--2);
   font-weight: bold;
 }
 
@@ -313,7 +314,7 @@ a.nav-link.active {
 .navbar-expand-lg .navbar-nav a.nav-link.active,
 .navbar-expand-lg .navbar-nav a.nav-link:active,
 .navbar-expand-lg .navbar-nav a.nav-link:focus {
-  font-size: var(--step--1);
+  font-size: var(--step2);
   padding: var(--space-s);
 }
 
@@ -416,9 +417,17 @@ header#title .twitter,
 .europcom-quote {
   background-color: var(--color-primary);
   color: white;
-  padding-top: var(--space-2xl);
-  padding-bottom: var(--space-2xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
   font-weight: 200;
+  display: grid;
+  place-content: center;
+}
+
+.ec-europcom-blockquote {
+  font-size: var(--step-2);
+  margin: 0;
+  padding: 0;
 }
 
 /* Themes */
@@ -443,6 +452,10 @@ header#title .twitter,
 }
 
 /* Utilities */
+.text-m {
+  font-size: var(--text-m);
+}
+
 .text-xl {
   font-size: var(--text-xl);
 }
@@ -522,12 +535,12 @@ header#title .twitter,
 }
 
 .theme-title {
-  font-size: var(--step-3);
+  font-size: var(--step-2);
 }
 
 .theme-description {
-  font-size: var(--text-xl);
-  line-height: 1.2;
+  font-size: var(--text-m);
+  line-height: 1.4;
 }
 
 @media screen and (min-width: 800px) {
@@ -567,6 +580,11 @@ header#title .twitter,
 .europcom-program__item__date {
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.europcom-program__item__session {
+  font-weight: 800;
+  color: var(--color-third);
 }
 
 .europcom-program__item__title a {

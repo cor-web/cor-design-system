@@ -615,34 +615,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm',
 			<div class="header">
 				<header id="logos" class="container noindex header-europcom">
 
-							<a id="ctl00_Logo" href="/europcom/2022/">
+							<a id="ctl00_Logo" href="{{ '/' | url }}">
 								<img id="ctl00_onetidHeadbnnr2" class="CoRLogo" name="onetidHeadbnnr0" src="{{metadata.url}}/Style Library/EuropCom/img/europcomlogo.svg" alt="EuroPCom logo"></a>
 				
 
           <!-- NAVIGATION start -->
-          <div id="desktop-navigation">
-            <nav class="navbar navbar-expand-lg">
-              <div class="collapse navbar-collapse">
-                <div class=" navbar-nav">
-                  <div class="nav-item">
-                    <a id="ctl00_navigationProgramme" class="nav-link" href="{{ 'programme' | url }}"><span class="ms-splinkbutton-text">Programme</span></a>
-                  </div>							
-                  <div class="nav-item">
-                    <a id="ctl00_navigationSpeakers" class="nav-link" href="/europcom/2022/Pages/Contributors.aspx"><span class="ms-splinkbutton-text">Contributors</span></a>
-                  </div>
-                  <div class="nav-item" style="display: none;">
-                    <a id="ctl00_navigationMaterial" class="nav-link" href="/europcom/2022/Pages/Material.aspx"><span class="ms-splinkbutton-text">Material</span></a>
-                  </div>							
-                  <div class="nav-item">
-                    <a id="ctl00_navigationFaq" class="nav-link" href="/europcom/2022/Pages/faq.aspx"><span class="ms-splinkbutton-text">FAQ</span></a>
-                  </div>
-                  <div class="nav-item">
-                    <a id="ctl00_navigationFaq" class="europcom-button europcom-button--primary" href="/europcom/2022/Pages/faq.aspx"><span class="ms-splinkbutton-text">Register</span></a>
-                  </div>
-                </div>
-              </div>
-            </nav>	
-          </div>
+          {% include 'navdesktop.njk' %}
     <!-- NAVIGATION end -->
 				</header>			
 				<script>
@@ -689,8 +667,8 @@ $("a[id$='navigationMaterial']").parent().hide();
 	
         {% if hero %}
         <div class="europcom-hero-image">
-          <img class="img" src="http://unsplash.it/1200/600?random&gravity=center" alt="" />
-				  <div class="container"><h2 class="europcom-page-title">{{ title }}</h2></div>
+          <img class="img" src=" {{ '/img/background.jpg' | url }}" alt="" />
+				  <div class="container"><h2 class="europcom-page-title">{{ program.title }}</h2></div>
         </div>
         {% else %}
         <div class="container"><h2 class="europcom-page-title">{{ title }}</h2></div>
