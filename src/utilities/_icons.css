@@ -1,12 +1,13 @@
 .icon {
   display: inline-flex;
   gap: var(--space-3xs);
-  align-items: center;
+  align-items: baseline;
 }
 
 .icon-before:before,
 .icon-after:after {
   content: "";
+  flex-shrink: 0;
   vertical-align: -0.125em;
   -webkit-mask-image: var(--icon);
   mask-image: var(--icon);
