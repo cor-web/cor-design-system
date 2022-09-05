@@ -124,7 +124,7 @@
 }
 
 
-html {
+#CorContainer {
   all: unset;
   accent-color: var(--link-color);
   background-color: var(--body-background-color);
@@ -135,11 +135,7 @@ html {
   caret-color: var(--link-color);
 }
 
-body {
-  font-family: var(--font-family);
-}
-
-img {
+#CorContainer img {
   display: block;
   position: relative;
   max-width: 100%;
@@ -152,16 +148,16 @@ img {
 .h4,
 .h5,
 .h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#CorContainer h1,
+#CorContainer h2,
+#CorContainer h3,
+#CorContainer h4,
+#CorContainer h5,
+#CorContainer h6 {
   font-family: var(--font-family);
 }
 
-p {
+#CorContainer p {
   max-inline-size: var(--measure);
 }
 
@@ -228,12 +224,12 @@ a.europcom-button:visited {
   margin-block-start: var(--space-s, 1.5rem);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+#CorContainer h1,
+#CorContainer h2,
+#CorContainer h3,
+#CorContainer h4,
+#CorContainer h5,
+#CorContainer h6,
 .ms-h1,
 .ms-h2,
 .ms-h3,
