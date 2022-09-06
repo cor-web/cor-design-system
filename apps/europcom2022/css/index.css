@@ -633,6 +633,7 @@ header#title .twitter,
   text-decoration: underline;
 }
 
+
 /* Item page */
 .europcom-hero-image {
   position: relative;
@@ -745,4 +746,8 @@ nav.europcom-breadcrumb li+li::before {
   font-size: var(--step--2);
   line-height: 1.5;
   color: var(--color-primary-500);
+}
+
+#CorContainer .slick-slide {
+  height: auto;
 }
