@@ -1,20 +1,16 @@
 [
   {
-    "date": "Monday 12 october,  9:45 - 10:00",
+    "date": "Friday 28 october,  9:45 - 10:00",
     "title": "Welcome",
-    "description": "Nisi eu nisi exercitation quis tempor duis aliquip incididunt minim dolore sit tempor pariatur nisi. Nostrud ipsum exercitation irure irure enim anim et qui esse amet mollit laborum qui aute. Magna amet esse pariatur nisi sunt quis est. Quis dolore deserunt sunt cupidatat ullamco cillum deserunt.",
+    "description": "",
     "speakers": [
       {
-        "name": "Jane Doe",
-        "title": "CEO at My incredible company"
+        "name": "Andrea Bodova",
+        "title": "Head of Unit of the ENVE commission of the European Committee of the Regions (CoR)"
       },
       {
-        "name": "Jane Doe",
-        "title": "CEO at My incredible company"
-      },
-      {
-        "name": "Jane Doe",
-        "title": "CEO at My incredible company"
+        "name": "David Crous",
+        "title": "\"Green Deal Going Local\" campaign manager at the CoR."
       }
     ]
   },
@@ -22,7 +18,7 @@
     "date": "Monday 12 october, 10:00 - 11:30",
     "type": "Session",
     "title": "Communicating climate: COP27, what s at stake",
-    "description": "Nisi eu nisi exercitation quis tempor duis aliquip incididunt minim dolore sit tempor pariatur nisi. Nostrud ipsum exercitation irure irure enim anim et qui esse amet mollit laborum qui aute. Magna amet esse pariatur nisi sunt quis est. Quis dolore deserunt sunt cupidatat ullamco cillum deserunt.",
+    "description": "The 27th Conference of the Parties (COP27) of the United Nations Framework Convention on Climate Change (UNFCCC) will take place on 6-18 November in Sharm El-Sheikh, World leaders will gather to negotiate the next steps in global climate action and the implementation of the Paris Agreement. This session will look at the stakes of the the next UN climate summit with the purpose of identifying current bottlenecks and discern the communication dynamics behind global climate negotiations, both in terms of wording compromises of climate agreements and the challenges it implies for public understanding. Are global climate negotiations just a vain battle of words? How do climate conclusions and in particular agreed terms actually affect climate action on the ground? How to ensure public accountability and overcome the lack of public understanding of global climate negotiations? These are some of the questions that will be raised during this session as to guide us through a discussion with experts in global climate summits.",
     "speakers": [
       {
         "name": "Jane Doe",
@@ -42,7 +38,7 @@
     "date": "Monday 12 october,  10:30 - 12:30",
     "type": "Session",
     "title": "Engaging citizens in climate action",
-    "description": "Nisi eu nisi exercitation quis tempor duis aliquip incididunt minim dolore sit tempor pariatur nisi. Nostrud ipsum exercitation irure irure enim anim et qui esse amet mollit laborum qui aute. Magna amet esse pariatur nisi sunt quis est. Quis dolore deserunt sunt cupidatat ullamco cillum deserunt.",
+    "description": "Reversing global warming by mitigating and adapting to the impact climate change is having worldwide requires a drastic and massive social and economic transformation across the planet. The active engagement of all political, economic and social actors is needed to transform to sustainable modes of economic development and lifestyles in both developed and developing countries. How do we move from awareness raising to actual engagement? What communication techniques, strategies and campaigns have proofed to be effective in behavioural change and in boosting citizens, public authorities and businesses engagement in climate action? This session will provide concrete examples of communication campaigns, hands-on techniques and approaches that have succeeded in effectively boosting citizens, business or public authorities' engagement in delivering climate action.",
     "speakers": [
       {
         "name": "Jane Doe, CEO at My incredible company"

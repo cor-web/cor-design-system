@@ -19,6 +19,19 @@
 }
 
 :root {
+  --f--5-min: 8.44;
+  --f--5-max: 7.86;
+  --step--5: calc(((var(--f--5-min) / 16) * 1rem) + (var(--f--5-max) - var(--f--5-min)) * var(--fluid-bp));
+
+  --f--4-min: 10.13;
+  --f--4-max: 9.83;
+  --step--4: calc(((var(--f--4-min) / 16) * 1rem) + (var(--f--4-max) - var(--f--4-min)) * var(--fluid-bp));
+
+  --f--3-min: 12.15;
+  --f--3-max: 12.29;
+  --step--3: calc(((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) * var(--fluid-bp));
+
+
   --f--2-min: 14.58;
   --f--2-max: 15.36;
   --step--2: calc(((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) * var(--fluid-bp));
@@ -242,7 +255,7 @@ a.europcom-button:visited {
 
 
 /* header-europcom */
-.CoRLogo {
+#CorContainer .CoRLogo {
   max-width: 100px;
 }
 
@@ -374,8 +387,9 @@ header#title .twitter,
   all: unset;
 }
 
-.europcom-page-title {
+#CorContainer .europcom-page-title {
   font-size: var(--step-5);
+  margin-top: var(--space-xl);
 }
 
 .europcom-hero h2 {
@@ -707,4 +721,28 @@ nav.europcom-breadcrumb li+li::before {
 
 .europcom-pagecontent-wrapper {
   max-width: 800px;
+}
+
+/* Speakers */
+.speakerDescription {
+  color: var(--color-primary);
+  text-align: left;
+  margin-top: var(--space-2xs);
+  font-weight: 100;
+}
+
+.speaker_role {
+  font-size: var(--step--3);
+}
+
+.speakerDescription .speaker_name {
+  font-weight: 500;
+  font-size: var(--step--1);
+  color: var(--color-primary-600);
+}
+
+.speakerDescription .speaker_jobTitle {
+  font-size: var(--step--2);
+  line-height: 1.5;
+  color: var(--color-primary-500);
 }
