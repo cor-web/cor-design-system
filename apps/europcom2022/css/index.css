@@ -259,6 +259,12 @@ a.europcom-button:visited {
   max-width: 100px;
 }
 
+@media (max-width: 992px) {
+  #CorContainer .CoRLogo {
+    display: none !important;
+  }
+}
+
 #logos.header-europcom {
   align-items: center;
   display: flex;
@@ -597,7 +603,8 @@ header#title .twitter,
   color: var(--color-third);
 }
 
-.europcom-program__item__title a {
+.europcom-program__item__title a,
+.europcom-program__item__title a:visited {
   color: white !important;
   text-decoration: underline;
 }
