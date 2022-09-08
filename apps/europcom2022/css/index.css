@@ -609,6 +609,11 @@ header#title .twitter,
   text-decoration: underline;
 }
 
+.europcom-program__item__title a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
 .europcom-program__speakerlist {
   display: grid;
   gap: var(--space-s);
