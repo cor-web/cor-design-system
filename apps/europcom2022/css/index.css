@@ -571,9 +571,31 @@ header#title .twitter,
   padding: 0;
 }
 
+.europcom-pagecontent-wrapper:before {
+  background-size: cover;
+  background-image: url("/img/internalBG.png");
+  display: block;
+  content: "";
+  height: 130px;
+  margin-top: -50px;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 800px) {
+  .europcom-pagecontent-wrapper:before {
+    background-size: cover;
+    background-image: url("/img/internalBG.png");
+    display: block;
+    content: "";
+    height: 200px;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .europcom-program {
-    padding: var(--space-2xl) var(--space-3xl);
+    padding: var(--space-m) var(--space-3xl);
   }
 }
 
