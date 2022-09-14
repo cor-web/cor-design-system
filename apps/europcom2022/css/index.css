@@ -650,6 +650,11 @@ header#title .twitter,
   grid-template-columns: var(--space-l) 1fr;
 }
 
+.europcom-program__speaker a,
+.europcom-program__speaker a:visited {
+  color: white !important;
+}
+
 .europcom-program__avatar img {
   border-radius: 100%;
 }
@@ -663,9 +668,21 @@ header#title .twitter,
   font-size: var(--text-xl);
 }
 
+
 .europcom-program__link span {
   text-decoration: underline;
 }
+
+.europcom-program__link,
+.europcom-program__link:hover {
+  color: white !important;
+}
+
+.europcom-program__link:hover,
+.europcom-program__link:hover span {
+  text-decoration: none;
+}
+
 
 
 /* Item page */

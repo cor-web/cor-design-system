@@ -1,1 +1,1 @@
-import "@cor-web/styles/dist/all.css";
+import "@cor-web/styles/src/all.css";

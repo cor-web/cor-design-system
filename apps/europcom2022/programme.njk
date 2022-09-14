@@ -20,7 +20,7 @@ eleventyNavigation:
           <img class="img" src='https://dummyimage.com/100x100.gif' alt='portrait of {{ speaker.name }}'/>
         </div>
         <div>
-          <strong>{{ speaker.name }}</strong><br/>
+          <a href="{{ 'contributors' | url }}"><strong>{{ speaker.name }}</strong></a><br/>
           {{ speaker.title }}
         </div>
       </li>

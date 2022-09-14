@@ -665,13 +665,13 @@ $("a[id$='navigationMaterial']").parent().hide();
 
 	
 	
-        {% if hero %}
+        {% if program.image %}
         <div class="europcom-hero-image">
-          <img class="img" src=" {{ '/img/background.jpg' | url }}" alt="" />
+          <img class="img" src=" {{ program.image }} " alt="" />
 				  <div class="container"><h2 class="europcom-page-title">{{ program.title }}</h2></div>
         </div>
         {% else %}
-        <div class="container"><h2 class="europcom-page-title">{{ title }}</h2></div>
+        <div class="container"><h2 class="europcom-page-title">{% if program.title %}{{ program.title }}{% endif %}{{ title }}</h2></div>
         {% endif %}
 
         <!-- 
