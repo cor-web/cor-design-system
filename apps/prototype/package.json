@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.14",
-    "@11ty/eleventy-plugin-vite": "^1.0.0",
-    "@vitejs/plugin-legacy": "^1.8.1",
+    "@11ty/eleventy": "^2.0.0-canary.15",
+    "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
+    "@vitejs/plugin-legacy": "^2.1.0",
     "@cor-web/styles": "workspace:*",
     "@cor-web/components": "workspace:*"
   },

@@ -647,7 +647,7 @@ header#title .twitter,
   align-items: center;
   display: grid;
   gap: var(--space-s);
-  grid-template-columns: var(--space-l) 1fr;
+  grid-template-columns: var(--space-2xl) 1fr;
 }
 
 .europcom-program__speaker a,
@@ -780,6 +780,7 @@ nav.europcom-breadcrumb li+li::before {
   color: var(--color-primary);
   text-align: left;
   margin-top: var(--space-2xs);
+  font-family: var(--font-family);
   font-weight: 100;
 }
 
