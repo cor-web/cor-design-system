@@ -650,6 +650,14 @@ header#title .twitter,
   grid-template-columns: var(--space-2xl) 1fr;
 }
 
+.europcom-program__speaker a {
+  text-decoration: underline;
+}
+
+.europcom-program__speaker a:hover {
+  text-decoration: none;
+}
+
 .europcom-program__speaker a,
 .europcom-program__speaker a:visited {
   color: white !important;
