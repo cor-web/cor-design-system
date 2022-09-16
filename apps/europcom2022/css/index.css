@@ -395,7 +395,6 @@ header#title .twitter,
 
 #CorContainer .europcom-page-title {
   font-size: var(--step-5);
-  margin-top: var(--space-xl);
 }
 
 .europcom-hero h2 {
@@ -573,7 +572,7 @@ header#title .twitter,
 
 .europcom-pagecontent-wrapper:before {
   background-size: cover;
-  background-image: url("/img/internalBG.png");
+  background-image: url("https://cor.europa.eu/Style Library/EuropCom/img/2022/internalBG.png ");
   display: block;
   content: "";
   height: 130px;
@@ -583,10 +582,6 @@ header#title .twitter,
 
 @media screen and (min-width: 800px) {
   .europcom-pagecontent-wrapper:before {
-    background-size: cover;
-    background-image: url("/img/internalBG.png");
-    display: block;
-    content: "";
     height: 200px;
     margin-top: -50px;
     margin-left: -100px;
@@ -789,7 +784,7 @@ nav.europcom-breadcrumb li+li::before {
   text-align: left;
   margin-top: var(--space-2xs);
   font-family: var(--font-family);
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .speaker_role {
@@ -810,4 +805,15 @@ nav.europcom-breadcrumb li+li::before {
 
 #CorContainer .slick-slide {
   height: auto;
+}
+
+@media screen and (max-width: 900px) {
+
+  #CorContainer .og-fullimg img {
+    display: none;
+  }
+
+  .og-fullimg {
+    display: none !important;
+  }
 }
