@@ -2,3 +2,6 @@
   NPM_FLAGS = "--version"
 [build]
   command = "npx pnpm install --store=node_modules/.pnpm-store && npx pnpm build"
+  
+  # Useful when dependency update
+  ignore = "/bin/false"
