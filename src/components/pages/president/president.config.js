@@ -24,6 +24,20 @@ module.exports = {
     poster: {
       src: "https://cor.europa.eu/en/about/president/PublishingImages/tzitzikostas.png",
     },
+    agenda: [
+      {
+        date: "28 juillet 2022",
+        text: "Adipisicing non tempor minim deserunt eiusmod voluptate amet officia cupidatat consequat adipisicing."
+      },
+      {
+        date: "28 juillet 2022",
+        text: "Adipisicing non tempor minim deserunt eiusmod voluptate amet officia cupidatat consequat adipisicing."
+      },
+      {
+        date: "28 juillet 2022",
+        text: "Adipisicing non tempor minim deserunt eiusmod voluptate amet officia cupidatat consequat adipisicing."
+      }
+    ],
     members: memberData,
     documents: [
       {

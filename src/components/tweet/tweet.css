@@ -1,0 +1,32 @@
+.cor-tweet {
+  --cor-tweet-quote-color: var(--oc-gray-7);
+  --cor-tweet-space: var(--space-2xs);
+
+  align-items: center;
+  display: grid;
+  gap: var(--cor-tweet-space);
+  grid-auto-flow: dense;
+}
+
+.cor-tweet blockquote {
+  color: var(--cor-tweet-quote-color);
+  font-style: italic;
+}
+
+.cor-tweet blockquote:before {
+  --color: red;
+  content: var(--icon-twitter);
+  display: block;
+  height: 31px;
+  width: 35px;
+}
+
+@media screen and (min-width: 500px) {
+  .cor-tweet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cor-tweet img {
+    grid-column: 2 / -1;
+  }
+}
