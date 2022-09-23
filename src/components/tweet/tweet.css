@@ -3,14 +3,24 @@
   --cor-tweet-space: var(--space-2xs);
 
   align-items: center;
+  border: solid 1px var(--oc-gray-4);
+  border-width: 1px 0 1px 0;
   display: grid;
   gap: var(--cor-tweet-space);
   grid-auto-flow: dense;
+  padding-bottom: var(--space-xs);
+}
+
+.cor-tweet__quote-container {
+  display: grid;
+  gap: var(--space-2xs);
+  justify-items: center;
 }
 
 .cor-tweet blockquote {
   color: var(--cor-tweet-quote-color);
   font-style: italic;
+  text-align: center;
 }
 
 .cor-tweet blockquote:before {
@@ -18,12 +28,20 @@
   content: var(--icon-twitter);
   display: block;
   height: 31px;
+  margin: 0 auto;
   width: 35px;
 }
 
-@media screen and (min-width: 500px) {
+.cor-tweet a {
+  font-size: var(--step--3);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
   .cor-tweet {
     grid-template-columns: 1fr 1fr;
+    padding: 0;
+    padding-left: var(--space-xs);
   }
 
   .cor-tweet img {
