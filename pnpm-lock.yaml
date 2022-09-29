@@ -13,6 +13,16 @@ importers:
       pnpm: 7.9.0
       turbo: 1.2.16
 
+  apps/debug:
+    specifiers:
+      '@11ty/eleventy': ^2.0.0-canary.16
+      '@11ty/eleventy-plugin-webc': ^0.4.0
+      '@11ty/is-land': ^2.0.3
+    dependencies:
+      '@11ty/eleventy': 2.0.0-canary.16
+      '@11ty/eleventy-plugin-webc': 0.4.0
+      '@11ty/is-land': 2.0.3
+
   apps/europcom2022:
     specifiers:
       '@11ty/eleventy': ^1.0.2
@@ -116,9 +126,10 @@ importers:
 
   apps/prototype:
     specifiers:
-      '@11ty/eleventy': ^2.0.0-canary.15
+      '@11ty/eleventy': ^2.0.0-canary.16
       '@11ty/eleventy-navigation': ^0.3.3
       '@11ty/eleventy-plugin-vite': ^2.0.0-canary.2
+      '@11ty/eleventy-plugin-webc': ^0.4.0
       '@cor-web/components': workspace:*
       '@cor-web/styles': workspace:*
       '@vitejs/plugin-legacy': ^2.1.0
@@ -129,13 +140,14 @@ importers:
       tailwindcss: ^3.0.24
       vite: ^3.0.0
     dependencies:
-      '@11ty/eleventy': 2.0.0-canary.15
+      '@11ty/eleventy': 2.0.0-canary.16
+      '@11ty/eleventy-navigation': 0.3.3
       '@11ty/eleventy-plugin-vite': 2.0.0-canary.2
+      '@11ty/eleventy-plugin-webc': 0.4.0
       '@cor-web/components': link:../../packages/components
       '@cor-web/styles': link:../../packages/styles
       '@vitejs/plugin-legacy': 2.1.0_vite@3.0.5
     devDependencies:
-      '@11ty/eleventy-navigation': 0.3.3
       del: 6.1.1
       npm-run-all: 4.1.5
       postcss-import: 14.1.0
@@ -275,7 +287,7 @@ packages:
     resolution: {integrity: sha512-O5C/NbDeTBnHQvDYZDr0Va6a7mEzifPUL1XRiqyKIAQqXZJsX/2K13PFLhX7t6kQRT1w6D0TSQyiT8skXbgWKA==}
     dependencies:
       dependency-graph: 0.11.0
-    dev: true
+    dev: false
 
   /@11ty/eleventy-navigation/0.3.5:
     resolution: {integrity: sha512-4aKW5aIQDFed8xs1G1pWcEiFPcDSwZtA4IH1eERtoJ+Xy+/fsoe0pzbDmw84bHZ9ACny5jblENhfZhcCxklqQw==}
@@ -311,6 +323,18 @@ packages:
       - sass
       - stylus
       - terser
+    dev: false
+
+  /@11ty/eleventy-plugin-webc/0.4.0:
+    resolution: {integrity: sha512-G/mHFBY0xx6lonmM9CLX9gtwTCwdR5h1E3YZ0vbeAlhKbP6A3yM5RUUSMEUYm/eg8F+wbUCoE85AtmcTllPivg==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@11ty/eleventy': 2.0.0-canary.16
+      '@11ty/webc': 0.4.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
     dev: false
 
   /@11ty/eleventy-utils/1.0.1:
@@ -408,8 +432,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@11ty/eleventy/2.0.0-canary.15:
-    resolution: {integrity: sha512-9FghghhTzX3lkT67tAuD/m2n4fRkcQ4raM9SciqoOiZDWMx8B5g9nsxWDl/gSxaamsvANawmD5yvWPbqGA5wSg==}
+  /@11ty/eleventy/2.0.0-canary.16:
+    resolution: {integrity: sha512-6HXaxmzTYDW0ihzasfa3+SbGeHAF6j7FFwgOnx2cjhwvcFAV2Ci9cZk/lQN9pHCilaI6OgcwOThC7hzjpbro1g==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
@@ -424,7 +448,7 @@ packages:
       debug: 4.3.4
       dependency-graph: 0.11.0
       ejs: 3.1.8
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       graceful-fs: 4.2.10
       gray-matter: 4.0.3
       hamljs: 0.6.2
@@ -432,7 +456,7 @@ packages:
       is-glob: 4.0.3
       iso-639-1: 2.1.15
       kleur: 4.1.5
-      liquidjs: 9.42.0
+      liquidjs: 9.41.0
       lodash: 4.17.21
       luxon: 3.0.3
       markdown-it: 13.0.1
@@ -456,6 +480,10 @@ packages:
       - utf-8-validate
     dev: false
 
+  /@11ty/is-land/2.0.3:
+    resolution: {integrity: sha512-XFZbODzs0kRbo4KEnSmCGmTMaqQhfKxFRMeA2wQiqqLq7P85RtHMbKhrLrR+nYmcwJUyMu/SUgl7b4B9+nnTJw==}
+    dev: false
+
   /@11ty/webc/0.1.1:
     resolution: {integrity: sha512-CK7QezvQZnzYUeSjFLmnLDE0/q+CbnKvjyb78Qnc46zDMJ84PKDJCXrS2xkv07kkPqpfSyQqAhfsQVGrgsP2Mw==}
     engines: {node: '>=14'}
@@ -466,6 +494,18 @@ packages:
       lodash.get: 4.4.2
       parse5: 7.1.1
     dev: true
+
+  /@11ty/webc/0.4.0:
+    resolution: {integrity: sha512-jNfxmzpJLfZXQd/gK/o0T2+L/ttMY8BEYuC02K3VV770ZcmjJaIl07EPCYp13etnL4qxL4QYTXFnRg3AgQLKCw==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@11ty/eleventy-utils': 1.0.1
+      css-tree: 2.2.1
+      dependency-graph: 0.11.0
+      entities: 4.4.0
+      fast-glob: 3.2.12
+      parse5: 7.1.1
+    dev: false
 
   /@allmarkedup/fang/2.0.0:
     resolution: {integrity: sha512-UeQfpC6uRM5muHIC/qmWwERa59UT8GX6VSYM0a21G4URdaStdYrfrfWGj2LQJ8xLVCkMRQ7TS68MTJzFAau5Yw==}
@@ -9383,7 +9423,6 @@ packages:
     dependencies:
       mdn-data: 2.0.28
       source-map-js: 1.0.2
-    dev: true
 
   /css-what/6.1.0:
     resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
@@ -10304,7 +10343,6 @@ packages:
   /entities/4.4.0:
     resolution: {integrity: sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==}
     engines: {node: '>=0.12'}
-    dev: true
 
   /envinfo/7.8.1:
     resolution: {integrity: sha512-/o+BXHmB7ocbHEAs6F2EnG0ogybVVUdkRunTT2glZU9XAaGmhqskrvKwqXuDfNjEO0LZKWdejEEpnq8aM0tOaw==}
@@ -11591,6 +11629,16 @@ packages:
       merge2: 1.4.1
       micromatch: 4.0.5
 
+  /fast-glob/3.2.12:
+    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.5
+
   /fast-json-stable-stringify/2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
     dev: true
@@ -11961,6 +12009,17 @@ packages:
         optional: true
     dependencies:
       debug: 4.3.2
+
+  /follow-redirects/1.15.1_debug@4.3.4:
+    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dependencies:
+      debug: 4.3.4
 
   /for-in/1.0.2:
     resolution: {integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==}
@@ -12473,7 +12532,7 @@ packages:
       '@types/glob': 7.2.0
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       glob: 7.2.3
       ignore: 5.2.0
       merge2: 1.4.1
@@ -12497,7 +12556,7 @@ packages:
     dependencies:
       array-union: 3.0.1
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 4.0.0
@@ -13024,7 +13083,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1_debug@4.3.2
+      follow-redirects: 1.15.1_debug@4.3.4
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -14231,6 +14290,12 @@ packages:
     hasBin: true
     dev: false
 
+  /liquidjs/9.41.0:
+    resolution: {integrity: sha512-Q1EfRoVYSFmbaTzEHoz39/dMNjPec8uJGHvQiHyzeMp14M9E40a6pOpmDHW009a6qHcjisZyOH96O6No2+1bBQ==}
+    engines: {node: '>=4.8.7'}
+    hasBin: true
+    dev: false
+
   /liquidjs/9.42.0:
     resolution: {integrity: sha512-krvhwGFrMCMGhybGkxJIvlWVVnoCSpYCn7NhEN43+uvlg2vOkYWpq8be+L3NMlOfwe4ZrKQ7hCh1EmS4yhLKow==}
     engines: {node: '>=4.8.7'}
@@ -14780,7 +14845,6 @@ packages:
 
   /mdn-data/2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
-    dev: true
 
   /mdurl/1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
@@ -16338,7 +16402,6 @@ packages:
     resolution: {integrity: sha512-kwpuwzB+px5WUg9pyK0IcK/shltJN5/OVhQagxhCQNtT9Y9QRZqNY2e1cmbu/paRh5LMnz/oVTVLBpjFmMZhSg==}
     dependencies:
       entities: 4.4.0
-    dev: true
 
   /parseurl/1.3.3:
     resolution: {integrity: sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==}

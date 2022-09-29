@@ -14,8 +14,8 @@
         "description": "Amet est laborum sunt cupidatat irure qui Lorem laboris pariatur aute fugiat. Excepteur dolor labore veniam commodo aute do amet sunt in labore amet amet cupidatat tempor. Veniam consequat culpa deserunt adipisicing quis commodo officia duis. Dolore enim ad duis proident nisi sit fugiat et qui officia adipisicing eiusmod.",
         "subnav": [
           {
-            "text": "CIVEX",
-            "description": "Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip.",
+            "text": "Excepteur est irure laborum nostrud fugiat reprehenderit magna minim adipisicing incididunt.",
+            "description": "Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip. Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip. Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip.",
             "link": "test.be",
             "picture": "https://picsum.photos/300/200"
           },
@@ -56,7 +56,6 @@
   {
     "text": "Our work",
     "link": "test.be",
-
     "description": "Amet est laborum sunt cupidatat irure qui Lorem laboris pariatur aute fugiat. Excepteur dolor labore veniam commodo aute do amet sunt in labore amet amet cupidatat tempor. Veniam consequat culpa deserunt adipisicing quis commodo officia duis. Dolore enim ad duis proident nisi sit fugiat et qui officia adipisicing eiusmod.",
     "subnav": [
       {

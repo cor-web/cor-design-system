@@ -1,5 +1,6 @@
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+// const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
 
 module.exports = function (eleventyConfig) {
@@ -7,8 +8,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setServerPassthroughCopyBehavior("copy");
 
 
-  eleventyConfig.addPlugin(EleventyVitePlugin);
-
+  // eleventyConfig.addPlugin(EleventyVitePlugin);
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: "_includes/webc/*.webc"
+  });
 
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
