@@ -1,3 +1,4 @@
+import './components/embed/embed.js';
 import './components/expander/expander.js';
 import './components/expandinglist/expandinglist.js';
 // import './components/gallery/gallery.js';
