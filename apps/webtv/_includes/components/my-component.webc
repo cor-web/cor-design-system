@@ -1,0 +1,30 @@
+
+
+<h1>This is a video player</h1>
+
+<video 
+  poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" >
+  <source
+    src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+    type="video/webm">
+  <source
+    src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
+    type="video/mp4">
+  <source
+    src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
+    type="video/ogg">
+  <track kind="subtitles" src="toto.en.vtt" srclang="en"
+    label="Anglais">
+  Votre navigateur ne permet pas de lire les vidéos HTML5.
+</video>
+
+<style>
+  my-component {
+    border: solid 1px red;
+    display: block;
+  }
+
+  video {
+    height: 80vh;
+  }
+</style>

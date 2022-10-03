@@ -1,4 +1,6 @@
-import { WebC } from "@11ty/webc";
+(async function () {
+  const { WebC } = await import("@11ty/webc");
+})();
 
 page.setInputPath("cor-button.webc");
 

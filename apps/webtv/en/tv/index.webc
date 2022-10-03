@@ -1,0 +1,25 @@
+---
+layout: layouts/tv.webc
+title: TV
+templateClass: tmpl-tv
+webc:
+	components: "./webc/*.webc"
+---
+
+This is your TV
+1
+<cor-button webc:import="../../node_modules/@cor-web/components/button/cor-button.webc">TTT</cor-button>
+21
+{% edge %}
+The content inside of the `edge` shortcode is generated on the Edge.
+<my-clock></my-clock>
+
+
+
+<pre>
+{{ eleventy | dump(2) }}
+</pre>
+{% endedge %}
+
+before button
+<cor-button>Bim</cor-button>

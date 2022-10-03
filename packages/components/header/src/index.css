@@ -659,6 +659,8 @@ cor-header-toolbar button svg path {
 
   .cor-languages-navigation ul a {
     color: var(--c-eu);
+    display: flex;
+    gap: var(--space-4xs);
   }
 }
 

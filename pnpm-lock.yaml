@@ -13,16 +13,6 @@ importers:
       pnpm: 7.9.0
       turbo: 1.2.16
 
-  apps/debug:
-    specifiers:
-      '@11ty/eleventy': ^2.0.0-canary.16
-      '@11ty/eleventy-plugin-webc': ^0.4.0
-      '@11ty/is-land': ^2.0.3
-    dependencies:
-      '@11ty/eleventy': 2.0.0-canary.16
-      '@11ty/eleventy-plugin-webc': 0.4.0
-      '@11ty/is-land': 2.0.3
-
   apps/europcom2022:
     specifiers:
       '@11ty/eleventy': ^1.0.2
@@ -155,6 +145,28 @@ importers:
       tailwindcss: 3.0.24
       vite: 3.0.5
 
+  apps/webtv:
+    specifiers:
+      '@11ty/eleventy': ^2.0.0-canary.16
+      '@11ty/eleventy-navigation': ^0.3.5
+      '@11ty/eleventy-plugin-rss': ^1.2.0
+      '@11ty/eleventy-plugin-syntaxhighlight': ^4.1.0
+      '@11ty/eleventy-plugin-webc': ^0.4.0
+      '@cor-web/components': workspace:*
+      luxon: ^3.0.1
+      markdown-it-anchor: ^8.6.4
+      rosetta: ^1.1.0
+    dependencies:
+      '@11ty/eleventy': 2.0.0-canary.16
+      '@11ty/eleventy-navigation': 0.3.5
+      '@11ty/eleventy-plugin-rss': 1.2.0
+      '@11ty/eleventy-plugin-syntaxhighlight': 4.1.0
+      '@11ty/eleventy-plugin-webc': 0.4.0
+      '@cor-web/components': link:../../packages/components
+      luxon: 3.0.3
+      markdown-it-anchor: 8.6.5
+      rosetta: 1.1.0
+
   config:
     specifiers: {}
 
@@ -167,7 +179,10 @@ importers:
       '@11ty/webc': 0.1.1
 
   packages/components/button:
-    specifiers: {}
+    specifiers:
+      '@11ty/webc': ^0.4.5
+    devDependencies:
+      '@11ty/webc': 0.4.5
 
   packages/components/header:
     specifiers:
@@ -330,7 +345,7 @@ packages:
     engines: {node: '>=14.18'}
     dependencies:
       '@11ty/eleventy': 2.0.0-canary.16
-      '@11ty/webc': 0.4.0
+      '@11ty/webc': 0.4.5
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -480,10 +495,6 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@11ty/is-land/2.0.3:
-    resolution: {integrity: sha512-XFZbODzs0kRbo4KEnSmCGmTMaqQhfKxFRMeA2wQiqqLq7P85RtHMbKhrLrR+nYmcwJUyMu/SUgl7b4B9+nnTJw==}
-    dev: false
-
   /@11ty/webc/0.1.1:
     resolution: {integrity: sha512-CK7QezvQZnzYUeSjFLmnLDE0/q+CbnKvjyb78Qnc46zDMJ84PKDJCXrS2xkv07kkPqpfSyQqAhfsQVGrgsP2Mw==}
     engines: {node: '>=14'}
@@ -495,8 +506,8 @@ packages:
       parse5: 7.1.1
     dev: true
 
-  /@11ty/webc/0.4.0:
-    resolution: {integrity: sha512-jNfxmzpJLfZXQd/gK/o0T2+L/ttMY8BEYuC02K3VV770ZcmjJaIl07EPCYp13etnL4qxL4QYTXFnRg3AgQLKCw==}
+  /@11ty/webc/0.4.5:
+    resolution: {integrity: sha512-jqlIYJEa7YVEInkNUYssFTFtjKNV8zQmAUbMNemhS6iR5uwxL89PKCb1ekWBAGJy1YDnpHVxcBLlGt9Ru6tu/w==}
     engines: {node: '>=14.18'}
     dependencies:
       '@11ty/eleventy-utils': 1.0.1
@@ -504,8 +515,8 @@ packages:
       dependency-graph: 0.11.0
       entities: 4.4.0
       fast-glob: 3.2.12
+      nanoid: 4.0.0
       parse5: 7.1.1
-    dev: false
 
   /@allmarkedup/fang/2.0.0:
     resolution: {integrity: sha512-UeQfpC6uRM5muHIC/qmWwERa59UT8GX6VSYM0a21G4URdaStdYrfrfWGj2LQJ8xLVCkMRQ7TS68MTJzFAau5Yw==}
@@ -14733,6 +14744,13 @@ packages:
     resolution: {integrity: sha512-8z4efJYk43E0upd0NbVXwgSTQs6cT3T06etieCMEg7dRbzCbxUCK/GHlX8mhHRDcp+OLlHkPKsvqQTCvsRl2cg==}
     dev: true
 
+  /markdown-it-anchor/8.6.5:
+    resolution: {integrity: sha512-PI1qEHHkTNWT+X6Ip9w+paonfIQ+QZP9sCeMYi47oqhH+EsW8CrJ8J7CzV19QVOj6il8ATGbK2nTECj22ZHGvQ==}
+    peerDependencies:
+      '@types/markdown-it': '*'
+      markdown-it: '*'
+    dev: false
+
   /markdown-it-anchor/8.6.5_markdown-it@13.0.1:
     resolution: {integrity: sha512-PI1qEHHkTNWT+X6Ip9w+paonfIQ+QZP9sCeMYi47oqhH+EsW8CrJ8J7CzV19QVOj6il8ATGbK2nTECj22ZHGvQ==}
     peerDependencies:
@@ -15308,6 +15326,11 @@ packages:
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
+  /nanoid/4.0.0:
+    resolution: {integrity: sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==}
+    engines: {node: ^14 || ^16 || >=18}
     hasBin: true
 
   /nanomatch/1.2.13:
@@ -18766,6 +18789,14 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
+  /rosetta/1.1.0:
+    resolution: {integrity: sha512-3jQaCo2ySoDqLIPjy7+AvN3rluLfkG8A27hg0virL0gRAB5BJ3V35IBdkL/t6k1dGK0TVTyUEwXVUJsygyx4pA==}
+    engines: {node: '>=8'}
+    dependencies:
+      dlv: 1.1.3
+      templite: 1.2.0
+    dev: false
+
   /rsvp/4.8.5:
     resolution: {integrity: sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA==}
     engines: {node: 6.* || >= 7.*}
@@ -19968,6 +19999,10 @@ packages:
   /temp-dir/1.0.0:
     resolution: {integrity: sha1-CnwOom06Oa+n4OvqnB/AvE2qAR0=}
     engines: {node: '>=4'}
+    dev: false
+
+  /templite/1.2.0:
+    resolution: {integrity: sha512-O9BpPXF44a9Pg84Be6mjzlrqOtbP2I/B5PNLWu5hb1n9UQ1GTLsjdMg1z5ROCkF6NFXsO5LQfRXEpgTGrZ7Q0Q==}
     dev: false
 
   /tempy/0.3.0:

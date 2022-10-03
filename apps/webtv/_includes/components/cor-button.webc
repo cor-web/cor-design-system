@@ -1,0 +1,13 @@
+My button
+
+<style>
+cor-button {
+  border: solid 1px red;
+}
+</style>
+
+<script>
+  function() {
+    console.log(this);
+  }
+</script>

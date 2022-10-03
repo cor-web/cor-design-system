@@ -1,0 +1,13 @@
+My button bim bam
+
+<style webc:scoped>
+:host {
+  border: solid 1px green;
+}
+</style>
+
+<script>
+  
+    console.log(this);
+  
+</script>
