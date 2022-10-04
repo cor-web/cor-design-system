@@ -10,21 +10,22 @@ template.innerHTML = `
       gap: var(--space-2xs);
     }
     .cor-btn {
-      background-color: white;
+      background-color: var(--oc-blue-1);
       border-radius: var(--button-border-radius);
-      color: var(--button-background-color);
+      color: var(--oc-blue-9);
       font-weight: var(--button-font-weight);
       text-align: center;
       white-space: nowrap;
       vertical-align: middle;
       user-select: none;
-      border: var(--button-border-width, 1px) solid var(--button-background-color);
+      border: none;
       margin: var(--button-margin-y, var(--space-xs)) var(--button-margin-x, auto);
       padding: var(--button-padding-y) var(--button-padding-x);
+      transition: background-color .2s linear, border-color .2s linear;
     }
+    
     .cor-btn:hover {
-      color: var(--button-color-hover);
-      background-color: var(--button-background-color-hover);
+      background-color: var(--oc-blue-2);
       border-color: var(--button-border-color-hover);
     }
     
@@ -99,7 +100,7 @@ class ExpandingList extends HTMLElement {
     });
   }
 
-  connectedCallback() {}
+  connectedCallback() { }
 
   _checkVisibleElements() {
     if (this.querySelectorAll(".visually-hidden").length === 0) {

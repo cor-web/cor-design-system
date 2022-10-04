@@ -1,8 +1,7 @@
-:root {
+.mainContent {
   --oc-blue-8: #3e68ff;
-}
 
-.cor-btn {
+
   --button-background-color: var(--oc-blue-9);
   --button-background-color-hover: var(--oc-blue-8);
   --button-border-radius: 10px;
@@ -22,9 +21,9 @@
   --primary-button-hover-color: var(--oc-blue-8);
   --primary-button-text-color: white;
 
-  --secondary-button-background-color: var(--oc-gray-6);
-  --secondary-button-hover-color: var(--oc-gray-5);
-  --secondary-button-text-color: white;
+  --secondary-button-background-color: var(--oc-blue-1);
+  --secondary-button-hover-color: var(--oc-blue-2);
+  --secondary-button-text-color: var(--oc-blue-9);
 
   --large-button-padding-y: var(--space-xs);
   --large-button-padding-x: var(--space-m);
@@ -36,7 +35,6 @@
   --small-button-font-size: var(--step--4);
   --small-button-font-wheight: 100;
 }
-
 
 a.cor-btn,
 .cor-btn {
@@ -97,7 +95,7 @@ a.cor-btn,
 .mainContent a.cor-btn,
 .mainContent a.cor-btn:link,
 .mainContent a.cor-btn:visited {
-  color: white;
+  color: var(--button-text-color, white);
 }
 
 .cor-btn.hover,
@@ -249,6 +247,11 @@ a.cor-btn {
   flex-wrap: wrap;
   gap: .5rem;
   align-items: center
+}
+
+
+a.cor-btn.icon {
+  --link-color: var(--button-text-color);
 }
 
 .cor-btn--primary,

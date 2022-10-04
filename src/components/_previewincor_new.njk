@@ -36,8 +36,11 @@
         {% include '@after-content' %}
 
 
-        <script src="https://unpkg.com/@cor-web/cor-design-system/dist/bundle.js"></script>
-
+        <!--
+            <script src="https://unpkg.com/@cor-web/cor-design-system/dist/bundle.modern.js"></script>
+        -->
+        <script src="{{ '/all.js' | path }}"></script>
+        
     </body>
 
 </html>
