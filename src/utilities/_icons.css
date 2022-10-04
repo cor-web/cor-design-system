@@ -1,7 +1,7 @@
 .icon {
   display: inline-flex;
   gap: var(--space-3xs);
-  align-items: baseline;
+  align-items: center;
 }
 
 .icon-before:before,

@@ -1,38 +1,98 @@
-.mainContent {
+:root {
+  --oc-blue-8: #3e68ff;
+}
+
+.cor-btn {
   --button-background-color: var(--oc-blue-9);
   --button-background-color-hover: var(--oc-blue-8);
   --button-border-radius: 10px;
   --button-border-color: var(--oc-blue-9);
   --button-border-color-hover: var(--oc-blue-9);
+  --button-border-width: 0;
   --button-color: #fff;
   --button-color-hover: #fff;
+
+  --button-font-size: var(--step--2);
   --button-font-weight: bold;
   --button-padding-y: var(--space-2xs);
   --button-padding-x: var(--space-xs);
+  --button-text-color: white;
+
+  --primary-button-background-color: var(--oc-blue-9);
+  --primary-button-hover-color: var(--oc-blue-8);
+  --primary-button-text-color: white;
+
+  --secondary-button-background-color: var(--oc-gray-6);
+  --secondary-button-hover-color: var(--oc-gray-5);
+  --secondary-button-text-color: white;
+
+  --large-button-padding-y: var(--space-xs);
+  --large-button-padding-x: var(--space-m);
+  --large-button-font-size: var(--step--1);
+  --large-button-font-wheight: bold;
+
+  --small-button-padding-y: var(--space-3xs);
+  --small-button-padding-x: var(--space-2xs);
+  --small-button-font-size: var(--step--4);
+  --small-button-font-wheight: 100;
 }
+
 
 a.cor-btn,
 .cor-btn {
-  display: inline-block;
+  align-items: center;
+  display: inline-flex;
   border-radius: var(--button-border-radius);
   padding: var(--button-padding-y) var(--button-padding-x);
   text-align: center;
   text-decoration: none;
-  color: var(--button-color);
-  border: none;
+  color: var(--button-text-color);
+  border: var(--button-border-color, none);
   font-weight: var(--button-font-weight);
-  background: 0 0;
   background-color: var(--button-background-color);
-  background-image: linear-gradient(
-    to bottom,
-    var(--oc-blue-7),
-    var(--oc-blue-8)
-  );
-  transition: all 0.2s ease-out;
-  font-size: var(--step--2);
+  font-size: var(--button-font-size);
+  justify-content: center;
   cursor: pointer;
   outline: 0;
+  border: none;
+  font: inherit;
+  font-family: var(--text-font);
+  cursor: pointer;
+  line-height: inherit;
+  font-weight: 500;
+  transition: background-color .2s linear, border-color .2s linear;
+  border-radius: var(--button-border-radius);
+  color: var(--button-text-color);
+  font-weight: var(--button-font-weight);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: var(--button-border-width, 1px) solid var(--button-border-color);
+  margin: var(--button-margin-y, var(--space-xs)) var(--button-margin-x, auto);
+  padding: var(--button-padding-y) var(--button-padding-x);
 }
+
+/* Hover */
+.cor-btn:hover {
+  --button-background-color: var(--button-background-color-hover);
+}
+
+/* Active */
+.cor-btn:active {
+  --button-background-color: var(--button-background-color-active);
+}
+
+/* Focus */
+.cor-btn:focus {
+  --button-background-color: var(--button-background-color-focus);
+}
+
+/* Visited */
+.cor-btn:visited {
+  --button-background-color: var(--button-background-color-active);
+}
+
 
 .mainContent a.cor-btn,
 .mainContent a.cor-btn:link,
@@ -42,9 +102,9 @@ a.cor-btn,
 
 .cor-btn.hover,
 .cor-btn:active,
-.cor-btn:focus,
-.cor-btn:hover {
+.cor-btn:focus {
   background: var(--oc-blue-9);
+  text-decoration: none;
 }
 
 a.cor-button {
@@ -65,9 +125,7 @@ button.cor-button {
   }
 }
 
-:root {
-  --oc-blue-8: #3e68ff;
-}
+
 
 a.button,
 button.button {
@@ -111,5 +169,129 @@ a.button--block {
 }
 
 [role="button"]:hover {
-   cursor: pointer;
+  cursor: pointer;
+}
+
+button {
+  align-content: center;
+  display: inline-flex;
+  gap: var(--space-2xs);
+}
+
+.cor-btn:hover {
+  color: var(--button-color-hover);
+  background-color: var(--button-background-color-hover);
+  border-color: var(--button-border-color-hover);
+}
+
+.cor-btn:focus {
+  outline: 0;
+  box-shadow: var(--button-focus-box-shadow);
+  text-decoration: none;
+}
+
+.cor-btn:disabled {
+  opacity: var(--button-disabled-opacity);
+  box-shadow: none;
+}
+
+.cor-btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.cor-btn:not(:disabled):not(.disabled):active {
+  background-image: none;
+  box-shadow: var(--button-active-box-shadow);
+}
+
+.cor-btn:not(:disabled):not(.disabled):active :focus {
+  box-shadow: var(--button-focus-box-shadow) var(--button-active-box-shadow);
+}
+
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+
+.cor-btn {
+  --link-color: white;
+
+}
+
+.mainContent a.cor-btn:hover {
+  text-decoration: none;
+}
+
+
+.cor-btn svg {
+  color: inherit
+}
+
+
+
+.cor-btn--block {
+  display: flex;
+  width: 100%
+}
+
+a.cor-btn {
+  text-decoration: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center
+}
+
+.cor-btn--primary,
+a.cor-btn--primary {
+  --button-background-color: var(--primary-button-background-color);
+  --button-text-color: var(--primary-button-text-color);
+}
+
+.cor-btn--primary:hover {
+  background-color: var(--primary-button-hover-color);
+}
+
+.cor-btn--secondary,
+a.cor-btn--secondary {
+  --button-background-color: var(--secondary-button-background-color);
+  --button-text-color: var(--secondary-button-text-color);
+}
+
+.cor-btn--secondary:hover {
+  background-color: var(--secondary-button-hover-color)
+}
+
+.cor-btn--large {
+  --button-font-size: var(--large-button-font-size);
+  --button-padding-y: var(--large-button-padding-y);
+  --button-padding-x: var(--large-button-padding-x);
+  --button-font-weight: var(--large-button-font-weight);
+  --button-font-size: var(--large-button-font-size);
+}
+
+.cor-btn--small {
+  --button-font-size: var(--small-button-font-size);
+  --button-padding-y: var(--small-button-padding-y);
+  --button-padding-x: var(--small-button-padding-x);
+  --button-font-weight: var(--small-button-font-weight);
+  --button-font-size: var(--small-button-font-size);
+}
+
+.cor-btn--ghost {
+  color: var(--body-text-color);
+  border: 1px solid var(--border-color)
+}
+
+.cor-btn--ghost:hover {
+  border-color: var(--link-color)
 }
