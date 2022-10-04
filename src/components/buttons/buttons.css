@@ -2,8 +2,8 @@
   --oc-blue-8: #3e68ff;
 
 
-  --button-background-color: var(--oc-blue-9);
-  --button-background-color-hover: var(--oc-blue-8);
+  --button-background-color: #1976d2;
+  --button-background-color-hover: #004896;
   --button-border-radius: 10px;
   --button-border-color: var(--oc-blue-9);
   --button-border-color-hover: var(--oc-blue-9);
