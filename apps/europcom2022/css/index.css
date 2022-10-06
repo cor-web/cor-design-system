@@ -654,8 +654,8 @@ header#title .twitter,
   text-decoration: none;
 }
 
-.europcom-program__speaker a,
-.europcom-program__speaker a:visited {
+.europcom-program__item .europcom-program__speaker a,
+.europcom-program__item .europcom-program__speaker a:visited {
   color: white !important;
 }
 
