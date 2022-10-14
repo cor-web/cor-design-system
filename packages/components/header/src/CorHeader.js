@@ -225,7 +225,7 @@ export class CorHeader extends HTMLElement {
     if (this.open) {
       console.log("open");
       console.log("SHOW");
-      console.table(
+      console.log(
         this.toggleNavButton,
         this.toolsQuicklinks,
         this.siteNav,
@@ -242,7 +242,7 @@ export class CorHeader extends HTMLElement {
     } else {
       console.log("not open");
       console.log("HIDE");
-      console.table(
+      console.log(
         this.toggleNavButton,
         this.toolsQuicklinks,
         this.siteNav,

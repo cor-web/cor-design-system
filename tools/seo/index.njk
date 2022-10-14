@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+<h1>CoR website: English pages SEO overview</h1>
+
+<ol class="cor-pages-list">
+  {% for page in pages  %}
+  <li>
+    <a class='text--1' href="{{ page.url }}" target="_blank">{{ page.title }}</a>
+    <p class='text--3'><span {% if "ERROR" in page.metaDescription %}style="color:red"{% endif %} class="bolder">{{ page.metaDescription.slice(0, 160) }}</span><span class="text-lighter">{{ page.metaDescription.slice(160, -1) }}</span></p>
+  </li>
+  {% endfor %}
+</ol>
