@@ -229,7 +229,9 @@ cor-panels-nav {
   z-index: 2;
 }
 
-cor-header nav a {
+cor-header nav a,
+cor-header nav a:link,
+cor-header nav a:visited {
   color: white;
   cursor: pointer;
   display: block;
@@ -529,6 +531,7 @@ cor-header-toolbar button svg path {
 
   .cor-nav-social-media ul>li>a,
   .cor-nav-toplinks ul>li>a {
+    color: var(--oc-gray-8);
     display: flex;
     align-items: center;
     font-size: var(--step--3);
@@ -657,7 +660,9 @@ cor-header-toolbar button svg path {
     padding: var(--space-xs);
   }
 
-  .cor-languages-navigation ul a {
+  .cor-languages-navigation ul a,
+  .cor-languages-navigation ul a:link,
+  .cor-languages-navigation ul a:visited {
     color: var(--c-eu);
     display: flex;
     gap: var(--space-4xs);
@@ -881,7 +886,9 @@ cor-header-subnav {
 
 cor-header-subnav>ul {}
 
-cor-header-subnav a {
+cor-header-subnav a,
+cor-header-subnav a:link,
+cor-header-subnav a:visited {
   color: white;
   font-size: var(--step--4);
   text-decoration: none;
@@ -970,7 +977,9 @@ cor-subnav-item li.active:after {
   z-index: 0;
 }
 
-.cor-header-subnav-list-item a {
+.cor-header-subnav-list-item a,
+.cor-header-subnav-list-item a:link,
+.cor-header-subnav-list-item a:visited {
   background-color: var(--c-eu);
   display: inline-block;
   padding-right: var(--space-2xs);

@@ -3,6 +3,6 @@
 @import "general.css";
 
 @import "@cor-web/components/header/src/index.css";
-
+@import "navigation.css";
 /* Tailwind utilities */
 @tailwind utilities;
