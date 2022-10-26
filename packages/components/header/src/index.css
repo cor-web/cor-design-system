@@ -105,7 +105,7 @@ cor-header {
 }
 
 cor-header:before {
-  background-image: url("cor-diamond-shadow.svg");
+  background-image: url("https://cor.europa.eu/Style%20Library/Cor/Main/img/cor-diamond-shadow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -1031,3 +1031,10 @@ cor-subnav-item li.active:after {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Sharepoint overrides */
+cor-header button {
+  min-width: auto;
+}
+
+/* /Sharepoint overrides */

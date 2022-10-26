@@ -5,13 +5,15 @@
   "scripts": {
     "start": "vite",
     "build2": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:css": "lightningcss --minify --nesting --bundle --targets '>= 0.25%' --sourcemap src/index.css -o dist/index.min.css"
   },
   "dependencies": {
     "@cor-web/styles": "workspace:*",
     "@cor-web/components": "workspace:*"
   },
   "devDependencies": {
+    "lightningcss-cli": "^1.16.0",
     "vite": "^2.9.13",
     "vite-plugin-nunjucks": "^0.1.10"
   }
