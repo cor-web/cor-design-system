@@ -302,7 +302,7 @@
             {% for subnavitem in navitem.subnav %}
             <li>
               
-              <a href="{{ subnavitem.link }}" id="{{ subnavitem.text }}_label" aria-haspopup="true" has-subnav aria-controls="{{ subnavitem.text  | replace(' ', '-') }}--{{ loop.index }}">{{ subnavitem.text }}</a>
+              <a href="{{ subnavitem.link }}" id="{{ subnavitem.text }}_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="{{ subnavitem.text  | replace(' ', '-') }}--{{ loop.index }}">{{ subnavitem.text }}</a>
 
               
               <cor-subnav-description id="{{ subnavitem.text  | replace(' ', '-') }}--{{ loop.index }}" aria-labelledby="button--{{ subnavitem.text }}">

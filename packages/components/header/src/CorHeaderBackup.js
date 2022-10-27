@@ -1,16 +1,23 @@
-import Component from "./component.js";
-
-export class CorHeader extends Component {
+export class CorHeader extends HTMLElement {
   constructor() {
     super();
-    this.addEventListener('state-update', this.store);
-  };
-
-  connectedCallback() {
     const open = false;
 
+    this.addEventListener('state-update', this.store);
 
 
+    /*
+    document.addEventListener('DOMContentLoaded', function(){
+      const menus = document.querySelectorAll( '[clicky-menu]' );
+  
+      menus.forEach( menu => {
+  
+        let clickyMenu = new ClickyMenus(menu);
+        clickyMenu.init();
+  
+      });
+    });
+    */
 
     this.menusButtons = document.querySelectorAll('[clicky-menu] button');
 
@@ -44,16 +51,12 @@ export class CorHeader extends Component {
   store({ detail }) {
     switch (detail.type) {
       case "change-subnav":
-        console.log(detail.type, detail.target);
+        // console.log(detail.type, detail.target);
         this.update('visible-subnav', detail.target)
         break;
       case "hide-subnav":
-        console.log(detail.type, detail.target);
+        // console.log(detail.type, detail.target);
         this.update('visible-subnav', "")
-        break;
-      case "change-view":
-        console.log("STORE");
-        this.update("view", detail.text)
         break;
     }
   }
@@ -65,11 +68,10 @@ export class CorHeader extends Component {
 
   // media query change
   WidthChange(mq) {
-
+    const nav_trigger = document.getElementById("nav-toggle"),
+      nav = document.getElementById("nav-panel");
     if (mq.matches) {
-      console.log(mq, 'match2');
-      this.setAttribute('view', "mobile");
-
+      // console.log(mq, 'match');
       this.menusButtons.forEach(menu => {
         menu.hidden = false;
         menu.setAttribute("aria-expanded", "false");
@@ -101,9 +103,7 @@ export class CorHeader extends Component {
 
 
     } else {
-      console.log(mq, 'no match2');
-      this.setAttribute('view', "desktop");
-
+      // console.log(mq, 'no match');
 
       this.subnavContainer.hidden = false;
 
@@ -140,6 +140,8 @@ export class CorHeader extends Component {
       this.siteNav.setAttribute("data-open", "true");
     }
   }
+
+
 
   toggleSubnav(e) {
 
@@ -241,33 +243,111 @@ export class CorHeader extends Component {
     }
   }
 
-  set view(text) {
-    const type = "change-view";
-    this.dispatchUpdate({ type, text });
-  }
-
-  get view() {
-    return this.getAttribute("view");
-  }
-
 }
 
-export class CorHeaderNavbar extends Component {
-  connectedCallback() {
+export class CorHeaderNavbar extends HTMLElement {
+
+  constructor() {
+    super();
+
+    // const template = this.querySelector('#panelsNav-template');
+    // let templateContent = template.content;
     const defaultNavContent = this.innerHTML;
+    // this.innerHTML = "";
+    // const shadowRoot = this.attachShadow({mode: 'open'});
+    // shadowRoot.appendChild(templateContent.cloneNode(true));
 
   }
+  /*
+   connectedCallback() {
+     this.buttons = this.shadowRoot.querySelectorAll("button");
+     this.buttons.forEach( button => {
+       button.addEventListener('click', (e) => {
+         this.onClick(e.target)
+       });
+     })
+ 
+ 
+ 
+ 
+     if (matchMedia) {
+       const mq = window.matchMedia("(max-width: 1023px)");
+       mq.addEventListener('change', this.widthChange);
+     }
+   }
+ 
+   widthChange(mq) {
+     if (mq.matches) {
+       console.log("CHANGED");
+       this.deta
+       this.innerHTML = defaultNavContent;
+     } else {
+       
+     }
+   }
+ 
+   toggle(button) {
+     console.log("toggle", button);
+ 
+ 
+     let type = "";
+     let target = button.getAttribute('aria-controls');
+     
+     
+     console.log(button.getAttribute("aria-expanded"));
+     if(button.getAttribute("aria-expanded") == "true") {
+       button.setAttribute("aria-expanded", "false");
+       
+       // theNav.setAttribute("aria-hidden", "true");
+       
+        type = "hide-subnav";
+     } else {
+       this.buttons.forEach( button => {
+         button.setAttribute("aria-expanded", "false");
+       });
+       button.setAttribute("aria-expanded", "true");
+        type = "change-subnav";
+       
+       // theNav.setAttribute("aria-hidden", "false");
+       // theNav.removeAttribute("hidden");
+       
+       
+     }
+ 
+ 
+     this.dispatchUpdate({type, target});
+ 
+   }
+ 
+   onClick(button) {
+     
+     this.toggle(button);
+   }
+ 
+   dispatchUpdate(detail) {
+     console.log("dispatchUpdate",detail)
+     const event = new CustomEvent('state-update', {
+       detail,
+       bubbles: true,
+       composed: true
+     });
+ 
+     this.dispatchEvent(event);
+   }
+   */
 }
 
-export class CorPanelsNav extends Component {
-
-  connectedCallback() {
+export class CorPanelsNav extends HTMLElement {
+  constructor() {
+    super();
     const template = this.querySelector('#panelsNav-template');
     let templateContent = template.content;
 
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+    shadowRoot.appendChild(templateContent.cloneNode(true));
+  }
 
-    this.shadowRoot.appendChild(templateContent.cloneNode(true));
-
+  connectedCallback() {
     this.buttons = this.shadowRoot.querySelectorAll("button");
     this.buttons.forEach(button => {
       button.addEventListener('click', (e) => {
@@ -342,8 +422,9 @@ export class CorPanelsNav extends Component {
   }
 }
 
-export class CorSearchButton extends Component {
-  connectedCallback() {
+export class CorSearchButton extends HTMLElement {
+  constructor() {
+    super();
     // console.log("button");
     this.hidden = false;
     const button = document.createElement("button");
@@ -376,17 +457,15 @@ export class CorSearchButton extends Component {
 
 }
 
-export class CorHeaderSubnav extends Component {
-  connectedCallback() {
+export class CorHeaderSubnav extends HTMLElement {
+  constructor() {
+    super();
 
     this.panels = this.querySelectorAll(".cor-header-subnav-panel");
-    const { root } = this;
-    const source = "view";
-    const update = () => {
-      console.log("view changed", root[source]);
-      this.showNav(root[source]);
-    };
-    console.log(root, source);
+    const root = document.querySelector("cor-header");
+    const source = "visible-subnav";
+    const update = () => this.showNav(root[source]);
+
     new MutationObserver(update).observe(root, {
       attributes: true,
       attributeFilter: [source]
@@ -406,15 +485,30 @@ export class CorHeaderSubnav extends Component {
   }
 }
 
-export class CorSubnavDescription extends Component {
-  connectedCallback() {
+export class CorSubnavDescription extends HTMLElement {
+  constructor() {
+    super();
+    /*  
+     if(!document.getElementById('corSubnavDescriptionsContainer')) {
+       console.log("no");
+       const corSubnavDescriptionsContainer = document.createElement('ul');
+       corSubnavDescriptionsContainer.id = "corSubnavDescriptionsContainer";
+       this.parentNode.parentNode.parentNode.appendChild(corSubnavDescriptionsContainer);
+     }
+     
+     console.log("yes");
+     const li = document.createElement('li');
+     li.setAttribute("aria-labelledby", "")
+     document.getElementById('corSubnavDescriptionsContainer').appendChild(li).appendChild(this);
+     // corSubnavDescriptionsContainer.prepend(this); */
   }
 }
 
 
 
-export class CorSubnavItem extends Component {
-  connectedCallback() {
+export class CorSubnavItem extends HTMLElement {
+  constructor() {
+    super();
 
     if (!this.querySelector('#corSubnavDescriptionsContainer')) {
       const corSubnavDescriptionsContainer = document.createElement('ul');
