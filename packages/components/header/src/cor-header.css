@@ -1,5 +1,2 @@
-/*
-@import "@cor-web/styles/src/base.css";
-
-*/
+@import "@cor-web/styles/src/settings/_all.css";
 @import "./index.css";
