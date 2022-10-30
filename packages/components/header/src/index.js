@@ -5,3 +5,4 @@ export { CorHeaderSubnav } from './CorHeader.js';
 export { CorPanelsNav } from './CorHeader.js';
 export { CorSubnavDescription } from './CorHeader.js';
 export { CorSubnavItem } from './CorHeader.js';
+export { CorLanguagesSelector } from './CorHeader.js';

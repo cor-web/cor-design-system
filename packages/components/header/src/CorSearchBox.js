@@ -1,11 +1,13 @@
-export class CorSearchBox extends HTMLElement {
-  constructor() {
-    super();
+import Component from "./component.js";
+
+export class CorSearchBox extends Component {
+  connectedCallback() {
+
 
     console.log('searcxh');
     const test = true;
 
-    
+
     const searchButton = document.querySelector("#site-search-button button");
     if (searchButton) {
       searchButton.addEventListener("click", this.toggleSearchBox.bind(this));
@@ -21,7 +23,7 @@ export class CorSearchBox extends HTMLElement {
   }
 
   set open(val) {
-    if(val) {
+    if (val) {
       this.setAttribute('open', '');
     } else {
       this.removeAttribute('open');
@@ -32,7 +34,7 @@ export class CorSearchBox extends HTMLElement {
 
   toggleSearchBox() {
     console.log("toggle", this, this.open);
-    if(!this.open) {
+    if (!this.open) {
       this.setAttribute("open", "");
     } else {
       this.removeAttribute("open");
@@ -41,8 +43,8 @@ export class CorSearchBox extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, newValue) {
     const search = document.getElementById("site-search");
-    
-    if(this.open){
+
+    if (this.open) {
       console.log("open");
       search.removeAttribute("hidden");
     } else {

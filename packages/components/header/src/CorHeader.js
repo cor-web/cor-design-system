@@ -3,6 +3,7 @@ import Component from "./component.js";
 export class CorHeader extends Component {
   constructor() {
     super();
+
     this.addEventListener('state-update', this.store);
   };
 
@@ -19,7 +20,7 @@ export class CorHeader extends Component {
     this.toolsQuicklinks = document.getElementById("tools-quicklinks");
     this.socialMedia = document.getElementById("tools-socialMedia");
     this.search = document.getElementById("site-search");
-    this.languages = document.getElementById("site-languages");
+    this.languages = document.querySelector("cor-languages-selector");
     this.searchButton = document.getElementById("site-search-button");
     this.subnavLinks = document.querySelectorAll('cor-header-navbar > nav > ul > li > a');
     this.subnavButtons = document.querySelectorAll('#panelsNav button');
@@ -31,7 +32,7 @@ export class CorHeader extends Component {
     this.popUps = document.querySelectorAll('cor-header-subnav > ul > li');;
 
 
-
+    this.toggleNavButton.addEventListener('click', this.toggleNav.bind(this));
 
     if (matchMedia) {
       const mq = window.matchMedia("(max-width: 1070px)");
@@ -92,7 +93,8 @@ export class CorHeader extends Component {
       // nav.setAttribute("data-open", "false");
       this.toggleNavButton.removeAttribute("hidden");
       this.toggleNavButton.setAttribute("aria-expanded", "false");
-      this.toggleNavButton.addEventListener('click', this.toggleNav.bind(this));
+      console.log("Sherlock");
+
       this.searchButton.setAttribute("hidden", "");
       this.search.removeAttribute("hidden");
 
@@ -173,7 +175,7 @@ export class CorHeader extends Component {
   }
 
   toggleNav(element) {
-    // console.log('test', this.open)
+    console.log('TTTEST', this, this.open)
     if (!this.open) {
       this.setAttribute("open", "");
     } else {
@@ -201,7 +203,7 @@ export class CorHeader extends Component {
   }
 
   static get observedAttributes() {
-    return ['open'];
+    return ['open', 'view'];
   }
 
   get open() {
@@ -218,9 +220,34 @@ export class CorHeader extends Component {
     this.toggleNav();
   }
 
+
+
   attributeChangedCallback(name, oldValue, newValue) {
-    if (this.open) {
-      // console.log("open");
+    console.log("CHANGE", this, name, oldValue, newValue, this.view);
+    // Mobile view: Nav closed 
+    if (!this.open && this.view === "mobile") {
+      console.log("VIEW: Mobile + Nav closed");
+    } else if (this.open && this.view === "mobile") {
+      console.log("VIEW: Mobile + Nav open");
+      this.languages.setAttribute("data-open", "true");
+      console.log(this.languages);
+    } else if (!this.open && this.view === "desktop") {
+      console.log("VIEW: Desktop + Nav closed");
+      this.removeAttribute("open");
+    } else if (this.open && this.view === "desktop") {
+      console.log("VIEW: Desktop + Nav open");
+      this.removeAttribute("open");
+    }
+    // Mobile view: Nav open
+
+    // Desktop view: Nav closed 
+
+    // Desktop view: Nav open
+
+    // 
+    if (this.open || this.view === "desktop") {
+
+      console.log("open");
 
       this.toggleNavButton.setAttribute("aria-expanded", "true");
       this.toolsQuicklinks.setAttribute("data-open", "true");
@@ -229,14 +256,14 @@ export class CorHeader extends Component {
       this.search.setAttribute("data-open", "true");
       this.languages.setAttribute("data-open", "true");
     } else {
-      // console.log("not open");
+      console.log("not open");
 
       this.toggleNavButton.setAttribute("aria-expanded", "false");
       this.toolsQuicklinks.setAttribute("data-open", "false");
       this.siteNav.setAttribute("data-open", "false");
       this.socialMedia.setAttribute("data-open", "false");
       this.search.setAttribute("data-open", "false");
-      this.languages.setAttribute("data-open", "false");
+      // this.languages.setAttribute("data-open", "false");
 
     }
   }
@@ -253,21 +280,20 @@ export class CorHeader extends Component {
 }
 
 export class CorHeaderNavbar extends Component {
-  connectedCallback() {
-    const defaultNavContent = this.innerHTML;
 
-  }
 }
 
-export class CorPanelsNav extends Component {
-
-  connectedCallback() {
+export class CorPanelsNav extends HTMLElement {
+  constructor() {
+    super();
     const template = this.querySelector('#panelsNav-template');
     let templateContent = template.content;
 
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+    shadowRoot.appendChild(templateContent.cloneNode(true));
+  }
 
-    this.shadowRoot.appendChild(templateContent.cloneNode(true));
-
+  connectedCallback() {
     this.buttons = this.shadowRoot.querySelectorAll("button");
     this.buttons.forEach(button => {
       button.addEventListener('click', (e) => {
@@ -344,7 +370,7 @@ export class CorPanelsNav extends Component {
 
 export class CorSearchButton extends Component {
   connectedCallback() {
-    // console.log("button");
+    //console.log("button");
     this.hidden = false;
     const button = document.createElement("button");
     const link = this.querySelector('a');
@@ -353,6 +379,7 @@ export class CorSearchButton extends Component {
     this.replaceChild(button, link);
 
     this.addEventListener('click', this.onClick);
+
   }
 
   onClick() {
@@ -381,12 +408,10 @@ export class CorHeaderSubnav extends Component {
 
     this.panels = this.querySelectorAll(".cor-header-subnav-panel");
     const { root } = this;
-    const source = "view";
-    const update = () => {
-      console.log("view changed", root[source]);
-      this.showNav(root[source]);
-    };
-    console.log(root, source);
+    const source = "visible-subnav";
+
+    const update = () => this.showNav(root[source]);
+
     new MutationObserver(update).observe(root, {
       attributes: true,
       attributeFilter: [source]
@@ -408,6 +433,7 @@ export class CorHeaderSubnav extends Component {
 
 export class CorSubnavDescription extends Component {
   connectedCallback() {
+
   }
 }
 
@@ -456,4 +482,26 @@ export class CorSubnavItem extends Component {
 
   }
 
+}
+
+
+export class CorLanguagesSelector extends Component {
+  connectedCallback() {
+    const { root } = this;
+    const source = "view";
+
+    const update = () => {
+      console.log(root[source]);
+      if (root[source] === "mobile") {
+        this.dataset.open = "true";
+      } else {
+        console.log("Desktop:lang select");
+      }
+    };
+
+    new MutationObserver(update).observe(root, {
+      attributes: true,
+      attributeFilter: [source]
+    });
+  }
 }

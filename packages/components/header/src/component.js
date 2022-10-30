@@ -1,7 +1,6 @@
 export default class extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
     this.root = document.querySelector('cor-header');
   }
 

@@ -6,6 +6,7 @@ import { CorPanelsNav } from './CorHeader.js';
 import { CorSubnavDescription } from './CorHeader.js';
 import { CorSubnavItem } from './CorHeader.js';
 import { CorSearchBox } from './CorSearchBox.js';
+import { CorLanguagesSelector } from './CorHeader.js';
 
 window.customElements.define('cor-header', CorHeader);
 window.customElements.define('cor-header-navbar', CorHeaderNavbar);
@@ -15,3 +16,4 @@ window.customElements.define('cor-panels-nav', CorPanelsNav);
 window.customElements.define('cor-subnav-description', CorSubnavDescription);
 window.customElements.define('cor-subnav-item', CorSubnavItem);
 window.customElements.define('cor-search-box', CorSearchBox);
+window.customElements.define('cor-languages-selector', CorLanguagesSelector);
