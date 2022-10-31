@@ -3,6 +3,7 @@
 @import "general.css";
 
 @import "@cor-web/components/header/dist/index.min.css";
+/* @import "@cor-web/components/header/src/cor-header.css"; */
 
 /* Tailwind utilities */
 @tailwind utilities;

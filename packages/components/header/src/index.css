@@ -1027,7 +1027,9 @@ cor-subnav-item li.active:after {
   z-index: 1;
 }
 
-.cor-subnav-description__readmore {
+a.cor-subnav-description__readmore:link {
+  display: inline;
+  justify-self: start;
   text-decoration: underline;
 }
 

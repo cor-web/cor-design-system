@@ -20,7 +20,8 @@
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
     "postcss-import": "^15.0.0",
-    "postcss-css-variables": "^0.18.0"
+    "postcss-css-variables": "^0.18.0",
+    "typescript": "^4.8.4"
   },
   "browserslist": [
     "> 0.25%",
