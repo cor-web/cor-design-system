@@ -38,6 +38,17 @@
   offset-block-start: 2px
 }
 
+/* Sharepoint override*/
+cor-header button,
+cor-header input[type=button]:hover,
+cor-header input[type=reset]:hover,
+cor-header input[type=submit]:hover,
+cor-header button:hover {
+  background: none;
+  border: none;
+  margin: 0;
+}
+
 @media (max-width: 1070px) {
 
   .enhanced #site-nav,
@@ -85,6 +96,7 @@ cor-header {
     "nav nav"
     "tools tools"
     "search search";
+  margin-bottom: 100px;
   position: relative;
   justify-content: space-between;
   align-items: start;
@@ -335,10 +347,12 @@ svg[hidden] {
   grid-template-columns: 1fr auto;
 }
 
+/*
 .cor-header-navbar__level1>li:hover {
   background-color: rgba(0, 0, 0, 0.10);
   border-radius: 4px;
 }
+*/
 
 @media (min-width: 1070px) {
   .no-js .cor-header-navbar__level1>li {
@@ -839,6 +853,10 @@ cor-search-box button {
   display: grid;
   place-items: center;
   padding: var(--space-3xs) var(--space-2xs);
+}
+
+cor-search-box button:hover {
+  background-color: var(--c-eu);
 }
 
 

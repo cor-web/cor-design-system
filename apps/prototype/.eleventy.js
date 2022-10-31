@@ -1,4 +1,4 @@
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+// const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setServerPassthroughCopyBehavior("copy");
 
 
-  eleventyConfig.addPlugin(EleventyVitePlugin);
+  // eleventyConfig.addPlugin(EleventyVitePlugin);
 
 
 
@@ -22,7 +22,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets/");
 
   // copy all assets
-  eleventyConfig.addPassthroughCopy('./src/assets');
+  eleventyConfig.addPassthroughCopy({
+    "./src/assets": "assets",
+    "node_modules/@cor-web/components/header/dist": "assets/components/cor-header"
+  });
 
   return {
     // When a passthrough file is modified, rebuild the pages:

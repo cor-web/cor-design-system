@@ -2,9 +2,9 @@ import nunjucks from 'vite-plugin-nunjucks'
 
 export default {
     plugins: [
-        nunjucks(),
+        nunjucks()
     ],
     server: {
-        port: 3008 
+        port: 3008
     }
 }

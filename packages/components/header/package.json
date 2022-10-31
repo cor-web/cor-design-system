@@ -1,13 +1,16 @@
 {
   "name": "vite-project",
   "private": true,
+  "main": "index.js",
+  "module": "index.js",
   "version": "0.0.0",
   "scripts": {
     "start": "vite",
     "build2": "vite build",
     "preview": "vite preview",
-    "build:css": "postcss src/cor-header.css  -o dist/index.css",
-    "build:css2": "lightningcss --minify --bundle --targets '> 0.25%, not IE 11' dist/index.css -o dist/index.min.css"
+    "build:css": "postcss src/cor-header.css  -o dist/css/index.css",
+    "build:css2": "lightningcss --minify --bundle --targets '> 0.25%, not IE 11' dist/css/index.css -o dist/css/index.min.css",
+    "build:js": "rimraf dist2 && rollup -c rollup.config.js"
   },
   "dependencies": {
     "@cor-web/styles": "workspace:*",
@@ -21,10 +24,9 @@
     "postcss-cli": "^10.0.0",
     "postcss-import": "^15.0.0",
     "postcss-css-variables": "^0.18.0",
-    "typescript": "^4.8.4"
-  },
-  "browserslist": [
-    "> 0.25%",
-    "not IE 11"
-  ]
+    "rollup": "^3.2.3",
+    "deepmerge": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "@open-wc/building-rollup": "^2.0.2"
+  }
 }

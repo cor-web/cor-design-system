@@ -1,44 +1,154 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-  <!--
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <script type="module" src="/assets/js/index.js"></script>
-  -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
 
+    <style>
 
-  <link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/fr-FR/Themable/Core%20Styles/controls15.css">
-  <link rel="stylesheet" href="https://cor.europa.eu/_layouts/15/1033/styles/Themable/corev15.css">
-  <link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/Main.css">
-  <link rel="stylesheet" href="https://cor.europa.eu/Style%20Library/Cor/style/css/Main2.css">
+      /* Modern CSS reset: https://github.com/hankchizljaw/modern-css-reset */
 
+      /* Box sizing rules */
 
-  <link rel="stylesheet" href="/assets/components/cor-header/css/index.min.css">
-  <script type="module" src="/assets/components/cor-header/js/495b3f9e.js"></script>
-  
+      *,
+       *::before,
+       *::after {
+        box-sizing: border-box;
+      }
 
-  
+      /* Remove default padding */
+
+      ul[class],
+       ol[class] {
+        padding: 0;
+      }
+
+      /* Remove default margin */
+
+      h1,
+       h2,
+       h3,
+       h4,
+       p,
+       ul[class],
+       ol[class],
+       figure,
+       blockquote,
+       dl,
+       dd {
+        margin: 0;
+      }
+
+      /* Set core root defaults */
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Set core body defaults */
+
+      body {
+        min-height: 100vh;
+        /*
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        */
+        margin: 0;
+      }
+
+      /* Remove list styles on ul, ol elements with a class attribute */
+
+      ul[class],
+       ol[class] {
+        list-style: none;
+      }
+
+      /* A elements that don't have a class get default styles */
+
+      a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+
+      /* Make images easier to work with */
+
+      img,
+       picture {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* Natural flow and rhythm in articles by default */
+
+      /*
+       article > * + * {
+        margin-top: 1em;
+      }
+      */
+
+      /* Inherit fonts for inputs and buttons */
+
+      input,
+       button,
+       textarea,
+       select {
+        font: inherit;
+      }
+
+      /* Blur images when they have no alt attribute */
+
+      img:not([alt]) {
+        filter: blur(10px);
+      }
+
+      .remove-empty-alt-filter img:not([alt]) {
+        filter: none;
+      }
+
+      /* Remove all animations and transitions for people that prefer not to see them */
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      button {
+        border: none;
+        background: none;
+        font: inherit;
+        cursor: pointer;
+        line-height: inherit;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    </style>
     
-      <link rel="stylesheet" href="/assets/css/home.css">
+
+    <script>
+      // This is a capable browser, let's improve the UI further!
+      document.documentElement.classList.add("enhanced");
+      document.documentElement.classList.remove('no-js');
+    </script>
+    <script type="module" crossorigin src="../dist/js/495b3f9e.js"></script>
+    <link rel="stylesheet" href="../dist/css/index.min.css">
+  </head>
+  <body>
     
-  
-  
+    <a class="cor-skip-link" href="#main-content">Skip to content</a>
 
-  
-  
-</head>
-<body>
-
-  
-
-<cor-header   >
+    
+    <header>
+      <cor-header   >
 
   <div class="cor-logo-container">
     <a class="cor-logo" href="" aria-label="CoR Homepage" >
@@ -438,16 +548,6 @@
             
             <li>
               
-              <a href="test.be" id="About_label">About</a>
-
-              
-            
-              
-
-            </li>
-            
-            <li>
-              
               <a href="test.be" id="International cooperation_label">International cooperation</a>
 
               
@@ -459,10 +559,10 @@
               
             
               
-              <ul class="cor-header-navbar__subnav cor-header-navbar__level3" aria-labelledby="--2">
+              <ul class="cor-header-navbar__subnav cor-header-navbar__level3" aria-labelledby="--1">
                 
                 <li>
-                  <a href="test.be">Excepteur est irure laborum nostrud fugiat reprehenderit magna minim adipisicing incididunt.</a>
+                  <a href="test.be">CIVEX</a>
                 </li>
                 
                 <li>
@@ -891,28 +991,10 @@
             
             <li>
               
-              <a href="test.be" id="About_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="About--1">About</a>
+              <a href="test.be" id="International cooperation_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="International-cooperation--1">International cooperation</a>
 
               
-              <cor-subnav-description id="About--1" aria-labelledby="button--About">
-                <span class="cor-header-navbar__subpanel__heading">About</span>
-                <div class="cor-header-navbar__subpanel__description">
-                  Amet est laborum sunt cupidatat irure qui Lorem laboris pariatur aute fugiat. Excepteur dolor labore veniam commodo aute do amet sunt in labore amet amet cupidatat tempor. Veniam consequat culpa deserunt adipisicing quis commodo officia duis. Dolore enim ad duis proident nisi sit fugiat et qui officia adipisicing eiusmod.
-                </div>
-                <a href='test.be' class="cor-subnav-description__readmore">Read more...</a>
-                
-              </cor-subnav-description>
-              
-              
-
-            </li>
-            
-            <li>
-              
-              <a href="test.be" id="International cooperation_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="International-cooperation--2">International cooperation</a>
-
-              
-              <cor-subnav-description id="International-cooperation--2" aria-labelledby="button--International cooperation">
+              <cor-subnav-description id="International-cooperation--1" aria-labelledby="button--International cooperation">
                 <span class="cor-header-navbar__subpanel__heading">International cooperation</span>
                 <div class="cor-header-navbar__subpanel__description">
                   Amet est laborum sunt cupidatat irure qui Lorem laboris pariatur aute fugiat. Excepteur dolor labore veniam commodo aute do amet sunt in labore amet amet cupidatat tempor. Veniam consequat culpa deserunt adipisicing quis commodo officia duis. Dolore enim ad duis proident nisi sit fugiat et qui officia adipisicing eiusmod.
@@ -925,8 +1007,8 @@
                     <a href="test.be">
                       <img src="https://picsum.photos/300/200" alt="" />
                       <div>
-                        <strong>Excepteur est irure laborum nostrud fugiat reprehenderit magna minim adipisicing incididunt.</strong>
-                        <span>Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip. Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip. Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip.</span>
+                        <strong>CIVEX</strong>
+                        <span>Elit est consectetur ad et sint consequat occaecat veniam consectetur aliquip.</span>
                       </div>
                     </a>
                   </li>
@@ -971,10 +1053,10 @@
             
             <li>
               
-              <a href="test.be" id="EU Annual Regional and Local Barometer_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="EU-Annual-Regional-and-Local-Barometer--3">EU Annual Regional and Local Barometer</a>
+              <a href="test.be" id="EU Annual Regional and Local Barometer_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="EU-Annual-Regional-and-Local-Barometer--2">EU Annual Regional and Local Barometer</a>
 
               
-              <cor-subnav-description id="EU-Annual-Regional-and-Local-Barometer--3" aria-labelledby="button--EU Annual Regional and Local Barometer">
+              <cor-subnav-description id="EU-Annual-Regional-and-Local-Barometer--2" aria-labelledby="button--EU Annual Regional and Local Barometer">
                 <span class="cor-header-navbar__subpanel__heading">EU Annual Regional and Local Barometer</span>
                 <div class="cor-header-navbar__subpanel__description">
                   
@@ -989,10 +1071,10 @@
             
             <li>
               
-              <a href="test.be" id="Plenary sessions_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="Plenary-sessions--4">Plenary sessions</a>
+              <a href="test.be" id="Plenary sessions_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="Plenary-sessions--3">Plenary sessions</a>
 
               
-              <cor-subnav-description id="Plenary-sessions--4" aria-labelledby="button--Plenary sessions">
+              <cor-subnav-description id="Plenary-sessions--3" aria-labelledby="button--Plenary sessions">
                 <span class="cor-header-navbar__subpanel__heading">Plenary sessions</span>
                 <div class="cor-header-navbar__subpanel__description">
                   
@@ -1007,10 +1089,10 @@
             
             <li>
               
-              <a href="test.be" id="Commissions_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="Commissions--5">Commissions</a>
+              <a href="test.be" id="Commissions_label" tabindex="-1" aria-haspopup="true" has-subnav aria-controls="Commissions--4">Commissions</a>
 
               
-              <cor-subnav-description id="Commissions--5" aria-labelledby="button--Commissions">
+              <cor-subnav-description id="Commissions--4" aria-labelledby="button--Commissions">
                 <span class="cor-header-navbar__subpanel__heading">Commissions</span>
                 <div class="cor-header-navbar__subpanel__description">
                   
@@ -1554,25 +1636,10 @@
   </cor-header-subnav>
   
 </cor-header>
-
-  
-  <main tabindex="-1" class="cor-main-grid " id="main-content">
+    </header>
+    <div id="app"></div>
     
-  
 
-  </main>
-
-  <footer>
     
-  </footer>
-
-  <script>
-    // This is a capable browser, let's improve the UI further!
-    document.documentElement.classList.add("enhanced");
-    document.documentElement.classList.remove('no-js');
-  </script>
-
-
-
-</body>
+  </body>
 </html>
