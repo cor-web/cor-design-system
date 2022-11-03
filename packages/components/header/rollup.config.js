@@ -30,6 +30,10 @@ export default merge(baseConfig, {
   // alternatively, you can use your JS as entrypoint for rollup and
   // optionally set a HTML template manually
   input: './src/cor-header.js',
+  output: {
+    file: './dist/js/index.min.js',
+    format: 'es'
+  },
   plugins: [
     versionInjector()
   ]
