@@ -1,4 +1,6 @@
 import merge from 'deepmerge';
+import versionInjector from 'rollup-plugin-version-injector';
+
 // use createSpaConfig for bundling a Single Page App
 // import { createSpaConfig } from '@open-wc/building-rollup';
 
@@ -27,5 +29,8 @@ export default merge(baseConfig, {
 
   // alternatively, you can use your JS as entrypoint for rollup and
   // optionally set a HTML template manually
-  input: './src/cor-header.js'
+  input: './src/cor-header.js',
+  plugins: [
+    versionInjector()
+  ]
 });
