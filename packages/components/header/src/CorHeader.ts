@@ -1,6 +1,22 @@
 import Component from "./component.js";
 
 export class CorHeader extends Component {
+  menusButtons!: NodeListOf<Element>;
+  toggleNavButton!: HTMLElement | null;
+  siteNav!: HTMLElement | null;
+  toolsQuicklinks!: HTMLElement | null;
+  socialMedia!: HTMLElement | null;
+  search!: HTMLElement | null;
+  languages: any;
+  searchButton!: HTMLElement | null;
+  subnavLinks!: NodeListOf<Element>;
+  subnavButtons!: NodeListOf<Element>;
+  panelsNav: any;
+  defaultNav: any;
+  subnavItems!: NodeListOf<Element>;
+  subnavContainer: any;
+  subnavContainerItems!: NodeListOf<Element>;
+  popUps!: NodeListOf<Element>;
   constructor() {
     super();
 
@@ -32,7 +48,9 @@ export class CorHeader extends Component {
     this.popUps = document.querySelectorAll('cor-header-subnav > ul > li');;
 
 
-    this.toggleNavButton.addEventListener('click', this.toggleNav.bind(this));
+    if (this.toggleNavButton) {
+      this.toggleNavButton.addEventListener('click', this.toggleNav.bind(this));
+    }
 
     if (matchMedia) {
       const mq = window.matchMedia("(max-width: 1070px)");
@@ -59,20 +77,19 @@ export class CorHeader extends Component {
     }
   }
 
-  update(key, value) {
-    this[key] = value;
+  update(key: string, value: string) {
     this.setAttribute(key, value);
   }
 
   // media query change
-  WidthChange(mq) {
+  WidthChange(mq: MediaQueryList) {
 
     if (mq.matches) {
       console.log(mq, 'match2');
       this.setAttribute('view', "mobile");
 
       this.menusButtons.forEach(menu => {
-        menu.hidden = false;
+        menu.setAttribute("hidden", "false");
         menu.setAttribute("aria-expanded", "false");
         // menu.nextElementSibling.setAttribute("aria-hidden", "true");
         menu.addEventListener('click', this.toggleMenu);
@@ -88,18 +105,23 @@ export class CorHeader extends Component {
         subnavItem.setAttribute("hidden", "");
       });
 
-      this.subnavContainer.hidden = true;
+      this.subnavContainer.setAttribute('hidden', "true");
 
       // nav.setAttribute("data-open", "false");
-      this.toggleNavButton.removeAttribute("hidden");
-      this.toggleNavButton.setAttribute("aria-expanded", "false");
-      console.log("Sherlock");
+      if (this.toggleNavButton) {
+        this.toggleNavButton.removeAttribute("hidden");
+        this.toggleNavButton.setAttribute("aria-expanded", "false");
+      }
 
-      this.searchButton.setAttribute("hidden", "");
-      this.search.removeAttribute("hidden");
+      if (this.searchButton) {
+        this.searchButton.setAttribute("hidden", "");
+      }
+
+      if (this.search) {
+        this.search.removeAttribute("hidden");
+      }
 
       this.defaultNav.removeAttribute("hidden");
-      // this.panelsNav.setAttribute("hidden", "");
 
 
     } else {
@@ -107,7 +129,7 @@ export class CorHeader extends Component {
       this.setAttribute('view', "desktop");
 
 
-      this.subnavContainer.hidden = false;
+      this.subnavContainer.setAttribute('hidden', "false");
 
       // this.panelsNav.removeAttribute("hidden");
       this.defaultNav.setAttribute("hidden", "");
@@ -133,17 +155,32 @@ export class CorHeader extends Component {
       */
 
       // nav.setAttribute("data-open", "true");
-      this.toggleNavButton.setAttribute("hidden", "");
-      this.toggleNavButton.setAttribute("aria-expanded", "true");
-      this.searchButton.removeAttribute("hidden");
+      if (this.toggleNavButton) {
+        this.toggleNavButton.setAttribute("hidden", "");
+        this.toggleNavButton.setAttribute("aria-expanded", "true");
+      }
 
-      this.search.setAttribute("hidden", "");
+      if (this.searchButton) {
+        this.searchButton.removeAttribute("hidden");
+      }
 
-      this.siteNav.setAttribute("data-open", "true");
+      if (this.search) {
+        this.search.setAttribute("hidden", "");
+      }
+
+      if (this.siteNav) {
+        this.siteNav.setAttribute("data-open", "true");
+      }
     }
   }
 
-  toggleSubnav(e) {
+  toggleSubnav(e: {
+    target: {
+      hasAttribute(arg0: string): unknown;
+      setAttribute(arg0: string, arg1: string): unknown;
+      removeAttribute(arg0: string): unknown; getAttribute: (arg0: string) => string;
+    };
+  }) {
 
     const button = e.target;
 
@@ -159,14 +196,19 @@ export class CorHeader extends Component {
       button.removeAttribute("open");
     });
 
-    if (!isOpen) {
+    if (popup && !isOpen) {
       // console.log('not open')
       button.setAttribute("open", "");
       popup.removeAttribute("hidden");
       popup.setAttribute("aria-expanded", "true");
-      popup.querySelector("a").focus();
 
-    } else {
+      const link = popup.querySelector("a");
+
+      if (link) {
+        link.focus();
+      }
+
+    } else if (popup) {
       // console.log('open')
 
       button.removeAttribute("open");
@@ -174,9 +216,9 @@ export class CorHeader extends Component {
     }
   }
 
-  toggleNav(element) {
-    console.log('TTTEST', this, this.open)
-    if (!this.open) {
+  toggleNav(this: HTMLElement) {
+
+    if (!this.hasAttribute('open')) {
       this.setAttribute("open", "");
     } else {
       this.removeAttribute("open");
@@ -188,10 +230,10 @@ export class CorHeader extends Component {
     const toggleButton = this;
     const theNav = this.nextElementSibling;
 
-    if (toggleButton.getAttribute("aria-expanded") == "true") {
+    if (toggleButton.getAttribute("aria-expanded") == "true" && theNav) {
       toggleButton.setAttribute("aria-expanded", "false");
       theNav.setAttribute("aria-hidden", "true");
-    } else {
+    } else if (theNav) {
       toggleButton.setAttribute("aria-expanded", "true");
       theNav.setAttribute("aria-hidden", "false");
       theNav.removeAttribute("hidden");
@@ -222,7 +264,7 @@ export class CorHeader extends Component {
 
 
 
-  attributeChangedCallback(name, oldValue, newValue) {
+  attributeChangedCallback(name: any, oldValue: any, newValue: any) {
     console.log("CHANGE", this, name, oldValue, newValue, this.view);
     // Mobile view: Nav closed 
     if (!this.open && this.view === "mobile") {
@@ -248,23 +290,52 @@ export class CorHeader extends Component {
     if (this.open || this.view === "desktop") {
 
       console.log("open");
+      if (this.toggleNavButton) {
+        this.toggleNavButton.setAttribute("aria-expanded", "true");
+      }
 
-      this.toggleNavButton.setAttribute("aria-expanded", "true");
-      this.toolsQuicklinks.setAttribute("data-open", "true");
-      this.siteNav.setAttribute("data-open", "true");
-      this.socialMedia.setAttribute("data-open", "true");
-      this.search.setAttribute("data-open", "true");
-      this.languages.setAttribute("data-open", "true");
+      if (this.toolsQuicklinks) {
+        this.toolsQuicklinks.setAttribute("data-open", "true");
+      }
+
+      if (this.siteNav) {
+        this.siteNav.setAttribute("data-open", "true");
+      }
+
+      if (this.socialMedia) {
+        this.socialMedia.setAttribute("data-open", "true");
+      }
+
+      if (this.search) {
+        this.search.setAttribute("data-open", "true");
+      }
+
+      if (this.languages) {
+        this.languages.setAttribute("data-open", "true");
+      }
+
     } else {
       console.log("not open");
 
-      this.toggleNavButton.setAttribute("aria-expanded", "false");
-      this.toolsQuicklinks.setAttribute("data-open", "false");
-      this.siteNav.setAttribute("data-open", "false");
-      this.socialMedia.setAttribute("data-open", "false");
-      this.search.setAttribute("data-open", "false");
-      // this.languages.setAttribute("data-open", "false");
+      if (this.toggleNavButton) {
+        this.toggleNavButton.setAttribute("aria-expanded", "false");
+      }
 
+      if (this.toolsQuicklinks) {
+        this.toolsQuicklinks.setAttribute("data-open", "false");
+      }
+
+      if (this.siteNav) {
+        this.siteNav.setAttribute("data-open", "false");
+      }
+
+      if (this.socialMedia) {
+        this.socialMedia.setAttribute("data-open", "false");
+      }
+
+      if (this.search) {
+        this.search.setAttribute("data-open", "false");
+      }
     }
   }
 
@@ -284,13 +355,16 @@ export class CorHeaderNavbar extends Component {
 }
 
 export class CorPanelsNav extends HTMLElement {
+  buttons!: NodeListOf<HTMLButtonElement>;
   constructor() {
     super();
-    const template = this.querySelector('#panelsNav-template');
-    let templateContent = template.content;
+    const template = document.getElementById('panelsNav-template');
 
-    const shadowRoot = this.attachShadow({ mode: 'open' });
-    shadowRoot.appendChild(templateContent.cloneNode(true));
+    if (template.content) {
+      const shadowRoot = this.attachShadow({ mode: 'open' });
+      shadowRoot.appendChild(template.content.cloneNode(true));
+    }
+
   }
 
   connectedCallback() {
@@ -310,7 +384,7 @@ export class CorPanelsNav extends HTMLElement {
     }
   }
 
-  widthChange(mq) {
+  widthChange(mq: { matches: any; }) {
     if (mq.matches) {
       // console.log("CHANGED");
 
@@ -319,7 +393,7 @@ export class CorPanelsNav extends HTMLElement {
     }
   }
 
-  toggle(button) {
+  toggle(button: { getAttribute: (arg0: string) => string; setAttribute: (arg0: string, arg1: string) => void; }) {
     // console.log("toggle", button);
 
 
@@ -352,11 +426,11 @@ export class CorPanelsNav extends HTMLElement {
 
   }
 
-  onClick(button) {
+  onClick(button: EventTarget | null) {
     this.toggle(button);
   }
 
-  dispatchUpdate(detail) {
+  dispatchUpdate(detail: { type: string; target: any; }) {
     // console.log("dispatchUpdate", detail)
     const event = new CustomEvent('state-update', {
       detail,
@@ -371,7 +445,7 @@ export class CorPanelsNav extends HTMLElement {
 export class CorSearchButton extends Component {
   connectedCallback() {
     //console.log("button");
-    this.hidden = false;
+    this.setAttribute('hidden', "false");
     const button = document.createElement("button");
     const link = this.querySelector('a');
     const linkContent = link.innerHTML;
@@ -393,10 +467,10 @@ export class CorSearchButton extends Component {
 
     if (searchBar.getAttribute("aria-expanded") !== "true") {
       searchBar.setAttribute("aria-expanded", "true");
-      searchBar.hidden = false;
+      searchBar.setAttribute('hidden', "false");
     } else {
       searchBar.setAttribute("aria-expanded", "false");
-      searchBar.hidden = true;
+      searchBar.setAttribute('hidden', "true");
     }
 
   }
@@ -404,6 +478,7 @@ export class CorSearchButton extends Component {
 }
 
 export class CorHeaderSubnav extends Component {
+  panels!: NodeListOf<Element>;
   connectedCallback() {
 
     this.panels = this.querySelectorAll(".cor-header-subnav-panel");
@@ -419,14 +494,17 @@ export class CorHeaderSubnav extends Component {
 
   }
 
-  showNav(target) {
+  showNav(target: string) {
     this.panels.forEach(panel => {
-      panel.setAttribute('aria-expanded', false);
-      panel.hidden = true;
+      panel.setAttribute('aria-expanded', "false");
+      panel.setAttribute('hidden', "true");
     });
     if (target) {
-      document.getElementById(target).setAttribute('aria-expanded', true);
-      document.getElementById(target).hidden = false;
+      const targetElement = document.getElementById(target);
+      if (targetElement) {
+        targetElement.setAttribute('aria-expanded', "true");
+        targetElement.setAttribute('hidden', "false");
+      }
     }
   }
 }
@@ -453,29 +531,45 @@ export class CorSubnavItem extends Component {
     const subnavDescriptions = this.querySelectorAll('cor-subnav-description');
     subnavDescriptions.forEach((subnavDescription, index) => {
       if (index !== 0) {
-        subnavDescription.hidden = true;
+        subnavDescription.setAttribute('hidden', "true");
       }
-      descriptionsContainer.appendChild(subnavDescription)
+
+      if (descriptionsContainer) {
+        descriptionsContainer.appendChild(subnavDescription);
+      }
     });
+
+    function onMouseOver(event: MouseEvent) {
+      links.forEach(link => {
+        if (link.parentElement) {
+          link.parentElement.classList.remove('active');
+        }
+      });
+
+      if (event.target.parentElement) {
+        event.target.parentElement.classList.add('active');
+      }
+
+      const target = event.target.getAttribute('aria-controls');
+      const relatedDescription = this.querySelector(`#${target}`);
+
+      subnavDescriptions.forEach(subnavDescription => {
+        subnavDescription.setAttribute('hidden', "true");
+      });
+
+      if (relatedDescription) {
+        relatedDescription.setAttribute('hidden', "false");
+      }
+    }
 
     const links = this.querySelectorAll('[has-subnav]');
     links.forEach((link, index) => {
 
-      if (index == 0) link.parentNode.classList.add('active');
-      link.addEventListener('mouseover', (e) => {
+      if (index == 0 && link.parentElement) {
+        link.parentElement.classList.add('active');
+      }
 
-        links.forEach(link => link.parentNode.classList.remove('active'));
-        e.target.parentNode.classList.add('active');
-        const target = e.target.getAttribute('aria-controls');
-        const relatedDescription = this.querySelector(`#${target}`);
-
-        subnavDescriptions.forEach(subnavDescription => {
-          subnavDescription.hidden = true;
-        });
-
-        relatedDescription.hidden = false;
-        // console.log(relatedDescription);
-      });
+      link.addEventListener('mouseover', onMouseOver);
 
     });
 
