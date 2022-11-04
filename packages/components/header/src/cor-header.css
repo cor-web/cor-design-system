@@ -1,3 +1,6 @@
-/* @import "@cor-web/styles/src/settings/_all.css"; */
-@import "@cor-web/styles/dist/base.css";
+@import "@cor-web/styles/src/settings/_all.css";
+@import "@cor-web/styles/src/generic/_buttons.css";
+@import "@cor-web/styles/src/generic/_focus.css";
+/* @import "@cor-web/styles/dist/base.css"; */
+
 @import "./index.css";

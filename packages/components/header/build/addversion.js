@@ -1,5 +1,5 @@
-import fs from 'fs';
-import moment from 'moment';
+const fs = require('fs');
+const moment = require('moment');
 
 const cssPath = "dist/css/index.min.css";
 const date = moment().format('MMMM Do YYYY, h:mm:ss a');

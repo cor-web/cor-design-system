@@ -1,6 +1,21 @@
-*,
-*::before,
-*::after {
+:root {
+  line-height: var(--ratio);
+  font-size: calc(0.333vw + 1em);
+  font-family: var(--font-plain);
+  color: var(--color-dark);
+}
+
+cor-header img,
+cor-header picture {
+  max-width: 100%;
+  display: block;
+  margin: unset;
+}
+
+
+cor-header *,
+cor-header *::before,
+cor-header *::after {
   box-sizing: border-box
 }
 
@@ -937,7 +952,7 @@ cor-header-subnav {
   background-color: var(--c-eu);
   box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.33);
   grid-area: subnav;
-  margin-left: calc(150px - var(--space-s));
+  margin-left: calc(150px - var(--space-3xs));
   max-width: 1250px;
 }
 
