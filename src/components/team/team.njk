@@ -1,19 +1,22 @@
 <ul class="cor-grid cor-grid--fill" style="--measure: 300px">
   {% for member in members %}
-  <li class="bg align-items-center cor-stack padding">
+  <li class="bg align-items-center cor-stack cor-stack--2xs padding">
       <img src="{{ member.picture }}" alt="portrait of {{ member.name }}"/>
       <strong class="txt-step--2">{{ member.name }}</strong>
       <span class="txt-step--2">{{ member.jobTitle}}</span>
-      <ul class="txt-step--4 list-disc">
-        <li>Minus harum et ea officia fuga officiis.</li>
-        <li>Nisi et non ipsa voluptas ratione et.</li>
-        <li>Illo debitis nemo necessitatibus doloremque.</li>
-        <li>Omnis cumque eaque.</li>
-        <li>Minus harum et ea officia fuga officiis.</li>
-      </ul>
-
+      <div>
+        <ul class="txt-step--4 list-disc">
+          <li>Minus harum et ea officia fuga officiis.</li>
+          <li>Nisi et non ipsa voluptas ratione et.</li>
+          <li>Illo debitis nemo necessitatibus doloremque.</li>
+          <li>Omnis cumque eaque.</li>
+          <li>Minus harum et ea officia fuga officiis.</li>
+        </ul>
+      </div>
+      
       <a href="" class="icon icon-before" style="--icon: var(--icon-phone)">{{ member.phone }}</a>
       <a href="" class="icon icon-before" style="--icon: var(--icon-envelope)">{{ member.email }}</a>
+      <a href="" class="icon icon-before" style="--icon:var(--icon-twitter)">@twitterAccount</a>
   </li>
   {% endfor %}
 </ul>
