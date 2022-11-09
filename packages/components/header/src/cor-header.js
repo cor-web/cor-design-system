@@ -8,6 +8,7 @@ import { CorSubnavItem } from './CorHeader.js';
 import { CorSearchBox } from './CorSearchBox.js';
 import { CorLanguagesSelector } from './CorHeader.js';
 
+
 window.customElements.define('cor-header', CorHeader);
 window.customElements.define('cor-header-navbar', CorHeaderNavbar);
 window.customElements.define('cor-search-button', CorSearchButton);

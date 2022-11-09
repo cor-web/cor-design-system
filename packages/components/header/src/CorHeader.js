@@ -294,11 +294,16 @@ export class CorPanelsNav extends HTMLElement {
   }
 
   connectedCallback() {
+
     this.buttons = this.shadowRoot.querySelectorAll("button");
     this.buttons.forEach(button => {
       button.addEventListener('click', (e) => {
         this.onClick(e.target)
       });
+
+      /* button.addEventListener('focus', (e) => {
+        this.onFocus(e.target)
+      }); */
     })
 
 
@@ -350,10 +355,20 @@ export class CorPanelsNav extends HTMLElement {
 
     this.dispatchUpdate({ type, target });
 
+    //this.setFocus(button);
   }
 
   onClick(button) {
     this.toggle(button);
+  }
+
+  setFocus(button) {
+    const targetID = button.getAttribute("aria-controls");
+    const targetMenu = document.getElementById(targetID);
+    const targetMenuFirstLink = targetMenu.querySelector('a');
+    this.toggle(button);
+
+    window.setTimeout(() => targetMenuFirstLink.focus(), 0); /* https://stackoverflow.com/questions/1096436/document-getelementbyidid-focus-is-not-working-for-firefox-or-chrome */
   }
 
   dispatchUpdate(detail) {
@@ -436,6 +451,7 @@ export class CorSubnavDescription extends Component {
 
   }
 }
+
 
 
 
