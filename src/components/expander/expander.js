@@ -32,6 +32,7 @@
           color: var(--link-color);
           cursor: pointer;
           display: flex;
+          flex-shrink: 0;
           align-items: center;
           padding: var(--space-3xs);
         }
