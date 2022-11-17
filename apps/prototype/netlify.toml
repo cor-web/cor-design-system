@@ -2,6 +2,3 @@
   NPM_FLAGS = "--version"
 [build]
   command = "pnpm run build"
-  
-  # Useful when dependency update
-  ignore = "/bin/false"
