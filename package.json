@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/cor-web/cor-design-system#readme",
   "dependencies": {
-    "@changesets/cli": "^2.22.0"
+    "@changesets/cli": "^2.25.2"
   },
   "devDependencies": {
-    "pnpm": "^7.9.0",
-    "turbo": "^1.2.16"
+    "pnpm": "^7.16.1",
+    "turbo": "^1.6.3"
   }
 }
