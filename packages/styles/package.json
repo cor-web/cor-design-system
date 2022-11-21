@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "postcss src/all.css -o dist/all.css && postcss src/base.css -o dist/base.css --watch",
-    "build": "postcss src/all.css -o dist/all.css && postcss src/base.css -o dist/base.css"
+    "build2": "postcss src/all.css -o dist/all.css && postcss src/base.css -o dist/base.css"
   },
   "devDependencies": {
     "postcss": "^8.4.14",
