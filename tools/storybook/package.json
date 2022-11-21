@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook"
+    "dev": "start-storybook -p 6006"
   },
   "dependencies": {
     "@cor-web/components": "workspace:*",
