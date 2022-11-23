@@ -5,6 +5,8 @@
   color: var(--color-dark);
 }
 
+
+
 cor-header img,
 cor-header picture {
   max-width: 100%;
@@ -954,6 +956,7 @@ cor-header-subnav {
   grid-area: subnav;
   margin-left: calc(150px - var(--space-3xs));
   max-width: 1250px;
+  position: absolute;
 }
 
 cor-header-subnav>ul {}
