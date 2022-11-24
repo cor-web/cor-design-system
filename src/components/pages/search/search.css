@@ -6,7 +6,11 @@
   font-size: var(--step--3);
 }
 
-.mainContent #Result .ms-srch-item-icon,
+.mainContent #Result .ms-webpart-titleText {
+  font-size: var(--step--2);
+}
+
+.mainContent #Result .ms-srch-item-icon img,
 .mainContent #Result .ms-srch-hover-site-icon-result {
   filter: none;
   display: inline;
