@@ -1,6 +1,7 @@
 .mainContent #Result .ms-srch-item-body h3,
 .mainContent #Result .ms-srch-item-summary,
 .mainContent #Result .ms-srch-hover-title,
-.mainContent #Result * {
+.mainContent #Result *,
+.cor-search-refiner * {
   font-size: var(--step--3);
 }
