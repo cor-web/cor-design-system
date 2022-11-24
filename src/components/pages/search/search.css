@@ -5,3 +5,9 @@
 .cor-search-refiner * {
   font-size: var(--step--3);
 }
+
+.mainContent #Result .ms-srch-item-icon,
+.mainContent #Result .ms-srch-hover-site-icon-result {
+  filter: none;
+  display: inline;
+}
