@@ -57,3 +57,19 @@
     width: auto;
   }
 }
+
+#AdvancedSearchBox,
+#AdvancedSearchBox * {
+  width: 100% !important;
+}
+
+#AdvancedSearchBox input {
+  border-radius: 14px;
+  border: 1px solid #C1D9E2 !important;
+  background-color: #F0F6F9;
+  color: #4F4F4F;
+  padding-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  outline: 0;
+}
