@@ -21,12 +21,6 @@ cor-header *::after {
   box-sizing: border-box
 }
 
-.cor-container {
-  display: grid;
-  grid-template-columns: 1311px;
-  align-content: center;
-}
-
 [hidden] {
   display: none !important;
 }
