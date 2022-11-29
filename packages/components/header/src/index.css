@@ -318,6 +318,14 @@ cor-header nav a:hover {
 }
 */
 
+.cor-header-navbar__level2 span {
+  color: white;
+  display: block;
+  font-size: var(--step--3);
+  font-weight: 400;
+  padding: var(--space-2xs) 0;
+}
+
 
 
 @media (min-width: 1071px) {
@@ -464,6 +472,7 @@ svg[hidden] {
 .cor-header-navbar__subpanel__description {
   color: white;
   font-size: var(--step--4);
+  max-width: 75ch;
 }
 
 cor-header-toolbar {
@@ -954,9 +963,8 @@ cor-header-subnav {
   background-color: var(--c-eu);
   box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.33);
   grid-area: subnav;
-  margin-left: calc(150px - var(--space-3xs));
-  max-width: 1250px;
   position: absolute;
+  width: 100%;
 }
 
 cor-header-subnav>ul {}
@@ -1013,6 +1021,7 @@ ul.cor-header-subnav-list-item {
     display: grid;
     gap: var(--space-xs);
     grid-template-columns: 1fr 1fr;
+    margin-top: var(--space-xs);
   }
 }
 
@@ -1023,14 +1032,14 @@ ul.cor-header-subnav-list-item {
 
 cor-subnav-description {
   display: grid;
-  gap: var(--space-xs);
+  gap: var(--space-2xs);
   padding: var(--space-xs);
 }
 
 .cor-header-subnav-list-item+ul {
   align-self: stretch;
   background-color: #0754a7;
-  border-left: solid 1px rgba(255, 255, 255, 0.5);
+  border-left: solid 1px var(--oc-cyan-3);
   z-index: 1;
 }
 
@@ -1042,7 +1051,7 @@ cor-subnav-item li {
 
 cor-subnav-item li.active:after {
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--oc-cyan-3);
   content: '';
 
   position: absolute;
@@ -1050,6 +1059,11 @@ cor-subnav-item li.active:after {
   margin-left: var(--space-2xs);
   width: calc(100% + var(--space-xs));
   z-index: 0;
+}
+
+cor-subnav-item li.active a,
+cor-subnav-item li.active span {
+  color: var(--oc-cyan-3);
 }
 
 .cor-header-subnav-list-item a,

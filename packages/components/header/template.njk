@@ -262,10 +262,14 @@
             {% for subnavitem in navitem.subnav %}
             <li>
               
+              {% if subnavitem.link %}
               <a href="{{ subnavitem.link }}" id="{{ subnavitem.text }}_label">{{ subnavitem.text }}</a>
+              {% else %}
+              <span id="{{ subnavitem.text }}_label">{{ subnavitem.text }}</span>
+              {% endif %}
 
               {% if subnavitem.subnav %}
-              <button hidden aria-expanded="false">
+              <button aria-label="Toggle {{ subnavitem.text }} navigation" hidden aria-expanded="false">
                 <svg  width="16" height="16">
                   <use xlink:href="#arrow" />
                 </svg>
