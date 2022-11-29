@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "Europcom 2022",
   "version": "7.0.0",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
@@ -13,11 +13,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/11ty/eleventy-base-blog.git"
-  },
-  "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
   },
   "license": "MIT",
   "bugs": {
