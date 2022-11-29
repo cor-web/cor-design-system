@@ -1,0 +1,3 @@
+[build]
+  command = "pnpm run -r build"
+  publish = "apps/prototype/_site/"
