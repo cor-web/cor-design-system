@@ -1188,7 +1188,7 @@ svg[hidden] {
   position: relative;
 }
 
-.cor-header-navbar__subnav button {
+.cor-header-navbar__subnav a+button {
   border-left: solid 1px rgba(255, 255, 255, 0.425);
   padding: 0 var(--space-2xs);
 }
