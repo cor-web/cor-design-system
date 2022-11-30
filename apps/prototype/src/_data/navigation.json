@@ -190,6 +190,27 @@
       {
         "text": "Commissions",
         "link": "test.be"
+      },
+      {
+        "text": "Nolink",
+        "subnav": [
+          {
+            "text": "International cooperation",
+            "link": "test.be"
+          },
+          {
+            "text": "EU Annual Regional and Local Barometer",
+            "link": "test.be"
+          },
+          {
+            "text": "Plenary sessions",
+            "link": "test.be"
+          },
+          {
+            "text": "Commissions",
+            "link": "test.be"
+          }
+        ]
       }
     ]
   },
