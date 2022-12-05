@@ -316,11 +316,12 @@ cor-header nav a:hover {
 */
 
 .cor-header-navbar__level2 span {
-  color: white;
+  background-color: var(--oc-gray-4);
+  color: var(--oc-gray-9);
   display: block;
   font-size: var(--step--3);
   font-weight: 400;
-  padding: var(--space-2xs) 0;
+  padding: var(--space-2xs) 0 var(--space-2xs) var(--space-2xs);
 }
 
 
@@ -442,7 +443,7 @@ svg[hidden] {
   position: relative;
 }
 
-.cor-header-navbar__subnav a+button {
+.cor-header-navbar__subnav button {
   border-left: solid 1px rgba(255, 255, 255, 0.425);
   padding: 0 var(--space-2xs);
 }
@@ -963,6 +964,7 @@ cor-header-subnav {
   grid-area: subnav;
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 cor-header-subnav>ul {}
