@@ -548,6 +548,10 @@ cor-header-toolbar button svg path {
   .cor-nav-social-media svg[aria-label="Twitter"] path {
     fill: white;
   }
+
+  .cor-nav-social-media svg[aria-label="Flickr"] path:first-child {
+    fill: #fff5;
+  }
 }
 
 
