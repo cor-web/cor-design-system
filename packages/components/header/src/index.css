@@ -541,7 +541,7 @@ cor-header-toolbar button svg path {
     fill: white;
   }
 
-  .cor-nav-social-media svg[aria-label="Twitter"] path:last-child {
+  .cor-nav-social-media svg[aria-label="Youtube"] path:last-child {
     fill: var(--c-eu);
   }
 }
@@ -718,16 +718,14 @@ cor-header-toolbar button svg path {
     box-shadow: 0 50px 100px -20px #32325d40, 0 30px 60px -30px #0000004d;
     display: grid;
     gap: var(--space-xs);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     right: 0;
     z-index: 3;
     margin: 0;
     background: var(--oc-gray-3);
-    padding: var(--space-xs) var(--space-xl) var(--space-xs) var(--space-s);
-    position: fixed;
-    top: 68px;
-    bottom: 0;
-    overflow-y: scroll;
+    padding: var(--space-xs);
+    position: absolute;
+    top: 100%;
   }
 
   .cor-languages-navigation ul a:hover {
@@ -1129,3 +1127,67 @@ cor-header button {
 }
 
 /* /Sharepoint overrides */
+
+/* Languages grid */
+.cor-languages-grid {
+  --row-count: 24;
+
+  grid-column: 1 / -1;
+  display: grid;
+  gap: var(--space-2xs);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(var(--row-count), 6fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .cor-languages-grid {
+    --row-count: 12;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .cor-languages-grid {
+    --row-count: 8;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cor-languages-grid {
+    --row-count: 6;
+  }
+}
+
+.cor-languages-grid li {
+  border: solid 1px var(--c-eu);
+}
+
+.cor-languages-grid li a {
+  display: block;
+  font-size: var(--step--3);
+  font-weight: bold;
+  padding: var(--space-3xs) var(--space-xs);
+  text-decoration: none;
+}
+
+
+.cor-languages-grid li a,
+.cor-languages-grid li a:visited {
+  color: var(--c-eu);
+}
+
+.cor-languages-grid li a:hover {
+  background-color: var(--c-eu);
+  color: white;
+}
+
+
+.cor-languages-grid li span {
+  font-size: var(--step--4);
+  font-weight: normal;
+  margin-right: var(--space-2xs);
+}
+
+/* Languages grid */
