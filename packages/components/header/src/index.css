@@ -541,7 +541,7 @@ cor-header-toolbar button svg path {
     fill: white;
   }
 
-  .cor-nav-social-media svg[aria-label="Youtube"] path:last-child {
+  .cor-nav-social-media svg[aria-label="YouTube"] path:last-child {
     fill: var(--c-eu);
   }
 
