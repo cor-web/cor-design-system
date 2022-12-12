@@ -544,6 +544,10 @@ cor-header-toolbar button svg path {
   .cor-nav-social-media svg[aria-label="Youtube"] path:last-child {
     fill: var(--c-eu);
   }
+
+  .cor-nav-social-media svg[aria-label="Twitter"] path {
+    fill: white;
+  }
 }
 
 
